@@ -3457,10 +3457,6 @@ if wpn_fps_smg_x_sidekick then
 if SystemFS:exists("assets/mod_overrides/Spotter attachment/main.xml") then
 table.insert(self.wpn_fps_smg_x_sidekick.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
-if SystemFS:exists("assets/mod_overrides/Sneaky Suppressor Pack/main.xml") then
-table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
 if SystemFS:exists("assets/mod_overrides/InForce WML/main.xml") then
 table.insert(self.wpn_fps_smg_x_sidekick.uses_parts, "wpn_fps_upg_fl_wml")
 end
