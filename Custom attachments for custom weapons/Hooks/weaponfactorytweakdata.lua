@@ -5828,6 +5828,8 @@ end
 -- Beretta 93R
 if self.wpn_fps_pis_b93r then
 if SystemFS:exists("assets/mod_overrides/Sneaky Suppressor Pack/main.xml") then
+	self.wpn_fps_pis_b93r.override.wpn_fps_ass_ns_g_sup1 = {parent = "barrel"}
+	self.wpn_fps_pis_b93r.override.wpn_fps_ass_ns_g_sup2 = {parent = "barrel"}
 table.insert(self.wpn_fps_pis_b93r.uses_parts, "wpn_fps_ass_ns_g_sup1")
 table.insert(self.wpn_fps_pis_b93r.uses_parts, "wpn_fps_ass_ns_g_sup2")
 end
