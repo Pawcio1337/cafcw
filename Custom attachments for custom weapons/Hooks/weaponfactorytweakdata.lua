@@ -248,7 +248,6 @@ end
 end
 -- L115
 if self.wpn_fps_snp_l115 and self.wpn_fps_snp_l115.override then
---								 temp override check
 if SystemFS:exists("assets/mod_overrides/Kobra Sight/main.xml") then
 table.insert(self.wpn_fps_snp_l115.uses_parts, "wpn_fps_upg_o_kobra")
 	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_snp_l115 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_msr)
@@ -3458,6 +3457,10 @@ if wpn_fps_smg_x_sidekick then
 if SystemFS:exists("assets/mod_overrides/Spotter attachment/main.xml") then
 table.insert(self.wpn_fps_smg_x_sidekick.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
+if SystemFS:exists("assets/mod_overrides/Sneaky Suppressor Pack/main.xml") then
+table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_ass_ns_g_sup3")
+table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_ass_ns_g_sup4")
+end
 if SystemFS:exists("assets/mod_overrides/InForce WML/main.xml") then
 table.insert(self.wpn_fps_smg_x_sidekick.uses_parts, "wpn_fps_upg_fl_wml")
 end
@@ -4532,7 +4535,7 @@ table.insert(self.parts.wpn_fps_upg_xm21_irons.forbids, "wpn_fps_upg_o_delta_rm5
 	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_delta_rm55 = {
 		"wpn_fps_snp_xm21_offset_sight_rail"
 	}
-	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_snp_xm21)
+	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_m14)
 end
 end
 -- Arisaka Type 38
