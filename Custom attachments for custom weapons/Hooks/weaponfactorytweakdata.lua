@@ -979,6 +979,9 @@ table.insert(self.parts.wpn_fps_ass_sks_irons.forbids, "wpn_fps_upg_o_delta_rm55
 table.insert(self.parts.wpn_fps_upg_sks_leupold_pro.forbids, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_sks = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_snp_siltstone)
 end
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+table.insert(self.wpn_fps_ass_sks.uses_parts, "wpn_fps_riflein762x39")
+end
 end
 -- FN F2000 Tactical
 if self.wpn_fps_ass_f2000 then
@@ -1440,6 +1443,9 @@ if SystemFS:exists("assets/mod_overrides/Leupold DeltaPoint Sight on RM55 Mount/
 table.insert(self.wpn_fps_ass_aku94.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_aku94 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_l85a2)
 end
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+table.insert(self.wpn_fps_ass_aku94.uses_parts, "wpn_fps_riflein762x39")
+end
 end
 -- Valmet Rk.62
 if self.wpn_fps_ass_rk62 then
@@ -1651,6 +1657,9 @@ end
 if SystemFS:exists("assets/mod_overrides/Leupold DeltaPoint Sight on RM55 Mount/main.xml") then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_galil)
+end
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_riflein762x39")
 end
 end
 -- VSS
@@ -2118,6 +2127,9 @@ if SystemFS:exists("assets/mod_overrides/Leupold DeltaPoint Sight on RM55 Mount/
 table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_upg_o_delta_rm55")
 table.insert(self.parts.wpn_fps_ass_vz58_irons.forbids, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_vz58 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_akm)
+end
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_riflein762x39")
 end
 end
 -- KAC SR-25 E2 ACC
@@ -3472,6 +3484,9 @@ table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_ass_ns_g_sup4")
 end
 if SystemFS:exists("assets/mod_overrides/InForce WML/main.xml") then
 table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_upg_fl_wml")
+end
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_riflein762x39")
 end
 end
 -- M60
