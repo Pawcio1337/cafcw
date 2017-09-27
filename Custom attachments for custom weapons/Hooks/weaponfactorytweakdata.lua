@@ -3465,7 +3465,7 @@ table.insert(self.wpn_fps_shot_mp153.uses_parts, "wpn_fps_taserslug")
 end
 end
 -- Akimbo Sidekick
-if self.wpn_fps_smg_x_sidekick then
+if wpn_fps_smg_x_sidekick then
 if SystemFS:exists("assets/mod_overrides/Spotter attachment/main.xml") then
 table.insert(self.wpn_fps_smg_x_sidekick.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
@@ -3474,7 +3474,7 @@ table.insert(self.wpn_fps_smg_x_sidekick.uses_parts, "wpn_fps_upg_fl_wml")
 end
 end
 -- RPD
-if self.wpn_fps_lmg_rpd then
+if wpn_fps_lmg_rpd then
 if SystemFS:exists("assets/mod_overrides/Spotter attachment/main.xml") then
 table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
@@ -3490,7 +3490,7 @@ table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_riflein762x39")
 end
 end
 -- M60
-if self.wpn_fps_lmg_m60 then
+if wpn_fps_lmg_m60 then
 if SystemFS:exists("assets/mod_overrides/Spotter attachment/main.xml") then
 table.insert(self.wpn_fps_lmg_m60.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
@@ -5704,7 +5704,7 @@ table.insert(self.wpn_fps_snp_m1894.uses_parts, "wpn_fps_upg_o_rusak")
 end
 end
 -- Magpul FMG-9
-if self.wpn_fps_smg_fmg9 then
+if wpn_fps_smg_fmg9 then
 if SystemFS:exists("assets/mod_overrides/Spotter attachment/main.xml") then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_fl_ass_spotter")
