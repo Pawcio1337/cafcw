@@ -979,7 +979,7 @@ table.insert(self.parts.wpn_fps_ass_sks_irons.forbids, "wpn_fps_upg_o_delta_rm55
 table.insert(self.parts.wpn_fps_upg_sks_leupold_pro.forbids, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_sks = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_snp_siltstone)
 end
-if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") and self.parts.wpn_fps_riflein762x39 then
 table.insert(self.wpn_fps_ass_sks.uses_parts, "wpn_fps_riflein762x39")
 end
 end
@@ -1443,7 +1443,7 @@ if SystemFS:exists("assets/mod_overrides/Leupold DeltaPoint Sight on RM55 Mount/
 table.insert(self.wpn_fps_ass_aku94.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_aku94 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_l85a2)
 end
-if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") and self.parts.wpn_fps_riflein762x39 then
 table.insert(self.wpn_fps_ass_aku94.uses_parts, "wpn_fps_riflein762x39")
 end
 end
@@ -1658,7 +1658,7 @@ if SystemFS:exists("assets/mod_overrides/Leupold DeltaPoint Sight on RM55 Mount/
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_galil)
 end
-if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") and self.parts.wpn_fps_riflein762x39 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_riflein762x39")
 end
 end
@@ -2128,7 +2128,7 @@ table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_upg_o_delta_rm55")
 table.insert(self.parts.wpn_fps_ass_vz58_irons.forbids, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_vz58 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_akm)
 end
-if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") and self.parts.wpn_fps_riflein762x39 then
 table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_riflein762x39")
 end
 end
@@ -3485,7 +3485,7 @@ end
 if SystemFS:exists("assets/mod_overrides/InForce WML/main.xml") then
 table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_upg_fl_wml")
 end
-if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
+if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") and self.parts.wpn_fps_riflein762x39 then
 table.insert(self.wpn_fps_lmg_rpd.uses_parts, "wpn_fps_riflein762x39")
 end
 end
@@ -5704,7 +5704,7 @@ table.insert(self.wpn_fps_snp_m1894.uses_parts, "wpn_fps_upg_o_rusak")
 end
 end
 -- Magpul FMG-9
-if self.wpn_fps_smg_fmg9 then
+if self.wpn_fps_smg_fmg9 and self.wpn_fps_smg_x_fmg9 then
 if SystemFS:exists("assets/mod_overrides/Spotter attachment/main.xml") then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_fl_ass_spotter")
@@ -5810,10 +5810,12 @@ table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_o_delta_rm55")
 end
 end
 -- APS
-if self.wpn_fps_pis_aps then
+if self.wpn_fps_pis_aps and self.wpn_fps_x_aps then
 if SystemFS:exists("assets/mod_overrides/Sneaky Suppressor Pack/main.xml") then
 table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_ass_ns_g_sup1")
 table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_ass_ns_g_sup2")
+table.insert(self.wpn_fps_x_aps.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_x_aps.uses_parts, "wpn_fps_ass_ns_g_sup2")
 end
 if SystemFS:exists("assets/mod_overrides/Incendiary_ammo/main.xml") then
 table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_pistolin9mm")
