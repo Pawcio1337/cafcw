@@ -2181,7 +2181,7 @@ table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_o_zeiss")
 end
 if self.parts.wpn_fps_upg_o_deltatitanium then
 table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_o_deltatitanium")
-	self.parts.wpn_fps_upg_o_deltatitanium.stance_mod.wpn_fps_snp_sr25 = {translation = Vector3(-0.002, -25, -0.854)}
+	self.parts.wpn_fps_upg_o_deltatitanium.stance_mod.wpn_fps_snp_sr25 = {translation = Vector3(-0.002, -22, -0.854)}
 end
 if self.parts.wpn_fps_upg_o_okp7 then
 table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_o_okp7")
@@ -4404,7 +4404,7 @@ table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_deltatitanium")
 		"wpn_fps_snp_xm21_scope_mount"
 	}
 	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_deltatitanium = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_deltatitanium.stance_mod.wpn_fps_snp_xm21 = {translation = Vector3(-0.02, -28, -5.97)}
+	self.parts.wpn_fps_upg_o_deltatitanium.stance_mod.wpn_fps_snp_xm21 = {translation = Vector3(-0.02, -25, -5.97)}
 end
 if self.parts.wpn_fps_upg_o_okp7 then
 table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_okp7")
@@ -5309,6 +5309,7 @@ table.insert(self.wpn_fps_ass_svt40.uses_parts, "wpn_fps_upg_o_prismatic")
 	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_ass_svt40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_siltstone)
 end
 if self.parts.wpn_fps_upg_fl_ass_spotter then
+table.insert(self.parts.wpn_fps_upg_svt40_pu_scope_switch.forbids, "wpn_fps_upg_fl_ass_spotter")
 table.insert(self.wpn_fps_ass_svt40.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
 if self.parts.wpn_fps_upg_o_srs then
@@ -5361,6 +5362,7 @@ table.insert(self.wpn_fps_ass_svt40.uses_parts, "wpn_fps_upg_o_susat")
 	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_svt40 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_snp_siltstone)
 end
 if self.parts.wpn_fps_upg_fl_wml then
+table.insert(self.parts.wpn_fps_upg_svt40_pu_scope_switch.forbids, "wpn_fps_upg_fl_wml")
 table.insert(self.wpn_fps_ass_svt40.uses_parts, "wpn_fps_upg_fl_wml")
 end
 if self.parts.wpn_fps_upg_o_kemper then
@@ -5387,7 +5389,7 @@ end
 if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_svt40.uses_parts, "wpn_fps_upg_o_delta_rm55")
 table.insert(self.parts.wpn_fps_ass_svt40_irons.forbids, "wpn_fps_upg_o_delta_rm55")
-table.insert(self.parts.wpn_fps_upg_svt40_pu_scope.forbids, "wpn_fps_upg_o_delta_rm55")
+table.insert(self.parts.wpn_fps_upg_svt40_pu_scope_switch.forbids, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_svt40 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_snp_siltstone)
 end
 end
