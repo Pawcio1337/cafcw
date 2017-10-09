@@ -1599,12 +1599,8 @@ if self.parts.wpn_fps_upg_o_rusak then
 table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_rusak")
 	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
 end
-if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_ionshot and self.parts.wpn_fps_taserslug and self.parts.wpn_fps_aptaser and self.parts.wpn_fps_hvshell then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_xrepslug")
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_ionshot")
+if self.parts.wpn_fps_taserslug then
 table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_taserslug")
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_aptaser")
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_hvshell")
 end
 if self.parts.wpn_fps_upg_ns_sho_salvo_small then
 table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_ns_sho_salvo_small")
