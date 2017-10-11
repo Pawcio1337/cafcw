@@ -132,6 +132,10 @@ if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_m27gear = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_m4)
 end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_o_horzine")
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_m27gear = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m4)
+end
 end
 
 end)

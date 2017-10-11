@@ -177,6 +177,13 @@ table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_taserslug")
 table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_aptaser")
 table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_hvshell")
 end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_shot_toz194_ris_special"
+	}
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
+end
 end
 
 --Spectre M4
@@ -362,6 +369,13 @@ end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_pistolin9mm")
 end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_smg_spectre_m4_o_adapter"
+	}
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
+end
 end
 
 --QBZ-95
@@ -535,6 +549,13 @@ if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_famas)
 end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_ass_qbz95_rail"
+	}
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_famas)
+end
 end
 
 --STG 44
@@ -707,6 +728,13 @@ end
 if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_fal)
+end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_ass_stg44_ris_special"
+	}
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
 end
 end
 
@@ -932,6 +960,15 @@ table.insert(self.wpn_fps_shot_m590.uses_parts, "wpn_fps_taserslug")
 table.insert(self.wpn_fps_shot_m590.uses_parts, "wpn_fps_aptaser")
 table.insert(self.wpn_fps_shot_m590.uses_parts, "wpn_fps_hvshell")
 end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_shot_m590.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_shot_m590.override.wpn_fps_upg_o_horzine = {
+		stance_mod = {wpn_fps_shot_m590 = {translation = Vector3(-0.02, 0, -3.7)}}
+	}
+	self.wpn_fps_shot_m590.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_shot_m590_ris_special"
+	}
+end
 end
 
 --MP40
@@ -1103,6 +1140,13 @@ table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_rusak")
 end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_pistolin9mm")
+end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_smg_mp40_ris_special"
+	}
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
 end
 end
 
@@ -1295,6 +1339,14 @@ table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_o_rusak")
 	self.wpn_fps_ass_qbz3.override.wpn_fps_upg_o_rusak = {a_obj = "a_o_sm"}
 	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_ass_qbz3 = deep_clone(self.parts.wpn_fps_upg_o_ak_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_74)
 end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_ass_qbz3.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_ass_qbz3_mount"
+	}
+	self.wpn_fps_ass_qbz3.override.wpn_fps_upg_o_horzine = {a_obj = "a_o_sm"}
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_qbz3 = deep_clone(self.parts.wpn_fps_upg_o_ak_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_74)
+end
 end
 
 --Fort-500
@@ -1472,6 +1524,13 @@ table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_taserslug")
 table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_aptaser")
 table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_hvshell")
 end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_shot_f500_ris_special"
+	}
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
+end
 end
 
 -- Makarov
@@ -1604,6 +1663,10 @@ table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_taserslug")
 end
 if self.parts.wpn_fps_upg_ns_sho_salvo_small then
 table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_ns_sho_salvo_small")
+end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_horzine")
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
 end
 end
 

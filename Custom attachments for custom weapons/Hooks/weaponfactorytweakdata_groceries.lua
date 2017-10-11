@@ -151,6 +151,12 @@ table.insert(self.wpn_fps_ass_tilt.uses_parts, "wpn_fps_upg_o_rusak")
 		"wpn_fps_upg_o_tilt_scopemount"
 	}
 end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_ass_tilt.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_ass_tilt.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_upg_o_tilt_scopemount"
+	}
+end
 end
 
 --
@@ -266,6 +272,10 @@ end
 if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_smg_pdr = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_aug)
+end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_horzine")
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_pdr = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_aug)
 end
 -- Update v1.68.199
 table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_xpsg33_magnifier")
