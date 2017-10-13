@@ -2978,6 +2978,9 @@ table.insert(self.wpn_fps_ass_xm8.uses_parts, "wpn_fps_upg_o_delta_rm55")
 end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_xm8.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_ass_xm8.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_ass_xm8_handguard_rail"
+	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_xm8 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_g36)
 end
 end
@@ -5822,10 +5825,16 @@ table.insert(self.wpn_fps_smg_ppsh.uses_parts, "wpn_fps_upg_o_st10")
 end
 if self.parts.wpn_fps_upg_o_elo then
 table.insert(self.wpn_fps_smg_ppsh.uses_parts, "wpn_fps_upg_o_elo")
+	self.wpn_fps_smg_ppsh.adds.wpn_fps_upg_o_elo = {
+		"wpn_fps_smg_ppsh_rail"
+	}
 	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_smg_ppsh = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
 end
 if self.parts.wpn_fps_upg_o_po4 then
 table.insert(self.wpn_fps_smg_ppsh.uses_parts, "wpn_fps_upg_o_po4")
+	self.wpn_fps_smg_ppsh.adds.wpn_fps_upg_o_po4 = {
+		"wpn_fps_smg_ppsh_rail"
+	}
 	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_ppsh = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_m45)
 end
 if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
@@ -5834,6 +5843,9 @@ table.insert(self.wpn_fps_smg_ppsh.uses_parts, "wpn_fps_ass_ns_g_sup4")
 end
 if self.parts.wpn_fps_upg_o_susat then
 table.insert(self.wpn_fps_smg_ppsh.uses_parts, "wpn_fps_upg_o_susat")
+	self.wpn_fps_smg_ppsh.adds.wpn_fps_upg_o_susat = {
+		"wpn_fps_smg_ppsh_rail"
+	}
 	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_ppsh = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_m45)
 end
 if self.parts.wpn_fps_upg_fl_wml then
@@ -5862,6 +5874,9 @@ table.insert(self.wpn_fps_smg_ppsh.uses_parts, "wpn_fps_upg_o_rusak")
 end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_smg_ppsh.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_smg_ppsh.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_smg_ppsh_rail"
+	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_ppsh = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
 end
 end
