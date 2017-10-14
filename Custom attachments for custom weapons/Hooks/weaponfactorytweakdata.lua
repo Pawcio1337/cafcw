@@ -3581,6 +3581,9 @@ table.insert(self.wpn_fps_shot_mp153.uses_parts, "wpn_fps_taserslug")
 end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_shot_mp153.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_shot_mp153.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_shot_mp153_rail"
+	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_shot_mp153 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
 end
 end
@@ -4078,6 +4081,9 @@ table.insert(self.parts.wpn_fps_upg_svd_leupold_pro.forbids, "wpn_fps_upg_o_delt
 end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_snp_svd.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_snp_svd.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_snp_svd_molot_mount"
+	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_svd = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_siltstone)
 end
 end
@@ -4904,6 +4910,9 @@ table.insert(self.parts.wpn_fps_upg_type38_irons_ladder.forbids, "wpn_fps_upg_o_
 end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_snp_type38.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_snp_type38.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_snp_type38_sightrail"
+	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_type38 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_mosin)
 end
 end
@@ -5570,6 +5579,9 @@ table.insert(self.parts.wpn_fps_upg_svt40_pu_scope_switch.forbids, "wpn_fps_upg_
 end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_svt40.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_ass_svt40.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_ass_svt40_sight_mount"
+	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_svt40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_siltstone)
 end
 end
