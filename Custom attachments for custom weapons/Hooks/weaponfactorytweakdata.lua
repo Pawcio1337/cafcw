@@ -6276,9 +6276,6 @@ end
 if self.wpn_fps_ass_sks then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_sks = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_snp_siltstone)
 end
-if self.wpn_fps_ass_acw then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_acw = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_ak5)
-end
 if self.wpn_fps_ass_f2000 then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_f2000 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_vhs)
 end
@@ -6308,17 +6305,8 @@ end
 if self.wpn_fps_ass_vz58 then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_vz58 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_akm)
 end
-if self.wpn_fps_ass_stealthy then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_stealthy = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_galil)
-end
-if self.wpn_fps_smg_evo then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_evo = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_schakal)
-end
 if self.wpn_fps_snp_sr25 then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_snp_sr25 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_m16)
-end
-if self.wpn_fps_ass_m1c then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_m1c = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_m14)
 end
 if self.wpn_fps_sho_usas12 then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_sho_usas12 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_sho_aa12)
@@ -6420,27 +6408,17 @@ end
 if self.wpn_fps_ass_svt40 then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_svt40 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_snp_siltstone)
 end
---
 if self.wpn_fps_smg_mpx then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_mpx = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_olympic)
 end
 if self.wpn_fps_smg_ppsh then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_ppsh = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_m45)
 end
-if self.wpn_fps_smg_kedr then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_kedr = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_tec9)
-end
 if self.wpn_fps_smg_ump then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_ump = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_mp5)
 end
 if self.wpn_fps_smg_cbjms then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_cbjms = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_mp9)
-end
-if self.wpn_fps_pis_m29 then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_pis_m29 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_pis_rage)
-end
-if self.wpn_fps_pis_shatters_fury then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_pis_shatters_fury = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_pis_rage)
 end
 if self.wpn_fps_smg_vityaz then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_vityaz = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_flint)
@@ -6462,6 +6440,24 @@ if self.wpn_fps_smg_k1a7 then
 end
 if self.wpn_fps_smg_mp40 then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_m45)
+end
+if self.wpn_fps_shot_prison then
+	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_shot_prison = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_sho_spas12)
+end
+if self.wpn_fps_ass_stg44 then
+	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_fal)
+end
+if self.wpn_fps_ass_qbz3 then
+	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_qbz3 = deep_clone(self.parts.wpn_fps_upg_o_ak_scopemount.override.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_74)
+end
+if self.wpn_fps_shot_f500 then
+	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_shot_r870)
+end
+if self.wpn_fps_shot_qbs then
+	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_sho_ben)
+end
+if self.wpn_fps_smg_js2 then
+	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_smg_js2 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_aug)
 end
 end
 -- Trijicon ACOG TA648RMR Scope
