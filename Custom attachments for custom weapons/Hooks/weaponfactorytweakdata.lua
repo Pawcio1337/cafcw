@@ -1,6 +1,6 @@
 Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWModInit", function(self)
 --
---		Primary
+-- Primary
 --
 -- AK12
 if self.wpn_fps_ass_ak12 then
@@ -5586,7 +5586,7 @@ table.insert(self.wpn_fps_ass_svt40.uses_parts, "wpn_fps_upg_o_horzine")
 end
 end
 --
---		Secondary
+-- Secondary
 --
 -- MPX
 if self.wpn_fps_smg_mpx then
@@ -6247,8 +6247,17 @@ table.insert(self.wpn_fps_pis_b93r.uses_parts, "wpn_fps_ass_ns_g_sup1")
 table.insert(self.wpn_fps_pis_b93r.uses_parts, "wpn_fps_ass_ns_g_sup2")
 end
 end
+-- Walther P99
+if self.wpn_fps_pis_p99 then
+if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
+	self.wpn_fps_pis_p99.override.wpn_fps_ass_ns_g_sup1 = {a_obj = "a_ns",parent = "barrel"}
+	self.wpn_fps_pis_p99.override.wpn_fps_ass_ns_g_sup2 = {a_obj = "a_ns",parent = "barrel"}
+table.insert(self.wpn_fps_pis_p99.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_pis_p99.uses_parts, "wpn_fps_ass_ns_g_sup2")
+end
+end
 --
---		Attachments
+-- Attachments
 --
 -- Trijicon ACOG TA31F-RMR Scope
 if self.parts.wpn_fps_upg_o_acog_rmr then
