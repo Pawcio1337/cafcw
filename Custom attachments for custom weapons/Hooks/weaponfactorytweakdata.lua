@@ -6402,6 +6402,7 @@ end
 if self.parts.wpn_fps_upg_o_deltapoint then
 	self.wpn_fps_pis_hk45c.override.wpn_fps_upg_o_deltapoint = {parent = "slide"}
 	self.wpn_fps_pis_hk45c.adds.wpn_fps_upg_o_deltapoint = {"wpn_fps_pis_hk45c_sight_nonstance"}
+	self.parts.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_hk45c = deep_clone(self.parts.wpn_fps_upg_o_rmr.stance_mod.wpn_fps_pis_packrat)
 table.insert(self.wpn_fps_pis_hk45c.uses_parts, "wpn_fps_upg_o_deltapoint")
 end
 end
