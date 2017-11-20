@@ -178,6 +178,9 @@ end
 if self.parts.wpn_fps_riflein556 then
 table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_riflein556")
 end
+if self.parts.wpn_fps_upg_a_taser556 then
+table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_upg_a_taser556")
+end
 if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_howa = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_galil)
@@ -222,6 +225,11 @@ table.insert(self.wpn_fps_shot_trench.uses_parts, "wpn_fps_ionshot")
 table.insert(self.wpn_fps_shot_trench.uses_parts, "wpn_fps_taserslug")
 table.insert(self.wpn_fps_shot_trench.uses_parts, "wpn_fps_aptaser")
 table.insert(self.wpn_fps_shot_trench.uses_parts, "wpn_fps_hvshell")
+end
+if self.parts.wpn_fps_upg_a_minislug and self.parts.wpn_fps_upg_a_poisonslug and self.parts.wpn_fps_upg_a_minibuck then
+table.insert(self.wpn_fps_shot_trench.uses_parts, "wpn_fps_upg_a_minislug")
+table.insert(self.wpn_fps_shot_trench.uses_parts, "wpn_fps_upg_a_poisonslug")
+table.insert(self.wpn_fps_shot_trench.uses_parts, "wpn_fps_upg_a_minibuck")
 end
 end
 
@@ -664,6 +672,9 @@ end
 if self.parts.wpn_fps_riflein556 then
 table.insert(self.wpn_fps_lmg_negev.uses_parts, "wpn_fps_riflein556")
 end
+if self.parts.wpn_fps_upg_a_taser556 then
+table.insert(self.wpn_fps_lmg_negev.uses_parts, "wpn_fps_upg_a_taser556")
+end
 end
 
 
@@ -773,6 +784,15 @@ table.insert(self.wpn_fps_smg_storm.uses_parts, "wpn_fps_upg_o_rusak")
 end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_smg_storm.uses_parts, "wpn_fps_pistolin9mm")
+end
+if self.parts.wpn_fps_upg_a_taser9mm then
+table.insert(self.wpn_fps_smg_storm.uses_parts, "wpn_fps_upg_a_taser9mm")
+end
+if self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_smg_storm.uses_parts, "wpn_fps_upg_a_lap9mm")
+end
+if self.parts.wpn_fps_upg_a_ap9mm then
+table.insert(self.wpn_fps_smg_storm.uses_parts, "wpn_fps_upg_a_ap9mm")
 end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_smg_storm.uses_parts, "wpn_fps_upg_o_horzine")
@@ -960,6 +980,9 @@ end
 if self.parts.wpn_fps_riflein556 then
 table.insert(self.wpn_fps_ass_mini14.uses_parts, "wpn_fps_riflein556")
 end
+if self.parts.wpn_fps_upg_a_taser556 then
+table.insert(self.wpn_fps_ass_mini14.uses_parts, "wpn_fps_upg_a_taser556")
+end
 if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_mini14.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_mini14 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_m14)
@@ -988,6 +1011,15 @@ table.insert(self.wpn_fps_pis_k5.uses_parts, "wpn_fps_ass_ns_g_sup2")
 end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_pis_k5.uses_parts, "wpn_fps_pistolin9mm")
+end
+if self.parts.wpn_fps_upg_a_taser9mm then
+table.insert(self.wpn_fps_pis_k5.uses_parts, "wpn_fps_upg_a_taser9mm")
+end
+if self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_pis_k5.uses_parts, "wpn_fps_upg_a_lap9mm")
+end
+if self.parts.wpn_fps_upg_a_ap9mm then
+table.insert(self.wpn_fps_pis_k5.uses_parts, "wpn_fps_upg_a_ap9mm")
 end
 end
 
@@ -1098,6 +1130,9 @@ end
 if self.parts.wpn_fps_riflein556 then
 table.insert(self.wpn_fps_ass_k2.uses_parts, "wpn_fps_riflein556")
 end
+if self.parts.wpn_fps_upg_a_taser556 then
+table.insert(self.wpn_fps_ass_k2.uses_parts, "wpn_fps_upg_a_taser556")
+end
 if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_k2.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_k2 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_ak5)
@@ -1122,6 +1157,9 @@ table.insert(self.wpn_fps_lmg_k3.uses_parts, "wpn_fps_upg_fl_wml")
 end
 if self.parts.wpn_fps_riflein556 then
 table.insert(self.wpn_fps_lmg_k3.uses_parts, "wpn_fps_riflein556")
+end
+if self.parts.wpn_fps_upg_a_taser556 then
+table.insert(self.wpn_fps_lmg_k3.uses_parts, "wpn_fps_upg_a_taser556")
 end
 end
 
@@ -1238,6 +1276,30 @@ table.map_append(self.parts.wpn_fps_smg_k1a7_m_9mm,{
 )
 table.map_append(self.parts.wpn_fps_smg_k1a7_mag,{
 		forbids = {"wpn_fps_pistolin9mm"}
+	}
+)
+end
+if self.parts.wpn_fps_upg_a_taser556 and self.parts.wpn_fps_upg_a_taser9mm and self.parts.wpn_fps_upg_a_ap9mm and self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_upg_a_taser556")
+table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_upg_a_taser9mm")
+table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_upg_a_lap9mm")
+table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_upg_a_ap9mm")
+table.map_append(self.parts.wpn_fps_smg_k1a7_m_9mm,{
+		forbids = {"wpn_fps_upg_a_taser556"}
+	}
+)
+table.map_append(self.parts.wpn_fps_smg_k1a7_mag,{
+		forbids = {"wpn_fps_upg_a_taser9mm","wpn_fps_upg_a_lap9mm","wpn_fps_upg_a_ap9mm"}
+	}
+)
+end
+if self.parts.wpn_fps_riflein556 and self.parts.wpn_fps_pistolin9mm and self.parts.wpn_fps_upg_a_taser556 and self.parts.wpn_fps_upg_a_taser9mm and self.parts.wpn_fps_upg_a_ap9mm and self.parts.wpn_fps_upg_a_lap9mm then
+table.map_append(self.parts.wpn_fps_smg_k1a7_m_9mm,{
+		forbids = {"wpn_fps_upg_a_taser556","wpn_fps_riflein556"}
+	}
+)
+table.map_append(self.parts.wpn_fps_smg_k1a7_mag,{
+		forbids = {"wpn_fps_pistolin9mm","wpn_fps_upg_a_taser9mm","wpn_fps_upg_a_lap9mm","wpn_fps_upg_a_ap9mm"}
 	}
 )
 end
@@ -1390,6 +1452,15 @@ table.insert(self.wpn_fps_smg_js2.uses_parts, "wpn_fps_upg_o_rusak")
 end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_smg_js2.uses_parts, "wpn_fps_pistolin9mm")
+end
+if self.parts.wpn_fps_upg_a_taser9mm then
+table.insert(self.wpn_fps_smg_js2.uses_parts, "wpn_fps_upg_a_taser9mm")
+end
+if self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_smg_js2.uses_parts, "wpn_fps_upg_a_lap9mm")
+end
+if self.parts.wpn_fps_upg_a_ap9mm then
+table.insert(self.wpn_fps_smg_js2.uses_parts, "wpn_fps_upg_a_ap9mm")
 end
 if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_smg_js2.uses_parts, "wpn_fps_upg_o_delta_rm55")
@@ -1555,6 +1626,15 @@ end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_pistolin9mm")
 end
+if self.parts.wpn_fps_upg_a_taser9mm then
+table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_a_taser9mm")
+end
+if self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_a_lap9mm")
+end
+if self.parts.wpn_fps_upg_a_ap9mm then
+table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_a_ap9mm")
+end
 end
 
 
@@ -1589,6 +1669,15 @@ table.insert(self.wpn_fps_smg_chang6.uses_parts, "wpn_fps_upg_fl_wml")
 end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_smg_chang6.uses_parts, "wpn_fps_pistolin9mm")
+end
+if self.parts.wpn_fps_upg_a_taser9mm then
+table.insert(self.wpn_fps_smg_chang6.uses_parts, "wpn_fps_upg_a_taser9mm")
+end
+if self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_smg_chang6.uses_parts, "wpn_fps_upg_a_lap9mm")
+end
+if self.parts.wpn_fps_upg_a_ap9mm then
+table.insert(self.wpn_fps_smg_chang6.uses_parts, "wpn_fps_upg_a_ap9mm")
 end
 self.wpn_fps_smg_chang6.override = {
 		wpn_fps_upg_fl_ass_spotter = {a_obj = "a_b"},

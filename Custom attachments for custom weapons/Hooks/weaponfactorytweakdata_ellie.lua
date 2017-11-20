@@ -259,6 +259,9 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Ellie_Init",
 		if self.parts.wpn_fps_riflein556 then
 		table.insert(self.wpn_fps_ass_ar160.uses_parts, "wpn_fps_riflein556")
 		end
+		if self.parts.wpn_fps_upg_a_taser556 then
+		table.insert(self.wpn_fps_ass_ar160.uses_parts, "wpn_fps_upg_a_taser556")
+		end
 		if self.parts.wpn_fps_upg_o_delta_rm55 then
 		table.insert(self.wpn_fps_ass_ar160.uses_parts, "wpn_fps_upg_o_delta_rm55")
 			self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_ar160 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_amcar)
