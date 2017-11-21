@@ -681,8 +681,11 @@ table.insert(self.wpn_fps_smg_tm1a1.uses_parts, "wpn_fps_upg_o_rmr_riser")
 end
 if self.parts.wpn_fps_upg_fl_ass_spotter then
 table.insert(self.wpn_fps_smg_tm1a1.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-table.insert(self.wpn_fps_smg_x_tm1a1.uses_parts, "wpn_fps_upg_fl_wml")
-    self.wpn_fps_smg_x_tm1a1.adds.wpn_fps_upg_fl_wml = {
+table.insert(self.wpn_fps_smg_x_tm1a1.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+    self.wpn_fps_smg_x_tm1a1.adds.wpn_fps_upg_fl_ass_spotter = {
+		"wpn_fps_shot_r870_gadget_rail"
+    }
+    self.wpn_fps_smg_tm1a1.adds.wpn_fps_upg_fl_ass_spotter = {
 		"wpn_fps_shot_r870_gadget_rail"
     }
 end
@@ -709,7 +712,10 @@ table.insert(self.wpn_fps_smg_tm1a1.uses_parts, "wpn_fps_upg_o_susat")
 end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_smg_tm1a1.uses_parts, "wpn_fps_upg_fl_wml")
-table.insert(self.wpn_fps_smg_x_tm1a1.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+table.insert(self.wpn_fps_smg_x_tm1a1.uses_parts, "wpn_fps_upg_fl_wml")
+    self.wpn_fps_smg_x_tm1a1.adds.wpn_fps_upg_fl_wml = {
+		"wpn_fps_shot_r870_gadget_rail"
+    }
     self.wpn_fps_smg_tm1a1.adds.wpn_fps_upg_fl_wml = {
 		"wpn_fps_shot_r870_gadget_rail"
     }
