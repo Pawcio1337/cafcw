@@ -1949,4 +1949,22 @@ end
 end
 
 
+--MAG7
+if self.wpn_fps_shot_techno then
+if self.parts.wpn_fps_upg_fl_ass_spotter then
+table.insert(self.wpn_fps_shot_techno.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+end
+if self.parts.wpn_fps_upg_fl_wml then
+table.insert(self.wpn_fps_shot_techno.uses_parts, "wpn_fps_upg_fl_wml")
+end
+if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_ionshot and self.parts.wpn_fps_taserslug and self.parts.wpn_fps_aptaser and self.parts.wpn_fps_hvshell then
+table.insert(self.wpn_fps_shot_techno.uses_parts, "wpn_fps_xrepslug")
+table.insert(self.wpn_fps_shot_techno.uses_parts, "wpn_fps_ionshot")
+table.insert(self.wpn_fps_shot_techno.uses_parts, "wpn_fps_taserslug")
+table.insert(self.wpn_fps_shot_techno.uses_parts, "wpn_fps_aptaser")
+table.insert(self.wpn_fps_shot_techno.uses_parts, "wpn_fps_hvshell")
+end
+end
+
+
 end)
