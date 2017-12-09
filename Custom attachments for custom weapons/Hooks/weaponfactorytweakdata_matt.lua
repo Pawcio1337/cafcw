@@ -3,7 +3,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Matt_Init", 
 --		Secondary
 --
 -- UMP
-if self.wpn_fps_smg_ump then
+if self.wpn_fps_smg_ump and self.wpn_fps_smg_x_ump then
 if self.parts.wpn_fps_upg_o_kobra then
 table.insert(self.wpn_fps_smg_ump.uses_parts, "wpn_fps_upg_o_kobra")
 	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_smg_ump = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_mp5)
@@ -54,6 +54,7 @@ table.insert(self.wpn_fps_smg_ump.uses_parts, "wpn_fps_upg_o_prismatic")
 end
 if self.parts.wpn_fps_upg_fl_ass_spotter then
 table.insert(self.wpn_fps_smg_ump.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+table.insert(self.wpn_fps_smg_x_ump.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
 if self.parts.wpn_fps_upg_o_srs then
 table.insert(self.wpn_fps_smg_ump.uses_parts, "wpn_fps_upg_o_srs")
@@ -93,6 +94,7 @@ table.insert(self.wpn_fps_smg_ump.uses_parts, "wpn_fps_upg_o_susat")
 end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_smg_ump.uses_parts, "wpn_fps_upg_fl_wml")
+table.insert(self.wpn_fps_smg_x_ump.uses_parts, "wpn_fps_upg_fl_wml")
 end
 if self.parts.wpn_fps_upg_o_kemper then
 table.insert(self.wpn_fps_smg_ump.uses_parts, "wpn_fps_upg_o_kemper")
@@ -109,15 +111,6 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_smg_ump.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_ump = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_mp5)
-end
-end
--- Akimbo UMP
-if self.wpn_fps_smg_x_ump then
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_smg_x_ump.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_smg_x_ump.uses_parts, "wpn_fps_upg_fl_wml")
 end
 end
 end)

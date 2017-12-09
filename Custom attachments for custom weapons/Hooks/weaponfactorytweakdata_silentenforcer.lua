@@ -192,7 +192,7 @@ end
 end
 
 --Spectre M4
-if self.wpn_fps_smg_spectre_m4 then
+if self.wpn_fps_smg_spectre_m4 and self.wpn_fps_smg_x_spectre_m4 then
 if self.parts.wpn_fps_upg_o_kobra then
 table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_kobra")
 	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_kobra = {
@@ -1567,7 +1567,7 @@ end
 end
 
 -- Makarov
-if self.wpn_fps_pis_pm then
+if self.wpn_fps_pis_pm and self.wpn_fps_pis_x_pm then
 if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
 table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_ass_ns_g_sup1")
 table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_ass_ns_g_sup2")

@@ -647,7 +647,7 @@ end
 
 
 -- KRISS KARD
-if self.wpn_fps_pis_kard then
+if self.wpn_fps_pis_kard and self.wpn_fps_pis_x_kard then
 if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
 table.insert(self.wpn_fps_pis_kard.uses_parts, "wpn_fps_ass_ns_g_sup1")
 table.insert(self.wpn_fps_pis_kard.uses_parts, "wpn_fps_ass_ns_g_sup2")
@@ -1474,7 +1474,7 @@ end
 
 
 --Minebee9
-if self.wpn_fps_smg_minebea then
+if self.wpn_fps_smg_minebea and self.wpn_fps_smg_x_minebea then
 if self.parts.wpn_fps_upg_o_kobra then
 table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_o_kobra")
 	self.wpn_fps_smg_minebea.adds.wpn_fps_upg_o_kobra = {
@@ -1952,7 +1952,7 @@ end
 
 
 --MAG7
-if self.wpn_fps_shot_techno then
+if self.wpn_fps_shot_techno and self.wpn_fps_shot_x_techno then
 if self.parts.wpn_fps_upg_fl_ass_spotter then
 table.insert(self.wpn_fps_shot_techno.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 table.insert(self.wpn_fps_shot_x_techno.uses_parts, "wpn_fps_upg_fl_ass_spotter")

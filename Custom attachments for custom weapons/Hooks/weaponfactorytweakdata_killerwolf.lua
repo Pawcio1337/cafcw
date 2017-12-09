@@ -566,7 +566,7 @@ end
 	---- Submachine Guns ----
 	
 	-- Thompson M1A1 / Akimbo Thompson M1A1 --
-if self.wpn_fps_smg_tm1a1 and self.wpn_fps_smg_tm1a1.adds then
+if self.wpn_fps_smg_tm1a1 and self.wpn_fps_smg_x_tm1a1 then
 if self.parts.wpn_fps_upg_o_kobra then
 table.insert(self.wpn_fps_smg_tm1a1.uses_parts, "wpn_fps_upg_o_kobra")
 	self.wpn_fps_smg_tm1a1.adds.wpn_fps_upg_o_kobra = {
