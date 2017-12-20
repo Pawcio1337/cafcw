@@ -120,6 +120,11 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_ak12 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_flint)
 end
+if self.parts.wpn_fps_shield_m4 then
+table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_shield_m4")
+table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_shield_skin_urban")
+end
 end
 -- M40A5
 if self.wpn_fps_snp_m40a5 then
@@ -710,6 +715,11 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_fd338.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_fd338 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
 end
+if self.parts.wpn_fps_shield_lr then
+table.insert(self.wpn_fps_ass_fd338.uses_parts, "wpn_fps_shield_lr")
+table.insert(self.wpn_fps_ass_fd338.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_fd338.uses_parts, "wpn_fps_shield_skin_urban")
+end
 end
 -- HK G36K
 if self.wpn_fps_ass_g36k then
@@ -832,6 +842,11 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_g36k.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_g36k = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_g36)
+end
+if self.parts.wpn_fps_shield_v2 then
+table.insert(self.wpn_fps_ass_g36k.uses_parts, "wpn_fps_shield_v2")
+table.insert(self.wpn_fps_ass_g36k.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_g36k.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 -- SKS
@@ -1251,6 +1266,11 @@ table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_upg_o_horzine")
 end
 if self.parts.wpn_fps_upg_ns_sho_salvo_small then
 table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_upg_ns_sho_salvo_small")
+end
+if self.parts.wpn_fps_shield_m4 then
+table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_shield_m4")
+table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 -- SV-98
@@ -2368,6 +2388,11 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_sr25 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m16)
 end
+if self.parts.wpn_fps_shield_lr then
+table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_shield_lr")
+table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_shield_skin_urban")
+end
 end
 -- OTs-14-4A Groza
 if self.wpn_fps_ass_ots_14_4a then
@@ -3437,6 +3462,11 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_a545.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_a545 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
 end
+if self.parts.wpn_fps_shield_aug then
+table.insert(self.wpn_fps_ass_a545.uses_parts, "wpn_fps_shield_aug")
+table.insert(self.wpn_fps_ass_a545.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_a545.uses_parts, "wpn_fps_shield_skin_urban")
+end
 end
 -- Baikal MP-153
 if self.wpn_fps_shot_mp153 then
@@ -3645,6 +3675,15 @@ end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_lmg_m60.uses_parts, "wpn_fps_upg_fl_wml")
 end
+if self.parts.wpn_fps_shield_lmg and self.parts.wpn_fps_lmg_m60e4_body then
+table.insert(self.wpn_fps_lmg_m60.uses_parts, "wpn_fps_shield_lmg")
+table.insert(self.wpn_fps_lmg_m60.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_lmg_m60.uses_parts, "wpn_fps_shield_skin_urban")
+table.map_append(self.parts.wpn_fps_lmg_m60_body,{
+		forbids = {"wpn_fps_shield_lmg"}
+	}
+)
+end
 end
 -- Ohio Ordnance HCAR
 if self.wpn_fps_ass_hcar then
@@ -3766,6 +3805,11 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_hcar = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
+end
+if self.parts.wpn_fps_shield_lr then
+table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_shield_lr")
+table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 -- HK416
@@ -3889,6 +3933,11 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_hk416.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_hk416 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m4)
+end
+if self.parts.wpn_fps_shield_m4 then
+table.insert(self.wpn_fps_ass_hk416.uses_parts, "wpn_fps_shield_m4")
+table.insert(self.wpn_fps_ass_hk416.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_hk416.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 -- SVD
@@ -4360,6 +4409,11 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_obr7.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_obr7 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_tti)
 end
+if self.parts.wpn_fps_shield_lr then
+table.insert(self.wpn_fps_ass_obr7.uses_parts, "wpn_fps_shield_lr")
+table.insert(self.wpn_fps_ass_obr7.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_obr7.uses_parts, "wpn_fps_shield_skin_urban")
+end
 end
 -- FN SCAR-L
 if self.wpn_fps_ass_scarl then
@@ -4482,6 +4536,11 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_scarl.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_scarl = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_scar)
+end
+if self.parts.wpn_fps_shield_m4 then
+table.insert(self.wpn_fps_ass_scarl.uses_parts, "wpn_fps_shield_m4")
+table.insert(self.wpn_fps_ass_scarl.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_scarl.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 -- XM21
@@ -4733,6 +4792,11 @@ table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_horzine")
 	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_horzine = {a_obj = "a_o_sm"}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
 end
+if self.parts.wpn_fps_shield_dmr then
+table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_shield_dmr")
+table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_shield_skin_urban")
+end
 end
 -- Arisaka Type 38
 if self.wpn_fps_snp_type38 then
@@ -4941,6 +5005,11 @@ table.insert(self.wpn_fps_snp_type38.uses_parts, "wpn_fps_upg_o_horzine")
 		"wpn_fps_snp_type38_sightrail"
 	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_type38 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_mosin)
+end
+if self.parts.wpn_fps_shield_aug then
+table.insert(self.wpn_fps_snp_type38.uses_parts, "wpn_fps_shield_aug")
+table.insert(self.wpn_fps_snp_type38.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_snp_type38.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 -- IWI X95
@@ -7027,6 +7096,11 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_r0933blk = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_olympic)
+end
+if self.parts.wpn_fps_shield_m4 then
+table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_shield_m4")
+table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 -- SVU

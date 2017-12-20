@@ -304,6 +304,10 @@ table.insert(self.parts.wpn_fps_shot_pa8_s_folding.forbids, "wpn_fps_upg_o_rusak
 	}
 	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_shot_pa8 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
 end
+--if self.parts.wpn_fps_shield_shotgun then
+--table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_shield_shotgun")
+--table.insert(self.parts.wpn_fps_shot_pa8_b_short.forbids, "wpn_fps_shield_shotgun")
+--end
 end
 	
 	---- Sniper Rifles ----
@@ -559,6 +563,11 @@ if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_aptaser and self.parts.wpn
 			"wpn_fps_upg_a_dragons_breath"}
 	}
 	)
+end
+if self.parts.wpn_fps_shield_aug then
+table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_aug")
+table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 	

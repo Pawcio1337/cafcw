@@ -192,6 +192,11 @@ table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_upg_o_horzine")
 	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_howa = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
 end
+if self.parts.wpn_fps_shield_aug then
+table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_shield_aug")
+table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_shield_skin_urban")
+end
 end
 
 --Browning LMG
@@ -202,6 +207,11 @@ end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_ass_bar.uses_parts, "wpn_fps_upg_fl_wml")
 end
+if self.parts.wpn_fps_shield_lr then
+table.insert(self.wpn_fps_ass_bar.uses_parts, "wpn_fps_shield_lr")
+table.insert(self.wpn_fps_ass_bar.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_ass_bar.uses_parts, "wpn_fps_shield_skin_urban")
+end
 end
 
 --PKP Pecheneg LMG
@@ -211,6 +221,11 @@ table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_upg_fl_wml")
+end
+if self.parts.wpn_fps_shield_lmg then
+table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_shield_lmg")
+table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 
@@ -531,6 +546,11 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_snp_qbu88.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_qbu88 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_wa2000)
+end
+if self.parts.wpn_fps_shield_lmg then
+table.insert(self.wpn_fps_snp_qbu88.uses_parts, "wpn_fps_shield_lmg")
+table.insert(self.wpn_fps_snp_qbu88.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_snp_qbu88.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 
@@ -1310,6 +1330,11 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_k1a7 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m4)
+end
+if self.parts.wpn_fps_shield_m4 then
+table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_shield_m4")
+table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_shield_skin_ftp")
+table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_shield_skin_urban")
 end
 end
 
