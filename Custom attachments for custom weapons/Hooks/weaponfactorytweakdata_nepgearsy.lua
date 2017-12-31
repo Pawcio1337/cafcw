@@ -106,7 +106,6 @@ table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_ass_ns_g_sup4")
 end
 if self.parts.wpn_fps_upg_o_susat then
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_o_susat")
-	
 	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_m27gear = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_m4)
 end
 if self.parts.wpn_fps_upg_fl_wml then
@@ -143,6 +142,10 @@ end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_m27gear = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m4)
+end
+if self.parts.wpn_fps_upg_o_eotech553 then
+table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_o_eotech553")
+	self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_ass_m27gear = deep_clone(self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_ass_m4)
 end
 end
 

@@ -178,6 +178,13 @@ table.insert(self.wpn_fps_sho_usas12.uses_parts, "wpn_fps_upg_o_horzine")
 	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_sho_usas12 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_aa12)
 end
+if self.parts.wpn_fps_upg_o_eotech553 then
+table.insert(self.wpn_fps_sho_usas12.uses_parts, "wpn_fps_upg_o_eotech553")
+	self.wpn_fps_sho_usas12.adds.wpn_fps_upg_o_eotech553 = {
+		"wpn_fps_sho_usas12_body_rail"
+	}
+	self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_sho_usas12 = deep_clone(self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_sho_aa12)
+end
 end
 --
 if self.wpn_fps_shot_prison then
@@ -357,6 +364,13 @@ table.insert(self.wpn_fps_shot_prison.uses_parts, "wpn_fps_upg_o_horzine")
 		"wpn_fps_shot_r870_ris_special"
 	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_shot_prison = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_spas12)
+end
+if self.parts.wpn_fps_upg_o_eotech553 then
+table.insert(self.wpn_fps_shot_prison.uses_parts, "wpn_fps_upg_o_eotech553")
+	self.wpn_fps_shot_prison.adds.wpn_fps_upg_o_eotech553 = {
+		"wpn_fps_shot_r870_ris_special"
+	}
+	self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_shot_prison = deep_clone(self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_sho_spas12)
 end
 end
 end)

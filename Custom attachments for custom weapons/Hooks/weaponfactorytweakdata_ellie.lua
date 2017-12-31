@@ -143,6 +143,10 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Ellie_Init",
 		table.insert(self.wpn_fps_snp_fyjs.uses_parts, "wpn_fps_upg_o_horzine")
 			self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_fyjs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_msr)
 		end
+		if self.parts.wpn_fps_upg_o_eotech553 then
+		table.insert(self.wpn_fps_snp_fyjs.uses_parts, "wpn_fps_upg_o_eotech553")
+			self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_snp_fyjs = deep_clone(self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_snp_msr)
+		end
 		-- Update v1.68.199
 		table.insert(self.wpn_fps_snp_fyjs.uses_parts, "wpn_fps_upg_o_xpsg33_magnifier")
 			self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_snp_fyjs = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_snp_msr)
@@ -269,6 +273,10 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Ellie_Init",
 		if self.parts.wpn_fps_upg_o_horzine then
 		table.insert(self.wpn_fps_ass_ar160.uses_parts, "wpn_fps_upg_o_horzine")
 			self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_ar160 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_amcar)
+		end
+		if self.parts.wpn_fps_upg_o_eotech553 then
+		table.insert(self.wpn_fps_ass_ar160.uses_parts, "wpn_fps_upg_o_eotech553")
+			self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_ass_ar160 = deep_clone(self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_ass_amcar)
 		end
 		-- Update v1.68.199
 		table.insert(self.wpn_fps_ass_ar160.uses_parts, "wpn_fps_upg_o_xpsg33_magnifier")
