@@ -274,9 +274,9 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_pdr = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_aug)
 end
-if self.parts.wpn_fps_upg_o_eotech553 then
-table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_eotech553")
-	self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_smg_pdr = deep_clone(self.parts.wpn_fps_upg_o_eotech553.stance_mod.wpn_fps_ass_aug)
+if self.parts.wpn_fps_upg_o_eotech552 then
+table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_eotech552")
+	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_pdr = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_aug)
 end
 -- Update v1.68.199
 table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_xpsg33_magnifier")
