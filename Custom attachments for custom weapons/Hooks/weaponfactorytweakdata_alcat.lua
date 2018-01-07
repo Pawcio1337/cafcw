@@ -2286,6 +2286,27 @@ table.insert(self.wpn_fps_snp_spring.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_snp_spring = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_snp_model70)
 end
 end
+		
+
+--MG5 LMG
+if self.wpn_fps_lmg_mg5 then
+if self.parts.wpn_fps_upg_fl_ass_spotter then
+table.insert(self.wpn_fps_lmg_mg5.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+end
+if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
+table.insert(self.wpn_fps_lmg_mg5.uses_parts, "wpn_fps_ass_ns_g_sup3")
+table.insert(self.wpn_fps_lmg_mg5.uses_parts, "wpn_fps_ass_ns_g_sup4")
+end
+if self.parts.wpn_fps_upg_fl_wml then
+table.insert(self.wpn_fps_lmg_mg5.uses_parts, "wpn_fps_upg_fl_wml")
+end
+if self.parts.wpn_fps_riflein556 then
+table.insert(self.wpn_fps_lmg_mg5.uses_parts, "wpn_fps_riflein556")
+end
+if self.parts.wpn_fps_upg_a_taser556 then
+table.insert(self.wpn_fps_lmg_mg5.uses_parts, "wpn_fps_upg_a_taser556")
+end
+end
 
 
 end)
