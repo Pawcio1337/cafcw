@@ -8,10 +8,11 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Killerwolf_I
 
 	-- Akimbo HK416C --
 if self.wpn_fps_ass_x_hk416c then
-if self.parts.wpn_fps_upg_m4_s_caastock and self.parts.wpn_fps_upg_m4_s_caastock_black and self.parts.wpn_fps_upg_m4_s_hke1 then
+if self.parts.wpn_fps_upg_m4_s_caastock and self.parts.wpn_fps_upg_m4_s_caastock_black and self.parts.wpn_fps_upg_m4_s_hke1 and self.parts.wpn_fps_upg_m4_s_viper then
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_caastock")
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_caastock_black")
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_hke1")
+table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_viper")
 end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_fl_wml")
