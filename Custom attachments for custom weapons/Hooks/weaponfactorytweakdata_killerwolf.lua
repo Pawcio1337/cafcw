@@ -785,9 +785,53 @@ end
 	
 	-- Colt M1911A1 / Akimbo Colt M1911A1 --
 	
+	-- GSh-18 / Akimbo GSh-18 --
+if self.wpn_fps_pis_gsh18 and self.wpn_fps_pis_x_gsh18 then
+if self.parts.wpn_fps_upg_a_7h21 and self.parts.wpn_fps_upg_a_7h31 then
+table.insert(self.wpn_fps_pis_gsh18.uses_parts, "wpn_fps_upg_a_7h31")
+table.insert(self.wpn_fps_pis_x_gsh18.uses_parts, "wpn_fps_upg_a_7h31")
+table.insert(self.wpn_fps_pis_gsh18.uses_parts, "wpn_fps_upg_a_7h21")
+table.insert(self.wpn_fps_pis_x_gsh18.uses_parts, "wpn_fps_upg_a_7h21")
+end
+if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
+table.insert(self.wpn_fps_pis_gsh18.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_pis_gsh18.uses_parts, "wpn_fps_ass_ns_g_sup2")
+table.insert(self.wpn_fps_pis_x_gsh18.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_pis_x_gsh18.uses_parts, "wpn_fps_ass_ns_g_sup2")
+end
+end
+	
 	---- Shotuns ---
 	---- Sniper Rifles ----
 	---- Specials ----
 	---- Submachine Guns ----
+	
+	-- AEK-919K / Akimbo AEK-919K --
+if self.wpn_fps_smg_aek919 and self.wpn_fps_smg_x_aek919 then
+if self.parts.wpn_fps_pistolin9mm then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_pistolin9mm")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_pistolin9mm")
+end
+if self.parts.wpn_fps_upg_a_taser9mm then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_upg_a_taser9mm")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_upg_a_taser9mm")
+end
+if self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_upg_a_lap9mm")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_upg_a_lap9mm")
+end
+if self.parts.wpn_fps_upg_a_ap9mm then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_upg_a_ap9mm")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_upg_a_ap9mm")
+end
+if self.parts.wpn_fps_ass_ns_g_sup3 then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_ass_ns_g_sup3")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_ass_ns_g_sup3")
+end
+if self.parts.wpn_fps_ass_ns_g_sup4 then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_ass_ns_g_sup4")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_ass_ns_g_sup4")
+end
+end
 
 end)

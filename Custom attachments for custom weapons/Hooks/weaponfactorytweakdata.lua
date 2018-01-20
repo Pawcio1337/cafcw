@@ -7278,6 +7278,10 @@ end
 if self.parts.wpn_fps_upg_a_ap9mm then
 table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_a_ap9mm")
 end
+if self.parts.wpn_fps_upg_a_7h21 and self.parts.wpn_fps_upg_a_7h31 then
+table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_a_7h31")
+table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_a_7h21")
+end
 if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_o_delta_rm55")
 	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_smg_vityaz = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_flint)
