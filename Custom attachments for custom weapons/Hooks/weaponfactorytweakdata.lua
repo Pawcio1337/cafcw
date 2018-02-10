@@ -735,11 +735,8 @@ table.insert(self.wpn_fps_ass_fd338.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_ass_fd338.uses_parts, "wpn_fps_shield_skin_urban")
 end
 if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_ass_sr3m.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_ass_sr3m.adds.wpn_fps_upg_o_eotech552 = {
-		"wpn_fps_ass_sr3m_scopemount"
-	}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_sr3m = {translation = Vector3(0, 14, -6.48) + Vector3(0, 0, 0.335),rotation = Rotation(0, 0, 0)}
+table.insert(self.wpn_fps_ass_fd338.uses_parts, "wpn_fps_upg_o_eotech552")
+	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_fd338 = {translation = Vector3(0, 4, -3.5) + Vector3(0, 0, 0.335),rotation = Rotation(0, 0, 0)}
 end
 end
 -- HK G36K
