@@ -6841,6 +6841,18 @@ table.insert(self.wpn_fps_ass_sar21.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_sar21 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_corgi)
 end
 end
+-- Winchester Model 1912
+if self.wpn_fps_shot_m1912 then
+if self.parts.wpn_fps_upg_fl_ass_spotter then
+table.insert(self.wpn_fps_shot_m1912.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+end
+if self.parts.wpn_fps_upg_fl_wml then
+table.insert(self.wpn_fps_shot_m1912.uses_parts, "wpn_fps_upg_fl_wml")
+end
+if self.parts.wpn_fps_upg_ns_sho_salvo_small then
+table.insert(self.wpn_fps_shot_m1912.uses_parts, "wpn_fps_upg_ns_sho_salvo_small")
+end
+end
 --
 -- Secondary
 --
