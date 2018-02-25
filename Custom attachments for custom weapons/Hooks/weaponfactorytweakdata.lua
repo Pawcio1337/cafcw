@@ -8092,6 +8092,7 @@ if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
 table.insert(self.wpn_fps_pis_m712.uses_parts, "wpn_fps_ass_ns_g_sup1")
 table.insert(self.wpn_fps_pis_m712.uses_parts, "wpn_fps_ass_ns_g_sup2")
 end
+end
 --
 -- Attachments
 --
