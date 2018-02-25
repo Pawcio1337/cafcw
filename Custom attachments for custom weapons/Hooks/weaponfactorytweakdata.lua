@@ -8084,6 +8084,14 @@ table.insert(self.wpn_fps_snp_svu.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_snp_svu = {translation = Vector3(0, 5, -0.68) + Vector3(0, 0, 0.335)}
 end
 end
+-- Mauser M712 Schnellfeuer
+if self.wpn_fps_pis_m712 then
+if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
+	self.wpn_fps_pis_m712.override.wpn_fps_ass_ns_g_sup1 = {a_obj = "a_ns",	parent = "barrel"}
+	self.wpn_fps_pis_m712.override.wpn_fps_ass_ns_g_sup2 = {a_obj = "a_ns",	parent = "barrel"}
+table.insert(self.wpn_fps_pis_m712.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_pis_m712.uses_parts, "wpn_fps_ass_ns_g_sup2")
+end
 --
 -- Attachments
 --
