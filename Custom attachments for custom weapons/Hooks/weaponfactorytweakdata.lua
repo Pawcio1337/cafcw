@@ -6948,8 +6948,8 @@ table.insert(self.wpn_fps_smg_mpx.uses_parts, "wpn_fps_upg_o_po4")
 	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_mpx = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_olympic)
 end
 if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.parts.wpn_fps_smg_mpx_fg_mpx_sd.forbids, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.parts.wpn_fps_smg_mpx_fg_mpx_sd.forbids, "wpn_fps_ass_ns_g_sup4")
+table.insert(self.parts.wpn_fps_upg_mpx_barrel_sd.forbids, "wpn_fps_ass_ns_g_sup3")
+table.insert(self.parts.wpn_fps_upg_mpx_barrel_sd.forbids, "wpn_fps_ass_ns_g_sup4")
 table.insert(self.wpn_fps_smg_mpx.uses_parts, "wpn_fps_ass_ns_g_sup3")
 table.insert(self.wpn_fps_smg_mpx.uses_parts, "wpn_fps_ass_ns_g_sup4")
 end
