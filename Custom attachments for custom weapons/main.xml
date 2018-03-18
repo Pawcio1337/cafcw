@@ -13,5 +13,6 @@
 		<hook file="weaponfactorytweakdata_matt.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_silentenforcer.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_nepgearsy.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponfactorytweakdata_vxwolf.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 	</Hooks>
 </table>
