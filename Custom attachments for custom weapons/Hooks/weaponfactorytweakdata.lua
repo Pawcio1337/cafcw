@@ -1051,6 +1051,9 @@ table.insert(self.wpn_fps_ass_sks.uses_parts, "wpn_fps_riflein762x39")
 end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_sks.uses_parts, "wpn_fps_upg_o_horzine")
+	self.wpn_fps_ass_sks.adds.wpn_fps_upg_o_horzine = {
+		"wpn_fps_ass_sks_molot_mount"
+	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_sks = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_siltstone)
 end
 if self.parts.wpn_fps_upg_o_eotech552 then
@@ -8331,6 +8334,12 @@ end
 end
 -- Beretta Px4 Storm
 if self.wpn_fps_pis_px4 then
+if self.parts.wpn_fps_upg_o_deltapoint then
+	self.wpn_fps_pis_px4.override.wpn_fps_upg_o_deltapoint = {parent = "slide"}
+	self.wpn_fps_pis_px4.adds.wpn_fps_upg_o_deltapoint = {"wpn_fps_pis_px4_sight_nonstance"}
+	self.parts.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_px4 = deep_clone(self.parts.wpn_fps_upg_o_rmr.stance_mod.wpn_fps_pis_sparrow)
+table.insert(self.wpn_fps_pis_px4.uses_parts, "wpn_fps_upg_o_deltapoint")
+end
 if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
 	self.wpn_fps_pis_px4.override.wpn_fps_ass_ns_g_sup1 = {a_obj = "a_ns",parent = "barrel"}
 	self.wpn_fps_pis_px4.override.wpn_fps_ass_ns_g_sup2 = {a_obj = "a_ns",parent = "barrel"}
