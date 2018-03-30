@@ -7860,7 +7860,7 @@ end
 if self.parts.wpn_fps_upg_o_deltapoint then
 	self.wpn_fps_pis_hk45c.override.wpn_fps_upg_o_deltapoint = {parent = "slide"}
 	self.wpn_fps_pis_hk45c.adds.wpn_fps_upg_o_deltapoint = {"wpn_fps_pis_hk45c_sight_nonstance"}
-	self.parts.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_hk45c = deep_clone(self.parts.wpn_fps_upg_o_rmr.stance_mod.wpn_fps_pis_packrat)
+	self.parts.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_hk45c = deep_clone(self.parts.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_packrat)
 table.insert(self.wpn_fps_pis_hk45c.uses_parts, "wpn_fps_upg_o_deltapoint")
 end
 end
@@ -8337,7 +8337,7 @@ if self.wpn_fps_pis_px4 then
 if self.parts.wpn_fps_upg_o_deltapoint then
 	self.wpn_fps_pis_px4.override.wpn_fps_upg_o_deltapoint = {parent = "slide"}
 	self.wpn_fps_pis_px4.adds.wpn_fps_upg_o_deltapoint = {"wpn_fps_pis_px4_sight_nonstance"}
-	self.parts.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_px4 = deep_clone(self.parts.wpn_fps_upg_o_rmr.stance_mod.wpn_fps_pis_sparrow)
+	self.parts.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_px4 = deep_clone(self.parts.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_sparrow)
 table.insert(self.wpn_fps_pis_px4.uses_parts, "wpn_fps_upg_o_deltapoint")
 end
 if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
