@@ -2429,4 +2429,20 @@ table.insert(self.wpn_fps_shot_x_striker.uses_parts, "wpn_fps_upg_ns_sho_salvo_s
 end
 end
 
+-- Welrod
+if self.wpn_fps_pis_welrod then
+if self.parts.wpn_fps_pistolin9mm then
+table.insert(self.wpn_fps_pis_welrod.uses_parts, "wpn_fps_pistolin9mm")
+end
+if self.parts.wpn_fps_upg_a_taser9mm then
+table.insert(self.wpn_fps_pis_welrod.uses_parts, "wpn_fps_upg_a_taser9mm")
+end
+if self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_pis_welrod.uses_parts, "wpn_fps_upg_a_lap9mm")
+end
+if self.parts.wpn_fps_upg_a_ap9mm then
+table.insert(self.wpn_fps_pis_welrod.uses_parts, "wpn_fps_upg_a_ap9mm")
+end
+end
+
 end)
