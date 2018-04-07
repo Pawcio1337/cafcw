@@ -7864,6 +7864,14 @@ if self.parts.wpn_fps_upg_o_deltapoint then
 table.insert(self.wpn_fps_pis_hk45c.uses_parts, "wpn_fps_upg_o_deltapoint")
 end
 end
+if self.wpn_fps_x_hk45c then
+if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
+	self.wpn_fps_x_hk45c.override.wpn_fps_ass_ns_g_sup1 = {a_obj = "a_ns",parent = "barrel"}
+	self.wpn_fps_x_hk45c.override.wpn_fps_ass_ns_g_sup2 = {a_obj = "a_ns",parent = "barrel"}
+table.insert(self.wpn_fps_x_hk45c.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_x_hk45c.uses_parts, "wpn_fps_ass_ns_g_sup2")
+end
+end
 -- Steyr AUG A3 9mm XS
 if self.wpn_fps_smg_aug9mm then
 if self.parts.wpn_fps_upg_o_kobra then
