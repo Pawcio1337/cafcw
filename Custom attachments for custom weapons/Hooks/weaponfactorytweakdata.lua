@@ -7643,6 +7643,7 @@ end
 if self.parts.wpn_fps_upg_a_ap9mm then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_a_ap9mm")
 end
+end
 if self.wpn_fps_smg_x_fmg9 then
 if self.parts.wpn_fps_upg_fl_ass_spotter then
 table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_fl_ass_spotter")
