@@ -7624,29 +7624,42 @@ table.insert(self.wpn_fps_snp_m1894.uses_parts, "wpn_fps_upg_a_poison44")
 end
 end
 -- Magpul FMG-9
-if self.wpn_fps_smg_fmg9 and self.wpn_fps_smg_x_fmg9 then
+if self.wpn_fps_smg_fmg9 then
 if self.parts.wpn_fps_upg_fl_ass_spotter then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_fl_wml")
-table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_fl_wml")
 end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_pistolin9mm")
-table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_pistolin9mm")
 end
 if self.parts.wpn_fps_upg_a_taser9mm then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_a_taser9mm")
-table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_a_taser9mm")
 end
 if self.parts.wpn_fps_upg_a_lap9mm then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_a_lap9mm")
-table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_a_lap9mm")
 end
 if self.parts.wpn_fps_upg_a_ap9mm then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_a_ap9mm")
+end
+if self.wpn_fps_smg_x_fmg9 then
+if self.parts.wpn_fps_upg_fl_ass_spotter then
+table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+end
+if self.parts.wpn_fps_upg_fl_wml then
+table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_fl_wml")
+end
+if self.parts.wpn_fps_pistolin9mm then
+table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_pistolin9mm")
+end
+if self.parts.wpn_fps_upg_a_taser9mm then
+table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_a_taser9mm")
+end
+if self.parts.wpn_fps_upg_a_lap9mm then
+table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_a_lap9mm")
+end
+if self.parts.wpn_fps_upg_a_ap9mm then
 table.insert(self.wpn_fps_smg_x_fmg9.uses_parts, "wpn_fps_upg_a_ap9mm")
 end
 end
@@ -7764,12 +7777,10 @@ table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_o_eotech552")
 end
 end
 -- APS
-if self.wpn_fps_pis_aps and self.wpn_fps_x_aps then
+if self.wpn_fps_pis_aps then
 if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
 table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_ass_ns_g_sup1")
 table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_ass_ns_g_sup2")
-table.insert(self.wpn_fps_x_aps.uses_parts, "wpn_fps_ass_ns_g_sup1")
-table.insert(self.wpn_fps_x_aps.uses_parts, "wpn_fps_ass_ns_g_sup2")
 end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_pistolin9mm")
@@ -7782,6 +7793,12 @@ table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_upg_a_lap9mm")
 end
 if self.parts.wpn_fps_upg_a_ap9mm then
 table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_upg_a_ap9mm")
+end
+end
+if self.wpn_fps_x_aps then
+if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
+table.insert(self.wpn_fps_x_aps.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_x_aps.uses_parts, "wpn_fps_ass_ns_g_sup2")
 end
 end
 -- S&W M&P40 Pro
