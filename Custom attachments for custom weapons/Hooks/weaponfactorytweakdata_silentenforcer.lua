@@ -2326,6 +2326,11 @@ table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_eotech552")
 	}
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_fal)
 end
+if self.parts.wpn_fps_upg_a_he8mm and self.parts.wpn_fps_upg_a_ince8mm and self.parts.wpn_fps_upg_a_ap8mm  then
+	table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_a_he8mm")
+	table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_a_ince8mm")
+	table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_a_ap8mm")
+end
 end
 
 --Akimbo Jacket's Pieces
