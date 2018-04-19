@@ -147,6 +147,13 @@ if self.parts.wpn_fps_upg_o_eotech552 then
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_m27gear = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_m4)
 end
+if self.parts.wpn_fps_upg_m4_s_collapsed and self.parts.wpn_fps_upg_m4_s_pts_col and self.parts.wpn_fps_upg_m4_s_crane_col and self.parts.wpn_fps_upg_m4_s_mk46_col and self.parts.wpn_fps_upg_m4_s_ubr_col then
+table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_collapsed")
+table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_pts_col")
+table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_crane_col")
+table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
+table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
+end
 end
 
 end)

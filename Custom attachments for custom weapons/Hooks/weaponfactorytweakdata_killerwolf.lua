@@ -23,6 +23,13 @@ end
 if self.parts.wpn_fps_upg_a_taser556 then
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_a_taser556")
 end
+if self.parts.wpn_fps_upg_m4_s_collapsed and self.parts.wpn_fps_upg_m4_s_pts_col and self.parts.wpn_fps_upg_m4_s_crane_col and self.parts.wpn_fps_upg_m4_s_mk46_col and self.parts.wpn_fps_upg_m4_s_ubr_col then
+table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_collapsed")
+table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_pts_col")
+table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_crane_col")
+table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
+table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
+end
 end
 -- Akimbo Mauser C96 --
 if self.wpn_fps_pis_x_c96 then
@@ -833,138 +840,4 @@ table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_ass_ns_g_sup4")
 table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_ass_ns_g_sup4")
 end
 end
-
------------! > Attachments < !-----------
-if system exists stock attachment mod then
-
-if self.wpn_fps_ass_ak12 then
-table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_ak12.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_ass_sr3m then
-table.insert(self.wpn_fps_ass_sr3m.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_sr3m.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_sr3m.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_sr3m.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_sr3m.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_shot_ak12_76 then
-table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_shot_ak12_76.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_ass_rk62 then
-table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_ass_r0991 then
-table.insert(self.wpn_fps_ass_r0991.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_r0991.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_r0991.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_r0991.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_r0991.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_ass_vz58 then
-table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_vz58.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_snp_sr25 then
-table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_snp_sr25.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_ass_aek971 then
-table.insert(self.wpn_fps_ass_aek971.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_aek971.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_aek971.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_aek971.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_aek971.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_ass_hcar then
-table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_hcar.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_lmg_lsat then
-table.insert(self.wpn_fps_lmg_lsat.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_lmg_lsat.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_lmg_lsat.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_lmg_lsat.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_lmg_lsat.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_shot_vepr12 then
-table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_snp_mk12 then
-table.insert(self.wpn_fps_snp_mk12.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_snp_mk12.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_snp_mk12.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_snp_mk12.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_snp_mk12.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_smg_vityaz then
-table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_smg_vityaz.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_smg_r0933blk then
-table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_smg_r0933blk.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_ass_x_hk416c then
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-if self.wpn_fps_ass_m27gear then
-table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
-
-end
-
 end)
