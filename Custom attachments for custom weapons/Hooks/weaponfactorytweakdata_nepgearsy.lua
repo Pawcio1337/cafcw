@@ -130,7 +130,7 @@ end
 if self.parts.wpn_fps_upg_a_taser556 then
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_a_taser556")
 end
-if self.parts.wpn_fps_shield_m4 then
+if self.parts.wpn_fps_shield_m4 and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_shield_m4")
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_shield_skin_urban")

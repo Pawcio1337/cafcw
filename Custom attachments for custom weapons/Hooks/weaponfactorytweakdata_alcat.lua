@@ -192,7 +192,7 @@ table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_upg_o_horzine")
 	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_howa = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
 end
-if self.parts.wpn_fps_shield_aug then
+if self.parts.wpn_fps_shield_aug and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_shield_aug")
 table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_shield_skin_urban")
@@ -214,7 +214,7 @@ end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_ass_bar.uses_parts, "wpn_fps_upg_fl_wml")
 end
-if self.parts.wpn_fps_shield_lr then
+if self.parts.wpn_fps_shield_lr and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_ass_bar.uses_parts, "wpn_fps_shield_lr")
 table.insert(self.wpn_fps_ass_bar.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_ass_bar.uses_parts, "wpn_fps_shield_skin_urban")
@@ -229,7 +229,7 @@ end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_upg_fl_wml")
 end
-if self.parts.wpn_fps_shield_lmg then
+if self.parts.wpn_fps_shield_lmg and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_shield_lmg")
 table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_lmg_pecheneg.uses_parts, "wpn_fps_shield_skin_urban")
@@ -558,7 +558,7 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_snp_qbu88.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_qbu88 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_wa2000)
 end
-if self.parts.wpn_fps_shield_lmg then
+if self.parts.wpn_fps_shield_lmg and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_snp_qbu88.uses_parts, "wpn_fps_shield_lmg")
 table.insert(self.wpn_fps_snp_qbu88.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_snp_qbu88.uses_parts, "wpn_fps_shield_skin_urban")
@@ -1366,7 +1366,7 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_upg_o_horzine")
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_k1a7 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m4)
 end
-if self.parts.wpn_fps_shield_m4 then
+if self.parts.wpn_fps_shield_m4 and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_shield_m4")
 table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_smg_k1a7.uses_parts, "wpn_fps_shield_skin_urban")
@@ -2495,14 +2495,6 @@ table.insert(self.wpn_fps_ass_akrocket.uses_parts, "wpn_fps_upg_o_aog")
 	self.wpn_fps_ass_akrocket.override.wpn_fps_upg_o_aog = {a_obj = "a_o_sm"}
 	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_ass_akrocket = deep_clone(self.parts.wpn_fps_upg_o_ak_scopemount.override.wpn_fps_upg_o_acog.stance_mod.wpn_fps_smg_akmsu)
 end
--- if self.parts.wpn_fps_upg_o_st10 then   NEED CALIBRATION? DOES ST10 AVAILABLE FOR AKMSU?
--- table.insert(self.wpn_fps_ass_akrocket.uses_parts, "wpn_fps_upg_o_st10_sniper")
-	-- self.wpn_fps_ass_akrocket.adds.wpn_fps_upg_o_st10_sniper = {
-		-- "wpn_fps_ass_akrocket_o_rail"
-	-- }
-	-- self.wpn_fps_ass_akrocket.override.wpn_fps_upg_o_st10_sniper = {a_obj = "a_o_sm"}
-	-- self.parts.wpn_fps_upg_o_st10_sniper.stance_mod.wpn_fps_ass_akrocket = {translation = Vector3(-0.02, -30, -5.97)}
--- end
 if self.parts.wpn_fps_upg_o_elo then
 table.insert(self.wpn_fps_ass_akrocket.uses_parts, "wpn_fps_upg_o_elo")
 	self.wpn_fps_ass_akrocket.adds.wpn_fps_upg_o_elo = {
@@ -2554,15 +2546,6 @@ table.insert(self.wpn_fps_ass_akrocket.uses_parts, "wpn_fps_upg_o_rusak")
 	self.wpn_fps_ass_akrocket.override.wpn_fps_upg_o_rusak = {a_obj = "a_o_sm"}
 	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_ass_akrocket = deep_clone(self.parts.wpn_fps_upg_o_ak_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_akmsu)
 end
--- if self.parts.wpn_fps_upg_o_delta_rm55 then   AKMSU CANT USE 45deg OPTIC?
--- table.insert(self.wpn_fps_ass_akrocket.uses_parts, "wpn_fps_upg_o_delta_rm55")
--- table.insert(self.parts.wpn_fps_ass_akrocket_redfield_art.forbids, "wpn_fps_upg_o_delta_rm55")
--- table.insert(self.parts.wpn_fps_upg_xm21_irons.forbids, "wpn_fps_upg_o_delta_rm55")
-	-- self.wpn_fps_ass_akrocket.adds.wpn_fps_upg_o_delta_rm55 = {
-		-- "wpn_fps_ass_akrocket_offset_sight_rail"
-	-- }
-	-- self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_akrocket = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_m14)
--- end
 if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_akrocket.uses_parts, "wpn_fps_upg_o_horzine")
 	self.wpn_fps_ass_akrocket.adds.wpn_fps_upg_o_horzine = {

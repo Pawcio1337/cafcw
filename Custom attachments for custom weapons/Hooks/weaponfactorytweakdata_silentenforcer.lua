@@ -583,7 +583,7 @@ table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_horzine")
 	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_famas)
 end
-if self.parts.wpn_fps_shield_bullpup then
+if self.parts.wpn_fps_shield_bullpup and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_shield_bullpup")
 table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_shield_skin_urban")

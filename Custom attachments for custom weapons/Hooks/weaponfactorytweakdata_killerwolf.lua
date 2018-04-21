@@ -580,7 +580,7 @@ if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_aptaser and self.parts.wpn
 	}
 	)
 end
-if self.parts.wpn_fps_shield_aug then
+if self.parts.wpn_fps_shield_aug and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_aug")
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_skin_urban")
