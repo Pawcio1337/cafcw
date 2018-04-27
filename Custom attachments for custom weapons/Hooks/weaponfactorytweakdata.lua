@@ -7039,9 +7039,12 @@ table.insert(self.wpn_fps_snp_k31.uses_parts, "wpn_fps_upg_o_prismatic")
 	}
 	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_snp_k31 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_r93)
 end
---[[if self.parts.wpn_fps_upg_fl_ass_spotter then
+if self.parts.wpn_fps_upg_fl_ass_spotter then
 table.insert(self.wpn_fps_snp_k31.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end]]
+	self.wpn_fps_snp_k31.adds.wpn_fps_upg_fl_ass_spotter = {
+		"wpn_fps_snp_k31_gadget_rail"
+	}
+end
 if self.parts.wpn_fps_upg_o_srs then
 table.insert(self.wpn_fps_snp_k31.uses_parts, "wpn_fps_upg_o_srs")
 	self.wpn_fps_snp_k31.adds.wpn_fps_upg_o_srs = {
@@ -7105,9 +7108,12 @@ table.insert(self.wpn_fps_snp_k31.uses_parts, "wpn_fps_upg_o_susat")
 	}
 	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_snp_k31 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_snp_r93)
 end
---[[if self.parts.wpn_fps_upg_fl_wml then
+if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_snp_k31.uses_parts, "wpn_fps_upg_fl_wml")
-end]]
+	self.wpn_fps_snp_k31.adds.wpn_fps_upg_fl_wml = {
+		"wpn_fps_snp_k31_gadget_rail"
+	}
+end
 if self.parts.wpn_fps_upg_o_kemper then
 table.insert(self.wpn_fps_snp_k31.uses_parts, "wpn_fps_upg_o_kemper")
 	self.wpn_fps_snp_k31.adds.wpn_fps_upg_o_kemper = {
