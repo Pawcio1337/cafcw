@@ -7163,6 +7163,15 @@ table.insert(self.wpn_fps_snp_k31.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_snp_k31 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_snp_r93)
 end
 end
+-- Pancor Jackhammer
+if self.wpn_fps_shot_x_jackhammer then
+if self.parts.wpn_fps_upg_fl_ass_spotter then
+table.insert(self.wpn_fps_shot_x_jackhammer.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+end
+if self.parts.wpn_fps_upg_fl_wml then
+table.insert(self.wpn_fps_shot_x_jackhammer.uses_parts, "wpn_fps_upg_fl_wml")
+end
+end
 --
 -- Secondary
 --
