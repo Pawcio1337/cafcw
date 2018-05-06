@@ -141,8 +141,8 @@ end
 if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
 table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_ass_ns_g_sup3")
 table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_ass_ns_g_sup4")
---Bayonet forbid
-self.parts.wpn_fps_ass_howa_bayonet.forbids = {"wpn_fps_upg_ns_ass_smg_large", "wpn_fps_upg_ns_ass_smg_medium", "wpn_fps_upg_ns_ass_smg_small", "wpn_fps_ass_ns_g_sup3", "wpn_fps_ass_ns_g_sup4"}
+table.insert(self.parts.wpn_fps_ass_howa_bayonet.forbids, "wpn_fps_ass_ns_g_sup3")
+table.insert(self.parts.wpn_fps_ass_howa_bayonet.forbids, "wpn_fps_ass_ns_g_sup4")
 end
 if self.parts.wpn_fps_upg_o_susat then
 table.insert(self.wpn_fps_ass_howa.uses_parts, "wpn_fps_upg_o_susat")
@@ -2352,22 +2352,8 @@ end
 if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
 table.insert(self.wpn_fps_mp_peepee.uses_parts, "wpn_fps_ass_ns_g_sup3")
 table.insert(self.wpn_fps_mp_peepee.uses_parts, "wpn_fps_ass_ns_g_sup4")
-self.parts.wpn_fps_mp_peepee_b_conceal.forbids = {
-	"wpn_fps_ass_ns_g_sup3", 
-	"wpn_fps_ass_ns_g_sup4", 
-	"wpn_fps_upg_ns_ass_smg_large", 
-	"wpn_fps_upg_ns_ass_smg_medium", 
-	"wpn_fps_upg_ns_ass_smg_small", 
-	"wpn_fps_upg_ns_ass_smg_firepig", 
-	"wpn_fps_upg_ns_ass_smg_stubby", 
-	"wpn_fps_upg_ns_ass_smg_tank", 
-	"wpn_fps_upg_ass_ns_jprifles",
-	"wpn_fps_upg_ass_ns_linear", 
-	"wpn_fps_upg_ass_ns_surefire", 
-	"wpn_fps_upg_ass_ns_battle", 
-	"wpn_fps_smg_sr2_ns_silencer",	
-	"wpn_fps_smg_mp9_b_suppressed"
-	}
+table.insert(self.parts.wpn_fps_mp_peepee_b_conceal.forbids, "wpn_fps_ass_ns_g_sup3")
+table.insert(self.parts.wpn_fps_mp_peepee_b_conceal.forbids, "wpn_fps_ass_ns_g_sup4")
 end
 if self.parts.wpn_fps_pistolin9mm then
 table.insert(self.wpn_fps_mp_peepee.uses_parts, "wpn_fps_pistolin9mm")
@@ -2734,4 +2720,5 @@ end
 
 
 
+end)
 end)
