@@ -8633,6 +8633,7 @@ table.insert(self.wpn_fps_smg_pps42.uses_parts, "wpn_fps_upg_o_susat")
 	}
 	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_pps42 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_m45)
 end
+end
 --
 -- Attachments
 --
