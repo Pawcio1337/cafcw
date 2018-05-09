@@ -1561,55 +1561,55 @@ if self.parts.wpn_fps_upg_o_kobra then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_kobra")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_kobra = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_kobra = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_compm4s then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_compm4s")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_compm4s = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_compm4s = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_m145 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_m145")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_m145 = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_m145 = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_pkas then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_pkas")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_pkas = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_pkas = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_coyote then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_coyote")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_coyote = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_coyote = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_acog_rmr then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_acog_rmr")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_acog_rmr = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_acog_rmr = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_hologram then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_hologram")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_hologram = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_hologram = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_zeiss then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_zeiss")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_zeiss = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_zeiss = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_okp7 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_okp7")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_okp7 = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_okp7 = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_m4_s_caastock and self.parts.wpn_fps_upg_m4_s_caastock_black and self.parts.wpn_fps_upg_m4_s_hke1 and self.parts.wpn_fps_upg_m4_s_viper then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_m4_s_caastock")
@@ -1621,13 +1621,13 @@ if self.parts.wpn_fps_upg_o_hd33 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_hd33")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_hd33 = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_hd33 = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_prismatic then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_prismatic")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_prismatic = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_prismatic = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_fl_ass_spotter then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_fl_ass_spotter")
@@ -1636,42 +1636,42 @@ if self.parts.wpn_fps_upg_o_srs then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_srs")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_srs = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_srs = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_hcog then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_hcog")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_hcog = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_hcog = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_reflexholo then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_reflexholo")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_reflexholo = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_reflexholo = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_aog then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_aog")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_aog = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_aog = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_rmr_riser then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_rmr_riser")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_rmr_riser = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_rmr_riser = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 --[[if self.parts.wpn_fps_upg_o_st10 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_st10")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_st10 = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_st10.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_st10.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_st10.stance_mod.wpn_fps_ass_rk62 =
 end]]
 if self.parts.wpn_fps_upg_o_elo then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_elo")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_elo = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_elo = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_ass_ns_g_sup3")
@@ -1681,7 +1681,7 @@ end
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_susat")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_susat = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_susat = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_rk62 =
 end]]
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_fl_wml")
@@ -1690,23 +1690,23 @@ if self.parts.wpn_fps_upg_o_kemper then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_kemper")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_kemper = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_kemper = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_mepro then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_mepro")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_mepro = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_mepro = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 if self.parts.wpn_fps_upg_o_rusak then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_rusak")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_rusak = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_rusak = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 --[[if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_delta_rm55")
-	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_rk62 =
 end]]
 if self.parts.wpn_fps_riflein762x39 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_riflein762x39")
@@ -1715,13 +1715,13 @@ if self.parts.wpn_fps_upg_o_horzine then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_horzine")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_horzine = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_horzine = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_rk62)
 end
 --[[if self.parts.wpn_fps_upg_o_eotech552 then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.wpn_fps_ass_rk62.adds.wpn_fps_upg_o_eotech552 = {"wpn_fps_ass_rk62_rail"}
 	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_eotech552 = {a_obj = "a_o_railed"}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_galil)
+	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_rk62 =
 end]]
 if self.parts.wpn_fps_upg_m4_s_collapsed and self.parts.wpn_fps_upg_m4_s_pts_col and self.parts.wpn_fps_upg_m4_s_crane_col and self.parts.wpn_fps_upg_m4_s_mk46_col and self.parts.wpn_fps_upg_m4_s_ubr_col then
 table.insert(self.wpn_fps_ass_rk62.uses_parts, "wpn_fps_upg_m4_s_collapsed")
@@ -7573,6 +7573,94 @@ end
 if self.parts.wpn_fps_upg_a_ap9mm then
 table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_a_ap9mm")
 end
+--[[if self.parts.wpn_fps_upg_o_kobra then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_kobra")
+	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_compm4s then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_compm4s")
+	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_m145 then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_m145")
+	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_pkas then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_pkas")
+	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_coyote then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_coyote")
+	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_acog_rmr then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_acog_rmr")
+	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_hologram then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_hologram")
+	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_gitsch then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_gitsch")
+	self.parts.wpn_fps_upg_o_gitsch.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_zeiss then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_zeiss")
+	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_okp7 then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_okp7")
+	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_hd33 then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_hd33")
+	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_prismatic then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_prismatic")
+	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_srs then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_srs")
+	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_hcog then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_hcog")
+	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_reflexholo then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_reflexholo")
+	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_aog then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_aog")
+	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_rmr_riser then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_rmr_riser")
+	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_elo then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_elo")
+	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_kemper then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_kemper")
+	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_mepro then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_mepro")
+	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_rusak then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_rusak")
+	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end
+if self.parts.wpn_fps_upg_o_horzine then
+table.insert(self.wpn_fps_smg_fmg9.uses_parts, "wpn_fps_upg_o_horzine")
+	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_fmg9 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_fmg9)
+end]]
 end
 if self.wpn_fps_smg_x_fmg9 then
 if self.parts.wpn_fps_upg_fl_ass_spotter then
@@ -8508,14 +8596,9 @@ end
 if self.wpn_fps_ass_aku94 then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_aku94 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_l85a2)
 end
-if self.wpn_fps_ass_rk62 then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_rk62 = deep_clone(self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_galil)
---[[	self.parts.wpn_fps_upg_rk62_handguard_railed.override.wpn_fps_upg_o_acog_rmr_switch = {
-		stance_mod = {
-			wpn_fps_ass_rk62 = {translation = Vector3(0, -4, -7.6)}
-		}
-	}]]
-end
+--[[if self.wpn_fps_ass_rk62 then
+	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_rk62 =
+end]]
 if self.wpn_fps_snp_vss then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_snp_vss = {translation = Vector3(0, 10, -10.58)}
 end
