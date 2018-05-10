@@ -1069,7 +1069,7 @@ end
 if self.parts.wpn_fps_upg_a_taser556 then
 table.insert(self.wpn_fps_ass_f2000.uses_parts, "wpn_fps_upg_a_taser556")
 end
--if self.parts.wpn_fps_upg_o_delta_rm55 then
+if self.parts.wpn_fps_upg_o_delta_rm55 then
 table.insert(self.wpn_fps_ass_f2000.uses_parts, "wpn_fps_upg_o_delta_rm55")
 table.insert(self.parts.wpn_fps_ass_f2000_irons.forbids, "wpn_fps_upg_o_delta_rm55")
 table.insert(self.parts.wpn_fps_f2000_uupg_o_fnoptic.forbids, "wpn_fps_upg_o_delta_rm55")
@@ -5094,6 +5094,8 @@ end
 if self.parts.wpn_fps_upg_fl_ass_spotter then
 table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_fl_ass_spotter")
 	self.wpn_fps_shot_vepr12.adds.wpn_fps_upg_fl_ass_spotter = {"wpn_fps_shot_vepr12_gadget_rail"}
+	self.parts.wpn_fps_upg_vepr12_handguard_midwest.override.wpn_fps_upg_fl_ass_spotter = {a_obj = "a_fl_midwest"}
+	self.parts.wpn_fps_upg_vepr12_handguard_terminator.override.wpn_fps_upg_fl_ass_spotter = {a_obj = "a_fl_terminator"}
 end
 if self.parts.wpn_fps_upg_o_srs then
 table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_o_srs")
@@ -5147,6 +5149,8 @@ end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_fl_wml")
 	self.wpn_fps_shot_vepr12.adds.wpn_fps_upg_fl_wml = {"wpn_fps_shot_vepr12_gadget_rail"}
+	self.parts.wpn_fps_upg_vepr12_handguard_midwest.override.wpn_fps_upg_fl_wml = {a_obj = "a_fl_midwest"}
+	self.parts.wpn_fps_upg_vepr12_handguard_terminator.override.wpn_fps_upg_fl_wml = {a_obj = "a_fl_terminator"}
 end
 if self.parts.wpn_fps_upg_o_kemper then
 table.insert(self.wpn_fps_shot_vepr12.uses_parts, "wpn_fps_upg_o_kemper")
@@ -5579,6 +5583,14 @@ end
 if self.parts.wpn_fps_upg_o_eotech552 then
 table.insert(self.wpn_fps_ass_mdr.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_mdr = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_aug)
+end
+if self.parts.wpn_fps_upg_fl_ass_spotter then
+table.insert(self.wpn_fps_ass_mdr.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+	self.parts.wpn_fps_upg_mdr_gadgets_leftrail.override.wpn_fps_upg_fl_ass_spotter = {a_obj = "a_fl_leftrail"}
+end
+if self.parts.wpn_fps_upg_fl_wml then
+table.insert(self.wpn_fps_ass_mdr.uses_parts, "wpn_fps_upg_fl_wml")
+	self.parts.wpn_fps_upg_mdr_gadgets_leftrail.override.wpn_fps_upg_fl_wml = {a_obj = "a_fl_leftrail"}
 end
 end
 -- SIG SG 510
@@ -6809,6 +6821,14 @@ table.insert(self.wpn_fps_snp_m1894.uses_parts, "wpn_fps_upg_o_horzine")
 end
 if self.parts.wpn_fps_upg_a_poison44 then
 table.insert(self.wpn_fps_snp_m1894.uses_parts, "wpn_fps_upg_a_poison44")
+end
+if self.parts.wpn_fps_upg_fl_ass_spotter then
+table.insert(self.wpn_fps_snp_m1894.uses_parts, "wpn_fps_upg_fl_ass_spotter")
+	self.parts.wpn_fps_upg_m1894_gadgets_toprail.override.wpn_fps_upg_fl_ass_spotter = {a_obj = "a_fl_toprail"}
+end
+if self.parts.wpn_fps_upg_fl_wml then
+table.insert(self.wpn_fps_snp_m1894.uses_parts, "wpn_fps_upg_fl_wml")
+	self.parts.wpn_fps_upg_m1894_gadgets_toprail.override.wpn_fps_upg_fl_wml = {a_obj = "a_fl_toprail"}
 end
 end
 -- Magpul FMG-9
