@@ -17,14 +17,29 @@ end
 if self.wpn_fps_pis_p80 then
 	if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 and self.parts.wpn_fps_ass_ns_g_sup6 then
 		table.insert(self.wpn_fps_pis_p80.uses_parts, "wpn_fps_ass_ns_g_sup1")
-			self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup1 = {parent = "barrel",a_obj = "a_p80nsm"}
-			self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup1 = {a_obj = "a_p80nslm"}
+			if self.wpn_fps_pis_p80.override then 
+				self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup1 = {parent = "barrel",a_obj = "a_p80nsm"}
+				self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup1 = {a_obj = "a_p80nslm"}
+		--	else
+		--		self.wpn_fps_pis_p80.override = {wpn_fps_ass_ns_g_sup1 = {parent = "barrel",a_obj = "a_p80nsm"}}
+		--		self.parts.wpn_fps_pis_p80_s_long.override = {wpn_fps_ass_ns_g_sup1 = {a_obj = "a_p80nslm"}}
+			end
 		table.insert(self.wpn_fps_pis_p80.uses_parts, "wpn_fps_ass_ns_g_sup2")
-			self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup2 = {parent = "barrel",a_obj = "a_p80nsm"}
-			self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup2 = {a_obj = "a_p80nslm"}
+			if self.wpn_fps_pis_p80.override then 
+				self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup2 = {parent = "barrel",a_obj = "a_p80nsm"}
+				self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup2 = {a_obj = "a_p80nslm"}
+		--	else
+		--		self.wpn_fps_pis_p80.override = {wpn_fps_ass_ns_g_sup2 = {parent = "barrel",a_obj = "a_p80nsm"}}
+		--		self.parts.wpn_fps_pis_p80_s_long.override = {wpn_fps_ass_ns_g_sup2 = {a_obj = "a_p80nslm"}}
+			end
 		table.insert(self.wpn_fps_pis_p80.uses_parts, "wpn_fps_ass_ns_g_sup6")
-			self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup6 = {parent = "barrel",a_obj = "a_p80nsm"}
-			self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup6 = {a_obj = "a_p80nslm"}
+			if self.wpn_fps_pis_p80.override then 
+				self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup6 = {parent = "barrel",a_obj = "a_p80nsm"}
+				self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup6 = {a_obj = "a_p80nslm"}
+		--	else
+		--		self.wpn_fps_pis_p80.override = {wpn_fps_ass_ns_g_sup6 = {parent = "barrel",a_obj = "a_p80nsm"}}
+		--		self.parts.wpn_fps_pis_p80_s_long.override = {wpn_fps_ass_ns_g_sup6 = {a_obj = "a_p80nslm"}}
+			end
 	end
 	if self.parts.wpn_fps_pistolin9mm then
 		table.insert(self.wpn_fps_pis_p80.uses_parts, "wpn_fps_pistolin9mm")
