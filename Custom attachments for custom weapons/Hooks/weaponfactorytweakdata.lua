@@ -1,4 +1,4 @@
-Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWModInit", function(self)
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWModInit", function(self)
 --
 -- Primary
 --
@@ -8444,6 +8444,91 @@ if self.wpn_fps_snp_spring then
 end
 if self.wpn_fps_snp_classic then
 	self.parts.wpn_fps_upg_o_ta648rmr_switch.stance_mod.wpn_fps_snp_classic = deep_clone(self.parts.wpn_fps_upg_o_ta648rmr_switch.stance_mod.wpn_fps_snp_msr)
+end
+end
+
+-- AK Rail Cover
+if self.parts.wpn_fps_upg_o_ak_coverrail then
+if self.parts.wpn_fps_upg_o_kobra then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_kobra = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_compm4s then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_compm4s = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_m145 then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_m145 = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_pkas then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_pkas = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_coyote then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_coyote = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_acog_rmr then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_acog_rmr = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_hologram then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_hologram = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_gitsch then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_gitsch = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_zeiss then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_zeiss = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_okp7 then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_okp7 = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_hd33 then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_hd33 = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_prismatic then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_prismatic = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_srs then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_srs = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_st10 then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_st10 = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_hcog then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_hcog = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_reflexholo then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_reflexholo = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_aog then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_aog = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_rmr_riser then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_rmr_riser = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_elo then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_elo = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_po4 then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_po4 = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_susat then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_susat = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_kemper then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_kemper = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_mepro then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_mepro = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_rusak then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_rusak = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_horzine then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_horzine = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_eotech552 then
+	self.parts.wpn_fps_upg_o_ak_coverrail.override.wpn_fps_upg_o_eotech552 = {a_obj = "a_o_coverrail"}
+end
+if self.parts.wpn_fps_upg_o_delta_rm55 then
+table.insert(self.parts.wpn_fps_upg_o_ak_coverrail.forbids, "wpn_fps_upg_o_delta_rm55")
 end
 end
 end)

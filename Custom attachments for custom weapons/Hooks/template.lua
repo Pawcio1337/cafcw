@@ -1,5 +1,5 @@
 -- Add your mostly used nick on Modworkshop to ID below (Change only MWSNICK part):
-Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_MWSNICK_Init", function(self)
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_MWSNICK_Init", function(self)
 
 -- Example of adding custom weapon support:
 if self.wpn_fps_smg_example then
