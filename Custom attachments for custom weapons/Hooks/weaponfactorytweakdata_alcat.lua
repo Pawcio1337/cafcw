@@ -1,5 +1,7 @@
 Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Alcat_Init", function(self)
 
+--Custom Weapon
+
 --HOWA
 if self.wpn_fps_ass_howa then
 if self.parts.wpn_fps_upg_o_kobra then
@@ -3390,6 +3392,96 @@ table.insert(self.wpn_fps_ass_fusil.uses_parts, "wpn_fps_upg_m4_m_20rnd")
 end
 end
 
+
+
+
+
+--Custom Attachment
+
+-- FAMAS Feline
+if self.parts.wpn_fps_ass_famas_body_feline then
+if self.parts.wpn_fps_upg_o_kobra then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_kobra = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_compm4s then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_compm4s = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_m145 then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_m145 = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_pkas then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_pkas = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_coyote then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_coyote = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_acog_rmr then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_acog_rmr = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_hologram then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_hologram = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_gitsch then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_gitsch = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_zeiss then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_zeiss = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_okp7 then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_okp7 = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_hd33 then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_hd33 = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_prismatic then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_prismatic = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_srs then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_srs = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_st10 then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_st10 = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_hcog then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_hcog = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_reflexholo then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_reflexholo = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_aog then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_aog = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_rmr_riser then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_rmr_riser = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_elo then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_elo = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_po4 then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_po4 = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_susat then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_susat = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_kemper then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_kemper = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_mepro then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_mepro = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_rusak then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_rusak = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_horzine then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_horzine = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_eotech552 then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_eotech552 = {a_obj = "a_o_feline"}
+end
+if self.parts.wpn_fps_upg_o_delta_rm55 then
+table.insert(self.parts.wpn_fps_ass_famas_body_feline.forbids, "wpn_fps_upg_o_delta_rm55")
+end
+end
 
 
 
