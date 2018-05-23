@@ -3483,6 +3483,92 @@ table.insert(self.parts.wpn_fps_ass_famas_body_feline.forbids, "wpn_fps_upg_o_de
 end
 end
 
+-- Mk20 SSR
+if self.parts.wpn_fps_ass_scar_body_ssr then
+if self.parts.wpn_fps_upg_o_kobra then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_kobra = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_compm4s then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_compm4s = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_m145 then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_m145 = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_pkas then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_pkas = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_coyote then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_coyote = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_acog_rmr then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_acog_rmr = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_hologram then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_hologram = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_gitsch then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_gitsch = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_zeiss then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_zeiss = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_okp7 then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_okp7 = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_hd33 then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_hd33 = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_prismatic then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_prismatic = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_srs then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_srs = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_st10 then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_st10 = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_hcog then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_hcog = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_reflexholo then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_reflexholo = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_aog then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_aog = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_rmr_riser then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_rmr_riser = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_elo then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_elo = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_po4 then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_po4 = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_susat then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_susat = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_kemper then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_kemper = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_mepro then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_mepro = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_rusak then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_rusak = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_horzine then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_horzine = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_eotech552 then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_eotech552 = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+if self.parts.wpn_fps_upg_o_delta_rm55 then
+	self.parts.wpn_fps_ass_scar_body_ssr.override.wpn_fps_upg_o_delta_rm55 = { adds = {"wpn_fps_ass_scar_o_adjust_ssr"} }
+end
+end
+
+
 
 
 end)
