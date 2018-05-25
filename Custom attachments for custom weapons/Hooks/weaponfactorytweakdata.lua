@@ -1089,7 +1089,7 @@ if self.wpn_fps_ass_xm8 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_xm8", "wpn_fps_upg_fl_utg")
 end
 -- Galil ACE 23
-if self.wpn_fps_ass_galilace then
+if self.wpn_fps_ass_galilace and self.parts.wpn_fps_upg_galilace_gadgets_leftrail then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_m145", "specter", "wpn_fps_smg_hajk")
@@ -1132,7 +1132,7 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 end
 -- Galil ACE 52
-if self.wpn_fps_ass_galilace_762 then
+if self.wpn_fps_ass_galilace_762 and self.parts.wpn_fps_upg_galilace_gadgets_leftrail then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_m145", "specter", "wpn_fps_smg_hajk")
