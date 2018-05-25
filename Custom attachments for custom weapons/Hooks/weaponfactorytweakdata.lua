@@ -1103,6 +1103,7 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_ass_spotter", "a_fl_leftrail")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_srs", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_smg_hajk")
@@ -1115,6 +1116,7 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_galilace", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_wml", "a_fl_leftrail")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_smg_hajk")
@@ -1123,8 +1125,11 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_anpeq2", "a_fl_leftrail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_dbal_d2", "a_fl_leftrail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 end
 -- Galil ACE 52
 if self.wpn_fps_ass_galilace_762 then
@@ -1141,6 +1146,7 @@ if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace_762", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_ass_spotter", "a_fl_leftrail")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_srs", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_smg_hajk")
@@ -1153,6 +1159,7 @@ if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_galilace_762", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace_762", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_wml", "a_fl_leftrail")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_smg_hajk")
@@ -1161,8 +1168,11 @@ if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_hajk")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace_762", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_anpeq2", "a_fl_leftrail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace_762", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_dbal_d2", "a_fl_leftrail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_galilace_762", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 end
 -- AEK-971
 -- temp check
@@ -1792,6 +1802,11 @@ if self.wpn_fps_snp_winchester1894 then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894_sight_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_snp_winchester1894_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_fl_wml", "wpn_fps_snp_winchester1894_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_fl_anpeq2", "wpn_fps_snp_winchester1894_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_snp_winchester1894_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_fl_utg", "wpn_fps_snp_winchester1894_gadget_rail")
 end
 -- AAI LSAT
 if self.wpn_fps_lmg_lsat then

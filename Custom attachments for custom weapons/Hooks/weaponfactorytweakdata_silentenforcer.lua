@@ -1,4 +1,4 @@
-Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_SilentEnforcer_Init", function(self)
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_SilentEnforcer_Init", function(self)
 
 --TOZ-194
 if self.wpn_fps_shot_toz194 then

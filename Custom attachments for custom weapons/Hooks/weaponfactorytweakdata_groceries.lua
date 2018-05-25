@@ -1,4 +1,4 @@
-Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Groceries_Init", function(self)
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Groceries_Init", function(self)
 --Primary
 
 --AN-92

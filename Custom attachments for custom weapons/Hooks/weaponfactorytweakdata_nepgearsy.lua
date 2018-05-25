@@ -1,4 +1,4 @@
-Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Nepgeary_Init", function(self)
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Nepgeary_Init", function(self)
 
 -- M27 IAR
 if self.wpn_fps_ass_m27gear then

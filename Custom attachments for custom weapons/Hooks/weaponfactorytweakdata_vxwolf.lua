@@ -1,4 +1,4 @@
-Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_VxWolf_Init", function(self)
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_VxWolf_Init", function(self)
 -- Portable Railgun
 if self.wpn_fps_snp_railgun then
 if self.parts.wpn_fps_upg_o_kobra then

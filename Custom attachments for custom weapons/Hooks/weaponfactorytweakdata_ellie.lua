@@ -1,4 +1,4 @@
-Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Ellie_Init", function(self)
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Ellie_Init", function(self)
     --FY-JS
     if self.wpn_fps_snp_fyjs then
         if self.parts.wpn_fps_upg_o_kobra then
@@ -284,4 +284,4 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Ellie_Init",
 		table.insert(self.wpn_fps_ass_ar160.uses_parts, "wpn_fps_upg_o_45rds_v2")
 			self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_ar160 = deep_clone(self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_amcar)
     end
-end )
+end)
