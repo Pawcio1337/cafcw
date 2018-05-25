@@ -1,17 +1,17 @@
 function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, param3, param4, param5)
 	if self.parts[param2] then
-		if part_type == "forbids" and self.parts[param1] then
+		if part_type == "forbids" and self.parts[param1].forbids then
 			table.insert(self.parts[param1].forbids, param2)
-			if param3 and self.parts[param3] then
+			if param3 and self.parts[param3].forbids then
 				table.insert(self.parts[param3].forbids, param2)
 			end
-			if param4 and self.parts[param4] then
+			if param4 and self.parts[param4].forbids then
 				table.insert(self.parts[param4].forbids, param2)
 			end
-			if param5 and self.parts[param5] then
+			if param5 and self.parts[param5].forbids then
 				table.insert(self.parts[param5].forbids, param2)
 			end
-		elseif part_type == "forbids_add" then
+		elseif part_type == "forbids_add" and self.parts[param2].forbids then
 			table.insert(self.parts[param2].forbids, param1)
 			if param3 then
 				table.insert(self.parts[param2].forbids, param3)
@@ -1750,7 +1750,7 @@ if self.wpn_fps_ass_x95 then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_x95", "wpn_fps_ass_ns_g_sup3")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_x95", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_x95", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_aug")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_x95", "wpn_fps_ass_x95_rm55", "wpn_fps_ass_x95_rm55")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_x95", "wpn_fps_upg_fl_wml", "wpn_fps_ass_x95_rm55")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_x95", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_aug")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_x95", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_aug")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_x95", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_aug")

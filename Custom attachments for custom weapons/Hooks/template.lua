@@ -2,18 +2,18 @@
 -- For examples scroll down to line: 62
 function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, param3, param4, param5)
 	if self.parts[param2] then
-		if part_type == "forbids" and self.parts[param1] then
+		if part_type == "forbids" and self.parts[param1].forbids then
 			table.insert(self.parts[param1].forbids, param2)
-			if param3 and self.parts[param3] then
+			if param3 and self.parts[param3].forbids then
 				table.insert(self.parts[param3].forbids, param2)
 			end
-			if param4 and self.parts[param4] then
+			if param4 and self.parts[param4].forbids then
 				table.insert(self.parts[param4].forbids, param2)
 			end
-			if param5 and self.parts[param5] then
+			if param5 and self.parts[param5].forbids then
 				table.insert(self.parts[param5].forbids, param2)
 			end
-		elseif part_type == "forbids_add" then
+		elseif part_type == "forbids_add" and self.parts[param2].forbids then
 			table.insert(self.parts[param2].forbids, param1)
 			if param3 then
 				table.insert(self.parts[param2].forbids, param3)
@@ -70,12 +70,14 @@ if self.wpn_fps_smg_example then
 
 -- Sight:
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_acogrmr", "acog", "wpn_fps_ass_flint")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_flint")
 -- Function call explained - ("sight", "Factory ID of custom weapon", "ID of custom sight", "ID of sight that stance_mod will be copied", "Factory ID of base weapon")
--- Note. "wpn_fps_upg_o_specter" and "wpn_fps_upg_o_acog" can be shorted to "specter" and "acog".
+-- Note. ID of sights "wpn_fps_upg_o_specter" and "wpn_fps_upg_o_acog" can be shorted with "specter" and "acog".
 
 -- Sight with rail:
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint", "wpn_fps_smg_sight_rail")
--- Same as above with last paramter being ID of added sight rail.
+-- Same as above with last parameter being ID of added sight rail.
 
 -- Gadget:
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_example", "wpn_fps_upg_fl_wml")
@@ -83,7 +85,7 @@ if self.wpn_fps_smg_example then
 
 -- Gadget with rail:
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_example", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_smg_example_gadget_rail")
--- Same as above with last paramter being ID of added gadget rail.
+-- Same as above with last parameter being ID of added gadget rail.
 
 -- Part override custom attachment a_obj:
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_kobra", "a_o_high")
@@ -95,14 +97,24 @@ if self.wpn_fps_smg_example then
 
 -- Weapon override custom attachment a_obj and parent:
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_smg_example", "wpn_fps_ass_ns_g_sup1", "a_ns", "barrel")
--- Same as above with last paramter being used parent type.
+-- Same as above with last parameter being used parent type.
 
 -- Weapon override custom attachment parent:
-	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_b93r", "wpn_fps_ass_ns_g_sup1", "barrel")
+	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_smg_example", "wpn_fps_ass_ns_g_sup2", "barrel")
 -- Function call explained - ("wpn_parent_ovr", "Factory ID of custom weapon", "ID of custom attachment", "Parent type")
 
 -- Forbids:
+	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high")
+-- Function call explained - ("forbids", "ID of attachment that will receive ID to forbids table", "ID of forbidden attachment")
+-- Note: Its possible to use up to 3 ID:
+-- 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_45rds_v2", ""wpn_fps_upg_o_xpsg33_magnifier)
 
+-- Forbids adds:
+	self:cafcw_add_to_parts("forbids_add", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high")
+-- Function call explained - ("forbids_add", "ID of forbidden attachment", "ID of attachment that will receive IDs to forbids table")
+-- Similar to above but in reverse IDs in 1, 3 and 4 parameter will be added to forbids table in ID in 2.
+-- Note: Its possible to use up to 3 ID:
+-- 	self:cafcw_add_to_parts("forbids_add", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_45rds_v2", ""wpn_fps_upg_o_xpsg33_magnifier)
 end
 end)
 --[[
@@ -111,8 +123,8 @@ Adding script to mod:
 2. Open main.xml and add:
 		<hook file="weaponfactorytweakdata_MWSNICK.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 To <Hooks> group then increase version="" value by 0.001
-2. Test modifed mod in-game.
+2. Test modified mod in-game.
 When you done with script and you want publish it:
 1. Submit push request on Github.
-2. After push get accpeted and uploaded later you will be able to update it via mod page on MWS.
+2. After push get accepted and uploaded later you will be able to update it via mod page on MWS.
 ]]
