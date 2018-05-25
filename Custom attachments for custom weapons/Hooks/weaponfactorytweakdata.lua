@@ -44,13 +44,13 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			table.insert(self[param1].uses_parts, param2)
 			self[param1].adds[param2] = {param5}
 			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].stance_mod[param4])
-		elseif part_type == "part_a_obj_ovr" then
+		elseif part_type == "part_a_obj_ovr" and self.parts[param1].override then
 			self.parts[param1].override[param2] = {a_obj = param3}
-		elseif part_type == "wpn_a_obj_ovr" then
+		elseif part_type == "wpn_a_obj_ovr" and self[param1].override then
 			self[param1].override[param2] = {a_obj = param3}
-		elseif part_type == "wpn_a_obj_parent_ovr" then
+		elseif part_type == "wpn_a_obj_parent_ovr" and self[param1].override then
 			self[param1].override[param2] = {a_obj = param3, parent = param4}
-		elseif part_type == "wpn_parent_ovr" then
+		elseif part_type == "wpn_parent_ovr" and self[param1].override then
 			self[param1].override[param2] = {parent = param3}
 		else
 			table.insert(self[param1].uses_parts, param2)
@@ -1828,7 +1828,7 @@ if self.wpn_fps_lmg_lsat then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_lsat", "wpn_fps_upg_fl_utg")
 end
 -- Molot Vepr-12
-if self.wpn_fps_shot_vepr12 then
+if self.wpn_fps_shot_vepr12 and self.parts.wpn_fps_upg_vepr12_handguard_midwest.override and self.parts.wpn_fps_upg_vepr12_handguard_terminator.override then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_m145", "specter", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
