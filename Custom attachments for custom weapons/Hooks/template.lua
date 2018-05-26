@@ -71,6 +71,7 @@ if self.wpn_fps_smg_example then
 -- Sight:
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_acogrmr", "acog", "wpn_fps_ass_flint")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_ta648", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_flint")
 -- Function call explained - ("sight", "Factory ID of custom weapon", "ID of custom sight", "ID of sight that stance_mod will be copied", "Factory ID of base weapon")
 -- Note. ID of sights "wpn_fps_upg_o_specter" and "wpn_fps_upg_o_acog" can be shorted with "specter" and "acog".
@@ -105,15 +106,15 @@ if self.wpn_fps_smg_example then
 
 -- Forbids:
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high")
--- Function call explained - ("forbids", "ID of attachment that will receive ID to forbids table", "ID of forbidden attachment")
--- Note: Its possible to use up to 3 ID:
+-- Function call explained - ("forbids", "ID of custom attachment that will receive ID to forbids table", "ID of forbidden attachment")
+-- Note: Its possible to use up to 3 ID base game/custom weapon attachments:
 -- 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_45rds_v2", ""wpn_fps_upg_o_xpsg33_magnifier)
 
 -- Forbids adds:
 	self:cafcw_add_to_parts("forbids_add", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high")
--- Function call explained - ("forbids_add", "ID of forbidden attachment", "ID of attachment that will receive IDs to forbids table")
+-- Function call explained - ("forbids_add", "ID of forbidden custom attachment", "ID of attachment that will receive IDs to forbids table")
 -- Similar to above but in reverse IDs in 1, 3 and 4 parameter will be added to forbids table in ID in 2.
--- Note: Its possible to use up to 3 ID:
+-- Note: Its possible to use up to 3 ID base game/custom weapon attachments:
 -- 	self:cafcw_add_to_parts("forbids_add", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_45rds_v2", ""wpn_fps_upg_o_xpsg33_magnifier)
 end
 end)

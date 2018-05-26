@@ -392,7 +392,8 @@ if self.wpn_fps_ass_sks then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_sks", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_ass_sks_irons", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_siltstone_ekp_1s_03")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_ass_sks_irons", "wpn_fps_upg_o_delta_rm55")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_ass_sks_irons", "wpn_fps_upg_siltstone_ekp_1s_03")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_sks", "wpn_fps_riflein762x39")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
@@ -1476,7 +1477,7 @@ if self.wpn_fps_snp_svd then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_ta648rmr", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_svd", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_svd_pso", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_svd_ekp_1s_03")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_svd_pso", "wpn_fps_upg_o_delta_rm55")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_svd_irons", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_svd_leupold_pro")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
@@ -2878,8 +2879,6 @@ if self.parts.wpn_fps_upg_o_acog_rmr_switch then
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_snp_m40a5", "wpn_fps_snp_model70")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_snp_l115", "wpn_fps_snp_msr")
 if self.wpn_fps_ass_sr3m then
-table.insert(self.parts.wpn_fps_upg_o_acog_rmr_switch.forbids, "wpn_fps_upg_sr3m_unimax")
-table.insert(self.parts.wpn_fps_upg_o_acog_rmr_switch.forbids, "wpn_fps_upg_sr3m_peq15")
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_sr3m = {translation = Vector3(0, 10, -10.58)}
 end
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_fd338", "wpn_fps_ass_fal")
