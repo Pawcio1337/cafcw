@@ -60,13 +60,12 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
     end
 end
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_MWSNICK_Init", function(self)
--- Add your mostly used nick on Modworkshop to unique hook id (Change only MWSNICK part).
+-- Replace "MWSNICK" with your mostly used nick on Modworkshop in unique hook id.
 
--- Example of adding custom weapon and custom attachments:
 if self.wpn_fps_smg_example then
--- This will checks if custom weapon exist in game.
+-- This will checks if Factory ID of custom weapon exist in game.
 
--- Examples:
+-- Examples of adding custom attachments:
 
 -- Sight:
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint")
@@ -120,12 +119,12 @@ end
 end)
 --[[
 Adding script to mod:
-1. Save this file as weaponfactorytweakdata_MWSNICK where MWSNICK is your mostly used nick on Modworkshop.
+1. Save this file as weaponfactorytweakdata_MWSNICK where "MWSNICK" is your mostly used nick on Modworkshop.
 2. Open main.xml and add:
 		<hook file="weaponfactorytweakdata_MWSNICK.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 To <Hooks> group then increase version="" value by 0.001
-2. Test modified mod in-game.
+3. Test modified mod with added script in-game.
 When you done with script and you want publish it:
 1. Submit push request on Github.
-2. After push get accepted and uploaded later you will be able to update it via mod page on MWS.
+2. After push get accepted and uploaded you will be able to update it via mod page on MWS.
 ]]
