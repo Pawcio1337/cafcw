@@ -122,9 +122,9 @@ Adding script to mod:
 1. Save this file as weaponfactorytweakdata_MWSNICK where "MWSNICK" is your mostly used nick on Modworkshop.
 2. Open main.xml and add:
 		<hook file="weaponfactorytweakdata_MWSNICK.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
-To <Hooks> group then increase version="" value by 0.001
+To <Hooks> group.
 3. Test modified mod with added script in-game.
 When you done with script and you want publish it:
 1. Submit push request on Github.
-2. After push get accepted and uploaded you will be able to update it via mod page on MWS.
+2. After push get accepted and uploaded you will be able to update it via mod page on MWS (Remember to increase version="" value by 0.001 in main.xml when you make a new update).
 ]]

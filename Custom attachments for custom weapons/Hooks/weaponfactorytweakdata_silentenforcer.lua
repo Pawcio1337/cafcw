@@ -1,777 +1,233 @@
+function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, param3, param4, param5)
+	if self.parts[param2] then
+		if part_type == "forbids" and self.parts[param1].forbids then
+			table.insert(self.parts[param1].forbids, param2)
+			if param3 and self.parts[param3].forbids then
+				table.insert(self.parts[param3].forbids, param2)
+			end
+			if param4 and self.parts[param4].forbids then
+				table.insert(self.parts[param4].forbids, param2)
+			end
+			if param5 and self.parts[param5].forbids then
+				table.insert(self.parts[param5].forbids, param2)
+			end
+		elseif part_type == "forbids_add" and self.parts[param2].forbids then
+			table.insert(self.parts[param2].forbids, param1)
+			if param3 then
+				table.insert(self.parts[param2].forbids, param3)
+			end
+			if param4 then
+				table.insert(self.parts[param2].forbids, param4)
+			end
+			if param5 then
+				table.insert(self.parts[param2].forbids, param5)
+			end
+		elseif part_type == "gadget_rail" then
+			table.insert(self[param1].uses_parts, param2)
+			self[param1].adds[param2] = {param3}
+		elseif part_type == "sight" then
+			if param3 == "specter" then
+				param3 = "wpn_fps_upg_o_specter"
+			end
+			if param3 == "acog" then
+				param3 = "wpn_fps_upg_o_acog"
+			end
+			table.insert(self[param1].uses_parts, param2)
+			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].stance_mod[param4])
+		elseif part_type == "sight_rail" then
+			if param3 == "specter" then
+				param3 = "wpn_fps_upg_o_specter"
+			end
+			if param3 == "acog" then
+				param3 = "wpn_fps_upg_o_acog"
+			end
+			table.insert(self[param1].uses_parts, param2)
+			self[param1].adds[param2] = {param5}
+			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].stance_mod[param4])
+		elseif part_type == "part_a_obj_ovr" and self.parts[param1].override then
+			self.parts[param1].override[param2] = {a_obj = param3}
+		elseif part_type == "wpn_a_obj_ovr" and self[param1].override then
+			self[param1].override[param2] = {a_obj = param3}
+		elseif part_type == "wpn_a_obj_parent_ovr" and self[param1].override then
+			self[param1].override[param2] = {a_obj = param3, parent = param4}
+		elseif part_type == "wpn_parent_ovr" and self[param1].override then
+			self[param1].override[param2] = {parent = param3}
+		else
+			table.insert(self[param1].uses_parts, param2)
+		end
+    end
+end
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_SilentEnforcer_Init", function(self)
+--Spectre M4
+if self.wpn_fps_smg_spectre_m4 then
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_m145", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_srs", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_aog", "acog", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_elo", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_fl_wml", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_spectre_m4", "wpn_fps_ass_ns_g_sup3")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_spectre_m4", "wpn_fps_ass_ns_g_sup4")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_spectre_m4", "wpn_fps_pistolin9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_a_taser9mmc")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_a_lap9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_a_ap9mm")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_smg_tec9", "wpn_fps_smg_spectre_m4_o_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_fl_anpeq2", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_fl_utg", "wpn_fps_smg_spectre_m4_gadget_rail")
+    end
+if self.wpn_fps_smg_x_spectre_m4 then
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_wml", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_x_spectre_m4", "wpn_fps_ass_ns_g_sup3")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_x_spectre_m4", "wpn_fps_ass_ns_g_sup4")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_x_spectre_m4", "wpn_fps_pistolin9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_a_taser9mmc")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_a_lap9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_a_ap9mm")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_anpeq2", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_utg", "wpn_fps_smg_spectre_m4_gadget_rail")
+end
 
 --TOZ-194
 if self.wpn_fps_shot_toz194 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_kobra = {
-		"wpn_fps_shot_toz194_ris_special"
-	}	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_compm4s = {
-		"wpn_fps_shot_toz194_ris_special"
-	}	
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_m145 = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_pkas = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_coyote = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_acog_rmr = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_hologram = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_zeiss = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_okp7 = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_hd33 = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_prismatic = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_srs = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_hcog = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_reflexholo = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_rmr_riser = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-self.parts.wpn_fps_shot_toz194_fb_short.override.wpn_fps_upg_fl_ass_spotter = {a_obj = "a_sfl"}
-    self.wpn_fps_shot_toz194.adds.wpn_fps_upg_fl_ass_spotter = {
-		"wpn_fps_shot_toz194_gadget_rail"
-    }
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_elo = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_po4 = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_fl_wml")
-self.parts.wpn_fps_shot_toz194_fb_short.override.wpn_fps_upg_fl_wml = {a_obj = "a_sfl"}
-    self.wpn_fps_shot_toz194.adds.wpn_fps_upg_fl_wml = {
-		"wpn_fps_shot_toz194_gadget_rail"
-    }
-end
-if self.parts.wpn_fps_upg_ns_sho_salvo_small then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_ns_sho_salvo_small")
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_kemper = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_mepro = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_rusak = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_ionshot and self.parts.wpn_fps_taserslug and self.parts.wpn_fps_aptaser and self.parts.wpn_fps_hvshell then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_xrepslug")
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_ionshot")
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_taserslug")
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_aptaser")
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_hvshell")
-end
-if self.parts.wpn_fps_upg_a_minislug and self.parts.wpn_fps_upg_a_poisonslug and self.parts.wpn_fps_upg_a_minibuck then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_a_minislug")
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_a_poisonslug")
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_a_minibuck")
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_horzine = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_shot_toz194.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_shot_toz194.adds.wpn_fps_upg_o_eotech552 = {
-		"wpn_fps_shot_toz194_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_shot_toz194 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_shot_r870)
-end
-end
-
---Spectre M4
-if self.wpn_fps_smg_spectre_m4 and self.wpn_fps_smg_x_spectre_m4 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_kobra = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_compm4s = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}	
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_m145 = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_pkas = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_coyote = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_acog_rmr = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_hologram = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_zeiss = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_okp7 = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_hd33 = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_prismatic = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_srs = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_hcog = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_reflexholo = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_rmr_riser = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_smg_x_spectre_m4.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-    self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_fl_ass_spotter = {
-		"wpn_fps_smg_spectre_m4_gadget_rail"
-    }
-    self.wpn_fps_smg_x_spectre_m4.adds.wpn_fps_upg_fl_ass_spotter = {
-		"wpn_fps_smg_spectre_m4_gadget_rail"
-    }
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_elo = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_po4 = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_smg_x_spectre_m4.uses_parts, "wpn_fps_upg_fl_wml")
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_fl_wml")
-    self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_fl_wml = {
-		"wpn_fps_smg_spectre_m4_gadget_rail"
-    }
-    self.wpn_fps_smg_x_spectre_m4.adds.wpn_fps_upg_fl_wml = {
-		"wpn_fps_smg_spectre_m4_gadget_rail"
-    }
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_kemper = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_mepro = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_rusak = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_pistolin9mm then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_pistolin9mm")
-end
-if self.parts.wpn_fps_upg_a_taser9mm then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_a_taser9mm")
-end
-if self.parts.wpn_fps_upg_a_lap9mm then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_a_lap9mm")
-end
-if self.parts.wpn_fps_upg_a_ap9mm then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_a_ap9mm")
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_horzine = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_tec9)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_smg_spectre_m4.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_smg_spectre_m4.adds.wpn_fps_upg_o_eotech552 = {
-		"wpn_fps_smg_spectre_m4_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_spectre_m4 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_tec9)
-end
-end
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_m145", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_shot_toz194_gadget_rail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz194_fb_short", "wpn_fps_upg_fl_ass_spotter", "a_sfl")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_srs", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_aog", "acog", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_elo", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_fl_wml", "wpn_fps_shot_toz194_gadget_rail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz194_fb_short", "wpn_fps_upg_fl_wml", "a_sfl")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_taserslug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_xrepslug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_ionshot")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_aptaser")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_hvshell")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_upg_a_minislug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_upg_a_poisonslug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_upg_a_minibuck")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_upg_ns_sho_salvo_small")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz194", "wpn_fps_upg_ns_shot_cat")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_shot_r870", "wpn_fps_shot_toz194_ris_special")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_fl_anpeq2", "wpn_fps_shot_toz194_gadget_rail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz194_fb_short", "wpn_fps_upg_fl_anpeq2", "a_sfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_shot_toz194_gadget_rail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz194_fb_short", "wpn_fps_upg_fl_dbal_d2", "a_sfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz194", "wpn_fps_upg_fl_utg", "wpn_fps_shot_toz194_gadget_rail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz194_fb_short", "wpn_fps_upg_fl_utg", "a_sfl")
+	end
 
 --QBZ-95
 if self.wpn_fps_ass_qbz95 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_kobra = {
-		"wpn_fps_ass_qbz95_rail"
-	}	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_compm4s = {
-		"wpn_fps_ass_qbz95_rail"
-	}	
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_m145 = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_pkas = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_coyote = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_acog_rmr = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_hologram = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_zeiss = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_okp7 = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_hd33 = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_prismatic = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_srs = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_hcog = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_reflexholo = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_rmr_riser = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_elo = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
---[[if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_qbz95 = 
-end]]
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_kemper = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_mepro = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_rusak = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_upg_o_delta_rm55 then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_delta_rm55")
-	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_qbz95 = {translation = Vector3(1.5, 0, -16.3),rotation = Rotation(0, 1.5, -45)}
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_ass_qbz95.adds.wpn_fps_upg_o_horzine = {
-		"wpn_fps_ass_qbz95_rail"
-	}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_qbz95 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_qbz95)
-end
-if self.parts.wpn_fps_shield_bullpup and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_shield_bullpup")
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_shield_skin_ftp")
-table.insert(self.wpn_fps_ass_qbz95.uses_parts, "wpn_fps_shield_skin_urban")
-end
-end
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_m145", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_qbz95", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_srs", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_aog", "acog", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_elo", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_qbz95", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_qbz95", "wpn_fps_ass_ns_g_sup3")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_qbz95", "wpn_fps_ass_ns_g_sup4")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_qbz95", "wpn_fps_shield_bullpup")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_qbz95", "wpn_fps_shield_skin_ftp")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_qbz95", "wpn_fps_shield_skin_urban")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_qbz95", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_qbz95", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_qbz95", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_qbz95", "wpn_fps_upg_fl_utg")
+    end
 
 --STG 44
 if self.wpn_fps_ass_stg44 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_kobra = {
-		"wpn_fps_ass_stg44_ris_special"
-	}	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_compm4s = {
-		"wpn_fps_ass_stg44_ris_special"
-	}	
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_m145 = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_pkas = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_coyote = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_acog_rmr = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_hologram = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_zeiss = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_okp7 = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_hd33 = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_prismatic = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_srs = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_hcog = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_reflexholo = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_rmr_riser = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_elo = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_po4 = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_kemper = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_mepro = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_rusak = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_delta_rm55 then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_delta_rm55")
-	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_horzine = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_ass_stg44.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_ass_stg44.adds.wpn_fps_upg_o_eotech552 = {
-		"wpn_fps_ass_stg44_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_stg44 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_fal)
-end
-end
-
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_m145", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_srs", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_aog", "acog", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_elo", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+    self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_stg44", "wpn_fps_ass_ns_g_sup3")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_stg44", "wpn_fps_ass_ns_g_sup4")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_stg44", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_utg")
+    end
+	
 --Mossberg 590
 if self.wpn_fps_shot_m590 then
 if self.parts.wpn_fps_upg_o_kobra then
@@ -1017,199 +473,10 @@ table.insert(self.wpn_fps_shot_m590.uses_parts, "wpn_fps_upg_o_eotech552")
 		stance_mod = {wpn_fps_shot_m590 = {translation = Vector3(-0.02, 0, -3.7) + Vector3(0, 0, 0.335)}}
     }
 end
-end
-
---MP40
-if self.wpn_fps_smg_mp40 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_kobra = {
-		"wpn_fps_smg_mp40_ris_special"
-	}	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_compm4s = {
-		"wpn_fps_smg_mp40_ris_special"
-	}	
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_m145 = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_pkas = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_coyote = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_acog_rmr = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_hologram = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_zeiss = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_okp7 = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_hd33 = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_prismatic = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_srs = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_hcog = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_reflexholo = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_rmr_riser = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_elo = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_po4 = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_kemper = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_mepro = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_rusak = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_pistolin9mm then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_pistolin9mm")
-end
-if self.parts.wpn_fps_upg_a_taser9mm then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_a_taser9mm")
-end
-if self.parts.wpn_fps_upg_a_lap9mm then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_a_lap9mm")
-end
-if self.parts.wpn_fps_upg_a_ap9mm then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_a_ap9mm")
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_horzine = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_smg_mp40.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_smg_mp40.adds.wpn_fps_upg_o_eotech552 = {
-		"wpn_fps_smg_mp40_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_mp40 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_m45)
+if self.parts.wpn_fps_upg_fl_anpeq2 and self.parts.wpn_fps_upg_fl_dbal_d2 and self.parts.wpn_fps_upg_fl_utg then
+table.insert(self.wpn_fps_shot_m590.uses_parts, "wpn_fps_upg_fl_anpeq2")
+table.insert(self.wpn_fps_shot_m590.uses_parts, "wpn_fps_upg_fl_dbal_d2")
+table.insert(self.wpn_fps_shot_m590.uses_parts, "wpn_fps_upg_fl_utg")
 end
 end
 
@@ -1417,960 +684,276 @@ table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.wpn_fps_ass_qbz3.override.wpn_fps_upg_o_eotech552 = {a_obj = "a_o_sm"}
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_qbz3 = deep_clone(self.parts.wpn_fps_upg_o_ak_scopemount.override.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_74)
 end
+if self.parts.wpn_fps_upg_fl_anpeq2 and self.parts.wpn_fps_upg_fl_dbal_d2 and self.parts.wpn_fps_upg_fl_utg then
+table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_fl_anpeq2")
+table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_fl_dbal_d2")
+table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_fl_utg")
 end
-
+end
+  
 --Fort-500
 if self.wpn_fps_shot_f500 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_kobra = {
-		"wpn_fps_shot_f500_ris_special"
-	}	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_compm4s = {
-		"wpn_fps_shot_f500_ris_special"
-	}	
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_m145 = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_pkas = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_coyote = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_acog_rmr = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_hologram = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_zeiss = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_okp7 = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_hd33 = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_prismatic = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_srs = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_hcog = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_reflexholo = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_rmr_riser = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-    self.wpn_fps_shot_f500.adds.wpn_fps_upg_fl_ass_spotter = {
-		"wpn_fps_shot_f500_gadget_rail"
-    }
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_elo = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_po4 = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_fl_wml")
-    self.wpn_fps_shot_f500.adds.wpn_fps_upg_fl_wml = {
-		"wpn_fps_shot_f500_gadget_rail"
-    }
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_kemper = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_mepro = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_rusak = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_ionshot and self.parts.wpn_fps_taserslug and self.parts.wpn_fps_aptaser and self.parts.wpn_fps_hvshell then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_xrepslug")
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_ionshot")
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_taserslug")
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_aptaser")
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_hvshell")
-end
-if self.parts.wpn_fps_upg_a_minislug and self.parts.wpn_fps_upg_a_poisonslug and self.parts.wpn_fps_upg_a_minibuck then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_a_minislug")
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_a_poisonslug")
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_a_minibuck")
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_horzine = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_shot_r870)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_shot_f500.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_shot_f500.adds.wpn_fps_upg_o_eotech552 = {
-		"wpn_fps_shot_f500_ris_special"
-	}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_shot_f500 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_shot_r870)
-end
-end
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_m145", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_shot_f500_gadget_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_srs", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_aog", "acog", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_elo", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_wml", "wpn_fps_shot_f500_gadget_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_taserslug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_xrepslug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_ionshot")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_aptaser")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_hvshell")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_upg_a_minislug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_upg_a_poisonslug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_upg_a_minibuck")
+	--self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_upg_ns_sho_salvo_small")
+	--self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_upg_ns_shot_cat")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_f500", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_anpeq2", "wpn_fps_shot_f500_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_shot_f500_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_utg", "wpn_fps_shot_f500_gadget_rail")
+	end
 
 -- Makarov
-if self.wpn_fps_pis_pm and self.wpn_fps_pis_x_pm then
-if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
-table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_ass_ns_g_sup1")
-table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_ass_ns_g_sup2")
-table.insert(self.wpn_fps_pis_x_pm.uses_parts, "wpn_fps_ass_ns_g_sup1")
-table.insert(self.wpn_fps_pis_x_pm.uses_parts, "wpn_fps_ass_ns_g_sup2")
+if self.wpn_fps_pis_pm then
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_pm", "wpn_fps_ass_ns_g_sup1")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_pm", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_pm", "wpn_fps_pistolin9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_pm", "wpn_fps_upg_a_taser9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_pm", "wpn_fps_upg_a_lap9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_pm", "wpn_fps_upg_a_ap9mm")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
 end
-if self.parts.wpn_fps_pistolin9mm then
-table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_pistolin9mm")
-table.insert(self.wpn_fps_pis_x_pm.uses_parts, "wpn_fps_pistolin9mm")
-end
-if self.parts.wpn_fps_upg_a_taser9mm then
-table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_upg_a_taser9mm")
-table.insert(self.wpn_fps_pis_x_pm.uses_parts, "wpn_fps_upg_a_taser9mm")
-end
-if self.parts.wpn_fps_upg_a_lap9mm then
-table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_upg_a_lap9mm")
-table.insert(self.wpn_fps_pis_x_pm.uses_parts, "wpn_fps_upg_a_lap9mm")
-end
-if self.parts.wpn_fps_upg_a_ap9mm then
-table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_upg_a_ap9mm")
-table.insert(self.wpn_fps_pis_x_pm.uses_parts, "wpn_fps_upg_a_ap9mm")
-end
+if self.wpn_fps_pis_x_pm then
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_pm", "wpn_fps_ass_ns_g_sup1")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_pm", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_x_pm", "wpn_fps_pistolin9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_x_pm", "wpn_fps_upg_a_taser9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_x_pm", "wpn_fps_upg_a_lap9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_x_pm", "wpn_fps_upg_a_ap9mm")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
 end
 if self.wpn_fps_pis_xs_pm then
-if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
-table.insert(self.wpn_fps_pis_xs_pm.uses_parts, "wpn_fps_ass_ns_g_sup1")
-table.insert(self.wpn_fps_pis_xs_pm.uses_parts, "wpn_fps_ass_ns_g_sup2")
-end
-if self.parts.wpn_fps_pistolin9mm then
-table.insert(self.wpn_fps_pis_xs_pm.uses_parts, "wpn_fps_pistolin9mm")
-end
-if self.parts.wpn_fps_upg_a_taser9mm then
-table.insert(self.wpn_fps_pis_xs_pm.uses_parts, "wpn_fps_upg_a_taser9mm")
-end
-if self.parts.wpn_fps_upg_a_lap9mm then
-table.insert(self.wpn_fps_pis_xs_pm.uses_parts, "wpn_fps_upg_a_lap9mm")
-end
-if self.parts.wpn_fps_upg_a_ap9mm then
-table.insert(self.wpn_fps_pis_xs_pm.uses_parts, "wpn_fps_upg_a_ap9mm")
-end
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_xs_pm", "wpn_fps_ass_ns_g_sup1")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_xs_pm", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_xs_pm", "wpn_fps_pistolin9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_xs_pm", "wpn_fps_upg_a_taser9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_xs_pm", "wpn_fps_upg_a_lap9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_xs_pm", "wpn_fps_upg_a_ap9mm")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_xs_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_xs_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
 end
 
 -- QBS-09
 if self.wpn_fps_shot_qbs then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_kobra")
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_m145")
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_pkas")
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_coyote")
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_hologram")
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_gitsch then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_gitsch")
-	self.parts.wpn_fps_upg_o_gitsch.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_okp7")
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_hd33")
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-    self.wpn_fps_shot_qbs.adds.wpn_fps_upg_fl_ass_spotter = {
-		"wpn_fps_shot_qbs_gadget_rail"
-    }
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_srs")
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_hcog")
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_aog")
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_elo")
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_po4")
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_susat")
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_fl_wml")
-    self.wpn_fps_shot_qbs.adds.wpn_fps_upg_fl_wml = {
-		"wpn_fps_shot_qbs_gadget_rail"
-    }
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_mepro")
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_rusak")
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_taserslug then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_taserslug")
-end
-if self.parts.wpn_fps_upg_ns_sho_salvo_small then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_ns_sho_salvo_small")
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_horzine")
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_sho_ben)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_shot_qbs.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_shot_qbs = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_sho_ben)
-end
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_m145", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_shot_qbs_gadget_rail")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_srs", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_aog", "acog", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_elo", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_wml", "wpn_fps_shot_qbs_gadget_rail")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_qbs", "wpn_fps_taserslug")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_sho_ben")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_anpeq2", "wpn_fps_shot_qbs_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_shot_qbs_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_utg", "wpn_fps_shot_qbs_gadget_rail")
 end
 
 --Auto-Crossbow
 if self.wpn_fps_bow_auto then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_kobra")	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_m145")
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_pkas")
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_coyote")
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_hologram")
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_okp7")
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_hd33")
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_srs")
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_hcog")
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_aog")
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_elo")
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_po4")
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_susat")
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_kemper")
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_mepro")
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_rusak")
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_horzine")
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_bow_auto = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_coal)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_bow_auto.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_m145", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_bow_auto", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_srs", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_aog", "acog", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_elo", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_bow_auto", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("other", "wpn_fps_bow_auto", "wpn_fps_taserslug")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_bow_auto", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_bow_auto", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_bow_auto", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_bow_auto", "wpn_fps_upg_fl_utg")
 end
 
 --M3 Grease Gun
 if self.wpn_fps_smg_m3 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_kobra = {
-		"wpn_fps_smg_m3_o_adapter"
-	}	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_m145", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_m3", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_srs", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_aog", "acog", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_elo", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_m3", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_m3", "wpn_fps_ass_ns_g_sup3")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_m3", "wpn_fps_ass_ns_g_sup4")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_m3", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_m3", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_m3", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_m3", "wpn_fps_upg_fl_utg")
+    end
+if self.wpn_fps_smg_x_m3 then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_x_m3", "wpn_fps_ass_ns_g_sup3")
+	self:cafcw_add_to_parts("other", "wpn_fps_smg_x_m3", "wpn_fps_ass_ns_g_sup4")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_utg")
 end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_compm4s = {
-		"wpn_fps_smg_m3_o_adapter"
-	}	
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_m145 = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_pkas = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_coyote = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_acog_rmr = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_hologram = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_zeiss = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_okp7 = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_hd33 = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_prismatic = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_srs = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_hcog = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_reflexholo = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_rmr_riser = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-table.insert(self.wpn_fps_smg_x_m3.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_elo = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_po4 = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_fl_wml")
-table.insert(self.wpn_fps_smg_x_m3.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_kemper = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_ass_ns_g_sup4")
-table.insert(self.wpn_fps_smg_x_m3.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_smg_x_m3.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_mepro = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_rusak = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_horzine = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_smg_m45)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_smg_m3.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_smg_m3.adds.wpn_fps_upg_o_eotech552 = {
-		"wpn_fps_smg_m3_o_adapter"
-	}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_m3 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_m45)
-end
-end
-
+	
 --Gewehr 43
 if self.wpn_fps_snp_g43 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_kobra = {
-		"wpn_fps_snp_g43_rail"
-	}	
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_compm4s = {
-		"wpn_fps_snp_g43_rail"
-	}	
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_m145 = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_pkas = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_coyote = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_acog_rmr = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_hologram = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_zeiss = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_okp7 = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_hd33 = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_prismatic = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_srs = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_hcog = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_reflexholo = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_rmr_riser then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_rmr_riser")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_rmr_riser = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_elo = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_po4 = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_kemper = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_mepro = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_rusak = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_delta_rm55 then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_delta_rm55")
-	self.parts.wpn_fps_upg_o_delta_rm55.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_horzine = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_snp_g43.adds.wpn_fps_upg_o_eotech552 = {
-		"wpn_fps_snp_g43_rail"
-	}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_snp_g43 = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_fal)
-end
-if self.parts.wpn_fps_upg_a_he8mm and self.parts.wpn_fps_upg_a_ince8mm and self.parts.wpn_fps_upg_a_ap8mm  then
-	table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_a_he8mm")
-	table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_a_ince8mm")
-	table.insert(self.wpn_fps_snp_g43.uses_parts, "wpn_fps_upg_a_ap8mm")
-end
-end
-
---Akimbo Jacket's Pieces
-if self.wpn_fps_smg_x_cobray then
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_smg_x_cobray.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.wpn_fps_smg_x_cobray.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_smg_x_cobray.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
-if self.parts.wpn_fps_upg_m4_s_caastock and self.parts.wpn_fps_upg_m4_s_caastock_black and self.parts.wpn_fps_upg_m4_s_hke1 and self.parts.wpn_fps_upg_m4_s_viper then
-table.insert(self.wpn_fps_smg_x_cobray.uses_parts, "wpn_fps_upg_m4_s_caastock")
-table.insert(self.wpn_fps_smg_x_cobray.uses_parts, "wpn_fps_upg_m4_s_caastock_black")
-table.insert(self.wpn_fps_smg_x_cobray.uses_parts, "wpn_fps_upg_m4_s_hke1")
-table.insert(self.wpn_fps_smg_x_cobray.uses_parts, "wpn_fps_upg_m4_s_viper")
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_smg_x_cobray.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-end
-
---Akimbo Tommy Guns
-if self.wpn_fps_smg_x_thompson then
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_smg_x_thompson.uses_parts, "wpn_fps_upg_fl_wml")
-self.wpn_fps_smg_x_thompson.adds.wpn_fps_upg_fl_wml = {
-		"wpn_fps_smg_thompson_fl_adapter"
-}
-end
-if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.wpn_fps_smg_x_thompson.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_smg_x_thompson.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_smg_x_thompson.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-self.wpn_fps_smg_x_thompson.adds.wpn_fps_upg_fl_ass_spotter = {
-		"wpn_fps_smg_thompson_fl_adapter"
-}
-end
-end
-
---Akimbo MP40
-if self.wpn_fps_smg_x_erma then
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_smg_x_erma.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 then
-table.insert(self.wpn_fps_smg_x_erma.uses_parts, "wpn_fps_ass_ns_g_sup3")
-table.insert(self.wpn_fps_smg_x_erma.uses_parts, "wpn_fps_ass_ns_g_sup4")
-end
-if self.parts.wpn_fps_pistolin9mm then
-table.insert(self.wpn_fps_smg_x_erma.uses_parts, "wpn_fps_pistolin9mm")
-end
-if self.parts.wpn_fps_upg_a_taser9mm then
-table.insert(self.wpn_fps_smg_x_erma.uses_parts, "wpn_fps_upg_a_taser9mm")
-end
-if self.parts.wpn_fps_upg_a_lap9mm then
-table.insert(self.wpn_fps_smg_x_erma.uses_parts, "wpn_fps_upg_a_lap9mm")
-end
-if self.parts.wpn_fps_upg_a_ap9mm then
-table.insert(self.wpn_fps_smg_x_erma.uses_parts, "wpn_fps_upg_a_ap9mm")
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_smg_x_erma.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-end
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_m145", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_ta648", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_g43", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_g43", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_srs", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_aog", "acog", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_elo", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+    self:cafcw_add_to_parts("gadget", "wpn_fps_snp_g43", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_ta648rmr", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_g43", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_g43", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_g43", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_g43", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_g43", "wpn_fps_upg_fl_utg")
+    end
 
 --Akimbo AA-12
 if self.wpn_fps_shot_x_aa12 then
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_shot_x_aa12.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_taserslug then
-table.insert(self.wpn_fps_shot_x_aa12.uses_parts, "wpn_fps_taserslug")
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_shot_x_aa12.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-if self.parts.wpn_fps_upg_ns_sho_salvo_small then
-table.insert(self.wpn_fps_shot_x_aa12.uses_parts, "wpn_fps_upg_ns_sho_salvo_small")
-end
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_aa12", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_aa12", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_x_aa12", "wpn_fps_taserslug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_x_aa12", "wpn_fps_upg_ns_sho_salvo_small")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_x_aa12", "wpn_fps_upg_ns_shot_cat")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_aa12", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_aa12", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_aa12", "wpn_fps_upg_fl_utg")
 end
 
 --Akimbo Street Sweepers
 if self.wpn_fps_shot_x_striker then
-if self.parts.wpn_fps_upg_fl_wml then
-table.insert(self.wpn_fps_shot_x_striker.uses_parts, "wpn_fps_upg_fl_wml")
-end
-if self.parts.wpn_fps_taserslug then
-table.insert(self.wpn_fps_shot_x_striker.uses_parts, "wpn_fps_taserslug")
-end
-if self.parts.wpn_fps_upg_fl_ass_spotter then
-table.insert(self.wpn_fps_shot_x_striker.uses_parts, "wpn_fps_upg_fl_ass_spotter")
-end
-if self.parts.wpn_fps_sho_striker_s_folding then
-table.insert(self.wpn_fps_shot_x_striker.uses_parts, "wpn_fps_sho_striker_s_folding")
-end
-if self.parts.wpn_fps_upg_ns_sho_salvo_small then
-table.insert(self.wpn_fps_shot_x_striker.uses_parts, "wpn_fps_upg_ns_sho_salvo_small")
-end
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_striker", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_striker", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_x_striker", "wpn_fps_taserslug")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_x_striker", "wpn_fps_upg_ns_sho_salvo_small")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_x_striker", "wpn_fps_upg_ns_shot_cat")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_striker", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_striker", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_x_striker", "wpn_fps_upg_fl_utg")
+	
 end
 
 -- Welrod
 if self.wpn_fps_pis_welrod then
-if self.parts.wpn_fps_pistolin9mm then
-table.insert(self.wpn_fps_pis_welrod.uses_parts, "wpn_fps_pistolin9mm")
-end
-if self.parts.wpn_fps_upg_a_taser9mm then
-table.insert(self.wpn_fps_pis_welrod.uses_parts, "wpn_fps_upg_a_taser9mm")
-end
-if self.parts.wpn_fps_upg_a_lap9mm then
-table.insert(self.wpn_fps_pis_welrod.uses_parts, "wpn_fps_upg_a_lap9mm")
-end
-if self.parts.wpn_fps_upg_a_ap9mm then
-table.insert(self.wpn_fps_pis_welrod.uses_parts, "wpn_fps_upg_a_ap9mm")
-end
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_welrod", "wpn_fps_pistolin9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_welrod", "wpn_fps_upg_a_taser9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_welrod", "wpn_fps_upg_a_lap9mm")
+	self:cafcw_add_to_parts("other", "wpn_fps_pis_welrod", "wpn_fps_upg_a_ap9mm")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
 end
 
+-- Vickers
+if self.wpn_fps_lmg_vick then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_utg")
+end
 end)
