@@ -9,7 +9,7 @@ if self.wpn_fps_smg_example then
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint")
 -- In this case part type is "sight" followed by ID of custom weapon "wpn_fps_smg_example".
 -- Next parameter is ID of custom attachment ("wpn_fps_upg_o_kobra") that will be added to weapon if such ID exist in game.
--- And 2 last parameters in this example ("specter", "wpn_fps_ass_flint") are required data for sights stance_mod and these are exactly same as used in custom weapon "weaponfactorytweakdata" hook for adding stance_mod of base game sights.
+-- And 2 last parameters in this example ("specter", "wpn_fps_ass_flint") are required data for sights stance_mod and these are exactly same as used in custom weapon "weaponfactorytweakdata" hook for adding stance_mod base game sights.
 
 -- Defined part types:
 -- Sight:

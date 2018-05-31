@@ -2423,7 +2423,6 @@ if self.wpn_fps_ass_ash then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ash", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_famas")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ash", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_famas")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ash", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_famas")
-	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ash", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_famas")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ash", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_ass_famas")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ash", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_famas")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ash", "wpn_fps_upg_fl_ass_spotter")
@@ -2648,7 +2647,7 @@ if self.wpn_fps_smg_fmg9 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_fmg9", "wpn_fps_upg_fl_utg")
 end
 -- PP-19-01 Vityaz
-if self.wpn_fps_smg_vityaz then
+if self.wpn_fps_smg_vityaz and self.parts.wpn_fps_upg_vityaz_handguard_redheat.override and self.parts.wpn_fps_upg_vityaz_handguard_zenit.override then
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_ass_flint")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_m145", "specter", "wpn_fps_ass_flint")
