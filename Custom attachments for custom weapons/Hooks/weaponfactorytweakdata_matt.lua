@@ -1,5 +1,4 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Matt_Init", function(self)
---
 --		Secondary
 --
 -- UMP
