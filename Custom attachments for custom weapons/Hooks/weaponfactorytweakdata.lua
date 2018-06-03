@@ -2453,12 +2453,17 @@ end
 -- Browning M1919A6
 if self.wpn_fps_lmg_m1919a6 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_m1919a6", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_m1919a6_barrel_m1917", "wpn_fps_upg_fl_ass_spotter", "a_fl_m1917")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_m1919a6", "wpn_fps_ass_ns_g_sup3")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_m1919a6", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_m1919a6", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_m1919a6_barrel_m1917", "wpn_fps_upg_fl_wml", "a_fl_m1917")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_m1919a6", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_m1919a6_barrel_m1917", "wpn_fps_upg_fl_anpeq2", "a_fl_m1917")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_m1919a6", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_m1919a6_barrel_m1917", "wpn_fps_upg_fl_dbal_d2", "a_fl_m1917")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_m1919a6", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_m1919a6_barrel_m1917", "wpn_fps_upg_fl_utg", "a_fl_m1917")
 end
 -- Secondary
 --
@@ -3020,16 +3025,25 @@ if self.wpn_fps_pis_unica6 and self.wpn_fps_pis_unica6.adds then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_pis_rage", "wpn_fps_pis_unica6_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_pis_rage", "wpn_fps_pis_unica6_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_pis_rage", "wpn_fps_pis_unica6_sight_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_wml" ,"wpn_fps_pis_unica6_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_wml", "wpn_fps_pis_unica6_gadget_rail")
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_wml", "a_fl_alt")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_unimax" ,"wpn_fps_pis_unica6_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_utg_pis" ,"wpn_fps_pis_unica6_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_anpeq2" ,"wpn_fps_pis_unica6_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_unica6_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_unica6_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_anpeq2", "wpn_fps_pis_unica6_gadget_rail")
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_anpeq2", "a_fl_alt")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_dbal_d2" ,"wpn_fps_pis_unica6_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_pis_unica6_gadget_rail")
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_dbal_d2", "a_fl_alt")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_utg" ,"wpn_fps_pis_unica6_gadget_rail")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_utg", "a_fl_alt")
+end
+-- HX25 Handheld Grenade Launcher
+if self.wpn_fps_gre_hx25 then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_wml", "a_fl_alt")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_unimax")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_utg_pis")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_anpeq2", "a_fl_alt")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_dbal_d2", "a_fl_alt")
 end
 -- Attachments
 --
