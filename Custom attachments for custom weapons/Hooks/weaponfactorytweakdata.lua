@@ -3045,6 +3045,15 @@ if self.wpn_fps_gre_hx25 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_gre_hx25", "wpn_fps_upg_fl_dbal_d2", "a_fl_alt")
 end
+-- Zenith 10mm
+if self.wpn_fps_pis_zenith then
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_zenith", "wpn_fps_ass_ns_g_sup1")
+	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_zenith", "wpn_fps_ass_ns_g_sup1", "a_ns", "barrel")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_zenith", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_zenith", "wpn_fps_ass_ns_g_sup2", "a_ns", "barrel")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_zenith", "wpn_fps_upg_fl_unimax")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_zenith", "wpn_fps_upg_fl_utg_pis")
+end
 -- Attachments
 --
 -- Trijicon ACOG TA31F-RMR Scope
