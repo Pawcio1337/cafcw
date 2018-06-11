@@ -154,6 +154,7 @@ table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_crane_col")
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
 table.insert(self.wpn_fps_ass_m27gear.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
 end
+self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_m27gear", "wpn_fps_upg_ns_ass_smg_tromix")
 end
 
 end)

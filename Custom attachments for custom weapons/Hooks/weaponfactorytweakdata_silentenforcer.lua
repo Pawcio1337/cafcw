@@ -36,6 +36,7 @@ if self.wpn_fps_smg_spectre_m4 then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_fl_anpeq2", "wpn_fps_smg_spectre_m4_gadget_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_smg_spectre_m4_gadget_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_fl_utg", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_spectre_m4", "wpn_fps_upg_ns_ass_smg_tromix")
     end
 if self.wpn_fps_smg_x_spectre_m4 then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_smg_spectre_m4_gadget_rail")
@@ -49,6 +50,7 @@ if self.wpn_fps_smg_x_spectre_m4 then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_anpeq2", "wpn_fps_smg_spectre_m4_gadget_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_smg_spectre_m4_gadget_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_fl_utg", "wpn_fps_smg_spectre_m4_gadget_rail")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_x_spectre_m4", "wpn_fps_upg_ns_ass_smg_tromix")
 end
 
 --TOZ-194
@@ -158,6 +160,7 @@ if self.wpn_fps_ass_qbz95 and self.parts.wpn_fps_ass_qbz95_fg_rails then
     self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_qbz95_fg_rails", "wpn_fps_upg_fl_dbal_d2", "a_fgfl")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_qbz95", "wpn_fps_upg_fl_utg")
     self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_qbz95_fg_rails", "wpn_fps_upg_fl_utg", "a_fgfl")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_qbz95", "wpn_fps_upg_ns_ass_smg_tromix")
     end
 
 --STG 44
@@ -193,6 +196,7 @@ if self.wpn_fps_ass_stg44 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_stg44", "wpn_fps_upg_ns_ass_smg_tromix")
     end
 	
 --Mossberg 590
@@ -656,6 +660,7 @@ table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_fl_anpeq2")
 table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_fl_dbal_d2")
 table.insert(self.wpn_fps_ass_qbz3.uses_parts, "wpn_fps_upg_fl_utg")
 end
+self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_qbz3", "wpn_fps_upg_ns_ass_smg_tromix")
 end
   
 --Fort-500
@@ -834,6 +839,7 @@ if self.wpn_fps_smg_m3 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_m3", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_m3", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_m3", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_m3", "wpn_fps_upg_ns_ass_smg_tromix")
     end
 if self.wpn_fps_smg_x_m3 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_ass_spotter")
@@ -843,6 +849,7 @@ if self.wpn_fps_smg_x_m3 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_m3", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_x_m3", "wpn_fps_upg_ns_ass_smg_tromix")
 end
 	
 --Gewehr 43

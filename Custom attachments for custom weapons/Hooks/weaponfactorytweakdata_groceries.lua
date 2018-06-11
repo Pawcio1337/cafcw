@@ -151,6 +151,7 @@ table.insert(self.wpn_fps_ass_tilt.uses_parts, "wpn_fps_upg_o_horzine")
 		"wpn_fps_upg_o_tilt_scopemount"
 	}
 end
+self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_tilt", "wpn_fps_upg_ns_ass_smg_tromix")
 end
 
 --
@@ -278,6 +279,7 @@ if self.parts.wpn_fps_upg_o_eotech552 then
 table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_eotech552")
 	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_smg_pdr = deep_clone(self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_aug)
 end
+self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_pdr", "wpn_fps_upg_ns_ass_smg_tromix")
 -- Update v1.68.199
 table.insert(self.wpn_fps_smg_pdr.uses_parts, "wpn_fps_upg_o_xpsg33_magnifier")
 	self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_smg_pdr = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_aug)

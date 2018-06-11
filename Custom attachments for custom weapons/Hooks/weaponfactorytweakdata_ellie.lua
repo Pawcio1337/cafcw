@@ -84,6 +84,7 @@ if self.wpn_fps_ass_ar160 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ar160", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ar160", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ar160", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_ar160", "wpn_fps_upg_ns_ass_smg_tromix")
 	-- Update v1.68.199
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ar160", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_ass_amcar")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ar160", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_ass_amcar")
