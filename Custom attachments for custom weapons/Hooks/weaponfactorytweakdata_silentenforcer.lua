@@ -930,13 +930,27 @@ if self.wpn_fps_lmg_vick then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_utg")
 end
---MCS
+--R870 Attachments
 if self.parts.wpn_fps_shot_870_fg_surefire then
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_surefire", "wpn_fps_upg_fl_ass_spotter", "a_fl_mcs")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_surefire", "wpn_fps_upg_fl_wml", "a_fl_mcs")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_surefire", "wpn_fps_upg_fl_anpeq2", "a_fl_mcs")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_surefire", "wpn_fps_upg_fl_dbal_d2", "a_fl_mcs")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_surefire", "wpn_fps_upg_fl_utg", "a_fl_mcs")
+end
+if self.parts.wpn_fps_shot_870_fg_rail then
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_rail", "wpn_fps_upg_fl_ass_spotter", "a_fl_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_rail", "wpn_fps_upg_fl_wml", "a_fl_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_rail", "wpn_fps_upg_fl_anpeq2", "a_fl_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_rail", "wpn_fps_upg_fl_dbal_d2", "a_fl_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_rail", "wpn_fps_upg_fl_utg", "a_fl_mcs")
+end
+if self.parts.wpn_fps_shot_mossberg_fg_short then
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_mossberg_fg_short", "wpn_fps_upg_fl_ass_spotter", "a_fl_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_mossberg_fg_short", "wpn_fps_upg_fl_wml", "a_fl_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_mossberg_fg_short", "wpn_fps_upg_fl_anpeq2", "a_fl_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_mossberg_fg_short", "wpn_fps_upg_fl_dbal_d2", "a_fl_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_mossberg_fg_short", "wpn_fps_upg_fl_utg", "a_fl_mcs")
 end
 if self.parts.wpn_fps_shot_870_rail_mcs then
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_rail_mcs", "wpn_fps_upg_o_kobra", "a_o_mcs")

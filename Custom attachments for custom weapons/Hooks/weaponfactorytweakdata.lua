@@ -1,4 +1,4 @@
-function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, param3, param4, param5)
+function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, param3, param4, param5, param6)
 	if self.parts[param2] then
 		if part_type == "forbids" and self.parts[param1].forbids then
 			table.insert(self.parts[param1].forbids, param2)
@@ -44,7 +44,6 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			table.insert(self[param1].uses_parts, param2)
 			self[param1].adds[param2] = {param5}
 			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].stance_mod[param4])
---[[
 		elseif part_type == "sight_smcopy" then
 			if param4 == "specter" then
 				param4 = "wpn_fps_upg_o_specter"
@@ -54,7 +53,16 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			end
 			table.insert(self[param1].uses_parts, param2)
 			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].override[param4].stance_mod[param5])
-]]	
+		elseif part_type == "sight_smcopy_rail" then
+			if param4 == "specter" then
+				param4 = "wpn_fps_upg_o_specter"
+			end
+			if param4 == "acog" then
+				param4 = "wpn_fps_upg_o_acog"
+			end
+			table.insert(self[param1].uses_parts, param2)
+			self[param1].adds[param2] = {param6}
+			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].override[param4].stance_mod[param5])
 		elseif part_type == "part_a_obj_ovr" and self.parts[param1].override then
 			self.parts[param1].override[param2] = {a_obj = param3}
 		elseif part_type == "wpn_a_obj_ovr" and self[param1].override then
@@ -78,11 +86,6 @@ function WeaponFactoryTweakData:cafcw_acogrmr_stance(switch_id, wpn_id, stance_i
 		self.parts[switch_id].stance_mod[wpn_id] = deep_clone(self.parts[switch_id].stance_mod[stance_id])
 	end
 end
---[[ 
-TODO:
-
-Part_type sight custom stance_mod.
-]]
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWModInit", function(self)
 -- Primary
 --
@@ -1370,7 +1373,8 @@ end
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_m60", "wpn_fps_upg_fl_utg")
 end
 -- Ohio Ordnance HCAR
-if self.wpn_fps_ass_hcar then
+-- temp check
+if self.wpn_fps_ass_hcar and self.parts.wpn_fps_upg_hcar_gadgets_leftrail and self.parts.wpn_fps_upg_hcar_gadgets_toprail then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_m145", "specter", "wpn_fps_ass_fal")
@@ -1384,6 +1388,8 @@ if self.wpn_fps_ass_hcar then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hcar", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_leftrail", "wpn_fps_upg_fl_ass_spotter", "a_fl_leftrail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_toprail", "wpn_fps_upg_fl_ass_spotter", "a_fl_toprail")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_srs", "specter", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("stock", "wpn_fps_ass_hcar", "wpn_fps_upg_m4_s_caastock")
@@ -1400,6 +1406,8 @@ if self.wpn_fps_ass_hcar then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_hcar", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hcar", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_leftrail", "wpn_fps_upg_fl_wml", "a_fl_leftrail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_toprail", "wpn_fps_upg_fl_wml", "a_fl_toprail")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_fal")
@@ -1415,8 +1423,14 @@ if self.wpn_fps_ass_hcar then
 	self:cafcw_add_to_parts("stock", "wpn_fps_ass_hcar", "wpn_fps_upg_m4_s_mk46_col")
 	self:cafcw_add_to_parts("stock", "wpn_fps_ass_hcar", "wpn_fps_upg_m4_s_ubr_col")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hcar", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_leftrail", "wpn_fps_upg_fl_anpeq2", "a_fl_leftrail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_toprail", "wpn_fps_upg_fl_anpeq2", "a_fl_toprail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hcar", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_leftrail", "wpn_fps_upg_fl_dbal_d2", "a_fl_leftrail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_toprail", "wpn_fps_upg_fl_dbal_d2", "a_fl_toprail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hcar", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_hcar_gadgets_toprail", "wpn_fps_upg_fl_utg", "a_fl_toprail")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_hcar", "wpn_fps_upg_ns_ass_smg_tromix")
 end
 -- HK416
@@ -1642,186 +1656,76 @@ if self.wpn_fps_ass_scarl and self.wpn_fps_ass_scarl.adds and self.parts.wpn_fps
 end
 -- XM21
 if self.wpn_fps_snp_xm21 then
-if self.parts.wpn_fps_upg_o_kobra then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_kobra")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_kobra = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_kobra = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_kobra.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_compm4s then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_compm4s")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_compm4s = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_compm4s = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_compm4s.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_m145 then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_m145")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_m145 = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_m145 = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_m145.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_pkas then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_pkas")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_pkas = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_pkas = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_pkas.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_kobra", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_kobra", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_compm4s", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_compm4s", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_m145", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_m145", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_pkas", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_pkas", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_1p69", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_1p69", "a_o_sm")
 if self.parts.wpn_fps_upg_o_1p69 then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_1p69")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_1p69 = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_1p69 = {a_obj = "a_o_sm"}
 	self.parts.wpn_fps_upg_o_1p69.stance_mod.wpn_fps_snp_xm21 = {translation = Vector3(-0.02, -26, -5.97)}
 end
-if self.parts.wpn_fps_upg_o_coyote then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_coyote")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_coyote = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_coyote = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_coyote.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_acog_rmr = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_acog_rmr = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_acog_rmr.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_hologram then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_hologram")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_hologram = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_hologram = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_hologram.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_gitsch then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_gitsch")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_gitsch = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_gitsch = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_gitsch.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_ta648 then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_ta648")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_ta648 = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_ta648 = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_ta648.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_shortdot.stance_mod.wpn_fps_snp_xm21)
-end
-if self.parts.wpn_fps_upg_o_zeiss then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_zeiss")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_zeiss = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_zeiss = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_zeiss.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_coyote", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_coyote", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_acog_rmr", "wpn_fps_upg_o_m14_scopemount", "acog", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_acog_rmr", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_hologram", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_hologram", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_gitsch", "wpn_fps_upg_o_m14_scopemount", "acog", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_gitsch", "a_o_sm")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_ta648", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_xm21", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_ta648", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_zeiss", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_zeiss", "a_o_sm")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_deltatitanium", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_xm21", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_deltatitanium", "a_o_sm")
 if self.parts.wpn_fps_upg_o_deltatitanium then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_deltatitanium")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_deltatitanium = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_deltatitanium = {a_obj = "a_o_sm"}
 	self.parts.wpn_fps_upg_o_deltatitanium.stance_mod.wpn_fps_snp_xm21 = {translation = Vector3(-0.02, -25, -5.97)}
 end
-if self.parts.wpn_fps_upg_o_okp7 then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_okp7")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_okp7 = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_okp7 = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_okp7.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_hd33 then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_hd33")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_hd33 = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_hd33 = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_hd33.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_prismatic then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_prismatic")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_prismatic = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_prismatic = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_prismatic.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_srs then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_srs")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_srs = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_srs = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_srs.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_hd33", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_hd33", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_prismatic", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_prismatic", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_srs", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_srs", "a_o_sm")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_csgoscope", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_xm21", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_csgoscope", "a_o_sm")
 if self.parts.wpn_fps_upg_o_csgoscope then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_csgoscope")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_csgoscope = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_csgoscope = {a_obj = "a_o_sm"}
 	self.parts.wpn_fps_upg_o_csgoscope.stance_mod.wpn_fps_snp_xm21 = {translation = Vector3(-0.02, -28, -5.97)}
 end
-if self.parts.wpn_fps_upg_o_hcog then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_hcog")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_hcog = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_hcog = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_hcog.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_reflexholo then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_reflexholo")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_reflexholo = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_reflexholo = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_reflexholo.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_aog = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_aog = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_st10 then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_st10_sniper")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_st10_sniper = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_st10_sniper = {a_obj = "a_o_sm"}
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_hcog", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_hcog", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_reflexholo", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_reflexholo", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_aog", "wpn_fps_upg_o_m14_scopemount", "acog", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_aog", "a_o_sm")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_xm21", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_st10", "a_o_sm")
+if self.parts.wpn_fps_upg_o_st10_sniper then
 	self.parts.wpn_fps_upg_o_st10_sniper.stance_mod.wpn_fps_snp_xm21 = {translation = Vector3(-0.02, -30, -5.97)}
 end
-if self.parts.wpn_fps_upg_o_elo then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_elo")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_elo = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_elo = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_elo.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_po4 = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_po4 = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_po4.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_po4.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_susat = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_susat = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_susat.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_susat.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_kemper then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_kemper")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_kemper = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_kemper = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_kemper.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_mepro then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_mepro")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_mepro = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_mepro = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_mepro.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_rusak then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_rusak")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_rusak = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_rusak = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_rusak.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_ta648rmr then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_ta648rmr")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_ta648rmr = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_ta648rmr = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_ta648rmr.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_shortdot.stance_mod.wpn_fps_snp_xm21)
-end
-if self.parts.wpn_fps_upg_o_horzine then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_horzine")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_horzine = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_horzine = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_specter.stance_mod.wpn_fps_ass_m14)
-end
-if self.parts.wpn_fps_upg_o_eotech552 then
-table.insert(self.wpn_fps_snp_xm21.uses_parts, "wpn_fps_upg_o_eotech552")
-	self.wpn_fps_snp_xm21.adds.wpn_fps_upg_o_eotech552 = {"wpn_fps_snp_xm21_scope_mount"}
-	self.wpn_fps_snp_xm21.override.wpn_fps_upg_o_eotech552 = {a_obj = "a_o_sm"}
-	self.parts.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_snp_xm21 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_eotech552.stance_mod.wpn_fps_ass_m14)
-end
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_elo", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_elo", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_m14_scopemount", "wpn_fps_upg_o_po4", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_po4", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_m14_scopemount", "wpn_fps_upg_o_susat", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_susat", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_kemper", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_kemper", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_mepro", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_mepro", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_rusak", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_rusak", "a_o_sm")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_ta648rmr", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_xm21", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_ta648rmr", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_horzine", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_horzine", "a_o_sm")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_m14_scopemount", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_eotech552", "a_o_sm")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_xm21", "wpn_fps_upg_fl_ass_spotter")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_xm21", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_offset_sight_rail")
@@ -3077,6 +2981,11 @@ if self.wpn_fps_pis_zenith then
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_zenith", "wpn_fps_ass_ns_g_sup2", "a_ns", "barrel")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_zenith", "wpn_fps_upg_fl_unimax")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_zenith", "wpn_fps_upg_fl_utg_pis")
+end
+-- Lahti L-35
+if self.wpn_fps_pis_l35 then
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_l35", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_l35_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_l35", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_l35_gadget_rail")
 end
 -- Attachments
 --

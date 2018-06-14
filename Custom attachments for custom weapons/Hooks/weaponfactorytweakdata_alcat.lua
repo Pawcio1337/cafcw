@@ -2225,6 +2225,24 @@ end
 
 -- FAMAS Feline
 if self.parts.wpn_fps_ass_famas_body_feline then
+if self.parts.wpn_fps_ass_famas_o_adapter_long then
+self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_ass_famas_o_adapter_long = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(0, 10, 2)} },a_obj = "a_o_feline"}
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_m4flipup", "a_o_feline")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_scorpionevo", "a_o_feline")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy", "a_o_feline")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy_dot", "a_o_feline")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troym4", "a_o_feline")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_bf4flipup", "a_o_feline")
+end
+if self.parts.wpn_fps_upg_45rail then
+self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45dd = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45mbus = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45troy = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45flipup = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_45rail", "a_o_feline")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45mbus_il", "a_o_feline")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45troy_il", "a_o_feline")
+end
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_kobra", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_compm4s", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_m145", "a_o_feline")
@@ -2250,7 +2268,7 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_rusak", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_horzine", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_eotech552", "a_o_feline")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_fl_ass_spotter", "a_fl_feline")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_fl_ass_spotter", "a_fl_feline2")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_fl_wml", "a_fl_feline2")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_fl_anpeq2", "a_fl_feline2")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_fl_utg", "a_fl_feline2")

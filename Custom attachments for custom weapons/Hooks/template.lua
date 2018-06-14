@@ -21,7 +21,16 @@ if self.wpn_fps_smg_example then
 
 -- Sight with rail (sight_rail):
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint", "wpn_fps_smg_sight_rail")
--- Same as above with last parameter being ID of added sight rail.
+-- Same as above but with last parameter being ID of added sight rail.
+
+-- Sight with stance_mod copied from scope mount override table (sight_smcopy):
+	self:cafcw_add_to_parts("sight_smcopy", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14")
+-- Function call explained - ("sight", "Factory ID of custom weapon", "ID of custom sight", "ID of scope mount attachment", "ID of sight that stance_mod will be copied from scope mount override table", "Factory ID of base weapon")
+-- Note. ID of sights "wpn_fps_upg_o_specter" and "wpn_fps_upg_o_acog" can be shorted with "specter" and "acog".
+
+-- Sight with stance_mod from scope mount override table with rail (sight_smcopy_rail):
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_smg_example_scope_mount")
+-- Same as above but with last parameter being ID of added sight rail.
 
 -- Gadget:
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_example", "wpn_fps_upg_fl_wml")
@@ -29,7 +38,7 @@ if self.wpn_fps_smg_example then
 
 -- Gadget with rail (gadget_rail):
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_example", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_smg_example_gadget_rail")
--- Same as above with last parameter being ID of added gadget rail.
+-- Same as above but with last parameter being ID of added gadget rail.
 
 -- Part override custom attachment a_obj (part_a_obj_ovr):
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_kobra", "a_o_high")
@@ -41,7 +50,7 @@ if self.wpn_fps_smg_example then
 
 -- Weapon override custom attachment a_obj and parent (wpn_a_obj_parent_ovr):
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_smg_example", "wpn_fps_ass_ns_g_sup1", "a_ns", "barrel")
--- Same as above with last parameter being used parent type.
+-- Same as above but with last parameter being used parent type.
 
 -- Weapon override custom attachment parent (wpn_parent_ovr):
 	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_smg_example", "wpn_fps_ass_ns_g_sup2", "barrel")
