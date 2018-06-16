@@ -3165,4 +3165,11 @@ if self.parts.wpn_fps_upg_o_ak_coverrail then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_eotech552", "a_o_coverrail")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_delta_rm55")
 end
+-- Luger P08 Gadgets
+if self.wpn_fps_pis_breech.adds and self.wpn_fps_pis_x_breech.adds and self.parts.wpn_fps_pis_breech_gadget_rail then
+    self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_breech", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_breech_gadget_rail")
+    self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_breech", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_breech_gadget_rail")
+    self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_breech", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_breech_gadget_rail")
+    self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_breech", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_breech_gadget_rail")
+end
 end)

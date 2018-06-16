@@ -2218,6 +2218,19 @@ end
 end
 
 
+-- Stinger Launcher
+if self.wpn_fps_stinger then
+self:cafcw_add_to_parts("gadget_rail", "wpn_fps_stinger", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_addon_ris")
+self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_stinger", "wpn_fps_upg_fl_ass_spotter", "a_fl_stinger")
+self:cafcw_add_to_parts("gadget_rail", "wpn_fps_stinger", "wpn_fps_upg_fl_anpeq2", "wpn_fps_addon_ris")
+self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_stinger", "wpn_fps_upg_fl_anpeq2", "a_fl_stinger")
+self:cafcw_add_to_parts("gadget_rail", "wpn_fps_stinger", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_addon_ris")
+self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_stinger", "wpn_fps_upg_fl_dbal_d2", "a_fl_stinger")
+self:cafcw_add_to_parts("gadget_rail", "wpn_fps_stinger", "wpn_fps_upg_fl_utg", "wpn_fps_addon_ris")
+self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_stinger", "wpn_fps_upg_fl_utg", "a_fl_stinger")
+end
+
+
 
 
 
