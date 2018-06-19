@@ -39,6 +39,7 @@ if self.wpn_fps_smg_example then
 -- Gadget with rail (gadget_rail):
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_example", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_smg_example_gadget_rail")
 -- Same as above but with last parameter being ID of added gadget rail.
+-- If you need similar function but not categorized for gadgets you can use "attach_adds" part type.
 
 -- Part override custom attachment a_obj (part_a_obj_ovr):
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_kobra", "a_o_high")

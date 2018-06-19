@@ -1,6 +1,9 @@
 function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, param3, param4, param5, param6)
 	if self.parts[param2] then
-		if part_type == "forbids" and self.parts[param1].forbids then
+		if part_type == "attach_adds" or part_type == "gadget_rail" then
+			table.insert(self[param1].uses_parts, param2)
+			self[param1].adds[param2] = {param3}
+		elseif part_type == "forbids" and self.parts[param1].forbids then
 			table.insert(self.parts[param1].forbids, param2)
 			if param3 and self.parts[param3].forbids then
 				table.insert(self.parts[param3].forbids, param2)
@@ -22,9 +25,6 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			if param5 then
 				table.insert(self.parts[param2].forbids, param5)
 			end
-		elseif part_type == "gadget_rail" then
-			table.insert(self[param1].uses_parts, param2)
-			self[param1].adds[param2] = {param3}
 		elseif part_type == "sight" then
 			if param3 == "specter" then
 				param3 = "wpn_fps_upg_o_specter"
@@ -554,7 +554,7 @@ if self.wpn_fps_snp_sv98 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_sv98", "wpn_fps_upg_fl_utg")
 end
 -- AKU-94
-if self.wpn_fps_ass_aku94 then
+if self.wpn_fps_ass_aku94 and self.parts.wpn_fps_upg_aku94_gadgets_leftrail then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_m145", "specter", "wpn_fps_ass_l85a2")
@@ -568,6 +568,7 @@ if self.wpn_fps_ass_aku94 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_aku94", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_aku94_gadgets_leftrail", "wpn_fps_upg_fl_ass_spotter", "a_fl_leftrail")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_srs", "specter", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_ass_l85a2")
@@ -577,6 +578,7 @@ if self.wpn_fps_ass_aku94 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_aku94", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_aku94_gadgets_leftrail", "wpn_fps_upg_fl_wml", "a_fl_leftrail")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_l85a2")
@@ -586,8 +588,11 @@ if self.wpn_fps_ass_aku94 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_aku94", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_aku94_gadgets_leftrail", "wpn_fps_upg_fl_anpeq2", "a_fl_leftrail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_aku94", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_aku94_gadgets_leftrail", "wpn_fps_upg_fl_dbal_d2", "a_fl_leftrail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_aku94", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_aku94_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 end
 -- Valmet Rk.62
 if self.wpn_fps_ass_rk62 then
