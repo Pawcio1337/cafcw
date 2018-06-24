@@ -34,7 +34,7 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			end
 			table.insert(self[param1].uses_parts, param2)
 			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].stance_mod[param4])
-		elseif part_type == "sight_rail" then
+		elseif part_type == "sight_rail" and self[param1].adds then
 			if param3 == "specter" then
 				param3 = "wpn_fps_upg_o_specter"
 			end
@@ -53,7 +53,7 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			end
 			table.insert(self[param1].uses_parts, param2)
 			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].override[param4].stance_mod[param5])
-		elseif part_type == "sight_smcopy_rail" then
+		elseif part_type == "sight_smcopy_rail" and self[param1].adds then
 			if param4 == "specter" then
 				param4 = "wpn_fps_upg_o_specter"
 			end
@@ -2993,7 +2993,7 @@ if self.wpn_fps_pis_l35 then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_l35", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_l35_gadget_rail")
 end
 -- KS-23
-if self.wpn_fps_shot_ks23 then
+if self.wpn_fps_shot_ks23 and self.parts.wpn_fps_shot_ks23_gadget_rail then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_m145", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
