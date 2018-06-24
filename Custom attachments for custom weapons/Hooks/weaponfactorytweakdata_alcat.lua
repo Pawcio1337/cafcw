@@ -52,12 +52,11 @@ end
 if self.wpn_fps_ass_bar then
 self:cafcw_add_to_parts("gadget", "wpn_fps_ass_bar", "wpn_fps_upg_fl_ass_spotter")
 self:cafcw_add_to_parts("gadget", "wpn_fps_ass_bar", "wpn_fps_upg_fl_wml")
-self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_bar", "wpn_fps_ass_ns_g_sup3")
-self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_bar", "wpn_fps_ass_ns_g_sup4")
 self:cafcw_add_to_parts("gadget", "wpn_fps_ass_bar", "wpn_fps_upg_fl_anpeq2")
 self:cafcw_add_to_parts("gadget", "wpn_fps_ass_bar", "wpn_fps_upg_fl_dbal_d2")
 self:cafcw_add_to_parts("gadget", "wpn_fps_ass_bar", "wpn_fps_upg_fl_utg")
 self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_bar", "wpn_fps_upg_ns_ass_smg_tromix")
+self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_bar", "wpn_fps_upg_ns_ass_smg_tromix", "a_ns_bar")
 end
 
 --PKP Pecheneg LMG

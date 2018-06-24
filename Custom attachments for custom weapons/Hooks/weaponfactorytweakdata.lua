@@ -2992,6 +2992,68 @@ if self.wpn_fps_pis_l35 then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_l35", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_l35_gadget_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_l35", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_l35_gadget_rail")
 end
+-- KS-23
+if self.wpn_fps_shot_ks23 then
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_m145", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_shot_ks23_gadget_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_srs", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_aog", "acog", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_elo", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_fl_wml", "wpn_fps_shot_ks23_gadget_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_shot_ks23", "wpn_fps_shot_ks23_sight_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_fl_anpeq2", "wpn_fps_shot_ks23_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_shot_ks23_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_ks23", "wpn_fps_upg_fl_utg", "wpn_fps_shot_ks23_gadget_rail")
+end
+-- Widowmaker TX
+if self.wpn_fps_shot_wmtx then
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_m145", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_wmtx", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_srs", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_aog", "acog", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_elo", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_wmtx", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_wmtx", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_wmtx", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_wmtx", "wpn_fps_upg_fl_utg")
+end
 -- Attachments
 --
 -- Trijicon ACOG TA31F-RMR Scope
@@ -3106,6 +3168,10 @@ end
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_pis_unica6", "wpn_fps_pis_rage")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_ash", "wpn_fps_ass_famas")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_acog_rmr_switch", "wpn_fps_upg_o_delta_rm55")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
+if self.wpn_fps_shot_ks23 then
+	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_shot_ks23 = {translation = Vector3(-0.006, -1, -3.31),rotation = Rotation(0, -2, 0)}
+end
 end
 -- Trijicon ACOG TA648RMR Scope
 if self.parts.wpn_fps_upg_o_ta648rmr_switch then

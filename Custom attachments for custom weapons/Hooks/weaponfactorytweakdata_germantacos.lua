@@ -86,4 +86,86 @@ if self.wpn_fps_pis_p80 then
 		end
 	end
 end
+
+--PM-63 RAK
+
+if self.wpn_fps_smg_pm63 then
+
+	self:cafcw_add_to_parts("gadget"       , "wpn_fps_smg_pm63", "wpn_fps_upg_fl_anpeq2"                     )
+	self:cafcw_add_to_parts("gadget"       , "wpn_fps_smg_pm63", "wpn_fps_upg_fl_dbal_d2"                    )
+	self:cafcw_add_to_parts("gadget"       , "wpn_fps_smg_pm63", "wpn_fps_upg_fl_utg"                        )
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_fl_anpeq2"         , "a_pm63fl")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_fl_dbal_d2"        , "a_pm63fl")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_fl_utg"            , "a_pm63fl")
+	
+	
+	self:cafcw_add_to_parts("barrel_ext"   , "wpn_fps_smg_pm63", "wpn_fps_ass_ns_g_sup3"                     )
+	self:cafcw_add_to_parts("barrel_ext"   , "wpn_fps_smg_pm63", "wpn_fps_ass_ns_g_sup4"                     )
+	self:cafcw_add_to_parts("barrel_ext"   , "wpn_fps_smg_pm63", "wpn_fps_ass_ns_g_sup5"                     )
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_ass_ns_g_sup3"         , "a_pm63ns")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_ass_ns_g_sup4"         , "a_pm63ns")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_ass_ns_g_sup5"         , "a_pm63ns")
+	
+	self:cafcw_add_to_parts("barrel_ext"   , "wpn_fps_smg_pm63", "wpn_fps_upg_ns_ass_smg_tromix"             )
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_ns_ass_smg_tromix" , "a_pm63ns")
+	
+	if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 and self.parts.wpn_fps_ass_ns_g_sup5 then
+		
+		local barrelexts = {
+			"wpn_fps_ass_ns_g_sup3",
+			"wpn_fps_ass_ns_g_sup4",
+			"wpn_fps_ass_ns_g_sup5",
+			"wpn_fps_upg_ns_ass_smg_tromix"
+		}
+		
+		for i, part_id in ipairs(barrelexts) do
+			if not self.parts[part_id].override     then self.parts[part_id].override = {}    end
+			self.parts[part_id].override.wpn_fps_smg_pm63_ba_std = {unit = "units/mods/weapons/wpn_fps_smg_pm63_pts/wpn_fps_smg_pm63_ba_long"}
+		end
+		
+	end
+	
+end
+
+--CZ 75 Short Rail
+
+if self.wpn_fps_pis_rally then
+
+	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup1"                         )
+	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup2"                         )
+	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup6"                         )
+	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup1" , "a_cz75srns", "barrel")
+	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup2" , "a_cz75srns", "barrel")
+	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup6" , "a_cz75srns", "barrel")
+
+end
+
+--CZ-2
+
+if self.wpn_fps_pis_cz2 then
+
+	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup1"                      )
+	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup2"                      )
+	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup6"                      )
+	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup1" , "a_cz2ns", "barrel")
+	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup2" , "a_cz2ns", "barrel")
+	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup6" , "a_cz2ns", "barrel")
+	
+	if self.parts.wpn_fps_upg_fl_unimax then
+		table.insert(self.wpn_fps_pis_cz2.uses_parts  , "wpn_fps_upg_fl_unimax" )
+		table.insert(self.wpn_fps_pis_cz2.uses_parts  , "wpn_fps_upg_fl_utg_pis")
+		table.insert(self.wpn_fps_pis_x_cz2.uses_parts, "wpn_fps_upg_fl_unimax" )
+		table.insert(self.wpn_fps_pis_x_cz2.uses_parts, "wpn_fps_upg_fl_utg_pis")
+		self.wpn_fps_pis_cz2.adds.wpn_fps_upg_fl_unimax    = {"wpn_fps_pis_g26_fl_adapter"} 
+		self.wpn_fps_pis_x_cz2.adds.wpn_fps_upg_fl_unimax  = {"wpn_fps_pis_g26_fl_adapter"} 
+		self.wpn_fps_pis_cz2.adds.wpn_fps_upg_fl_utg_pis   = {"wpn_fps_pis_g26_fl_adapter"} 
+		self.wpn_fps_pis_x_cz2.adds.wpn_fps_upg_fl_utg_pis = {"wpn_fps_pis_g26_fl_adapter"} 
+		self.wpn_fps_pis_cz2.override.wpn_fps_upg_fl_unimax    = {a_obj = "cz2fl"}
+		self.wpn_fps_pis_cz2.override.wpn_fps_upg_fl_utg_pis   = {a_obj = "cz2fl"}
+		self.wpn_fps_pis_x_cz2.override.wpn_fps_upg_fl_unimax  = {a_obj = "cz2fl"}
+		self.wpn_fps_pis_x_cz2.override.wpn_fps_upg_fl_utg_pis = {a_obj = "cz2fl"}
+	end
+
+end
+
 end)
