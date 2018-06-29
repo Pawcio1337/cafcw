@@ -41,6 +41,10 @@ if self.wpn_fps_smg_example then
 -- Same as above but with last parameter being ID of added gadget rail.
 -- If you need similar function but not categorized for gadgets you can use "attach_adds" part type.
 
+-- Custom attachment overrides part unit (part_unit_ovr):
+	self:cafcw_add_to_parts("part_unit_ovr", "wpn_fps_smg_example_barrel", "wpn_fps_upg_ns_ass_smg_tromix", "units/mods/weapons/wpn_fps_smg_example_pts/wpn_fps_smg_example_barrel_threaded")
+-- Function call explained - ("part_unit_ovr", "ID of attachment that unit will be overrided when custom attachment is added", "ID of custom attachment", "Path to unit")
+
 -- Part override custom attachment a_obj (part_a_obj_ovr):
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_kobra", "a_o_high")
 -- Function call explained - ("part_a_obj_ovr", "ID of attachment that will override a_obj", "ID of custom attachment", "Used a_obj ID")

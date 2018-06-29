@@ -108,23 +108,12 @@ if self.wpn_fps_smg_pm63 then
 	
 	self:cafcw_add_to_parts("barrel_ext"   , "wpn_fps_smg_pm63", "wpn_fps_upg_ns_ass_smg_tromix"             )
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_ns_ass_smg_tromix" , "a_pm63ns")
-	
-	if self.parts.wpn_fps_ass_ns_g_sup3 and self.parts.wpn_fps_ass_ns_g_sup4 and self.parts.wpn_fps_ass_ns_g_sup5 then
-		
-		local barrelexts = {
-			"wpn_fps_ass_ns_g_sup3",
-			"wpn_fps_ass_ns_g_sup4",
-			"wpn_fps_ass_ns_g_sup5",
-			"wpn_fps_upg_ns_ass_smg_tromix"
-		}
-		
-		for i, part_id in ipairs(barrelexts) do
-			if not self.parts[part_id].override     then self.parts[part_id].override = {}    end
-			self.parts[part_id].override.wpn_fps_smg_pm63_ba_std = {unit = "units/mods/weapons/wpn_fps_smg_pm63_pts/wpn_fps_smg_pm63_ba_long"}
-		end
-		
-	end
-	
+
+-- Please do not use ipairs for custom attachments detection.
+	self:cafcw_add_to_parts("part_unit_ovr", "wpn_fps_smg_pm63_ba_std", "wpn_fps_ass_ns_g_sup3", "units/mods/weapons/wpn_fps_smg_pm63_pts/wpn_fps_smg_pm63_ba_long")
+	self:cafcw_add_to_parts("part_unit_ovr", "wpn_fps_smg_pm63_ba_std", "wpn_fps_ass_ns_g_sup4", "units/mods/weapons/wpn_fps_smg_pm63_pts/wpn_fps_smg_pm63_ba_long")
+	self:cafcw_add_to_parts("part_unit_ovr", "wpn_fps_smg_pm63_ba_std", "wpn_fps_ass_ns_g_sup5", "units/mods/weapons/wpn_fps_smg_pm63_pts/wpn_fps_smg_pm63_ba_long")
+	self:cafcw_add_to_parts("part_unit_ovr", "wpn_fps_smg_pm63_ba_std", "wpn_fps_upg_ns_ass_smg_tromix", "units/mods/weapons/wpn_fps_smg_pm63_pts/wpn_fps_smg_pm63_ba_long")
 end
 
 --CZ 75 Short Rail

@@ -65,6 +65,11 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			self.parts[param2].stance_mod[param1] = deep_clone(self.parts[param3].override[param4].stance_mod[param5])
 		elseif part_type == "part_a_obj_ovr" and self.parts[param1].override then
 			self.parts[param1].override[param2] = {a_obj = param3}
+		elseif part_type == "part_unit_ovr" then
+			if not self.parts[param2].override then
+				self.parts[param2].override = {}
+			end
+			self.parts[param2].override[param1] = {unit = param3}
 		elseif part_type == "wpn_a_obj_ovr" and self[param1].override then
 			self[param1].override[param2] = {a_obj = param3}
 		elseif part_type == "wpn_a_obj_parent_ovr" and self[param1].override then
