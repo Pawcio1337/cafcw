@@ -64,27 +64,17 @@ if self.wpn_fps_smg_example then
 -- Forbids:
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high")
 -- Function call explained - ("forbids", "ID of custom attachment that will receive ID to forbids table", "ID of forbidden attachment")
--- Note: Its possible to use up to 3 ID base game/custom weapon attachments:
--- 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_45rds_v2", ""wpn_fps_upg_o_xpsg33_magnifier)
 
 -- Forbids adds:
 	self:cafcw_add_to_parts("forbids_add", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high")
--- Function call explained - ("forbids_add", "ID of forbidden custom attachment", "ID of attachment that will receive IDs to forbids table")
--- Similar to above but in reverse IDs in 1, 3 and 4 parameter will be added to forbids table in ID in 2.
--- Note: Its possible to use up to 3 ID base game/custom weapon attachments:
--- 	self:cafcw_add_to_parts("forbids_add", "wpn_fps_upg_o_45rds", "wpn_fps_smg_example_sight_rail_high", "wpn_fps_upg_o_45rds_v2", ""wpn_fps_upg_o_xpsg33_magnifier)
+-- Function call explained - ("forbids_add", "ID of forbidden custom attachment", "ID of attachment that will receive ID to forbids table")
 
--- You can also use own part type names to category other types of custom attachments:
+-- You can also create own part type names to categories added custom attachments:
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_example", "wpn_fps_ass_ns_g_sup3")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_example", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("other", "wpn_fps_smg_example", "wpn_fps_riflein556")
-	self:cafcw_add_to_parts("other", "wpn_fps_smg_example", "wpn_fps_upg_a_taser556")
 	self:cafcw_add_to_parts("stock", "wpn_fps_smg_example", "wpn_fps_upg_m4_s_caastock")
-	self:cafcw_add_to_parts("stock", "wpn_fps_smg_example", "wpn_fps_upg_m4_s_caastock_black")
-	self:cafcw_add_to_parts("stock", "wpn_fps_smg_example", "wpn_fps_upg_m4_s_hke1")
-	self:cafcw_add_to_parts("stock", "wpn_fps_smg_example", "wpn_fps_upg_m4_s_viper")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_example", "wpn_fps_upg_fl_wml")
--- These are only will add custom attchment to weapon:
+-- These examples will only add custom attchment to custom weapon:
 -- Function call explained - ("PART_TYPE_NAME", "ID of custom attachment")
 end
 end)
