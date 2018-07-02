@@ -79,13 +79,20 @@ if self.wpn_fps_smg_example then
 end
 end)
 --[[
-Adding script to mod:
+Adding new script to mod for own custom weapons:
 1. Save this file as weaponfactorytweakdata_MWSNICK where "MWSNICK" is your mostly used nick on Modworkshop.
 2. Open main.xml and add:
 		<hook file="weaponfactorytweakdata_MWSNICK.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 To <Hooks> group.
 3. Test modified mod with added script in-game.
-When you done with script and you want publish it:
-1. Submit push request on Github.
-2. After push get accepted and uploaded you will be able to update it via mod page on MWS (Remember to increase version="" value by 0.001 in main.xml when you make a new update).
+
+Publishing script to mod
+1. Submit push request with changes on Github.
+2. After push get accepted and uploaded on MWS you will be get access to CAFCW mod.
+Alternatively you can ask one modders that have access to CAFCW mod page on MWS discord to upload it.
+
+Uploading update on MWS - http://modwork.shop/19169
+1. After finishing changes to script open main.xml and increase version="" value by 0.001.
+2. On MWS in edit page change version value to same as in XML.
+3. Upload packed mod in ZIP format.
 ]]

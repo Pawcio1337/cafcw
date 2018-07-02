@@ -3208,7 +3208,6 @@ end
 if self.wpn_fps_ass_mini14 then
 	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_mini14 = deep_clone(self.parts.wpn_fps_upg_o_m14_scopemount.override.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_m14)
 end
-	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_tilt", "wpn_fps_ass_flint")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_m27gear", "wpn_fps_ass_m4")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_vepr12", "wpn_fps_ass_flint")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_svt40", "wpn_fps_snp_siltstone")
