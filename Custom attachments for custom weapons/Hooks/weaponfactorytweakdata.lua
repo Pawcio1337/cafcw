@@ -12,16 +12,24 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 				log("[ERROR] CAFCW: Missing required part: " .. param1, param2, param3)
 			end
 		elseif part_type == "forbids" then
-			if self.parts[param1].forbids then
-				table.insert(self.parts[param1].forbids, param2)
+			if self.parts[param1] then
+				if self.parts[param1].forbids then
+					table.insert(self.parts[param1].forbids, param2)
+				else
+					log("[ERROR] CAFCW: Missing forbids table: " .. param1, param2)
+				end
 			else
-				log("[ERROR] CAFCW: Missing forbids table: " .. param1, param2)
+				log("[ERROR] CAFCW: Missing required part: " .. param1, param2)
 			end
 		elseif part_type == "forbids_add" then
-			if self.parts[param2].forbids then
-				table.insert(self.parts[param2].forbids, param1)
+			if self.parts[param1] then
+				if self.parts[param2].forbids then
+					table.insert(self.parts[param2].forbids, param1)
+				else
+					log("[ERROR] CAFCW: Missing forbids table: " .. param2, param1)
+				end
 			else
-				log("[ERROR] CAFCW: Missing forbids table: " .. param1, param2)
+				log("[ERROR] CAFCW: Missing required part: " .. param2, param1)
 			end
 		elseif part_type == "sight" then
 			if param3 == "specter" then
