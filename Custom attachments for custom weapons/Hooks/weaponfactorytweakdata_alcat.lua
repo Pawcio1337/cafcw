@@ -1429,7 +1429,6 @@ self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_m14e2", "wpn_fps_ass_ns_g_sup
 self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_m14e2", "wpn_fps_upg_ns_ass_smg_tromix")
 
 self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_m14e2", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_m14", "wpn_fps_ass_m14e2_offset_sight_rail")
-self:cafcw_add_to_parts("forbids", "wpn_fps_ass_m14e2_gl_m203", "wpn_fps_upg_o_delta_rm55")
 
 self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m14e2", "wpn_fps_upg_fl_ass_spotter")
 self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m14e2", "wpn_fps_upg_fl_wml")

@@ -111,6 +111,21 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			else
 				log("[ERROR] CAFCW: Missing required part: " .. param1, param2)
 			end
+		elseif part_type == "part_copy_ovr" then
+			if self.parts[param1] and self.parts[param3] then
+				if self.parts[param1].override then
+					if self.parts[param3].override[param4] then
+						self.parts[param1].override[param2] = deep_clone(self.parts[param3].override[param4])
+						else
+							log("[ERROR] CAFCW: Missing override data: " .. param1, param2, param3, param4)
+						end
+				else
+					log("[ERROR] CAFCW: Missing override table: " .. param1, param2)
+				end
+			else
+				log("[ERROR] CAFCW: Missing required part: " .. param1, param2, param3)
+			end
+
 		elseif part_type == "part_unit_ovr" then
 			if self.parts[param1] then
 				if not self.parts[param2].override then
@@ -757,6 +772,7 @@ end
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_rk62", "wpn_fps_upg_ns_ass_smg_tromix")
 end
 -- VSS
+-- todo custom sniper scopes
 if self.wpn_fps_snp_vss then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_vss", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_snp_vss", "wpn_fps_snp_vss_mount_molot")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_vss_cover_rail", "wpn_fps_upg_o_kobra", "a_o_railcover")
@@ -817,6 +833,17 @@ end
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_vss", "wpn_fps_upg_fl_anpeq2", "wpn_fps_snp_vss_barrel_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_vss", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_snp_vss_barrel_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_vss", "wpn_fps_upg_fl_utg", "wpn_fps_snp_vss_barrel_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_vss", "wpn_fps_upg_o_ta648", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_vss", "wpn_fps_snp_vss_mount_molot")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_vss_cover_rail", "wpn_fps_upg_o_ta648", "a_o_railcover")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_vss", "wpn_fps_upg_o_ta648rmr", "wpn_fps_upg_o_shortdot", "wpn_fps_snp_vss", "wpn_fps_snp_vss_mount_molot")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_vss_cover_rail", "wpn_fps_upg_o_ta648rmr", "a_o_railcover")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_vss", "wpn_fps_upg_o_deltatitanium", "specter", "wpn_fps_snp_vss", "wpn_fps_snp_vss_mount_molot")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_vss_cover_rail", "wpn_fps_upg_o_deltatitanium", "a_o_railcover")
+if self.parts.wpn_fps_upg_o_deltatitanium then
+	self.parts.wpn_fps_upg_o_deltatitanium.stance_mod.wpn_fps_snp_vss = {translation = Vector3(0, -15, -7.24)}
+end
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_vss", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_snp_vss")
+	self:cafcw_add_to_parts("part_copy_ovr", "wpn_fps_upg_vss_cover_rail", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_vss_cover_rail", "wpn_fps_upg_o_45rds")
 end
 -- Colt R0991
 if self.wpn_fps_ass_r0991 then
@@ -3365,6 +3392,9 @@ end
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_ta648rmr_switch", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_ta648rmr_switch", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_ta648rmr_switch", "wpn_fps_upg_fl_utg_pis")
+if self.wpn_fps_snp_vss then
+	self.parts.wpn_fps_upg_o_ta648rmr_switch.stance_mod.wpn_fps_snp_vss = {translation = Vector3(0.078, 10, -14.03)}
+end
 end
 -- AK Rail Cover
 if self.parts.wpn_fps_upg_o_ak_coverrail then
