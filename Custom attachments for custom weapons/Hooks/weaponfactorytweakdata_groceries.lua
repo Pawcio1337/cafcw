@@ -62,8 +62,6 @@ if self.wpn_fps_smg_pdr then
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_aug")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_aug")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_aug")
-	self:cafcw_add_to_parts("other", "wpn_fps_smg_pdr", "wpn_fps_riflein556")
-	self:cafcw_add_to_parts("other", "wpn_fps_smg_pdr", "wpn_fps_upg_a_taser556")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_aug")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_ass_aug")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_aug")
@@ -74,5 +72,6 @@ if self.wpn_fps_smg_pdr then
 -- Update v1.68.199
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_ass_aug")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_ass_aug")
+	self:cafcw_attachment_bundle("ammo", "wpn_fps_smg_pdr", "IncendiaryAmmo_MoreAmmoTypes_556x45mm")
 end
 end)

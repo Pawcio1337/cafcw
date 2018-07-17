@@ -22,10 +22,6 @@ if self.wpn_fps_ass_m4_beowulf then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_m4")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_m4_s_caastock")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_m4_s_caastock_black")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_m4_s_hke1")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_m4_s_viper")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_m4")
@@ -44,5 +40,6 @@ if self.wpn_fps_ass_m4_beowulf then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_fl_utg")
+	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_m4_beowulf", "AR15_StockPack")
 end
 end)
