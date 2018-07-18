@@ -35,17 +35,13 @@ if self.wpn_fps_ass_m27gear then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_m4")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m27gear", "wpn_fps_upg_m4_s_collapsed")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m27gear", "wpn_fps_upg_m4_s_pts_col")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m27gear", "wpn_fps_upg_m4_s_crane_col")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m27gear", "wpn_fps_upg_m4_s_mk46_col")
-	self:cafcw_add_to_parts("stock", "wpn_fps_ass_m27gear", "wpn_fps_upg_m4_s_ubr_col")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m27gear", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m27gear", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m27gear", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_m27gear", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_m27gear", "IncendiaryAmmo_MoreAmmoTypes_556x45mm")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_m27gear", "AR15_StockPack")
+	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_m27gear", "Stock_Attachment_Pack")
 end
 
 end)

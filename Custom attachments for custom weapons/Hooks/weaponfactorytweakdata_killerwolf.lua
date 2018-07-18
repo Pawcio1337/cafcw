@@ -8,22 +8,15 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Killerwolf_In
 
 	-- Akimbo HK416C --
 if self.wpn_fps_ass_x_hk416c then
-end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_fl_wml")
 end
 if self.parts.wpn_fps_riflein556 then
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_riflein556")
 end
-if self.parts.wpn_fps_upg_m4_s_collapsed and self.parts.wpn_fps_upg_m4_s_pts_col and self.parts.wpn_fps_upg_m4_s_crane_col and self.parts.wpn_fps_upg_m4_s_mk46_col and self.parts.wpn_fps_upg_m4_s_ubr_col then
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_collapsed")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_pts_col")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_crane_col")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_mk46_col")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_ubr_col")
-end
 self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_x_hk416c", "IncendiaryAmmo_MoreAmmoTypes_556x45mm")
 self:cafcw_attachment_bundle("stock", "wpn_fps_ass_x_hk416c", "AR15_StockPack")
+	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_x_hk416c", "Stock_Attachment_Pack")
 end
 -- Akimbo Mauser C96 --
 if self.wpn_fps_pis_x_c96 then
