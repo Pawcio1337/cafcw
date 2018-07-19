@@ -22,11 +22,6 @@ if self.wpn_fps_snp_fyjs then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_m4flipup_long", "wpn_fps_upg_o_m4flipup_long", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_mbus_long", "wpn_fps_upg_o_mbus_long", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_scorpionevo_long", "wpn_fps_upg_o_scorpionevo_long", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_troy_long", "wpn_fps_upg_o_troy_long", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_troy_m4_long", "wpn_fps_upg_o_troy_m4_long", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_msr")
@@ -83,9 +78,9 @@ if self.wpn_fps_ass_ar160 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ar160", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ar160", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_ar160", "wpn_fps_upg_ns_ass_smg_tromix")
+	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_ar160", "IncendiaryAmmo_MoreAmmoTypes_556x45mm")
 	-- Update v1.68.199
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ar160", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_ass_amcar")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ar160", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_ass_amcar")
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_ar160", "IncendiaryAmmo_MoreAmmoTypes_556x45mm")
 end
 end)

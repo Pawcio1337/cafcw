@@ -503,6 +503,7 @@ end
 if self.wpn_fps_pis_pm then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_pm", "wpn_fps_ass_ns_g_sup1")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_pm", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_pm", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_pm", "IncendiaryAmmo_MoreAmmoTypes_9x19mm")
@@ -510,6 +511,7 @@ end
 if self.wpn_fps_pis_x_pm then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_pm", "wpn_fps_ass_ns_g_sup1")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_pm", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_pm", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_x_pm", "IncendiaryAmmo_MoreAmmoTypes_9x19mm")
@@ -517,6 +519,7 @@ end
 if self.wpn_fps_pis_xs_pm then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_xs_pm", "wpn_fps_ass_ns_g_sup1")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_xs_pm", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_xs_pm", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_xs_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_xs_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_xs_pm", "IncendiaryAmmo_MoreAmmoTypes_9x19mm")

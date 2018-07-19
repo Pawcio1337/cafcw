@@ -80,18 +80,6 @@ if self.parts.wpn_fps_upg_o_aog then
 table.insert(self.wpn_fps_snp_railgun.uses_parts, "wpn_fps_upg_o_aog")
 	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_snp_railgun = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_snp_m95)
 end
-if self.parts.wpn_fps_upg_o_m4flipup and self.parts.wpn_fps_upg_o_mbus and self.parts.wpn_fps_upg_o_scorpionevo and self.parts.wpn_fps_upg_o_troy and self.parts.wpn_fps_upg_o_troy_m4 then
-table.insert(self.wpn_fps_snp_railgun.uses_parts, "wpn_fps_upg_o_m4flipup")
-table.insert(self.wpn_fps_snp_railgun.uses_parts, "wpn_fps_upg_o_mbus")
-table.insert(self.wpn_fps_snp_railgun.uses_parts, "wpn_fps_upg_o_scorpionevo")
-table.insert(self.wpn_fps_snp_railgun.uses_parts, "wpn_fps_upg_o_troy")
-table.insert(self.wpn_fps_snp_railgun.uses_parts, "wpn_fps_upg_o_troy_m4")
-	self.parts.wpn_fps_upg_o_m4flipup.stance_mod.wpn_fps_snp_railgun = deep_clone(self.parts.wpn_fps_upg_o_m4flipup.stance_mod.wpn_fps_snp_m95)
-	self.parts.wpn_fps_upg_o_mbus.stance_mod.wpn_fps_snp_railgun = deep_clone(self.parts.wpn_fps_upg_o_m4flipup.stance_mod.wpn_fps_snp_m95)
-	self.parts.wpn_fps_upg_o_scorpionevo.stance_mod.wpn_fps_snp_railgun = deep_clone(self.parts.wpn_fps_upg_o_scorpionevo.stance_mod.wpn_fps_snp_m95)
-	self.parts.wpn_fps_upg_o_troy.stance_mod.wpn_fps_snp_railgun = deep_clone(self.parts.wpn_fps_upg_o_m4flipup.stance_mod.wpn_fps_snp_m95)
-	self.parts.wpn_fps_upg_o_troy_m4.stance_mod.wpn_fps_snp_railgun = deep_clone(self.parts.wpn_fps_upg_o_m4flipup.stance_mod.wpn_fps_snp_m95)
-end
 if self.parts.wpn_fps_upg_o_rmr_riser then
 table.insert(self.wpn_fps_snp_railgun.uses_parts, "wpn_fps_upg_o_rmr_riser")
 	self.parts.wpn_fps_upg_o_rmr_riser.stance_mod.wpn_fps_snp_railgun = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_m95)
