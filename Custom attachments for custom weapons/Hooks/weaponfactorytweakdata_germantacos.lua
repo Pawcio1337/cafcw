@@ -2,7 +2,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_GermanTacos_I
 ---SECONDARY
 
 --CZ-75B
-if self.wpn_fps_pis_cz75b then
+if self.wpn_fps_pis_cz75b and self.wpn_fps_pis_x_cz75b then
 
 	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz75b", "wpn_fps_ass_ns_g_sup1"                      )
 	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz75b", "wpn_fps_ass_ns_g_sup2"                      )
@@ -127,7 +127,7 @@ end
 
 --CZ-2
 
-if self.wpn_fps_pis_cz2 then
+if self.wpn_fps_pis_cz2 and self.wpn_fps_pis_x_cz2 then
 
 	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup1"                      )
 	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup2"                      )

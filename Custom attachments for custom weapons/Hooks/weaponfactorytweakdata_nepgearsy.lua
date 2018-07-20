@@ -23,8 +23,6 @@ if self.wpn_fps_ass_m27gear then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_elo", "specter", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_ass_m4")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_m27gear", "wpn_fps_ass_ns_g_sup3")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_m27gear", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m27gear", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_m4")
@@ -42,6 +40,7 @@ if self.wpn_fps_ass_m27gear then
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_m27gear", "IncendiaryAmmo_MoreAmmoTypes_556x45mm")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_m27gear", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_m27gear", "Stock_Attachment_Pack")
+	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_m27gear", "SneakySuppressorPack", "ARSupp")
 end
 
 end)
