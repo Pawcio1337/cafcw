@@ -30,7 +30,7 @@ if self.wpn_fps_sho_usas12 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_sho_usas12", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_sho_usas12", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_sho_usas12", "wpn_fps_upg_fl_utg")
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_sho_usas12", "TaserAmmo_12ga_auto")
+	self:cafcw_attachment_bundle("ammo", "wpn_fps_sho_usas12", "_12ga_auto", "TaserAmmo")
 end
 if self.wpn_fps_shot_prison then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_prison", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_sho_spas12", "wpn_fps_shot_r870_ris_special")
@@ -63,6 +63,6 @@ if self.wpn_fps_shot_prison then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_prison", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_prison", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_prison", "wpn_fps_upg_fl_utg")
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_shot_prison", "TaserAmmo_12ga_auto")
+	self:cafcw_attachment_bundle("ammo", "wpn_fps_shot_prison", "_12ga_auto", "TaserAmmo")
 end
 end)
