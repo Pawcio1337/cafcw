@@ -2602,7 +2602,7 @@ if self.wpn_fps_smg_mpx then
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_smg_mpx", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_smg_mpx", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_smg_mpx", "Stock_Attachment_Pack")
-	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_smg_ppsh", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_smg_mpx", "SneakySuppressorPack", "ARSupp")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_mpx_barrel_sd", "wpn_fps_ass_ns_g_sup3")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_mpx_barrel_sd", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_mpx_barrel_sd", "wpn_fps_ass_ns_g_sup5")
