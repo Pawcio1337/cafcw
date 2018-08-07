@@ -34,6 +34,7 @@ if self.wpn_fps_ass_saigry then
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_saigry", "wpn_fps_shield_skin_ftp")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_saigry", "wpn_fps_shield_skin_urban")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_saigry", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_m4")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_saigry", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_m4")
 end
 
 if self.wpn_fps_ass_grotb then

@@ -1,7 +1,7 @@
-<table name="Custom attachments for custom weapons" image="guis/cafcw" color="Color(0.01,0.62,0.98)">
-	<AssetUpdates id="19169" version="1.317" provider="modworkshop"/>
+<table name="Custom attachments for custom weapons" image="guis/mod_icons/cafcw" color="Color(0.01,0.62,0.98)">
+	<AssetUpdates id="19169" version="1.319" provider="modworkshop"/>
 	<AddFiles directory="Assets">
-		<texture path="guis/cafcw"/>
+		<texture path="guis/mod_icons/cafcw"/>
 	</AddFiles>
 	<Hooks directory="Hooks">
 		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>

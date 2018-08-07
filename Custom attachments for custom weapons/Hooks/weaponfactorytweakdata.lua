@@ -328,6 +328,7 @@ if self.wpn_fps_ass_ak12 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ak12", "wpn_fps_upg_fl_utg")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_ak12", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_ak12", "Stock_Attachment_Pack")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ak12", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_flint")
 end
 -- M40A5
 if self.wpn_fps_snp_m40a5 then
@@ -353,7 +354,7 @@ if self.wpn_fps_snp_m40a5 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_snp_model70")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_model70")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_model70")
@@ -374,6 +375,7 @@ if self.wpn_fps_snp_m40a5 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_scorpionevo", "wpn_fps_upg_o_scorpionevo", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_troy", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_troy_m4", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_model70")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m40a5", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_model70")
 end
 -- L115
 if self.wpn_fps_snp_l115 then
@@ -398,7 +400,7 @@ if self.wpn_fps_snp_l115 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_msr")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_msr")
@@ -418,6 +420,7 @@ if self.wpn_fps_snp_l115 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_scorpionevo", "wpn_fps_upg_o_scorpionevo", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_troy", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_troy_m4", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_msr")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_l115", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_msr")
 end
 -- SR-3M Vikhr
 if self.wpn_fps_ass_sr3m then
@@ -507,7 +510,6 @@ if self.wpn_fps_ass_fd338 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fd338", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_fd338", "wpn_fps_upg_o_1p69", "-0.002,-20,-4.275")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_fd338", "wpn_fps_upg_o_csgoscope", "-0.002,-22,-4.275")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_fd338", "wpn_fps_upg_o_st10_sniper", "-0.002,-25,-4.275")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_fd338", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fd338", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_fal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fd338", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_fal")
@@ -528,6 +530,8 @@ if self.wpn_fps_ass_fd338 then
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_fd338", "wpn_fps_upg_o_scorpionevo", "0,2,-1.06")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fd338", "wpn_fps_upg_o_troy", "wpn_fps_upg_o_dd_a1", "wpn_fps_ass_fd338")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fd338", "wpn_fps_upg_o_troy_m4", "wpn_fps_upg_o_dd_a1", "wpn_fps_ass_fd338")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_fd338", "wpn_fps_upg_o_st10", "0,4,-3.5")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_fd338", "wpn_fps_upg_o_visionking", "0,14,-3.5")
 end
 -- HK G36K
 if self.wpn_fps_ass_g36k then
@@ -568,6 +572,7 @@ if self.wpn_fps_ass_g36k then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_g36k", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_g36k", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_g36k", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_g36k", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_g36")
 end
 -- SKS
 if self.wpn_fps_ass_sks then
@@ -598,13 +603,14 @@ if self.wpn_fps_ass_sks then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_sks", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_snp_siltstone")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_ass_sks_irons", "wpn_fps_upg_o_delta_rm55")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_ass_sks_irons", "wpn_fps_upg_siltstone_ekp_1s_03")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_sks", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_sks", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_sks", "wpn_fps_upg_fl_utg")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_sks", "_762x39mm", "IncendiaryAmmo")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sks", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_molot_mount")
 end
 -- FN F2000 Tactical
 if self.wpn_fps_ass_f2000 then
@@ -650,6 +656,7 @@ if self.wpn_fps_ass_f2000 then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_f2000", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_f2000", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_f2000", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_f2000", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_vhs")
 end
 -- AK12-76
 if self.wpn_fps_shot_ak12_76 then
@@ -691,6 +698,7 @@ if self.wpn_fps_shot_ak12_76 then
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_shot_ak12_76", "_12ga_auto", "TaserAmmo")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_shot_ak12_76", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_shot_ak12_76", "Stock_Attachment_Pack")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_ak12_76", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_flint")
 end
 -- SV-98
 if self.wpn_fps_snp_sv98 then
@@ -721,7 +729,7 @@ if self.wpn_fps_snp_sv98 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_troy", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_troy_m4", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_snp_model70")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_model70")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_model70")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_model70")
@@ -736,6 +744,7 @@ if self.wpn_fps_snp_sv98 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_sv98", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_sv98", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_sv98", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sv98", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_model70")
 end
 -- AKU-94
 if self.wpn_fps_ass_aku94 then
@@ -777,6 +786,7 @@ if self.wpn_fps_ass_aku94 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_aku94", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_aku94_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_aku94", "_762x39mm", "IncendiaryAmmo")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_aku94", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_l85a2")
 end
 -- Valmet Rk.62
 if self.wpn_fps_ass_rk62 then
@@ -950,6 +960,7 @@ if self.wpn_fps_ass_r0991 then
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_r0991", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_r0991", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_r0991", "Stock_Attachment_Pack")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_r0991", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_amcar")
 end
 -- SA vz. 58P
 if self.wpn_fps_ass_vz58 then
@@ -994,6 +1005,7 @@ if self.wpn_fps_ass_vz58 then
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_vz58", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_vz58", "Stock_Attachment_Pack")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_vz58", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_vz58", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_akm")
 end
 -- KAC SR-25 E2 ACC
 if self.wpn_fps_snp_sr25 then
@@ -1021,7 +1033,6 @@ if self.wpn_fps_snp_sr25 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sr25", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_ass_m16")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sr25", "wpn_fps_upg_o_elo", "specter", "wpn_fps_ass_m16")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sr25", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_ass_m16")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_sr25", "wpn_fps_upg_o_st10_sniper", "-0.002,-26,-0.854")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sr25", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_m16")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_sr25", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sr25", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_m16")
@@ -1051,6 +1062,8 @@ if self.wpn_fps_snp_sr25 then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_sr25_handguard_mk11", "wpn_fps_upg_o_troy_front", "a_o_f_mk11")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_sr25", "wpn_fps_upg_o_troy_m4", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_sr25")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_sr25_handguard_mk11", "wpn_fps_upg_o_troy_m4_front", "a_o_f_mk11")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_sr25", "wpn_fps_upg_o_st10", "0,2,-0.12")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_sr25", "wpn_fps_upg_o_visionking", "0,12,-0.12")
 end
 -- OTs-14-4A Groza
 if self.wpn_fps_ass_ots_14_4a then
@@ -1116,6 +1129,8 @@ if self.wpn_fps_ass_ots_14_4a then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_ots_14_4a_supp_b", "wpn_fps_upg_fl_dbal_d2", "a_fl_supp")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_ots_14_4a", "wpn_fps_upg_fl_utg", "wpn_fps_ass_ots_14_4a_gadget_rail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_ots_14_4a_supp_b", "wpn_fps_upg_fl_utg", "a_fl_supp")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_ots_14_4a", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_l85a2", "wpn_fps_ass_ots_14_4a_sight_rail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_ots_14_4a_handle_rail", "wpn_fps_upg_o_visionking", "a_o_handle")
 end
 -- McMillan TAC-50
 if self.wpn_fps_snp_tac50 then
@@ -1141,7 +1156,7 @@ if self.wpn_fps_snp_tac50 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_msr")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_msr")
@@ -1157,6 +1172,7 @@ if self.wpn_fps_snp_tac50 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_tac50", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_tac50", "wpn_fps_upg_fl_utg")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_snp_tac50", "_127x99mm", "IncendiaryAmmo")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_tac50", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_msr")
 end
 -- FN SCAR-L M203
 if self.wpn_fps_ass_scar_m203 then
@@ -1200,6 +1216,7 @@ if self.wpn_fps_ass_scar_m203 then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_scar_m203", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_scar_m203", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_scar_m203", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_scar_m203", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_contraband", "wpn_fps_ass_scar_m203_irons_front")
 end
 -- HK XM8
 if self.wpn_fps_ass_xm8 then
@@ -1239,6 +1256,7 @@ if self.wpn_fps_ass_xm8 then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_xm8", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_xm8", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_xm8", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_xm8", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_g36", "wpn_fps_ass_xm8_handguard_rail")
 end
 -- Galil ACE 23
 if self.wpn_fps_ass_galilace then
@@ -1282,6 +1300,7 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_galilace", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_galilace", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_hajk")
 end
 -- Galil ACE 52
 if self.wpn_fps_ass_galilace_762 then
@@ -1325,6 +1344,7 @@ if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_galilace_762", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_galilace_762", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_hajk")
 end
 -- AEK-971
 if self.wpn_fps_ass_aek971 then
@@ -1418,6 +1438,7 @@ if self.wpn_fps_ass_a545 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_a545", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_a545", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_a545", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_a545", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_galil")
 end
 -- Baikal MP-153
 if self.wpn_fps_shot_mp153 then
@@ -1541,6 +1562,7 @@ if self.wpn_fps_ass_hcar then
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_hcar", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_hcar", "Stock_Attachment_Pack")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_hcar", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hcar", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_fal")
 end
 -- HK416
 if self.wpn_fps_ass_hk416 then
@@ -1583,6 +1605,7 @@ if self.wpn_fps_ass_hk416 then
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_hk416", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_hk416", "Stock_Attachment_Pack")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_hk416", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_hk416", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_m4")
 end
 -- SVD
 if self.wpn_fps_snp_svd then
@@ -1607,7 +1630,7 @@ if self.wpn_fps_snp_svd then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
-	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
@@ -1625,6 +1648,7 @@ if self.wpn_fps_snp_svd then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_svd", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_svd", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_svd", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_svd", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_molot_mount")
 end
 -- CheyTac M200
 if self.wpn_fps_snp_m200 then
@@ -1649,7 +1673,7 @@ if self.wpn_fps_snp_m200 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_aog", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_msr")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_msr")
@@ -1670,6 +1694,7 @@ if self.wpn_fps_snp_m200 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_scorpionevo", "wpn_fps_upg_o_scorpionevo", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_troy", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_troy_m4", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_msr")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_msr")
 end
 -- LaRue OBR 7.62
 if self.wpn_fps_ass_obr7 then
@@ -1711,6 +1736,7 @@ if self.wpn_fps_ass_obr7 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_obr7", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_obr7", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_obr7", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_obr7", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_tti")
 end
 -- FN SCAR-L
 if self.wpn_fps_ass_scarl then
@@ -1757,6 +1783,7 @@ if self.wpn_fps_ass_scarl then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_scarl", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_scarl", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_scarl", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_scarl", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_m4", "wpn_fps_ass_scarl_ironsights_front_fold")
 end
 -- XM21
 if self.wpn_fps_snp_xm21 then
@@ -1830,6 +1857,8 @@ if self.wpn_fps_snp_xm21 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_xm21", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_xm21", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_xm21", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_snp_xm21", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_m14_scopemount", "wpn_fps_upg_o_visionking", "wpn_fps_ass_m14", "wpn_fps_snp_xm21_scope_mount")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_xm21", "wpn_fps_upg_o_visionking", "a_o_sm")
 end
 -- Arisaka Type 38
 if self.wpn_fps_snp_type38 then
@@ -1852,7 +1881,7 @@ if self.wpn_fps_snp_type38 then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_type38", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_type38", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_type38", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
-	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_type38", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail_alt")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_type38", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail_alt")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_type38", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_type38", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_type38", "wpn_fps_upg_fl_wml")
@@ -1877,6 +1906,7 @@ if self.wpn_fps_snp_type38 then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_type97_scope_switch", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_type38", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_type97_scope_switch", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_type38", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
 end
 -- IWI X95
 if self.wpn_fps_ass_x95 then
@@ -1918,6 +1948,7 @@ if self.wpn_fps_ass_x95 then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_x95", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_x95", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_x95", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_x95", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_aug")
 end
 -- Winchester Model 1894
 if self.wpn_fps_snp_winchester1894 then
@@ -2013,6 +2044,7 @@ if self.wpn_fps_shot_vepr12 then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_vepr12_handguard_terminator", "wpn_fps_upg_fl_utg", "a_fl_terminator")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_shot_vepr12", "_12ga_auto", "TaserAmmo")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_shot_vepr12", "Stock_Attachment_Pack")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
 end
 -- Tokarev SVT-40
 if self.wpn_fps_ass_svt40 then
@@ -2055,6 +2087,7 @@ if self.wpn_fps_ass_svt40 then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_svt40_pu_scope_switch", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_svt40", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_svt40_pu_scope_switch", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_svt40", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_siltstone", "wpn_fps_ass_svt40_sight_mount")
 end
 -- McMillan CS5
 if self.wpn_fps_snp_cs5 then
@@ -2080,7 +2113,7 @@ if self.wpn_fps_snp_cs5 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_msr")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_po4", "specter", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_msr")
@@ -2094,6 +2127,7 @@ if self.wpn_fps_snp_cs5 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_cs5", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_cs5", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_cs5", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight", "wpn_fps_snp_cs5", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_msr")
 end
 -- Desert Tech MDR
 if self.wpn_fps_ass_mdr then
@@ -2137,6 +2171,7 @@ if self.wpn_fps_ass_mdr then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_mdr_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_mdr", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_mdr", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_mdr", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_aug")
 end
 -- SIG SG 510
 if self.wpn_fps_ass_sg510 then
@@ -2172,6 +2207,7 @@ if self.wpn_fps_ass_sg510 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_sg510", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_sg510", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_sg510", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_sg510", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_galil", "wpn_fps_ass_sg510_sight_rail")
 end
 -- FN FNAR
 if self.wpn_fps_ass_fnar then
@@ -2199,7 +2235,7 @@ if self.wpn_fps_ass_fnar then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_snp_siltstone")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_siltstone")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_siltstone")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_siltstone")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_siltstone")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_siltstone")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_siltstone")
@@ -2223,6 +2259,7 @@ if self.wpn_fps_ass_fnar then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_fnar", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_fnar_gadgets_bottomrail", "wpn_fps_upg_fl_utg", "a_fl_bottomrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_fnar_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_siltstone")
 end
 -- Mk 12 Mod 1 SPR
 if self.wpn_fps_snp_mk12 then
@@ -2254,7 +2291,6 @@ if self.wpn_fps_snp_mk12 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_mk12", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_mk12", "wpn_fps_upg_o_elo", "specter", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_mk12", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_ass_m4")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_mk12", "wpn_fps_upg_o_st10_sniper", "0,-26,-1.302")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_mk12", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_mk12", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_mk12", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_m4")
@@ -2268,6 +2304,8 @@ if self.wpn_fps_snp_mk12 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_mk12", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_mk12", "wpn_fps_upg_fl_utg")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_snp_mk12", "Stock_Attachment_Pack")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_mk12", "wpn_fps_upg_o_st10", "0,3,-0.58")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_mk12", "wpn_fps_upg_o_visionking", "0,12,-0.58")
 end
 -- STK SAR 21 MMS
 if self.wpn_fps_ass_sar21 then
@@ -2313,6 +2351,7 @@ if self.wpn_fps_ass_sar21 then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_sar21_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_sar21", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_sar21", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_sar21", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_corgi")
 end
 -- Winchester Model 1912
 if self.wpn_fps_shot_m1912 then
@@ -2347,7 +2386,7 @@ if self.wpn_fps_snp_k31 then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
-	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_st10_sniper", "wpn_fps_upg_o_st10_sniper", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
@@ -2363,7 +2402,6 @@ if self.wpn_fps_snp_k31 then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_k31_scope", "wpn_fps_upg_o_delta_rm55")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
-	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_k31", "wpn_fps_upg_fl_anpeq2", "wpn_fps_snp_k31_gadget_rail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_k31_gadget_bottom_rail", "wpn_fps_upg_fl_anpeq2", "a_fl_bottomrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_k31_gadget_left_rail", "wpn_fps_upg_fl_anpeq2", "a_fl_leftrail")
@@ -2373,6 +2411,7 @@ if self.wpn_fps_snp_k31 then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_k31", "wpn_fps_upg_fl_utg", "wpn_fps_snp_k31_gadget_rail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_k31_gadget_bottom_rail", "wpn_fps_upg_fl_utg", "a_fl_bottomrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_k31_gadget_left_rail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_k31", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
 end
 -- Akimbo Pancor Jackhammer
 if self.wpn_fps_shot_x_jackhammer then
@@ -2451,6 +2490,7 @@ if self.wpn_fps_ass_ash then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_ash_gadgets_leftrail", "wpn_fps_upg_fl_dbal_d2", "a_fl_leftrail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ash", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_ash_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_ash", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_famas")
 end
 -- STK Ultimax 100 Mark 5
 if self.wpn_fps_lmg_ultimax then
@@ -2509,6 +2549,7 @@ if self.wpn_fps_ass_ar18 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ar18", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ar18", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ar18", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_ar18", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_ak5", "wpn_fps_ass_ar18_sight_rail")
 end
 -- Secondary
 --
@@ -2554,6 +2595,7 @@ if self.wpn_fps_smg_mpx then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_mpx_barrel_sd", "wpn_fps_ass_ns_g_sup3")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_mpx_barrel_sd", "wpn_fps_ass_ns_g_sup4")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_mpx_barrel_sd", "wpn_fps_ass_ns_g_sup5")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_mpx", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_olympic")
 end
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
@@ -2587,6 +2629,7 @@ if self.wpn_fps_smg_ppsh then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_ppsh", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_ppsh", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_smg_ppsh", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_ppsh", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_m45", "wpn_fps_smg_ppsh_rail")
 end
 -- CBJ-MS
 if self.wpn_fps_smg_cbjms then
@@ -2624,6 +2667,7 @@ if self.wpn_fps_smg_cbjms then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_cbjms", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_smg_cbjms", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_smg_cbjms", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_cbjms", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_mp9")
 end
 -- Marlin Model 1894 Custom
 if self.wpn_fps_snp_m1894 then
@@ -2734,6 +2778,7 @@ if self.wpn_fps_smg_vityaz then
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_smg_vityaz", "_9x19mm_p", "MoreAmmoTypes")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_smg_vityaz", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_smg_vityaz", "Stock_Attachment_Pack")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_flint")
 end
 -- APS
 if self.wpn_fps_pis_aps then
@@ -2850,6 +2895,7 @@ if self.wpn_fps_smg_aug9mm then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_aug9mm_gadgets_leftrail", "wpn_fps_upg_fl_utg", "a_fl_leftrail")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_aug9mm", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_smg_aug9mm", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_aug9mm", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_aug")
 end
 -- Colt Model 933 .300 Blackout
 if self.wpn_fps_smg_r0933blk then
@@ -2900,6 +2946,7 @@ if self.wpn_fps_smg_r0933blk then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_r0933blk_handguard_ddm4", "wpn_fps_upg_fl_utg", "a_fl_ddm4")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_r0933blk_handguard_kac_urx4", "wpn_fps_upg_fl_utg", "a_fl_kac_urx4")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_smg_r0933blk", "Stock_Attachment_Pack")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_r0933blk", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_olympic")
 end
 -- SVU
 -- todo custom sniper scopes
@@ -2990,6 +3037,7 @@ if self.wpn_fps_smg_pps43 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_pps43", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_pps43", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_smg_pps43", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_pps43", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_m45", "wpn_fps_smg_pps43_rail")
 end
 -- Chiappa Rhino 60DS
 if self.wpn_fps_pis_rhino then
@@ -3059,6 +3107,7 @@ if self.wpn_fps_pis_unica6 then
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_anpeq2", "a_fl_alt")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_pis_unica6_gadget_rail")
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_unica6", "wpn_fps_upg_fl_dbal_d2", "a_fl_alt")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_pis_unica6", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_pis_rage", "wpn_fps_pis_unica6_sight_rail")
 end
 -- HX25 Handheld Grenade Launcher
 if self.wpn_fps_gre_hx25 then
@@ -3148,6 +3197,7 @@ if self.wpn_fps_shot_wmtx then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_wmtx", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_wmtx", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_wmtx", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_wmtx", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_coal")
 end
 -- S&W Model 327 R8
 if self.wpn_fps_pis_sw327r8 then
@@ -3357,6 +3407,7 @@ if self.parts.wpn_fps_upg_o_ak_coverrail then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_rusak", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_horzine", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_eotech552", "a_o_coverrail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_visionking", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_copy_part_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_45rds")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_kobra", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_compm4s", "a_o_coverrail")
@@ -3385,6 +3436,7 @@ if self.parts.wpn_fps_upg_o_ak_coverrail then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_horzine", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_eotech552", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_copy_part_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_45rds")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_visionking", "a_o_coverrail")
 end
 -- Luger P08 Gadgets
 if self.parts.wpn_fps_pis_breech_gadget_rail then

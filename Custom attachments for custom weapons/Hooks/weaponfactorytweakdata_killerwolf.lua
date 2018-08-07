@@ -424,11 +424,11 @@ table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_aog")
 	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_snp_kar98k = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_snp_mosin)
 end
 if self.parts.wpn_fps_upg_o_st10 then
-table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_st10_sniper")
-	self.wpn_fps_snp_kar98k.adds.wpn_fps_upg_o_st10_sniper = {
+table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_st10")
+	self.wpn_fps_snp_kar98k.adds.wpn_fps_upg_o_st10 = {
 		"wpn_fps_snp_kar98k_rail"
 	}
-	self.parts.wpn_fps_upg_o_st10_sniper.stance_mod.wpn_fps_snp_kar98k = deep_clone(self.parts.wpn_fps_upg_o_st10_sniper.stance_mod.wpn_fps_snp_mosin)
+	self.parts.wpn_fps_upg_o_st10.stance_mod.wpn_fps_snp_kar98k = deep_clone(self.parts.wpn_fps_upg_o_st10.stance_mod.wpn_fps_snp_mosin)
 end
 if self.parts.wpn_fps_upg_o_elo then
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_elo")

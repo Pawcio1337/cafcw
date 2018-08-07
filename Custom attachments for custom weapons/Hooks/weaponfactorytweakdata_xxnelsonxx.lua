@@ -37,5 +37,6 @@ if self.wpn_fps_ass_m4_beowulf then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_fl_utg")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_m4_beowulf", "AR15_StockPack")
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_m4_beowulf", "Stock_Attachment_Pack")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m4_beowulf", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_m4")
 end
 end)
