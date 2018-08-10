@@ -42,6 +42,7 @@ if self.wpn_fps_ass_m27gear then
 	self:cafcw_attachment_bundle("stock", "wpn_fps_ass_m27gear", "Stock_Attachment_Pack")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_m27gear", "SneakySuppressorPack", "ARSupp")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_m4")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_pka", "specter", "wpn_fps_ass_m4")
 end
 
 end)

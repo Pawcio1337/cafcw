@@ -42,5 +42,6 @@ if self.wpn_fps_smg_ump then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_ump", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_ump", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_ump", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_mp5")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_ump", "wpn_fps_upg_o_pka", "specter", "wpn_fps_smg_mp5")
 end
 end)
