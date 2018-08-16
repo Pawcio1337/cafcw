@@ -727,6 +727,14 @@ if self.wpn_fps_lmg_vick then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_vick", "wpn_fps_upg_fl_utg")
 end
+-- Panzerschreck
+if self.wpn_fps_pschreck then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pschreck", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pschreck", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pschreck", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pschreck", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pschreck", "wpn_fps_upg_fl_utg")
+end
 --R870 Attachments
 if self.parts.wpn_fps_shot_870_fg_surefire then
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_fg_surefire", "wpn_fps_upg_fl_ass_spotter", "a_fl_mcs")
