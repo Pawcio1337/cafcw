@@ -2650,6 +2650,46 @@ if self.wpn_fps_shot_toz34 then
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_pka", "specter", "wpn_fps_shot_toz34", "wpn_fps_shot_toz34_sight_rail")
 	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_st10", "0,-4,-3.316", "wpn_fps_shot_toz34_sight_rail")
 	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_visionking", "0,6,-3.292", "wpn_fps_shot_toz34_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_shot_toz34", "wpn_fps_shot_toz34_sight_rail")
+end
+-- Akimbo TOZ-66
+if self.wpn_fps_shot_x_toz66 then
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_x_toz66", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_shot_x_toz66_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_x_toz66", "wpn_fps_upg_fl_wml", "wpn_fps_shot_x_toz66_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_x_toz66", "wpn_fps_upg_fl_anpeq2", "wpn_fps_shot_x_toz66_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_x_toz66", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_shot_x_toz66_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_x_toz66", "wpn_fps_upg_fl_utg", "wpn_fps_shot_x_toz66_gadget_rail")
+end
+-- Merkel Drilling 961LS
+if self.wpn_fps_snp_merkel then
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_m145", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_srs", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_aog", "acog", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_elo", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_snp_merkel_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_fl_wml", "wpn_fps_snp_merkel_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_fl_anpeq2", "wpn_fps_snp_merkel_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_snp_merkel_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_fl_utg", "wpn_fps_snp_merkel_gadget_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_pka", "specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_st10", "0,-8,-4.315", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_visionking", "0,2,-4.292", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
 end
 -- Secondary
 --
@@ -3349,6 +3389,34 @@ if self.wpn_fps_pis_sw327r8 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_pis_sw327r8", "wpn_fps_upg_o_pka", "specter", "wpn_fps_pis_sw327r8")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_pis_sw327r8", "wpn_fps_upg_o_susat", "-0.028,4,-5,305")
 end
+-- TOZ-66
+if self.wpn_fps_shot_toz66 then
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_m145", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_srs", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_aog", "acog", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_elo", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_shot_toz66_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_fl_wml", "wpn_fps_shot_toz66_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_fl_anpeq2", "wpn_fps_shot_toz66_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_shot_toz66_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_fl_utg", "wpn_fps_shot_toz66_gadget_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_shot_toz66", "wpn_fps_upg_o_pka", "specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+end
 -- Attachments
 --
 -- Trijicon ACOG TA31F-RMR Scope
@@ -3468,7 +3536,9 @@ end
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_acog_rmr_switch", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_acog_rmr_switch", "wpn_fps_upg_fl_utg_pis")
 	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_pis_sw327r8", "-0.028,13,-3.55")
-	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_shot_toz34", "0,0,0")
+	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_shot_toz34", "0,-6,-7.425")
+	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_shot_toz66", "0,0,0")
+	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_snp_merkel", "0,-8,-8.425")
 end
 -- Trijicon ACOG TA648RMR Scope
 if self.parts.wpn_fps_upg_o_ta648rmr_switch then
