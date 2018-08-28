@@ -91,9 +91,11 @@ if self.wpn_fps_smg_pm63 then
 
 	self:cafcw_add_to_parts("gadget"       , "wpn_fps_smg_pm63", "wpn_fps_upg_fl_anpeq2"                     )
 	self:cafcw_add_to_parts("gadget"       , "wpn_fps_smg_pm63", "wpn_fps_upg_fl_dbal_d2"                    )
+	self:cafcw_add_to_parts("gadget"       , "wpn_fps_smg_pm63", "wpn_fps_upg_fl_m600p"                    )
 	self:cafcw_add_to_parts("gadget"       , "wpn_fps_smg_pm63", "wpn_fps_upg_fl_utg"                        )
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_fl_anpeq2"         , "a_pm63fl")
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_fl_dbal_d2"        , "a_pm63fl")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_fl_m600p"        , "a_pm63fl")
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_pm63", "wpn_fps_upg_fl_utg"            , "a_pm63fl")
 	
 	

@@ -35,6 +35,7 @@ if self.wpn_fps_ass_m27gear then
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_m27gear", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_m4")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m27gear", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m27gear", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m27gear", "wpn_fps_upg_fl_m600p")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_m27gear", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_m27gear", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_m27gear", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
