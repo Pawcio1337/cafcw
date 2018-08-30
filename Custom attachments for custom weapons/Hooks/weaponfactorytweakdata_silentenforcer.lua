@@ -570,6 +570,7 @@ if self.wpn_fps_shot_qbs then
 	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_sho_ben")
 	self:cafcw_add_to_parts("sight", "wpn_fps_shot_qbs", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_sho_ben")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_anpeq2", "wpn_fps_shot_qbs_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_shot_qbs_gadget_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_m600p", "wpn_fps_shot_qbs_gadget_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_qbs", "wpn_fps_upg_fl_utg", "wpn_fps_shot_qbs_gadget_rail")
 	self:cafcw_attachment_bundle("ammo", "wpn_fps_shot_qbs", "_12ga_auto", "TaserAmmo")
