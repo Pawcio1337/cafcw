@@ -20,16 +20,25 @@ if self.wpn_fps_smg_example then
 -- Note. ID of sights "wpn_fps_upg_o_specter" and "wpn_fps_upg_o_acog" can be shorted with "specter" and "acog".
 
 -- Sight with rail (sight_rail):
-	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint", "wpn_fps_smg_sight_rail")
+	self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_flint", "wpn_fps_smg_example_sight_rail")
 -- Same as above but with last parameter being ID of added sight rail.
 
 -- Sight with stance_mod copied from scope mount override table (sight_smcopy):
 	self:cafcw_add_to_parts("sight_smcopy", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14")
--- Function call explained - ("sight", "Factory ID of custom weapon", "ID of custom sight", "ID of scope mount attachment", "ID of sight that stance_mod will be copied from scope mount override table", "Factory ID of base weapon")
+-- Function call explained - ("sight_smcopy", "Factory ID of custom weapon", "ID of custom sight", "ID of scope mount attachment", "ID of sight that stance_mod will be copied from scope mount override table", "Factory ID of base weapon")
 -- Note. ID of sights "wpn_fps_upg_o_specter" and "wpn_fps_upg_o_acog" can be shorted with "specter" and "acog".
 
 -- Sight with stance_mod from scope mount override table with rail (sight_smcopy_rail):
 	self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_smg_example", "wpn_fps_upg_o_kobra", "wpn_fps_upg_o_m14_scopemount", "specter", "wpn_fps_ass_m14", "wpn_fps_smg_example_scope_mount")
+-- Same as above but with last parameter being ID of added sight rail.
+
+-- Sight with fixed stance_mod value (sight_vector):
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_example", "wpn_fps_upg_o_1p69", "-0.002,-20,-4.275")
+-- Function call explained - ("sight_vector", "Factory ID of custom weapon", "ID of custom sight", "Vector3 value - Note: Value can't have spaces")
+-- Note: Rotation value is currently not supported.
+
+-- Sight with fixed stance_mod value and with rail (sight_vector):
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_example", "wpn_fps_upg_o_1p69", "-0.002,-20,-4.275", "wpn_fps_smg_example_sight_rail")
 -- Same as above but with last parameter being ID of added sight rail.
 
 -- Gadget:
