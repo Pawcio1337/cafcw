@@ -37,8 +37,8 @@ if self.wpn_fps_smg_example then
 -- Function call explained - ("sight_vector", "Factory ID of custom weapon", "ID of custom sight", "Vector3 value - Note: Value can't have spaces")
 -- Note: Rotation value is currently not supported.
 
--- Sight with fixed stance_mod value and with rail (sight_vector):
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_example", "wpn_fps_upg_o_1p69", "-0.002,-20,-4.275", "wpn_fps_smg_example_sight_rail")
+-- Sight with fixed stance_mod value and with rail (sight_vector_rail):
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_smg_example", "wpn_fps_upg_o_1p69", "-0.002,-20,-4.275", "wpn_fps_smg_example_sight_rail")
 -- Same as above but with last parameter being ID of added sight rail.
 
 -- Gadget:
