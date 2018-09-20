@@ -32,6 +32,7 @@ if self.wpn_fps_ass_tilt then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_tilt", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_tilt", "SneakySuppressorPack", "ARSupp")
 	self:cafcw_add_to_parts("attach_adds", "wpn_fps_ass_tilt", "wpn_fps_upg_o_pka", "wpn_fps_upg_o_tilt_scopemount")
+	self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_tilt", "_545x39mm", "MoreAmmoTypes")
 end
 --Secondary
 

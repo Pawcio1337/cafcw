@@ -1011,6 +1011,7 @@ self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_ass_akrocket", "wpn_fps_up
 self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_akrocket", "wpn_fps_upg_o_visionking", "a_o_sm")
 self:cafcw_add_to_parts("sight_smcopy_rail", "wpn_fps_ass_akrocket", "wpn_fps_upg_o_pka", "wpn_fps_upg_o_ak_scopemount", "specter", "wpn_fps_smg_akmsu", "wpn_fps_ass_akrocket_o_rail")
 self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_akrocket", "wpn_fps_upg_o_pka", "a_o_sm")
+self:cafcw_attachment_bundle("ammo", "wpn_fps_ass_akrocket", "_545x39mm", "MoreAmmoTypes")
 end
 
 
@@ -1463,6 +1464,89 @@ self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_stinger", "wpn_fps_upg_fl_utg"
 end
 
 
+--PM-98 Glau
+if self.wpn_fps_smg_glau then
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_m145", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+-- self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_srs", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_aog", "acog", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_elo", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_pka", "specter", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_smg_glau", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_smg_glau", "SneakySuppressorPack", "ARSupp")
+self:cafcw_add_to_parts("gadget", "wpn_fps_smg_glau", "wpn_fps_upg_fl_ass_spotter")
+self:cafcw_add_to_parts("gadget", "wpn_fps_smg_glau", "wpn_fps_upg_fl_wml")
+self:cafcw_add_to_parts("gadget", "wpn_fps_smg_glau", "wpn_fps_upg_fl_anpeq2")
+self:cafcw_add_to_parts("gadget", "wpn_fps_smg_glau", "wpn_fps_upg_fl_dbal_d2")
+self:cafcw_add_to_parts("gadget", "wpn_fps_smg_glau", "wpn_fps_upg_fl_m600p")
+self:cafcw_add_to_parts("gadget", "wpn_fps_smg_glau", "wpn_fps_upg_fl_utg")
+self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_glau", "wpn_fps_upg_ns_ass_smg_tromix")
+self:cafcw_attachment_bundle("ammo", "wpn_fps_smg_glau", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+end
+
+
+--Inkunzi PAW
+if self.wpn_fps_special_inkunzi then
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_kobra", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_compm4s", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_m145", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_pkas", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_acog_rmr", "acog", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_hologram", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+-- self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_gitsch", "acog", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_zeiss", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_hd33", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_prismatic", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_srs", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_st10", "wpn_fps_upg_o_st10", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_hcog", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_reflexholo", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_aog", "acog", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_rmr_riser", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_elo", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_po4", "wpn_fps_upg_o_po4", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_susat", "wpn_fps_upg_o_susat", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_kemper", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_mepro", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_rusak", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_pka", "specter", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_g3", "wpn_fps_smg_glau_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_eotech552", "wpn_fps_upg_o_eotech552", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("sight_rail", "wpn_fps_special_inkunzi", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
+self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_ass_spotter")
+self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_wml")
+self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_anpeq2")
+self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_dbal_d2")
+self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_m600p")
+self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_utg")
+end
+
+
 
 
 
@@ -1470,24 +1554,24 @@ end
 
 -- FAMAS Feline
 if self.parts.wpn_fps_ass_famas_body_feline then
-if self.parts.wpn_fps_ass_famas_o_adapter_long then
-self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_ass_famas_o_adapter_long = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(0, 10, 2)} },a_obj = "a_o_feline"}
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_m4flipup", "a_o_feline")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_scorpionevo", "a_o_feline")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy", "a_o_feline")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy_dot", "a_o_feline")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troym4", "a_o_feline")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_bf4flipup", "a_o_feline")
-end
-if self.parts.wpn_fps_upg_45rail then
-self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45dd = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
-self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45mbus = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
-self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45troy = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
-self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45flipup = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_45rail", "a_o_feline")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45mbus_il", "a_o_feline")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45troy_il", "a_o_feline")
-end
+	if self.parts.wpn_fps_ass_famas_o_adapter_long then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_ass_famas_o_adapter_long = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(0, 10, 2)} },a_obj = "a_o_feline"}
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_m4flipup", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_scorpionevo", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy_dot", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troym4", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_bf4flipup", "a_o_feline")
+	end
+	if self.parts.wpn_fps_upg_45rail then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45dd = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45mbus = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45troy = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45flipup = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_45rail", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45mbus_il", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45troy_il", "a_o_feline")
+	end
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_kobra", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_compm4s", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_m145", "a_o_feline")
@@ -1521,9 +1605,52 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_fl_m600p", "a_fl_feline2")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_visionking", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_pka", "a_o_feline")
-if self.parts.wpn_fps_upg_o_delta_rm55 then
-	table.map_append(self.parts.wpn_fps_ass_famas_body_feline, {forbids = {"wpn_fps_upg_o_delta_rm55"}})
+	if self.parts.wpn_fps_upg_o_delta_rm55 then
+		table.map_append(self.parts.wpn_fps_ass_famas_body_feline, {forbids = {"wpn_fps_upg_o_delta_rm55"}})
+	end
 end
+
+-- VHS Future
+if self.parts.wpn_fps_ass_vhs_body_future then
+	if self.parts.wpn_fps_upg_45rail then
+	self.parts.wpn_fps_ass_vhs_body_future.override.wpn_fps_upg_o_45dd = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_future"}
+	self.parts.wpn_fps_ass_vhs_body_future.override.wpn_fps_upg_o_45mbus = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_future"}
+	self.parts.wpn_fps_ass_vhs_body_future.override.wpn_fps_upg_o_45troy = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_future"}
+	self.parts.wpn_fps_ass_vhs_body_future.override.wpn_fps_upg_o_45flipup = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_future"}
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_45rail", "a_o_future")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_45mbus_il", "a_o_future")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_45troy_il", "a_o_future")
+	end
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_kobra", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_compm4s", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_m145", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_pkas", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_coyote", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_acog_rmr", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_hologram", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_zeiss", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_okp7", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_hd33", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_prismatic", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_srs", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_st10", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_hcog", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_reflexholo", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_aog", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_rmr_riser", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_elo", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_po4", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_susat", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_kemper", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_mepro", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_rusak", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_horzine", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_eotech552", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_visionking", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_pka", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+	if self.parts.wpn_fps_upg_o_delta_rm55 then
+		table.map_append(self.parts.wpn_fps_ass_vhs_body_future, {forbids = {"wpn_fps_upg_o_delta_rm55"}})
+	end
 end
 
 -- Mk20 SSR
