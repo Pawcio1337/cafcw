@@ -2865,9 +2865,10 @@ if self.wpn_fps_ass_g3m203 then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_g3m203_handguard_rail", "wpn_fps_upg_fl_utg", "a_fl_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_g3m203", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_g3", "wpn_fps_ass_g3m203_sightrail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_ass_g3m203", "wpn_fps_upg_o_pka", "specter", "wpn_fps_ass_g3", "wpn_fps_ass_g3m203_sightrail")
--- todo
---	self:cafcw_add_to_parts("sight", "wpn_fps_ass_g3m203", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_g3m203")
--- 	self:cafcw_add_to_parts("forbids", "wpn_fps_ass_g3m203_rear_sight", "wpn_fps_upg_o_delta_rm55")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_g3m203", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_g3m203")
+ 	self:cafcw_add_to_parts("forbids", "wpn_fps_ass_g3m203_rear_sight", "wpn_fps_upg_o_delta_rm55")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_g3m203", "wpn_fps_upg_ns_ass_smg_tromix")
+	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_g3m203", "SneakySuppressorPack", "ARSupp")
 end
 -- HK MG4
 if self.wpn_fps_lmg_mg4 then
@@ -3856,6 +3857,10 @@ end
 	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_snp_merkel", "0,-8,-8.425")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_pis_plr16", "wpn_fps_smg_olympic")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_smg_coltsmg", "wpn_fps_ass_m4")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_g3m203", "wpn_fps_ass_g3")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_heffy_762", "wpn_fps_ass_flint")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_heffy_545", "wpn_fps_ass_flint")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_heffy_556", "wpn_fps_ass_flint")
 end
 -- Trijicon ACOG TA648RMR Scope
 if self.parts.wpn_fps_upg_o_ta648rmr_switch then
