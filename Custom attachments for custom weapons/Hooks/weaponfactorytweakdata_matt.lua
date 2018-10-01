@@ -45,6 +45,7 @@ if self.wpn_fps_smg_ump then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_ump", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_ump", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_smg_mp5")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_ump", "wpn_fps_upg_o_pka", "specter", "wpn_fps_smg_mp5")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_ump", "wpn_fps_upg_o_anpas13d", "specter", "wpn_fps_smg_mp5")
 end
 -- Montana 5.56
 if self.wpn_fps_ass_yayo then
@@ -88,5 +89,6 @@ if self.wpn_fps_ass_yayo then
 	self:cafcw_attachment_bundle("barrel_ext", "wpn_fps_ass_yayo", "SneakySuppressorPack", "ARSupp")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_yayo", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_contraband")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_yayo", "wpn_fps_upg_o_pka", "specter", "wpn_fps_ass_contraband")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_yayo", "wpn_fps_upg_o_anpas13d", "specter", "wpn_fps_ass_contraband")
 end
 end)

@@ -245,6 +245,7 @@ local all_cafcw_sight = {
     "wpn_fps_upg_o_eotech552",
     "wpn_fps_upg_o_visionking",
     "wpn_fps_upg_o_pka",
+    "wpn_fps_upg_o_anpas13d"
 }
 local all_cafcw_gadget = {
 	"wpn_fps_upg_fl_wml",
@@ -292,6 +293,7 @@ for i, wpn_id in ipairs(akmodules) do
         self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_eotech552" , "wpn_fps_upg_o_eotech552" , "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
         self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
         self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_pka"       , "specter"                 , "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
+        self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_anpas13d"  , "specter"                 , "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
        
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_lr"        )
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
