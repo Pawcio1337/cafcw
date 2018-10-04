@@ -2076,6 +2076,8 @@ if self.wpn_fps_smg_vityaz then
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_visionking", "wpn_fps_upg_o_visionking", "wpn_fps_ass_flint")
 	self:cafcw_add_generic_custom_sights("specter", "wpn_fps_smg_vityaz", "wpn_fps_ass_flint")
 	self:cafcw_add_generic_custom_sights("acog", "wpn_fps_smg_vityaz", "wpn_fps_ass_flint")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
 end
 -- APS
 if self.wpn_fps_pis_aps then
