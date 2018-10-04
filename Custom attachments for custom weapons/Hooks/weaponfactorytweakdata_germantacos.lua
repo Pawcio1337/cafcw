@@ -44,8 +44,8 @@ if self.wpn_fps_pis_cz75b and self.wpn_fps_pis_x_cz75b then
 		self.wpn_fps_pis_x_cz75b.override.wpn_fps_upg_fl_utg_pis = {a_obj = "cz75bfl"}
 	end
 	
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_cz75b", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_x_cz75b", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_cz75b", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_cz75b", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 
 end
 
@@ -77,12 +77,12 @@ if self.wpn_fps_pis_p80 then
 		--		self.parts.wpn_fps_pis_p80_s_long.override = {wpn_fps_ass_ns_g_sup6 = {a_obj = "a_p80nslm"}}
 			end
 	end
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_p80", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_attachment_bundle("forbids_add", "wpn_fps_pis_p80_a1_40sw", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_attachment_bundle("forbids_add", "wpn_fps_pis_p80_a2_10mm", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_attachment_bundle("forbids_add", "wpn_fps_pis_p80_a3_357sig", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_attachment_bundle("forbids_add", "wpn_fps_pis_p80_a4_45acp", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_attachment_bundle("forbids_add", "wpn_fps_pis_p80_a5_45gap", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_p80", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a1_40sw", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a2_10mm", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a3_357sig", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a4_45acp", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a5_45gap", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 
 --PM-63 RAK
@@ -126,7 +126,7 @@ if self.wpn_fps_pis_rally then
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup1" , "a_cz75srns", "barrel")
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup2" , "a_cz75srns", "barrel")
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup6" , "a_cz75srns", "barrel")
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_rally", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_rally", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 
 end
 
@@ -192,8 +192,8 @@ if self.wpn_fps_pis_seburo and self.wpn_fps_pis_x_seburo then
 		stance_mod = {wpn_fps_pis_seburo = {translation = Vector3(0, 0, -1)}}}
 	end
 	
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_seburo", "_545x18mm_nonap", "MoreAmmoTypes")
-	self:cafcw_attachment_bundle("ammo", "wpn_fps_pis_x_seburo", "_545x18mm_nonap", "MoreAmmoTypes")
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_seburo", "_545x18mm_nonap", "MoreAmmoTypes")
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_seburo", "_545x18mm_nonap", "MoreAmmoTypes")
 end
 
 ---AK PACK
@@ -299,7 +299,7 @@ for i, wpn_id in ipairs(akmodules) do
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_urban")
 		
-		self:cafcw_attachment_bundle("ammo", wpn_id, akpack_ammo[akpack_counter], "IncendiaryAmmo_MoreAmmoTypes")
+		self:cafcw_add_modpack("ammo", wpn_id, akpack_ammo[akpack_counter], "IncendiaryAmmo_MoreAmmoTypes")
 		
 		akpack_counter = akpack_counter + 1
     end
