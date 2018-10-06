@@ -1796,6 +1796,26 @@ if self.wpn_fps_lmg_mg4 then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_mg4", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_add_modpack("barrel_ext", "wpn_fps_lmg_mg4", "SneakySuppressorPack", "ARSupp")
 end
+-- HK PSG-1
+if self.wpn_fps_snp_psg1 then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_psg1", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_psg1_handguard_rail", "wpn_fps_upg_fl_ass_spotter", "a_fl_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_psg1", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_psg1_handguard_rail", "wpn_fps_upg_fl_wml", "a_fl_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_psg1", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_psg1_handguard_rail", "wpn_fps_upg_fl_anpeq2", "a_fl_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_psg1", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_psg1_handguard_rail", "wpn_fps_upg_fl_dbal_d2", "a_fl_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_psg1", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_psg1_handguard_rail", "wpn_fps_upg_fl_m600p", "a_fl_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_psg1", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_psg1_handguard_rail", "wpn_fps_upg_fl_utg", "a_fl_rail")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_snp_psg1", "wpn_fps_ass_g3", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_snp_psg1", "wpn_fps_ass_g3", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_snp_psg1", "wpn_fps_ass_g3", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_custom_sights("shortdot", "wpn_fps_snp_psg1", "wpn_fps_snp_psg1", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_psg1", "wpn_fps_snp_psg1")
+end
 -- Secondary
 --
 -- MPX
@@ -2396,6 +2416,7 @@ end
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_heffy_762", "wpn_fps_ass_flint")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_heffy_545", "wpn_fps_ass_flint")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_heffy_556", "wpn_fps_ass_flint")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_snp_psg1", "wpn_fps_ass_g3")
 end
 -- Trijicon ACOG TA648RMR Scope
 if self.parts.wpn_fps_upg_o_ta648rmr_switch then
