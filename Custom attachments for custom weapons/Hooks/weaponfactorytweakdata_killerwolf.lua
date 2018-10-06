@@ -1,4 +1,4 @@
-Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Killerwolf_Init", function(self)
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Killerwolf_Init", function(self)
 
 -----------! > Primary < !-----------
 
@@ -8,20 +8,15 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Killerwolf_I
 
 	-- Akimbo HK416C --
 if self.wpn_fps_ass_x_hk416c then
-if self.parts.wpn_fps_upg_m4_s_caastock and self.parts.wpn_fps_upg_m4_s_caastock_black and self.parts.wpn_fps_upg_m4_s_hke1 then
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_caastock")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_caastock_black")
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_m4_s_hke1")
-end
 if self.parts.wpn_fps_upg_fl_wml then
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_fl_wml")
 end
 if self.parts.wpn_fps_riflein556 then
 table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_riflein556")
 end
-if self.parts.wpn_fps_upg_a_taser556 then
-table.insert(self.wpn_fps_ass_x_hk416c.uses_parts, "wpn_fps_upg_a_taser556")
-end
+self:cafcw_add_modpack("ammo", "wpn_fps_ass_x_hk416c", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
+self:cafcw_add_modpack("stock", "wpn_fps_ass_x_hk416c", "AR15_StockPack")
+	self:cafcw_add_modpack("stock", "wpn_fps_ass_x_hk416c", "Stock_Attachment_Pack")
 end
 -- Akimbo Mauser C96 --
 if self.wpn_fps_pis_x_c96 then
@@ -57,20 +52,11 @@ end
 --)
 --end
 end
+	
+	
 	-- Akimbo Luger P08 --
 if self.wpn_fps_pis_x_luger then
-if self.parts.wpn_fps_pistolin9mm then
-table.insert(self.wpn_fps_pis_x_luger.uses_parts, "wpn_fps_pistolin9mm")
-end
-if self.parts.wpn_fps_upg_a_taser9mm then
-table.insert(self.wpn_fps_pis_x_luger.uses_parts, "wpn_fps_upg_a_taser9mm")
-end
-if self.parts.wpn_fps_upg_a_lap9mm then
-table.insert(self.wpn_fps_pis_x_luger.uses_parts, "wpn_fps_upg_a_lap9mm")
-end
-if self.parts.wpn_fps_upg_a_ap9mm then
-table.insert(self.wpn_fps_pis_x_luger.uses_parts, "wpn_fps_upg_a_ap9mm")
-end
+self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_luger", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 
 	---- Machine Guns ---
@@ -79,33 +65,11 @@ end
 
 	-- Remington 870 Sawed-off --
 if self.wpn_fps_shot_r870sawed then
-if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_ionshot and self.parts.wpn_fps_taserslug and self.parts.wpn_fps_aptaser and self.parts.wpn_fps_hvshell then
-table.insert(self.wpn_fps_shot_r870sawed.uses_parts, "wpn_fps_xrepslug")
-table.insert(self.wpn_fps_shot_r870sawed.uses_parts, "wpn_fps_ionshot")
-table.insert(self.wpn_fps_shot_r870sawed.uses_parts, "wpn_fps_taserslug")
-table.insert(self.wpn_fps_shot_r870sawed.uses_parts, "wpn_fps_aptaser")
-table.insert(self.wpn_fps_shot_r870sawed.uses_parts, "wpn_fps_hvshell")
-end
-if self.parts.wpn_fps_upg_a_minislug and self.parts.wpn_fps_upg_a_poisonslug and self.parts.wpn_fps_upg_a_minibuck then
-table.insert(self.wpn_fps_shot_r870sawed.uses_parts, "wpn_fps_upg_a_minislug")
-table.insert(self.wpn_fps_shot_r870sawed.uses_parts, "wpn_fps_upg_a_poisonslug")
-table.insert(self.wpn_fps_shot_r870sawed.uses_parts, "wpn_fps_upg_a_minibuck")
-end
+self:cafcw_add_modpack("ammo", "wpn_fps_shot_r870sawed", "_12ga", "TaserAmmo_MoreAmmoTypes")
 end
 	-- Franchi PA8 --
 if self.wpn_fps_shot_pa8 then
-if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_ionshot and self.parts.wpn_fps_taserslug and self.parts.wpn_fps_aptaser and self.parts.wpn_fps_hvshell then
-table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_xrepslug")
-table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_ionshot")
-table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_taserslug")
-table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_aptaser")
-table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_hvshell")
-end
-if self.parts.wpn_fps_upg_a_minislug and self.parts.wpn_fps_upg_a_poisonslug and self.parts.wpn_fps_upg_a_minibuck then
-table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_upg_a_minislug")
-table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_upg_a_poisonslug")
-table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_upg_a_minibuck")
-end
+self:cafcw_add_modpack("ammo", "wpn_fps_shot_pa8", "_12ga", "TaserAmmo_MoreAmmoTypes")
 if self.parts.wpn_fps_upg_o_kobra then
 table.insert(self.wpn_fps_shot_pa8.uses_parts, "wpn_fps_upg_o_kobra")
 table.insert(self.parts.wpn_fps_shot_pa8_s_folding.forbids, "wpn_fps_upg_o_kobra")
@@ -322,6 +286,10 @@ end
 
 	-- Karabiner 98k --
 if self.wpn_fps_snp_kar98k then
+self:cafcw_add_modpack("ammo", "wpn_fps_snp_kar98k", "_792x57mm", "MoreAmmoTypes")
+self:cafcw_add_modpack("ammo", "wpn_fps_snp_kar98k", "_12ga", "TaserAmmo_MoreAmmoTypes")
+self:cafcw_add_modpack("forbids_add", "wpn_fps_snp_kar98k_m_geha", "_792x57mm", "MoreAmmoTypes")
+self:cafcw_add_modpack("forbids_add", "wpn_fps_snp_kar98k_m_standard", "_12ga", "TaserAmmo_MoreAmmoTypes")
 if self.parts.wpn_fps_upg_o_kobra then
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_kobra")
 	self.wpn_fps_snp_kar98k.adds.wpn_fps_upg_o_kobra = {
@@ -456,11 +424,11 @@ table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_aog")
 	self.parts.wpn_fps_upg_o_aog.stance_mod.wpn_fps_snp_kar98k = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_snp_mosin)
 end
 if self.parts.wpn_fps_upg_o_st10 then
-table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_st10_sniper")
-	self.wpn_fps_snp_kar98k.adds.wpn_fps_upg_o_st10_sniper = {
+table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_st10")
+	self.wpn_fps_snp_kar98k.adds.wpn_fps_upg_o_st10 = {
 		"wpn_fps_snp_kar98k_rail"
 	}
-	self.parts.wpn_fps_upg_o_st10_sniper.stance_mod.wpn_fps_snp_kar98k = deep_clone(self.parts.wpn_fps_upg_o_st10_sniper.stance_mod.wpn_fps_snp_mosin)
+	self.parts.wpn_fps_upg_o_st10.stance_mod.wpn_fps_snp_kar98k = deep_clone(self.parts.wpn_fps_upg_o_st10.stance_mod.wpn_fps_snp_mosin)
 end
 if self.parts.wpn_fps_upg_o_elo then
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_elo")
@@ -526,53 +494,7 @@ table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_o_horzine")
 	}
 	self.parts.wpn_fps_upg_o_horzine.stance_mod.wpn_fps_snp_kar98k = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod.wpn_fps_snp_mosin)
 end
-if self.parts.wpn_fps_upg_a_he8mm and self.parts.wpn_fps_upg_a_ince8mm and self.parts.wpn_fps_upg_a_ap8mm and self.parts.wpn_fps_upg_a_poisonslug then
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_a_he8mm")
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_a_ince8mm")
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_a_ap8mm")
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_upg_a_poisonslug")
-	table.map_append(self.parts.wpn_fps_snp_kar98k_m_geha,{
-		forbids = {"wpn_fps_upg_a_he8mm","wpn_fps_upg_a_ince8mm","wpn_fps_upg_a_ap8mm"}
-	}
-	)
-	table.map_append(self.parts.wpn_fps_snp_kar98k_m_standard,{
-		forbids = {"wpn_fps_upg_a_poisonslug",
-	        "wpn_fps_upg_a_slug",
-	        "wpn_fps_upg_a_german12",
-	        "wpn_fps_upg_a_explosive",
-	        "wpn_fps_upg_a_piercing",
-			"wpn_fps_upg_a_dragons_breath"}
-	}
-	)
-end
-if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_aptaser and self.parts.wpn_fps_ionshot and self.parts.wpn_fps_taserslug and self.parts.wpn_fps_hvshell then
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_xrepslug")
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_aptaser")
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_hvshell")
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_ionshot")
-	table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_taserslug")
-	table.map_append(self.parts.wpn_fps_snp_kar98k_m_standard,{
-		forbids = {"wpn_fps_aptaser","wpn_fps_hvshell","wpn_fps_xrepslug","wpn_fps_ionshot","wpn_fps_taserslug",
-	        "wpn_fps_upg_a_slug",
-	        "wpn_fps_upg_a_german12",
-	        "wpn_fps_upg_a_explosive",
-	        "wpn_fps_upg_a_piercing",
-			"wpn_fps_upg_a_dragons_breath"}
-	}
-	)
-end
-if self.parts.wpn_fps_xrepslug and self.parts.wpn_fps_aptaser and self.parts.wpn_fps_ionshot and self.parts.wpn_fps_taserslug and self.parts.wpn_fps_hvshell and self.parts.wpn_fps_upg_a_poisonslug then
-	table.map_append(self.parts.wpn_fps_snp_kar98k_m_standard,{
-		forbids = {"wpn_fps_aptaser","wpn_fps_hvshell","wpn_fps_xrepslug","wpn_fps_ionshot","wpn_fps_taserslug","wpn_fps_upg_a_poisonslug",
-	        "wpn_fps_upg_a_slug",
-	        "wpn_fps_upg_a_german12",
-	        "wpn_fps_upg_a_explosive",
-	        "wpn_fps_upg_a_piercing",
-			"wpn_fps_upg_a_dragons_breath"}
-	}
-	)
-end
-if self.parts.wpn_fps_shield_aug then
+if self.parts.wpn_fps_shield_aug and self.parts.wpn_fps_shield_skin_ftp and self.parts.wpn_fps_shield_skin_urban then
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_aug")
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_skin_ftp")
 table.insert(self.wpn_fps_snp_kar98k.uses_parts, "wpn_fps_shield_skin_urban")
@@ -784,9 +706,66 @@ end
 	
 	-- Colt M1911A1 / Akimbo Colt M1911A1 --
 	
+	-- GSh-18 / Akimbo GSh-18 --	
+if self.wpn_fps_pis_gsh18 and self.wpn_fps_pis_x_gsh18 then
+self:cafcw_add_modpack("ammo", "wpn_fps_pis_gsh18", "_9x19mm_p", "MoreAmmoTypes")	
+self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_gsh18", "_9x19mm_p", "MoreAmmoTypes")
+if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 then
+table.insert(self.wpn_fps_pis_gsh18.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_pis_gsh18.uses_parts, "wpn_fps_ass_ns_g_sup2")
+table.insert(self.wpn_fps_pis_x_gsh18.uses_parts, "wpn_fps_ass_ns_g_sup1")
+table.insert(self.wpn_fps_pis_x_gsh18.uses_parts, "wpn_fps_ass_ns_g_sup2")
+end
+end
+	
 	---- Shotuns ---
 	---- Sniper Rifles ----
 	---- Specials ----
 	---- Submachine Guns ----
+	
+	-- AEK-919K / Akimbo AEK-919K --
+if self.wpn_fps_smg_aek919 and self.wpn_fps_smg_x_aek919 then
+self:cafcw_add_modpack("ammo", "wpn_fps_smg_aek919", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+self:cafcw_add_modpack("ammo", "wpn_fps_smg_x_aek919", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+if self.parts.wpn_fps_ass_ns_g_sup3 then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_ass_ns_g_sup3")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_ass_ns_g_sup3")
+end
+if self.parts.wpn_fps_ass_ns_g_sup4 then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_ass_ns_g_sup4")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_ass_ns_g_sup4")
+end
+end
+
+
+-----------! > Attachments < !-----------
+
+	---- Ammo ----
+
+--[[	-- _9x19mm --
+local custom9mm_guns = {
+	"wpn_fps_pis_x_luger",
+	"wpn_fps_smg_aek919",
+	"wpn_fps_smg_x_aek919"
+}
+
+local custom9mm_ammo = {
+	"wpn_fps_pistolin9mm",
+	"wpn_fps_upg_a_taser9mm",
+	"wpn_fps_upg_a_lap9mm",
+	"wpn_fps_upg_a_ap9mm",
+	"wpn_fps_upg_a_hv9mm"
+}
+
+for i, factory_id in ipairs(custom9mm_guns) do
+	if self[factory_id] then
+		for i, part_id in ipairs(custom9mm_ammo) do
+			if self.parts[part_id] then
+				table.insert(self[factory_id].uses_parts, part_id)
+			end
+		end
+	end
+end
+--]]
 
 end)
