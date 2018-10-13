@@ -1821,6 +1821,20 @@ if self.wpn_fps_snp_psg1 then
 	self:cafcw_add_custom_sights("custom", "wpn_fps_snp_psg1", "wpn_fps_ass_g3", "wpn_fps_snp_psg1_sightrail")
 	self:cafcw_add_custom_sights("shortdot", "wpn_fps_snp_psg1", "wpn_fps_snp_psg1", "wpn_fps_snp_psg1_sightrail")
 	self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_psg1", "wpn_fps_snp_psg1")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_psg1", "wpn_fps_upg_o_1p69", "a_o_scope")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_psg1", "wpn_fps_upg_o_deltatitanium", "a_o_scope")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_psg1", "wpn_fps_upg_o_csgoscope", "a_o_scope")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_psg1", "wpn_fps_upg_o_ta648", "a_o_scope")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_psg1", "wpn_fps_upg_o_ta648rmr", "a_o_scope")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_1p69", "0.025,-35,-4.19", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_deltatitanium", "0.025,-35,-4.19", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_csgoscope", "0.025,-37,-4.19", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_dd_a1", "0.02,-10,-3.1", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_m4flipup", "0.02,-10,-3.1", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_mbus", "0.02,-10,-3.1", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_scorpionevo", "0.02,-12,-1.08", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_troy", "0.02,-10,-3.1", "wpn_fps_snp_psg1_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_troy_m4", "0.02,-10,-3.1", "wpn_fps_snp_psg1_sightrail")
 end
 -- Secondary
 --
