@@ -92,6 +92,7 @@ if self.wpn_fps_ass_qbz95 and self.parts.wpn_fps_ass_qbz95_fg_rails then
     self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_qbz95_fg_rails", "wpn_fps_upg_o_anpas13d", "a_fgo")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95", "wpn_fps_ass_qbz95_rail")
+    self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_qbz95_fg_rails", "wpn_fps_upg_o_compm2", "a_fgo")
     end
 
 --STG 44
@@ -381,6 +382,7 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_rail_mcs", "wpn_fps_
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_rail_mcs", "wpn_fps_upg_o_visionking", "a_o_mcs")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_rail_mcs", "wpn_fps_upg_o_pka", "a_o_mcs")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_rail_mcs", "wpn_fps_upg_o_anpas13d", "a_o_mcs")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_870_rail_mcs", "wpn_fps_upg_o_compm2", "a_o_mcs")
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_mcs", "wpn_fps_upg_o_kobra")
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_mcs", "wpn_fps_upg_o_compm4s")
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_mcs", "wpn_fps_upg_o_m145")
@@ -407,6 +409,7 @@ self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_mcs", "wpn_fps_upg
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_mcs", "wpn_fps_upg_o_visionking")
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_mcs", "wpn_fps_upg_o_pka")
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_mcs", "wpn_fps_upg_o_anpas13d")
+self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_mcs", "wpn_fps_upg_o_compm2")
 end
 if self.parts.wpn_fps_shot_870_iron_aftermarket then
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_aftermarket", "wpn_fps_upg_o_kobra")
@@ -435,6 +438,7 @@ self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_aftermarket", "wpn
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_aftermarket", "wpn_fps_upg_o_visionking")
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_aftermarket", "wpn_fps_upg_o_pka")
 self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_aftermarket", "wpn_fps_upg_o_anpas13d")
+self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_870_iron_aftermarket", "wpn_fps_upg_o_compm2")
 end
 
 --AR Marksman

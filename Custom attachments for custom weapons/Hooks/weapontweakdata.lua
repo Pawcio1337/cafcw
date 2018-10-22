@@ -6,7 +6,7 @@ if self.example then
 	self:SetupAttachmentPoint("example", {
 		name = "a_o_example",
 		base_a_obj = "a_o",
-		position = Vector3(0, -10, -0.3),
+		position = Vector3(0, 0, 0),
 		rotation = Rotation(0, 0, 0)
 	})
 end

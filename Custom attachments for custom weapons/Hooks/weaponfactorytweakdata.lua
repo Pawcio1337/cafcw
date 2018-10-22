@@ -957,6 +957,7 @@ if self.wpn_fps_ass_ots_14_4a then
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2", "wpn_fps_ass_ots_14_4a_sight_rail")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2", "wpn_fps_ass_ots_14_4a_sight_rail")
 	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_ots_14_4a_handle_rail", "wpn_fps_upg_o_compm2", "a_o_handle")
 end
 -- McMillan TAC-50
 if self.wpn_fps_snp_tac50 then
@@ -2022,10 +2023,13 @@ if self.wpn_fps_pis_swmp40 then
 	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_deltapoint", "slide")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_swmp40", "wpn_fps_ass_ns_g_sup1")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_ported", "wpn_fps_ass_ns_g_sup1")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_perf_forbids", "wpn_fps_ass_ns_g_sup1")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_swmp40", "wpn_fps_ass_ns_g_sup2")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_ported", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_perf_forbids", "wpn_fps_ass_ns_g_sup2")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_swmp40", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_ported", "wpn_fps_ass_ns_g_sup6")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_perf_forbids", "wpn_fps_ass_ns_g_sup6")
 end
 -- AP Pistol
 if self.wpn_fps_pis_appistol then
@@ -2564,6 +2568,7 @@ if self.parts.wpn_fps_upg_o_ak_coverrail then
 	self:cafcw_add_to_parts("part_copy_part_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_45rds")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_pka", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_anpas13d", "a_o_coverrail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_ak_coverrail", "wpn_fps_upg_o_anpas13d", "wpn_fps_upg_o_compm2")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_kobra", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_compm4s", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_m145", "a_o_coverrail")
@@ -2594,6 +2599,7 @@ if self.parts.wpn_fps_upg_o_ak_coverrail then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_visionking", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_pka", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_anpas13d", "a_o_coverrail")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_compm2", "a_o_coverrail")
 end
 -- Luger P08 Gadgets
 if self.parts.wpn_fps_pis_breech_gadget_rail then
