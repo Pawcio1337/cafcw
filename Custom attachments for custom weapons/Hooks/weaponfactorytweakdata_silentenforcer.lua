@@ -233,6 +233,10 @@ if self.wpn_fps_bow_auto then
 	self:cafcw_add_custom_sights("specter", "wpn_fps_bow_auto", "wpn_fps_smg_coal")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_bow_auto", "wpn_fps_smg_coal")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_bow_auto", "wpn_fps_smg_coal")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_bow_auto", "wpn_fps_upg_o_ekp_1s_03", "0.49,5,-3.9")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_bow_auto", "wpn_fps_upg_o_pso1_rifle", "1.4,22,-4.2")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_bow_auto", "wpn_fps_upg_o_1pn93", "0.2,14,-4.71")
+    self:cafcw_add_to_parts("sight_vector", "wpn_fps_bow_auto", "wpn_fps_upg_o_1p29", "0.2,14,-4.71")
 end
 
 --M3 Grease Gun
