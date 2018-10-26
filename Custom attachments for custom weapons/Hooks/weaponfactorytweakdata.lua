@@ -2018,11 +2018,10 @@ end
 -- S&W M&P40
 if self.wpn_fps_pis_swmp40 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_swmp40", "wpn_fps_upg_fl_unimax")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_swmp40_sight_rear", "wpn_fps_upg_fl_unimax", "a_fl")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_swmp40_sight_rail", "wpn_fps_upg_fl_unimax", "a_fl_rail")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_swmp40", "wpn_fps_upg_fl_utg_pis")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_swmp40_sight_rear", "wpn_fps_upg_fl_utg_pis", "a_fl")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_swmp40_sight_rail", "wpn_fps_upg_fl_utg_pis", "a_fl_rail")
 	self:cafcw_add_to_parts("sight_rail", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_deltapoint", "wpn_fps_upg_o_deltapoint", "wpn_fps_pis_sparrow", "wpn_fps_pis_swmp40_sight_rear_dummy")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_sight_rail_enabled", "wpn_fps_upg_o_deltapoint")
 	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_deltapoint", "slide")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_swmp40", "wpn_fps_ass_ns_g_sup1")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_ported", "wpn_fps_ass_ns_g_sup1")
@@ -2033,12 +2032,12 @@ if self.wpn_fps_pis_swmp40 then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_swmp40", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_ported", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_swmp40_barrel_perf_forbids", "wpn_fps_ass_ns_g_sup6")
-	self:cafcw_add_to_parts("sight_rail", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_pis_swmp40", "wpn_fps_pis_swmp40_sight_rail")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_swmp40_sight_rail_disabled", "wpn_fps_upg_o_coyote")
-	self:cafcw_add_to_parts("sight_rail", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_pis_swmp40", "wpn_fps_pis_swmp40_sight_rail")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_swmp40_sight_rail_disabled", "wpn_fps_upg_o_okp7")
-	self:cafcw_add_to_parts("sight_rail", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_pis_swmp40", "wpn_fps_pis_swmp40_sight_rail")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_swmp40_sight_rail_disabled", "wpn_fps_upg_o_horzine")
+	self:cafcw_add_to_parts("sight", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_coyote", "specter", "wpn_fps_pis_swmp40")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_swmp40_sights_forbids", "wpn_fps_upg_o_coyote")
+	self:cafcw_add_to_parts("sight", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_okp7", "specter", "wpn_fps_pis_swmp40")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_swmp40_sights_forbids", "wpn_fps_upg_o_okp7")
+	self:cafcw_add_to_parts("sight", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_horzine", "specter", "wpn_fps_pis_swmp40")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_swmp40_sights_forbids", "wpn_fps_upg_o_horzine")
 end
 -- AP Pistol
 if self.wpn_fps_pis_appistol then
