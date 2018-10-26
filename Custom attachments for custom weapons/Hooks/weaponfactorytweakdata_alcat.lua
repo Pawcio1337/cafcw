@@ -70,6 +70,11 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_howa_t64_body", "wpn_fps_
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_howa_t64_body", "wpn_fps_upg_o_pka", "a_o_t64")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_howa_t64_body", "wpn_fps_upg_o_anpas13d", "a_o_t64")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_howa_t64_body", "wpn_fps_upg_o_compm2", "a_o_t64")
+--experimental scope xd
+self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_howa", "wpn_fps_upg_o_pso1_rifle", "0,18,-4")
+self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_howa_t64_body", "wpn_fps_upg_o_pso1_rifle", "a_o_t64_pso1")
+self:cafcw_add_to_parts("forbids_add", "wpn_fps_ass_howa_body_rail", "wpn_fps_upg_o_pso1_rifle")
+self:cafcw_add_to_parts("forbids", "wpn_fps_ass_howa_t89_body", "wpn_fps_upg_o_pso1_rifle")
 end
 
 --Browning LMG

@@ -105,9 +105,9 @@ if self.wpn_fps_ass_stg44 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stg44", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_stg44", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_stg44", "SneakySuppressorPack", "ARSupp")
-	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_stg44", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
-	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_stg44", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_stg44", "wpn_fps_ass_fal", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "wpn_fps_ass_stg44_ris_special")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "wpn_fps_ass_stg44_ris_special")
     end
 	
 
