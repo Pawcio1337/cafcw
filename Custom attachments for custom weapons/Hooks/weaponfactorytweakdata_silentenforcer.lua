@@ -186,6 +186,7 @@ if self.wpn_fps_pis_pm then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_pm", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_pm", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_modpack("ammo", "wpn_fps_pis_pm", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 if self.wpn_fps_pis_x_pm then
@@ -194,6 +195,7 @@ if self.wpn_fps_pis_x_pm then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_pm", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_pm", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_pm", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 if self.wpn_fps_pis_xs_pm then
@@ -202,6 +204,7 @@ if self.wpn_fps_pis_xs_pm then
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_xs_pm", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_xs_pm", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_xs_pm", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_xs_pm", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_modpack("ammo", "wpn_fps_pis_xs_pm", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 
@@ -311,6 +314,7 @@ end
 if self.wpn_fps_pis_welrod then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_modpack("ammo", "wpn_fps_pis_welrod", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 
