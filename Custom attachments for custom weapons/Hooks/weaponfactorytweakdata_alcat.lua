@@ -1204,10 +1204,10 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_anp
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_dbal_d2")
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_m600p")
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_utg")
-self:cafcw_add_custom_sights("specter", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
-self:cafcw_add_custom_sights("acog", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
-self:cafcw_add_custom_sights("custom", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "wpn_fps_special_inkunzi_o_adjust")
-self:cafcw_add_custom_sights("rds45", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3")
+self:cafcw_add_custom_sights("specter", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", nil, "0.025,-8,-0.42")
+self:cafcw_add_custom_sights("acog", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", nil, "0.025,-5,-0.42")
+self:cafcw_add_custom_sights("custom", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", nil, "0,0,3")
+self:cafcw_add_custom_sights("rds45", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", nil, "3.48,-10,-8.46")
 end
 
 

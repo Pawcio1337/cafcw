@@ -323,7 +323,7 @@ mod_tables.SneakySuppressorPack = {
 		end
 	end
 end
-function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id)
+function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id, custom_stance)
 sight_tables = {}
 sight_tables.acog = {
 	"wpn_fps_upg_o_acog_rmr",
@@ -400,6 +400,9 @@ sight_tables.custom_sniper_sv98 = {
 			if string.match(sight_base, "custom") then
 				if self.parts[sight_id].stance_mod[stance_wpn_id] then
 					self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
+					if custom_stance then
+						self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[wpn_id].translation + custom_stance:ToVector3())
+					end
 				else
 					log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id)
 				end
@@ -407,6 +410,9 @@ sight_tables.custom_sniper_sv98 = {
 			else
 				if self.parts[sight_base].stance_mod[stance_wpn_id] then
 					self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
+					if custom_stance then
+						self.parts[sight_id].stance_mod[wpn_id].translation = custom_stance:ToVector3()
+					end
 				else
 					log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
 				end
@@ -2397,6 +2403,23 @@ if self.wpn_fps_smg_coltsmg then
 	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_coltsmg", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("rds45", "wpn_fps_smg_coltsmg", "wpn_fps_smg_coltsmg")
 end
+-- Mosin Nagant M9130 Obrez
+if self.wpn_fps_snp_obrez then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_obrez", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_snp_obrez_rearsight", "wpn_fps_upg_fl_wml", "a_fl_b")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_obrez", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_snp_obrez_rearsight", "wpn_fps_upg_fl_anpeq2", "a_fl_b")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_obrez", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_snp_obrez_rearsight", "wpn_fps_upg_fl_dbal_d2", "a_fl_b")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_obrez", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_snp_obrez_rearsight", "wpn_fps_upg_fl_m600p", "a_fl_b")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_snp_obrez", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_snp_obrez_rearsight", "wpn_fps_upg_fl_utg", "a_fl_b")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
+end
+
 -- Attachments
 --
 -- Trijicon ACOG TA31F-RMR Scope
@@ -2528,6 +2551,7 @@ end
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_heffy_545", "wpn_fps_ass_flint")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_heffy_556", "wpn_fps_ass_flint")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_snp_psg1", "wpn_fps_ass_g3")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin")
 end
 -- Trijicon ACOG TA648RMR Scope
 if self.parts.wpn_fps_upg_o_ta648rmr_switch then
@@ -2563,6 +2587,7 @@ if self.parts.wpn_fps_upg_o_ta648rmr_switch then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_ta648rmr_switch", "wpn_fps_upg_fl_micro90")
 	self:cafcw_acogrmr_stance("ta648_vector", "wpn_fps_snp_vss", "0.078,10,-14.03")
 	self:cafcw_acogrmr_stance("ta648_vector", "wpn_fps_ass_fd338", "0.078,2,-11.07")
+	self:cafcw_acogrmr_stance("ta648", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin")
 end
 -- AK Rail Cover
 if self.parts.wpn_fps_upg_o_ak_coverrail then

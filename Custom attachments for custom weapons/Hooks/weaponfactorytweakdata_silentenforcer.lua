@@ -474,4 +474,16 @@ if self.wpn_fps_ass_x_ar60mrks then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_x_ar60mrks", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_x_ar60mrks", "SneakySuppressorPack", "ARSupp")
 end
+--MG 34
+if self.wpn_fps_lmg_mg34 then
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_mg34", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_lmg_mg34_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_mg34", "wpn_fps_upg_fl_wml", "wpn_fps_lmg_mg34_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_mg34", "wpn_fps_upg_fl_anpeq2", "wpn_fps_lmg_mg34_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_mg34", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_lmg_mg34_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_mg34", "wpn_fps_upg_fl_m600p", "wpn_fps_lmg_mg34_gadget_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_mg34", "wpn_fps_upg_fl_utg", "wpn_fps_lmg_mg34_gadget_rail")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_mg34", "wpn_fps_upg_ns_ass_smg_tromix")
+	self:cafcw_add_modpack("ammo", "wpn_fps_lmg_mg34", "_792x57mm", "MoreAmmoTypes")
+	self:cafcw_add_modpack("barrel_ext", "wpn_fps_lmg_mg34", "SneakySuppressorPack", "ARSupp")
+end
 end)
