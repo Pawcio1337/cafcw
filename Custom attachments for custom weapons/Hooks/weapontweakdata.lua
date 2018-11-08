@@ -33,5 +33,14 @@ if self.sr3m then
 		rotation = Rotation(0, 0, 0)
 	})
 end
+-- PU Scope
+if self.obrez then
+	self:SetupAttachmentPoint("obrez", {
+		name = "a_o_pu",
+		base_a_obj = "a_o",
+		position = Vector3(0, 0, 0),
+		rotation = Rotation(0, 0, 0)
+	})
+end
 end
 end)

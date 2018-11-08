@@ -381,6 +381,13 @@ sight_tables.custom_g3m203 = {
 	"wpn_fps_upg_o_susat",
 	"wpn_fps_upg_o_visionking"
 }
+sight_tables.custom_obrez = {
+	"wpn_fps_upg_o_eotech552",
+	"wpn_fps_upg_o_po4",
+	"wpn_fps_upg_o_st10",
+	"wpn_fps_upg_o_susat",
+	"wpn_fps_upg_o_compm2"
+}
 sight_tables.custom_sniper_sv98 = {
 	"wpn_fps_upg_o_deltatitanium",
 	"wpn_fps_upg_o_csgoscope"
@@ -399,24 +406,24 @@ sight_tables.custom_sniper_sv98 = {
 			table.insert(self[wpn_id].uses_parts, sight_id)
 			if string.match(sight_base, "custom") then
 				if self.parts[sight_id].stance_mod[stance_wpn_id] then
-					self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
 					if custom_stance then
 						self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[wpn_id].translation + custom_stance:ToVector3())
+					else
+						self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
 					end
 				else
 					log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id)
 				end
-				--log("CAFCW: cafcw_add_custom_sights (custom): " .. wpn_id, sight_id, stance_wpn_id)
 			else
 				if self.parts[sight_base].stance_mod[stance_wpn_id] then
-					self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
 					if custom_stance then
 						self.parts[sight_id].stance_mod[wpn_id].translation = custom_stance:ToVector3()
+					else
+						self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
 					end
 				else
 					log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
 				end
-				--log("CAFCW: cafcw_add_custom_sights: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
 			end
 		end
 		if self.parts[add_id] then
@@ -425,7 +432,6 @@ sight_tables.custom_sniper_sv98 = {
 			else
 				log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, sight_id, add_id)
 			end
-			--log("CAFCW: cafcw_add_custom_sights (adds): " .. wpn_id, sight_id, add_id)
 		end
 	end
 end
@@ -2417,9 +2423,11 @@ if self.wpn_fps_snp_obrez then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_snp_obrez_rearsight", "wpn_fps_upg_fl_utg", "a_fl_b")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
+	self:cafcw_add_custom_sights("custom_obrez", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin_pu_scope", "-0.001,-14,-4.61", "wpn_fps_snp_obrez_rearsight_dummy")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin_pu_scope", "a_o_pu")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin_iron_sight_switch", "0,-25,-0.2")
 end
-
 -- Attachments
 --
 -- Trijicon ACOG TA31F-RMR Scope
@@ -2662,5 +2670,15 @@ if self.parts.wpn_fps_pis_breech_gadget_rail then
     self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_breech", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_breech_gadget_rail")
     self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_breech", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_breech_gadget_rail")
     self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_breech", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_breech_gadget_rail")
+end
+-- PU Scope
+if self.parts.wpn_fps_snp_mosin_iron_sight_switch then
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_iron_sight_switch", "wpn_fps_upg_o_delta_rm55")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_iron_sight_switch", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_iron_sight_switch", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_iron_sight_switch", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_iron_sight_switch", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_iron_sight_switch", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_iron_sight_switch", "wpn_fps_upg_fl_utg")
 end
 end)
