@@ -1271,9 +1271,6 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_pka", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_anpas13d", "a_o_feline")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_compm2", "a_o_feline")
-	if self.parts.wpn_fps_upg_o_delta_rm55 then
-		table.map_append(self.parts.wpn_fps_ass_famas_body_feline, {forbids = {"wpn_fps_upg_o_delta_rm55"}})
-	end
 end
 
 -- VHS Future
@@ -1316,9 +1313,6 @@ self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "w
 self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_pka", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
 self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_anpas13d", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
 self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_compm2", "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
-	if self.parts.wpn_fps_upg_o_delta_rm55 then
-		table.map_append(self.parts.wpn_fps_ass_vhs_body_future, {forbids = {"wpn_fps_upg_o_delta_rm55"}})
-	end
 end
 
 -- Mk20 SSR

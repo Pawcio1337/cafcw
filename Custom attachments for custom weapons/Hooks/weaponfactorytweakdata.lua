@@ -258,6 +258,13 @@ mod_tables._792x57mm = {
 	"wpn_fps_upg_a_ince8mm",
 	"wpn_fps_upg_a_ap8mm"
 }
+mod_tables._9x39mm = {
+	"wpn_fps_upg_a_9x39_pab9",
+	"wpn_fps_upg_a_9x39_sp5",
+	"wpn_fps_upg_a_9x39_spp",
+	"wpn_fps_upg_a_9x39_sp6",
+	"wpn_fps_upg_a_9x39_bp"
+}
 mod_tables._9x19mm = {
 	"wpn_fps_pistolin9mm",
 	"wpn_fps_upg_a_taser9mm",
@@ -406,20 +413,18 @@ sight_tables.custom_sniper_sv98 = {
 			table.insert(self[wpn_id].uses_parts, sight_id)
 			if string.match(sight_base, "custom") then
 				if self.parts[sight_id].stance_mod[stance_wpn_id] then
+					self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
 					if custom_stance then
 						self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[wpn_id].translation + custom_stance:ToVector3())
-					else
-						self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
 					end
 				else
 					log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id)
 				end
 			else
 				if self.parts[sight_base].stance_mod[stance_wpn_id] then
+					self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
 					if custom_stance then
 						self.parts[sight_id].stance_mod[wpn_id].translation = custom_stance:ToVector3()
-					else
-						self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
 					end
 				else
 					log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
@@ -563,6 +568,7 @@ if self.wpn_fps_ass_sr3m then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_sr3m_cover_rail", "wpn_fps_upg_o_visionking", "a_o_railcover")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_sr3m", "wpn_fps_upg_o_compm2", "0,10,-5.83")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_sr3m_cover_rail", "wpn_fps_upg_o_compm2", "a_o_railcover")
+	self:cafcw_add_modpack("ammo", "wpn_fps_ass_sr3m", "_9x39mm", "MoreAmmoTypes")
 end
 -- FD338
 if self.wpn_fps_ass_fd338 then
@@ -836,6 +842,7 @@ if self.wpn_fps_snp_vss then
 	self:cafcw_add_custom_sights("acog", "wpn_fps_snp_vss", "wpn_fps_snp_vss", "wpn_fps_snp_vss_mount_molot")
 	self:cafcw_add_custom_sights("shortdot", "wpn_fps_snp_vss", "wpn_fps_snp_vss", "wpn_fps_snp_vss_mount_molot")
 	self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_vss", "wpn_fps_snp_vss")
+	self:cafcw_add_modpack("ammo", "wpn_fps_snp_vss", "_9x39mm", "MoreAmmoTypes")
 end
 -- Colt 9mm Submachine Gun (Primary)
 if self.wpn_fps_ass_r0991 then
@@ -970,6 +977,7 @@ if self.wpn_fps_ass_ots_14_4a then
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2", "wpn_fps_ass_ots_14_4a_sight_rail")
 	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_ots_14_4a_handle_rail", "wpn_fps_upg_o_compm2", "a_o_handle")
+	self:cafcw_add_modpack("ammo", "wpn_fps_ass_ots_14_4a", "_9x39mm", "MoreAmmoTypes")
 end
 -- McMillan TAC-50
 if self.wpn_fps_snp_tac50 then
@@ -1898,6 +1906,17 @@ if self.wpn_fps_snp_psg1 then
 	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_scorpionevo", "0.02,-12,-1.08", "wpn_fps_snp_psg1_sightrail")
 	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_troy", "0.02,-10,-3.1", "wpn_fps_snp_psg1_sightrail")
 	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_psg1", "wpn_fps_upg_o_troy_m4", "0.02,-10,-3.1", "wpn_fps_snp_psg1_sightrail")
+end
+-- Lewis Gun
+if self.wpn_fps_lmg_lewis then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_lewis", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_lewis", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_lewis", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_lewis", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_lewis", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_lewis", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_lewis", "wpn_fps_upg_ns_ass_smg_tromix")
+	self:cafcw_add_modpack("barrel_ext", "wpn_fps_lmg_lewis", "SneakySuppressorPack", "ARSupp")
 end
 -- Secondary
 --

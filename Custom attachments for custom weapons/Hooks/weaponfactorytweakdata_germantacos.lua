@@ -200,18 +200,24 @@ end
 local akmodules = {
     "wpn_fps_ass_heffy_762",
     "wpn_fps_ass_heffy_545",
-    "wpn_fps_ass_heffy_556"
+    "wpn_fps_ass_heffy_556",
+    "wpn_fps_ass_heffy_939",
+    "wpn_fps_ass_x_heffy_939"
 }
 
 local akpack_scopemounts = {
 	"wpn_fps_upg_o_ak47_scopemount",
 	"wpn_fps_upg_o_ak74_scopemount",
-	"wpn_fps_upg_o_ak101_scopemount"
+	"wpn_fps_upg_o_ak101_scopemount",
+	"wpn_fps_upg_o_ak9_scopemount",
+	"wpn_fps_upg_o_ak9_scopemount"
 }
 local akpack_ammo = {
 	"_762x39mm",
 	"_545x39mm",
-	"_556x45mm"
+	"_556x45mm",
+	"_9x39mm",
+	"_9x39mm"
 }
 
  
@@ -294,6 +300,11 @@ for i, wpn_id in ipairs(akmodules) do
         self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_anpas13d"  , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
 		
 		self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds"     , "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
+		
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_1p29", "0,-1,-2.3")
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_ekp_1s_03", "0,2.5,-2.3")
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_pso1_rifle", "0,-1,-2.3")
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_1pn93", "0,-1,-2.3")
        
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_lr"        )
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
