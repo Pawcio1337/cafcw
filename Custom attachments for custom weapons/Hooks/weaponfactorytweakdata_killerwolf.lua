@@ -63,6 +63,22 @@ end
 	---- Pistols / Revolvers ----
 	---- Shotuns ---
 
+	-- DP12 --
+if self.wpn_fps_sho_dp12 then
+	self:cafcw_add_modpack("ammo", "wpn_fps_sho_dp12", "_12ga", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_sho_dp12", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_sho_dp12", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_shot_dp12_norail", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_shot_dp12_norail", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_sho_dp12_o_standard", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_sho_dp12_o_standard", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg")
+	self:cafcw_add_custom_sights("rds45", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg")
+	self:cafcw_category_forbid("wpn_fps_sho_dp12", "sight", "wpn_fps_shot_dp12_norail", "wpn_fps_sho_dp12_o_standard")
+end
+
 	-- Remington 870 Sawed-off --
 if self.wpn_fps_shot_r870sawed then
 self:cafcw_add_modpack("ammo", "wpn_fps_shot_r870sawed", "_12ga", "TaserAmmo_MoreAmmoTypes")

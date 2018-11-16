@@ -440,6 +440,16 @@ sight_tables.custom_sniper_sv98 = {
 		end
 	end
 end
+function WeaponFactoryTweakData:cafcw_category_forbid(wpn_id, cat_id, attach_id, exce_id)
+	if self.parts[attach_id] then
+		self.parts[attach_id].forbids = self.parts[attach_id].forbids or {}
+		for _, part_id in pairs(self[wpn_id].uses_parts) do
+			if self.parts[part_id].type == cat_id and part_id ~= exce_id then
+				table.insert(self.parts[attach_id].forbids, part_id)
+			end
+		end
+	end
+end
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWModInit", function(self)
 -- Primary
 --
@@ -2220,12 +2230,12 @@ if self.wpn_fps_pis_m712 then
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_m712", "wpn_fps_ass_ns_g_sup2", "a_ns", "barrel")
 	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_m712", "wpn_fps_ass_ns_g_sup6")
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_m712", "wpn_fps_ass_ns_g_sup6", "a_ns", "barrel")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_m712", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_pis_m712_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_m712", "wpn_fps_upg_fl_wml", "wpn_fps_pis_m712_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_m712", "wpn_fps_upg_fl_anpeq2", "wpn_fps_pis_m712_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_m712", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_pis_m712_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_m712", "wpn_fps_upg_fl_m600p", "wpn_fps_pis_m712_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_m712", "wpn_fps_upg_fl_utg", "wpn_fps_pis_m712_gadget_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_m712", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_m712", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_m712", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_m712", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_m712", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_m712", "wpn_fps_upg_fl_utg")
 end
 -- Beretta Px4 Storm
 if self.wpn_fps_pis_px4 then
