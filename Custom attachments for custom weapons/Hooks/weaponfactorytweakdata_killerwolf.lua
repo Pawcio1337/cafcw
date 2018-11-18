@@ -72,10 +72,10 @@ if self.wpn_fps_sho_dp12 then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_shot_dp12_norail", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_sho_dp12_o_standard", "wpn_fps_upg_fl_ass_spotter")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_sho_dp12_o_standard", "wpn_fps_upg_fl_wml")
-	self:cafcw_add_custom_sights("specter", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg")
-	self:cafcw_add_custom_sights("acog", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg")
-	self:cafcw_add_custom_sights("rds45", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", nil, "0, 0, -0.38")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", nil, "0, 3, -0.38")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", nil, "0,0,0.92")
+	self:cafcw_add_custom_sights("rds45", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", nil, "-3.1, -2, -8.24")
 	self:cafcw_category_forbid("wpn_fps_sho_dp12", "sight", "wpn_fps_shot_dp12_norail", "wpn_fps_sho_dp12_o_standard")
 end
 

@@ -491,7 +491,7 @@ if self.wpn_fps_snp_m40a5 then
 	self:cafcw_add_custom_sights("custom", "wpn_fps_snp_m40a5", "wpn_fps_snp_model70")
 	self:cafcw_add_custom_sights("custom_sniper", "wpn_fps_snp_m40a5", "wpn_fps_snp_model70")
 	self:cafcw_add_custom_sights("shortdot", "wpn_fps_snp_m40a5", "wpn_fps_snp_model70")
-	self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_m40a5", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_m40a5", "wpn_fps_snp_m40a5")
 end
 -- L115
 if self.wpn_fps_snp_l115 then
@@ -512,7 +512,7 @@ if self.wpn_fps_snp_l115 then
 	self:cafcw_add_custom_sights("custom", "wpn_fps_snp_l115", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("custom_sniper", "wpn_fps_snp_l115", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("shortdot", "wpn_fps_snp_l115", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_l115", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_l115", "wpn_fps_snp_l115")
 end
 -- SR-3M Vikhr
 -- Specter stance_mod: 0, 10, -6.48

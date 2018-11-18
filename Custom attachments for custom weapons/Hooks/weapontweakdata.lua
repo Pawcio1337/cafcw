@@ -42,5 +42,34 @@ if self.obrez then
 		rotation = Rotation(0, 0, 0)
 	})
 end
+-- Sniper Rifles Iron Sights
+if self.l115 then
+	self:SetupAttachmentPoint("l115", {
+		name = "a_o_f",
+		base_a_obj = "a_o",
+		position = Vector3(0, 13.5, -0.75),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("l115", {
+		name = "a_o_r",
+		base_a_obj = "a_o",
+		position = Vector3(0, -7, -0.75),
+		rotation = Rotation(0, 0, 0)
+	})
+end
+if self.m40a5 then
+	self:SetupAttachmentPoint("m40a5", {
+		name = "a_o_f",
+		base_a_obj = "a_o",
+		position = Vector3(0, 55, 0.9),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("m40a5", {
+		name = "a_o_r",
+		base_a_obj = "a_o",
+		position = Vector3(0, -1, 0.9),
+		rotation = Rotation(0, 0, 0)
+	})
+end
 end
 end)
