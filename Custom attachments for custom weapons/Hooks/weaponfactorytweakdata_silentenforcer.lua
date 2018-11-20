@@ -312,9 +312,9 @@ end
 
 -- Welrod
 if self.wpn_fps_pis_welrod then
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_pm_fl_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_pm_fl_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_pm_fl_rail")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_2006m_fl_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_2006m_fl_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_welrod", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_2006m_fl_adapter")
 	self:cafcw_add_modpack("ammo", "wpn_fps_pis_welrod", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 

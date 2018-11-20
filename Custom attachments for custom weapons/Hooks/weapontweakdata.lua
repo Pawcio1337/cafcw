@@ -71,5 +71,19 @@ if self.m40a5 then
 		rotation = Rotation(0, 0, 0)
 	})
 end
+if self.sv98 then
+	self:SetupAttachmentPoint("sv98", {
+		name = "a_o_f",
+		base_a_obj = "a_o",
+		position = Vector3(0, 3.7, -0.6),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sv98", {
+		name = "a_o_r",
+		base_a_obj = "a_o",
+		position = Vector3(0, -7.3, -0.6),
+		rotation = Rotation(0, 0, 0)
+	})
+end
 end
 end)
