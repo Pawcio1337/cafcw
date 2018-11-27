@@ -98,7 +98,8 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_pecheneg", "wpn_fps_upg_fl_dbal_d
 self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_pecheneg", "wpn_fps_upg_fl_m600p")
 self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_pecheneg", "wpn_fps_upg_fl_utg")
 self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_pecheneg", "wpn_fps_upg_ns_ass_smg_tromix")
-	self:cafcw_add_modpack("barrel_ext", "wpn_fps_lmg_pecheneg", "SneakySuppressorPack", "ARSupp")
+self:cafcw_add_modpack("barrel_ext", "wpn_fps_lmg_pecheneg", "SneakySuppressorPack", "ARSupp")
+self:cafcw_add_modpack("ammo", "wpn_fps_lmg_pecheneg", "_762x54mmr", "MoreAmmoTypes")
 end
 
 --Trench Gun
@@ -824,6 +825,7 @@ self:cafcw_add_custom_sights("custom", "wpn_fps_snp_classic", "wpn_fps_snp_msr")
 self:cafcw_add_custom_sights("custom_sniper", "wpn_fps_snp_classic", "wpn_fps_snp_msr")
 self:cafcw_add_custom_sights("shortdot", "wpn_fps_snp_classic", "wpn_fps_snp_msr")
 self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_classic", "wpn_fps_snp_msr")
+self:cafcw_add_modpack("ammo", "wpn_fps_snp_classic", "_762x54mmr", "MoreAmmoTypes")
 end
 
 

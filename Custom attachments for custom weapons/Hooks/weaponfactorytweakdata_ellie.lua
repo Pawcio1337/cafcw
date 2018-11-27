@@ -16,6 +16,7 @@ if self.wpn_fps_snp_fyjs then
 -- Update v1.68.199
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_snp_msr")
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_fyjs", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_snp_msr")
+	self:cafcw_add_modpack("ammo", "wpn_fps_snp_fyjs", "_762x54mmr", "MoreAmmoTypes")
 end
 --ARX-160
 if self.wpn_fps_ass_ar160 then
