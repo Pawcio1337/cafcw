@@ -1,7 +1,42 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_GermanTacos_Init", function(self)
 ---SECONDARY
 
---CZ-75B
+--Glock 17 Gen 3
+
+if self.wpn_fps_pis_glawk then
+
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup1")
+	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup1", "barrel")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup1", "a_ns_ext")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup1", "a_ns_ext")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup1", "a_ns_ext")
+	
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup2")
+	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup2", "barrel")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup2", "a_ns_ext")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup2", "a_ns_ext")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup2", "a_ns_ext")
+	
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup6")
+	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup6", "barrel")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup6", "a_ns_ext")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup6", "a_ns_ext")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup6", "a_ns_ext")
+	
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_glawk", "wpn_fps_upg_fl_unimax")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_glawk", "wpn_fps_upg_fl_utg_pis")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_glawk", "wpn_fps_upg_fl_micro90")
+	
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_glawk", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a1_22lr", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a1_40sw", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a2_10mm", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a3_357sig", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a4_45acp", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a5_45gap", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
+end
+
+--CZ 75 B
 if self.wpn_fps_pis_cz75b and self.wpn_fps_pis_x_cz75b then
 
 	self.wpn_fps_pis_cz75b.adds = self.wpn_fps_pis_cz75b.adds or {}
