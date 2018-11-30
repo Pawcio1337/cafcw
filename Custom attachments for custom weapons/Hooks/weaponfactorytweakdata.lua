@@ -363,8 +363,7 @@ sight_tables.custom_sniper = {
 	"wpn_fps_upg_o_csgoscope"
 }
 sight_tables.custom_pistol = {
-	"wpn_fps_upg_o_deltapoint",
-	"wpn_fps_upg_o_docter_pis"
+	"wpn_fps_upg_o_deltapoint"
 }
 sight_tables.rds45 = {
 	"wpn_fps_upg_o_delta_rm55"
@@ -397,6 +396,13 @@ sight_tables.specter = {
 	"wpn_fps_upg_o_anpas13d"
 }
 -- Unique weapon tables to exclude sights from custom tables.
+sight_tables.custom_amr2 = {
+	"wpn_fps_upg_o_eotech552",
+	"wpn_fps_upg_o_po4",
+	"wpn_fps_upg_o_st10",
+	"wpn_fps_upg_o_susat",
+	"wpn_fps_upg_o_compm2"
+}
 sight_tables.custom_g3m203 = {
 	"wpn_fps_upg_o_eotech552",
 	"wpn_fps_upg_o_po4",
@@ -1990,7 +1996,7 @@ if self.wpn_fps_snp_amr2 then
 	self:cafcw_add_to_parts("sight", "wpn_fps_snp_amr2", "wpn_fps_upg_o_troy_m4", "wpn_fps_upg_o_dd_a1", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("custom_amr2", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("custom_sniper", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("shortdot", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("rds45", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
@@ -2153,7 +2159,6 @@ if self.wpn_fps_pis_swmp40 then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_swmp40_sights_forbids", "wpn_fps_upg_o_horzine")
 	self:cafcw_add_custom_sights("custom_pistol", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", "wpn_fps_pis_swmp40_sight_rear_dummy")
 	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_deltapoint", "slide")
-	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_docter_pis", "slide")
 end
 -- AP Pistol
 if self.wpn_fps_pis_appistol then
@@ -2187,7 +2192,6 @@ if self.wpn_fps_pis_b93r then
 	self:cafcw_add_modpack("ammo", "wpn_fps_pis_b93r", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 	self:cafcw_add_custom_sights("custom_pistol", "wpn_fps_pis_b93r", "wpn_fps_pis_beretta", "wpn_fps_pis_b93r_sight_rmr")
 	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_b93r", "wpn_fps_upg_o_deltapoint", "slide")
-	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_b93r", "wpn_fps_upg_o_docter_pis", "slide")
 end
 -- Walther P99
 if self.wpn_fps_pis_p99 then
@@ -2215,7 +2219,6 @@ if self.wpn_fps_pis_hk45c then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_hk45c", "wpn_fps_upg_fl_micro90")
 	self:cafcw_add_custom_sights("custom_pistol", "wpn_fps_pis_hk45c", "wpn_fps_pis_packrat", "wpn_fps_pis_hk45c_sight_nonstance")
 	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_hk45c", "wpn_fps_upg_o_deltapoint", "slide")
-	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_hk45c", "wpn_fps_upg_o_docter_pis", "slide")
 end
 -- Steyr AUG A3 9mm XS
 if self.wpn_fps_smg_aug9mm then
@@ -2319,9 +2322,8 @@ if self.wpn_fps_pis_px4 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_px4", "wpn_fps_upg_fl_unimax")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_px4", "wpn_fps_upg_fl_utg_pis")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_px4", "wpn_fps_upg_fl_micro90")
-	self:cafcw_add_custom_sights("custom_pistol", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", "wpn_fps_pis_px4_sight_rmr")
+	self:cafcw_add_custom_sights("custom_pistol", "wpn_fps_pis_px4", "wpn_fps_pis_sparrow", "wpn_fps_pis_px4_sight_rmr")
 	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_px4", "wpn_fps_upg_o_deltapoint", "slide")
-	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_px4", "wpn_fps_upg_o_docter_pis", "slide")
 end
 -- PPS-43
 if self.wpn_fps_smg_pps43 then
