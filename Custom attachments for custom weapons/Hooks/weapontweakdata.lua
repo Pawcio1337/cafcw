@@ -33,6 +33,32 @@ if self.sr3m then
 		rotation = Rotation(0, 0, 0)
 	})
 end
+if self.sks then
+	self:SetupAttachmentPoint("sks", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(0.5, -9.5, -0.9),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sks", {
+		name = "a_o_1pn93",
+		base_a_obj = "a_o",
+		position = Vector3(-0.8, -9.5, 0.45),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sks", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(-0.1, -4, -1.7),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sks", {
+		name = "a_o_pso1",
+		base_a_obj = "a_o",
+		position = Vector3(-0.8, -4.5, -1.8),
+		rotation = Rotation(0, 0, 0)
+	})
+end
 -- PU Scope
 if self.obrez then
 	self:SetupAttachmentPoint("obrez", {
