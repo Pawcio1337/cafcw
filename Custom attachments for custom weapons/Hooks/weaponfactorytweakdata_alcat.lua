@@ -1213,6 +1213,20 @@ self:cafcw_add_custom_sights("rds45", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3
 end
 
 
+--SMG12
+if self.wpn_fps_mp_master then
+self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_ass_spotter")
+self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_wml")
+self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_anpeq2")
+self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_dbal_d2")
+self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_m600p")
+self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_utg")
+self:cafcw_add_custom_sights("specter", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,-4.25,-0.75")
+self:cafcw_add_custom_sights("acog", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,-4.25,-0.75")
+self:cafcw_add_custom_sights("custom", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,5.75,2.35")
+end
+
+
 
 
 
