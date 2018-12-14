@@ -501,4 +501,26 @@ if self.wpn_fps_smg_owen then
 	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_owen", "wpn_fps_bow_ecp", "wpn_fps_smg_owen_rail")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_owen", "wpn_fps_bow_ecp", "wpn_fps_smg_owen_rail")
 end
+
+--TOZ-106
+if self.wpn_fps_shot_toz106 then
+    self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz106_stock_full", "wpn_fps_upg_fl_ass_spotter", "a_fl_mc20")
+    self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz106_stock_full", "wpn_fps_upg_fl_wml", "a_fl_mc20")
+    self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz106_stock_full", "wpn_fps_upg_fl_anpeq2", "a_fl_mc20")
+    self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz106_stock_full", "wpn_fps_upg_fl_dbal_d2", "a_fl_mc20")
+    self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz106_stock_full", "wpn_fps_upg_fl_m600p", "a_fl_mc20")
+    self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_shot_toz106_stock_full", "wpn_fps_upg_fl_utg", "a_fl_mc20")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_toz106", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_toz106", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_toz106", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_toz106", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_toz106", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_toz106", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz106", "wpn_fps_upg_ns_sho_salvo_small")
+	self:cafcw_add_to_parts("other", "wpn_fps_shot_toz106", "wpn_fps_upg_ns_shot_cat")
+	self:cafcw_add_modpack("ammo", "wpn_fps_shot_toz106", "_12ga_auto", "TaserAmmo")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_shot_toz106", "wpn_fps_snp_model70", "wpn_fps_shot_toz106_o_rail")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_shot_toz106", "wpn_fps_snp_model70", "wpn_fps_shot_toz106_o_rail")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_shot_toz106", "wpn_fps_snp_model70", "wpn_fps_shot_toz106_o_rail")
+end
 end)
