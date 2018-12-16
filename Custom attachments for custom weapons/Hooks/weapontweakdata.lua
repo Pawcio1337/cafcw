@@ -3,25 +3,79 @@ if BeardLib.Utils:FindMod("Custom Attachment Points") then
 -- Russian Weapons - Sight Pack
 if self.vss then
 	self:SetupAttachmentPoint("vss", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(0.5, -4, -1.7),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("vss", {
 		name = "a_o_1pn93",
 		base_a_obj = "a_o",
 		position = Vector3(-0.8, -4, 0.35),
 		rotation = Rotation(0, 0, 0)
 	})
+	self:SetupAttachmentPoint("vss", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(-0.2, 0, -2.7),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("vss", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-0.4, 3.25, -3.2),
+		rotation = Rotation(0, 0, 0)
+	})
 end
 if self.svd then
+	self:SetupAttachmentPoint("svd", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(0.4, -6, -0.2),
+		rotation = Rotation(0, 0, 0)
+	})
 	self:SetupAttachmentPoint("svd", {
 		name = "a_o_1pn93",
 		base_a_obj = "a_o",
 		position = Vector3(-0.9, -6, 1.15),
 		rotation = Rotation(0, 0, 0)
 	})
+	self:SetupAttachmentPoint("svd", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(-0.2, -2, -1),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("svd", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-0.6, -2.25, -1.5),
+		rotation = Rotation(0, 0, 0)
+	})
 end
 if self.svu then
+	self:SetupAttachmentPoint("svu", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(0.2, -5, 0.3),
+		rotation = Rotation(0, 0, 0)
+	})
 	self:SetupAttachmentPoint("svu", {
 		name = "a_o_1pn93",
 		base_a_obj = "a_o",
 		position = Vector3(-1.1, -5, 1.65),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("svu", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(-0.4, -1, -0.5),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("svu", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-0.85, 1.25, -0.9),
 		rotation = Rotation(0, 0, 0)
 	})
 end
@@ -29,7 +83,31 @@ if self.sr3m then
 	self:SetupAttachmentPoint("sr3m", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
-		position = Vector3(-0.5, -4, -0.95),
+		position = Vector3(0.8, -4, -2.3),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sr3m", {
+		name = "a_o_1pn93",
+		base_a_obj = "a_o",
+		position = Vector3(-0.8, -4, -0.75),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sr3m", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(-0, 1, -3),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sr3m", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-0.4, 3.25, -3.5),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sr3m", {
+		name = "a_o_pso1",
+		base_a_obj = "a_o",
+		position = Vector3(-0.6, 2, -3),
 		rotation = Rotation(0, 0, 0)
 	})
 end
@@ -49,13 +127,51 @@ if self.sks then
 	self:SetupAttachmentPoint("sks", {
 		name = "a_o_ekp_1s_03",
 		base_a_obj = "a_o",
-		position = Vector3(-0.1, -4, -1.7),
+		position = Vector3(0, -4, -1.7),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("sks", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-0.6, -2.75, -2.3),
 		rotation = Rotation(0, 0, 0)
 	})
 	self:SetupAttachmentPoint("sks", {
 		name = "a_o_pso1",
 		base_a_obj = "a_o",
 		position = Vector3(-0.8, -4.5, -1.8),
+		rotation = Rotation(0, 0, 0)
+	})
+end
+if self.vepr12 then
+	self:SetupAttachmentPoint("vepr12", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(0.4, -14.5, -0.5),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("vepr12", {
+		name = "a_o_1pn93",
+		base_a_obj = "a_o",
+		position = Vector3(-0.9, -14.5, 0.85),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("vepr12", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(-0.2, -9, -1.3),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("vepr12", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-0.6, -7.25, -1.6),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("vepr12", {
+		name = "a_o_pso1",
+		base_a_obj = "a_o",
+		position = Vector3(-0.9, -9.5, -1.4),
 		rotation = Rotation(0, 0, 0)
 	})
 end
