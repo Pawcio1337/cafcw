@@ -165,14 +165,14 @@ if self.wpn_fps_ass_qbz3 then
   
 --Fort-500
 if self.wpn_fps_shot_f500 then
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_shot_f500_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_wml", "wpn_fps_shot_f500_gadget_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_f500", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_f500", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_upg_ns_sho_salvo_small")
 	self:cafcw_add_to_parts("other", "wpn_fps_shot_f500", "wpn_fps_upg_ns_shot_cat")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_anpeq2", "wpn_fps_shot_f500_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_shot_f500_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_m600p", "wpn_fps_shot_f500_gadget_rail")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_shot_f500", "wpn_fps_upg_fl_utg", "wpn_fps_shot_f500_gadget_rail")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_f500", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_f500", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_f500", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_f500", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_modpack("ammo", "wpn_fps_shot_f500", "_12ga", "TaserAmmo_MoreAmmoTypes")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_shot_f500", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_shot_f500", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
@@ -522,5 +522,15 @@ if self.wpn_fps_shot_toz106 then
 	self:cafcw_add_custom_sights("specter", "wpn_fps_shot_toz106", "wpn_fps_snp_model70", "wpn_fps_shot_toz106_o_rail")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_shot_toz106", "wpn_fps_snp_model70", "wpn_fps_shot_toz106_o_rail")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_shot_toz106", "wpn_fps_snp_model70", "wpn_fps_shot_toz106_o_rail")
+end
+--Candy Shotgun
+if self.wpn_fps_shot_candy then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_candy", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_candy", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_candy", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_candy", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_candy", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_candy", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_modpack("ammo", "wpn_fps_shot_candy", "_12ga", "TaserAmmo_MoreAmmoTypes")
 end
 end)
