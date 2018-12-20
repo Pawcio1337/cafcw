@@ -1109,6 +1109,18 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_var_kac_rear", "wpn_fps_upg_o_var_kac_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_var_m4flipup_rear", "wpn_fps_upg_o_var_m4flipup_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_var_mbus_rear", "wpn_fps_upg_o_var_mbus_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_var_scorpionevo_rear", "wpn_fps_upg_o_var_scorpionevo_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_var_troy_rear", "wpn_fps_upg_o_var_troy_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace", "wpn_fps_upg_o_var_troym4_rear", "wpn_fps_upg_o_var_troym4_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_ace21", "wpn_fps_upg_o_var_kac_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_ace21", "wpn_fps_upg_o_var_m4flipup_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_ace21", "wpn_fps_upg_o_var_mbus_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_ace21", "wpn_fps_upg_o_var_scorpionevo_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_ace21", "wpn_fps_upg_o_var_troy_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_ace21", "wpn_fps_upg_o_var_troym4_front", "a_of_short")
 end
 -- Galil ACE 52
 if self.wpn_fps_ass_galilace_762 then
@@ -1129,6 +1141,18 @@ if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_var_kac_rear", "wpn_fps_upg_o_var_kac_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_var_m4flipup_rear", "wpn_fps_upg_o_var_m4flipup_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_var_mbus_rear", "wpn_fps_upg_o_var_mbus_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_var_scorpionevo_rear", "wpn_fps_upg_o_var_scorpionevo_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_var_troy_rear", "wpn_fps_upg_o_var_troy_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("sight", "wpn_fps_ass_galilace_762", "wpn_fps_upg_o_var_troym4_rear", "wpn_fps_upg_o_var_troym4_rear", "wpn_fps_smg_hajk")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_cqb", "wpn_fps_upg_o_var_kac_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_cqb", "wpn_fps_upg_o_var_m4flipup_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_cqb", "wpn_fps_upg_o_var_mbus_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_cqb", "wpn_fps_upg_o_var_scorpionevo_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_cqb", "wpn_fps_upg_o_var_troy_front", "a_of_short")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_galilace_barrel_cqb", "wpn_fps_upg_o_var_troym4_front", "a_of_short")
 end
 -- AEK-971
 -- Switch to AK stance_mod
@@ -2034,6 +2058,11 @@ if self.wpn_fps_smg_mpx then
 	self:cafcw_add_custom_sights("specter", "wpn_fps_smg_mpx", "wpn_fps_smg_olympic")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_mpx", "wpn_fps_smg_olympic")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_mpx", "wpn_fps_smg_olympic")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mpx", "wpn_fps_upg_o_var_kac_rear", "0.022,-2,-0.25")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_mpx", "wpn_fps_upg_o_var_m4flipup_rear", "wpn_fps_smg_mpx_troy", "wpn_fps_smg_mpx")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_mpx", "wpn_fps_upg_o_var_mbus_rear", "wpn_fps_smg_mpx_troy", "wpn_fps_smg_mpx")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mpx", "wpn_fps_upg_o_var_scorpionevo_rear", "0.022,-6,2.29")
+	self:cafcw_add_to_parts("sight", "wpn_fps_smg_mpx", "wpn_fps_upg_o_var_troym4_rear", "wpn_fps_smg_mpx_troy", "wpn_fps_smg_mpx")
 end
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
