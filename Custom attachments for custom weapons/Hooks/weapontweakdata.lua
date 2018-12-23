@@ -240,5 +240,92 @@ if self.galilace762 then
 		position = Vector3(0, -12, 0)
 	})
 end
+if self.hk416 then
+	self:SetupAttachmentPoint("hk416", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 22, 1)
+	})
+	self:SetupAttachmentPoint("hk416", {
+		name = "a_of_long",
+		base_a_obj = "a_o",
+		position = Vector3(0, 28, 1)
+	})
+	self:SetupAttachmentPoint("hk416", {
+		name = "a_of_short",
+		base_a_obj = "a_o",
+		position = Vector3(0, 16, 1)
+	})
+	self:SetupAttachmentPoint("hk416", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -14, 1)
+	})
+end
+if self.f2000 then
+	self:SetupAttachmentPoint("f2000", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 14, -1.4)
+	})
+	self:SetupAttachmentPoint("f2000", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -11, -1.4)
+	})
+end
+if self.mdr then
+	self:SetupAttachmentPoint("mdr", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 14.5, 0)
+	})
+	self:SetupAttachmentPoint("mdr", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -10, 0)
+	})
+end
+if self.g36k then
+	self:SetupAttachmentPoint("g36k", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 10, 0)
+	})
+	self:SetupAttachmentPoint("g36k", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -14, 0)
+	})
+end
+if self.scarl then
+	self:SetupAttachmentPoint("scarl", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 20, 1.725)
+	})
+	self:SetupAttachmentPoint("scarl", {
+		name = "a_of_short",
+		base_a_obj = "a_o",
+		position = Vector3(0, 10, 1.725)
+	})
+	self:SetupAttachmentPoint("scarl", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -19, 1.725)
+	})
+end
+if self.scar_m203 then
+	self:SetupAttachmentPoint("scar_m203", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 17.7, 1.1)
+	})
+	self:SetupAttachmentPoint("scar_m203", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -21, 1.1)
+	})
+end
 end
 end)

@@ -321,7 +321,7 @@ for i, wpn_id in ipairs(akmodules) do
         self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_hcog"      , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
         self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_reflexholo", "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
         self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_aog"       , "0,5,-3.7"       		, akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_rmr_riser" , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
+        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_rmr_riser" , "0,7,-2.32"              , akpack_scopemounts[akpack_counter])
         self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_elo"       , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
         self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_po4"       , "0.2,7,-2.55"       	, akpack_scopemounts[akpack_counter])
         self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_susat"     , "0,7,-5.4"     			, akpack_scopemounts[akpack_counter])
