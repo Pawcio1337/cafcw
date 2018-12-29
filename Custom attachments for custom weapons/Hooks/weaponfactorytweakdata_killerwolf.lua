@@ -60,6 +60,26 @@ self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_luger", "_9x19mm", "IncendiaryAmmo
 end
 
 	---- Machine Guns ---
+if self.wpn_fps_lmg_dp28 then
+	self:cafcw_add_modpack("stock", "wpn_fps_lmg_dp28", "AR15_StockPack")
+	self:cafcw_add_modpack("stock", "wpn_fps_lmg_dp28", "Stock_Attachment_Pack")
+	self:cafcw_add_modpack("ammo", "wpn_fps_lmg_dp28", "_762x54mmr", "MoreAmmoTypes")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "0, 10, -4")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "0, 10, -4")	
+--	self:cafcw_add_custom_sights("custom", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "0,0,0.92")
+--	self:cafcw_add_custom_sights("rds45", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "-3.1, -2, -8.24")
+
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_caastock", "wpn_fps_lmg_dp28_stock_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_caastock_black", "wpn_fps_lmg_dp28_stock_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_hke1", "wpn_fps_lmg_dp28_stock_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_viper", "wpn_fps_lmg_dp28_stock_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_collapsed", "wpn_fps_lmg_dp28_stock_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_pts_col", "wpn_fps_lmg_dp28_stock_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_crane_col", "wpn_fps_lmg_dp28_stock_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_mk46_col", "wpn_fps_lmg_dp28_stock_adapter")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_lmg_dp28", "wpn_fps_upg_m4_s_ubr_col", "wpn_fps_lmg_dp28_stock_adapter")
+end	
+
 	---- Pistols / Revolvers ----
 	---- Shotuns ---
 

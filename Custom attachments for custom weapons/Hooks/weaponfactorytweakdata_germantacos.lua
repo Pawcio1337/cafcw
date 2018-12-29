@@ -230,6 +230,52 @@ if self.wpn_fps_pis_seburo and self.wpn_fps_pis_x_seburo then
 	self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_seburo", "_545x18mm_nonap", "MoreAmmoTypes")
 end
 
+---StG58
+if self.wpn_fps_ass_fusil_762 then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_fusil_762", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_fusil_762", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_fusil_762", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_fusil_762", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_fusil_762", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_fusil_762", "wpn_fps_upg_fl_utg")
+	
+	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_fusil_762", "wpn_fps_ass_scar", "wpn_fps_ass_fusil_762_sm_modern", "0, 5, -3.05")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_fusil_762", "wpn_fps_ass_scar", "wpn_fps_ass_fusil_762_sm_modern", "0, 2, -3.05")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_fusil_762", "wpn_fps_ass_scar", "wpn_fps_ass_fusil_762_sm_modern", "0,5,-2.8")
+--	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_fusil_762", "wpn_fps_ass_scar", "wpn_fps_ass_fusil_762_sm_modern")
+	self:cafcw_add_modpack("ammo", "wpn_fps_ass_fusil_762", "_762x51mm", "MoreAmmoTypes")
+end
+---AR PACK
+if self.wpn_fps_ass_stoy_556 then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_utg")
+	
+	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0, 7, -5.15")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0, 5, -5.15")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0,2,-2.5")
+--	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "-3.1, -2, -8.24")
+	self:cafcw_add_modpack("ammo", "wpn_fps_ass_stoy_556", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
+end
+
+if self.wpn_fps_smg_stoy_919 then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_stoy_919", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_stoy_919", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_stoy_919", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_stoy_919", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_stoy_919", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_stoy_919", "wpn_fps_upg_fl_utg")
+	
+	self:cafcw_add_custom_sights("specter", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0, 7, -5.15")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0, 5, -5.15")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0,2,-2.5")
+--	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "-3.1, -2, -8.24")
+	self:cafcw_add_modpack("ammo", "wpn_fps_smg_stoy_919", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+end
+
 ---AK PACK
  
 local akmodules = {
@@ -237,7 +283,8 @@ local akmodules = {
     "wpn_fps_ass_heffy_545",
     "wpn_fps_ass_heffy_556",
     "wpn_fps_ass_heffy_939",
-    "wpn_fps_ass_x_heffy_939"
+    "wpn_fps_ass_x_heffy_939",
+    "wpn_fps_sho_heffy_12g"
 }
 
 local akpack_scopemounts = {
@@ -245,14 +292,16 @@ local akpack_scopemounts = {
 	"wpn_fps_upg_o_ak74_scopemount",
 	"wpn_fps_upg_o_ak101_scopemount",
 	"wpn_fps_upg_o_ak9_scopemount",
-	"wpn_fps_upg_o_ak9_scopemount"
+	"wpn_fps_upg_o_ak9_scopemount",
+	"wpn_fps_upg_o_saiga12_scopemount"
 }
 local akpack_ammo = {
 	"_762x39mm",
 	"_545x39mm",
 	"_556x45mm",
 	"_9x39mm",
-	"_9x39mm"
+	"_9x39mm",
+	"_12ga_auto"
 }
 
  
@@ -345,7 +394,7 @@ for i, wpn_id in ipairs(akmodules) do
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_urban")
 		
-		self:cafcw_add_modpack("ammo", wpn_id, akpack_ammo[akpack_counter], "IncendiaryAmmo_MoreAmmoTypes")
+		self:cafcw_add_modpack("ammo", wpn_id, akpack_ammo[akpack_counter], "TaserAmmo_IncendiaryAmmo_MoreAmmoTypes")
 		
 		
     end

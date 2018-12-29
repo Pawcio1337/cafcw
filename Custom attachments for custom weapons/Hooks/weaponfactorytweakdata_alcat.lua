@@ -583,6 +583,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_volmer", "wpn_fps_upg_fl_m600p")
 self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_volmer", "wpn_fps_upg_fl_utg")
 self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_volmer", "wpn_fps_upg_ns_ass_smg_tromix")
 self:cafcw_add_modpack("barrel_ext", "wpn_fps_lmg_volmer", "SneakySuppressorPack", "ARSupp")
+self:cafcw_add_modpack("ammo", "wpn_fps_lmg_volmer", "_762x51mm", "MoreAmmoTypes")
 end
 
 
@@ -701,6 +702,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_mg5", "wpn_fps_upg_fl_utg")
 self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_mg5", "wpn_fps_upg_ns_ass_smg_tromix")
 self:cafcw_add_modpack("ammo", "wpn_fps_lmg_mg5", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 self:cafcw_add_modpack("barrel_ext", "wpn_fps_lmg_mg5", "SneakySuppressorPack", "ARSupp")
+self:cafcw_add_modpack("ammo", "wpn_fps_lmg_mg5", "_762x51mm", "MoreAmmoTypes")
 end
 
 
@@ -1079,6 +1081,7 @@ self:cafcw_add_custom_sights("specter", "wpn_fps_ass_fusil", "wpn_fps_ass_corgi"
 self:cafcw_add_custom_sights("acog", "wpn_fps_ass_fusil", "wpn_fps_ass_corgi", "wpn_fps_ass_fusil_o_adjust")
 self:cafcw_add_custom_sights("custom", "wpn_fps_ass_fusil", "wpn_fps_ass_corgi", "wpn_fps_ass_fusil_o_adjust")
 self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_fusil", "wpn_fps_ass_corgi")
+self:cafcw_add_modpack("ammo", "wpn_fps_ass_fusil", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 
 
@@ -1102,7 +1105,7 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_m14e2_gl_m203", "wpn_fps_
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_m14e2_gl_m203", "wpn_fps_upg_fl_m600p", "a_fl_m203")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_m14e2_gl_m203", "wpn_fps_upg_fl_utg", "a_fl_m203")
 self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_m14e2", "SneakySuppressorPack", "ARSupp")
-
+self:cafcw_add_modpack("ammo", "wpn_fps_ass_m14e2", "_762x51mm", "MoreAmmoTypes")
 --Not yet tested
 -- self:cafcw_add_to_parts("other", "wpn_fps_ass_m14e2", "wpn_fps_shield_dmr")
 -- self:cafcw_add_to_parts("other", "wpn_fps_ass_m14e2", "wpn_fps_shield_skin_ftp")
