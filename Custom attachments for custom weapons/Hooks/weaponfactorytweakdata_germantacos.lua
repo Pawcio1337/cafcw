@@ -247,6 +247,13 @@ if self.wpn_fps_ass_fusil_762 then
 end
 ---AR PACK
 if self.wpn_fps_ass_stoy_556 then
+	if self.parts.wpn_fps_upg_o_rmr_riser then
+	self.wpn_fps_ass_stoy_556.override.wpn_fps_upg_o_rmr_riser = {override = {
+		wpn_fps_ass_stoy_556_gb_ar15 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"},
+		wpn_fps_ass_stoy_556_gb_m16a1 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"},
+		wpn_fps_ass_stoy_556_gb_m16a4 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
+	}}
+	end
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_ass_spotter")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_anpeq2")
@@ -254,9 +261,9 @@ if self.wpn_fps_ass_stoy_556 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_m600p")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_stoy_556", "wpn_fps_upg_fl_utg")
 	
-	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0, 7, -5.15")
-	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0, 5, -5.15")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0,2,-2.5")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", nil, "0,7,-5.15")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", nil, "0,5,-5.15")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", nil, "0,2,-2.5")
 --	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "-3.1, -2, -8.24")
 	self:cafcw_add_modpack("ammo", "wpn_fps_ass_stoy_556", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
@@ -269,10 +276,10 @@ if self.wpn_fps_smg_stoy_919 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_stoy_919", "wpn_fps_upg_fl_m600p")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_stoy_919", "wpn_fps_upg_fl_utg")
 	
-	self:cafcw_add_custom_sights("specter", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0, 7, -5.15")
-	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0, 5, -5.15")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "0,2,-2.5")
---	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "-3.1, -2, -8.24")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", nil, "0,7,-5.15")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", nil, "0,5,-5.15")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", nil, "0,2,-2.5")
+--	self:cafcw_add_custom_sights("rds45", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "-3.1, -2, -8.24")
 	self:cafcw_add_modpack("ammo", "wpn_fps_smg_stoy_919", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 
@@ -345,7 +352,7 @@ local all_cafcw_gadget = {
 	"wpn_fps_upg_fl_utg"
 }
 local akpack_counter = 1
-for i, wpn_id in ipairs(akmodules) do
+for i, wpn_id in pairs(akmodules) do
     if self[wpn_id] then
         self:cafcw_add_to_parts("gadget", wpn_id, "wpn_fps_upg_fl_wml"        )
         self:cafcw_add_to_parts("gadget", wpn_id, "wpn_fps_upg_fl_ass_spotter")
@@ -400,7 +407,7 @@ for i, wpn_id in ipairs(akmodules) do
     end
 	akpack_counter = akpack_counter + 1 
 end
-for i, o_id in ipairs(all_cafcw_sight) do
+for i, o_id in pairs(all_cafcw_sight) do
 	if self.parts[o_id] then
 		if self.parts.wpn_fps_ass_heffy_all_sm_cover then
 			self.parts.wpn_fps_ass_heffy_all_sm_cover.override[o_id] = {a_obj = "a_o_cover"}
@@ -427,7 +434,7 @@ for i, o_id in ipairs(all_cafcw_sight) do
 	end
 end
 if self.parts.wpn_fps_ass_heffy_all_lfg_warrior then
-	for i, fl_id in ipairs(all_cafcw_gadget) do
+	for i, fl_id in pairs(all_cafcw_gadget) do
 		self.parts.wpn_fps_ass_heffy_all_lfg_warrior.override[fl_id] = {a_obj = "a_fl_war"}
 		self.parts.wpn_fps_ass_heffy_all_lfg_honor.override[fl_id]	 = {a_obj = "a_fl_honor"}
 		self.parts.wpn_fps_ass_heffy_all_lfg_zenit.override[fl_id]	 = {a_obj = "a_fl_zenit"}
