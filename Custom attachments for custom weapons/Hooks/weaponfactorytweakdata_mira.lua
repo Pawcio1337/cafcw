@@ -72,4 +72,26 @@ if self.wpn_fps_smg_mp7new then
 	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
 end
+
+if self.wpn_fps_smg_mac10mpa then
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10mpa_front_ris", "wpn_fps_upg_fl_ass_spotter", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_fl_wml", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10mpa_front_ris", "wpn_fps_upg_fl_wml", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_fl_anpeq2", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10mpa_front_ris", "wpn_fps_upg_fl_anpeq2", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10mpa_front_ris", "wpn_fps_upg_fl_dbal_d2", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_fl_m600p", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10mpa_front_ris", "wpn_fps_upg_fl_m600p", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_fl_utg", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10mpa_front_ris", "wpn_fps_upg_fl_utg", "a_fgfl")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_smg_mac10mpa", "wpn_fps_smg_mac10mpa")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_mac10mpa", "wpn_fps_smg_mac10mpa")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_o_eotech552", "0,0,-2.99")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_o_susat", "0,-5,-5.08")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_o_compm2", "0,0,-2.675")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_o_rmr_riser", "0,-3,-1.945")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_o_okp7", "0.6,0,-2.395")
+end
 end)
