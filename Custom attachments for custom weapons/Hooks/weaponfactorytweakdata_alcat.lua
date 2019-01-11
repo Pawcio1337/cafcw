@@ -1227,6 +1227,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_utg")
 self:cafcw_add_custom_sights("specter", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,-4.25,-0.75")
 self:cafcw_add_custom_sights("acog", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,-4.25,-0.75")
 self:cafcw_add_custom_sights("custom", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,5.75,2.35")
+self:cafcw_add_modpack("ammo", "wpn_fps_mp_master", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 
 
@@ -1401,7 +1402,6 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_lmg_par_fg_heat", "wpn_fps_up
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_lmg_par_fg_heat", "wpn_fps_upg_fl_utg", "a_fl_heat")
 end
 
-
 -- M16 Carry Handle Rail
 if self.parts.wpn_fps_upg_o_carrymount then
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_carrymount", "wpn_fps_upg_o_kobra", "a_o_sm")
@@ -1432,6 +1432,22 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_carrymount", "wpn_fps_u
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_carrymount", "wpn_fps_upg_o_eotech552", "a_o_sm")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_carrymount", "wpn_fps_upg_o_visionking", "a_o_sm")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_carrymount", "wpn_fps_upg_o_pka", "a_o_sm")
+end
+
+--FAL Various
+if BeardLib.Utils:FindMod("FAL Various Attachment") then
+local moved_custom_barrelext = {
+	"wpn_fps_ass_ns_g_sup3",
+	"wpn_fps_ass_ns_g_sup4",
+	"wpn_fps_ass_ns_g_sup5",
+	"wpn_fps_upg_ns_ass_smg_tromix"
+}
+for i, part_id in ipairs(moved_custom_barrelext) do
+	self.parts.wpn_fps_ass_fal_fg_stg58.override[part_id] = { a_obj = "a_ns_std" }
+	self.parts.wpn_fps_ass_fal_fg_standard.override[part_id] = { a_obj = "a_ns_std" }
+	self.parts.wpn_fps_ass_fal_fg_wood.override[part_id] = { a_obj = "a_ns_std" }
+	self.parts.wpn_fps_ass_fal_fg_03.override[part_id] = { a_obj = "a_ns_romat" }
+end
 end
 
 
