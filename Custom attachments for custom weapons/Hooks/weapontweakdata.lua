@@ -1,5 +1,6 @@
 Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
 if BeardLib.Utils:FindMod("Custom Attachment Points") then
+-- Attachment:
 -- Russian Weapons - Sight Pack
 if self.vss then
 	self:SetupAttachmentPoint("vss", {
@@ -325,6 +326,15 @@ if self.scar_m203 then
 		name = "a_or",
 		base_a_obj = "a_o",
 		position = Vector3(0, -21, 1.1)
+	})
+end
+-- Weapons:
+-- Chiappa Rhino 60DS
+if self.rhino then
+	self:SetupAttachmentPoint("rhino", {
+		name = "a_o_rmr",
+		base_a_obj = "a_o",
+		position = Vector3(0, 18, -1.1)
 	})
 end
 end

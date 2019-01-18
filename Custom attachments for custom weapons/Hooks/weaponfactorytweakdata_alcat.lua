@@ -91,7 +91,6 @@ end
 
 end
 
-
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Alcat_Init", function(self)
 
 --Custom Weapon
@@ -1279,10 +1278,10 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_anp
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_dbal_d2")
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_m600p")
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_inkunzi", "wpn_fps_upg_fl_utg")
-self:cafcw_add_custom_sights("specter", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", nil, "0.025,-8,-0.42")
-self:cafcw_add_custom_sights("acog", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", nil, "0.025,-5,-0.42")
-self:cafcw_add_custom_sights("custom", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", nil, "0,0,3")
-self:cafcw_add_custom_sights("rds45", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", nil, "3.48,-10,-8.46")
+self:cafcw_add_custom_sights_custom("specter", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0.025,-8,-0.42")
+self:cafcw_add_custom_sights_custom("acog", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0.025,-5,-0.42")
+self:cafcw_add_custom_sights_custom("custom", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0,0,3")
+self:cafcw_add_custom_sights_custom("rds45", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "3.48,-10,-8.46")
 end
 
 
@@ -1294,9 +1293,9 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_anpeq2")
 self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_dbal_d2")
 self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_m600p")
 self:cafcw_add_to_parts("gadget", "wpn_fps_mp_master", "wpn_fps_upg_fl_utg")
-self:cafcw_add_custom_sights("specter", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,-4.25,-0.75")
-self:cafcw_add_custom_sights("acog", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,-4.25,-0.75")
-self:cafcw_add_custom_sights("custom", "wpn_fps_mp_master", "wpn_fps_smg_mac10", nil, "0,5.75,2.35")
+self:cafcw_add_custom_sights_custom("specter", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,-4.25,-0.75")
+self:cafcw_add_custom_sights_custom("acog", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,-4.25,-0.75")
+self:cafcw_add_custom_sights_custom("custom", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,5.75,2.35")
 self:cafcw_add_modpack("ammo", "wpn_fps_mp_master", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
 end
 
@@ -1306,8 +1305,8 @@ if self.wpn_fps_mp_master then
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_contender", "wpn_fps_upg_fl_unimax")
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_contender", "wpn_fps_upg_fl_utg_pis")
 self:cafcw_add_to_parts("gadget", "wpn_fps_special_contender", "wpn_fps_upg_fl_micro90")
-self:cafcw_add_custom_sights("specter", "wpn_fps_special_contender", "wpn_fps_special_contender", "wpn_fps_special_contender_rail_optic", "0,16,-3.75")
-self:cafcw_add_custom_sights("acog", "wpn_fps_special_contender", "wpn_fps_special_contender", "wpn_fps_special_contender_rail_optic", "0,12,-3.75")
+self:cafcw_add_custom_sights_custom("specter", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,16,-3.75", "wpn_fps_special_contender_rail_optic")
+self:cafcw_add_custom_sights_custom("acog", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,12,-3.75", "wpn_fps_special_contender_rail_optic")
 -- self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_special_contender", "wpn_fps_upg_o_susat", "0,16,-3.125", "wpn_fps_special_contender_rail_optic")
 -- self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_special_contender", "wpn_fps_upg_o_eotech552", "0,16,-3.125", "wpn_fps_special_contender_rail_optic")
 self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_special_contender", "wpn_fps_upg_o_st10", "0,16,-3.75", "wpn_fps_special_contender_rail_optic")
