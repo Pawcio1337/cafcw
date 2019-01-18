@@ -46,6 +46,9 @@ if self.wpn_fps_ass_hk33 then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_hk33_fg_tactical", "wpn_fps_upg_fl_utg", "a_fgfl")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_hk33", "wpn_fps_ass_hk33", "wpn_fps_ass_hk33_body_rail")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_hk33", "wpn_fps_ass_hk33", "wpn_fps_ass_hk33_body_rail")
+	self:cafcw_add_modpack("stock", "wpn_fps_ass_hk33", "AR15_StockPack")
+	self:cafcw_add_modpack("stock", "wpn_fps_ass_hk33", "Stock_Attachment_Pack")
+	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_hk33", "SneakySuppressorPack", "ARSupp")
 end
 if self.wpn_fps_shot_stf12 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_ass_spotter")

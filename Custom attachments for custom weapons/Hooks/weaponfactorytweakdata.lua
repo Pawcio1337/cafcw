@@ -368,7 +368,7 @@ mod_tables.SneakySuppressorPack = {
 		end
 	end
 end
-function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id, custom_stance)
+function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id, custom_stance, add_id_two)
 sight_tables = {}
 sight_tables.acog = {
 	"wpn_fps_upg_o_acog_rmr",
@@ -493,9 +493,13 @@ sight_tables.custom_sniper_sv98 = {
 				end
 			end
 		end
-		if self.parts[add_id] then
+	if self.parts[add_id] then
 			if self[wpn_id].adds then
-				self[wpn_id].adds[sight_id] = {add_id}
+				if self.parts[add_id_two] then
+					self[wpn_id].adds[sight_id] = {add_id,add_id_two}
+				else
+					self[wpn_id].adds[sight_id] = {add_id}
+				end
 			else
 				log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, sight_id, add_id)
 			end
