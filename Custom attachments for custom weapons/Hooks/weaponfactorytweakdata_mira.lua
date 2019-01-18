@@ -1,5 +1,5 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Mira_Init", function(self)
-
+-- SAI GRYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 if self.wpn_fps_ass_saigry then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_saigry", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_addon_ris")
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_saigry", "wpn_fps_upg_fl_wml", "wpn_fps_addon_ris")
@@ -14,7 +14,7 @@ if self.wpn_fps_ass_saigry then
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_saigry", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_saigry", "wpn_fps_ass_m4")
 end
-
+-- MSBS-5.56B
 if self.wpn_fps_ass_grotb then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_grotb", "wpn_fps_upg_fl_ass_spotter")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_grotb", "wpn_fps_upg_fl_wml")
@@ -28,6 +28,7 @@ if self.wpn_fps_ass_grotb then
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb_irons_folded")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb_irons_folded")
 end
+-- HK33
 if self.wpn_fps_ass_hk33 then
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_hk33", "wpn_fps_shield_lr")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_hk33", "wpn_fps_shield_skin_ftp")
@@ -50,6 +51,7 @@ if self.wpn_fps_ass_hk33 then
 	self:cafcw_add_modpack("stock", "wpn_fps_ass_hk33", "Stock_Attachment_Pack")
 	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_hk33", "SneakySuppressorPack", "ARSupp")
 end
+-- STF-12 Compact
 if self.wpn_fps_shot_stf12 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_ass_spotter")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_wml")
@@ -63,7 +65,7 @@ if self.wpn_fps_shot_stf12 then
 	self:cafcw_add_custom_sights("specter", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
 end
-
+-- MP7
 if self.wpn_fps_smg_mp7new then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_mp7new", "wpn_fps_upg_fl_ass_spotter")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_mp7new", "wpn_fps_upg_fl_wml")
@@ -75,7 +77,7 @@ if self.wpn_fps_smg_mp7new then
 	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
 end
-
+-- SMG-11
 if self.wpn_fps_smg_mac10mpa then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_addon_ris")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10mpa_front_ris", "wpn_fps_upg_fl_ass_spotter", "a_fgfl")
@@ -96,5 +98,16 @@ if self.wpn_fps_smg_mac10mpa then
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_o_compm2", "0,0,-2.675")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_o_rmr_riser", "0,-3,-1.945")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_mac10mpa", "wpn_fps_upg_o_okp7", "0.6,0,-2.395")
+end
+-- Wesker's 92FS "Samurai Edge"
+if self.wpn_fps_pis_wes92se then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_wes92se", "wpn_fps_upg_fl_unimax")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_wes92se_compensator", "wpn_fps_upg_fl_unimax", "a_extfl")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_wes92se", "wpn_fps_upg_fl_utg_pis")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_wes92se_compensator", "wpn_fps_upg_fl_utg_pis", "a_extfl")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_wes92se", "wpn_fps_upg_fl_micro90")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_wes92se_compensator", "wpn_fps_upg_fl_micro90", "a_extfl")
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_wes92se", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_modpack("ammo", "wpn_fps_pis_wes92se", "_9x19mm_p", "MoreAmmoTypes")
 end
 end)
