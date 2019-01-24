@@ -159,7 +159,7 @@ if self.wpn_fps_ass_acw then
 	self:cafcw_add_custom_sights_custom("specter", "wpn_fps_ass_acw", "wpn_fps_ass_ak5", "0,1,-3.3")
 	self:cafcw_add_custom_sights_custom("acog", "wpn_fps_ass_acw", "wpn_fps_ass_ak5", "0,1,-3.3")
 	self:cafcw_add_custom_sights_custom("custom", "wpn_fps_ass_acw", "wpn_fps_ass_ak5", "0,1,0.2")
-	self:cafcw_add_custom_sights_custom("rds45", "wpn_fps_ass_acw", "wpn_fps_ass_ak5")
+	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_acw", "wpn_fps_ass_ak5")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_acw", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_ass_ak5")
 	self:cafcw_add_to_parts("sight", "wpn_fps_ass_acw", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_ass_ak5")
 end

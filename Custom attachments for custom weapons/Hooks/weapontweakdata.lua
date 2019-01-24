@@ -337,5 +337,17 @@ if self.rhino then
 		position = Vector3(0, 18, -1.1)
 	})
 end
+if self.hugsforleon then
+	self:SetupAttachmentPoint("hugsforleon", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 35, 0)
+	})
+	self:SetupAttachmentPoint("hugsforleon", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -14, 0)
+	})
+end
 end
 end)
