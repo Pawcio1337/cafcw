@@ -207,6 +207,31 @@ if self.wpn_fps_smg_evo then
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_evo", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_smg_schakal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_evo", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_smg_schakal")
 end
+-- CZ Scorpion Evo A1
+if self.wpn_fps_smg_czevo then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_czevo", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_czevo", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_czevo", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_czevo", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_czevo", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_czevo", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_modpack("barrel_ext", "wpn_fps_smg_czevo", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_czevo", "wpn_fps_upg_ns_ass_smg_tromix")
+	self:cafcw_add_custom_sights_custom("specter", "wpn_fps_smg_czevo", "wpn_fps_smg_shepheard", "-0.01,0,-1.93")
+	self:cafcw_add_custom_sights_custom("acog", "wpn_fps_smg_czevo", "wpn_fps_smg_shepheard", "-0.01,0,-1.93")
+	self:cafcw_add_custom_sights_custom("custom", "wpn_fps_smg_czevo", "wpn_fps_smg_shepheard", "-0.01,0,-1.6")
+	self:cafcw_add_custom_sights("rds45", "wpn_fps_smg_czevo", "wpn_fps_smg_shepheard")
+end
+if self.wpn_fps_smg_x_czevo then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_czevo", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_czevo", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_czevo", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_czevo", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_czevo", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_czevo", "wpn_fps_upg_fl_utg")
+	self:cafcw_add_modpack("barrel_ext", "wpn_fps_smg_x_czevo", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_x_czevo", "wpn_fps_upg_ns_ass_smg_tromix")
+end
 -- AK 5.56
 if self.wpn_fps_ass_ak556 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_ak556", "wpn_fps_upg_fl_ass_spotter")

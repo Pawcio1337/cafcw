@@ -328,15 +328,6 @@ if self.scar_m203 then
 		position = Vector3(0, -21, 1.1)
 	})
 end
--- Weapons:
--- Chiappa Rhino 60DS
-if self.rhino then
-	self:SetupAttachmentPoint("rhino", {
-		name = "a_o_rmr",
-		base_a_obj = "a_o",
-		position = Vector3(0, 18, -1.1)
-	})
-end
 if self.hugsforleon then
 	self:SetupAttachmentPoint("hugsforleon", {
 		name = "a_of",
@@ -347,6 +338,27 @@ if self.hugsforleon then
 		name = "a_or",
 		base_a_obj = "a_o",
 		position = Vector3(0, -14, 0)
+	})
+end
+if self.op68 then
+	self:SetupAttachmentPoint("op68", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 18, 0)
+	})
+	self:SetupAttachmentPoint("op68", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -16.5, 0)
+	})
+end
+-- Weapons:
+-- Chiappa Rhino 60DS
+if self.rhino then
+	self:SetupAttachmentPoint("rhino", {
+		name = "a_o_rmr",
+		base_a_obj = "a_o",
+		position = Vector3(0, 18, -1.1)
 	})
 end
 end
