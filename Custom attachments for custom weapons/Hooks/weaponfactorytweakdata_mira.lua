@@ -181,4 +181,28 @@ if self.wpn_fps_ass_op68 then
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_troy_rear", "0,0,-0.2")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_troym4_rear", "0,0,-0.2")
 end
+-- M4A1
+if self.wpn_fps_ass_cinnamonroll then
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_cinnamonroll", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_cinnamonroll_fg_railed", "wpn_fps_upg_fl_ass_spotter", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_cinnamonroll", "wpn_fps_upg_fl_wml", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_cinnamonroll_fg_railed", "wpn_fps_upg_fl_wml", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_cinnamonroll", "wpn_fps_upg_fl_anpeq2", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_cinnamonroll_fg_railed", "wpn_fps_upg_fl_anpeq2", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_cinnamonroll", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_cinnamonroll_fg_railed", "wpn_fps_upg_fl_dbal_d2", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_cinnamonroll", "wpn_fps_upg_fl_m600p", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_cinnamonroll_fg_railed", "wpn_fps_upg_fl_m600p", "a_fgfl")
+	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_cinnamonroll", "wpn_fps_upg_fl_utg", "wpn_fps_addon_ris")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_cinnamonroll_fg_railed", "wpn_fps_upg_fl_utg", "a_fgfl")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_cinnamonroll", "wpn_fps_shield_m4")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_cinnamonroll", "wpn_fps_shield_skin_ftp")
+	self:cafcw_add_to_parts("other", "wpn_fps_ass_cinnamonroll", "wpn_fps_shield_skin_urban")
+	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_cinnamonroll", "wpn_fps_upg_ns_ass_smg_tromix")
+	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_cinnamonroll", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m4", "wpn_fps_ass_cinnamonroll_o_folded")
+	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m4", "wpn_fps_ass_cinnamonroll_o_folded")
+	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m4", "wpn_fps_ass_cinnamonroll_o_folded")
+	self:cafcw_add_modpack("ammo", "wpn_fps_ass_cinnamonroll", "_556x45mm", "MoreAmmoTypes")
+end
 end)

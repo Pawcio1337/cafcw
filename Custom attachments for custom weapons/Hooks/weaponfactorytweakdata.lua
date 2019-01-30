@@ -1,3 +1,4 @@
+-- Legacy code
 function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, param3, param4, param5, param6)
 	if self.parts[param2] then
 		if part_type == "attach_adds" or part_type == "gadget_rail" then
@@ -182,29 +183,6 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 		end
     end
 end
-function WeaponFactoryTweakData:cafcw_acogrmr_stance(switch_id, wpn_id, stance)
-	if self[wpn_id] then
-		if switch_id == "ta31f" or switch_id == "ta648" then
-			if switch_id == "ta31f" then
-				switch_id = "wpn_fps_upg_o_acog_rmr_switch"
-			elseif switch_id == "ta648" then
-				switch_id = "wpn_fps_upg_o_ta648rmr_switch"
-			end
-			if self.parts[switch_id].stance_mod[stance] then
-				self.parts[switch_id].stance_mod[wpn_id] = deep_clone(self.parts[switch_id].stance_mod[stance])
-			else
-				log("[ERROR] CAFCW-ACOGRMR: Missing required stance_mod: " .. wpn_id, switch_id, stance)
-			end
-		elseif switch_id == "ta31f_vector" or switch_id == "ta648_vector" then
-			if switch_id == "ta31f_vector" then
-				switch_id = "wpn_fps_upg_o_acog_rmr_switch"
-			elseif switch_id == "ta648_vector" then
-				switch_id = "wpn_fps_upg_o_ta648rmr_switch"
-			end
-			self.parts[switch_id].stance_mod[wpn_id] = {translation = stance:ToVector3()}
-		end
-	end
-end
 function WeaponFactoryTweakData:cafcw_add_modpack(part_type, param1, param2, mod_name)
 local mod_tables = {}
 mod_tables._109x33mmR = {
@@ -374,6 +352,7 @@ mod_tables.AR15_StockPack_SR3M = {
 		end
 	end
 end
+-- Legacy code end
 function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id, a_obj_part_id, a_obj_id)
 sight_tables = {}
 sight_tables.acog = {
@@ -509,7 +488,7 @@ sight_tables.custom_sniper_sv98 = {
 		end
 	end
 end
-function WeaponFactoryTweakData:cafcw_add_custom_sights_custom(sight_base, wpn_id, stance_wpn_id, custom_stance, add_id, add_id_two)
+function WeaponFactoryTweakData:cafcw_add_custom_sights_ext(sight_base, wpn_id, stance_wpn_id, custom_stance, add_id, add_id_two)
 	for i, sight_id in pairs(sight_tables[sight_base]) do
 		if self.parts[sight_id] then
 			if sight_base == "acog" then
@@ -552,6 +531,29 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights_custom(sight_base, wpn_i
 			else
 				log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, sight_id, add_id)
 			end
+		end
+	end
+end
+function WeaponFactoryTweakData:cafcw_acogrmr_stance(switch_id, wpn_id, stance)
+	if self[wpn_id] then
+		if switch_id == "ta31f" or switch_id == "ta648" then
+			if switch_id == "ta31f" then
+				switch_id = "wpn_fps_upg_o_acog_rmr_switch"
+			elseif switch_id == "ta648" then
+				switch_id = "wpn_fps_upg_o_ta648rmr_switch"
+			end
+			if self.parts[switch_id].stance_mod[stance] then
+				self.parts[switch_id].stance_mod[wpn_id] = deep_clone(self.parts[switch_id].stance_mod[stance])
+			else
+				log("[ERROR] CAFCW-ACOGRMR: Missing required stance_mod: " .. wpn_id, switch_id, stance)
+			end
+		elseif switch_id == "ta31f_vector" or switch_id == "ta648_vector" then
+			if switch_id == "ta31f_vector" then
+				switch_id = "wpn_fps_upg_o_acog_rmr_switch"
+			elseif switch_id == "ta648_vector" then
+				switch_id = "wpn_fps_upg_o_ta648rmr_switch"
+			end
+			self.parts[switch_id].stance_mod[wpn_id] = {translation = stance:ToVector3()}
 		end
 	end
 end
@@ -1563,7 +1565,7 @@ if self.wpn_fps_ass_svt40 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_svt40", "wpn_fps_upg_fl_ass_spotter")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_svt40", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_ass_svt40_irons", "wpn_fps_upg_o_delta_rm55")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_svt40_pu_scope_switch", "wpn_fps_upg_o_delta_rm55")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_svt40_pu_scope", "wpn_fps_upg_o_delta_rm55")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_svt40", "wpn_fps_upg_fl_anpeq2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_svt40", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_svt40", "wpn_fps_upg_fl_m600p")
@@ -2685,6 +2687,15 @@ if self.wpn_fps_smg_vz58comp then
 	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_vz58comp", "wpn_fps_ass_akm")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_vz58comp", "wpn_fps_ass_akm")
 	self:cafcw_add_custom_sights("rds45", "wpn_fps_smg_vz58comp", "wpn_fps_smg_vz58comp")
+end
+-- Einhänder
+if self.wpn_fps_smg_einhander then
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_einhander", "wpn_fps_upg_fl_ass_spotter")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_einhander", "wpn_fps_upg_fl_wml")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_einhander", "wpn_fps_upg_fl_anpeq2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_einhander", "wpn_fps_upg_fl_dbal_d2")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_einhander", "wpn_fps_upg_fl_m600p")
+	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_einhander", "wpn_fps_upg_fl_utg")
 end
 -- Attachments
 --
