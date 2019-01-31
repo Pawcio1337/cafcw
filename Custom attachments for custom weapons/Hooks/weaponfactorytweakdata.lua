@@ -415,7 +415,7 @@ attach_tables.AR15_Stocks_SR3M = {
 	"wpn_fps_upg_m4_s_mk46_col",
 	"wpn_fps_upg_m4_s_ubr_col"
 }
---
+function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id, a_obj_part_id, a_obj_id)
 sight_tables = {}
 sight_tables.acog = {
 	"wpn_fps_upg_o_acog_rmr",
@@ -509,7 +509,6 @@ sight_tables.custom_sniper_sv98 = {
 	"wpn_fps_upg_o_deltatitanium",
 	"wpn_fps_upg_o_csgoscope"
 }
-function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id, a_obj_part_id, a_obj_id)
 	for i, sight_id in pairs(sight_tables[sight_base]) do
 		if self.parts[sight_id] then
 			if sight_base == "acog" then

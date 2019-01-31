@@ -1,96 +1,3 @@
-function WeaponFactoryTweakData:cafcw_part_ovrd_custom_sights(sight_base, stance_wpn_id, part_ovrd_id, a_obj_new, custom_stance)
-
-sight_tables = {}
-sight_tables.acog = {
-	"wpn_fps_upg_o_acog_rmr",
-	"wpn_fps_upg_o_gitsch",
-	"wpn_fps_upg_o_aog"
-}
-sight_tables.custom = {
-	"wpn_fps_upg_o_rmr_riser",
-	"wpn_fps_upg_o_eotech552",
-	"wpn_fps_upg_o_po4",
-	"wpn_fps_upg_o_st10",
-	"wpn_fps_upg_o_susat",
-	"wpn_fps_upg_o_okp7",
-	"wpn_fps_upg_o_visionking",
-	"wpn_fps_upg_o_compm2"
-}
-sight_tables.rds45 = {
-	"wpn_fps_upg_o_delta_rm55"
-}
-sight_tables.specter = {
-	"wpn_fps_upg_o_kobra",
-	"wpn_fps_upg_o_compm4s",
-	"wpn_fps_upg_o_m145",
-	"wpn_fps_upg_o_pkas",
-	"wpn_fps_upg_o_coyote",
-	"wpn_fps_upg_o_hologram",
-	"wpn_fps_upg_o_zeiss",
-	"wpn_fps_upg_o_hd33",
-	"wpn_fps_upg_o_prismatic",
-	"wpn_fps_upg_o_srs",
-	"wpn_fps_upg_o_hcog",
-	"wpn_fps_upg_o_reflexholo",
-	"wpn_fps_upg_o_elo",
-	"wpn_fps_upg_o_kemper",
-	"wpn_fps_upg_o_mepro",
-	"wpn_fps_upg_o_rusak",
-	"wpn_fps_upg_o_horzine",
-	"wpn_fps_upg_o_pka",
-	"wpn_fps_upg_o_anpas13d"
-}
-
-for i, sight_id in pairs(sight_tables[sight_base]) do
-	if self.parts[sight_id] then
-	
-		if sight_base == "acog" then
-			sight_base = "wpn_fps_upg_o_acog"
-		elseif sight_base == "rds45" then
-			sight_base = "wpn_fps_upg_o_45rds"
-		elseif sight_base == "specter" then
-			sight_base = "wpn_fps_upg_o_specter"
-		end
-		
-		if string.match(sight_base, "custom") then
-			if self.parts[sight_id].stance_mod[stance_wpn_id] then
-				self.parts[part_ovrd_id].override = self.parts[part_ovrd_id].override or {}
-				self.parts[part_ovrd_id].override[sight_id] = self.parts[part_ovrd_id].override[sight_id] or {}
-				self.parts[part_ovrd_id].override[sight_id].stance_mod = self.parts[part_ovrd_id].override[sight_id].stance_mod or {}
-				self.parts[part_ovrd_id].override[sight_id].stance_mod[stance_wpn_id] = deep_clone( self.parts[sight_id].stance_mod[stance_wpn_id] )
-				if custom_stance then
-					self.parts[part_ovrd_id].override[sight_id].stance_mod[stance_wpn_id].translation = ( self.parts[sight_id].stance_mod[stance_wpn_id].translation + custom_stance:ToVector3() )
-				end
-			else
-				log("[ERROR] CAFCW: Missing required stance_mod: " .. part_ovrd_id, sight_id, stance_wpn_id)
-			end
-		else
-			if self.parts[sight_base].stance_mod[stance_wpn_id] then
-				self.parts[part_ovrd_id].override = self.parts[part_ovrd_id].override or {}
-				self.parts[part_ovrd_id].override[sight_id] = self.parts[part_ovrd_id].override[sight_id] or {}
-				self.parts[part_ovrd_id].override[sight_id].stance_mod = self.parts[part_ovrd_id].override[sight_id].stance_mod or {}
-				self.parts[part_ovrd_id].override[sight_id].stance_mod[stance_wpn_id] = deep_clone( self.parts[sight_base].stance_mod[stance_wpn_id] )
-				if custom_stance then
-					self.parts[part_ovrd_id].override[sight_id].stance_mod[stance_wpn_id].translation = custom_stance:ToVector3()
-				end
-			else
-				log("[ERROR] CAFCW: Missing required stance_mod: " .. part_ovrd_id, sight_id, stance_wpn_id, sight_base)
-			end
-		end
-		
-		if a_obj_new then
-			self.parts[part_ovrd_id].override = self.parts[part_ovrd_id].override or {}
-            self.parts[part_ovrd_id].override[sight_id] = self.parts[part_ovrd_id].override[sight_id] or {}
-            self.parts[part_ovrd_id].override[sight_id].a_obj = a_obj_new
-		else
-			log("[ERROR] CAFCW: Missing required a_obj data: " .. part_ovrd_id, sight_id, a_obj_new)
-		end
-		
-	end
-end
-
-end
-
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Alcat_Init", function(self)
 
 --Custom Weapon
@@ -130,10 +37,10 @@ self:cafcw_add_custom_sights("acog", "wpn_fps_ass_howa", "wpn_fps_ass_howa", "wp
 self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_howa", "wpn_fps_ass_howa")
 self:cafcw_add_custom_sights("custom", "wpn_fps_ass_howa", "wpn_fps_ass_ak5", "wpn_fps_ass_howa_body_rail", "0,0,0.75")--originally 0,0,0.75
 --t64 part kit changes a_o point
-self:cafcw_part_ovrd_custom_sights("specter", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-2,-3.875")
-self:cafcw_part_ovrd_custom_sights("acog", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-4,-3.875")
-self:cafcw_part_ovrd_custom_sights("rds45", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "-0.375,0,-13.5")
-self:cafcw_part_ovrd_custom_sights("custom", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,0,-1.125")--originally 0,0,-1
+--self:cafcw_part_ovrd_custom_sights("specter", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-2,-3.875")
+--self:cafcw_part_ovrd_custom_sights("acog", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-4,-3.875")
+--self:cafcw_part_ovrd_custom_sights("rds45", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "-0.375,0,-13.5")
+--self:cafcw_part_ovrd_custom_sights("custom", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,0,-1.125")--originally 0,0,-1
 --experimental scope xd
 self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_howa", "wpn_fps_upg_o_pso1_rifle", "0,18,-4")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_howa_t64_body", "wpn_fps_upg_o_pso1_rifle", "a_o_t64_pso1")
