@@ -1,3 +1,58 @@
+--howa t64 part ovrd
+function WeaponFactoryTweakData:cafcw_part_ovrd_custom_sights(sight_base, stance_wpn_id, part_ovrd_id, a_obj_new, custom_stance)
+
+	for i, sight_id in pairs(sight_tables[sight_base]) do
+
+		if self.parts[sight_id] then	
+			if sight_base == "acog" then
+				sight_base = "wpn_fps_upg_o_acog"
+			elseif sight_base == "rds45" then
+				sight_base = "wpn_fps_upg_o_45rds"
+			elseif sight_base == "specter" then
+				sight_base = "wpn_fps_upg_o_specter"
+			end
+			
+			if string.match(sight_base, "custom") then
+				if self.parts[sight_id].stance_mod[stance_wpn_id] then
+					self.parts[part_ovrd_id].override = self.parts[part_ovrd_id].override or {}
+					self.parts[part_ovrd_id].override[sight_id] = self.parts[part_ovrd_id].override[sight_id] or {}
+					self.parts[part_ovrd_id].override[sight_id].stance_mod = self.parts[part_ovrd_id].override[sight_id].stance_mod or {}
+					self.parts[part_ovrd_id].override[sight_id].stance_mod[stance_wpn_id] = deep_clone( self.parts[sight_id].stance_mod[stance_wpn_id] )
+					if custom_stance then
+						self.parts[part_ovrd_id].override[sight_id].stance_mod[stance_wpn_id].translation = ( self.parts[sight_id].stance_mod[stance_wpn_id].translation + custom_stance:ToVector3() )
+					end
+				else
+					log("[ERROR] CAFCW: Missing required stance_mod: " .. part_ovrd_id, sight_id, stance_wpn_id)
+				end
+			else
+				if self.parts[sight_base].stance_mod[stance_wpn_id] then
+					self.parts[part_ovrd_id].override = self.parts[part_ovrd_id].override or {}
+					self.parts[part_ovrd_id].override[sight_id] = self.parts[part_ovrd_id].override[sight_id] or {}
+					self.parts[part_ovrd_id].override[sight_id].stance_mod = self.parts[part_ovrd_id].override[sight_id].stance_mod or {}
+					self.parts[part_ovrd_id].override[sight_id].stance_mod[stance_wpn_id] = deep_clone( self.parts[sight_base].stance_mod[stance_wpn_id] )
+					if custom_stance then
+						self.parts[part_ovrd_id].override[sight_id].stance_mod[stance_wpn_id].translation = custom_stance:ToVector3()
+					end
+				else
+					log("[ERROR] CAFCW: Missing required stance_mod: " .. part_ovrd_id, sight_id, stance_wpn_id, sight_base)
+				end
+			end
+			
+			if a_obj_new then
+				self.parts[part_ovrd_id].override = self.parts[part_ovrd_id].override or {}
+				self.parts[part_ovrd_id].override[sight_id] = self.parts[part_ovrd_id].override[sight_id] or {}
+				self.parts[part_ovrd_id].override[sight_id].a_obj = a_obj_new
+			else
+				log("[ERROR] CAFCW: Missing required a_obj data: " .. part_ovrd_id, sight_id, a_obj_new)
+			end
+			
+		end
+		
+	end
+
+end
+
+
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Alcat_Init", function(self)
 
 --Custom Weapon
@@ -35,12 +90,12 @@ self:cafcw_add_to_parts("other", "wpn_fps_ass_howa", "wpn_fps_shield_skin_urban"
 self:cafcw_add_custom_sights("specter", "wpn_fps_ass_howa", "wpn_fps_ass_howa", "wpn_fps_ass_howa_body_rail")
 self:cafcw_add_custom_sights("acog", "wpn_fps_ass_howa", "wpn_fps_ass_howa", "wpn_fps_ass_howa_body_rail")
 self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_howa", "wpn_fps_ass_howa")
-self:cafcw_add_custom_sights("custom", "wpn_fps_ass_howa", "wpn_fps_ass_ak5", "wpn_fps_ass_howa_body_rail", "0,0,0.75")--originally 0,0,0.75
+self:cafcw_add_custom_sights_ext("custom", "wpn_fps_ass_howa", "wpn_fps_ass_ak5", "0,0,0.75", "wpn_fps_ass_howa_body_rail")--[[originally 0,0,0.75]]
 --t64 part kit changes a_o point
---self:cafcw_part_ovrd_custom_sights("specter", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-2,-3.875")
---self:cafcw_part_ovrd_custom_sights("acog", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-4,-3.875")
---self:cafcw_part_ovrd_custom_sights("rds45", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "-0.375,0,-13.5")
---self:cafcw_part_ovrd_custom_sights("custom", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,0,-1.125")--originally 0,0,-1
+self:cafcw_part_ovrd_custom_sights("specter", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-2,-3.875")
+self:cafcw_part_ovrd_custom_sights("acog", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-4,-3.875")
+self:cafcw_part_ovrd_custom_sights("rds45", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "-0.375,0,-13.5")
+self:cafcw_part_ovrd_custom_sights("custom", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,0,-1.125")--[[originally 0,0,-1]]
 --experimental scope xd
 self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_howa", "wpn_fps_upg_o_pso1_rifle", "0,18,-4")
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_howa_t64_body", "wpn_fps_upg_o_pso1_rifle", "a_o_t64_pso1")
@@ -1221,6 +1276,21 @@ self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_special_contender", "wpn_f
 self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_special_contender", "wpn_fps_upg_o_compm2", "0,16,-3.125", "wpn_fps_special_contender_rail_optic")
 self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_special_contender", "wpn_fps_upg_o_rmr_riser", "0,16,-2.375", "wpn_fps_special_contender_rail_optic")
 -- self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_special_contender", "wpn_fps_upg_o_okp7", "0,16,-3.125", "wpn_fps_special_contender_rail_optic")
+end
+
+
+--Sumitomo 62 LMG
+if self.wpn_fps_lmg_sumitomo then
+self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_sumitomo", "wpn_fps_upg_fl_ass_spotter")
+self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_sumitomo", "wpn_fps_upg_fl_wml")
+self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_sumitomo", "wpn_fps_upg_fl_anpeq2")
+self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_sumitomo", "wpn_fps_upg_fl_dbal_d2")
+self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_sumitomo", "wpn_fps_upg_fl_m600p")
+self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_sumitomo", "wpn_fps_upg_fl_utg")
+self:cafcw_add_to_parts("barrel_ext", "wpn_fps_lmg_sumitomo", "wpn_fps_upg_ns_ass_smg_tromix")
+self:cafcw_add_modpack("ammo", "wpn_fps_lmg_sumitomo", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
+self:cafcw_add_modpack("barrel_ext", "wpn_fps_lmg_sumitomo", "SneakySuppressorPack", "ARSupp")
+self:cafcw_add_modpack("ammo", "wpn_fps_lmg_sumitomo", "_762x51mm", "MoreAmmoTypes")
 end
 
 
