@@ -178,7 +178,6 @@ if self.wpn_fps_smg_pdr then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_pdr", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_pdr", "wpn_fps_upg_fl_m600p")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_pdr", "wpn_fps_upg_fl_utg")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_pdr", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_add_custom_ammo("wpn_fps_smg_pdr", "_556x45mm")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_smg_pdr", "wpn_fps_ass_aug")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_pdr", "wpn_fps_ass_aug")
@@ -187,6 +186,8 @@ if self.wpn_fps_smg_pdr then
 -- Update v1.68.199
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_ass_aug")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_pdr", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_ass_aug")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_pdr")
+	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_pdr")
 end
 -- Scorpion Evo
 if self.wpn_fps_smg_evo then
@@ -196,7 +197,6 @@ if self.wpn_fps_smg_evo then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_evo", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_evo", "wpn_fps_upg_fl_m600p")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_evo", "wpn_fps_upg_fl_utg")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_smg_evo", "wpn_fps_upg_ns_ass_smg_tromix")
 	self:cafcw_add_custom_ammo("wpn_fps_smg_evo", "_9x19mm")
 	self:cafcw_add_custom_sights_ext("specter", "wpn_fps_smg_evo", "wpn_fps_smg_schakal", "0,0,-2.6")
 	self:cafcw_add_custom_sights_ext("acog", "wpn_fps_smg_evo", "wpn_fps_smg_schakal", "0,0,-2.6")
@@ -204,6 +204,8 @@ if self.wpn_fps_smg_evo then
 	self:cafcw_add_custom_sights("rds45", "wpn_fps_smg_evo", "wpn_fps_smg_schakal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_evo", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_smg_schakal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_evo", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_smg_schakal")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_evo")
+	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_evo")
 end
 -- CZ Scorpion Evo A1
 if self.wpn_fps_smg_czevo then
