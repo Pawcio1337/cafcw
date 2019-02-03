@@ -47,9 +47,9 @@ if self.wpn_fps_ass_hk33 then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_hk33_fg_tactical", "wpn_fps_upg_fl_utg", "a_fgfl")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_hk33", "wpn_fps_ass_hk33", "wpn_fps_ass_hk33_body_rail")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_hk33", "wpn_fps_ass_hk33", "wpn_fps_ass_hk33_body_rail")
-	self:cafcw_add_modpack("stock", "wpn_fps_ass_hk33", "AR15_StockPack")
-	self:cafcw_add_modpack("stock", "wpn_fps_ass_hk33", "Stock_Attachment_Pack")
-	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_hk33", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_hk33")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_hk33")
+	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_hk33")
 end
 -- STF-12 Compact
 if self.wpn_fps_shot_stf12 then
@@ -61,7 +61,7 @@ if self.wpn_fps_shot_stf12 then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_dbal_d2")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_m600p")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_utg")
-	self:cafcw_add_modpack("ammo", "wpn_fps_shot_stf12", "_12ga", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_stf12", "_12ga")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
 end
@@ -107,8 +107,8 @@ if self.wpn_fps_pis_wes92se then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_wes92se_compensator", "wpn_fps_upg_fl_utg_pis", "a_extfl")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_wes92se", "wpn_fps_upg_fl_micro90")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_wes92se_compensator", "wpn_fps_upg_fl_micro90", "a_extfl")
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_wes92se", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_wes92se", "_9x19mm_p", "MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_wes92se", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_wes92se", "_9x19mm_p")
 end
 -- TTI TR-1
 if self.wpn_fps_ass_hugsforleon then
@@ -124,11 +124,7 @@ if self.wpn_fps_ass_hugsforleon then
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_hugsforleon", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_hugsforleon", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_hugsforleon", "wpn_fps_ass_m16")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_ns_ass_smg_tromix")
-	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_hugsforleon", "SneakySuppressorPack", "ARSupp")
-	self:cafcw_add_modpack("stock", "wpn_fps_ass_hugsforleon", "AR15_StockPack")
-	self:cafcw_add_modpack("stock", "wpn_fps_ass_hugsforleon", "Stock_Attachment_Pack")
-	self:cafcw_add_modpack("ammo", "wpn_fps_ass_hugsforleon", "_556x45mm", "MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_hugsforleon", "_556x45mm")
 	self:cafcw_add_to_parts("magazine", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_m4_m_x15drum")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_o_var_dd_a1_rear", "0,0,0.3")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_o_var_kac_rear", "0,0,-0.2")
@@ -136,6 +132,10 @@ if self.wpn_fps_ass_hugsforleon then
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_o_var_scorpionevo_rear", "0,-2,2.3")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_o_var_troy_rear", "0,0,0.3")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_o_var_troym4_rear", "0,0,0.3")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_hugsforleon")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_hugsforleon")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_hugsforleon")
+	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_hugsforleon")
 end
 -- DT MDR-C
 if self.wpn_fps_ass_shieldgirl then
@@ -147,14 +147,15 @@ if self.wpn_fps_ass_shieldgirl then
 	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_fl_utg", "wpn_fps_addon_ris")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_shieldgirl")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_shieldgirl")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_ns_ass_smg_tromix")
-	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_shieldgirl", "SneakySuppressorPack", "ARSupp")
-	self:cafcw_add_modpack("ammo", "wpn_fps_ass_shieldgirl", "_556x45mm", "MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_shieldgirl", "_556x45mm")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_eotech552", "0,0,-3.49")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_susat", "0,-5,-5.58")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_compm2", "0,0,-3.175")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_rmr_riser", "0,-3,-2.445")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_okp7", "0.6,0,-2.895")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_shieldgirl")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_shieldgirl")
+	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_shieldgirl")
 end
 -- ACR PDW
 if self.wpn_fps_ass_op68 then
@@ -167,12 +168,10 @@ if self.wpn_fps_ass_op68 then
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_op68", "wpn_fps_shield_m4")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_op68", "wpn_fps_shield_skin_ftp")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_op68", "wpn_fps_shield_skin_urban")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_op68", "wpn_fps_upg_ns_ass_smg_tromix")
-	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_op68", "SneakySuppressorPack", "ARSupp")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_op68", "wpn_fps_ass_m4", "wpn_fps_ass_op68_ironsights_folded")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_op68", "wpn_fps_ass_m4", "wpn_fps_ass_op68_ironsights_folded")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_op68", "wpn_fps_ass_m4", "wpn_fps_ass_op68_ironsights_folded")
-	self:cafcw_add_modpack("ammo", "wpn_fps_ass_op68", "_556x45mm", "MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_op68", "_556x45mm")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_dd_a1_rear", "0,0,-0.2")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_kac_rear", "0,0,-0.2")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_mbus_rear", "0,0,-0.2")
@@ -180,6 +179,8 @@ if self.wpn_fps_ass_op68 then
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_scorpionevo_rear", "0,-2,1.8")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_troy_rear", "0,0,-0.2")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_troym4_rear", "0,0,-0.2")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_op68")
+	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_op68")
 end
 -- M4A1
 if self.wpn_fps_ass_cinnamonroll then
@@ -198,11 +199,11 @@ if self.wpn_fps_ass_cinnamonroll then
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_cinnamonroll", "wpn_fps_shield_m4")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_cinnamonroll", "wpn_fps_shield_skin_ftp")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_cinnamonroll", "wpn_fps_shield_skin_urban")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_cinnamonroll", "wpn_fps_upg_ns_ass_smg_tromix")
-	self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_cinnamonroll", "SneakySuppressorPack", "ARSupp")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m4", "wpn_fps_ass_cinnamonroll_o_folded")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m4", "wpn_fps_ass_cinnamonroll_o_folded")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m4", "wpn_fps_ass_cinnamonroll_o_folded")
-	self:cafcw_add_modpack("ammo", "wpn_fps_ass_cinnamonroll", "_556x45mm", "MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_cinnamonroll", "_556x45mm")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_cinnamonroll")
+	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_cinnamonroll")
 end
 end)

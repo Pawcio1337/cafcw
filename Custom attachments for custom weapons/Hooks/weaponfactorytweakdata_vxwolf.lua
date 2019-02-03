@@ -8,8 +8,8 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_VxWolf_Init",
 		self:cafcw_add_to_parts("gadget", "wpn_fps_ass_temple", "wpn_fps_upg_fl_dbal_d2")
 		self:cafcw_add_to_parts("gadget", "wpn_fps_ass_temple", "wpn_fps_upg_fl_m600p")
 		self:cafcw_add_to_parts("gadget", "wpn_fps_ass_temple", "wpn_fps_upg_fl_utg")
-		self:cafcw_add_to_parts("barrel_ext", "wpn_fps_ass_temple", "wpn_fps_upg_ns_ass_smg_tromix")
-		self:cafcw_add_modpack("barrel_ext", "wpn_fps_ass_temple", "SneakySuppressorPack", "ARSupp")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_temple")
+	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_temple")
 	end
 
 	--eDEN Bavarium Splitter

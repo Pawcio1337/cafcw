@@ -27,13 +27,13 @@ if self.wpn_fps_pis_glawk then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_glawk", "wpn_fps_upg_fl_utg_pis")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_glawk", "wpn_fps_upg_fl_micro90")
 	
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_glawk", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a1_22lr", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a1_40sw", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a2_10mm", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a3_357sig", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a4_45acp", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_glawk_a5_45gap", "_9x19mm", "TaserAmmo_MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk_a1_22lr", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk_a1_40sw", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk_a2_10mm", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk_a3_357sig", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk_a4_45acp", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk_a5_45gap", "_9x19mm", "forbids_add")
 end
 
 --CZ 75 B
@@ -79,8 +79,8 @@ if self.wpn_fps_pis_cz75b and self.wpn_fps_pis_x_cz75b then
 		self.wpn_fps_pis_x_cz75b.override.wpn_fps_upg_fl_utg_pis = {a_obj = "cz75bfl"}
 	end
 	
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_cz75b", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_cz75b", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_cz75b", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_x_cz75b", "_9x19mm")
 
 end
 
@@ -112,12 +112,12 @@ if self.wpn_fps_pis_p80 then
 		--		self.parts.wpn_fps_pis_p80_s_long.override = {wpn_fps_ass_ns_g_sup6 = {a_obj = "a_p80nslm"}}
 			end
 	end
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_p80", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a1_40sw", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a2_10mm", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a3_357sig", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a4_45acp", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
-	self:cafcw_add_modpack("forbids_add", "wpn_fps_pis_p80_a5_45gap", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_p80", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_p80_a1_40sw", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_p80_a2_10mm", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_p80_a3_357sig", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_p80_a4_45acp", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_p80_a5_45gap", "_9x19mm", "forbids_add")
 end
 
 --PM-63 RAK
@@ -160,7 +160,7 @@ if self.wpn_fps_pis_rally then
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup1" , "a_cz75srns", "barrel")
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup2" , "a_cz75srns", "barrel")
 	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_rally", "wpn_fps_ass_ns_g_sup6" , "a_cz75srns", "barrel")
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_rally", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_rally", "_9x19mm")
 
 end
 
@@ -226,8 +226,8 @@ if self.wpn_fps_pis_seburo and self.wpn_fps_pis_x_seburo then
 		stance_mod = {wpn_fps_pis_seburo = {translation = Vector3(0, 0, -1)}}}
 	end
 	
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_seburo", "_545x18mm_nonap", "MoreAmmoTypes")
-	self:cafcw_add_modpack("ammo", "wpn_fps_pis_x_seburo", "_545x18mm_nonap", "MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_seburo", "_545x18mm_nonap")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_x_seburo", "_545x18mm_nonap")
 end
 
 ---StG58
@@ -243,7 +243,7 @@ if self.wpn_fps_ass_fusil_762 then
 	self:cafcw_add_custom_sights_ext("acog", "wpn_fps_ass_fusil_762", "wpn_fps_ass_scar", "0, 2, -3.05", "wpn_fps_ass_fusil_762_sm_modern")
 	self:cafcw_add_custom_sights_ext("custom", "wpn_fps_ass_fusil_762", "wpn_fps_ass_scar", "0,5,-2.8", "wpn_fps_ass_fusil_762_sm_modern")
 --	self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_fusil_762", "wpn_fps_ass_scar", "wpn_fps_ass_fusil_762_sm_modern")
-	self:cafcw_add_modpack("ammo", "wpn_fps_ass_fusil_762", "_762x51mm", "MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_fusil_762", "_762x51mm")
 end
 ---AR PACK
 if self.wpn_fps_ass_stoy_556 then
@@ -265,7 +265,7 @@ if self.wpn_fps_ass_stoy_556 then
 	self:cafcw_add_custom_sights_ext("acog", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "0,5,-5.15")
 	self:cafcw_add_custom_sights_ext("custom", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "0,2,-2.5")
 --	self:cafcw_add_custom_sights_ext("rds45", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "-3.1, -2, -8.24")
-	self:cafcw_add_modpack("ammo", "wpn_fps_ass_stoy_556", "_556x45mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_stoy_556", "_556x45mm")
 end
 
 if self.wpn_fps_smg_stoy_919 then
@@ -280,7 +280,7 @@ if self.wpn_fps_smg_stoy_919 then
 	self:cafcw_add_custom_sights_ext("acog", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "0,5,-5.15")
 	self:cafcw_add_custom_sights_ext("custom", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "0,2,-2.5")
 --	self:cafcw_add_custom_sights_ext("rds45", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "-3.1, -2, -8.24")
-	self:cafcw_add_modpack("ammo", "wpn_fps_smg_stoy_919", "_9x19mm", "IncendiaryAmmo_MoreAmmoTypes")
+	self:cafcw_add_custom_ammo("wpn_fps_smg_stoy_919", "_9x19mm")
 end
 
 ---AK PACK
@@ -401,7 +401,7 @@ for i, wpn_id in pairs(akmodules) do
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_urban")
 		
-		self:cafcw_add_modpack("ammo", wpn_id, akpack_ammo[akpack_counter], "TaserAmmo_IncendiaryAmmo_MoreAmmoTypes")
+		self:cafcw_add_custom_ammo(wpn_id, akpack_ammo[akpack_counter])
 		
 		
     end
