@@ -1,32 +1,22 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Mira_Init", function(self)
 -- SAI GRYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 if self.wpn_fps_ass_saigry then
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_saigry", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_saigry", "wpn_fps_upg_fl_wml", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_saigry", "wpn_fps_upg_fl_anpeq2", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_saigry", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_saigry", "wpn_fps_upg_fl_m600p", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_saigry", "wpn_fps_upg_fl_utg", "wpn_fps_wpn_fps_addon_ris")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_saigry", "wpn_fps_shield_m4")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_saigry", "wpn_fps_shield_skin_ftp")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_saigry", "wpn_fps_shield_skin_urban")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_saigry", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_saigry", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_saigry", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_saigry")
 end
 -- MSBS-5.56B
 if self.wpn_fps_ass_grotb then
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_grotb", "wpn_fps_upg_fl_ass_spotter")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_grotb", "wpn_fps_upg_fl_wml")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_grotb", "wpn_fps_upg_fl_anpeq2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_grotb", "wpn_fps_upg_fl_dbal_d2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_grotb", "wpn_fps_upg_fl_m600p")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_grotb", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_grotb", "wpn_fps_shield_bullpup")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_grotb", "wpn_fps_shield_skin_ftp")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_grotb", "wpn_fps_shield_skin_urban")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb_irons_folded")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb_irons_folded")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_grotb")
 end
 -- HK33
 if self.wpn_fps_ass_hk33 then
@@ -53,29 +43,19 @@ if self.wpn_fps_ass_hk33 then
 end
 -- STF-12 Compact
 if self.wpn_fps_shot_stf12 then
-	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_ass_spotter")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("other", "wpn_fps_shot_stf12", "wpn_fps_upg_ns_sho_salvo_small")
 	self:cafcw_add_to_parts("other", "wpn_fps_shot_stf12", "wpn_fps_upg_ns_shot_cat")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_anpeq2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_dbal_d2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_m600p")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_shot_stf12", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_stf12", "_12ga")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_stf12")
 end
 -- MP7
 if self.wpn_fps_smg_mp7new then
-	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_mp7new", "wpn_fps_upg_fl_ass_spotter")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_mp7new", "wpn_fps_upg_fl_wml")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_mp7new", "wpn_fps_upg_fl_anpeq2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_mp7new", "wpn_fps_upg_fl_dbal_d2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_mp7new", "wpn_fps_upg_fl_m600p")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_smg_mp7new", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
 	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_mp7new")
 end
 -- SMG-11
 if self.wpn_fps_smg_mac10mpa then
@@ -112,11 +92,6 @@ if self.wpn_fps_pis_wes92se then
 end
 -- TTI TR-1
 if self.wpn_fps_ass_hugsforleon then
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_fl_ass_spotter")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_fl_wml")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_fl_anpeq2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_fl_dbal_d2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_fl_m600p")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_hugsforleon", "wpn_fps_shield_m4")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_hugsforleon", "wpn_fps_shield_skin_ftp")
@@ -139,12 +114,6 @@ if self.wpn_fps_ass_hugsforleon then
 end
 -- DT MDR-C
 if self.wpn_fps_ass_shieldgirl then
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_fl_ass_spotter", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_fl_wml", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_fl_anpeq2", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_fl_dbal_d2", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_fl_m600p", "wpn_fps_addon_ris")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_fl_utg", "wpn_fps_addon_ris")
 	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_shieldgirl")
 	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_shieldgirl")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_shieldgirl", "_556x45mm")
@@ -159,12 +128,6 @@ if self.wpn_fps_ass_shieldgirl then
 end
 -- ACR PDW
 if self.wpn_fps_ass_op68 then
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_op68", "wpn_fps_upg_fl_ass_spotter")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_op68", "wpn_fps_upg_fl_wml")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_op68", "wpn_fps_upg_fl_anpeq2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_op68", "wpn_fps_upg_fl_dbal_d2")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_op68", "wpn_fps_upg_fl_m600p")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_ass_op68", "wpn_fps_upg_fl_utg")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_op68", "wpn_fps_shield_m4")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_op68", "wpn_fps_shield_skin_ftp")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_op68", "wpn_fps_shield_skin_urban")
@@ -180,6 +143,7 @@ if self.wpn_fps_ass_op68 then
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_troy_rear", "0,0,-0.2")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_op68", "wpn_fps_upg_o_var_troym4_rear", "0,0,-0.2")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_op68")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_op68")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_op68")
 end
 -- M4A1
@@ -205,13 +169,5 @@ if self.wpn_fps_ass_cinnamonroll then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_cinnamonroll", "_556x45mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_cinnamonroll")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_cinnamonroll")
-end
--- Mk 14 EBR
-if self.wpn_fps_snp_wargoddess then
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_wargoddess")
-	self:cafcw_add_custom_ammo("wpn_fps_snp_wargoddess", "_762x51mm")
-	self:cafcw_add_custom_sights("specter", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
-	self:cafcw_add_custom_sights("acog", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
 end
 end)
