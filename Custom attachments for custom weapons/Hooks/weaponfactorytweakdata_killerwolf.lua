@@ -63,10 +63,10 @@ end
 	-- DP28 --
 if self.wpn_fps_lmg_dp28 then
 	self:cafcw_add_custom_ammo("wpn_fps_lmg_dp28", "_762x54mmr")
-	self:cafcw_add_custom_sights_ext("specter", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "0, 10, -4", "wpn_fps_lmg_dp28_rail_sight", "wpn_fps_lmg_dp28_ro_rail")
-	self:cafcw_add_custom_sights_ext("acog", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "0, 10, -4", "wpn_fps_lmg_dp28_rail_sight", "wpn_fps_lmg_dp28_ro_rail")	
---	self:cafcw_add_custom_sights("custom", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "0,0,0.92")
---	self:cafcw_add_custom_sights("rds45", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "-3.1, -2, -8.24")
+	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "0, 10, -4", "wpn_fps_lmg_dp28_rail_sight", "wpn_fps_lmg_dp28_ro_rail")
+	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "0, 10, -4", "wpn_fps_lmg_dp28_rail_sight", "wpn_fps_lmg_dp28_ro_rail")	
+--	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "0,0,0.92")
+--	self:cafcw_add_custom_sights("RDS45", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "-3.1, -2, -8.24")
 	self:cafcw_category_forbid("wpn_fps_lmg_dp28", "sight", "wpn_fps_lmg_dp28_m_dpm36", "wpn_fps_lmg_dp28_o_dummy")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_dp28")
 end	
@@ -83,10 +83,10 @@ if self.wpn_fps_sho_dp12 then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_shot_dp12_norail", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_sho_dp12_o_standard", "wpn_fps_upg_fl_ass_spotter")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_sho_dp12_o_standard", "wpn_fps_upg_fl_wml")
-	self:cafcw_add_custom_sights_ext("specter", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0, 0, -0.38")
-	self:cafcw_add_custom_sights_ext("acog", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0, 3, -0.38")
-	self:cafcw_add_custom_sights_ext("custom", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0,0,0.92")
-	self:cafcw_add_custom_sights_ext("rds45", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "-3.1, -2, -8.24")
+	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0, 0, -0.38")
+	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0, 3, -0.38")
+	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0,0,0.92")
+	self:cafcw_add_custom_sights_ext("RDS45", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "-3.1, -2, -8.24")
 	self:cafcw_category_forbid("wpn_fps_sho_dp12", "sight", "wpn_fps_shot_dp12_norail", "wpn_fps_sho_dp12_o_standard")
 end
 

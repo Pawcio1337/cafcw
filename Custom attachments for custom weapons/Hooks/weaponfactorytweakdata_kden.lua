@@ -1,9 +1,9 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_kden_Init", function(self)
 --CZ BREN 2
 if self.wpn_fps_ass_bren2 then
-	self:cafcw_add_custom_sights("specter", "wpn_fps_ass_bren2", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("acog", "wpn_fps_ass_bren2", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_ass_bren2", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_bren2", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_bren2", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_bren2", "wpn_fps_ass_m4")
 
     self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_bren2")
     self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_bren2")	
@@ -11,9 +11,9 @@ if self.wpn_fps_ass_bren2 then
 end
 --B&T APC45
 if self.wpn_fps_smg_apc45 then
-	self:cafcw_add_custom_sights("specter", "wpn_fps_smg_apc45", "wpn_fps_smg_shepheard")
-	self:cafcw_add_custom_sights("acog", "wpn_fps_smg_apc45", "wpn_fps_smg_shepheard")
-	self:cafcw_add_custom_sights("custom", "wpn_fps_smg_apc45", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_apc45", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_apc45", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_apc45", "wpn_fps_smg_shepheard")
 
     self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_apc45")
     self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_apc45")	
