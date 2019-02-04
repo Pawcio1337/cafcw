@@ -1,5 +1,5 @@
 <table name="Custom attachments for custom weapons" image="guis/mod_icons/cafcw" color="Color(0.01,0.62,0.98)">
-	<AssetUpdates id="19169" version="1.421" provider="modworkshop"/>
+	<AssetUpdates id="19169" version="1.425" provider="modworkshop"/>
 	<AddFiles directory="Assets">
 		<texture path="guis/mod_icons/cafcw"/>
 	</AddFiles>
@@ -7,6 +7,7 @@
 		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_alcat.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_ellie.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponfactorytweakdata_carl.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>		
 		<hook file="weaponfactorytweakdata_germantacos.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_groceries.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_kden.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>

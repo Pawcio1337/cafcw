@@ -80,7 +80,7 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_howa_t64_body", "wpn_fps_
 --modpack
 self:cafcw_add_custom_ammo("wpn_fps_ass_howa", "_556x45mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_howa")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_howa")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_howa")
 --shield
 self:cafcw_add_to_parts("other", "wpn_fps_ass_howa", "wpn_fps_shield_aug")
 self:cafcw_add_to_parts("other", "wpn_fps_ass_howa", "wpn_fps_shield_skin_ftp")
@@ -126,7 +126,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_pecheneg", "wpn_fps_upg_fl_m600p"
 self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_pecheneg", "wpn_fps_upg_fl_utg")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_pecheneg", "_762x54mmr")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_pecheneg")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_lmg_pecheneg")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_pecheneg")
 end
 
 
@@ -206,7 +206,7 @@ self:cafcw_add_custom_sights("specter", "wpn_fps_smg_msmc", "wpn_fps_smg_mp7")
 self:cafcw_add_custom_sights("acog", "wpn_fps_smg_msmc", "wpn_fps_smg_mp7")
 self:cafcw_add_custom_sights("custom", "wpn_fps_smg_msmc", "wpn_fps_smg_mp7")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_msmc")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_msmc")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_msmc")
 end
 
 
@@ -231,7 +231,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_negev", "wpn_fps_upg_fl_m600p")
 self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_negev", "wpn_fps_upg_fl_utg")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_negev", "_556x45mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_negev")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_lmg_negev")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_negev")
 end
 
 
@@ -446,7 +446,7 @@ self:cafcw_add_custom_sights("acog", "wpn_fps_ass_k2", "wpn_fps_ass_ak5")
 self:cafcw_add_custom_sights("custom", "wpn_fps_ass_k2", "wpn_fps_ass_ak5")
 self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_k2", "wpn_fps_ass_ak5")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_k2")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_k2")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_k2")
 end
 
 --Korean Arms - K3
@@ -459,7 +459,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_k3", "wpn_fps_upg_fl_m600p")
 self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_k3", "wpn_fps_upg_fl_utg")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_k3", "_556x45mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_k3")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_lmg_k3")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_k3")
 end
 
 --Korean Arms - K1A7
@@ -482,7 +482,7 @@ self:cafcw_add_custom_sights("acog", "wpn_fps_smg_k1a7", "wpn_fps_ass_m4")
 self:cafcw_add_custom_sights("custom", "wpn_fps_smg_k1a7", "wpn_fps_ass_m4")
 self:cafcw_add_custom_sights("rds45", "wpn_fps_smg_k1a7", "wpn_fps_ass_m4")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_k1a7")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_k1a7")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_k1a7")
 end
 
 
@@ -528,7 +528,7 @@ self:cafcw_add_custom_sights("acog", "wpn_fps_smg_js2", "wpn_fps_ass_aug")
 self:cafcw_add_custom_sights("custom", "wpn_fps_smg_js2", "wpn_fps_ass_aug")
 self:cafcw_add_custom_sights("rds45", "wpn_fps_smg_js2", "wpn_fps_ass_aug")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_js2")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_js2")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_js2")
 end
 
 
@@ -595,9 +595,9 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_minebea", "wpn_fps_upg_fl_utg")
 self:cafcw_add_custom_ammo("wpn_fps_smg_minebea", "_9x19mm")
 self:cafcw_add_custom_ammo("wpn_fps_smg_x_minebea", "_9x19mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_minebea")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_minebea")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_minebea")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_x_minebea")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_x_minebea")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_x_minebea")
 end
 
 
@@ -612,7 +612,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_volmer", "wpn_fps_upg_fl_m600p")
 self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_volmer", "wpn_fps_upg_fl_utg")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_volmer", "_762x51mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_volmer")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_lmg_volmer")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_volmer")
 end
 
 
@@ -644,7 +644,7 @@ self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_chang6", "wpn_fps_upg_fl_m
 self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_chang6", "wpn_fps_upg_fl_utg", "a_b")
 self:cafcw_add_custom_ammo("wpn_fps_smg_chang6", "_9x19mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_chang6")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_chang6")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_chang6")
 end
 
 
@@ -731,7 +731,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_mg5", "wpn_fps_upg_fl_utg")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_mg5", "_556x45mm")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_mg5", "_762x51mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_mg5")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_lmg_mg5")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_mg5")
 end
 
 
@@ -1091,7 +1091,7 @@ self:cafcw_add_custom_sights("specter", "wpn_fps_smg_calico", "wpn_fps_smg_p90",
 self:cafcw_add_custom_sights("acog", "wpn_fps_smg_calico", "wpn_fps_smg_p90", "wpn_fps_smg_calico_o_adjust")
 self:cafcw_add_custom_sights("custom", "wpn_fps_smg_calico", "wpn_fps_smg_p90", "wpn_fps_smg_calico_o_adjust")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_calico")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_calico")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_calico")
 end
 
 
@@ -1110,7 +1110,7 @@ self:cafcw_add_custom_sights("custom", "wpn_fps_ass_fusil", "wpn_fps_ass_corgi",
 self:cafcw_add_custom_sights("rds45", "wpn_fps_ass_fusil", "wpn_fps_ass_corgi")
 self:cafcw_add_custom_ammo("wpn_fps_ass_fusil", "_556x45mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_fusil")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_fusil")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_fusil")
 end
 
 
@@ -1133,7 +1133,7 @@ self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_m14e2_gl_m203", "wpn_fps_
 self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_m14e2_gl_m203", "wpn_fps_upg_fl_utg", "a_fl_m203")
 self:cafcw_add_custom_ammo("wpn_fps_ass_m14e2", "_762x51mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_m14e2")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_ass_m14e2")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_m14e2")
 --Not yet tested
 -- self:cafcw_add_to_parts("other", "wpn_fps_ass_m14e2", "wpn_fps_shield_dmr")
 -- self:cafcw_add_to_parts("other", "wpn_fps_ass_m14e2", "wpn_fps_shield_skin_ftp")
@@ -1225,7 +1225,7 @@ self:cafcw_add_custom_sights("acog", "wpn_fps_smg_glau", "wpn_fps_smg_uzi", "wpn
 self:cafcw_add_custom_sights("custom", "wpn_fps_smg_glau", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
 self:cafcw_add_custom_sights("rds45", "wpn_fps_smg_glau", "wpn_fps_smg_uzi")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_glau")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_smg_glau")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_glau")
 end
 
 
@@ -1287,7 +1287,7 @@ self:cafcw_add_to_parts("gadget", "wpn_fps_lmg_sumitomo", "wpn_fps_upg_fl_utg")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_sumitomo", "_556x45mm")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_sumitomo", "_762x51mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_sumitomo")
-	self:cafcw_add_attachment_type("Suppresssors", "wpn_fps_lmg_sumitomo")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_sumitomo")
 end
 
 
