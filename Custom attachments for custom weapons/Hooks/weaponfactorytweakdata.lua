@@ -1909,7 +1909,7 @@ if self.wpn_fps_smg_r0933blk then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_r0933blk")
-	self:cafcw_add_attachment_type("AR15_Stocks_R0933BLK", "wpn_fps_snp_mk12")
+	self:cafcw_add_attachment_type("AR15_Stocks_R0933BLK", "wpn_fps_smg_r0933blk")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_r0933blk_handguard_ddm4", "a_fl_ddm4")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_r0933blk_handguard_kac_urx4", "a_fl_kac_urx4")
 end

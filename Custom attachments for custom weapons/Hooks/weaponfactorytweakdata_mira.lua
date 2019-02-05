@@ -170,4 +170,12 @@ if self.wpn_fps_ass_cinnamonroll then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_cinnamonroll")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_cinnamonroll")
 end
+-- Mk 14 EBR
+if self.wpn_fps_snp_wargoddess then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_wargoddess")
+	self:cafcw_add_custom_ammo("wpn_fps_snp_wargoddess", "_762x51mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
+end
 end)
