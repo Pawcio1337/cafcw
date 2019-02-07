@@ -1103,9 +1103,9 @@ end
 -- AEK-971
 if self.wpn_fps_ass_aek971 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_aek971", "_545x39mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971", "wpn_fps_ass_flint")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971", "wpn_fps_ass_flint")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_aek971", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_aek971", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_aek971", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_aek971")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_aek971")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_aek971")
