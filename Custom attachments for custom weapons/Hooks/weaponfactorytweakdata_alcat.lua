@@ -1075,7 +1075,7 @@ end
 
 --TC Contender
 if self.wpn_fps_special_contender then
-self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_lmg_sumitomo")
+self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_special_contender")
 self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,16,-3.75", "wpn_fps_special_contender_rail_optic")
 self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,12,-3.75", "wpn_fps_special_contender_rail_optic")
 -- self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_special_contender", "wpn_fps_upg_o_susat", "0,16,-3.125", "wpn_fps_special_contender_rail_optic")
@@ -1090,10 +1090,10 @@ end
 
 --Sumitomo 62 LMG
 if self.wpn_fps_lmg_sumitomo then
-self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_sumitomo")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_sumitomo", "_556x45mm")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_sumitomo", "_762x51mm")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_sumitomo")
+self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_sumitomo")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_sumitomo")
 end
 
@@ -1122,8 +1122,8 @@ if self.parts.wpn_fps_ass_famas_body_feline then
 		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troym4", "a_o_feline")
 		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_bf4flipup", "a_o_feline")
 			if self.parts.wpn_fps_ass_famas_o_mbus then
-			self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_mbus", "a_o_feline")
-			self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_dd_a1", "a_o_feline")
+				self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_mbus", "a_o_feline")
+				self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_dd_a1", "a_o_feline")
 			end
 	end
 	
@@ -1137,12 +1137,16 @@ if self.parts.wpn_fps_ass_famas_body_feline then
 		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45troy_il", "a_o_feline")
 	end
 	
-	for i, sight_id in ipairs(attach_tables[custom_sight_group_table]) do
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", [sight_id], "a_o_feline")
+	for j, sight_base in ipairs(custom_sight_group_table) do
+		for i, sight_id in ipairs(attach_tables[sight_base]) do
+			self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", sight_id, "a_o_feline")
+		end
 	end
 	
-	for i, gadget_id in ipairs(attach_tables[Gadgets]) do
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", [gadget_id], "a_fl_feline2")
+	if type(attach_tables.Gadgets) == "table" then
+		for i, gadget_id in ipairs(attach_tables.Gadgets) do
+			self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", gadget_id, "a_fl_feline2")
+		end
 	end
 
 end
@@ -1160,8 +1164,10 @@ if self.parts.wpn_fps_ass_vhs_body_future then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_45troy_il", "a_o_future")
 	end
 	
-	for i, sight_id in ipairs(attach_tables[custom_sight_group_table]) do
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_vhs_body_future", [sight_id], "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+	for j, sight_base in ipairs(custom_sight_group_table) do
+		for i, sight_id in ipairs(attach_tables[sight_base]) do
+			self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", sight_id, "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
+		end
 	end
 	
 end
@@ -1169,7 +1175,8 @@ end
 -- Mk20 SSR
 if self.parts.wpn_fps_ass_scar_body_ssr then
 
-	for i, sight_id in ipairs(attach_tables[custom_sight_group_table]) do
+if type(attach_tables[sight_base]) == "table" then
+	for i, sight_id in ipairs(attach_tables[sight_base]) do
 		if self.parts[sight_id] then
 			self.parts[sight_id].override = self.parts[sight_id].override or {}
 			self.parts.wpn_fps_ass_scar_body_ssr.override[sight_id] = self.parts.wpn_fps_ass_scar_body_ssr.override[sight_id] or {}
@@ -1183,6 +1190,7 @@ if self.parts.wpn_fps_ass_scar_body_ssr then
 			}
 		end
 	end
+end
 
 end
 
@@ -1190,9 +1198,11 @@ end
 -- M240 Various Attch
 if self.parts.wpn_fps_lmg_par_fg_heat then
 
-	for i, gadget_id in ipairs(attach_tables[Gadgets]) do
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_lmg_par_fg_heat", [gadget_id], "a_fl_heat")
+if type(attach_tables.Gadgets) == "table" then
+	for i, gadget_id in ipairs(attach_tables.Gadgets) do
+		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_lmg_par_fg_heat", gadget_id, "a_fl_heat")
 	end
+end
 
 end
 
@@ -1200,9 +1210,11 @@ end
 -- M16 Carry Handle Rail
 if self.parts.wpn_fps_upg_o_carrymount then
 
-	for i, sight_id in ipairs(attach_tables[custom_sight_group_table]) do
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_carrymount", [sight_id], "a_o_sm")
+for j, sight_base in ipairs(custom_sight_group_table) do
+	for i, sight_id in ipairs(attach_tables[sight_base]) do
+		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_upg_o_carrymount", sight_id, "a_o_sm")
 	end
+end
 
 end
 

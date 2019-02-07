@@ -141,7 +141,6 @@ attach_tables.MOD_Iron_Sights_Pack_Front = {
 	"wpn_fps_upg_o_var_troym4_front"
 }
 -- Unique weapon tables to exclude specific attachments.
-attach_tables.AR15_Stocks_AEK971 = {"wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col"}
 attach_tables.AR15_Stocks_MK12 = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col"}
 attach_tables.AR15_Stocks_R0933BLK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col",	"wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col"}
 attach_tables.AR15_Stocks_SR3M = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col",	"wpn_fps_upg_m4_s_ubr_col"}
@@ -1102,40 +1101,15 @@ if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_galilace_762")
 end
 -- AEK-971
--- TODO Switch to AK stance_mod
 if self.wpn_fps_ass_aek971 then
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_kobra", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_compm4s", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_m145", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_pkas", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_coyote", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_acog_rmr", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_hologram", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_gitsch", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_zeiss", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_okp7", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_hd33", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_prismatic", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_srs", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_hcog", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_reflexholo", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_aog", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_rmr_riser", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_elo", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_kemper", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_mepro", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_rusak", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_horzine", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_pka", "a_o_sm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_susat", "a_o_sm")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_aek971", "_545x39mm")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_aek971", "wpn_fps_upg_o_anpas13d", "a_o_sm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971_mtk8")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971_mtk8")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_aek971", "wpn_fps_ass_aek971", "wpn_fps_ass_flint")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_aek971")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_aek971")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_aek971")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_aek971")
-	self:cafcw_add_attachment_type("AR15_Stocks_AEK971", "wpn_fps_ass_aek971")
 end
 -- ZiD A-545
 if self.wpn_fps_ass_a545 then
@@ -2126,9 +2100,7 @@ if self.parts.wpn_fps_upg_o_acog_rmr and self.parts.wpn_fps_upg_o_acog_rmr_switc
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_mp153", "wpn_fps_sho_ben")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_toz194", "wpn_fps_shot_r870")
-if self.wpn_fps_ass_aek971 then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_aek971 = deep_clone(self.parts.wpn_fps_upg_o_ak_scopemount.override.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_ass_74)
-end
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_aek971", "wpn_fps_ass_flint")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_a545", "wpn_fps_ass_galil")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_smg_pdr", "wpn_fps_ass_aug")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_hcar", "wpn_fps_ass_fal")
@@ -2200,9 +2172,7 @@ end
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_ash", "wpn_fps_ass_famas")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_upg_o_acog_rmr", "wpn_fps_upg_o_delta_rm55")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
-if self.wpn_fps_shot_ks23 then
-	self.parts.wpn_fps_upg_o_acog_rmr_switch.stance_mod.wpn_fps_shot_ks23 = {translation = Vector3(-0.006, -1, -3.31),rotation = Rotation(0, -2, 0)}
-end
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_ks23", "wpn_fps_ass_amcar")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_ar18", "wpn_fps_ass_ak5")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_m4_beowulf", "wpn_fps_ass_m4")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_ar60mrks", "wpn_fps_ass_fal")

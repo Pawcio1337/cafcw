@@ -21,35 +21,54 @@ if self.wpn_fps_smg_template then 		- This part checks if custom weapon is insta
 wpn_fps_smg_template					- Replace each instance with Factory ID of custom weapon.
 
 Basic functions:
-* - You can check list of attachments of each type or sight base in weaponfactorytweakdata.lua file.
 
 	self:cafcw_add_attachment_type("Type of attachments", "Factory ID", "Adds ID")	
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_template", "wpn_fps_smg_gadget_rail")
 
-First parameter in this function defines specific type of attachments that will be added to custom weapon. Note - This parameter is case sensitive.
+First parameter*2 in this function defines specific type of attachments that will be added to custom weapon.
 Second parameter is Factory ID of custom weapon.
-(Optional) Third parameter is used to add defined attachment ID that will be added with type of attachments - example rail for gadgets. Note - Custom weapon must have defined adds table in factory group.
+(Optional) Third parameter is used to add defined attachment ID that will be added with type of attachments - Example rail for gadgets. Note - Custom weapon must have defined adds table in factory group.
 
 Currently available types*: AR15_Stocks, Barrel_Extensions, Gadgets, Gadgets_Pistol, Suppressors, Suppressors_Shotgun, Suppressors_Pistol.
 
 	self:cafcw_add_custom_sights("Sight Base", "Factory ID", "Base Stance_Mod, "Adds ID")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_template", "wpn_fps_ass_flint", "wpn_fps_smg_template_sight_rail")
 
-First parameter in this function defines type of sight base that will be added to custom weapon. Note - Bases labeled with Custom requires to use base stance_mod from game.
+First parameter*2 in this function defines type of sight base that will be added to custom weapon. Note - Bases labeled with Custom requires to use base stance_mod from game.
 Second parameter is Factory ID of custom weapon.
-(Optional) Third parameter is used to add defined attachment ID that will be added with sight - example sight rail. Note - Custom weapon must have defined adds table in factory group.
+(Optional) Third parameter is used to add defined attachment ID that will be added with sight - Example sight rail. Note - Custom weapon must have defined adds table in factory group.
 
 Currently available sight bases*: ACOG, Custom, Custom_Sniper, Custom_Pistol, RDS45, Shortdot, Specter.
 
 Attachment configuration functions:
 
-cafcw_forbids_attachment_type
-WIP
-cafcw_part_a_obj_pattern_override
-WIP
-cafcw_wpn_a_obj_pattern_override
-WIP
+	self:cafcw_forbids_attachment_type("Type of attachments", "Attachment ID")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_smg_barrel_supp")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_smg_barrel_supp")
 
+First parameter*2 in this function defines type of attachments that will be forbided by specific attachment - Example suppressed barrel can't use barrel extensions etc.
+Second parameter is ID of attachment that will used. Note - Attachment must have defined forbids table.
+
+	self:cafcw_part_a_obj_pattern_override("Type of attachments", "Attachment ID", "a_o_riser")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_smg_template_riser", "a_o_riser")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_smg_template_riser", "a_o_riser")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_smg_template_riser", "a_o_riser")
+
+First parameter*2 in this function defines type of attachments that their a_obj will be overrided by specific attachment - Example secondary sight placement.
+Second parameter is ID of attachment that will used. Note - Attachment must have defined override table.
+Third parameter is a_obj ID.
+
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_template", nil, "slide")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_template", "a_ns", "barrel")
+
+First parameter*2 in this function defines type of attachments that their a_obj and/or parrent will be overrided by weapon - Example barrel extensions or sight on pistols.
+Second parameter is Factory ID of custom weapon.
+Third parameter is overrided a_obj. Note - If you need only to change pattern without a_obj fill this parameter with nil (Without "").
+Forth parameter is overrided attachment pattern.
+
+
+* - You can check list of attachments of each type or sight base in weaponfactorytweakdata.lua file.
+*2 - This parameter is case sensitive.
 
 Template continued:
 After you finish editing data for own custom weapon you need to hook this script into main.xml of mod.
