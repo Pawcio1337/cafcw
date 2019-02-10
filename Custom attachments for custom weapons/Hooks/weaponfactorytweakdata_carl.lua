@@ -72,4 +72,14 @@ if self.wpn_fps_snp_kozak then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_kozak")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_snp_kozak")
 end
+
+--Janktastic ARES Shrike AWS
+if self.wpn_fps_lmg_beef then
+	-- i was hungry when i made this ok
+
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_beef")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_beef")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_beef")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_beef")
+end
 end)

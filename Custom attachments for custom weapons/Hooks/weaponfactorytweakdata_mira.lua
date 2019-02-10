@@ -178,4 +178,14 @@ if self.wpn_fps_snp_wargoddess then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
 end
+-- TAR-21
+if self.wpn_fps_ass_tar21 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_tar21", "wpn_fps_ass_famas", "wpn_fps_ass_tar21_irons_folded")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_tar21", "wpn_fps_ass_famas", "wpn_fps_ass_tar21_irons_folded")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_tar21", "wpn_fps_ass_famas", "wpn_fps_ass_tar21_irons_folded")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_tar21", "_556x45mm")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_tar21")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_tar21")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_tar21")
+end
 end)

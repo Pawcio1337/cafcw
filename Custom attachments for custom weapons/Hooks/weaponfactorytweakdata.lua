@@ -1342,21 +1342,11 @@ if self.wpn_fps_ass_x95 then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_x95", "wpn_fps_ass_x95_rm55")
 end
 -- Winchester Model 1894
--- TODO edit wpn stance_mod
 if self.wpn_fps_snp_winchester1894 then
---
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_susat", "-0.005,1,-5,45", "wpn_fps_snp_winchester1894_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_eotech552", "-0.005,4,-3.36", "wpn_fps_snp_winchester1894_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_st10", "-0.005,4,-3.695", "wpn_fps_snp_winchester1894_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_visionking", "-0.005,4,-3.695", "wpn_fps_snp_winchester1894_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_compm2", "-0.005,4,-3.045", "wpn_fps_snp_winchester1894_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_rmr_riser", "-0.005,1,-2.315", "wpn_fps_snp_winchester1894_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_winchester1894", "wpn_fps_upg_o_okp7", "0.595,4,-2.765", "wpn_fps_snp_winchester1894_sight_rail")
---
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894_sight_rail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894_sight_rail")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_winchester1894", "wpn_fps_snp_tti", "wpn_fps_snp_winchester1894_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_winchester1894", "wpn_fps_snp_tti", "wpn_fps_snp_winchester1894_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_winchester1894", "wpn_fps_snp_tti", "wpn_fps_snp_winchester1894_sight_rail")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894_gadget_rail")
-
 end
 -- AAI LSAT
 if self.wpn_fps_lmg_lsat then
@@ -1709,6 +1699,11 @@ if self.wpn_fps_ass_obr5 then
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_obr5_gadgets_bottom", "a_fl_bottom")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_obr5_gadgets_left", "a_fl_left")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_obr5_gadgets_top", "a_fl_top")
+end
+-- Zweihänder
+if self.wpn_fps_smg_einhander then
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_zweihander")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_zweihander")
 end
 -- Secondary
 --
