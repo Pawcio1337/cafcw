@@ -1,8 +1,6 @@
 Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
-if BeardLib.Utils:FindMod("Custom Attachment Points") then
--- Attachment:
+-- Attachments:
 -- Russian Weapons - Sight Pack
-if self.vss then
 	self:SetupAttachmentPoint("vss", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -23,8 +21,6 @@ if self.vss then
 		base_a_obj = "a_o",
 		position = Vector3(-0.4, 3.25, -3.2)
 	})
-end
-if self.svd then
 	self:SetupAttachmentPoint("svd", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -45,8 +41,6 @@ if self.svd then
 		base_a_obj = "a_o",
 		position = Vector3(-0.6, -2.25, -1.5)
 	})
-end
-if self.svu then
 	self:SetupAttachmentPoint("svu", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -67,8 +61,6 @@ if self.svu then
 		base_a_obj = "a_o",
 		position = Vector3(-0.85, 1.25, -0.9)
 	})
-end
-if self.sr3m then
 	self:SetupAttachmentPoint("sr3m", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -94,8 +86,6 @@ if self.sr3m then
 		base_a_obj = "a_o",
 		position = Vector3(-0.6, 2, -3)
 	})
-end
-if self.sks then
 	self:SetupAttachmentPoint("sks", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -121,8 +111,6 @@ if self.sks then
 		base_a_obj = "a_o",
 		position = Vector3(-0.8, -4.5, -1.8)
 	})
-end
-if self.vepr12 then
 	self:SetupAttachmentPoint("vepr12", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -148,17 +136,13 @@ if self.vepr12 then
 		base_a_obj = "a_o",
 		position = Vector3(-0.9, -9.5, -1.4)
 	})
-end
 -- PU Scope
-if self.obrez then
 	self:SetupAttachmentPoint("obrez", {
 		name = "a_o_pu",
 		base_a_obj = "a_o",
-		position = Vector3(0, 0, 0)
+		position = Vector3(0.9, -9, 0)
 	})
-end
 -- Sniper Rifles Iron Sights
-if self.l115 then
 	self:SetupAttachmentPoint("l115", {
 		name = "a_o_f",
 		base_a_obj = "a_o",
@@ -169,8 +153,6 @@ if self.l115 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -7, -0.75)
 	})
-end
-if self.m40a5 then
 	self:SetupAttachmentPoint("m40a5", {
 		name = "a_o_f",
 		base_a_obj = "a_o",
@@ -181,8 +163,6 @@ if self.m40a5 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -1, 0.9)
 	})
-end
-if self.sv98 then
 	self:SetupAttachmentPoint("sv98", {
 		name = "a_o_f",
 		base_a_obj = "a_o",
@@ -193,8 +173,6 @@ if self.sv98 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -7.3, -0.6)
 	})
-end
-if self.amr2 then
 	self:SetupAttachmentPoint("amr2", {
 		name = "a_o_f",
 		base_a_obj = "a_o",
@@ -205,9 +183,7 @@ if self.amr2 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -5.4, 0)
 	})
-end
 -- Iron Sights Pack
-if self.galilace then
 	self:SetupAttachmentPoint("galilace", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -223,8 +199,6 @@ if self.galilace then
 		base_a_obj = "a_o",
 		position = Vector3(0, -12, 0)
 	})
-end
-if self.galilace762 then
 	self:SetupAttachmentPoint("galilace762", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -240,8 +214,6 @@ if self.galilace762 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -12, 0)
 	})
-end
-if self.hk416 then
 	self:SetupAttachmentPoint("hk416", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -262,8 +234,6 @@ if self.hk416 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -14, 1)
 	})
-end
-if self.f2000 then
 	self:SetupAttachmentPoint("f2000", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -274,8 +244,6 @@ if self.f2000 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -11, -1.4)
 	})
-end
-if self.mdr then
 	self:SetupAttachmentPoint("mdr", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -286,8 +254,6 @@ if self.mdr then
 		base_a_obj = "a_o",
 		position = Vector3(0, -10, 0)
 	})
-end
-if self.g36k then
 	self:SetupAttachmentPoint("g36k", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -298,8 +264,6 @@ if self.g36k then
 		base_a_obj = "a_o",
 		position = Vector3(0, -14, 0)
 	})
-end
-if self.scarl then
 	self:SetupAttachmentPoint("scarl", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -315,8 +279,6 @@ if self.scarl then
 		base_a_obj = "a_o",
 		position = Vector3(0, -19, 1.725)
 	})
-end
-if self.scar_m203 then
 	self:SetupAttachmentPoint("scar_m203", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -327,8 +289,6 @@ if self.scar_m203 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -21, 1.1)
 	})
-end
-if self.hugsforleon then
 	self:SetupAttachmentPoint("hugsforleon", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -339,8 +299,6 @@ if self.hugsforleon then
 		base_a_obj = "a_o",
 		position = Vector3(0, -14, 0)
 	})
-end
-if self.op68 then
 	self:SetupAttachmentPoint("op68", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -351,15 +309,11 @@ if self.op68 then
 		base_a_obj = "a_o",
 		position = Vector3(0, -16.5, 0)
 	})
-end
 -- Weapons:
 -- Chiappa Rhino 60DS
-if self.rhino then
 	self:SetupAttachmentPoint("rhino", {
 		name = "a_o_rmr",
 		base_a_obj = "a_o",
 		position = Vector3(0, 18, -1.1)
 	})
-end
-end
 end)
