@@ -177,6 +177,8 @@ if self.wpn_fps_snp_wargoddess then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_wargoddess", "wpn_fps_snp_wargoddess")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_snp_wargoddess")
 end
 -- TAR-21
 if self.wpn_fps_ass_tar21 then
@@ -187,5 +189,18 @@ if self.wpn_fps_ass_tar21 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_tar21")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_tar21")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_tar21")
+end
+-- QBZ-97B (it took some time to finally add support, yup)
+if self.wpn_fps_ass_qbz97b then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_qbz97b", "wpn_fps_ass_famas", "wpn_fps_ass_qbz97b_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_qbz97b", "wpn_fps_ass_famas", "wpn_fps_ass_qbz97b_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_qbz97b", "wpn_fps_ass_famas", "wpn_fps_ass_qbz97b_rail")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_ass_qbz97b_95b_body", "a_o_95b")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_ass_qbz97b_95b_body", "a_o_95b")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_ass_qbz97b_95b_body", "a_o_95b")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_qbz97b", "_556x45mm")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_qbz97b")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_qbz97b")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_qbz97b")
 end
 end)

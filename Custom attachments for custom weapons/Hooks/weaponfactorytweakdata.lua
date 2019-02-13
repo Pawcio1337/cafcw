@@ -1546,19 +1546,11 @@ if self.wpn_fps_ass_ar18 then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_ar18")
 end
 -- TOZ-34
--- Specter stance_mod: 0,0,-3.325
--- Acog stance_mod: 0,-5,-3.32
 if self.wpn_fps_shot_toz34 then
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_st10", "0,-4,-3.316", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_visionking", "0,6,-3.292", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_toz34", "wpn_fps_shot_toz34", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_toz34", "wpn_fps_shot_toz34", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_eotech552", "0,0,-2.99", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_susat", "0,-5,-5.08", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_compm2", "0,0,-2.675", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_rmr_riser", "0,-3,-1.945", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_shot_toz34", "wpn_fps_upg_o_okp7", "0.6,0,-2.395", "wpn_fps_shot_toz34_sight_rail")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_toz34", "wpn_fps_shot_toz34_gadget_rail")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_toz34", "wpn_fps_ass_amcar", "wpn_fps_shot_toz34_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_toz34", "wpn_fps_ass_amcar", "wpn_fps_shot_toz34_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_toz34", "wpn_fps_ass_amcar", "wpn_fps_shot_toz34_sight_rail")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_toz34")
 end
 -- Akimbo TOZ-66
 if self.wpn_fps_shot_x_toz66 then
@@ -1981,11 +1973,11 @@ if self.wpn_fps_pis_sw327r8 then
 end
 -- TOZ-66
 if self.wpn_fps_shot_toz66 then
--- TODO edit wpn stance_mod
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_toz66", "wpn_fps_ass_amcar", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_toz66", "wpn_fps_ass_amcar", "wpn_fps_shot_toz66_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_toz66", "wpn_fps_ass_amcar", "wpn_fps_shot_toz66_sight_rail")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_toz66", "_12ga_mag")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_toz66", "wpn_fps_shot_toz66_gadget_rail")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_toz66")
 end
 -- Kel-Tec PLR-16
 if self.wpn_fps_pis_plr16 then
@@ -2168,8 +2160,8 @@ end
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_m4_beowulf", "wpn_fps_ass_m4")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_ar60mrks", "wpn_fps_ass_fal")
 	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_pis_sw327r8", "-0.028,13,-3.55")
-	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_shot_toz34", "0,-6,-7.425")
-	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_shot_toz66", "0,0,0")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_toz34", "wpn_fps_ass_amcar")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_toz66", "wpn_fps_ass_amcar")
 	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_snp_merkel", "0,-8,-8.425")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_pis_plr16", "wpn_fps_smg_olympic")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_smg_coltsmg", "wpn_fps_ass_m4")
@@ -2205,7 +2197,7 @@ end
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_snp_kozak", "wpn_fps_snp_tti")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_drongo", "wpn_fps_ass_m4")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_recce", "wpn_fps_ass_contraband")
-	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_fal", "wpn_fps_ass_m4")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_mav", "wpn_fps_ass_fal")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_bajur", "wpn_fps_ass_m4")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_tar21", "wpn_fps_ass_famas")
