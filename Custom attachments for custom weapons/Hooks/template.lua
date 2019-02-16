@@ -15,7 +15,7 @@ end)
 Template:
 Above part is basic configuration for custom attachments. Before editing data in function calls you need to edit following:
 
-CAFCWMod_MWSNICK_Init 					- Replace with your mostly used nick on Modworkshop.
+CAFCWMod_MWSNICK_Init 					- Replace "MWSNICK" with your mostly used nick on Modworkshop.
 -- Template Custom Weapon 				- Replace with name of custom weapon (Keep it commented out).
 if self.wpn_fps_smg_template then 		- This part checks if custom weapon is installed and execute code inside block. Replace "wpn_fps_smg_template" with Factory ID of custom weapon.
 wpn_fps_smg_template					- Replace each instance with Factory ID of custom weapon.
@@ -82,4 +82,8 @@ Alternatively you can try get help from someone on MWS Discord.
 
 After script get accepted you can update mod with any changes via MWS page.
 Note. Mod must be packed using ZIP format and "version" number in main.xml file must be increased by 0.01
+
+
+Contributed functions documentation:
+
 --]]
