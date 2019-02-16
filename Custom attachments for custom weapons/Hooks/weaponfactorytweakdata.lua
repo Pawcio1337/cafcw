@@ -513,6 +513,55 @@ function WeaponFactoryTweakData:cafcw_category_forbid(wpn_id, cat_id, attach_id,
 		end
 	end
 end
+
+--note-- add custom stances for sights to this at some point
+function WeaponFactoryTweakData:cafcw_clone_override(type_id, wpn_prt_id, ovr_clone_id, clone_part_id, prt_tbl_id)
+	if self.parts[wpn_prt_id] then
+		self.parts[wpn_prt_id].override = self.parts[wpn_prt_id].override or {}
+		if self.parts[clone_part_id] and self.parts[ovr_clone_id].override[clone_part_id] then
+			if type_id == "attach_table" then
+				for _, part_id in pairs(attach_tables[prt_tbl_id]) do
+					if self.parts[part_id] then
+						self.parts[wpn_prt_id].override[part_id] = deep_clone(self.parts[ovr_clone_id].override[clone_part_id])
+					end
+				end
+			elseif type_id == "ammo_table" then
+				for _, part_id in pairs(ammo_table[prt_tbl_id]) do
+					if self.parts[part_id] then
+						self.parts[wpn_prt_id].override[part_id] = deep_clone(self.parts[ovr_clone_id].override[clone_part_id])
+					end
+				end
+			else
+				self.parts[wpn_prt_id].override[prt_tbl_id] = deep_clone(self.parts[ovr_clone_id].override[clone_part_id])
+			end
+		else
+			log("[ERROR] CAFCW: Missing Override: " .. ovr_clone_id, clone_part_id)
+		end
+	else
+		self[wpn_prt_id].override = self[wpn_prt_id].override or {}
+		ovr_clone_id = ovr_clone_id or wpn_prt_id
+		if self.parts[clone_part_id] and self[ovr_clone_id].override[clone_part_id] then
+			if type_id == "attach_table" then
+				for _, part_id in pairs(attach_tables[prt_tbl_id]) do
+					if self.parts[part_id] then
+						self[wpn_prt_id].override[part_id] = deep_clone(self[ovr_clone_id].override[clone_part_id])
+					end
+				end
+			elseif type_id == "ammo_table" then
+				for _, part_id in pairs(ammo_table[prt_tbl_id]) do
+					if self.parts[part_id] then
+						self[wpn_prt_id].override[part_id] = deep_clone(self[ovr_clone_id].override[clone_part_id])
+					end
+				end
+			else
+				self[wpn_prt_id].override[prt_tbl_id] = deep_clone(self[ovr_clone_id].override[clone_part_id])
+			end
+		else
+			log("[ERROR] CAFCW: Missing Override: " .. ovr_clone_id, clone_part_id)
+		end
+	end
+end	
+		
 -- Contributed code end
 -- Legacy code
 function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, param3, param4, param5, param6)

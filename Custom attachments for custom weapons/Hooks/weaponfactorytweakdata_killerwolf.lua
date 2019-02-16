@@ -63,8 +63,8 @@ end
 	-- DP28 --
 if self.wpn_fps_lmg_dp28 then
 	self:cafcw_add_custom_ammo("wpn_fps_lmg_dp28", "_762x54mmr")
-	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "0, 10, -4", "wpn_fps_lmg_dp28_rail_sight", "wpn_fps_lmg_dp28_ro_rail")
-	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "0, 10, -4", "wpn_fps_lmg_dp28_rail_sight", "wpn_fps_lmg_dp28_ro_rail")	
+	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "0,10,-4", "wpn_fps_lmg_dp28_rail_sight", "wpn_fps_lmg_dp28_ro_rail")
+	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "0,10,-4", "wpn_fps_lmg_dp28_rail_sight", "wpn_fps_lmg_dp28_ro_rail")	
 --	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "0,0,0.92")
 --	self:cafcw_add_custom_sights("RDS45", "wpn_fps_lmg_dp28", "wpn_fps_lmg_mg42", "wpn_fps_lmg_dp28_rail_sight,wpn_fps_lmg_dp28_ro_rail", "-3.1, -2, -8.24")
 	self:cafcw_category_forbid("wpn_fps_lmg_dp28", "sight", "wpn_fps_lmg_dp28_m_dpm36", "wpn_fps_lmg_dp28_o_dummy")
