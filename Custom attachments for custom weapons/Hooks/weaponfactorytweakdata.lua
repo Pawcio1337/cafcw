@@ -1546,19 +1546,11 @@ if self.wpn_fps_shot_x_toz66 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_x_toz66", "wpn_fps_shot_x_toz66_gadget_rail")
 end
 -- Merkel Drilling 961LS
--- Specter stance_mod: 0,-3,-4.325
--- Acog stance_mod: 0,-6,-4.325
 if self.wpn_fps_snp_merkel then
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_st10", "0,-8,-4.315", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_visionking", "0,2,-4.292", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_eotech552", "0,-3,-3.99", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_susat", "0,-6,-6.08", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_compm2", "0,-3,-3.675", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_rmr_riser", "0,-3,-2.945", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_merkel", "wpn_fps_upg_o_okp7", "0.6,-3,-3.395", "wpn_fps_snp_merkel_sight_rail")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_merkel", "wpn_fps_snp_merkel_gadget_rail")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_merkel", "wpn_fps_ass_amcar", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_merkel", "wpn_fps_ass_amcar", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_merkel", "wpn_fps_ass_amcar", "wpn_fps_snp_merkel_sight_rail")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_merkel")
 end
 -- HK G3A3 M203
 if self.wpn_fps_ass_g3m203 then
@@ -2139,7 +2131,7 @@ end
 	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_pis_sw327r8", "-0.028,13,-3.55")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_toz34", "wpn_fps_ass_amcar")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_shot_toz66", "wpn_fps_ass_amcar")
-	self:cafcw_acogrmr_stance("ta31f_vector", "wpn_fps_snp_merkel", "0,-8,-8.425")
+	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_snp_merkel", "wpn_fps_ass_amcar")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_pis_plr16", "wpn_fps_smg_olympic")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_smg_coltsmg", "wpn_fps_ass_m4")
 	self:cafcw_acogrmr_stance("ta31f", "wpn_fps_ass_g3m203", "wpn_fps_ass_g3")
