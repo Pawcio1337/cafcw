@@ -183,6 +183,31 @@ Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
 		base_a_obj = "a_o",
 		position = Vector3(0, -5.4, 0)
 	})
+	self:SetupAttachmentPoint("sr25", {
+		name = "a_o_f",
+		base_a_obj = "a_o",
+		position = Vector3(0, 49, 0)
+	})
+	self:SetupAttachmentPoint("sr25", {
+		name = "a_o_f_mk11",
+		base_a_obj = "a_o",
+		position = Vector3(0, 40.5, 0)
+	})
+	self:SetupAttachmentPoint("sr25", {
+		name = "a_o_r",
+		base_a_obj = "a_o",
+		position = Vector3(0, -5, 0)
+	})
+	self:SetupAttachmentPoint("fd338", {
+		name = "a_o_f",
+		base_a_obj = "a_o",
+		position = Vector3(0, 43.3, 0)
+	})
+	self:SetupAttachmentPoint("fd338", {
+		name = "a_o_r",
+		base_a_obj = "a_o",
+		position = Vector3(0, -1.5, 0)
+	})
 -- Iron Sights Pack
 	self:SetupAttachmentPoint("galilace", {
 		name = "a_of",
