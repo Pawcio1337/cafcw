@@ -12,7 +12,8 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_pts_col",
 	"wpn_fps_upg_m4_s_crane_col",
 	"wpn_fps_upg_m4_s_mk46_col",
-	"wpn_fps_upg_m4_s_ubr_col"
+	"wpn_fps_upg_m4_s_ubr_col",
+	"wpn_fps_upg_s_devgru"
 }
 attach_tables.AR15_Stocks_PRS = {
 	"wpn_fps_upg_m4_s_caastock",
@@ -24,7 +25,8 @@ attach_tables.AR15_Stocks_PRS = {
 	"wpn_fps_upg_m4_s_pts_col",
 	"wpn_fps_upg_m4_s_crane_col",
 	"wpn_fps_upg_m4_s_mk46_col",
-	"wpn_fps_upg_m4_s_ubr_col"
+	"wpn_fps_upg_m4_s_ubr_col",
+	"wpn_fps_upg_s_devgru"
 }
 attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_smg_tromix"

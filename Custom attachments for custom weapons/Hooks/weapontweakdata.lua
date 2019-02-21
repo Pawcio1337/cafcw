@@ -309,6 +309,16 @@ Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
 		base_a_obj = "a_o",
 		position = Vector3(0, -16.5, 0)
 	})
+	self:SetupAttachmentPoint("saigry", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 27, 0)
+	})
+	self:SetupAttachmentPoint("saigry", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -14.5, 0)
+	})
 -- Weapons:
 -- Chiappa Rhino 60DS
 	self:SetupAttachmentPoint("rhino", {
