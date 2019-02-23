@@ -117,6 +117,7 @@ end
 
 --Trench Gun
 if self.wpn_fps_shot_trench then
+self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_trench")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_trench")
 self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_trench")
 self:cafcw_add_custom_ammo("wpn_fps_shot_trench", "_12ga")
@@ -125,6 +126,7 @@ end
 
 --Browning A5
 if self.wpn_fps_shot_auto5 then
+self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_auto5")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_auto5")
 self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_auto5")
 self:cafcw_add_custom_ammo("wpn_fps_shot_auto5", "_12ga_auto")
@@ -172,6 +174,8 @@ end
 
 -- KRISS KARD
 if self.wpn_fps_pis_kard and self.wpn_fps_pis_x_kard then
+self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_kard")
+self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_kard")
 self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_kard")
 self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_kard")
 end
@@ -366,6 +370,7 @@ end
 
 --Korean Arms - K5
 if self.wpn_fps_pis_k5 then
+self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_k5")
 self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_k5")
 self:cafcw_add_custom_ammo("wpn_fps_pis_k5", "_9x19mm")
 end
@@ -426,6 +431,7 @@ table.insert(self.wpn_fps_shot_hawk12.uses_parts, "wpn_fps_upg_o_kemper")
 	self.wpn_fps_shot_hawk12.adds = {wpn_fps_upg_o_kemper = {"wpn_fps_upg_o_ak_scopemount"} }
 	self.wpn_fps_shot_hawk12.override = {wpn_fps_upg_o_kemper = {a_obj = "a_o_sm"} }
 end
+self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_hawk12")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_hawk12")
 self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_hawk12")
 self:cafcw_add_custom_ammo("wpn_fps_shot_hawk12", "_12ga_mag")
@@ -557,6 +563,7 @@ end
 
 -- SPAS15
 if self.wpn_fps_shot_spas15 then
+self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_spas15")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_spas15")
 self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_spas15")
 self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_spas15", "wpn_fps_ass_g36")
@@ -568,6 +575,8 @@ end
 
 --MAG7
 if self.wpn_fps_shot_techno and self.wpn_fps_shot_x_techno then
+self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_techno")
+self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_x_techno")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_techno")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_x_techno")
 self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_techno")

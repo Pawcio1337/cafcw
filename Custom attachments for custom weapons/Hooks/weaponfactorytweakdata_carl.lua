@@ -82,4 +82,18 @@ if self.wpn_fps_lmg_beef then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_beef")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_beef")
 end
+
+-- Parker Hale PDW
+if self.wpn_fps_smg_nya then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_nya", "_9x19mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_nya", "wpn_fps_smg_tec9")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_nya", "wpn_fps_smg_tec9")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_nya", "wpn_fps_smg_tec9")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_nya")
+end
+-- Oh look two cats .. wait a minute.. NYAAAAAAAA² AAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHH
+if self.wpn_fps_smg_x_nya then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_x_nya", "_9x19mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_nya")
+end
 end)

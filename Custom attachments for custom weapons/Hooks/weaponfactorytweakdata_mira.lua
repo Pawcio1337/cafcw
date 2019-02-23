@@ -93,8 +93,11 @@ if self.wpn_fps_smg_mac10mpa then
 end
 -- Wesker's 92FS "Samurai Edge"
 if self.wpn_fps_pis_wes92se then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_wes92se")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_wes92se")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_wes92se", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_wes92se", "a_ns", "barrel")
+	self:cafcw_part_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_wes92se_compensator", "a_ns_ext")
 	self:cafcw_part_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_wes92se_compensator", "a_ns_ext")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_wes92se", "wpn_fps_upg_fl_unimax")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_wes92se_compensator", "wpn_fps_upg_fl_unimax", "a_extfl")
@@ -232,8 +235,10 @@ end
 if self.wpn_fps_pis_vp70 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_vp70", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_vp70_ac_9x21imi", "_9x19mm", "forbids_add")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_vp70")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_vp70", "wpn_fps_pis_ppk_fl_mount")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_vp70")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_vp70", "a_ns")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_vp70", "a_ns")
 	self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_vp70", "wpn_fps_pis_ppk", "0,0,0")
 	self:cafcw_clone_override("attach_table", "wpn_fps_pis_vp70", "wpn_fps_pis_vp70", "wpn_fps_upg_o_rmr", "Custom_Pistol")
@@ -251,8 +256,10 @@ if self.wpn_fps_pis_vp70 then
 end
 if self.wpn_fps_pis_x_vp70 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_x_vp70", "_9x19mm")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_vp70")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_vp70", "wpn_fps_pis_ppk_fl_mount")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_vp70")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_vp70", "a_ns")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_x_vp70", "a_ns")
 end
 -- CZ 75 TS Czechmate
@@ -262,7 +269,9 @@ if self.wpn_fps_pis_axewscope then
 end
 -- FNP-45
 if self.wpn_fps_pis_fnp45 then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_fnp45")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_fnp45")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_fnp45", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_fnp45", "a_ns", "barrel")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_fnp45")
 end
