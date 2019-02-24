@@ -1433,8 +1433,9 @@ if self.wpn_fps_ass_sar21 then
 end
 -- Winchester Model 1912
 if self.wpn_fps_shot_m1912 then
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_shot_m1912", "wpn_fps_upg_ns_sho_salvo_small")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_m1912")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_m1912", "wpn_fps_shot_m1912_gadget_rail")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_m1912")
 end
 -- K31
 if self.wpn_fps_snp_k31 then
@@ -1596,7 +1597,9 @@ if self.wpn_fps_shot_sjogren then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_sjogren", "wpn_fps_sho_ben", "wpn_fps_shot_sjogren_rail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_sjogren", "wpn_fps_sho_ben", "wpn_fps_shot_sjogren_rail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_sjogren", "wpn_fps_sho_ben", "wpn_fps_shot_sjogren_rail")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_sjogren")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_sjogren")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_sjogren")
 end
 -- LaRue OBR 5.56
 if self.wpn_fps_ass_obr5 then
@@ -1895,7 +1898,9 @@ if self.wpn_fps_shot_wmtx then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_wmtx")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_wmtx")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_wmtx")
 end
 -- S&W Model 327 R8
 -- TODO stance_mod
