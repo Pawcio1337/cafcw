@@ -58,10 +58,14 @@ attach_tables.Gadgets_Pistol = {
 attach_tables.Suppressors = {
 	"wpn_fps_ass_ns_g_sup3",
 	"wpn_fps_ass_ns_g_sup4",
-	"wpn_fps_ass_ns_g_sup5"
+	"wpn_fps_ass_ns_g_sup5",
+	"wpn_fps_upg_ns_shot_cat",
+	"wpn_fps_upg_ns_loud"
 }
 attach_tables.Suppressors_Shotgun = {
-	"wpn_fps_upg_ns_sho_salvo_small"
+	"wpn_fps_upg_ns_sho_salvo_small",
+	"wpn_fps_upg_ns_shot_cat",
+	"wpn_fps_upg_ns_loud"
 }
 attach_tables.Suppressors_Pistol = {
 	"wpn_fps_ass_ns_g_sup1",
