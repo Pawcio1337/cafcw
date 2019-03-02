@@ -351,4 +351,16 @@ Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
 		base_a_obj = "a_o",
 		position = Vector3(0, 18, -1.1)
 	})
+-- S&W M&P40
+	self:SetupAttachmentPoint("swmp40", {
+		name = "a_o_rmr",
+		base_a_obj = "a_body",
+		position = Vector3(0, 16, 8)
+	})
+-- Walther P99 AS
+	self:SetupAttachmentPoint("p99", {
+		name = "a_o_rmr",
+		base_a_obj = "a_body",
+		position = Vector3(0, 16, 7)
+	})
 end)
