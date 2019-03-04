@@ -83,7 +83,7 @@ if self.wpn_fps_lmg_beef then
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_beef")
 end
 
--- Parker Hale PDW
+-- Parker-Hale PDW
 if self.wpn_fps_smg_nya then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_nya", "_9x19mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_nya", "wpn_fps_smg_tec9")
@@ -95,5 +95,20 @@ end
 if self.wpn_fps_smg_x_nya then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_x_nya", "_9x19mm")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_nya")
+end
+
+--Zastava M21A
+if self.wpn_fps_ass_howl then
+	-- fun fact: this model you're looking at is actually the LOD0 version of the zastava m21a.
+	-- i was going to use the fully-modeled, super-detailed, high-poly model, but it had a sextuple-digit polygon count
+	-- tl;dr it was going to make my piddly 2mb vram graphics card catch on fire so i decided not to use it
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_howl", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_howl", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_howl", "wpn_fps_ass_flint")
+
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_howl")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_howl")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_howl")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_howl")
 end
 end)

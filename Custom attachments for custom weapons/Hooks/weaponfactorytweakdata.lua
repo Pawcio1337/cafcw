@@ -1959,16 +1959,16 @@ if self.wpn_fps_smg_coltsmg then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_coltsmg")
 end
 -- Mosin Nagant M9130 Obrez
--- TODO gadgets
 if self.wpn_fps_snp_obrez then
 	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin_pu_scope", "-0.891,-52.5,-4.571", "wpn_fps_snp_obrez_rearsight_dummy")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin_iron_sight_switch", "0,-25,-0.2")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_pu_scope", "wpn_fps_upg_obrez_gadgets_rail")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
 	self:cafcw_add_custom_sights("Custom_Obrez", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
 	self:cafcw_add_custom_ammo("wpn_fps_snp_obrez", "_762x54mmr")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_obrez")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_snp_obrez_rearsight", "a_fl_b")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_obrez_gadgets_rail", "a_fl_rail")
 end
 -- CBRPS SKS Pug
 if self.wpn_fps_ass_skspug then

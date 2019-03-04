@@ -1,4 +1,5 @@
 Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
+if self.SetupAttachmentPoint then
 -- Attachments:
 -- Russian Weapons - Sight Pack
 	self:SetupAttachmentPoint("vss", {
@@ -363,4 +364,5 @@ Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
 		base_a_obj = "a_body",
 		position = Vector3(0, 16, 7)
 	})
+end
 end)
