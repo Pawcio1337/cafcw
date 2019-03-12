@@ -1,6 +1,52 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_GermanTacos_Init", function(self)
 ---SECONDARY
 
+--SIG P220
+
+if self.wpn_fps_pis_noodle then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_noodle")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_noodle")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_noodle")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_noodle", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_noodle", "a_ns", "barrel")
+end
+
+--SIG P225
+
+if self.wpn_fps_pis_sammy then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sammy")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_sammy")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sammy")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sammy", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_sammy", "a_ns", "barrel")
+end
+
+--Mustang and Sally
+
+if self.wpn_fps_pis_mustang and self.wpn_fps_pis_sally then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mustang")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_mustang")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mustang")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_mustang", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_mustang", "a_ns", "barrel")
+	
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sally")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_sally")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sally")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sally", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_sally", "a_ns", "barrel")
+end
+
+--Tariq
+
+if self.wpn_fps_pis_tariq then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_tariq")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_tariq")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_tariq")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_tariq", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_tariq", "a_ns", "barrel")
+end
+
 --Glock 17 Gen 3
 
 if self.wpn_fps_pis_glawk then

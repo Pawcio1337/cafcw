@@ -64,10 +64,11 @@ if self.wpn_fps_shot_stf12 then
 end
 -- MP7
 if self.wpn_fps_smg_mp7new then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp9")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp7")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp7")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_mp7new", "wpn_fps_smg_mp7")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_mp7new")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_mp7new")
 end
 -- SMG-11
 if self.wpn_fps_smg_mac10mpa then
