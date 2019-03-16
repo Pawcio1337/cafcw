@@ -137,6 +137,21 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(-0.9, -9.5, -1.4)
 	})
+	self:SetupAttachmentPoint("vityaz", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(0.4, -7, -1.3)
+	})
+	self:SetupAttachmentPoint("vityaz", {
+		name = "a_o_1pn93",
+		base_a_obj = "a_o",
+		position = Vector3(-0.9, -7, -0.05)
+	})
+	self:SetupAttachmentPoint("vityaz", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-0.7, 2, -3)
+	})
 -- PU Scope
 	self:SetupAttachmentPoint("obrez", {
 		name = "a_o_pu",
