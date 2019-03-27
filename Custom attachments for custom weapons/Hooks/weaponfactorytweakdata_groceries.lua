@@ -172,6 +172,16 @@ if self.wpn_fps_smg_x_czevo then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_czevo")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_x_czevo")
 end
+-- MK18 Specialist
+if self.wpn_fps_ass_mk18s then
+	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_ass_mk18s", "wpn_fps_smg_shepheard", "-0.01,0,-1.3")
+	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_ass_mk18s", "wpn_fps_smg_shepheard", "-0.01,0,-1.3")
+	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_mk18s", "wpn_fps_smg_shepheard", "-0.01,0,-1.63")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_mk18s", "wpn_fps_smg_shepheard")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mk18s")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mk18s")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mk18s")
+end
 -- AK 5.56
 if self.wpn_fps_ass_ak556 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_ak556", "_556x45mm")
