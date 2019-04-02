@@ -283,6 +283,7 @@ if self.wpn_fps_lmg_mg34 then
 	self:cafcw_add_custom_ammo("wpn_fps_lmg_mg34", "_792x57mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_mg34")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_mg34")
+	self:cafcw_add_to_parts("other", "wpn_fps_lmg_mg34", "wpn_fps_upg_mg3_supp")
 end
 --Owen Gun
 if self.wpn_fps_smg_owen then

@@ -88,8 +88,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_susat",
 	"wpn_fps_upg_o_okp7",
 	"wpn_fps_upg_o_visionking",
-	"wpn_fps_upg_o_compm2",
-	"wpn_fps_upg_o_su230_docter"
+	"wpn_fps_upg_o_compm2"
 }
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
@@ -126,7 +125,8 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_rusak",
 	"wpn_fps_upg_o_horzine",
 	"wpn_fps_upg_o_pka",
-	"wpn_fps_upg_o_anpas13d"
+	"wpn_fps_upg_o_anpas13d",
+	"wpn_fps_upg_o_su230_docter"
 }
 -- Mods
 attach_tables.MOD_IronSightsPack_Custom = {
@@ -1076,6 +1076,7 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_galilace")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_galilace")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_galilace")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_galilace")
@@ -1089,6 +1090,7 @@ if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_galilace_762")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_galilace_762")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_galilace_762")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_galilace_762")

@@ -111,4 +111,20 @@ if self.wpn_fps_ass_howl then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_howl")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_howl")
 end
+
+-- Remington R5 RGP
+attach_tables.AR15_Stocks_mikon = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col",	"wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru"}
+--kluge to account for the fact that the strike viper stock comes with the r5 by default lol
+if self.wpn_fps_ass_mikon then
+	-- fun fact: "mikon" was actually the working name and while i was going to change it i got lazy
+	-- and ended up having to keep it the way it was so i could use things that people made while helping me
+	-- lol oops
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mikon", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mikon", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mikon", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mikon")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mikon")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mikon")
+	self:cafcw_add_attachment_type("AR15_Stocks_mikon", "wpn_fps_ass_mikon")
+end
 end)
