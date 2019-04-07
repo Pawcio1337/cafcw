@@ -166,6 +166,9 @@ if self.wpn_fps_smg_czevo then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_czevo")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_czevo")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_czevo")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_smg_czevo_barrel_silenced", "wpn_fps_ass_ns_g_sup3")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_smg_czevo_barrel_silenced", "wpn_fps_ass_ns_g_sup4")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_smg_czevo_barrel_silenced", "wpn_fps_ass_ns_g_sup5")
 end
 if self.wpn_fps_smg_x_czevo then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_x_czevo")
