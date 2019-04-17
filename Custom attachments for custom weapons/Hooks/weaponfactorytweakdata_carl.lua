@@ -45,10 +45,11 @@ if self.wpn_fps_ass_drongo then
 	--i would only find out AFTER making this on request from mira and dersushy that thirty other people had already done this
 	--but they were all conversion kits instead of actual standalone weapons
 	--so i guess this is still kind of original? idk
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_drongo", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_drongo", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_drongo", "wpn_fps_ass_m4")
-
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_drongo", "wpn_fps_ass_tecci")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_drongo", "wpn_fps_ass_tecci")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_drongo", "wpn_fps_ass_tecci")
+	-- fun fact: i'm an idiot and i forgot that i was using the bootleg stance_mod for vanilla optics here lololol
+	
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_drongo")
