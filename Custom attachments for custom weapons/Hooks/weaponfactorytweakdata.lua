@@ -187,6 +187,7 @@ attach_tables.Custom_AMR2 = {"wpn_fps_upg_o_rmr_riser","wpn_fps_upg_o_eotech552"
 attach_tables.Custom_Obrez = {"wpn_fps_upg_o_rmr_riser","wpn_fps_upg_o_eotech552","wpn_fps_upg_o_po4","wpn_fps_upg_o_st10","wpn_fps_upg_o_susat","wpn_fps_upg_o_okp7","wpn_fps_upg_o_compm2"}
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
 attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_unimax","wpn_fps_upg_fl_utg_pis"}
+attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock"}
 attach_tables.MOD_IronSightsPack_Custom_HKG36K = {"wpn_fps_upg_o_var_dd_a1_rear","wpn_fps_upg_o_var_kac_rear","wpn_fps_upg_o_var_m4flipup_rear","wpn_fps_upg_o_var_mbus_rear","wpn_fps_upg_o_var_troy_rear","wpn_fps_upg_o_var_troym4_rear"}
 attach_tables.MOD_IronSightsPack_Custom_MDR = {"wpn_fps_upg_o_var_dd_a1_rear","wpn_fps_upg_o_var_m4flipup_rear","wpn_fps_upg_o_var_mbus_rear","wpn_fps_upg_o_var_troy_rear","wpn_fps_upg_o_var_troym4_rear"}
 attach_tables.MOD_IronSightsPack_Custom_MPX = {"wpn_fps_upg_o_var_dd_a1_rear","wpn_fps_upg_o_var_kac_rear","wpn_fps_upg_o_var_m4flipup_rear","wpn_fps_upg_o_var_mbus_rear","wpn_fps_upg_o_var_scorpionevo_rear",	"wpn_fps_upg_o_var_troym4_rear"}
@@ -1484,7 +1485,7 @@ if self.wpn_fps_smg_x_fmg9 then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_x_fmg9", "_9x19mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_x_fmg9")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_fmg9")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_x_fmg9")
+	self:cafcw_add_attachment_type("Suppressors_WithoutCopypastedOsprey", "wpn_fps_smg_x_fmg9")
 end
 -- Akimbo APS
 if self.wpn_fps_x_aps then
@@ -1701,7 +1702,9 @@ if self.wpn_fps_snp_m1894 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_m1894", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_m1894", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m1894", "wpn_fps_ass_amcar")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_m1894")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m1894")
+	self:cafcw_add_attachment_type("Suppressors_WithoutCopypastedOsprey", "wpn_fps_snp_m1894")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_m1894_gadgets_toprail", "a_fl_toprail")
 end
 -- Magpul FMG-9
@@ -1711,6 +1714,7 @@ if self.wpn_fps_smg_fmg9 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_fmg9")
+	self:cafcw_add_attachment_type("Suppressors_WithoutCopypastedOsprey", "wpn_fps_smg_fmg9")
 end
 -- PP-19-01 Vityaz
 if self.wpn_fps_smg_vityaz then
@@ -2025,6 +2029,16 @@ end
 -- Einhänder
 if self.wpn_fps_smg_einhander then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_einhander")
+end
+-- Glock 19
+if self.wpn_fps_pis_g19 then
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_g19", "wpn_fps_pis_lemming", "wpn_fps_pis_g19_sight_dummy")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_g19")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_g19")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_g19")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_g19", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_g19", nil, "slide")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_g19", "a_ns", "barrel")
 end
 -- Attachments
 -- Trijicon ACOG TA31F-RMR Scope
