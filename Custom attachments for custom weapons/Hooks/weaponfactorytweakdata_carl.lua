@@ -54,6 +54,7 @@ if self.wpn_fps_ass_drongo then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_drongo")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_drongo")
 end
 --"""""G28"""""
 if self.wpn_fps_snp_kozak then
@@ -127,5 +128,6 @@ if self.wpn_fps_ass_mikon then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mikon")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mikon")
 	self:cafcw_add_attachment_type("AR15_Stocks_mikon", "wpn_fps_ass_mikon")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mikon")
 end
 end)
