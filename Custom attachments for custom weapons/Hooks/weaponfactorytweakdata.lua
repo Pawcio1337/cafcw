@@ -131,7 +131,8 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_horzine",
 	"wpn_fps_upg_o_pka",
 	"wpn_fps_upg_o_anpas13d",
-	"wpn_fps_upg_o_su230_docter"
+	"wpn_fps_upg_o_su230_docter",
+	"wpn_fps_upg_o_jgbg_m7"
 }
 -- Mods
 attach_tables.MOD_IronSightsPack_Custom = {
