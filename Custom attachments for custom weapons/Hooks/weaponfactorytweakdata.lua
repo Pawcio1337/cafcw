@@ -25,7 +25,8 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_s_m4_sl",
 	"wpn_fps_upg_s_m4_sl_c",
 	"wpn_fps_upg_m4_s_fab_glr16s",
-	"wpn_fps_upg_m4_s_fab_glr16s_alt"
+	"wpn_fps_upg_m4_s_fab_glr16s_alt",
+	"wpn_fps_upg_m4_s_hkslimline"
 }
 attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_smg_tromix",
@@ -170,10 +171,10 @@ attach_tables.MOD_SniperIronSights_Front = {
 	"wpn_fps_upg_o_troy_m4_front"
 }
 -- Unique weapon tables to exclude specific attachments.
-attach_tables.AR15_Stocks_MK12 = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru"}
-attach_tables.AR15_Stocks_R0933BLK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col",	"wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru"}
-attach_tables.AR15_Stocks_SR3M = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col",	"wpn_fps_upg_m4_s_ubr_col"}
-attach_tables.AR15_Stocks_PLR16 = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1"}
+attach_tables.AR15_Stocks_MK12 = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_hkslimline"}
+attach_tables.AR15_Stocks_R0933BLK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col",	"wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_hkslimline"}
+attach_tables.AR15_Stocks_SR3M = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col",	"wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_m4_s_hkslimline"}
+attach_tables.AR15_Stocks_PLR16 = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_hkslimline"}
 attach_tables.Custom_AMR2 = {"wpn_fps_upg_o_rmr_riser","wpn_fps_upg_o_eotech552","wpn_fps_upg_o_po4","wpn_fps_upg_o_st10","wpn_fps_upg_o_susat","wpn_fps_upg_o_okp7","wpn_fps_upg_o_compm2"}
 attach_tables.Custom_Obrez = {"wpn_fps_upg_o_rmr_riser","wpn_fps_upg_o_eotech552","wpn_fps_upg_o_po4","wpn_fps_upg_o_st10","wpn_fps_upg_o_susat","wpn_fps_upg_o_okp7","wpn_fps_upg_o_compm2"}
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}

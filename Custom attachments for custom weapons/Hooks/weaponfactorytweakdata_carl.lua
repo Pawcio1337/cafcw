@@ -130,4 +130,17 @@ if self.wpn_fps_ass_mikon then
 	self:cafcw_add_attachment_type("AR15_Stocks_mikon", "wpn_fps_ass_mikon")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mikon")
 end
+
+-- ARX-160 A2
+if self.wpn_fps_ass_lazy then
+	-- you absolutely would not believe how fucking painful making this gun was.
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_lazy", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_lazy", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_lazy", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_lazy")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_lazy")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_lazy")
+	-- originally i did ar15 stocks here and then i remembered that it was going to fucking crash people lololol
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_lazy")
+end
 end)
