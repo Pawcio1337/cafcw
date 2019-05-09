@@ -29,6 +29,7 @@ if self.wpn_fps_ass_grotb then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb_irons_folded")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb", "wpn_fps_ass_grotb_irons_folded")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_grotb")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_grotb", "_556x45mm")
 end
 -- HK33
 if self.wpn_fps_ass_hk33 then
@@ -275,5 +276,24 @@ if self.wpn_fps_pis_fnp45 then
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_fnp45", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_fnp45", "a_ns", "barrel")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_fnp45")
+end
+-- T-5000
+if self.wpn_fps_snp_t1000x5 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_t1000x5", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_t1000x5", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_t1000x5", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_t1000x5", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_t1000x5", "wpn_fps_snp_msr")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_t1000x5")
+	self:cafcw_add_custom_ammo("wpn_fps_snp_t1000x5", "_762x51mm")
+end
+-- Fang-45
+if self.wpn_fps_ass_qbz97b then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_fang45", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_fang45", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_fang45", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_fang45")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_fang45")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_fang45")
 end
 end)
