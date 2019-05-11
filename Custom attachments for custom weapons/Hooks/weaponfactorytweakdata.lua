@@ -145,6 +145,23 @@ attach_tables.MOD_IronSightsPack_Custom = {
 	"wpn_fps_upg_o_var_troy_rear",
 	"wpn_fps_upg_o_var_troym4_rear"
 }
+attach_tables.MOD_IronSightsPack_NoScorpEvo_Custom = {
+	"wpn_fps_upg_o_var_dd_a1_rear",
+	"wpn_fps_upg_o_var_kac_rear",
+	"wpn_fps_upg_o_var_m4flipup_rear",
+	"wpn_fps_upg_o_var_mbus_rear",
+	"wpn_fps_upg_o_var_troy_rear",
+	"wpn_fps_upg_o_var_troym4_rear"
+}
+attach_tables.MOD_IronSightsPack_SniperStats_Custom = {
+	"wpn_fps_upg_o_snp_dd_a1_rear",
+	"wpn_fps_upg_o_snp_kac_rear",
+	"wpn_fps_upg_o_snp_m4flipup_rear",
+	"wpn_fps_upg_o_snp_mbus_rear",
+	"wpn_fps_upg_o_snp_scorpionevo_rear",
+	"wpn_fps_upg_o_snp_troy_rear",
+	"wpn_fps_upg_o_snp_troym4_rear"
+}
 attach_tables.MOD_IronSightsPack_Front = {
 	"wpn_fps_upg_o_var_dd_a1_front",
 	"wpn_fps_upg_o_var_m4flipup_front",
@@ -180,23 +197,24 @@ attach_tables.Custom_Obrez = {"wpn_fps_upg_o_rmr_riser","wpn_fps_upg_o_eotech552
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
 attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_unimax","wpn_fps_upg_fl_utg_pis"}
 attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock"}
-attach_tables.MOD_IronSightsPack_Custom_HKG36K = {"wpn_fps_upg_o_var_dd_a1_rear","wpn_fps_upg_o_var_kac_rear","wpn_fps_upg_o_var_m4flipup_rear","wpn_fps_upg_o_var_mbus_rear","wpn_fps_upg_o_var_troy_rear","wpn_fps_upg_o_var_troym4_rear"}
-attach_tables.MOD_IronSightsPack_Custom_MDR = {"wpn_fps_upg_o_var_dd_a1_rear","wpn_fps_upg_o_var_m4flipup_rear","wpn_fps_upg_o_var_mbus_rear","wpn_fps_upg_o_var_troy_rear","wpn_fps_upg_o_var_troym4_rear"}
-attach_tables.MOD_IronSightsPack_Custom_SKSPUG = {"wpn_fps_upg_o_var_kac_rear","wpn_fps_upg_o_var_m4flipup_rear","wpn_fps_upg_o_var_mbus_rear","wpn_fps_upg_o_var_scorpionevo_rear","wpn_fps_upg_o_var_troy_rear","wpn_fps_upg_o_var_troym4_rear"}
 -- Attachments tables end
 function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, add_id)
 	if type(attach_tables[attach_type]) == "table" then
-		for i, part_id in pairs(attach_tables[attach_type]) do
-			if self.parts[part_id] then
-				table.insert(self[wpn_id].uses_parts, part_id)
-			end
-			if self.parts[add_id] then
-				if self[wpn_id].adds then
-					self[wpn_id].adds[part_id] = {add_id}
-				else
-					log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, part_id, add_id)
+		if self[wpn_id] then
+			for i, part_id in pairs(attach_tables[attach_type]) do
+				if self.parts[part_id] then
+					table.insert(self[wpn_id].uses_parts, part_id)
+				end
+				if self.parts[add_id] then
+					if self[wpn_id].adds then
+						self[wpn_id].adds[part_id] = {add_id}
+					else
+						log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, part_id, add_id)
+					end
 				end
 			end
+		else
+			log("[ERROR] cafcw_forbids_attachment_type: Weapon not found: " .. wpn_id)
 		end
 	else
 		log("[ERROR] cafcw_forbids_attachment_type: Incorrect attach_type ID used: " .. attach_type, wpn_id, add_id)
@@ -204,39 +222,43 @@ function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, a
 end
 function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id)
 	if type(attach_tables[sight_base]) == "table" then
-		for i, sight_id in pairs(attach_tables[sight_base]) do
-			if self.parts[sight_id] then
-				if sight_base == "ACOG" then
-					sight_base = "wpn_fps_upg_o_acog"
-				elseif sight_base == "RDS45" then
-					sight_base = "wpn_fps_upg_o_45rds"
-				elseif sight_base == "Shortdot" then
-					sight_base = "wpn_fps_upg_o_shortdot"
-				elseif sight_base == "Specter" then
-					sight_base = "wpn_fps_upg_o_specter"
-				end
-				table.insert(self[wpn_id].uses_parts, sight_id)
-				if string.match(sight_base, "Custom") then
-					if self.parts[sight_id].stance_mod[stance_wpn_id] then
-						self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
-					else
-						log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id)
+		if self[wpn_id] then
+			for i, sight_id in pairs(attach_tables[sight_base]) do
+				if self.parts[sight_id] then
+					if sight_base == "ACOG" then
+						sight_base = "wpn_fps_upg_o_acog"
+					elseif sight_base == "RDS45" then
+						sight_base = "wpn_fps_upg_o_45rds"
+					elseif sight_base == "Shortdot" then
+						sight_base = "wpn_fps_upg_o_shortdot"
+					elseif sight_base == "Specter" then
+						sight_base = "wpn_fps_upg_o_specter"
 					end
-				else
-					if self.parts[sight_base].stance_mod[stance_wpn_id] then
-						self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
+					table.insert(self[wpn_id].uses_parts, sight_id)
+					if string.match(sight_base, "Custom") then
+						if self.parts[sight_id].stance_mod[stance_wpn_id] then
+							self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
+						else
+							log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id)
+						end
 					else
-						log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
+						if self.parts[sight_base].stance_mod[stance_wpn_id] then
+							self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
+						else
+							log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
+						end
+					end
+				end
+				if self.parts[add_id] then
+					if self[wpn_id].adds then
+						self[wpn_id].adds[sight_id] = {add_id}
+					else
+						log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, sight_id, add_id)
 					end
 				end
 			end
-			if self.parts[add_id] then
-				if self[wpn_id].adds then
-					self[wpn_id].adds[sight_id] = {add_id}
-				else
-					log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, sight_id, add_id)
-				end
-			end
+		else
+			log("[ERROR] cafcw_add_custom_sights: Weapon not found: " .. wpn_id)
 		end
 	else
 		log("[ERROR] cafcw_add_custom_sights: Incorrect sight_base ID used: " .. sight_base, wpn_id, stance_wpn_id)
@@ -294,28 +316,32 @@ function WeaponFactoryTweakData:cafcw_part_a_obj_pattern_override(attach_type, p
 end
 function WeaponFactoryTweakData:cafcw_wpn_a_obj_pattern_override(attach_type, wpn_id, a_obj_id, parent_id)
 	if type(attach_tables[attach_type]) == "table" then
-		for i, part_id in pairs(attach_tables[attach_type]) do
-			if self.parts[part_id] then
-				if a_obj_id and parent_id then
-					if self[wpn_id].override then
-						self[wpn_id].override[part_id] = {a_obj = a_obj_id, parent = parent_id}
-					else
-						log("[ERROR] CAFCW: Missing override table: " .. wpn_id, part_id)
-					end
-				elseif a_obj_id and not parent_id then
-					if self[wpn_id].override then
-						self[wpn_id].override[part_id] = {a_obj = a_obj_id}
-					else
-						log("[ERROR] CAFCW: Missing override table: " .. wpn_id, part_id)
-					end
-				elseif parent_id and not a_obj_id then
-					if self[wpn_id].override then
-						self[wpn_id].override[part_id] = {parent = parent_id}
-					else
-						log("[ERROR] CAFCW: Missing override table: " .. wpn_id, part_id)
+		if self[wpn_id] then
+			for i, part_id in pairs(attach_tables[attach_type]) do
+				if self.parts[part_id] then
+					if a_obj_id and parent_id then
+						if self[wpn_id].override then
+							self[wpn_id].override[part_id] = {a_obj = a_obj_id, parent = parent_id}
+						else
+							log("[ERROR] CAFCW: Missing override table: " .. wpn_id, part_id)
+						end
+					elseif a_obj_id and not parent_id then
+						if self[wpn_id].override then
+							self[wpn_id].override[part_id] = {a_obj = a_obj_id}
+						else
+							log("[ERROR] CAFCW: Missing override table: " .. wpn_id, part_id)
+						end
+					elseif parent_id and not a_obj_id then
+						if self[wpn_id].override then
+							self[wpn_id].override[part_id] = {parent = parent_id}
+						else
+							log("[ERROR] CAFCW: Missing override table: " .. wpn_id, part_id)
+						end
 					end
 				end
 			end
+		else
+			log("[ERROR] cafcw_wpn_a_obj_pattern_override: Weapon not found: " .. wpn_id)
 		end
 	else
 		log("[ERROR] cafcw_wpn_a_obj_pattern_override: Incorrect attach_type used: " .. attach_type, wpn_id)
@@ -852,7 +878,7 @@ if self.wpn_fps_ass_g36k then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom_HKG36K", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_g36k")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_g36k")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_g36k")
@@ -1301,6 +1327,9 @@ if self.wpn_fps_snp_winchester1894 then
 end
 -- AAI LSAT
 if self.wpn_fps_lmg_lsat then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_lsat")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_lsat")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_lsat")
@@ -1354,7 +1383,7 @@ if self.wpn_fps_ass_mdr then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mdr", "wpn_fps_ass_aug")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mdr", "wpn_fps_ass_aug")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_mdr", "wpn_fps_ass_aug")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom_MDR", "wpn_fps_ass_mdr", "wpn_fps_ass_aug")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_mdr", "wpn_fps_ass_aug")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mdr")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mdr")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mdr")
@@ -1538,6 +1567,9 @@ end
 -- HK MG4
 if self.wpn_fps_lmg_mg4 then
 	self:cafcw_add_custom_ammo("wpn_fps_lmg_mg4", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_mg4", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_mg4", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_mg4", "wpn_fps_ass_amcar")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_mg4")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_mg4")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_mg4")
@@ -1966,7 +1998,7 @@ if self.wpn_fps_ass_skspug then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_skspug", "wpn_fps_sho_basset")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_skspug", "wpn_fps_sho_basset")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_skspug", "wpn_fps_sho_basset")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom_MDR", "wpn_fps_ass_skspug", "wpn_fps_sho_basset")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_skspug", "wpn_fps_sho_basset")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_skspug")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_skspug")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_skspug")
@@ -2147,6 +2179,8 @@ if self.parts.wpn_fps_upg_o_acog_rmr and self.parts.wpn_fps_upg_o_acog_rmr_switc
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_smg_nya", "wpn_fps_smg_tec9")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_ass_howl", "wpn_fps_ass_flint")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_ass_mk18s", "wpn_fps_smg_shepheard")
+	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
+	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_lmg_mg4", "wpn_fps_ass_amcar")
 end
 -- Trijicon ACOG TA648RMR Scope
 if self.parts.wpn_fps_upg_o_ta648rmr and self.parts.wpn_fps_upg_o_ta648rmr_switch then
@@ -2276,6 +2310,8 @@ if self.parts.wpn_fps_upg_o_su230_docter and self.parts.wpn_fps_upg_o_su230_doct
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_ass_obr5", "wpn_fps_snp_tti")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_smg_vz58comp", "wpn_fps_ass_74")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_lmg_mg3", "wpn_fps_ass_amcar")
+	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
+	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_lmg_mg4", "wpn_fps_ass_amcar")
 --
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_sho_usas12", "wpn_fps_sho_aa12")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_snp_fyjs", "wpn_fps_snp_msr")

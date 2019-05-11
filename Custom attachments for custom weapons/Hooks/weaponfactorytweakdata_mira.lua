@@ -288,7 +288,7 @@ if self.wpn_fps_snp_t1000x5 then
 	self:cafcw_add_custom_ammo("wpn_fps_snp_t1000x5", "_762x51mm")
 end
 -- Fang-45
-if self.wpn_fps_ass_qbz97b then
+if self.wpn_fps_smg_fang45 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_fang45", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_fang45", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_fang45", "wpn_fps_ass_m4")

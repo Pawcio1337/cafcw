@@ -1195,5 +1195,18 @@ self:cafcw_add_to_parts("forbids", "wpn_fps_pis_b93r_vertgrip", "wpn_fps_upg_fl_
 end
 end
 
+--MAC10 Various
+if BeardLib.Utils:FindMod("MAC-10 Various Attachment") then
+if self.parts.wpn_fps_smg_mac10_ns_ghetto then
+
+if type(attach_tables.Gadgets) == "table" then
+	for i, gadget_id in ipairs(attach_tables.Gadgets) do
+		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10_ns_ghetto", gadget_id, "a_fl_ghetto")
+	end
+end
+
+end
+end
+
 
 end)
