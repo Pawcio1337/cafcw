@@ -379,5 +379,11 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_body",
 		position = Vector3(0, 16, 7)
 	})
+-- Glock 19
+	self:SetupAttachmentPoint("g19", {
+		name = "a_o_rmr",
+		base_a_obj = "a_body",
+		position = Vector3(0, 12, 6.9)
+	})
 end
 end)

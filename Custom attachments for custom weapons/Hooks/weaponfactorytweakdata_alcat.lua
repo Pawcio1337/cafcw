@@ -1165,48 +1165,61 @@ end
 
 --FAL Various
 if BeardLib.Utils:FindMod("FAL Various Attachment") then
-local moved_custom_barrelext = {
-	"wpn_fps_ass_ns_g_sup3",
-	"wpn_fps_ass_ns_g_sup4",
-	"wpn_fps_ass_ns_g_sup5",
-	"wpn_fps_upg_ns_ass_smg_tromix"
+
+local AR_custom_barrelext_table = {
+	"Barrel_Extensions",
+	"Suppressors"
 }
-for i, part_id in ipairs(moved_custom_barrelext) do
-	self.parts.wpn_fps_ass_fal_fg_stg58.override[part_id] = { a_obj = "a_ns_std" }
-	self.parts.wpn_fps_ass_fal_fg_standard.override[part_id] = { a_obj = "a_ns_std" }
-	self.parts.wpn_fps_ass_fal_fg_wood.override[part_id] = { a_obj = "a_ns_std" }
-	self.parts.wpn_fps_ass_fal_fg_03.override[part_id] = { a_obj = "a_ns_romat" }
-end
-end
-
-
---Beretta Various
-if BeardLib.Utils:FindMod("Beretta Various Attachment") then
-if self.parts.wpn_fps_pis_beretta_body_sword then
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_beretta_body_sword", "wpn_fps_ass_ns_g_sup1", "a_ns_revy")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_beretta_body_sword", "wpn_fps_ass_ns_g_sup2", "a_ns_revy")
-self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_beretta_body_sword", "wpn_fps_ass_ns_g_sup6", "a_ns_revy")
-self:cafcw_add_to_parts("part_unit_ovr", "wpn_fps_upg_b92fs_o_tritium", "wpn_fps_pis_beretta_body_sword", "units/mods/weapons/wpn_fps_pis_b92fsi_revy/ironsight_override/wpn_fps_upg_b92fs_o_tritium_long")
-end
-if self.parts.wpn_fps_pis_b93r_vertgrip then
-self:cafcw_add_to_parts("forbids", "wpn_fps_pis_b93r_vertgrip", "wpn_fps_upg_fl_unimax")
-self:cafcw_add_to_parts("forbids", "wpn_fps_pis_b93r_vertgrip", "wpn_fps_upg_fl_utg_pis")
-self:cafcw_add_to_parts("forbids", "wpn_fps_pis_b93r_vertgrip", "wpn_fps_upg_fl_micro90")
-end
-end
-
---MAC10 Various
-if BeardLib.Utils:FindMod("MAC-10 Various Attachment") then
-if self.parts.wpn_fps_smg_mac10_ns_ghetto then
-
-if type(attach_tables.Gadgets) == "table" then
-	for i, gadget_id in ipairs(attach_tables.Gadgets) do
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10_ns_ghetto", gadget_id, "a_fl_ghetto")
+for i, AR_barrelext in ipairs(AR_custom_barrelext_table) do
+	for j, barrelext_id in ipairs(attach_tables[AR_barrelext]) do
+		self.parts.wpn_fps_ass_fal_fg_stg58.override[barrelext_id] = { a_obj = "a_ns_std" }
+		self.parts.wpn_fps_ass_fal_fg_standard.override[barrelext_id] = { a_obj = "a_ns_std" }
+		self.parts.wpn_fps_ass_fal_fg_wood.override[barrelext_id] = { a_obj = "a_ns_std" }
+		self.parts.wpn_fps_ass_fal_fg_03.override[barrelext_id] = { a_obj = "a_ns_romat" }
 	end
 end
 
 end
+
+
+--Beretta Various
+if self.parts.wpn_fps_pis_beretta_body_sword then
+
+local pistol_custom_barrelext_table = {
+	"Barrel_Extensions_Pistol",
+	"Suppressors_Pistol"
+}
+for i, pistol_barrelext in ipairs(pistol_custom_barrelext_table) do
+	for j, barrelext_id in ipairs(attach_tables[pistol_barrelext]) do
+		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_beretta_body_sword", barrelext_id, "a_ns_revy")
+	end
 end
+self:cafcw_add_to_parts("part_unit_ovr", "wpn_fps_upg_b92fs_o_tritium", "wpn_fps_pis_beretta_body_sword", "units/mods/weapons/wpn_fps_pis_b92fsi_revy/ironsight_override/wpn_fps_upg_b92fs_o_tritium_long")
+
+end
+
+if self.parts.wpn_fps_pis_b93r_vertgrip then
+
+if type(attach_tables.Gadgets_Pistol) == "table" then
+	for i, gadget_id in ipairs(attach_tables.Gadgets_Pistol) do
+		self:cafcw_add_to_parts("forbids", "wpn_fps_pis_b93r_vertgrip", gadget_id)
+	end
+end
+
+end
+
+
+--MAC10 Various
+if self.parts.wpn_fps_smg_mac10_ns_ghetto then
+
+if type(attach_tables.Gadgets) == "table" then
+	for j, gadget_id in ipairs(attach_tables.Gadgets) do
+		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_smg_mac10_ns_ghetto", gadget_id, "a_fl_ghetto")
+	end
+end
+	
+end
+
 
 
 end)

@@ -2037,10 +2037,19 @@ if self.wpn_fps_smg_einhander then
 end
 -- Glock 19
 if self.wpn_fps_pis_g19 then
+	self:cafcw_add_to_parts("sight", "wpn_fps_pis_g19", "wpn_fps_upg_o_coyote", "Specter", "wpn_fps_pis_g19")
+	self:cafcw_add_to_parts("sight", "wpn_fps_pis_g19", "wpn_fps_upg_o_horzine", "Specter", "wpn_fps_pis_g19")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_pis_g19", "wpn_fps_upg_o_rmr_riser", "-0.003,-5,-3.005")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_g19_sights_forbids", "wpn_fps_upg_o_coyote")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_g19_sights_forbids", "wpn_fps_upg_o_horzine")
+	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_g19_sights_forbids", "wpn_fps_upg_o_rmr_riser")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_g19", "wpn_fps_upg_o_rmr_riser", "a_o_rmr")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_g19", "wpn_fps_pis_lemming", "wpn_fps_pis_g19_sight_dummy")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_g19")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_g19")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_g19")
+	self:cafcw_forbids_attachment_type("Custom_Pistol", "wpn_fps_upg_g19_sight_mount")
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_upg_g19_sight_mount", "a_fl_rail")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_g19", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_g19", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_g19", "a_ns", "barrel")
