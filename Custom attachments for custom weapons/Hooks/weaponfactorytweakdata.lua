@@ -95,7 +95,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_compm2",
 	"wpn_fps_upg_o_razoramg",
 	"wpn_fps_upg_o_valday1p87",
-	"wpn_fps_upg_o_burris_ff3"	
+	"wpn_fps_upg_o_burris_ff3",
+	"wpn_fps_upg_o_romeo3"
 }
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
@@ -104,7 +105,8 @@ attach_tables.Custom_Sniper = {
 }
 attach_tables.Custom_Pistol = {
 	"wpn_fps_upg_o_deltapoint",
-	"wpn_fps_upg_o_deltapoint_pro"
+	"wpn_fps_upg_o_deltapoint_pro",
+	"wpn_fps_upg_o_romeo3_pis"
 }
 attach_tables.RDS45 = {
 	"wpn_fps_upg_o_delta_rm55"
