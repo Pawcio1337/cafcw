@@ -138,6 +138,13 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_su230_docter",
 	"wpn_fps_upg_o_jgbg_m7"
 }
+attach_tables.Custom_AK = {
+	"wpn_fps_upg_o_1p29",
+	"wpn_fps_upg_o_ekp_1s_03",
+	"wpn_fps_upg_o_pso1_rifle",
+	"wpn_fps_upg_o_1pn93",
+	"wpn_fps_upg_o_okp7_dove"
+}
 -- Mods
 attach_tables.MOD_IronSightsPack_Custom = {
 	"wpn_fps_upg_o_var_dd_a1_rear",
@@ -2252,6 +2259,9 @@ if self.parts.wpn_fps_upg_o_ak_coverrail then
 	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_asval_coverrail", "a_o_coverrail")
 	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_asval_coverrail", "a_o_coverrail")
 	self:cafcw_add_to_parts("part_copy_part_ovr", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_asval_coverrail", "wpn_fps_upg_o_45rds")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_coal_coverrail", "a_o_coverrail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_coal_coverrail", "a_o_coverrail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_coal_coverrail", "a_o_coverrail")
 end
 -- Luger P08 Gadgets
 if self.parts.wpn_fps_pis_breech_gadget_rail then

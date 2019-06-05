@@ -337,7 +337,8 @@ local akmodules = {
     "wpn_fps_ass_heffy_556",
     "wpn_fps_ass_heffy_939",
     "wpn_fps_ass_x_heffy_939",
-    "wpn_fps_sho_heffy_12g"
+    "wpn_fps_sho_heffy_12g",
+    "wpn_fps_ass_heffy_gold"
 }
 
 local akpack_scopemounts = {
@@ -346,7 +347,8 @@ local akpack_scopemounts = {
 	"wpn_fps_upg_o_ak101_scopemount",
 	"wpn_fps_upg_o_ak9_scopemount",
 	"wpn_fps_upg_o_ak9_scopemount",
-	"wpn_fps_upg_o_saiga12_scopemount"
+	"wpn_fps_upg_o_saiga12_scopemount",
+	"wpn_fps_upg_o_gold_scopemount"
 }
 local akpack_ammo = {
 	"_762x39mm",
@@ -354,95 +356,35 @@ local akpack_ammo = {
 	"_556x45mm",
 	"_9x39mm",
 	"_9x39mm",
-	"_12ga_auto"
+	"_12ga_auto",
+	"_762x39mm"
 }
 
  
 local all_cafcw_sight = {
-    "wpn_fps_upg_o_kobra",
-    "wpn_fps_upg_o_compm4s",
-    "wpn_fps_upg_o_m145",
-    "wpn_fps_upg_o_pkas",
-    "wpn_fps_upg_o_coyote",
-    "wpn_fps_upg_o_acog_rmr",
-    "wpn_fps_upg_o_hologram",
-    "wpn_fps_upg_o_gitsch",
-    "wpn_fps_upg_o_zeiss",
-    "wpn_fps_upg_o_hd33",
-    "wpn_fps_upg_o_prismatic",
-    "wpn_fps_upg_o_srs",
-    "wpn_fps_upg_o_st10",
-    "wpn_fps_upg_o_hcog",
-    "wpn_fps_upg_o_reflexholo",
-    "wpn_fps_upg_o_aog",
-    "wpn_fps_upg_o_rmr_riser",
-    "wpn_fps_upg_o_elo",
-    "wpn_fps_upg_o_po4",
-    "wpn_fps_upg_o_susat",
-    "wpn_fps_upg_o_kemper",
-    "wpn_fps_upg_o_mepro",
-    "wpn_fps_upg_o_rusak",
-    "wpn_fps_upg_o_delta_rm55",
-    "wpn_fps_upg_o_horzine",
-    "wpn_fps_upg_o_eotech552",
-    "wpn_fps_upg_o_visionking",
-    "wpn_fps_upg_o_pka",
-    "wpn_fps_upg_o_anpas13d"
-}
-local all_cafcw_gadget = {
-	"wpn_fps_upg_fl_wml",
-	"wpn_fps_upg_fl_ass_spotter",
-	"wpn_fps_upg_fl_anpeq2",
-	"wpn_fps_upg_fl_dbal_d2",
-	"wpn_fps_upg_fl_m600p",
-	"wpn_fps_upg_fl_utg"
+	attach_tables.Specter,
+	attach_tables.Custom,
+	attach_tables.ACOG	
 }
 local akpack_counter = 1
 for i, wpn_id in pairs(akmodules) do
     if self[wpn_id] then
-        self:cafcw_add_to_parts("gadget", wpn_id, "wpn_fps_upg_fl_wml"        )
-        self:cafcw_add_to_parts("gadget", wpn_id, "wpn_fps_upg_fl_ass_spotter")
-        self:cafcw_add_to_parts("gadget", wpn_id, "wpn_fps_upg_fl_anpeq2"     )
-        self:cafcw_add_to_parts("gadget", wpn_id, "wpn_fps_upg_fl_dbal_d2"    )
-        self:cafcw_add_to_parts("gadget", wpn_id, "wpn_fps_upg_fl_m600p"      )
-        self:cafcw_add_to_parts("gadget", wpn_id, "wpn_fps_upg_fl_utg"        )
+		self:cafcw_add_attachment_type("Barrel_Extensions", wpn_id)
+		self:cafcw_add_attachment_type("Gadgets", wpn_id)
+		self:cafcw_add_attachment_type("Suppressors", wpn_id)
+	
+		self:cafcw_add_custom_sights("Specter", wpn_id, "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
+		self:cafcw_add_custom_sights("ACOG", wpn_id, "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
+		self:cafcw_add_custom_sights("Custom", wpn_id, "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
 		
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_kobra"     , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_compm4s"   , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_m145"      , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_pkas"      , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_coyote"    , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_acog_rmr"  , "0,5,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_hologram"  , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_gitsch"    , "0,5,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_zeiss"     , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_hd33"      , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_prismatic" , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_srs"       , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_st10"      , "0,-4,-3.7"     		, akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_hcog"      , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_reflexholo", "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_aog"       , "0,5,-3.7"       		, akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_rmr_riser" , "0,7,-2.32"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_elo"       , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_po4"       , "0.2,7,-2.55"       	, akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_susat"     , "0,7,-5.4"     			, akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_kemper"    , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_mepro"     , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_rusak"     , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_horzine"   , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_eotech552" , "0,7,-3.365" 			, akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_visionking", "0,4,-3.7"				, akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_pka"       , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
-        self:cafcw_add_to_parts("sight_vector_rail" , wpn_id, "wpn_fps_upg_o_anpas13d"  , "0,7,-3.7"              , akpack_scopemounts[akpack_counter])
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_okp7_dove", "0.5,8,0.15")
+		self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
+		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_ekp_1s_03", "0,8,-1")
+		self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_pso1_rifle", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_snp_siltstone")
+		self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
+	
+		self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
 		
-		self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds"     , "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
-		
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_1p29", "0,-1,-2.3")
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_ekp_1s_03", "0,2.5,-2.3")
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_pso1_rifle", "0,-1,-2.3")
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_1pn93", "0,-1,-2.3")
-       
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_lr"        )
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
         self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_urban")
@@ -453,34 +395,33 @@ for i, wpn_id in pairs(akmodules) do
     end
 	akpack_counter = akpack_counter + 1 
 end
-for i, o_id in pairs(all_cafcw_sight) do
-	if self.parts[o_id] then
-		if self.parts.wpn_fps_ass_heffy_all_sm_cover then
-			self.parts.wpn_fps_ass_heffy_all_sm_cover.override[o_id] = {a_obj = "a_o_cover"}
-		end
-		if self.parts.wpn_fps_ass_heffy_762_lr_akmsu then
-			self.parts.wpn_fps_ass_heffy_762_lr_akmsu.override[o_id] = {a_obj = "a_o_akmsu_acog", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 5, -2.8)}}}
-			self.parts.wpn_fps_ass_heffy_762_lr_m92.override[o_id]   = {a_obj = "a_o_akmsu_acog", stance_mod = {wpn_fps_ass_heffy_762 = {translation = Vector3(0, 5, -2.8)}}}
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_akmsu", "wpn_fps_upg_o_visionking" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_akmsu", "wpn_fps_upg_o_st10" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_akmsu", "wpn_fps_upg_o_gitsch" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_m92", "wpn_fps_upg_o_visionking" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_m92", "wpn_fps_upg_o_st10" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_m92", "wpn_fps_upg_o_gitsch" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_akmsu", "wpn_fps_shield_lr" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_m92", "wpn_fps_shield_lr" )
-		end
-		if self.parts.wpn_fps_ass_heffy_545_lr_aks74u then
-			self.parts.wpn_fps_ass_heffy_545_lr_aks74u.override[o_id] = {a_obj = "a_o_aks74u_acog", stance_mod = {wpn_fps_ass_heffy_545 = {translation = Vector3(0, 5, -2.8)}}}
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_545_lr_aks74u", "wpn_fps_upg_o_visionking" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_545_lr_aks74u", "wpn_fps_upg_o_st10" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_545_lr_aks74u", "wpn_fps_upg_o_gitsch" )
-			self:akpack_setup_forbid( "wpn_fps_ass_heffy_545_lr_aks74u", "wpn_fps_shield_lr" )
+for i, o_table in pairs(all_cafcw_sight) do
+	for _, o_id in pairs(o_table) do
+		if self.parts[o_id] then
+			if self.parts.wpn_fps_ass_heffy_all_sm_cover then
+				self.parts.wpn_fps_ass_heffy_all_sm_cover.override[o_id] = {a_obj = "a_o_cover"}
+			end
+			if self.wpn_fps_ass_heffy_762 then
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_akmsu", "wpn_fps_upg_o_visionking" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_akmsu", "wpn_fps_upg_o_st10" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_akmsu", "wpn_fps_upg_o_gitsch" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_m92", "wpn_fps_upg_o_visionking" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_m92", "wpn_fps_upg_o_st10" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_m92", "wpn_fps_upg_o_gitsch" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_akmsu", "wpn_fps_shield_lr" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_762_lr_m92", "wpn_fps_shield_lr" )
+			end
+			if self.wpn_fps_ass_heffy_545 then
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_545_lr_aks74u", "wpn_fps_upg_o_visionking" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_545_lr_aks74u", "wpn_fps_upg_o_st10" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_545_lr_aks74u", "wpn_fps_upg_o_gitsch" )
+				self:akpack_setup_forbid( "wpn_fps_ass_heffy_545_lr_aks74u", "wpn_fps_shield_lr" )
+			end
 		end
 	end
 end
 if self.parts.wpn_fps_ass_heffy_all_lfg_warrior then
-	for i, fl_id in pairs(all_cafcw_gadget) do
+	for i, fl_id in pairs(attach_tables.Gadgets) do
 		self.parts.wpn_fps_ass_heffy_all_lfg_warrior.override[fl_id] = {a_obj = "a_fl_war"}
 		self.parts.wpn_fps_ass_heffy_all_lfg_honor.override[fl_id]	 = {a_obj = "a_fl_honor"}
 		self.parts.wpn_fps_ass_heffy_all_lfg_zenit.override[fl_id]	 = {a_obj = "a_fl_zenit"}
