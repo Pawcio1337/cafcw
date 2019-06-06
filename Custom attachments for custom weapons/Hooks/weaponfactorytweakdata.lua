@@ -26,7 +26,8 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_s_m4_sl_c",
 	"wpn_fps_upg_m4_s_fab_glr16s",
 	"wpn_fps_upg_m4_s_fab_glr16s_alt",
-	"wpn_fps_upg_m4_s_hkslimline"
+	"wpn_fps_upg_m4_s_hkslimline",
+	"wpn_fps_upg_s_tti"
 }
 attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_smg_tromix",

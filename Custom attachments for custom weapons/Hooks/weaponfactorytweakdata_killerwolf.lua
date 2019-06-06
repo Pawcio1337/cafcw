@@ -730,6 +730,13 @@ end
 	---- Machine Guns ---
 	
 	---- Pistols / Revolvers ----
+
+    -- High Standard HDM / Akimbo High Standard HDM  --
+if self.wpn_fps_pis_hshdm and self.wpn_fps_pis_x_hshdm then
+    self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_hshdm", "wpn_fps_pis_deagle_fg_rail")
+    self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_hshdm", "wpn_fps_pis_deagle_fg_rail")
+--    self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_hshdm", "wpn_fps_pis_breech")
+end
 	
 	-- Colt M1911A1 / Akimbo Colt M1911A1 --
 	

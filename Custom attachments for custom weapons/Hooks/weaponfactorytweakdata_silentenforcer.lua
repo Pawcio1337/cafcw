@@ -314,4 +314,12 @@ if self.wpn_fps_shot_candy then
     self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_candy")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_candy", "_12ga")
 end
+
+--Galil Various Attachment
+if self.parts.wpn_fps_upg_galil_scope_mount then
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_galil_scope_mount", "a_o_galil")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_galil_scope_mount", "a_o_galil")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_galil_scope_mount", "a_o_galil")
+	self:cafcw_part_a_obj_pattern_override("RDS45", "wpn_fps_upg_galil_scope_mount", "a_o_galil")
+end
 end)
