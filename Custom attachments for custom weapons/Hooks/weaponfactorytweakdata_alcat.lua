@@ -1235,5 +1235,16 @@ end
 end
 
 
+--Galil Various
+if BeardLib.Utils:FindMod("Galil Various Attachment") then
+--Galatz scope able to install custom 45RDS gadget
+--self:cafcw_add_to_parts("part_adds_ovr", "wpn_fps_ass_galil_o_galatz", "wpn_fps_upg_o_delta_rm55", "wpn_fps_shot_r870_ris_special")
+--Russian Sight Pack support || removed because Galatz scope is possible
+--self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_galil", "wpn_fps_upg_o_pso1_rifle", "0,18,-4")
+--self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_r870_ris_special", "wpn_fps_upg_o_pso1_rifle")
+--self:cafcw_add_to_parts("forbids_add", "wpn_fps_upg_galil_scope_mount", "wpn_fps_upg_o_pso1_rifle")
+end
+
+
 
 end)

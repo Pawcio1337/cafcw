@@ -744,6 +744,15 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			else
 				log("[ERROR] CAFCW: Missing required part: " .. param1, param2)
 			end
+		elseif part_type == "part_adds_ovr" then --created for Galil Various Attachment, but scrapped. So no gun is using this function atm. Kept for archives purpose
+            if self.parts[param1] then
+                self.parts[param1].override = self.parts[param1].override or {} 
+                self.parts[param1].override[param2] = self.parts[param1].override[param2] or {}
+                self.parts[param1].override[param2].adds = self.parts[param2].adds or {}
+                table.insert(self.parts[param1].override[param2].adds, param3)
+            else
+                log("[ERROR] CAFCW: Missing required part: " .. param1, param2)
+            end
 		elseif part_type == "part_a_obj_adds_ovr" then
 			if self.parts[param1] and self.parts[param2] and self.parts[param4] then
 				if self.parts[param1].override then
