@@ -744,15 +744,6 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			else
 				log("[ERROR] CAFCW: Missing required part: " .. param1, param2)
 			end
-		elseif part_type == "part_adds_ovr" then --created for Galil Various Attachment, but scrapped. So no gun is using this function atm. Kept for archives purpose
-            if self.parts[param1] then
-                self.parts[param1].override = self.parts[param1].override or {} 
-                self.parts[param1].override[param2] = self.parts[param1].override[param2] or {}
-                self.parts[param1].override[param2].adds = self.parts[param2].adds or {}
-                table.insert(self.parts[param1].override[param2].adds, param3)
-            else
-                log("[ERROR] CAFCW: Missing required part: " .. param1, param2)
-            end
 		elseif part_type == "part_a_obj_adds_ovr" then
 			if self.parts[param1] and self.parts[param2] and self.parts[param4] then
 				if self.parts[param1].override then
@@ -1529,10 +1520,13 @@ if self.wpn_fps_ass_ash then
 end
 -- STK Ultimax 100 Mark 5
 if self.wpn_fps_lmg_ultimax then
-	self:cafcw_add_custom_ammo("wpn_fps_lmg_ultimax", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_ultimax", "wpn_fps_ass_scar")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_ultimax", "wpn_fps_ass_scar")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_ultimax", "wpn_fps_ass_scar")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_ultimax")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_ultimax")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_ultimax")
+	self:cafcw_add_custom_ammo("wpn_fps_lmg_ultimax", "_556x45mm")
 end
 -- Browning M1919A6
 if self.wpn_fps_lmg_m1919a6 then
@@ -2149,6 +2143,7 @@ if self.parts.wpn_fps_upg_o_acog_rmr and self.parts.wpn_fps_upg_o_acog_rmr_switc
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_smg_vz58comp", "wpn_fps_ass_74")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_lmg_mg3", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_snp_mas49", "wpn_fps_snp_siltstone")
+	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_lmg_ultimax", "wpn_fps_ass_scar")
 --
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_sho_usas12", "wpn_fps_sho_aa12")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_snp_fyjs", "wpn_fps_snp_msr")
@@ -2359,6 +2354,7 @@ if self.parts.wpn_fps_upg_o_su230_docter and self.parts.wpn_fps_upg_o_su230_doct
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_lmg_mg4", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_snp_mas49", "wpn_fps_snp_siltstone")
+	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_lmg_ultimax", "wpn_fps_ass_scar")
 --
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_sho_usas12", "wpn_fps_sho_aa12")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_snp_fyjs", "wpn_fps_snp_msr")
