@@ -1677,6 +1677,13 @@ if self.wpn_fps_snp_mas49 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_mas49")
 	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_snp_mas49_scope_apx")
 	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_mas49_irons")
+	self:cafcw_forbids_attachment_type("Custom_Sniper", "wpn_fps_upg_mas49_sight_rail_alt")
+	self:cafcw_forbids_attachment_type("Shortdot", "wpn_fps_upg_mas49_sight_rail_alt")
+	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_mas49_sight_rail_alt")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_mas49_sight_rail_alt", "a_o_alt")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_mas49_sight_rail_alt", "a_o_alt")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_mas49_sight_rail_alt", "a_o_alt")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_mas49_sight_rail_alt", "a_o_alt")
 end
 -- Secondary
 -- MPX

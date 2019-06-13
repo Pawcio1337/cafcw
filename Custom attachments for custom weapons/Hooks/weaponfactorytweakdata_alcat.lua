@@ -1049,6 +1049,7 @@ self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_max9", "wpn_fps_p
 	for i, sight_id in ipairs(attach_tables.Custom_Pistol) do
 		self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_max9", sight_id, "lower_reciever")
 	end
+self:cafcw_category_forbid("wpn_fps_pis_max9", "gadget", "wpn_fps_pis_max9_b_nosup")
 end
 
 

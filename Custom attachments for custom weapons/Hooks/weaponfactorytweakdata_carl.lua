@@ -143,4 +143,13 @@ if self.wpn_fps_ass_lazy then
 	-- originally i did ar15 stocks here and then i remembered that it was going to fucking crash people lololol
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_lazy")
 end
+
+-- Kel-Tec RFB
+if self.wpn_fps_snp_leet then
+	-- i *was* going to name it wpn_fps_snp_gamegihr but that would have been too obvious
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_leet", "wpn_fps_ass_komodo")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_leet", "wpn_fps_ass_komodo")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_leet", "wpn_fps_ass_komodo")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_leet")
+end
 end)

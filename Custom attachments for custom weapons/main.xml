@@ -1,5 +1,5 @@
 <table name="Custom attachments for custom weapons" image="guis/mod_icons/cafcw" color="Color(0.01,0.62,0.98)">
-	<AssetUpdates id="19169" version="1.499" provider="modworkshop"/>
+	<AssetUpdates id="19169" version="1.502" provider="modworkshop"/>
 	<AddFiles directory="Assets">
 		<texture path="guis/mod_icons/cafcw"/>
 	</AddFiles>
