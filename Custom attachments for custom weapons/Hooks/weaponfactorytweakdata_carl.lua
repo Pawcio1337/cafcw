@@ -152,4 +152,20 @@ if self.wpn_fps_snp_leet then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_leet", "wpn_fps_ass_komodo")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_leet")
 end
+
+-- Noveske N4 Diplomat
+if self.wpn_fps_ass_rabbit then
+	-- fun fact: the id for this weapon is rabbit because i mainly fell in love with the N4 due to breah & clear, which was developed by mightyrabbit
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_rabbit", "wpn_fps_ass_m16", "wpn_fps_ass_rabbit_o_down")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_rabbit", "wpn_fps_ass_m16", "wpn_fps_ass_rabbit_o_down")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_rabbit", "wpn_fps_ass_m16", "wpn_fps_ass_rabbit_o_down")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_rabbit")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_rabbit")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_rabbit")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_rabbit")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_rabbit")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_rabbit_fg_ext", "a_fl_afghan")
+	self:cafcw_part_a_obj_pattern_override("Suppressors", "wpn_fps_upg_rabbit_fg_ext", "a_ns_afghan")
+	self:cafcw_part_a_obj_pattern_override("Barrel_Extensions", "wpn_fps_upg_rabbit_fg_ext", "a_ns_afghan")
+end
 end)

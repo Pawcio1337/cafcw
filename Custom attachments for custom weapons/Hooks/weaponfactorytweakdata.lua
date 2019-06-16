@@ -52,12 +52,15 @@ attach_tables.Gadgets = {
 	"wpn_fps_upg_fl_anpeq2",
 	"wpn_fps_upg_fl_dbal_d2",
 	"wpn_fps_upg_fl_m600p",
-	"wpn_fps_upg_fl_utg"
+	"wpn_fps_upg_fl_utg",
+	"wpn_fps_upg_fl_unimax",
+	"wpn_fps_upg_fl_unimax_inforce"
 }
 attach_tables.Gadgets_Pistol = {
-	"wpn_fps_upg_fl_unimax",
-	"wpn_fps_upg_fl_utg_pis",
-	"wpn_fps_upg_fl_micro90"
+	"wpn_fps_upg_fl_micro90",
+	"wpn_fps_upg_fl_pis_inforce_apl",
+	"wpn_fps_upg_fl_pis_unimax",
+	"wpn_fps_upg_fl_pis_utg"
 }
 attach_tables.Suppressors = {
 	"wpn_fps_ass_ns_g_sup3",
