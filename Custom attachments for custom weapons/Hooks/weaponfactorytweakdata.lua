@@ -1686,7 +1686,6 @@ if self.wpn_fps_snp_mas49 then
 	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_mas49_sight_rail_alt", "a_o_alt")
 	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_mas49_sight_rail_alt", "a_o_alt")
 	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_mas49_sight_rail_alt", "a_o_alt")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_mas49_sight_rail_alt", "a_o_alt")
 end
 -- Secondary
 -- MPX
@@ -1705,14 +1704,18 @@ if self.wpn_fps_smg_mpx then
 end
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_ppsh", "wpn_fps_smg_m45", "wpn_fps_smg_ppsh_rail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_ppsh", "wpn_fps_smg_m45", "wpn_fps_smg_ppsh_rail")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_ppsh", "wpn_fps_smg_m45", "wpn_fps_smg_ppsh_rail")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_ppsh", "wpn_fps_smg_m45", "wpn_fps_smg_ppsh_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_ppsh", "wpn_fps_smg_m45", "wpn_fps_smg_ppsh_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_ppsh", "wpn_fps_smg_m45", "wpn_fps_smg_ppsh_sight_rail")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_ppsh")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_ppsh")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_ppsh")
 	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_smg_ppsh_barrel")
 	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_smg_ppsh_barrel")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_ppsh_mag_drum", "a_o_drum")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_ppsh_mag_drum", "a_o_drum")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_ppsh_mag_drum", "a_o_drum")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_ppsh_mag_drum", "a_fl_drum")
 end
 -- CBJ-MS
 if self.wpn_fps_smg_cbjms then
