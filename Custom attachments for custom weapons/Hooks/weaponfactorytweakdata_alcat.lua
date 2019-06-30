@@ -1053,6 +1053,17 @@ self:cafcw_category_forbid("wpn_fps_pis_max9", "gadget", "wpn_fps_pis_max9_b_nos
 end
 
 
+--UTS-15
+if self.wpn_fps_shot_sideload then
+self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_sideload")
+self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_sideload")
+self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_sideload", "wpn_fps_sho_ksg", "wpn_fps_shot_sideload_irons_down")
+self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_sideload", "wpn_fps_sho_ksg", "wpn_fps_shot_sideload_irons_down")
+self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_sideload", "wpn_fps_sho_ksg", "wpn_fps_shot_sideload_irons_down")
+self:cafcw_add_custom_ammo("wpn_fps_shot_sideload", "_12ga")
+end
+
+
 
 --[[===============================================================================================================================================================================================================================]]--
 --[[===============================================================================================================================================================================================================================]]--
@@ -1065,7 +1076,6 @@ end
 custom_sight_group_table = {
 	"ACOG",
 	"Custom",
-	"RDS45",
 	"Specter"	
 }
 
@@ -1132,8 +1142,8 @@ if self.parts.wpn_fps_ass_vhs_body_future then
 end
 
 -- Mk20 SSR
+--[[ fixed on base mod's code itself
 if self.parts.wpn_fps_ass_scar_body_ssr then
-
 if type(attach_tables[sight_base]) == "table" then
 	for i, sight_id in ipairs(attach_tables[sight_base]) do
 		if self.parts[sight_id] then
@@ -1150,9 +1160,8 @@ if type(attach_tables[sight_base]) == "table" then
 		end
 	end
 end
-
 end
-
+]]--
 
 -- M240 Various Attch
 if self.parts.wpn_fps_lmg_par_fg_heat then
@@ -1244,6 +1253,16 @@ if BeardLib.Utils:FindMod("Galil Various Attachment") then
 --self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_galil", "wpn_fps_upg_o_pso1_rifle", "0,18,-4")
 --self:cafcw_add_to_parts("forbids_add", "wpn_fps_shot_r870_ris_special", "wpn_fps_upg_o_pso1_rifle")
 --self:cafcw_add_to_parts("forbids_add", "wpn_fps_upg_galil_scope_mount", "wpn_fps_upg_o_pso1_rifle")
+end
+
+
+--M14 Dokka
+if BeardLib.Utils:FindMod("Dokkaebi M14 modpack") then
+
+self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_ass_m14_body_goblin", "a_o_dokka")
+self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_ass_m14_body_goblin", "a_o_dokka")
+self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_ass_m14_body_goblin", "a_o_dokka")
+
 end
 
 

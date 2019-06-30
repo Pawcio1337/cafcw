@@ -296,4 +296,12 @@ if self.wpn_fps_smg_fang45 then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_fang45")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_fang45")
 end
+-- AS Val MOD.3 
+if self.wpn_fps_ass_nightgoddess then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_nightgoddess", "wpn_fps_smg_akmsu", "wpn_fps_ass_nightgoddess_sights_folded")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_nightgoddess", "wpn_fps_smg_akmsu", "wpn_fps_ass_nightgoddess_sights_folded")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_nightgoddess", "wpn_fps_smg_akmsu", "wpn_fps_ass_nightgoddess_sights_folded")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_nightgoddess", "_9x39mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_nightgoddess")
+end
 end)
