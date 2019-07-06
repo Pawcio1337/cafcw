@@ -140,7 +140,8 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_pka",
 	"wpn_fps_upg_o_anpas13d",
 	"wpn_fps_upg_o_su230_docter",
-	"wpn_fps_upg_o_jgbg_m7"
+	"wpn_fps_upg_o_jgbg_m7",
+	"wpn_fps_upg_o_pn23"
 }
 attach_tables.Custom_AK = {
 	"wpn_fps_upg_o_1p29",
@@ -900,6 +901,9 @@ if self.wpn_fps_ass_g36k then
 	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_g36k_sightrail_kac", "a_o_kac")
 	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_g36k_sightrail_kac", "a_o_kac")
 	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_g36k_sightrail_kac", "a_o_kac")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_g36k_fl_leftrail", "a_fl_leftrail")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_g36k_fl_toprail", "a_fl_toprail")
+	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_g36k_export_sight")
 	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_g36k_sightrail_kac")
 	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_upg_g36k_sightrail_kac")
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_g36k", nil, "foregrip")
