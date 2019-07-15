@@ -17,6 +17,7 @@ if self.wpn_fps_ass_bajur then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_bajur")
 
 end
+
 --Maverick Assault Rifle 
 if self.wpn_fps_ass_mav then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mav", "wpn_fps_ass_fal")
@@ -28,8 +29,11 @@ if self.wpn_fps_ass_mav then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mav")
 
 end
+
 --HK417 Standalone
 if self.wpn_fps_ass_recce then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_recce", "_762x51mm")
+
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_recce", "wpn_fps_ass_contraband")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_recce", "wpn_fps_ass_contraband")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_recce", "wpn_fps_ass_contraband")
@@ -40,11 +44,14 @@ if self.wpn_fps_ass_recce then
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_recce")
 
 end
+
 --HK416C Standalone
 if self.wpn_fps_ass_drongo then
 	--i would only find out AFTER making this on request from mira and dersushy that thirty other people had already done this
 	--but they were all conversion kits instead of actual standalone weapons
 	--so i guess this is still kind of original? idk
+	self:cafcw_add_custom_ammo("wpn_fps_ass_drongo", "_556x45mm")
+	
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_drongo", "wpn_fps_ass_tecci")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_drongo", "wpn_fps_ass_tecci")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_drongo", "wpn_fps_ass_tecci")
@@ -56,6 +63,7 @@ if self.wpn_fps_ass_drongo then
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_drongo")
 end
+
 --"""""G28"""""
 if self.wpn_fps_snp_kozak then
 	--fun fact:
@@ -94,6 +102,7 @@ if self.wpn_fps_smg_nya then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_nya")
 end
 -- Oh look two cats .. wait a minute.. NYAAAAAAAA² AAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHH
+	-- wow killerwolf you had a lot of fun with this didnt you
 if self.wpn_fps_smg_x_nya then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_x_nya", "_9x19mm")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_nya")
@@ -104,6 +113,8 @@ if self.wpn_fps_ass_howl then
 	-- fun fact: this model you're looking at is actually the LOD0 version of the zastava m21a.
 	-- i was going to use the fully-modeled, super-detailed, high-poly model, but it had a sextuple-digit polygon count
 	-- tl;dr it was going to make my piddly 2mb vram graphics card catch on fire so i decided not to use it
+	self:cafcw_add_custom_ammo("wpn_fps_ass_howl", "_556x45mm")
+	
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_howl", "wpn_fps_ass_flint")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_howl", "wpn_fps_ass_flint")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_howl", "wpn_fps_ass_flint")
@@ -121,6 +132,7 @@ if self.wpn_fps_ass_mikon then
 	-- fun fact: "mikon" was actually the working name and while i was going to change it i got lazy
 	-- and ended up having to keep it the way it was so i could use things that people made while helping me
 	-- lol oops
+	self:cafcw_add_custom_ammo("wpn_fps_ass_mikon", "_556x45mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mikon", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mikon", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mikon", "wpn_fps_ass_m4")
@@ -134,6 +146,7 @@ end
 -- ARX-160 A2
 if self.wpn_fps_ass_lazy then
 	-- you absolutely would not believe how fucking painful making this gun was.
+	self:cafcw_add_custom_ammo("wpn_fps_ass_lazy", "_556x45mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_lazy", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_lazy", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_lazy", "wpn_fps_ass_m4")
@@ -156,6 +169,7 @@ end
 -- Noveske N4 Diplomat
 if self.wpn_fps_ass_rabbit then
 	-- fun fact: the id for this weapon is rabbit because i mainly fell in love with the N4 due to breah & clear, which was developed by mightyrabbit
+	self:cafcw_add_custom_ammo("wpn_fps_ass_rabbit", "_556x45mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_rabbit", "wpn_fps_ass_m16", "wpn_fps_ass_rabbit_o_down")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_rabbit", "wpn_fps_ass_m16", "wpn_fps_ass_rabbit_o_down")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_rabbit", "wpn_fps_ass_m16", "wpn_fps_ass_rabbit_o_down")
@@ -168,4 +182,19 @@ if self.wpn_fps_ass_rabbit then
 	self:cafcw_part_a_obj_pattern_override("Suppressors", "wpn_fps_upg_rabbit_fg_ext", "a_ns_afghan")
 	self:cafcw_part_a_obj_pattern_override("Barrel_Extensions", "wpn_fps_upg_rabbit_fg_ext", "a_ns_afghan")
 end
+
+-- ST AR-15
+if self.wpn_fps_ass_flat then
+	-- STAR IS FLAT BOTTOM TEXT
+	self:cafcw_add_custom_ammo("wpn_fps_ass_flat", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_flat")
+end
+
 end)
