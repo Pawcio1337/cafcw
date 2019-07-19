@@ -134,14 +134,10 @@ if self.wpn_fps_ass_hugsforleon then
 end
 -- DT MDR-C
 if self.wpn_fps_ass_shieldgirl then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_shieldgirl")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_shieldgirl")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_komodo")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_komodo")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_shieldgirl", "wpn_fps_ass_komodo")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_shieldgirl", "_556x45mm")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_eotech552", "0,0,-3.49")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_susat", "0,-5,-5.58")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_compm2", "0,0,-3.175")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_rmr_riser", "0,-3,-2.445")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_shieldgirl", "wpn_fps_upg_o_okp7", "0.6,0,-2.895")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_shieldgirl")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_shieldgirl")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_shieldgirl")

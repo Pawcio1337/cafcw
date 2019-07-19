@@ -8,7 +8,6 @@ attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m4_m_pmag20",
 	"wpn_fps_upg_m4_m_pmag40"
 }
--- wpn_fps_upg_m4_s_prs
 attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_caastock",
 	"wpn_fps_upg_m4_s_caastock_black",
@@ -212,6 +211,9 @@ attach_tables.Custom_Obrez = {"wpn_fps_upg_o_rmr_riser","wpn_fps_upg_o_eotech552
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
 attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_unimax","wpn_fps_upg_fl_utg_pis"}
 attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock","wpn_fps_upg_ns_boomer"}
+attach_tables.AR15_Stocks_ButTheresNoHKE1Stock = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c",	"wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_m4_s_hkslimline","wpn_fps_upg_s_tti"}
+-- yeah and please don't leave any comment in this script
+attach_tables.AR15_Stocks_NoHK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_s_tti"}
 -- Attachments tables end
 function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, add_id)
 	if type(attach_tables[attach_type]) == "table" then
@@ -383,6 +385,7 @@ function WeaponFactoryTweakData:cafcw_sec_sight_stance(switch_id, wpn_id, stance
 	end
 end
 -- Contributed code
+-- Comments are allowed in contributed code section.
 function WeaponFactoryTweakData:cafcw_add_custom_ammo(wpn_or_part_id, ammo_type, forbids_add)
 local ammo_table = {}
 ammo_table._109x33mmR = {
@@ -1231,12 +1234,18 @@ if self.wpn_fps_ass_hk416 then
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_hk416", "wpn_fps_ass_hk416")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_hk416", "wpn_fps_ass_m4")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_hk416")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_hk416")
+	self:cafcw_add_attachment_type("AR15_Stocks_NoHK", "wpn_fps_ass_hk416")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_hk416")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_hk416")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_hk416")
+	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_hk416_fl_toprail")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_hk416_fl_leftrail", "a_fl_left")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_hk416_fl_toprail", "a_fl_top")
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_hk416_handguard_c", "a_of_short")
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_hk416_handguard_elite", "a_of_short")
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_hk416_handguard_long", "a_of_long")
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_hk416_handguard_smrlong", "a_of_long")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_hk416", nil, "foregrip")
 end
 -- SVD
 if self.wpn_fps_snp_svd then
@@ -2297,7 +2306,7 @@ if self.parts.wpn_fps_upg_o_ta648rmr and self.parts.wpn_fps_upg_o_ta648rmr_switc
 	self:cafcw_sec_sight_stance("ta648", "wpn_fps_snp_classic", "wpn_fps_snp_msr")
 	self:cafcw_sec_sight_stance("ta648", "wpn_fps_snp_kozak", "wpn_fps_snp_tti")
 	self:cafcw_sec_sight_stance("ta648", "wpn_fps_snp_bigbust", "wpn_fps_snp_desertfox")
-	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_ass_rsass", "wpn_fps_snp_tti")
+	self:cafcw_sec_sight_stance("ta648", "wpn_fps_ass_rsass", "wpn_fps_snp_tti")
 end
 -- AK Rail Cover
 if self.parts.wpn_fps_upg_o_ak_coverrail then
