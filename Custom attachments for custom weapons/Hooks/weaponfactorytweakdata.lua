@@ -18,6 +18,7 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_crane_col",
 	"wpn_fps_upg_m4_s_mk46_col",
 	"wpn_fps_upg_m4_s_ubr_col",
+	"wpn_fps_upg_s_m4_ubr",	
 	"wpn_fps_upg_s_devgru",
 	"wpn_fps_upg_s_m4_pts",
 	"wpn_fps_upg_s_m4_pts_c",
@@ -85,7 +86,8 @@ attach_tables.Suppressors_Pistol = {
 attach_tables.ACOG = {
 	"wpn_fps_upg_o_acog_rmr",
 	"wpn_fps_upg_o_gitsch",
-	"wpn_fps_upg_o_aog"
+	"wpn_fps_upg_o_aog",
+	"wpn_fps_upg_o_acogbf3"
 }
 attach_tables.Custom = {
 	"wpn_fps_upg_o_rmr_riser",
