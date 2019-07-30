@@ -360,6 +360,16 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -14.5, 0)
 	})
+	self:SetupAttachmentPoint("xm8", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 9.5, 0)
+	})
+	self:SetupAttachmentPoint("xm8", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -18, 0)
+	})
 -- Weapons:
 -- Chiappa Rhino 60DS
 	self:SetupAttachmentPoint("rhino", {
