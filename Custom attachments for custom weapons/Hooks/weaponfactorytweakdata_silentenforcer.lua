@@ -322,4 +322,19 @@ if self.parts.wpn_fps_upg_galil_scope_mount then
 	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_galil_scope_mount", "a_o_galil")
 	self:cafcw_part_a_obj_pattern_override("RDS45", "wpn_fps_upg_galil_scope_mount", "a_o_galil")
 end
+--MTs-255
+if self.wpn_fps_shot_mts255 then
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_shot_mts255_b_short", "a_fl_short")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_shot_mts255_b_obrez", "a_fl_obrez")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_shot_mts255_ghost_rail", "a_fl_ghost")
+    self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_mts255")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_mts255")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_mts255", "_12ga_mag")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_mts255", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_mts255", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_mts255", "wpn_fps_shot_serbu")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_x_mts255")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_x_mts255")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_x_mts255", "_12ga_mag")
+end
 end)
