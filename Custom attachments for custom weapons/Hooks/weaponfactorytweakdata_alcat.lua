@@ -991,7 +991,7 @@ self:cafcw_add_custom_ammo("wpn_fps_smg_glau", "_9x19mm")
 self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_glau", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
 self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_glau", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
 self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_glau", "wpn_fps_smg_uzi", "wpn_fps_smg_glau_o_adjust")
-self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_glau", "wpn_fps_smg_uzi")
+--self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_glau", "wpn_fps_smg_uzi")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_glau")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_glau")
 end
@@ -1257,11 +1257,33 @@ end
 
 
 --M14 Dokka
-if BeardLib.Utils:FindMod("Dokkaebi M14 modpack") then
+if self.parts.wpn_fps_ass_m14_body_goblin then
 
 self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_ass_m14_body_goblin", "a_o_dokka")
 self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_ass_m14_body_goblin", "a_o_dokka")
 self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_ass_m14_body_goblin", "a_o_dokka")
+
+end
+
+
+--Contractor308 Various
+if BeardLib.Utils:FindMod("Contractor.308 Various Attachment") then
+
+self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+self:cafcw_part_a_obj_pattern_override("Custom_Sniper", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+self:cafcw_part_a_obj_pattern_override("Shortdot", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+self:cafcw_part_a_obj_pattern_override("RDS45", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+
+self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_snp_tti_fg_composite", "a_of_composite")
+self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+
+if BeardLib.Utils:FindMod("Vanilla Styled Weapon Mods") then
+	self.parts.wpn_fps_snp_tti_b_long.override = self.parts.wpn_fps_snp_tti_b_long.override or {}
+	self.parts.wpn_fps_snp_tti_b_long.override.wpn_fps_snp_tti_ns_cylinder = { a_obj = "a_b_long" }
+end
 
 end
 

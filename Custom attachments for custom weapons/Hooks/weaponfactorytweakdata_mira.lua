@@ -193,8 +193,6 @@ if self.wpn_fps_snp_wargoddess then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_wargoddess", "wpn_fps_ass_m14")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_wargoddess", "wpn_fps_snp_wargoddess")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_snp_wargoddess")
 end
 -- TAR-21
 if self.wpn_fps_ass_tar21 then

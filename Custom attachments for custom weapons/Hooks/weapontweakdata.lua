@@ -370,6 +370,22 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -18, 0)
 	})
+-- Revolver Gadgets
+	self:SetupAttachmentPoint("sw327r8",{
+		name = "a_g_sml",
+		base_a_obj = "a_g",
+		position = Vector3(-0.15, 3.2, -1)
+	})
+	self:SetupAttachmentPoint("sw642",{
+		name = "a_g_sml",
+		base_a_obj = "a_g",
+		position = Vector3(-0.3, 3.1, -0.85)
+	})
+	self:SetupAttachmentPoint("x_sw642",{
+		name = "a_g_sml",
+		base_a_obj = "a_g",
+		position = Vector3(-0.3, 3.1, -0.85)
+	})
 -- Weapons:
 -- Chiappa Rhino 60DS
 	self:SetupAttachmentPoint("rhino", {

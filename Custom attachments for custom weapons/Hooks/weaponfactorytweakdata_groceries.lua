@@ -129,6 +129,8 @@ if self.wpn_fps_shot_novas then
 	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_shot_novas", "wpn_fps_shot_m37", "0,4,0.75", "wpn_fps_shot_novas_o_adapter")
 	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_shot_novas", "wpn_fps_shot_m37", "0,4,0.75", "wpn_fps_shot_novas_o_adapter")
 	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_shot_novas", "wpn_fps_shot_m37", "0,14,4.80", "wpn_fps_shot_novas_o_adapter")
+	-- self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_novas")
+	-- self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_novas")	
 end
 -- Magpul PDR
 if self.wpn_fps_smg_pdr then
@@ -296,19 +298,17 @@ if self.wpn_fps_pis_x_qsz92 then
 end
 -- S&W 659 
 if self.wpn_fps_pis_sw659 then
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_sw659", "wpn_fps_ass_ns_g_sup1")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_sw659", "wpn_fps_ass_ns_g_sup2")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_sw659", "wpn_fps_ass_ns_g_sup6")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_sw659", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_sw659_fl_adapter")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_sw659", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_sw659_fl_adapter")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_sw659", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_sw659_fl_adapter")
+	-- self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_sw659", "wpn_fps_pis_usp")
+	-- self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_sw659", nil, "slide")
+
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw659")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sw659")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_sw659", "wpn_fps_pis_sw659_fl_adapter")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_sw659", "_9x19mm")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_sw659", "wpn_fps_ass_ns_g_sup1")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_sw659", "wpn_fps_ass_ns_g_sup2")
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_x_sw659", "wpn_fps_ass_ns_g_sup6")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_sw659", "wpn_fps_upg_fl_unimax", "wpn_fps_pis_sw659_fl_adapter")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_sw659", "wpn_fps_upg_fl_utg_pis", "wpn_fps_pis_sw659_fl_adapter")
-	self:cafcw_add_to_parts("gadget_rail", "wpn_fps_pis_x_sw659", "wpn_fps_upg_fl_micro90", "wpn_fps_pis_sw659_fl_adapter")
+
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw659")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_sw659")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_sw659", "wpn_fps_pis_sw659_fl_adapter")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_x_sw659", "_9x19mm")
 end
 -- M2019 Blaster 

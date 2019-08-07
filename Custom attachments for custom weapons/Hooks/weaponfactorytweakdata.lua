@@ -375,14 +375,10 @@ function WeaponFactoryTweakData:cafcw_sec_sight_stance(switch_id, wpn_id, stance
 		elseif string.match(switch_id, "su230docter") then
 			sec_sight_id = "wpn_fps_upg_o_su230_docter_switch"
 		end
-		if string.match(switch_id, "vector") then
-			self.parts[sec_sight_id].stance_mod[wpn_id] = {translation = stance:ToVector3()}
+		if self.parts[sec_sight_id].stance_mod[stance] then
+			self.parts[sec_sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sec_sight_id].stance_mod[stance])
 		else
-			if self.parts[sec_sight_id].stance_mod[stance] then
-				self.parts[sec_sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sec_sight_id].stance_mod[stance])
-			else
-				log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, switch_id, stance)
-			end
+			log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, switch_id, stance)
 		end
 	end
 end
@@ -1729,6 +1725,12 @@ if self.wpn_fps_snp_moss464spx then
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_snp_moss464spx")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_moss464spx")
 end
+-- Akimbo S&W Model 642
+if self.wpn_fps_pis_x_sw642 then
+	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_x_sw642", "wpn_fps_upg_m29_sidemountlaser")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw642")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw642", "a_ns", "barrel")
+end
 -- Secondary
 -- MPX
 if self.wpn_fps_smg_mpx then
@@ -2026,11 +2028,14 @@ if self.wpn_fps_shot_wmtx then
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_wmtx")
 end
 -- S&W Model 327 R8
--- TODO stance_mod
 if self.wpn_fps_pis_sw327r8 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_sw327r8", "wpn_fps_pis_sw327r8")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_sw327r8", "wpn_fps_pis_sw327r8")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_sw327r8")
+	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw327r8", "wpn_fps_upg_m29_sidemountlaser")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw327r8")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_sw327r8", "wpn_fps_pis_sw327r8_gadget_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw327r8", "a_ns", "barrel")
 end
 -- TOZ-66
 if self.wpn_fps_shot_toz66 then
@@ -2124,6 +2129,12 @@ if self.wpn_fps_pis_g19 then
 	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_g19", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_g19", "a_ns", "barrel")
 end
+-- S&W Model 642
+if self.wpn_fps_pis_sw642 then
+	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw642", "wpn_fps_upg_m29_sidemountlaser")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw642")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw642", "a_ns", "barrel")
+end
 -- Attachments
 -- Trijicon ACOG TA31F-RMR Scope
 if self.parts.wpn_fps_upg_o_acog_rmr and self.parts.wpn_fps_upg_o_acog_rmr_switch then
@@ -2184,7 +2195,7 @@ if self.parts.wpn_fps_upg_o_acog_rmr and self.parts.wpn_fps_upg_o_acog_rmr_switc
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_shot_ks23", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_ass_ar18", "wpn_fps_ass_ak5")
-	self:cafcw_sec_sight_stance("ta31f_vector", "wpn_fps_pis_sw327r8", "-0.028,13,-3.55")
+	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_shot_toz34", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_shot_toz66", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("ta31f", "wpn_fps_snp_merkel", "wpn_fps_ass_amcar")
@@ -2406,7 +2417,7 @@ if self.parts.wpn_fps_upg_o_su230_docter and self.parts.wpn_fps_upg_o_su230_doct
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_shot_ks23", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_ass_ar18", "wpn_fps_ass_ak5")
---	self:cafcw_sec_sight_stance("su230docter_vector", "wpn_fps_pis_sw327r8", "-0.028,13,-3.55")
+	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_shot_toz34", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_shot_toz66", "wpn_fps_ass_amcar")
 	self:cafcw_sec_sight_stance("su230docter", "wpn_fps_snp_merkel", "wpn_fps_ass_amcar")
