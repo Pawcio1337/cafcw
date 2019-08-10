@@ -102,14 +102,14 @@ end
 if self.wpn_fps_ass_bar then
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_bar")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_bar")
-self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_bar", "wpn_fps_upg_ns_ass_smg_tromix", "a_ns_bar")
+self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions", "wpn_fps_ass_bar", "a_ns_bar")
 end
 
 
 --PKP Pecheneg LMG
 if self.wpn_fps_lmg_pecheneg then
-self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_pecheneg")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_pecheneg", "_762x54mmr")
+self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_pecheneg")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_pecheneg")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_pecheneg")
 end
@@ -183,8 +183,8 @@ end
 
 --Negev LMG
 if self.wpn_fps_lmg_negev then
-self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_negev")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_negev", "_556x45mm")
+self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_negev")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_negev")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_negev")
 end
@@ -389,8 +389,8 @@ end
 
 --Korean Arms - K3
 if self.wpn_fps_lmg_k3 then
-self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_k3")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_k3", "_556x45mm")
+self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_k3")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_k3")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_k3")
 end
@@ -516,8 +516,8 @@ end
 
 --Volmer LMG
 if self.wpn_fps_lmg_volmer then
-self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_volmer")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_volmer", "_762x51mm")
+self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_volmer")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_volmer")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_volmer")
 end
@@ -601,9 +601,8 @@ end
 
 --MG5 LMG
 if self.wpn_fps_lmg_mg5 then
-self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_mg5")
-self:cafcw_add_custom_ammo("wpn_fps_lmg_mg5", "_556x45mm")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_mg5", "_762x51mm")
+self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_mg5")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_mg5")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_mg5")
 end
@@ -1034,11 +1033,13 @@ end
 
 --Sumitomo 62 LMG
 if self.wpn_fps_lmg_sumitomo then
-self:cafcw_add_custom_ammo("wpn_fps_lmg_sumitomo", "_556x45mm")
 self:cafcw_add_custom_ammo("wpn_fps_lmg_sumitomo", "_762x51mm")
-self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_sumitomo")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_sumitomo")
+
+self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_sumitomo")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_sumitomo")
+self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_lmg_sumitomo_b_long")
+self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_lmg_sumitomo_b_long")
 end
 
 

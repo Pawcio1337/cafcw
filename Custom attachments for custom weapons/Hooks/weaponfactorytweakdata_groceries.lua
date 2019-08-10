@@ -161,6 +161,7 @@ if self.wpn_fps_smg_evo then
 end
 -- CZ Scorpion Evo A1
 if self.wpn_fps_smg_czevo then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_czevo", "_9x19mm")
 	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_smg_czevo", "wpn_fps_smg_shepheard", "-0.01,0,-1.93")
 	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_smg_czevo", "wpn_fps_smg_shepheard", "-0.01,0,-1.93")
 	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_smg_czevo", "wpn_fps_smg_shepheard", "-0.01,0,-1.6")
@@ -173,12 +174,14 @@ if self.wpn_fps_smg_czevo then
 	self:cafcw_add_to_parts("forbids", "wpn_fps_smg_czevo_barrel_silenced", "wpn_fps_ass_ns_g_sup5")
 end
 if self.wpn_fps_smg_x_czevo then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_x_czevo", "_9x19mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_x_czevo")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_czevo")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_x_czevo")
 end
 -- MK18 Specialist
 if self.wpn_fps_ass_mk18s then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_mk18s", "_556x45mm")
 	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_ass_mk18s", "wpn_fps_smg_shepheard", "-0.01,0,-1.3")
 	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_ass_mk18s", "wpn_fps_smg_shepheard", "-0.01,0,-1.3")
 	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_mk18s", "wpn_fps_smg_shepheard", "-0.01,0,-1.63")
@@ -335,5 +338,27 @@ if self.wpn_fps_pis_hpb then
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_hpb", "wpn_fps_upg_fl_utg_pis")
 	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_hpb", "wpn_fps_upg_fl_micro90")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_hpb", "_9x19mm")
+end
+-- ACR Remington
+if self.wpn_fps_ass_acwr2 then
+    self:cafcw_add_custom_ammo("wpn_fps_ass_acwr2", "_556x45mm")
+    self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_ass_acwr2", "wpn_fps_ass_m4", "0,2,-1.3")
+    self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_ass_acwr2", "wpn_fps_ass_m4", "0,2,-1.3")
+    self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_acwr2", "wpn_fps_ass_m4", "0,2,-0.72")
+--    self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_acwr2", "wpn_fps_ass_m4", "0,1,0.2")
+    self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_acwr2")
+    self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_acwr2")
+    self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_acwr2")
+end
+-- ACR Remington M203
+if self.wpn_fps_ass_acwr then
+    self:cafcw_add_custom_ammo("wpn_fps_ass_acwr", "_556x45mm")
+    self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_acwr", "wpn_fps_ass_contraband")
+    self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_acwr", "wpn_fps_ass_contraband")
+    self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_acwr", "wpn_fps_ass_contraband")
+    self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_acwr", "wpn_fps_ass_contraband")
+    self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_acwr")
+    self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_acwr")
+    self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_acwr")
 end
 end)

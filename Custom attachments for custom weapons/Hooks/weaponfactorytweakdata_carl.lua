@@ -81,6 +81,8 @@ if self.wpn_fps_snp_kozak then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_snp_kozak")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_kozak")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_snp_kozak")
+	
+	self:cafcw_add_custom_ammo("wpn_fps_snp_kozak", "_762x51mm")
 end
 
 --Janktastic ARES Shrike AWS
@@ -91,6 +93,8 @@ if self.wpn_fps_lmg_beef then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_beef")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_beef")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_beef")
+	
+	self:cafcw_add_custom_ammo("wpn_fps_lmg_beef", "_556x45mm")
 end
 
 -- Parker-Hale PDW
@@ -103,6 +107,7 @@ if self.wpn_fps_smg_nya then
 end
 -- Oh look two cats .. wait a minute.. NYAAAAAAAA² AAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHH
 	-- wow killerwolf you had a lot of fun with this didnt you
+	-- >:3
 if self.wpn_fps_smg_x_nya then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_x_nya", "_9x19mm")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_nya")
@@ -164,6 +169,7 @@ if self.wpn_fps_snp_leet then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_leet", "wpn_fps_ass_komodo")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_leet", "wpn_fps_ass_komodo")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_leet")
+	self:cafcw_add_custom_ammo("wpn_fps_snp_leet", "_762x51mm")
 end
 
 -- Noveske N4 Diplomat

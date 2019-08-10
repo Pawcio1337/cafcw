@@ -1,6 +1,7 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Mira_Init", function(self)
 -- SAI GRYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 if self.wpn_fps_ass_saigry then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_saigry", "_556x45mm")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_saigry", "wpn_fps_shield_m4")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_saigry", "wpn_fps_shield_skin_ftp")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_saigry", "wpn_fps_shield_skin_urban")
@@ -33,6 +34,7 @@ if self.wpn_fps_ass_grotb then
 end
 -- HK33
 if self.wpn_fps_ass_hk33 then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_hk33", "_556x45mm")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_hk33", "wpn_fps_shield_lr")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_hk33", "wpn_fps_shield_skin_ftp")
 	self:cafcw_add_to_parts("other", "wpn_fps_ass_hk33", "wpn_fps_shield_skin_urban")

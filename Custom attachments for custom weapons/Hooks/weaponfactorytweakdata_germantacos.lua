@@ -5,7 +5,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_GermanTacos_I
 
 if self.wpn_fps_pis_noodle then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_noodle")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_noodle")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_noodle", "wpn_fps_pis_legacy_fl_mount")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_noodle")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_noodle", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_noodle", "a_ns", "barrel")
@@ -15,10 +15,11 @@ end
 
 if self.wpn_fps_pis_sammy then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sammy")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_sammy")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_sammy", "wpn_fps_pis_legacy_fl_mount")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sammy")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sammy", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_sammy", "a_ns", "barrel")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_sammy", "_9x19mm")
 end
 
 --Mustang and Sally
@@ -45,6 +46,7 @@ if self.wpn_fps_pis_tariq then
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_tariq")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_tariq", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_tariq", "a_ns", "barrel")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_tariq", "_9x19mm")
 end
 
 --Glock 17 Gen 3
