@@ -1,8 +1,12 @@
 -- Attachments tables
 attach_tables = {}
 attach_tables.AR15_Grips = {
-	"wpn_fps_upg_m4_g_ddrubber",
+	"wpn_fps_upg_m4_g_dd_rubber",
+	"wpn_fps_upg_m4_g_fab_agr43",
 	"wpn_fps_upg_m4_g_vindicator"
+}
+attach_tables.AR15_GripsOnlyNew = {
+	"wpn_fps_upg_m4_g_fab_agr43"
 }
 attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m4_m_x15drum",
@@ -157,7 +161,6 @@ attach_tables.Custom_AK = {
 	"wpn_fps_upg_o_1pn93",
 	"wpn_fps_upg_o_okp7_dove"
 }
--- Mods
 attach_tables.MOD_IronSightsPack_Custom = {
 	"wpn_fps_upg_o_var_dd_a1_rear",
 	"wpn_fps_upg_o_var_kac_rear",
@@ -1107,6 +1110,7 @@ if self.wpn_fps_ass_scar_m203 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_scar_m203", "wpn_fps_ass_contraband", "wpn_fps_ass_scar_m203_irons_front")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_scar_m203", "wpn_fps_ass_contraband")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_scar_m203", "wpn_fps_ass_contraband", "wpn_fps_ass_scar_m203_irons_front")
+	self:cafcw_add_attachment_type("AR15_GripsOnlyNew", "wpn_fps_ass_scar_m203")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_scar_m203")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_scar_m203")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_scar_m203")
@@ -1314,6 +1318,7 @@ if self.wpn_fps_ass_scarl then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_scarl", "wpn_fps_ass_m4", "wpn_fps_ass_scarl_ironsights_front_fold")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_scarl", "wpn_fps_ass_scarl")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_scarl", "wpn_fps_ass_m4", "wpn_fps_ass_scarl_ironsights_front_fold")
+	self:cafcw_add_attachment_type("AR15_GripsOnlyNew", "wpn_fps_ass_scarl")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_scarl")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_scarl")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_scarl")
@@ -1421,6 +1426,7 @@ if self.wpn_fps_snp_cs5 then
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
+	self:cafcw_add_attachment_type("AR15_GripsOnlyNew", "wpn_fps_snp_cs5")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_cs5")
 end
 -- Desert Tech MDR
@@ -1476,7 +1482,7 @@ if self.wpn_fps_snp_mk12 then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_mk12", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_mk12", "wpn_fps_snp_mk12")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_mk12")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_snp_mk12")
+	self:cafcw_add_attachment_type("AR15_GripsOnlyNew", "wpn_fps_snp_mk12")
 	self:cafcw_add_attachment_type("AR15_Stocks_MK12", "wpn_fps_snp_mk12")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_mk12_handguard_ddm4fsp", "a_fl_ddm4fsp")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_mk12_handguard_ddmk18", "a_fl_ddmk18")
@@ -1675,7 +1681,7 @@ if self.wpn_fps_ass_obr5 then
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_ass_obr5", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_ass_obr5", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_obr5", "wpn_fps_ass_obr5")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_obr5")
+	self:cafcw_add_attachment_type("AR15_GripsOnlyNew", "wpn_fps_ass_obr5")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_obr5")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_obr5")
 	self:cafcw_add_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_ass_obr5", "wpn_fps_snp_tti")
@@ -1919,7 +1925,7 @@ if self.wpn_fps_smg_r0933blk then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic_alt")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_r0933blk")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_r0933blk")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_r0933blk")
