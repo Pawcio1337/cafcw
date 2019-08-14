@@ -14,7 +14,8 @@ attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m4_m_pmagsolid",
 	"wpn_fps_upg_m4_m_pmag10",
 	"wpn_fps_upg_m4_m_pmag20",
-	"wpn_fps_upg_m4_m_pmag40"
+	"wpn_fps_upg_m4_m_pmag40",
+	"wpn_fps_upg_m4_m_pantsu",
 }
 attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_caastock",
@@ -1542,8 +1543,10 @@ end
 -- Akimbo APS
 if self.wpn_fps_x_aps then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_x_aps")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_x_aps", "wpn_fps_pis_aps_rail")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_x_aps", "wpn_fps_pis_aps_gadget_rail")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_x_aps")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_x_aps", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_x_aps", "a_ns", "barrel")
 end
 -- Akimbo HK45C
 if self.wpn_fps_x_hk45c then
@@ -1825,8 +1828,13 @@ end
 if self.wpn_fps_pis_aps then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_aps", "_9x19mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_aps")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_aps", "wpn_fps_pis_aps_rail")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_aps", "wpn_fps_pis_aps_gadget_rail")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_aps")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_upg_aps_barrel_portedextra")
+	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_aps_barrel_ported")
+	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_aps_barrel_portedextra")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_aps", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_aps", "a_ns", "barrel")
 end
 -- S&W M&P40
 if self.wpn_fps_pis_swmp40 then
