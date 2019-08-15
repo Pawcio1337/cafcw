@@ -104,6 +104,10 @@ if self.wpn_fps_smg_nya then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_nya", "wpn_fps_smg_tec9")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_nya", "wpn_fps_smg_tec9")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_nya")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_nya")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_nya")
+--	self:cafcw_part_a_obj_pattern_override("Suppressors", "wpn_fps_upg_nya_rec_v1", "a_b_verycool")
+--	self:cafcw_part_a_obj_pattern_override("Barrel_Extensions", "wpn_fps_upg_nya_rec_v1", "a_b_verycool")
 end
 -- Oh look two cats .. wait a minute.. NYAAAAAAAA² AAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHH
 	-- wow killerwolf you had a lot of fun with this didnt you
@@ -111,6 +115,10 @@ end
 if self.wpn_fps_smg_x_nya then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_x_nya", "_9x19mm")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_nya")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_x_nya")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_x_nya")
+--	self:cafcw_part_a_obj_pattern_override("Suppressors", "wpn_fps_upg_nya_rec_v1", "a_b_verycool")
+--	self:cafcw_part_a_obj_pattern_override("Barrel_Extensions", "wpn_fps_upg_nya_rec_v1", "a_b_verycool")
 end
 
 --Zastava M21A
