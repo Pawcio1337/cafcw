@@ -169,16 +169,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -7, -0.75)
 	})
-	self:SetupAttachmentPoint("m40a5", {
-		name = "a_o_f",
-		base_a_obj = "a_o",
-		position = Vector3(0, 55, 0.9)
-	})
-	self:SetupAttachmentPoint("m40a5", {
-		name = "a_o_r",
-		base_a_obj = "a_o",
-		position = Vector3(0, -1, 0.9)
-	})
 	self:SetupAttachmentPoint("sv98", {
 		name = "a_o_f",
 		base_a_obj = "a_o",
@@ -188,41 +178,6 @@ if self.SetupAttachmentPoint then
 		name = "a_o_r",
 		base_a_obj = "a_o",
 		position = Vector3(0, -7.3, -0.6)
-	})
-	self:SetupAttachmentPoint("amr2", {
-		name = "a_o_f",
-		base_a_obj = "a_o",
-		position = Vector3(0, 25, 0)
-	})
-	self:SetupAttachmentPoint("amr2", {
-		name = "a_o_r",
-		base_a_obj = "a_o",
-		position = Vector3(0, -5.4, 0)
-	})
-	self:SetupAttachmentPoint("sr25", {
-		name = "a_o_f",
-		base_a_obj = "a_o",
-		position = Vector3(0, 49, 0)
-	})
-	self:SetupAttachmentPoint("sr25", {
-		name = "a_o_f_mk11",
-		base_a_obj = "a_o",
-		position = Vector3(0, 40.5, 0)
-	})
-	self:SetupAttachmentPoint("sr25", {
-		name = "a_o_r",
-		base_a_obj = "a_o",
-		position = Vector3(0, -5, 0)
-	})
-	self:SetupAttachmentPoint("fd338", {
-		name = "a_o_f",
-		base_a_obj = "a_o",
-		position = Vector3(0, 43.3, 0)
-	})
-	self:SetupAttachmentPoint("fd338", {
-		name = "a_o_r",
-		base_a_obj = "a_o",
-		position = Vector3(0, -1.5, 0)
 	})
 -- Iron Sights Pack
 	self:SetupAttachmentPoint("galilace", {
@@ -369,6 +324,71 @@ if self.SetupAttachmentPoint then
 		name = "a_or",
 		base_a_obj = "a_o",
 		position = Vector3(0, -18, 0)
+	})
+	self:SetupAttachmentPoint("sr25", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 37, 0)
+	})
+	self:SetupAttachmentPoint("sr25", {
+		name = "a_of_mk11",
+		base_a_obj = "a_o",
+		position = Vector3(0, 28.5, 0)
+	})
+	self:SetupAttachmentPoint("sr25", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -18, 0)
+	})
+	self:SetupAttachmentPoint("cs5", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 26, 0)
+	})
+	self:SetupAttachmentPoint("cs5", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -21, 0)
+	})
+	self:SetupAttachmentPoint("amr2", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 18, 0)
+	})
+	self:SetupAttachmentPoint("amr2", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -19, 0)
+	})
+	self:SetupAttachmentPoint("m40a5", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 45, 0.9)
+	})
+	self:SetupAttachmentPoint("m40a5", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -15, 0.9)
+	})
+	self:SetupAttachmentPoint("fd338", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 31, 0)
+	})
+	self:SetupAttachmentPoint("fd338", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -14, 0)
+	})
+	self:SetupAttachmentPoint("m200", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 38.7, 0)
+	})
+	self:SetupAttachmentPoint("m200", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -19.5, 0)
 	})
 -- Revolver Gadgets
 	self:SetupAttachmentPoint("sw327r8",{
