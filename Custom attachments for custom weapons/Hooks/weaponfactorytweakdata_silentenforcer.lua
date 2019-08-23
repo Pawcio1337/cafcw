@@ -330,6 +330,8 @@ if self.wpn_fps_shot_mts255 then
     self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_mts255")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_mts255")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_mts255", "_12ga_mag")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_shot_mts255", "wpn_fps_ass_fal")
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_shot_mts255_ghost_rail", "a_of_ghost")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_mts255", "wpn_fps_shot_serbu")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_mts255", "wpn_fps_shot_serbu")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_mts255", "wpn_fps_shot_serbu")

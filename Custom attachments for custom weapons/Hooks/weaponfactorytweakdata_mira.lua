@@ -58,8 +58,8 @@ if self.wpn_fps_ass_hk33 then
 end
 -- STF-12 Compact
 if self.wpn_fps_shot_stf12 then
-	self:cafcw_add_to_parts("other", "wpn_fps_shot_stf12", "wpn_fps_upg_ns_sho_salvo_small")
-	self:cafcw_add_to_parts("other", "wpn_fps_shot_stf12", "wpn_fps_upg_ns_shot_cat")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_stf12")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_stf12")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_stf12", "_12ga")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
@@ -284,5 +284,16 @@ if self.wpn_fps_snp_tkpd then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_tkpd", "wpn_fps_snp_siltstone", "wpn_fps_snp_tkpd_o_folded")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_tkpd", "wpn_fps_snp_tkpd", "wpn_fps_snp_tkpd_o_folded")
 	self:cafcw_wpn_a_obj_pattern_override("Shortdot", "wpn_fps_snp_tkpd", "a_o_scope")
+end
+-- FP6
+if self.wpn_fps_shot_fpsix then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_fpsix")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_fpsix")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_fpsix")
+	self:cafcw_forbids_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_fpsix_magext")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_fpsix", "_12ga")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_fpsix", "wpn_fps_shot_r870", "wpn_fps_shot_fpsix_o_front_folded")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_fpsix", "wpn_fps_shot_r870", "wpn_fps_shot_fpsix_o_front_folded")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_fpsix", "wpn_fps_shot_r870", "wpn_fps_shot_fpsix_o_front_folded")
 end
 end)
