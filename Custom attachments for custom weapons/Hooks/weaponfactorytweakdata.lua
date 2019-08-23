@@ -853,7 +853,7 @@ if self.wpn_fps_snp_l115 then
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_l115", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_l115", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_l115", "wpn_fps_snp_l115")
-	self:cafcw_add_custom_sights("MOD_SniperIronSights_Custom", "wpn_fps_snp_l115", "wpn_fps_snp_msr")--todo replace with iron sight pack
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_snp_l115", "wpn_fps_snp_msr")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_l115")
 end
 -- SR-3M Vikhr
@@ -970,7 +970,7 @@ if self.wpn_fps_snp_sv98 then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_sv98", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Custom_Sniper_SV98", "wpn_fps_snp_sv98", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_sv98", "wpn_fps_snp_sv98")
-	self:cafcw_add_custom_sights("MOD_SniperIronSights_Custom", "wpn_fps_snp_sv98", "wpn_fps_snp_msr")--todo replace with iron sight pack
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_snp_sv98", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_ammo("wpn_fps_snp_sv98", "_762x54mmr")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_sv98")
 end
@@ -1197,17 +1197,7 @@ if self.wpn_fps_lmg_rpd then
 end
 -- M60
 if self.wpn_fps_lmg_m60 then
--- TODO delet this
-if self.parts.wpn_fps_lmg_m60e4_body then
-table.map_append(self.parts.wpn_fps_lmg_m60_body,{
-		forbids = {"wpn_fps_shield_lmg"}
-	}
-)
-end
---
-	self:cafcw_add_to_parts("other", "wpn_fps_lmg_m60", "wpn_fps_shield_lmg")
-	self:cafcw_add_to_parts("other", "wpn_fps_lmg_m60", "wpn_fps_shield_skin_ftp")
-	self:cafcw_add_to_parts("other", "wpn_fps_lmg_m60", "wpn_fps_shield_skin_urban")
+--	self:cafcw_add_to_parts("other", "wpn_fps_lmg_m60", "wpn_fps_shield_lmg")
 	self:cafcw_add_custom_ammo("wpn_fps_lmg_m60", "_762x51mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_m60")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_m60")
@@ -1443,18 +1433,12 @@ end
 -- FN FNAR
 if self.wpn_fps_ass_fnar then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_fnar", "_762x51mm")
---[[ todo iron sight pack
-	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_var_dd_a1_rear", "wpn_fps_ass_fnar_troym4", "wpn_fps_ass_fnar")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_fnar", "wpn_fps_upg_o_var_kac_rear", "0,11,-4.13")
-	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_var_m4flipup_rear", "wpn_fps_ass_fnar_troym4", "wpn_fps_ass_fnar")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_fnar", "wpn_fps_upg_o_var_scorpionevo_rear", "0,11,-1.59")
-	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_var_mbus_rear", "wpn_fps_ass_fnar_troym4", "wpn_fps_ass_fnar")
-	self:cafcw_add_to_parts("sight", "wpn_fps_ass_fnar", "wpn_fps_upg_o_var_troy_rear", "wpn_fps_ass_fnar_troym4", "wpn_fps_ass_fnar")]]
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_fnar", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_fnar", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_fnar", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_ass_fnar", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_ass_fnar", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_fnar", "wpn_fps_snp_siltstone")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_fnar")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_fnar_gadgets_bottomrail", "a_fl_bottomrail")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_fnar_gadgets_leftrail", "a_fl_leftrail")

@@ -158,27 +158,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0.9, -9, 0)
 	})
--- Sniper Rifles Iron Sights
-	self:SetupAttachmentPoint("l115", {
-		name = "a_o_f",
-		base_a_obj = "a_o",
-		position = Vector3(0, 13.5, -0.75)
-	})
-	self:SetupAttachmentPoint("l115", {
-		name = "a_o_r",
-		base_a_obj = "a_o",
-		position = Vector3(0, -7, -0.75)
-	})
-	self:SetupAttachmentPoint("sv98", {
-		name = "a_o_f",
-		base_a_obj = "a_o",
-		position = Vector3(0, 3.7, -0.6)
-	})
-	self:SetupAttachmentPoint("sv98", {
-		name = "a_o_r",
-		base_a_obj = "a_o",
-		position = Vector3(0, -7.3, -0.6)
-	})
 -- Iron Sights Pack
 	self:SetupAttachmentPoint("galilace", {
 		name = "a_of",
@@ -389,6 +368,26 @@ if self.SetupAttachmentPoint then
 		name = "a_or",
 		base_a_obj = "a_o",
 		position = Vector3(0, -19.5, 0)
+	})
+	self:SetupAttachmentPoint("l115", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 3, -0.75)
+	})
+	self:SetupAttachmentPoint("l115", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -20.8, -0.75)
+	})
+	self:SetupAttachmentPoint("sv98", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, -6.7, -0.6)
+	})
+	self:SetupAttachmentPoint("sv98", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -21.3, -0.6)
 	})
 	self:SetupAttachmentPoint("mts255", {
 		name = "a_of",
