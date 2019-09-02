@@ -1924,6 +1924,7 @@ if self.wpn_fps_smg_aug9mm then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_aug9mm", "wpn_fps_smg_aug9mm_gadget_rm55")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_aug9mm", "wpn_fps_smg_aug9mm_gadget_rm55")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_aug9mm", "wpn_fps_smg_aug9mm_gadget_rm55")
