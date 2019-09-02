@@ -88,7 +88,12 @@ attach_tables.Suppressors_Pistol = {
 	"wpn_fps_ass_ns_g_sup2",
 	"wpn_fps_ass_ns_g_sup6"
 }
-attach_tables.Vertical_Grips = {}
+attach_tables.Vertical_Grips = {
+	"wpn_fps_upg_vg_fab_reg",
+	"wpn_fps_upg_vg_tangodown",
+	"wpn_fps_upg_vg_utg_combat",
+	"wpn_fps_upg_vg_utg_combatfl"
+}
 -- Sights
 attach_tables.ACOG = {
 	"wpn_fps_upg_o_acog_rmr",
@@ -1354,7 +1359,7 @@ if self.wpn_fps_ass_x95 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_x95", "wpn_fps_ass_x95_rm55")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_x95", "wpn_fps_ass_x95_rm55")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_x95", "wpn_fps_ass_x95_rm55")
-	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_x95")
+--	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_x95")
 end
 -- Winchester Model 1894
 if self.wpn_fps_snp_winchester1894 then
@@ -1473,7 +1478,7 @@ if self.wpn_fps_ass_sar21 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_sar21")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_sar21")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_sar21")
-	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_sar21")
+--	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_sar21")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_sar21_gadgets_bottomrail", "a_fl_bottomrail")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_sar21_gadgets_leftrail", "a_fl_leftrail")
 end
@@ -1735,7 +1740,7 @@ if self.wpn_fps_ass_ak12_2014 then
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_ak12_2014", nil, "foregrip")
 end
 -- M60E4
-if self.wpn_fps_lmg_mg3 then
+if self.wpn_fps_lmg_m60e4 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_m60e4", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_m60e4", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_m60e4", "wpn_fps_ass_amcar")
