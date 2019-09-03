@@ -1356,10 +1356,11 @@ if self.wpn_fps_ass_x95 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_x95", "wpn_fps_ass_aug")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_x95", "wpn_fps_ass_aug")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_x95", "wpn_fps_ass_aug")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_x95", "wpn_fps_ass_aug")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_x95", "wpn_fps_ass_x95_rm55")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_x95", "wpn_fps_ass_x95_rm55")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_x95", "wpn_fps_ass_x95_rm55")
---	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_x95")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_x95")
 end
 -- Winchester Model 1894
 if self.wpn_fps_snp_winchester1894 then
@@ -1475,11 +1476,11 @@ if self.wpn_fps_ass_sar21 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_sar21", "wpn_fps_ass_corgi")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_sar21", "wpn_fps_ass_corgi")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_sar21", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_sar21", "wpn_fps_ass_corgi")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_sar21")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_sar21")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_sar21")
---	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_sar21")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_sar21_gadgets_bottomrail", "a_fl_bottomrail")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_sar21")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_sar21_gadgets_leftrail", "a_fl_leftrail")
 end
 -- Winchester Model 1912
