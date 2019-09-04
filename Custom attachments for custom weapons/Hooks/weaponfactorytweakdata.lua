@@ -92,7 +92,22 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_fab_reg",
 	"wpn_fps_upg_vg_tangodown",
 	"wpn_fps_upg_vg_utg_combat",
-	"wpn_fps_upg_vg_utg_combatfl"
+	"wpn_fps_upg_vg_utg_combatfl",
+	"wpn_fps_upg_vg_gps02",
+	"wpn_fps_upg_vg_gps02bipod",
+	"wpn_fps_upg_vg_rvg",
+	"wpn_fps_upg_vg_bcm",
+	"wpn_fps_upg_vg_shift",
+	"wpn_fps_upg_vg_kac",
+	"wpn_fps_upg_vg_stark",
+	"wpn_fps_upg_vg_stub",
+	"wpn_fps_upg_vg_uvg",
+	"wpn_fps_upg_vg_rk0",
+	"wpn_fps_upg_vg_rk1",
+	"wpn_fps_upg_vg_rk2",
+	"wpn_fps_upg_vg_rk4",
+	"wpn_fps_upg_vg_rk5",
+	"wpn_fps_upg_vg_rk6"
 }
 -- Sights
 attach_tables.ACOG = {
@@ -166,6 +181,7 @@ attach_tables.Custom_AK = {
 	"wpn_fps_upg_o_okp7_dove"
 }
 attach_tables.MOD_IronSightsPack_Custom = {
+	"wpn_fps_upg_o_var_cheap_rear",
 	"wpn_fps_upg_o_var_dd_a1_rear",
 	"wpn_fps_upg_o_var_kac_rear",
 	"wpn_fps_upg_o_var_m4flipup_rear",
@@ -175,6 +191,7 @@ attach_tables.MOD_IronSightsPack_Custom = {
 	"wpn_fps_upg_o_var_troym4_rear"
 }
 attach_tables.MOD_IronSightsPack_NoScorpEvo_Custom = {
+	"wpn_fps_upg_o_var_cheap_rear",
 	"wpn_fps_upg_o_var_dd_a1_rear",
 	"wpn_fps_upg_o_var_kac_rear",
 	"wpn_fps_upg_o_var_m4flipup_rear",
@@ -183,6 +200,7 @@ attach_tables.MOD_IronSightsPack_NoScorpEvo_Custom = {
 	"wpn_fps_upg_o_var_troym4_rear"
 }
 attach_tables.MOD_IronSightsPack_SniperStats_Custom = {
+	"wpn_fps_upg_o_snp_cheap_rear",
 	"wpn_fps_upg_o_snp_dd_a1_rear",
 	"wpn_fps_upg_o_snp_kac_rear",
 	"wpn_fps_upg_o_snp_m4flipup_rear",
@@ -192,6 +210,7 @@ attach_tables.MOD_IronSightsPack_SniperStats_Custom = {
 	"wpn_fps_upg_o_snp_troym4_rear"
 }
 attach_tables.MOD_IronSightsPack_Front = {
+	"wpn_fps_upg_o_var_cheap_front",
 	"wpn_fps_upg_o_var_dd_a1_front",
 	"wpn_fps_upg_o_var_m4flipup_front",
 	"wpn_fps_upg_o_var_kac_front",

@@ -296,4 +296,21 @@ if self.wpn_fps_shot_fpsix then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_fpsix", "wpn_fps_shot_r870", "wpn_fps_shot_fpsix_o_front_folded")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_fpsix", "wpn_fps_shot_r870", "wpn_fps_shot_fpsix_o_front_folded")
 end
+-- Scout Elite
+if self.wpn_fps_snp_b42 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_b42", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_b42", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_b42", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_b42", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_b42", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_b42", "wpn_fps_snp_model70")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_b42", "wpn_fps_upg_o_var_dd_a1_rear", "0,-12,-3.7")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_b42", "wpn_fps_upg_o_var_kac_rear", "0,-12,-4.2")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_b42", "wpn_fps_upg_o_var_mbus_rear", "0,-12,-3.7")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_b42", "wpn_fps_upg_o_var_m4flipup_rear", "0,-12,-3.7")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_b42", "wpn_fps_upg_o_var_scorpionevo_rear", "0,-10,-1.7")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_b42", "wpn_fps_upg_o_var_troy_rear", "0,-12,-3.7")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_b42", "wpn_fps_upg_o_var_troym4_rear", "0,-12,-3.7")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_b42")
+end
 end)
