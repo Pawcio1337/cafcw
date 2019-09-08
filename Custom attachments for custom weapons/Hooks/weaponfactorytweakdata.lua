@@ -90,11 +90,13 @@ attach_tables.Suppressors_Pistol = {
 }
 attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_fab_reg",
-	"wpn_fps_upg_vg_tangodown",
-	"wpn_fps_upg_vg_utg_combat",
-	"wpn_fps_upg_vg_utg_combatfl",
 	"wpn_fps_upg_vg_gps02",
 	"wpn_fps_upg_vg_gps02bipod",
+	"wpn_fps_upg_vg_tangodown",
+	"wpn_fps_upg_vg_troy_modular",
+	"wpn_fps_upg_vg_troy_modularshort",
+	"wpn_fps_upg_vg_utg_combat",
+	"wpn_fps_upg_vg_utg_combatfl",
 	"wpn_fps_upg_vg_rvg",
 	"wpn_fps_upg_vg_bcm",
 	"wpn_fps_upg_vg_shift",
@@ -107,7 +109,11 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_rk2",
 	"wpn_fps_upg_vg_rk4",
 	"wpn_fps_upg_vg_rk5",
-	"wpn_fps_upg_vg_rk6"
+	"wpn_fps_upg_vg_rk6",
+	"wpn_fps_upg_vg_sand",
+	"wpn_fps_upg_vg_ins",
+	"wpn_fps_upg_vg_sec",
+	"wpn_fps_upg_vg_sac"
 }
 -- Sights
 attach_tables.ACOG = {
@@ -1891,7 +1897,7 @@ end
 -- Duke 1911
 if self.wpn_fps_pis_duke1911 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_duke1911")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_duke1911")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_duke1911", "wpn_fps_pis_duke1911_gadget_rail")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_duke1911")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_duke1911", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_duke1911", "a_ns", "barrel")
