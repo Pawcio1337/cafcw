@@ -152,7 +152,6 @@ if self.wpn_fps_smg_evo then
 	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_smg_evo", "wpn_fps_smg_schakal", "0,0,-2.6")
 	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_smg_evo", "wpn_fps_smg_schakal", "0,0,-2.6")
 	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_smg_evo", "wpn_fps_smg_schakal", "0,0,0.2")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_evo", "wpn_fps_smg_schakal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_evo", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_upg_o_xpsg33_magnifier", "wpn_fps_smg_schakal")
 	self:cafcw_add_to_parts("sight", "wpn_fps_smg_evo", "wpn_fps_upg_o_45rds_v2", "wpn_fps_upg_o_45rds_v2", "wpn_fps_smg_schakal")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_evo")

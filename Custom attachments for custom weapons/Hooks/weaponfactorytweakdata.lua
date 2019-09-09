@@ -274,10 +274,10 @@ function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, a
 				end
 			end
 		else
-			log("[ERROR] cafcw_forbids_attachment_type: Weapon not found: " .. wpn_id)
+			log("[ERROR] cafcw_add_attachment_type: Weapon not found: " .. wpn_id)
 		end
 	else
-		log("[ERROR] cafcw_forbids_attachment_type: Incorrect attach_type ID used: " .. attach_type, wpn_id, add_id)
+		log("[ERROR] cafcw_add_attachment_type: Incorrect attach_type ID used: " .. attach_type, wpn_id, add_id)
 	end
 end
 function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id)
@@ -348,7 +348,7 @@ function WeaponFactoryTweakData:cafcw_forbids_attachment_type(attach_type, attac
 				if self.parts[attach_id].forbids then
 					table.insert(self.parts[attach_id].forbids, part_id)
 				else
-					log("[ERROR] CAFCW: Missing forbids table: " .. part_id, attach_id)
+					table.map_append(self.parts[attach_id], {forbids = {part_id}})
 				end
 			end
 		end
@@ -2120,7 +2120,7 @@ end
 -- Mosin Nagant M9130 Obrez
 if self.wpn_fps_snp_obrez then
 	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin_pu_scope", "-0.891,-52.5,-4.571", "wpn_fps_snp_obrez_rearsight_dummy")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin_iron_sight_switch", "0,-25,-0.2")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin_pu_scope_switch", "0,-25,-0.2")
 	self:cafcw_add_to_parts("forbids", "wpn_fps_snp_mosin_pu_scope", "wpn_fps_upg_obrez_gadgets_rail")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
@@ -2184,6 +2184,19 @@ if self.wpn_fps_pis_sw642 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw642")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw642", "a_ns", "barrel")
 end
+-- Pancor Jackhammer
+if self.wpn_fps_shot_jackhammer then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_jackhammer")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_jackhammer")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_jackhammer")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_jackhammer_barrel")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_upg_jackhammer_barrel_supp")
+	self:cafcw_forbids_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_jackhammer_barrel")
+	self:cafcw_forbids_attachment_type("Suppressors_Shotgun", "wpn_fps_upg_jackhammer_barrel_supp")
+end
 -- Attachments
 -- AK Rail Cover
 if self.parts.wpn_fps_upg_o_ak_coverrail then
@@ -2203,5 +2216,10 @@ end
 if self.parts.wpn_fps_pis_breech_gadget_rail then
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_breech", "wpn_fps_pis_breech_gadget_rail")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_breech", "wpn_fps_pis_breech_gadget_rail")
+end
+-- Aug A1 Kit
+if self.parts.wpn_fps_aug_body_aug_a1 and self.parts.wpn_fps_aug_body_aug_a3 then
+	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a1")
+	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a3")
 end
 end)
