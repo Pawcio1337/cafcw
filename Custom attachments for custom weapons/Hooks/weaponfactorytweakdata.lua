@@ -1533,6 +1533,7 @@ if self.wpn_fps_shot_x_jackhammer then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_x_jackhammer")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_x_jackhammer")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_x_jackhammer")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_shot_x_jackhammer", "wpn_fps_shot_jackhammer_rail_vertgrip")
 	self:cafcw_forbids_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_jackhammer_barrel")
 	self:cafcw_forbids_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_upg_jackhammer_barrel_supp")
 	self:cafcw_forbids_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_jackhammer_barrel")
@@ -2186,12 +2187,14 @@ if self.wpn_fps_pis_sw642 then
 end
 -- Pancor Jackhammer
 if self.wpn_fps_shot_jackhammer then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota", "wpn_fps_shot_jackhammer_rail_sight")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota", "wpn_fps_shot_jackhammer_rail_sight")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota", "wpn_fps_shot_jackhammer_rail_sight")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota", "wpn_fps_shot_jackhammer_rail_sight")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_jackhammer")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_jackhammer")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_jackhammer")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_shot_jackhammer", "wpn_fps_shot_jackhammer_rail_vertgrip")
 	self:cafcw_forbids_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_jackhammer_barrel")
 	self:cafcw_forbids_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_upg_jackhammer_barrel_supp")
 	self:cafcw_forbids_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_jackhammer_barrel")
