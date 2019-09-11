@@ -1082,43 +1082,38 @@ custom_sight_group_table = {
 
 -- FAMAS Feline
 if self.parts.wpn_fps_ass_famas_body_feline then
-
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_ass_famas_body_feline", "a_o_feline")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_ass_famas_body_feline", "a_o_feline")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_ass_famas_body_feline", "a_o_feline")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_famas_body_feline", "a_fl_feline")	
+	
 	if self.parts.wpn_fps_ass_famas_o_adapter_long then
 		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_ass_famas_o_adapter_long = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(0, 10, 2)} },a_obj = "a_o_feline"}
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_m4flipup", "a_o_feline")
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_scorpionevo", "a_o_feline")
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy", "a_o_feline")
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy_dot", "a_o_feline")
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troym4", "a_o_feline")
-		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_bf4flipup", "a_o_feline")
-			if self.parts.wpn_fps_ass_famas_o_mbus then
-				self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_mbus", "a_o_feline")
-				self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_dd_a1", "a_o_feline")
-			end
-	end
+    end
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_ass_famas_body_feline", "a_or_feline")
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_famas_body_feline", "a_of_feline")
+
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_m4flipup", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_scorpionevo", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troy_dot", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_troym4", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_bf4flipup", "a_o_feline")
+	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_mbus", "a_o_feline")
+    self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_ass_famas_o_dd_a1", "a_o_feline")
 	
+	if self.parts.wpn_fps_upg_o_delta_rm55 then
+		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_delta_rm55 = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.125, -10, -17),rotation = Rotation(-1, 2.5, -45)} },a_obj = "a_o_feline"}
+	end
 	if self.parts.wpn_fps_upg_45rail then
-		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45dd = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
-		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45mbus = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
-		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45troy = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
-		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45flipup = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(0, 0, -45)} },a_obj = "a_o_feline"}
+		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45dd = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(-1, 2.5, -45.0002)} },a_obj = "a_o_feline"}
+		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45mbus = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(-1, 2.5, -45.0002)} },a_obj = "a_o_feline"}
+		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45troy = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(-1, 2.5, -45.0002)} },a_obj = "a_o_feline"}
+		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_upg_o_45flipup = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(-0.353, 0, -18.85),rotation = Rotation(-1, 2.5, -45.0002)} },a_obj = "a_o_feline"}
 		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_45rail", "a_o_feline")
 		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45mbus_il", "a_o_feline")
 		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", "wpn_fps_upg_o_45troy_il", "a_o_feline")
 	end
-	
-	for j, sight_base in ipairs(custom_sight_group_table) do
-		for i, sight_id in ipairs(attach_tables[sight_base]) do
-			self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", sight_id, "a_o_feline")
-		end
-	end
-	
-	if type(attach_tables.Gadgets) == "table" then
-		for i, gadget_id in ipairs(attach_tables.Gadgets) do
-			self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_famas_body_feline", gadget_id, "a_fl_feline2")
-		end
-	end
-
 end
 
 -- VHS Future
@@ -1270,6 +1265,9 @@ end
 --Contractor308 Various
 if BeardLib.Utils:FindMod("Contractor.308 Various Attachment") then
 
+self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_snp_tti_fg_composite", "a_fl_composite")
+self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_snp_tti_fg_rail", "a_fl_rail")
+
 self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
 self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
 self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
@@ -1278,8 +1276,8 @@ self:cafcw_part_a_obj_pattern_override("Shortdot", "wpn_fps_snp_tti_fg_rail", "a
 self:cafcw_part_a_obj_pattern_override("RDS45", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
 
 self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_snp_tti_fg_composite", "a_of_composite")
-self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
-self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_snp_tti_fg_rail", "a_o_rail")
+self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_snp_tti_fg_rail", "a_of_rail")
+self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_snp_tti_fg_rail", "a_or_rail")
 
 if BeardLib.Utils:FindMod("Vanilla Styled Weapon Mods") then
 	self.parts.wpn_fps_snp_tti_b_long.override = self.parts.wpn_fps_snp_tti_b_long.override or {}

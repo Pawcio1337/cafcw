@@ -444,6 +444,16 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -10, -0.2)
 	})
+	self:SetupAttachmentPoint("famas", {
+		name = "a_of_feline",
+		base_a_obj = "a_o",
+		position = Vector3(0, 0.75, -3.75)
+	})
+	self:SetupAttachmentPoint("famas", {
+		name = "a_or_feline",
+		base_a_obj = "a_o",
+		position = Vector3(0, -22.67, -3.75)
+	})
 -- Revolver Gadgets
 	self:SetupAttachmentPoint("sw327r8",{
 		name = "a_g_sml",
