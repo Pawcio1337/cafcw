@@ -249,7 +249,6 @@ attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_okp7_dove"
 }
 -- Unique weapon tables to exclude specific attachments.
-attach_tables.AR15_Stocks_SR3M = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col",	"wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_m4_s_hkslimline"}
 attach_tables.AR15_Stocks_PLR16 = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_hkslimline"}
 attach_tables.Custom_AMR2 = {"wpn_fps_upg_o_rmr_riser","wpn_fps_upg_o_eotech552","wpn_fps_upg_o_po4","wpn_fps_upg_o_st10","wpn_fps_upg_o_susat","wpn_fps_upg_o_okp7","wpn_fps_upg_o_visionking","wpn_fps_upg_o_compm2","wpn_fps_upg_o_razoramg","wpn_fps_upg_o_valday1p87","wpn_fps_upg_o_burris_ff3","wpn_fps_upg_o_romeo3"}
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
@@ -898,10 +897,9 @@ if self.wpn_fps_ass_sr3m then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_sr3m", "wpn_fps_ass_amcar", "wpn_fps_ass_sr3m_scopemount")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_sr3m", "wpn_fps_ass_amcar", "wpn_fps_ass_sr3m_scopemount")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_sr3m", "wpn_fps_ass_amcar", "wpn_fps_ass_sr3m_scopemount")
-	self:cafcw_add_attachment_type("AR15_Stocks_SR3M", "wpn_fps_ass_sr3m")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_sr3m")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_sr3m")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_sr3m")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_sr3m")
 	self:cafcw_forbids_attachment_type("MOD_RussianSightPack_Custom", "wpn_fps_upg_sr3m_cover_rail")
 	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_sr3m_cover_rail", "a_o_railcover")
 	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_sr3m_cover_rail", "a_o_railcover")
@@ -1044,13 +1042,13 @@ if self.wpn_fps_snp_vss then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000", "wpn_fps_snp_vss_mount_molot")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000", "wpn_fps_snp_vss_mount_molot")
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000", "wpn_fps_snp_vss_mount_molot")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_vss")
+	self:cafcw_forbids_attachment_type("MOD_RussianSightPack_Custom", "wpn_fps_upg_vss_cover_rail")
 	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_vss_cover_rail", "a_o_railcover")
 	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_vss_cover_rail", "a_o_railcover")
 	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_vss_cover_rail", "a_o_railcover")
 	self:cafcw_part_a_obj_pattern_override("Shortdot", "wpn_fps_upg_vss_cover_rail", "a_o_railcover")
 	self:cafcw_part_a_obj_pattern_override("Custom_Sniper", "wpn_fps_upg_vss_cover_rail", "a_o_railcover")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_vss", "wpn_fps_snp_vss_barrel_rail")
-	self:cafcw_forbids_attachment_type("MOD_RussianSightPack_Custom", "wpn_fps_upg_vss_cover_rail")
 end
 -- Colt 9mm Submachine Gun
 if self.wpn_fps_ass_r0991 then
@@ -1906,7 +1904,7 @@ end
 -- Beretta 93R
 if self.wpn_fps_pis_b93r then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_b93r", "_9x19mm")
-	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_b93r", "wpn_fps_pis_beretta", "wpn_fps_pis_b93r_sight_rmr")
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_b93r", "wpn_fps_pis_beretta", "wpn_fps_pis_b93r_sight_dummy")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_b93r")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_b93r")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_b93r")
