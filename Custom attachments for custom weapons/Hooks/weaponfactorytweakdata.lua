@@ -13,6 +13,7 @@ attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m4_m_pmag20",
 	"wpn_fps_upg_m4_m_pmag40",
 	"wpn_fps_upg_m4_m_pantsu",
+	"wpn_fps_upg_m_hera"
 }
 attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_caastock",
@@ -1605,6 +1606,7 @@ end
 -- Akimbo TOZ-66
 if self.wpn_fps_shot_x_toz66 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_x_toz66", "wpn_fps_shot_x_toz66_gadget_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_shot_x_toz66", nil, "barrel")
 end
 -- Merkel Drilling 961LS
 if self.wpn_fps_snp_merkel then
@@ -2092,6 +2094,7 @@ if self.wpn_fps_shot_toz66 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_toz66", "wpn_fps_ass_amcar", "wpn_fps_shot_toz66_sight_rail")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_toz66", "_12ga_mag")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_toz66")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_shot_toz66", nil, "barrel")
 end
 -- Kel-Tec PLR-16
 if self.wpn_fps_pis_plr16 then
