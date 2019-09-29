@@ -780,6 +780,11 @@ end
 
 -----------! > Attachments < !-----------
 
+-- Bayonet mod
+if self.parts.wpn_fps_upg_akm_bayonet then
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_akm_bayonet")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_akm_bayonet")
+end
 	---- Ammo ----
 
 --[[	-- _9x19mm --

@@ -1638,6 +1638,9 @@ if self.wpn_fps_lmg_mg4 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_mg4")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_mg4")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_mg4")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_lmg_mg4", nil, "upper_reciever")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_lmg_mg4", nil, "upper_reciever")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_lmg_mg4", nil, "upper_reciever")
 end
 -- HK PSG-1
 if self.wpn_fps_snp_psg1 then
@@ -1840,20 +1843,18 @@ end
 if self.wpn_fps_smg_vityaz then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_vityaz", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_smg_vityaz", "_9x19mm_p")
-	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_vityaz", "wpn_fps_upg_o_okp7_dove", "0.775,-10,-2.07")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_vityaz", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_vityaz", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_vityaz", "wpn_fps_ass_ak5")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_vityaz", "wpn_fps_smg_vityaz")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_vityaz")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_vityaz")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_vityaz")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_vityaz")
-	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_vityaz_handguard_redheat_forbids")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_vityaz_handguard_redheat", "a_fl_terminator")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_vityaz_handguard_zenit", "a_fl_zenit")
+--	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_vityaz_handguard_terminator_forbids")
+--	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_smg_vityaz", nil, "extra")
+--	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_smg_vityaz", nil, "extra")
+--	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_smg_vityaz", nil, "extra")
+--	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_smg_vityaz", nil, "foregrip")
 end
 -- APS
 if self.wpn_fps_pis_aps then
