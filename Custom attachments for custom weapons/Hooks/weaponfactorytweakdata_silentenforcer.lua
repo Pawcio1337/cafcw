@@ -133,6 +133,7 @@ if self.wpn_fps_bow_auto then
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_bow_auto", "wpn_fps_upg_o_pso1_rifle", "1.4,22,-4.2")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_bow_auto", "wpn_fps_upg_o_1pn93", "0.2,14,-4.71")
     self:cafcw_add_to_parts("sight_vector", "wpn_fps_bow_auto", "wpn_fps_upg_o_1p29", "0.2,14,-4.71")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_bow_auto", "wpn_fps_upg_o_okp7_dove", "1.08,10.3,-3.19")
 end
 
 --M3 Grease Gun

@@ -1717,9 +1717,6 @@ if self.wpn_fps_lmg_mg3 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_mg3")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_mg3")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_mg3")
-	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_upg_mg3_vanilia_ads")
-	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_upg_mg3_vanilia_ads")
-	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_upg_mg3_vanilia_ads")
 end
 -- MAS-49
 if self.wpn_fps_snp_mas49 then
@@ -1827,7 +1824,7 @@ if self.wpn_fps_snp_m1894 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m1894", "wpn_fps_ass_amcar")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_m1894")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m1894")
-	self:cafcw_add_attachment_type("Suppressors_WithoutCopypastedOsprey", "wpn_fps_snp_m1894")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_snp_m1894")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_m1894_gadgets_toprail", "a_fl_toprail")
 end
 -- Magpul FMG-9
@@ -2038,9 +2035,9 @@ if self.wpn_fps_pis_unica6 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_unica6", "wpn_fps_pis_rage", "wpn_fps_pis_unica6_sight_rail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_unica6", "wpn_fps_pis_rage", "wpn_fps_pis_unica6_sight_rail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_unica6", "wpn_fps_pis_rage", "wpn_fps_pis_unica6_sight_rail")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_pis_unica6", "wpn_fps_pis_unica6_gadget_rail")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_unica6")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_unica6", "wpn_fps_pis_unica6_gadget_rail")
-	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_pis_unica6", "a_fl_alt")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_unica6", nil, "barrel")
 end
 -- HX25 Handheld Grenade Launcher
 if self.wpn_fps_gre_hx25 then

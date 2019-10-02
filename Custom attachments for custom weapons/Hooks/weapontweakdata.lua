@@ -152,6 +152,36 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(-0.7, 2, -3)
 	})
+	self:SetupAttachmentPoint("auto_cross", {
+		name = "a_o_1pn93",
+		base_a_obj = "a_o",
+		position = Vector3(-1.5, -7.8, -0.15),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("auto_cross", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(-0.2, -7.8, -1.5),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("auto_cross", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-1.1, 1.45, -2.9),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("auto_cross", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(-0.5, -2.7, -2.3),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("auto_cross", {
+		name = "a_o_pso1",
+		base_a_obj = "a_o",
+		position = Vector3(-1.4, -3.3, -2),
+		rotation = Rotation(0, 0, 0)
+	})
 -- PU Scope
 	self:SetupAttachmentPoint("obrez", {
 		name = "a_o_pu",
