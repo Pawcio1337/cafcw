@@ -1847,11 +1847,11 @@ if self.wpn_fps_smg_vityaz then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_vityaz")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_vityaz")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_vityaz")
---	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_vityaz_handguard_terminator_forbids")
---	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_smg_vityaz", nil, "extra")
---	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_smg_vityaz", nil, "extra")
---	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_smg_vityaz", nil, "extra")
---	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_smg_vityaz", nil, "foregrip")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_vityaz_handguard_terminator_forbids")
+	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_smg_vityaz", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_smg_vityaz", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_smg_vityaz", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_smg_vityaz", nil, "foregrip")
 end
 -- APS
 if self.wpn_fps_pis_aps then
