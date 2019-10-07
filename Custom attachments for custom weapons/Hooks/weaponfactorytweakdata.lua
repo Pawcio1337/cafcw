@@ -1414,14 +1414,11 @@ if self.wpn_fps_shot_vepr12 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_vepr12", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_vepr12", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_vepr12", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_shot_vepr12", "wpn_fps_ass_flint")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_shot_vepr12")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_vepr12")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_vepr12")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_vepr12")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_shot_vepr12_rearsight")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_vepr12_handguard_midwest", "a_fl_midwest")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_vepr12_handguard_terminator", "a_fl_terminator")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_shot_vepr12", nil, "foregrip")
 end
 -- Tokarev SVT-40
 if self.wpn_fps_ass_svt40 then
@@ -2223,5 +2220,13 @@ end
 if self.parts.wpn_fps_aug_body_aug_a1 and self.parts.wpn_fps_aug_body_aug_a3 then
 	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a1")
 	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a3")
+end
+-- Revolver Gadgets
+if self.parts.wpn_fps_pis_m29_gadget_rail and self.parts.wpn_fps_pis_rage_gadget_rail then
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_chinchilla", "wpn_fps_pis_m29_gadget_rail")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_rage", "wpn_fps_pis_rage_gadget_rail")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_chinchilla", "wpn_fps_pis_m29_gadget_rail")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_rage", "wpn_fps_pis_rage_gadget_rail")
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_pis_chinchilla_b_satan", "a_fl_devil")
 end
 end)
