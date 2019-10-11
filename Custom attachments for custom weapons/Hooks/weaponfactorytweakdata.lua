@@ -187,6 +187,9 @@ attach_tables.Custom_AK = {
 	"wpn_fps_upg_o_1pn93",
 	"wpn_fps_upg_o_okp7_dove"
 }
+attach_tables.Custom_WW2 = {
+	"wpn_fps_upg_o_nydar"
+}
 attach_tables.MOD_IronSightsPack_Custom = {
 	"wpn_fps_upg_o_var_cheap_rear",
 	"wpn_fps_upg_o_var_dd_a1_rear",

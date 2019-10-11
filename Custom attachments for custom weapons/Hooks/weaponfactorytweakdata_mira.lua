@@ -129,6 +129,7 @@ if self.wpn_fps_ass_hugsforleon then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_hugsforleon", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_hugsforleon", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_hugsforleon", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_ass_hugsforleon", "wpn_fps_ass_hugsforleon")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_hugsforleon", "_556x45mm")
 	self:cafcw_add_to_parts("magazine", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_m4_m_x15drum")
 	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_hugsforleon", "wpn_fps_upg_o_var_dd_a1_rear", "0,0,0.3")
@@ -141,6 +142,7 @@ if self.wpn_fps_ass_hugsforleon then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_hugsforleon")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_hugsforleon")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_hugsforleon")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_hugsforleon")
 end
 -- DT MDR-C
 if self.wpn_fps_ass_shieldgirl then

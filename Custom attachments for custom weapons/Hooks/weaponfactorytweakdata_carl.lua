@@ -42,6 +42,7 @@ if self.wpn_fps_ass_recce then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_recce")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_recce")
 	self:cafcw_add_attachment_type("AR15_Stocks_ButTheresNoHKE1Stock", "wpn_fps_ass_recce")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_recce")
 
 end
 
@@ -62,6 +63,7 @@ if self.wpn_fps_ass_drongo then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("AR15_Stocks_ButTheresNoHKE1Stock", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_drongo")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_drongo")
 end
 
 --"""""G28"""""
@@ -154,6 +156,7 @@ if self.wpn_fps_ass_mikon then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mikon")
 	self:cafcw_add_attachment_type("AR15_Stocks_mikon", "wpn_fps_ass_mikon")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mikon")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mikon")
 end
 
 -- ARX-160 A2
@@ -209,7 +212,25 @@ if self.wpn_fps_ass_flat then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_flat")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_flat")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_flat")
 	-- todo: custom sniper/shortdot
+end
+
+-- HK416A5 GFL
+if self.wpn_fps_ass_raifu then
+	-- (all you need intensifies)
+	self:cafcw_add_custom_ammo("wpn_fps_ass_raifu", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_raifu", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_raifu", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_raifu", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_raifu")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_raifu")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_raifu")
+	self:cafcw_add_attachment_type("AR15_Stocks_ButTheresNoHKE1Stock", "wpn_fps_ass_raifu")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_raifu")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_raifu")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_raifu")
+	-- todo: overrides for mlok handguard? idk
 end
 
 end)

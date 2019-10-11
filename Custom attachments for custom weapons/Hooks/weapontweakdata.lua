@@ -494,6 +494,23 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -11.5, 4.6)
 	})
+	self:SetupAttachmentPoint("grotb", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 17, 2.3)
+	})
+	self:SetupAttachmentPoint("grotb", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -10, 2.3)
+	})
+-- WW2 Sights:
+-- Glued Reflector Sight
+	self:SetupAttachmentPoint("m3", {
+		name = "a_o_glue",
+		base_a_obj = "a_o",
+		position = Vector3(0, -19.5, -0.4)
+	})
 -- Revolver Gadgets
 	self:SetupAttachmentPoint("sw327r8",{
 		name = "a_g_sml",

@@ -100,6 +100,7 @@ end
 
 --Browning LMG
 if self.wpn_fps_ass_bar then
+self:cafcw_add_custom_sights_ext("Custom_WW2", "wpn_fps_ass_bar", "wpn_fps_ass_fal", "0,4,0.9", "wpn_fps_ass_bar_ironsight") --original specter 0, 4, -3.5 || PVM xyz || wpn_fps_ass_bar_ironsight 0,0,-0.5
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_bar")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_bar")
 self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions", "wpn_fps_ass_bar", "a_ns_bar")
@@ -117,6 +118,7 @@ end
 
 --Trench Gun
 if self.wpn_fps_shot_trench then
+self:cafcw_add_custom_sights_ext("Custom_WW2", "wpn_fps_shot_trench", "wpn_fps_shot_r870", "0,-6,0.3") --original specter 0.01, 0, -3.3 || PVM 0.01 -6 -3
 self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_trench")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_trench")
 self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_trench")
@@ -126,6 +128,7 @@ end
 
 --Browning A5
 if self.wpn_fps_shot_auto5 then
+self:cafcw_add_custom_sights_ext("Custom_WW2", "wpn_fps_shot_auto5", "wpn_fps_sho_ben", "0,-4,1.8") --original specter 0, 0, -3.2 || PVM "0 -4 -1.4" || wpn_fps_shot_auto5_irons 0,0,1
 self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_auto5")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_auto5")
 self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_auto5")
