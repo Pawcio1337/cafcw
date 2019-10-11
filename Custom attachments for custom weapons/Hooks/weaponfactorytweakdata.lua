@@ -575,49 +575,53 @@ ammo_table._12ga_mag = {
 	end
 end
 function WeaponFactoryTweakData:cafcw_add_custom_sights_ext(sight_base, wpn_id, stance_wpn_id, custom_stance, add_id, add_id_two)
-	for i, sight_id in pairs(attach_tables[sight_base]) do
-		if self.parts[sight_id] then
-			if sight_base == "ACOG" then
-				sight_base = "wpn_fps_upg_o_acog"
-			elseif sight_base == "RDS45" then
-				sight_base = "wpn_fps_upg_o_45rds"
-			elseif sight_base == "Shortdot" then
-				sight_base = "wpn_fps_upg_o_shortdot"
-			elseif sight_base == "Specter" then
-				sight_base = "wpn_fps_upg_o_specter"
-			end
-			table.insert(self[wpn_id].uses_parts, sight_id)
-			if string.match(sight_base, "Custom") then
-				if custom_stance then
-					if self.parts[sight_id].stance_mod[stance_wpn_id] then
-						self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
-						self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[stance_wpn_id].translation + custom_stance:ToVector3())
-					else
-						log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id)
-					end
+	if type(attach_tables[sight_base]) == "table" then
+		for i, sight_id in pairs(attach_tables[sight_base]) do
+			if self.parts[sight_id] then
+				if sight_base == "ACOG" then
+					sight_base = "wpn_fps_upg_o_acog"
+				elseif sight_base == "RDS45" then
+					sight_base = "wpn_fps_upg_o_45rds"
+				elseif sight_base == "Shortdot" then
+					sight_base = "wpn_fps_upg_o_shortdot"
+				elseif sight_base == "Specter" then
+					sight_base = "wpn_fps_upg_o_specter"
 				end
-			else
-				if custom_stance then
-					if self.parts[sight_base].stance_mod[stance_wpn_id] then
-						self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
-						self.parts[sight_id].stance_mod[wpn_id].translation = custom_stance:ToVector3()
-					else
-						log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
+				table.insert(self[wpn_id].uses_parts, sight_id)
+				if string.match(sight_base, "Custom") then
+					if custom_stance then
+						if self.parts[sight_id].stance_mod[stance_wpn_id] then
+							self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
+							self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[stance_wpn_id].translation + custom_stance:ToVector3())
+						else
+							log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id)
+						end
 					end
-				end
-			end
-		end
-		if self.parts[add_id] then
-			if self[wpn_id].adds then
-				if self.parts[add_id_two] then
-					self[wpn_id].adds[sight_id] = {add_id,add_id_two}
 				else
-					self[wpn_id].adds[sight_id] = {add_id}
+					if custom_stance then
+						if self.parts[sight_base].stance_mod[stance_wpn_id] then
+							self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
+							self.parts[sight_id].stance_mod[wpn_id].translation = custom_stance:ToVector3()
+						else
+							log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
+						end
+					end
 				end
-			else
-				log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, sight_id, add_id)
+			end
+			if self.parts[add_id] then
+				if self[wpn_id].adds then
+					if self.parts[add_id_two] then
+						self[wpn_id].adds[sight_id] = {add_id,add_id_two}
+					else
+						self[wpn_id].adds[sight_id] = {add_id}
+					end
+				else
+					log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, sight_id, add_id)
+				end
 			end
 		end
+	else
+		log("[ERROR] cafcw_add_custom_sights_ext: Incorrect attach_type used: " .. attach_type, wpn_id)
 	end
 end
 function WeaponFactoryTweakData:cafcw_category_forbid(wpn_id, cat_id, attach_id, exce_id)
