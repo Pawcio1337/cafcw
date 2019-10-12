@@ -138,8 +138,6 @@ end
 
 --M3 Grease Gun
 if self.wpn_fps_smg_m3 then
-	--Reflector WW2 Sight support
-	self.wpn_fps_smg_m3.override = self.wpn_fps_smg_m3.override or {} --defining base gun override for the cafcw_wpn_a_obj_pattern_override, cos default M3 mod doesnt have base gun override
 	self:cafcw_add_custom_sights_ext("Custom_WW2", "wpn_fps_smg_m3", "wpn_fps_smg_m45", "0,-2,0.4") --original specter 0, 0, -3.9 || PVM xyz 
 	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2", "wpn_fps_smg_m3", "a_o_glue") 
 	

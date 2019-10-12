@@ -2014,6 +2014,8 @@ if self.wpn_fps_smg_pps43 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_pps43")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_pps43")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_pps43")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_smg_pps43_barrel")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_smg_pps43_barrel")
 end
 -- Chiappa Rhino 60DS
 if self.wpn_fps_pis_rhino then
