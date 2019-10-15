@@ -44,12 +44,25 @@ if self.wpn_fps_ass_qbz95 then
 
 --STG 44
 if self.wpn_fps_ass_stg44 then
+	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "0,22,0.2", "wpn_fps_ass_stg44_irons") --original specter g3 || PVM xyz 
+	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_ass_stg44", "a_o_clamp") 
+	self:cafcw_forbids_attachment_type("Custom_WW2_Axis", "wpn_fps_upg_o_delta_rm55")
+
+	
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_stg44")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "wpn_fps_ass_stg44_ris_special")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "wpn_fps_ass_stg44_ris_special")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "wpn_fps_ass_stg44_ris_special")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_stg44")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_stg44")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_ass_stg44", "wpn_fps_snp_g43_zf4", "-0.195,0,-2.36", "wpn_fps_ass_stg44_is")
+	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_ass_stg44", "wpn_fps_snp_g43_zf4_switch", "-0.195,0,-2.36", "wpn_fps_ass_stg44_is")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_stg44", "wpn_fps_snp_g43_zf4", "a_o_zf4")
+	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_ass_stg44", "wpn_fps_snp_g43_zf4_switch", "a_o_zf4")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_ass_stg44", "wpn_fps_snp_g43_zf4_irons", "0,-8,-0.25")
+	if not SystemFS:exists("mods/Activate Multiple Gadgets/mod.txt") then
+	self:cafcw_forbids_attachment_type("Gadgets", "wpn_fps_ass_stg44_o_scope_switch")
+	end
     end
 	
 
@@ -138,8 +151,8 @@ end
 
 --M3 Grease Gun
 if self.wpn_fps_smg_m3 then
-	self:cafcw_add_custom_sights_ext("Custom_WW2", "wpn_fps_smg_m3", "wpn_fps_smg_m45", "0,-2,0.4") --original specter 0, 0, -3.9 || PVM xyz 
-	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2", "wpn_fps_smg_m3", "a_o_glue") 
+	self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_smg_m3", "wpn_fps_smg_m45", "0,-2,0.4") --original specter 0, 0, -3.9 || PVM xyz 
+	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Allied", "wpn_fps_smg_m3", "a_o_glue") 
 	
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_m3")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_m3", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
@@ -156,6 +169,11 @@ end
 	
 --Gewehr 43
 if self.wpn_fps_snp_g43 then
+	self.wpn_fps_snp_g43.override = self.wpn_fps_snp_g43.override or {}
+	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_snp_g43", "wpn_fps_ass_fal", "0,4,-0.2") --original specter 0, 4, -3.5 || PVM xyz 
+	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_snp_g43", "a_o_clamp")
+	self:cafcw_forbids_attachment_type("Custom_WW2_Axis", "wpn_fps_upg_o_45iron")
+	
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_g43")
 	self:cafcw_add_custom_ammo("wpn_fps_snp_g43", "_792x57mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_g43", "wpn_fps_ass_fal", "wpn_fps_snp_g43_rail")

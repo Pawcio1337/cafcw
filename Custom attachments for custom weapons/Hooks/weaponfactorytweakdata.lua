@@ -187,8 +187,11 @@ attach_tables.Custom_AK = {
 	"wpn_fps_upg_o_1pn93",
 	"wpn_fps_upg_o_okp7_dove"
 }
-attach_tables.Custom_WW2 = {
+attach_tables.Custom_WW2_Allied = {
 	"wpn_fps_upg_o_nydar"
+}
+attach_tables.Custom_WW2_Axis = {
+	"wpn_fps_upg_o_mk3"
 }
 attach_tables.MOD_IronSightsPack_Custom = {
 	"wpn_fps_upg_o_var_cheap_rear",
@@ -1778,6 +1781,9 @@ if self.wpn_fps_lmg_m60e4 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_m60e4")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_m60e4")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_m60e4")
+	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_lmg_m60e4", nil, "upper_reciever")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_lmg_m60e4", nil, "upper_reciever")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_lmg_m60e4", nil, "upper_reciever")
 end
 -- Secondary
 -- MPX

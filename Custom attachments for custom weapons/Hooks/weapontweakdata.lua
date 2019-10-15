@@ -511,6 +511,17 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -19.5, -0.4)
 	})
+-- Clamped Reflector Sight
+	self:SetupAttachmentPoint("stg44", {
+		name = "a_o_clamp",
+		base_a_obj = "a_o",
+		position = Vector3(0, -14, 0)
+	})
+	self:SetupAttachmentPoint("g43", {
+		name = "a_o_clamp",
+		base_a_obj = "a_o",
+		position = Vector3(0, -5, 0)
+	})
 -- Revolver Gadgets
 	self:SetupAttachmentPoint("sw327r8",{
 		name = "a_g_sml",
