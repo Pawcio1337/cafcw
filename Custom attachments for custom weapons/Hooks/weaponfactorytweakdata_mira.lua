@@ -66,12 +66,13 @@ if self.wpn_fps_ass_hk33 then
 end
 -- STF-12 Compact
 if self.wpn_fps_shot_stf12 then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_stf12")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_stf12")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_stf12")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_stf12", "_12ga")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_stf12", "wpn_fps_shot_stf12")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_stf12")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_stf12", "wpn_fps_shot_r870")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_stf12", "wpn_fps_shot_r870")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_stf12", "wpn_fps_shot_r870")
 end
 -- MP7
 if self.wpn_fps_smg_mp7new then
