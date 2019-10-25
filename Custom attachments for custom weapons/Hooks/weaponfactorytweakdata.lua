@@ -125,10 +125,10 @@ attach_tables.ACOG = {
 }
 attach_tables.Custom = {
 	"wpn_fps_upg_o_rmr_riser",
-	"wpn_fps_upg_o_eotech552",
+--	"wpn_fps_upg_o_eotech552",
 	"wpn_fps_upg_o_po4",
 	"wpn_fps_upg_o_st10",
-	"wpn_fps_upg_o_susat",
+--	"wpn_fps_upg_o_susat",
 	"wpn_fps_upg_o_okp7",
 	"wpn_fps_upg_o_visionking",
 	"wpn_fps_upg_o_compm2",
@@ -156,10 +156,10 @@ attach_tables.Shortdot = {
 }
 attach_tables.Specter = {
 	"wpn_fps_upg_o_kobra",
-	"wpn_fps_upg_o_compm4s",
+--	"wpn_fps_upg_o_compm4s",
 	"wpn_fps_upg_o_m145",
 	"wpn_fps_upg_o_pkas",
-	"wpn_fps_upg_o_coyote",
+--	"wpn_fps_upg_o_coyote",
 	"wpn_fps_upg_o_hologram",
 	"wpn_fps_upg_o_zeiss",
 	"wpn_fps_upg_o_hd33",
@@ -1786,15 +1786,15 @@ if self.wpn_fps_lmg_m60e4 then
 	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_lmg_m60e4", nil, "upper_reciever")
 end
 -- M1A1 Carbine
-if self.wpn_fps_ass_m1 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1", "wpn_fps_ass_s552", "wpn_fps_ass_m1_sightrail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1", "wpn_fps_ass_s552", "wpn_fps_ass_m1_sightrail")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1", "wpn_fps_ass_s552", "wpn_fps_ass_m1_sightrail")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_m1")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_m1")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_m1")
-	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_m1_bayonet_m4")
-	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_m1_bayonet_m4")
+if self.wpn_fps_ass_m1a1 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_m1a1")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_m1a1")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_m1a1")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_m1a1_bayonet_m4")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_m1a1_bayonet_m4")
 end
 -- Secondary
 -- MPX
