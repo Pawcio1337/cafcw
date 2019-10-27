@@ -125,10 +125,10 @@ attach_tables.ACOG = {
 }
 attach_tables.Custom = {
 	"wpn_fps_upg_o_rmr_riser",
---	"wpn_fps_upg_o_eotech552",
+	"wpn_fps_upg_o_eotech552",
 	"wpn_fps_upg_o_po4",
 	"wpn_fps_upg_o_st10",
---	"wpn_fps_upg_o_susat",
+	"wpn_fps_upg_o_susat",
 	"wpn_fps_upg_o_okp7",
 	"wpn_fps_upg_o_visionking",
 	"wpn_fps_upg_o_compm2",
@@ -156,10 +156,10 @@ attach_tables.Shortdot = {
 }
 attach_tables.Specter = {
 	"wpn_fps_upg_o_kobra",
---	"wpn_fps_upg_o_compm4s",
+	"wpn_fps_upg_o_compm4s",
 	"wpn_fps_upg_o_m145",
 	"wpn_fps_upg_o_pkas",
---	"wpn_fps_upg_o_coyote",
+	"wpn_fps_upg_o_coyote",
 	"wpn_fps_upg_o_hologram",
 	"wpn_fps_upg_o_zeiss",
 	"wpn_fps_upg_o_hd33",
