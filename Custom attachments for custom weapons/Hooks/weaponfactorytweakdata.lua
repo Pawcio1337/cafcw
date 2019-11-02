@@ -1782,9 +1782,8 @@ if self.wpn_fps_lmg_m60e4 then
 end
 -- M1A1 Carbine
 if self.wpn_fps_ass_m1a1 then
-	self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "0,-4,1.9") --original specter -0.08, 0, -2.1 || PVM 	
+	self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "0,-4,1.9")
 	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "a_o_glue") 
-
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
