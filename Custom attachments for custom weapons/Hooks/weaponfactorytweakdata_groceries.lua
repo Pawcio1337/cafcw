@@ -67,9 +67,9 @@ end
 -- 9A-91 
 if self.wpn_fps_ass_vsk94 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_vsk94", "_9x39mm")
-	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_ass_vsk94", "wpn_fps_ass_ak5", "0,4,-4.1")
-	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_ass_vsk94", "wpn_fps_ass_ak5", "0,4,-4.1")
-	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_vsk94", "wpn_fps_ass_ak5", "0,4,-0.6")
+	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_ass_vsk94", "wpn_fps_ass_ak5", "0,4,-4.1","wpn_fps_ass_vsk94_mount")
+	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_ass_vsk94", "wpn_fps_ass_ak5", "0,4,-4.1","wpn_fps_ass_vsk94_mount")
+	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_vsk94", "wpn_fps_ass_ak5", "0,4,-0.6","wpn_fps_ass_vsk94_mount")
 --	self:cafcw_add_custom_sights_ext("RDS45", "wpn_fps_ass_vsk94", "wpn_fps_ass_tecci", "-3.9,22,-10.3")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_vsk94")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_vsk94")

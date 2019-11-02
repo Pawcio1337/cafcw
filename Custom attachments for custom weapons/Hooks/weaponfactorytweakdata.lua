@@ -34,7 +34,8 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_fab_glr16s",
 	"wpn_fps_upg_m4_s_fab_glr16s_alt",
 	"wpn_fps_upg_m4_s_hkslimline",
-	"wpn_fps_upg_s_tti"
+	"wpn_fps_upg_s_tti",
+	"wpn_fps_ass_m4_s_russian"
 }
 attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_smg_tromix",
@@ -178,7 +179,8 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_jgbg_m7",
 	"wpn_fps_upg_o_hartman",
 	"wpn_fps_upg_o_kpsr2",
-	"wpn_fps_upg_o_pn23"
+	"wpn_fps_upg_o_pn23",
+	"wpn_fps_upg_o_cqb"
 }
 attach_tables.Custom_AK = {
 	"wpn_fps_upg_o_1p29",
@@ -1368,20 +1370,13 @@ if self.wpn_fps_snp_xm21 then
 	self:cafcw_wpn_a_obj_pattern_override("RDS45", "wpn_fps_snp_xm21", "a_o_45")
 end
 -- Arisaka Type 38
-if self.wpn_fps_snp_type38 then
-	self:cafcw_add_to_parts("other", "wpn_fps_snp_type38", "wpn_fps_shield_aug")
-	self:cafcw_add_to_parts("other", "wpn_fps_snp_type38", "wpn_fps_shield_skin_ftp")
-	self:cafcw_add_to_parts("other", "wpn_fps_snp_type38", "wpn_fps_shield_skin_urban")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_type38", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_type38", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_type38", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail")
-	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_type38", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail_alt")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_type38", "wpn_fps_snp_mosin", "wpn_fps_snp_type38_sightrail_alt")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_type38", "wpn_fps_snp_mosin")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_type38")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_type97_scope_switch")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_snp_type38_irons")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_type38_irons_ladder")
+if self.wpn_fps_snp_arisaka38 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_arisaka38", "wpn_fps_snp_mosin", "wpn_fps_snp_arisaka38_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_arisaka38", "wpn_fps_snp_mosin", "wpn_fps_snp_arisaka38_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_arisaka38", "wpn_fps_snp_mosin", "wpn_fps_snp_arisaka38_sight_rail")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_arisaka38", "wpn_fps_snp_mosin", "wpn_fps_snp_arisaka38_sight_rail")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_arisaka38", "wpn_fps_snp_mosin", "wpn_fps_snp_arisaka38_sight_rail")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_arisaka38")
 end
 -- IWI X95
 if self.wpn_fps_ass_x95 then
@@ -1787,6 +1782,9 @@ if self.wpn_fps_lmg_m60e4 then
 end
 -- M1A1 Carbine
 if self.wpn_fps_ass_m1a1 then
+	self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "0,-4,1.9") --original specter -0.08, 0, -2.1 || PVM 	
+	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "a_o_glue") 
+
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")

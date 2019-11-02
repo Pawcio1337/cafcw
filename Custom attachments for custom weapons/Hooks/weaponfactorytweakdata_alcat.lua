@@ -613,10 +613,30 @@ end
 
 -- CZ75 auto
 if self.wpn_fps_pis_czauto then
-self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_czauto", "wpn_fps_pis_beretta", "0,0,-0.25", "wpn_fps_pis_czauto_irons")
+self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_czauto", "wpn_fps_pis_beretta") --"0,0,0.25"
 self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_czauto", nil, "upper_reciever")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_pis_czauto_vg_mag", "wpn_fps_upg_o_deltapoint", nil, "wpn_fps_pis_czauto_vg_stances")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_pis_czauto_vg_mag", "wpn_fps_upg_o_deltapoint_pro", nil, "wpn_fps_pis_czauto_vg_stances")
+self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_pis_czauto_vg_mag", "wpn_fps_upg_o_romeo3_pis", nil, "wpn_fps_pis_czauto_vg_stances")
+
+self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_czauto")
 self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_czauto")
+self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_czauto", "wpn_fps_pis_beretta_body_rail")
+self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_czauto", nil, "lower_reciever")
+self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_czauto", nil, "lower_reciever")
+self:cafcw_forbids_attachment_type("Gadgets_Pistol", "wpn_fps_pis_czauto_vg_mag")
+
 self:cafcw_add_custom_ammo("wpn_fps_pis_czauto", "_9x19mm")
+end 
+if self.wpn_fps_pis_x_czauto then
+self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_czauto")
+self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_czauto")
+self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_czauto", "wpn_fps_pis_beretta_body_rail")
+self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_czauto", nil, "lower_reciever")
+self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_x_czauto", nil, "lower_reciever")
+self:cafcw_forbids_attachment_type("Gadgets_Pistol", "wpn_fps_pis_czauto_vg_mag")
+
+self:cafcw_add_custom_ammo("wpn_fps_pis_x_czauto", "_9x19mm")
 end 
 
 
@@ -1281,11 +1301,6 @@ self:cafcw_part_a_obj_pattern_override("RDS45", "wpn_fps_snp_tti_fg_rail", "a_o_
 self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_snp_tti_fg_composite", "a_of_composite")
 self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_snp_tti_fg_rail", "a_of_rail")
 self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_snp_tti_fg_rail", "a_or_rail")
-
-if BeardLib.Utils:FindMod("Vanilla Styled Weapon Mods") then
-	self.parts.wpn_fps_snp_tti_b_long.override = self.parts.wpn_fps_snp_tti_b_long.override or {}
-	self.parts.wpn_fps_snp_tti_b_long.override.wpn_fps_snp_tti_ns_cylinder = { a_obj = "a_b_long" }
-end
 
 end
 

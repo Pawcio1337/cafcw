@@ -511,6 +511,11 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -19.5, -0.4)
 	})
+	self:SetupAttachmentPoint("m1a1", {
+		name = "a_o_glue",
+		base_a_obj = "a_o",
+		position = Vector3(0, -9, -1.75)
+	})
 -- Clamped Reflector Sight
 	self:SetupAttachmentPoint("stg44", {
 		name = "a_o_clamp",
