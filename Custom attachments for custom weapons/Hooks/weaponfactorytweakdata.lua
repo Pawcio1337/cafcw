@@ -3,7 +3,8 @@ attach_tables = {}
 attach_tables.AR15_Grips = {
 	"wpn_fps_upg_m4_g_dd_rubber",
 	"wpn_fps_upg_m4_g_fab_agr43",
-	"wpn_fps_upg_m4_g_vindicator"
+	"wpn_fps_upg_m4_g_vindicator",
+	"wpn_fps_upg_g_m4_surgeon" -- DLC
 }
 attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m4_m_x15drum",
@@ -42,7 +43,9 @@ attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_mb556k",
 	"wpn_fps_upg_ns_ass_tbrake",
 	"wpn_fps_upg_ns_ass_vortex",
-	"wpn_fps_upg_ns_dragon"
+	"wpn_fps_upg_ns_dragon",
+	"wpn_fps_upg_ns_ass_yhm_slant",
+	"wpn_fps_upg_ns_ass_smg_v6" -- DLC
 }
 attach_tables.Barrel_Extensions_Shotgun = {
 	"wpn_fps_upg_ns_shot_gk_01",
@@ -52,7 +55,8 @@ attach_tables.Barrel_Extensions_Pistol = {
 	"wpn_fps_upg_ns_pis_aek919",
 	"wpn_fps_upg_ns_pis_major",
 	"wpn_fps_upg_ns_pis_tact_flash",
-	"wpn_fps_upg_ns_pis_yhm"
+	"wpn_fps_upg_ns_pis_yhm",
+	"wpn_fps_upg_ns_pis_typhoon" -- DLC
 }
 attach_tables.Gadgets = {
 	"wpn_fps_upg_fl_ass_spotter",
@@ -136,7 +140,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_razoramg",
 	"wpn_fps_upg_o_valday1p87",
 	"wpn_fps_upg_o_burris_ff3",
-	"wpn_fps_upg_o_romeo3"
+	"wpn_fps_upg_o_romeo3",
+	"wpn_fps_upg_o_bmg" -- DLC
 }
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
@@ -146,10 +151,14 @@ attach_tables.Custom_Sniper = {
 attach_tables.Custom_Pistol = {
 	"wpn_fps_upg_o_deltapoint",
 	"wpn_fps_upg_o_deltapoint_pro",
-	"wpn_fps_upg_o_romeo3_pis"
+	"wpn_fps_upg_o_romeo3_pis",
+	"wpn_fps_upg_o_rms", -- DLC
+	"wpn_fps_upg_o_rikt" -- DLC
 }
 attach_tables.RDS45 = {
-	"wpn_fps_upg_o_delta_rm55"
+	"wpn_fps_upg_o_delta_rm55",
+	"wpn_fps_upg_o_sig", -- DLC
+	"wpn_fps_upg_o_45steel" -- DLC
 }
 attach_tables.Shortdot = {
 	"wpn_fps_upg_o_ta648",
@@ -180,7 +189,9 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_hartman",
 	"wpn_fps_upg_o_kpsr2",
 	"wpn_fps_upg_o_pn23",
-	"wpn_fps_upg_o_cqb"
+	"wpn_fps_upg_o_cqb",
+	"wpn_fps_upg_o_uh", -- DLC
+	"wpn_fps_upg_o_fc1" -- DLC
 }
 attach_tables.Custom_AK = {
 	"wpn_fps_upg_o_1p29",
