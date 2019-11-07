@@ -141,6 +141,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_valday1p87",
 	"wpn_fps_upg_o_burris_ff3",
 	"wpn_fps_upg_o_romeo3",
+	"wpn_fps_upg_o_sig", -- DLC
 	"wpn_fps_upg_o_bmg" -- DLC
 }
 attach_tables.Custom_Sniper = {
@@ -157,7 +158,6 @@ attach_tables.Custom_Pistol = {
 }
 attach_tables.RDS45 = {
 	"wpn_fps_upg_o_delta_rm55",
-	"wpn_fps_upg_o_sig", -- DLC
 	"wpn_fps_upg_o_45steel" -- DLC
 }
 attach_tables.Shortdot = {
