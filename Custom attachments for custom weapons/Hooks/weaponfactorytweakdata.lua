@@ -282,7 +282,7 @@ function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, a
 	if type(attach_tables[attach_type]) == "table" then
 		if self[wpn_id] then
 			for i, part_id in pairs(attach_tables[attach_type]) do
-				if self.parts[part_id] then
+				if self.parts[part_id] and not table.contains(self[wpn_id].uses_parts, part_id) then
 					table.insert(self[wpn_id].uses_parts, part_id)
 				end
 				if self.parts[add_id] then
@@ -322,7 +322,9 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 					elseif sight_id == "wpn_fps_upg_o_su230_docter" then
 						switch_id = "wpn_fps_upg_o_su230_docter_switch"
 					end
-					table.insert(self[wpn_id].uses_parts, sight_id)
+					if not table.contains(self[wpn_id].uses_parts, sight_id) then
+						table.insert(self[wpn_id].uses_parts, sight_id)
+					end
 					if string.match(sight_base, "Custom") then
 						if self.parts[sight_id].stance_mod[stance_wpn_id] then
 							self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
