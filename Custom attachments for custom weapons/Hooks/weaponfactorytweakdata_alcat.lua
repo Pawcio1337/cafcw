@@ -456,54 +456,17 @@ end
 
 --Minebee9
 if self.wpn_fps_smg_minebea and self.wpn_fps_smg_x_minebea then
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_kobra", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_compm4s", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_m145", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_pkas", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_coyote", "wpn_fps_smg_minebea_o_adapter")
---[[if self.parts.wpn_fps_upg_o_acog_rmr then
-table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_o_acog_rmr")
-	self.wpn_fps_smg_minebea.adds.wpn_fps_upg_o_rmr = {
-		"wpn_fps_smg_minebea_o_adapter"
-	}
-end]]--
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_zeiss", "wpn_fps_smg_minebea_o_adapter")
+--no acog-type sight or large sight support
+self:cafcw_add_attachment_type("Specter", "wpn_fps_smg_minebea", "wpn_fps_smg_minebea_o_adapter")
+self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_rmr_riser", "wpn_fps_smg_minebea_o_adapter")
+self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_eotech552", "wpn_fps_smg_minebea_o_adapter")
+self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_po4", "wpn_fps_smg_minebea_o_adapter")
 self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_okp7", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_hd33", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_prismatic", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("gadget", "wpn_fps_smg_minebea", "wpn_fps_upg_fl_ass_spotter")
-self:cafcw_add_to_parts("gadget", "wpn_fps_smg_x_minebea", "wpn_fps_upg_fl_ass_spotter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_hcog", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_reflexholo", "wpn_fps_smg_minebea_o_adapter")
---[[if self.parts.wpn_fps_upg_o_aog then
-table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_o_aog")
-	self.wpn_fps_smg_minebea.adds.wpn_fps_upg_o_aog = {
-		"wpn_fps_smg_minebea_o_adapter"
-	}
-end]]--
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_smg_minebea", "wpn_fps_smg_minebea_o_adapter")
---[[ if self.parts.wpn_fps_upg_o_st10 then
-table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_o_st10")
-	self.wpn_fps_smg_minebea.adds.wpn_fps_upg_o_st10 = {
-		"wpn_fps_smg_minebea_o_adapter"
-	}
-end]]--
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_elo", "wpn_fps_smg_minebea_o_adapter")
---[[if self.parts.wpn_fps_upg_o_po4 then
-table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_o_po4")
-	self.wpn_fps_smg_minebea.adds.wpn_fps_upg_o_po4 = {
-		"wpn_fps_smg_minebea_o_adapter"
-	}
-end]]--
---[[if self.parts.wpn_fps_upg_o_susat then
-table.insert(self.wpn_fps_smg_minebea.uses_parts, "wpn_fps_upg_o_susat")
-	self.wpn_fps_smg_minebea.adds.wpn_fps_upg_o_susat = {
-		"wpn_fps_smg_minebea_o_adapter"
-	}
-end]]--
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_kemper", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_mepro", "wpn_fps_smg_minebea_o_adapter")
-self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_rusak", "wpn_fps_smg_minebea_o_adapter")
+self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_compm2", "wpn_fps_smg_minebea_o_adapter")
+self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_razoramg", "wpn_fps_smg_minebea_o_adapter")
+self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_valday1p87", "wpn_fps_smg_minebea_o_adapter")
+self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_burris_ff3", "wpn_fps_smg_minebea_o_adapter")
+self:cafcw_add_to_parts("attach_adds", "wpn_fps_smg_minebea", "wpn_fps_upg_o_romeo3", "wpn_fps_smg_minebea_o_adapter")
 
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_minebea")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_minebea")

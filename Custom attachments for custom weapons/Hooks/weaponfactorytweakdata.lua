@@ -142,7 +142,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_burris_ff3",
 	"wpn_fps_upg_o_romeo3",
 	"wpn_fps_upg_o_sig", -- DLC
-	"wpn_fps_upg_o_bmg" -- DLC
+	"wpn_fps_upg_o_bmg", -- DLC
+	"wpn_fps_upg_o_sn3"
 }
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
