@@ -143,7 +143,9 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_romeo3",
 	"wpn_fps_upg_o_sig", -- DLC
 	"wpn_fps_upg_o_bmg", -- DLC
-	"wpn_fps_upg_o_sn3"
+	"wpn_fps_upg_o_sn3",
+	"wpn_fps_upg_o_mro",
+	"wpn_fps_upg_o_vism"
 }
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
@@ -270,8 +272,6 @@ attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_okp7_dove"
 }
 -- Unique weapon tables to exclude specific attachments.
-attach_tables.AR15_Stocks_PLR16 = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_hke1","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_hkslimline"}
-attach_tables.Custom_AMR2 = {"wpn_fps_upg_o_rmr_riser","wpn_fps_upg_o_eotech552","wpn_fps_upg_o_po4","wpn_fps_upg_o_st10","wpn_fps_upg_o_susat","wpn_fps_upg_o_okp7","wpn_fps_upg_o_visionking","wpn_fps_upg_o_compm2","wpn_fps_upg_o_razoramg","wpn_fps_upg_o_valday1p87","wpn_fps_upg_o_burris_ff3","wpn_fps_upg_o_romeo3"}
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
 attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_unimax","wpn_fps_upg_fl_utg_pis"}
 attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock","wpn_fps_upg_ns_boomer"}
@@ -1685,7 +1685,7 @@ end
 if self.wpn_fps_snp_amr2 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("Custom_AMR2", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_amr2", "wpn_fps_snp_msr")
@@ -2133,7 +2133,7 @@ if self.wpn_fps_pis_plr16 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_plr16", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_plr16", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_plr16", "wpn_fps_ass_ak5")
-	self:cafcw_add_attachment_type("AR15_Stocks_PLR16", "wpn_fps_pis_plr16")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_pis_plr16")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_pis_plr16")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_pis_plr16")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_pis_plr16")
