@@ -504,6 +504,76 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -10, 2.3)
 	})
+	self:SetupAttachmentPoint("ultimax", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 15.5, 0)
+	})
+	self:SetupAttachmentPoint("ultimax", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -26.9, 0)
+	})
+	self:SetupAttachmentPoint("ak12", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 20, 0)
+	})
+	self:SetupAttachmentPoint("ak12", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -21, 0)
+	})
+	self:SetupAttachmentPoint("ak12_76", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 20, 0)
+	})
+	self:SetupAttachmentPoint("ak12_76", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -21, 0)
+	})
+	self:SetupAttachmentPoint("ar18", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 7.8, 0.5)
+	})
+	self:SetupAttachmentPoint("ar18", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -8, 0.5)
+	})
+	self:SetupAttachmentPoint("mk12", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 17, 0)
+	})
+	self:SetupAttachmentPoint("mk12", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -10, 0)
+	})
+	self:SetupAttachmentPoint("m1894", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, -0.1, 0)
+	})
+	self:SetupAttachmentPoint("m1894", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -26.5, 0)
+	})
+	self:SetupAttachmentPoint("vityaz", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 3.2, -0.95)
+	})
+	self:SetupAttachmentPoint("vityaz", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -10.3, -0.95)
+	})
 -- WW2 Sights:
 -- Glued Reflector Sight
 	self:SetupAttachmentPoint("m3", {
