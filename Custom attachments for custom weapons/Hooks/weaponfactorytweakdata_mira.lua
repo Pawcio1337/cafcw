@@ -342,4 +342,12 @@ if self.wpn_fps_smg_m4cqb then
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_smg_m4cqb_hg_m4", "a_fl_ddm4")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_smg_m4cqb_hg_ddm4", "a_fl_ddm4")
 end
+-- HK USP
+if self.wpn_fps_pis_ctfavourite then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_ctfavourite")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_ctfavourite")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_ctfavourite", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_ctfavourite", "a_ns", "barrel")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_ctfavourite")
+end
 end)

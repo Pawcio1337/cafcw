@@ -1028,6 +1028,13 @@ self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_snp
 
 end
 
+--Garand Various
+if BeardLib.Utils:FindMod("M1 Garand Various Attachment") then
+
+self:cafcw_forbids_attachment_type("Gadgets", "wpn_fps_ass_ching_o_m84")
+
+end
+
 
 
 end)
