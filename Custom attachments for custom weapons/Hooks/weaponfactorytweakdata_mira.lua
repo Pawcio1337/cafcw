@@ -350,4 +350,30 @@ if self.wpn_fps_pis_ctfavourite then
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_ctfavourite", "a_ns", "barrel")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_ctfavourite")
 end
+-- Soylent Green... Sorry, SAI GRY Remastered
+if self.wpn_fps_ass_grayhound then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_grayhound", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_grayhound", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_grayhound", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_grayhound", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_grayhound", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_grayhound")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_grayhound")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_grayhound")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_grayhound")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_grayhound")
+end
+-- HK G28
+if self.wpn_fps_snp_apairofmelons then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_apairofmelons")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_snp_apairofmelons")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_snp_apairofmelons")
+	self:cafcw_add_custom_ammo("wpn_fps_snp_apairofmelons", "_762x51mm")
+end
 end)
