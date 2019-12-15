@@ -651,7 +651,7 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights_ext(sight_base, wpn_id, 
 			end
 		end
 	else
-		log("[ERROR] cafcw_add_custom_sights_ext: Incorrect attach_type used: " .. attach_type, wpn_id)
+		log("[ERROR] cafcw_add_custom_sights_ext: Incorrect sight_base ID used: " .. sight_base, wpn_id, stance_wpn_id)
 	end
 end
 function WeaponFactoryTweakData:cafcw_category_forbid(wpn_id, cat_id, attach_id, exce_id)

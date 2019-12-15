@@ -238,9 +238,10 @@ if self.wpn_fps_smg_betty then
 	-- with this, we come full circle
 	-- a honey badger that i made almost completely from scratch, by me, with minimal assistance
 	-- merry christmas, modworkshop!
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_betty", "wpn_fps_ass_tecci")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_betty", "wpn_fps_ass_tecci")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_betty", "wpn_fps_ass_tecci")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_betty", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_betty", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_betty", "wpn_fps_ass_m4")
+	-- why the FUCK this shit gotta be cursed
 
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_betty")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_smg_betty")
