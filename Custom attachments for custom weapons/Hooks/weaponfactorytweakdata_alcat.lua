@@ -1035,6 +1035,13 @@ self:cafcw_forbids_attachment_type("Gadgets", "wpn_fps_ass_ching_o_m84")
 
 end
 
+--Skorpion Various
+if BeardLib.Utils:FindMod("Scorpion Various Mag") then
+
+self:cafcw_forbids_attachment_type("Gadgets_Pistol", "wpn_fps_smg_scorpion_body_norail")
+
+end
+
 
 
 end)

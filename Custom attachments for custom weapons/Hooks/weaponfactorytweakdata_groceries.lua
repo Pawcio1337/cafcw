@@ -151,6 +151,21 @@ if self.wpn_fps_ass_sg416 then
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_sg416")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_sg416")
 end
+--Reinbeck
+if self.wpn_fps_shot_beck then
+	self:cafcw_add_custom_ammo("wpn_fps_shot_beck", "_12ga_auto")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_beck", "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_shot_beck", "wpn_fps_upg_o_ekp_1s_03", "0.2,-11,-1.4")
+	self:cafcw_add_to_parts("sight_vector", "wpn_fps_shot_beck", "wpn_fps_upg_o_okp7_dove", "0.625,-9,-0.98")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_beck", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_snp_siltstone")
+	self:cafcw_add_to_parts("sight", "wpn_fps_shot_beck", "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_shot_beck", "wpn_fps_shot_r870", "0,0,0")
+	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_shot_beck", "wpn_fps_shot_r870", "0,0,0")
+	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_shot_beck", "wpn_fps_shot_r870", "0,0,0")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_beck")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_beck")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_beck")
+end
 --Secondary
 
 -- Nova Shotgun 
@@ -176,6 +191,19 @@ if self.wpn_fps_smg_pdr then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_pdr")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_pdr")
 end
+-- Dragon 5.45
+if self.wpn_fps_pis_smolak then
+	self:cafcw_add_custom_ammo("wpn_fps_pis_smolak", "_545x39mm")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_pis_smolak")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_pis_smolak")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_pis_smolak")
+end
+if self.wpn_fps_pis_x_smolak then
+	self:cafcw_add_custom_ammo("wpn_fps_pis_x_smolak", "_545x39mm")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_pis_x_smolak")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_pis_x_smolak")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_pis_x_smolak")
+end
 -- Scorpion Evo
 if self.wpn_fps_smg_evo then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_evo", "_9x19mm")
@@ -199,6 +227,23 @@ if self.wpn_fps_smg_ak5s then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_ak5s")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_ak5s")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_ak5s")
+end
+-- ACAR 9
+if self.wpn_fps_smg_car9 then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_car9", "_9x19mm")
+	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_smg_car9", "wpn_fps_ass_m4", "0,0,0")
+	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_smg_car9", "wpn_fps_ass_m4", "0,0,0")
+	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_smg_car9", "wpn_fps_ass_m4", "0,0,0")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_car9")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_car9")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_car9")
+end
+-- Akimbo ACAR 9
+if self.wpn_fps_smg_car9 then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_x_car9", "_9x19mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_car9")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_x_car9")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_x_car9")
 end
 -- CZ Scorpion Evo A1
 if self.wpn_fps_smg_czevo then
