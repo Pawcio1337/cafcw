@@ -207,13 +207,6 @@ attach_tables.SpecterSmall = {
 	"wpn_fps_upg_o_horzine",
 	"wpn_fps_upg_o_fc1" -- DLC
 }
-attach_tables.Custom_AK = {
-	"wpn_fps_upg_o_1p29",
-	"wpn_fps_upg_o_ekp_1s_03",
-	"wpn_fps_upg_o_pso1_rifle",
-	"wpn_fps_upg_o_1pn93",
-	"wpn_fps_upg_o_okp7_dove"
-}
 attach_tables.Custom_WW2_Allied = {
 	"wpn_fps_upg_o_nydar"
 }
@@ -263,21 +256,15 @@ attach_tables.MOD_IronSightsPack_Front = {
 	"wpn_fps_upg_o_var_troy_front",
 	"wpn_fps_upg_o_var_troym4_front"
 }
-attach_tables.MOD_SniperIronSights_Custom = {
-	"wpn_fps_upg_o_dd_a1",
-	"wpn_fps_upg_o_m4flipup",
-	"wpn_fps_upg_o_mbus",
-	"wpn_fps_upg_o_scorpionevo",
-	"wpn_fps_upg_o_troy",
-	"wpn_fps_upg_o_troy_m4"
+attach_tables.MOD_PistolIronSightsPack_Custom = {
+	"wpn_fps_upg_o_pis_ghostring",
+	"wpn_fps_upg_o_pis_seeall",
+	"wpn_fps_upg_o_pis_snek"
 }
-attach_tables.MOD_SniperIronSights_Front = {
-	"wpn_fps_upg_o_dd_a1_front",
-	"wpn_fps_upg_o_m4flipup_front",
-	"wpn_fps_upg_o_mbus_front",
-	"wpn_fps_upg_o_scorpionevo_front",
-	"wpn_fps_upg_o_troy_front",
-	"wpn_fps_upg_o_troy_m4_front"
+attach_tables.MOD_PistolIronSightsPack_Front = {
+	"wpn_fps_upg_o_pis_ghostring_front",
+	"wpn_fps_upg_o_pis_seeall_front",
+	"wpn_fps_upg_o_pis_snek_front"
 }
 attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_1p29",
@@ -288,10 +275,10 @@ attach_tables.MOD_RussianSightPack_Custom = {
 }
 -- Unique weapon tables to exclude specific attachments.
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
-attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_unimax","wpn_fps_upg_fl_utg_pis"}
+attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_pis_inforce_apl","wpn_fps_upg_fl_pis_unimax","wpn_fps_upg_fl_pis_utg"}
 attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock","wpn_fps_upg_ns_boomer"}
 attach_tables.AR15_Stocks_ButTheresNoHKE1Stock = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c",	"wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_m4_s_hkslimline","wpn_fps_upg_s_tti"}
-attach_tables.AR15_Stocks_NoHK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_s_tti"}
+attach_tables.AR15_Stocks_NoHK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_m4_ubr","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_s_tti","wpn_fps_ass_m4_s_russian"}
 -- Attachments tables end
 function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, add_id)
 	if type(attach_tables[attach_type]) == "table" then
@@ -1110,21 +1097,6 @@ if self.wpn_fps_ass_r0991 then
 	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_r0991_barrel_supp")
 	self:cafcw_wpn_a_obj_pattern_override("RDS45", "wpn_fps_ass_r0991", "a_o_45")
 end
--- SA vz. 58P
-if self.wpn_fps_ass_vz58 then
-	self:cafcw_add_custom_ammo("wpn_fps_ass_vz58", "_762x39mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_vz58", "wpn_fps_ass_74")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_vz58", "wpn_fps_ass_74")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_vz58", "wpn_fps_ass_74")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_vz58", "wpn_fps_ass_vz58")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_vz58")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_vz58")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_vz58")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_vz58")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_ass_vz58_irons")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_vz58_handguard_upper_rail", "a_fl_toprail")
-	self:cafcw_wpn_a_obj_pattern_override("RDS45", "wpn_fps_ass_vz58", "a_o_45")
-end
 -- KAC SR-25 E2 ACC
 if self.wpn_fps_snp_sr25 then
 	self:cafcw_add_to_parts("other", "wpn_fps_snp_sr25", "wpn_fps_shield_lr")
@@ -1275,7 +1247,6 @@ if self.wpn_fps_lmg_rpd then
 end
 -- M60
 if self.wpn_fps_lmg_m60 then
---	self:cafcw_add_to_parts("other", "wpn_fps_lmg_m60", "wpn_fps_shield_lmg")
 	self:cafcw_add_custom_ammo("wpn_fps_lmg_m60", "_762x51mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_m60")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_m60")
@@ -1693,10 +1664,6 @@ if self.wpn_fps_lmg_lewis then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_lewis")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_lewis")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_lewis")
-end
--- Caulk n' Burn
-if self.wpn_fps_fla_caulk then
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_fla_caulk")
 end
 -- AMR-2
 if self.wpn_fps_snp_amr2 then
@@ -2188,20 +2155,6 @@ if self.wpn_fps_ass_skspug then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_skspug")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_skspug")
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_skspug_handguard_short", "a_of_short")
-end
--- SA vz. 58 Compact
-if self.wpn_fps_smg_vz58comp then
-	self:cafcw_add_custom_ammo("wpn_fps_smg_vz58comp", "_762x39mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_vz58comp", "wpn_fps_ass_akm")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_vz58comp", "wpn_fps_ass_akm")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_vz58comp", "wpn_fps_ass_akm")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_vz58comp", "wpn_fps_smg_vz58comp")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_vz58comp")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_vz58comp")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_vz58comp")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_vz58comp")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_smg_vz58comp_irons")
-	self:cafcw_wpn_a_obj_pattern_override("RDS45", "wpn_fps_ass_vz58", "a_o_45")
 end
 -- Einhänder
 if self.wpn_fps_smg_einhander then
