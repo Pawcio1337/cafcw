@@ -331,6 +331,37 @@ if self.wpn_fps_smg_stoy_919 then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_stoy_919", "_9x19mm")
 end
 
+--PSA PACK
+
+if self.wpn_fps_ass_adar then
+		self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_adar", "wpn_fps_snp_tti")
+		self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_adar", "wpn_fps_snp_tti")
+		self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_adar", "wpn_fps_snp_tti")
+		self:cafcw_add_custom_ammo("wpn_fps_ass_adar", "_556x45mm")
+end
+--HK PACK
+
+if self.wpn_fps_smg_kurz_919 then
+		self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_kurz_919", "wpn_fps_smg_schakal", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_kurz_919", "wpn_fps_smg_schakal", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_kurz_919", "wpn_fps_smg_schakal", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_ammo("wpn_fps_smg_kurz_919", "_9x19mm")
+end
+if self.wpn_fps_smg_slap_919 then
+		self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_slap_919", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_slap_919", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_slap_919", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_ammo("wpn_fps_smg_slap_919", "_9x19mm")
+		
+		self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_slap_40", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_slap_40", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_slap_40", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+		
+		self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_slap_10", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_slap_10", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+		self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_slap_10", "wpn_fps_smg_mp5", "wpn_fps_smg_slap_919_sm_claw")
+end
+
 ---AK PACK
  
 local akmodules = {
@@ -340,7 +371,10 @@ local akmodules = {
     "wpn_fps_ass_heffy_939",
     "wpn_fps_ass_x_heffy_939",
     "wpn_fps_sho_heffy_12g",
-    "wpn_fps_ass_heffy_gold"
+    "wpn_fps_ass_heffy_gold",
+    "wpn_fps_ass_ak_stamp_762",
+    "wpn_fps_ass_ak_stamp_545",
+    "wpn_fps_ass_ak_stamp_556"
 }
 
 local akpack_scopemounts = {
@@ -350,7 +384,10 @@ local akpack_scopemounts = {
 	"wpn_fps_upg_o_ak9_scopemount",
 	"wpn_fps_upg_o_ak9_scopemount",
 	"wpn_fps_upg_o_saiga12_scopemount",
-	"wpn_fps_upg_o_gold_scopemount"
+	"wpn_fps_upg_o_gold_scopemount",
+	"wpn_fps_ass_ak_stamp_762_om_tula",
+	"wpn_fps_ass_ak_stamp_545_om_tula",
+	"wpn_fps_ass_ak_stamp_556_om_tula"
 }
 local akpack_ammo = {
 	"_762x39mm",
@@ -359,7 +396,10 @@ local akpack_ammo = {
 	"_9x39mm",
 	"_9x39mm",
 	"_12ga_auto",
-	"_762x39mm"
+	"_762x39mm",
+	"_762x39mm",
+	"_545x39mm",
+	"_556x45mm"
 }
 
  
@@ -379,17 +419,19 @@ for i, wpn_id in pairs(akmodules) do
 		self:cafcw_add_custom_sights("ACOG", wpn_id, "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
 		self:cafcw_add_custom_sights("Custom", wpn_id, "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
 		
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_okp7_dove", "0.5,8,0.15")
-		self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
-		self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_ekp_1s_03", "0,8,-1")
-		self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_pso1_rifle", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_snp_siltstone")
-		self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
-	
-		self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
+		if wpn_id ~= "wpn_fps_ass_ak_stamp_762" and wpn_id ~= "wpn_fps_ass_ak_stamp_545" and wpn_id ~= "wpn_fps_ass_ak_stamp_556" then
+			self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_okp7_dove", "0.5,8,0.15")
+			self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
+			self:cafcw_add_to_parts("sight_vector", wpn_id, "wpn_fps_upg_o_ekp_1s_03", "0,8,-1")
+			self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_pso1_rifle", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_snp_siltstone")
+			self:cafcw_add_to_parts("sight", wpn_id, "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
+
+			self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_lr"        )
+			self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
+			self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_urban")			
+		end
 		
-        self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_lr"        )
-        self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_ftp"  )
-        self:cafcw_add_to_parts("other" , wpn_id, "wpn_fps_shield_skin_urban")
+		self:cafcw_add_to_parts("sight_rail" , wpn_id, "wpn_fps_upg_o_delta_rm55", "wpn_fps_upg_o_45rds", "wpn_fps_ass_flint", akpack_scopemounts[akpack_counter])
 		
 		self:cafcw_add_custom_ammo(wpn_id, akpack_ammo[akpack_counter])
 		

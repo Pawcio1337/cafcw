@@ -48,6 +48,7 @@ attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_dragon",
 	"wpn_fps_upg_ns_ass_yhm_slant",
 	"wpn_fps_upg_ns_ass_smg_russian",
+	"wpn_fps_upg_ns_ass_smg_heavy",
 	"wpn_fps_upg_ns_ass_smg_v6" -- DLC
 }
 attach_tables.Barrel_Extensions_Shotgun = {
@@ -69,6 +70,7 @@ attach_tables.Gadgets = {
 	"wpn_fps_upg_fl_m600p",
 	"wpn_fps_upg_fl_utg",
 	"wpn_fps_upg_fl_unimax",
+	"wpn_fps_upg_fl_ass_smg_sho_marker",
 	"wpn_fps_upg_fl_unimax_inforce"
 }
 attach_tables.Gadgets_Pistol = {

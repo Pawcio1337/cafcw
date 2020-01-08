@@ -124,11 +124,6 @@ end
 -- AMR-12G
 if self.wpn_fps_shot_amr12 then
 	self:cafcw_add_custom_ammo("wpn_fps_shot_amr12", "_12ga_auto")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_amr12", "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_shot_amr12", "wpn_fps_upg_o_ekp_1s_03", "0.2,-11,-1.4")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_shot_amr12", "wpn_fps_upg_o_okp7_dove", "0.625,-9,-0.98")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_amr12", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_amr12", "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_amr12", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_amr12", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_amr12", "wpn_fps_ass_m16")
@@ -154,11 +149,6 @@ end
 --Reinbeck
 if self.wpn_fps_shot_beck then
 	self:cafcw_add_custom_ammo("wpn_fps_shot_beck", "_12ga_auto")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_beck", "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_shot_beck", "wpn_fps_upg_o_ekp_1s_03", "0.2,-11,-1.4")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_shot_beck", "wpn_fps_upg_o_okp7_dove", "0.625,-9,-0.98")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_beck", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_beck", "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_shot_beck", "wpn_fps_shot_r870", "0,0,0")
 	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_shot_beck", "wpn_fps_shot_r870", "0,0,0")
 	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_shot_beck", "wpn_fps_shot_r870", "0,0,0")
@@ -166,6 +156,17 @@ if self.wpn_fps_shot_beck then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_beck")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_beck")
 end
+-- Spiker 7.62
+if self.wpn_fps_ass_spike then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_spike", "_762x39mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_spike", "wpn_fps_sho_basset")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_spike", "wpn_fps_sho_basset")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_spike", "wpn_fps_sho_basset")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_spike")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_spike")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_spike")
+end
+
 --Secondary
 
 -- Nova Shotgun 

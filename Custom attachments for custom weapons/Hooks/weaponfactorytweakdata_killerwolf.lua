@@ -777,6 +777,9 @@ table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_ass_ns_g_sup4")
 end
 end
 
+if self.wpn_fps_smg_lugerwth then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_lugerwth", "_9x19mm")
+end
 
 -----------! > Attachments < !-----------
 
