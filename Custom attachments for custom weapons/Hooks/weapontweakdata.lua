@@ -613,6 +613,62 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_g",
 		position = Vector3(-0.3, 3.1, -0.85)
 	})
+-- Pistol Iron Sights Pack
+	self:SetupAttachmentPoint("p99", {
+		name = "a_o_ironspack",
+		base_a_obj = "a_o",
+		position = Vector3(0, -2.1, 0.3)
+	})
+	self:SetupAttachmentPoint("p99", {
+		name = "a_of_ironspack",
+		base_a_obj = "a_o",
+		position = Vector3(0, 15.5, 0.3)
+	})
+	self:SetupAttachmentPoint("px4", {
+		name = "a_o_ironspack",
+		base_a_obj = "a_rds",
+		position = Vector3(0, -4.45, 0.3)
+	})
+	self:SetupAttachmentPoint("px4", {
+		name = "a_of_ironspack",
+		base_a_obj = "a_rds",
+		position = Vector3(0, 12.9, 0.3)
+	})
+	self:SetupAttachmentPoint("swmp40", {
+		name = "a_o_ironspack",
+		base_a_obj = "a_rds",
+		position = Vector3(0, -5.8, -0.45)
+	})
+	self:SetupAttachmentPoint("swmp40", {
+		name = "a_of_ironspack",
+		base_a_obj = "a_rds",
+		position = Vector3(0, 12.5, -0.45)
+	})
+	self:SetupAttachmentPoint("swmp40", {
+		name = "a_of2_ironspack",
+		base_a_obj = "a_rds",
+		position = Vector3(0, 14, -0.5)
+	})
+	self:SetupAttachmentPoint("b93r", {
+		name = "a_o_ironspack",
+		base_a_obj = "a_o",
+		position = Vector3(0, -0.6, 0.3)
+	})
+	self:SetupAttachmentPoint("b93r", {
+		name = "a_of_ironspack",
+		base_a_obj = "a_o",
+		position = Vector3(0, 18.3, 0.3)
+	})
+	self:SetupAttachmentPoint("g19", {
+		name = "a_o_ironspack",
+		base_a_obj = "a_rds",
+		position = Vector3(0, -5.1, -0.4)
+	})
+	self:SetupAttachmentPoint("g19", {
+		name = "a_of_ironspack",
+		base_a_obj = "a_rds",
+		position = Vector3(0, 12, -0.4)
+	})
 -- Weapons:
 -- Chiappa Rhino 60DS
 	self:SetupAttachmentPoint("rhino", {

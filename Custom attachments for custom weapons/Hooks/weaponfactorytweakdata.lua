@@ -257,14 +257,15 @@ attach_tables.MOD_IronSightsPack_Front = {
 	"wpn_fps_upg_o_var_troym4_front"
 }
 attach_tables.MOD_PistolIronSightsPack_Custom = {
-	"wpn_fps_upg_o_pis_ghostring",
-	"wpn_fps_upg_o_pis_seeall",
-	"wpn_fps_upg_o_pis_snek"
+	"wpn_fps_upg_o_pis_atps",
+	"wpn_fps_upg_o_pis_drsnek",
+	"wpn_fps_upg_o_pis_fma17",
+	"wpn_fps_upg_o_pis_ghostring"
 }
 attach_tables.MOD_PistolIronSightsPack_Front = {
-	"wpn_fps_upg_o_pis_ghostring_front",
-	"wpn_fps_upg_o_pis_seeall_front",
-	"wpn_fps_upg_o_pis_snek_front"
+	"wpn_fps_upg_o_pis_atps_front",
+	"wpn_fps_upg_o_pis_drsnek_front",
+	"wpn_fps_upg_o_pis_ghostring_front"
 }
 attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_1p29",
@@ -273,7 +274,7 @@ attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_1pn93",
 	"wpn_fps_upg_o_okp7_dove"
 }
--- Unique weapon tables to exclude specific attachments.
+-- Unique weapon tables to exclude specific attachments. Only exception are Iron Sights Pack and Pistol Iron Sights Pack mods.
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
 attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_pis_inforce_apl","wpn_fps_upg_fl_pis_unimax","wpn_fps_upg_fl_pis_utg"}
 attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock","wpn_fps_upg_ns_boomer"}
@@ -302,7 +303,7 @@ function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, a
 		log("[ERROR] cafcw_add_attachment_type: Incorrect attach_type ID used: " .. attach_type, wpn_id, add_id)
 	end
 end
-function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id)
+function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stance_wpn_id, add_id, offset)
 	if type(attach_tables[sight_base]) == "table" then
 		if self[wpn_id] then
 			for i, sight_id in pairs(attach_tables[sight_base]) do
@@ -341,6 +342,9 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 						else
 							log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
 						end
+					end
+					if offset then
+						self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[wpn_id].translation + offset:ToVector3())
 					end
 				end
 				if switch_id then
@@ -1897,6 +1901,7 @@ if self.wpn_fps_pis_swmp40 then
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_swmp40", "wpn_fps_upg_o_romeo3", "a_o_rmr")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", "wpn_fps_pis_swmp40_sight_rear_dummy")
 	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_swmp40", "wpn_fps_pis_swmp40", "wpn_fps_pis_swmp40_sight_rear_dummy")
+	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", nil, "-0,0,0.15")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_swmp40")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_swmp40")
 	self:cafcw_add_attachment_type("Gadgets_Pistol_SWMP40", "wpn_fps_pis_swmp40")
@@ -1909,6 +1914,9 @@ if self.wpn_fps_pis_swmp40 then
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_swmp40", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_swmp40", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_swmp40", "a_ns", "barrel")
+	self:cafcw_part_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_upg_swmp40_slide_perf5", "a_of2_ironspack")
+	self:cafcw_part_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_upg_swmp40_slide_pro", "a_of2_ironspack")
+	self:cafcw_part_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_upg_swmp40_slide_pro_silver", "a_of2_ironspack")
 end
 -- AP Pistol
 if self.wpn_fps_pis_appistol then
@@ -1928,6 +1936,7 @@ end
 if self.wpn_fps_pis_b93r then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_b93r", "_9x19mm")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_b93r", "wpn_fps_pis_beretta", "wpn_fps_pis_b93r_sight_dummy")
+--	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_b93r", "wpn_fps_pis_beretta", nil, "0,0,0.25")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_b93r")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_b93r")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_b93r")
@@ -1948,6 +1957,7 @@ if self.wpn_fps_pis_p99 then
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_p99", "wpn_fps_upg_o_romeo3", "a_o_rmr")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_p99", "wpn_fps_pis_packrat", "wpn_fps_pis_p99_sight_dummy")
 	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_p99", "wpn_fps_pis_p99", "wpn_fps_pis_p99_sight_dummy")
+	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_p99", "wpn_fps_pis_packrat", nil, "0,0,-0.3")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_p99")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_p99")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_p99")
@@ -2021,6 +2031,7 @@ end
 -- Beretta Px4 Storm
 if self.wpn_fps_pis_px4 then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_px4", "wpn_fps_pis_sparrow", "wpn_fps_pis_px4_sight_dummy")
+	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_px4", "wpn_fps_pis_sparrow", nil, "-0,0,0.05")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_px4")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_px4")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_px4")
@@ -2172,6 +2183,7 @@ if self.wpn_fps_pis_g19 then
 	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_g19", "wpn_fps_upg_o_romeo3", "a_o_rmr")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_g19", "wpn_fps_pis_lemming", "wpn_fps_pis_g19_sight_dummy")
 	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_g19", "wpn_fps_pis_g19", "wpn_fps_pis_g19_sight_dummy")
+	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_g19", "wpn_fps_pis_lemming")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_g19")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_g19")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_g19")
