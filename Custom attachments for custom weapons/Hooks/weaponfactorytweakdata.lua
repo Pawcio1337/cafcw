@@ -227,6 +227,7 @@ attach_tables.MOD_IronSightsPack_Custom = {
 	"wpn_fps_upg_o_var_kac_rear",
 	"wpn_fps_upg_o_var_m4flipup_rear",
 	"wpn_fps_upg_o_var_mbus_rear",
+	"wpn_fps_upg_o_var_mbuspro_rear",
 	"wpn_fps_upg_o_var_scorpionevo_rear",
 	"wpn_fps_upg_o_var_troy_rear",
 	"wpn_fps_upg_o_var_troym4_rear"
@@ -238,6 +239,7 @@ attach_tables.MOD_IronSightsPack_NoScorpEvo_Custom = {
 	"wpn_fps_upg_o_var_kac_rear",
 	"wpn_fps_upg_o_var_m4flipup_rear",
 	"wpn_fps_upg_o_var_mbus_rear",
+	"wpn_fps_upg_o_var_mbuspro_rear",
 	"wpn_fps_upg_o_var_troy_rear",
 	"wpn_fps_upg_o_var_troym4_rear"
 }
@@ -248,6 +250,7 @@ attach_tables.MOD_IronSightsPack_SniperStats_Custom = {
 	"wpn_fps_upg_o_snp_kac_rear",
 	"wpn_fps_upg_o_snp_m4flipup_rear",
 	"wpn_fps_upg_o_snp_mbus_rear",
+	"wpn_fps_upg_o_snp_mbuspro_rear",
 	"wpn_fps_upg_o_snp_scorpionevo_rear",
 	"wpn_fps_upg_o_snp_troy_rear",
 	"wpn_fps_upg_o_snp_troym4_rear"
@@ -259,18 +262,22 @@ attach_tables.MOD_IronSightsPack_Front = {
 	"wpn_fps_upg_o_var_m4flipup_front",
 	"wpn_fps_upg_o_var_kac_front",
 	"wpn_fps_upg_o_var_mbus_front",
+	"wpn_fps_upg_o_var_mbuspro_front",
 	"wpn_fps_upg_o_var_scorpionevo_front",
 	"wpn_fps_upg_o_var_troy_front",
 	"wpn_fps_upg_o_var_troym4_front"
 }
 attach_tables.MOD_PistolIronSightsPack_Custom = {
 	"wpn_fps_upg_o_pis_atps",
+	"wpn_fps_upg_o_pis_czhajo",
 	"wpn_fps_upg_o_pis_drsnek",
 	"wpn_fps_upg_o_pis_fma17",
-	"wpn_fps_upg_o_pis_ghostring"
+	"wpn_fps_upg_o_pis_ghostring",
+	"wpn_fps_upg_o_pis_seeall"
 }
 attach_tables.MOD_PistolIronSightsPack_Front = {
 	"wpn_fps_upg_o_pis_atps_front",
+	"wpn_fps_upg_o_pis_czhajo_front",
 	"wpn_fps_upg_o_pis_drsnek_front",
 	"wpn_fps_upg_o_pis_ghostring_front"
 }
@@ -322,9 +329,7 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 						sight_base = "wpn_fps_upg_o_45rds"
 					elseif sight_base == "Shortdot" then
 						sight_base = "wpn_fps_upg_o_shortdot"
-					elseif sight_base == "Specter" then
-						sight_base = "wpn_fps_upg_o_specter"
-					elseif sight_base == "SpecterSmall" then
+					elseif sight_base == "Specter" or sight_base == "SpecterSmall" then
 						sight_base = "wpn_fps_upg_o_specter"
 					end
 					if sight_id == "wpn_fps_upg_o_acog_rmr" then
