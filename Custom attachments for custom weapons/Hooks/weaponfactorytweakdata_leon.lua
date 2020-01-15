@@ -21,5 +21,19 @@ if self.wpn_fps_ass_munmu then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_munmu")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_munmu")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_munmu")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_munmu")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_munmu")
+end
+-- GITS M4A1 (she moved from my list to my boyfriend's, yup)
+if self.wpn_fps_ass_cinnamonroll then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_cinnamonroll", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_cinnamonroll")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_cinnamonroll")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_cinnamonroll")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_cinnamonroll")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_cinnamonroll")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_cinnamonroll")
 end
 end)

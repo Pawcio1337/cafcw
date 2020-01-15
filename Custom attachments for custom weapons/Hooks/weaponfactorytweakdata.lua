@@ -5,7 +5,8 @@ attach_tables.AR15_Grips = {
 	"wpn_fps_upg_m4_g_fab_agr43",
 	"wpn_fps_upg_m4_g_vindicator",
 	"wpn_fps_ass_m4_g_fancy",
-	"wpn_fps_upg_g_m4_surgeon" -- DLC
+	"wpn_fps_upg_g_m4_surgeon", -- DLC
+	"wpn_fps_upg_g_gitsm4"
 }
 attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m4_m_x15drum",
@@ -38,7 +39,8 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_fab_glr16s_alt",
 	"wpn_fps_upg_m4_s_hkslimline",
 	"wpn_fps_upg_s_tti",
-	"wpn_fps_ass_m4_s_russian"
+	"wpn_fps_ass_m4_s_russian",
+	"wpn_fps_upg_s_gitsm4"
 }
 attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_smg_tromix",
@@ -49,7 +51,10 @@ attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_yhm_slant",
 	"wpn_fps_upg_ns_ass_smg_russian",
 	"wpn_fps_upg_ns_ass_smg_heavy",
-	"wpn_fps_upg_ns_ass_smg_v6" -- DLC
+	"wpn_fps_upg_ns_ass_smg_v6", -- DLC
+	"wpn_fps_upg_ns_gits_dildo_h",
+	"wpn_fps_upg_ns_gits_another_h",
+	"wpn_fps_upg_ns_gits_sorrycarl_l"
 }
 attach_tables.Barrel_Extensions_Shotgun = {
 	"wpn_fps_upg_ns_shot_gk_01",
@@ -87,7 +92,9 @@ attach_tables.Suppressors = {
 	"wpn_fps_upg_ns_loud",
 	"wpn_fps_upg_ns_hock",
 	"wpn_fps_upg_ns_osprey",
-	"wpn_fps_upg_ns_boomer"
+	"wpn_fps_upg_ns_boomer",
+	"wpn_fps_upg_ns_gits_illegal_s",
+	"wpn_fps_upg_ns_gits_generic_s"
 }
 attach_tables.Suppressors_Shotgun = {
 	"wpn_fps_upg_ns_sho_salvo_small",

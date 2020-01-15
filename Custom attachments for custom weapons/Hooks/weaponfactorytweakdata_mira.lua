@@ -370,10 +370,20 @@ if self.wpn_fps_snp_apairofmelons then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_apairofmelons", "wpn_fps_snp_apairofmelons")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_apairofmelons")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_snp_apairofmelons")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_snp_apairofmelons")
 	self:cafcw_add_custom_ammo("wpn_fps_snp_apairofmelons", "_762x51mm")
+end
+-- AI AX308
+if self.wpn_fps_snp_kissesforleon then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_kissesforleon", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_kissesforleon", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_kissesforleon", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_kissesforleon", "wpn_fps_snp_kissesforleon")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_kissesforleon", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_kissesforleon", "wpn_fps_snp_msr")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_kissesforleon")
 end
 end)
