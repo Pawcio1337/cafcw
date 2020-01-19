@@ -36,4 +36,19 @@ if self.wpn_fps_ass_cinnamonroll then
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_cinnamonroll")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_cinnamonroll")
 end
+-- Troglodyte (I hate this thing, but I love Leon)
+if self.wpn_fps_snp_troglodyte then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_troglodyte", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_troglodyte", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_troglodyte", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_troglodyte", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_troglodyte", "wpn_fps_snp_msr")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_snp_troglodyte_thing", "a_o_troglodyte")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_snp_troglodyte_thing", "a_o_troglodyte")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_snp_troglodyte_thing", "a_o_troglodyte")
+	self:cafcw_part_a_obj_pattern_override("Custom_Sniper", "wpn_fps_snp_troglodyte_thing", "a_o_troglodyte")
+	self:cafcw_part_a_obj_pattern_override("Shortdot", "wpn_fps_snp_troglodyte_thing", "a_o_troglodyte")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_troglodyte")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_snp_troglodyte_thing", "a_fl_troglodyte")
+end
 end)
