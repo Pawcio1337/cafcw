@@ -613,6 +613,11 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_g",
 		position = Vector3(-0.3, 3.1, -0.85)
 	})
+	self:SetupAttachmentPoint("sw27",{
+		name = "a_g_sml",
+		base_a_obj = "a_g",
+		position = Vector3(-0.3, 3.0, -0.9)
+	})
 -- Pistol Iron Sights Pack
 	self:SetupAttachmentPoint("p99", {
 		name = "a_o_ironspack",

@@ -2231,7 +2231,15 @@ end
 if self.wpn_fps_pis_mars then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mars")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_mars", "wpn_fps_pis_mars_gadgetrail")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mars")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_mars", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_mars", "a_ns", "barrel")
+end
+-- SW Model 27
+if self.wpn_fps_pis_sw27 then
+	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw27", "wpn_fps_upg_m29_sidemountlaser")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw27")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw27", "a_ns", "barrel")
 end
 -- Attachments
 -- AK Rail Cover

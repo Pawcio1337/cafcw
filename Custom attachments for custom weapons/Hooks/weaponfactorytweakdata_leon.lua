@@ -51,4 +51,11 @@ if self.wpn_fps_snp_troglodyte then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_troglodyte")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_snp_troglodyte_thing", "a_fl_troglodyte")
 end
+-- BOSG 12.2
+if self.wpn_fps_shot_dokkasho then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_dokkasho", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_dokkasho", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_dokkasho", "wpn_fps_ass_amcar")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_dokkasho")
+end
 end)

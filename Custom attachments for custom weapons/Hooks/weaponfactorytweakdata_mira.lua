@@ -386,4 +386,21 @@ if self.wpn_fps_snp_kissesforleon then
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_kissesforleon", "wpn_fps_snp_msr")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_kissesforleon")
 end
+-- F90 body for AUG
+if self.parts.wpn_fps_ass_aug_body_f90mbr then
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_aug_body_f90mbr", "a_fl_f90")	
+	self:cafcw_part_a_obj_pattern_override("Vertical_Grips", "wpn_fps_ass_aug_body_f90mbr", "a_vg_f90")	
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_ass_aug_body_f90mbr", "a_or_f90")
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_aug_body_f90mbr", "a_of_f90")
+end
+-- SV-98
+if self.wpn_fps_snp_heartpiercer then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_heartpiercer", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_heartpiercer", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_heartpiercer", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_heartpiercer", "wpn_fps_snp_heartpiercer")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_heartpiercer", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_heartpiercer", "wpn_fps_snp_msr")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_heartpiercer")
+end
 end)
