@@ -58,4 +58,13 @@ if self.wpn_fps_shot_dokkasho then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_dokkasho", "wpn_fps_ass_amcar")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_dokkasho")
 end
+-- Saritch .308 (what an ugly gun, what a best hubby)
+if self.wpn_fps_ass_spear308 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_spear308", "wpn_fps_ass_vhs")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_spear308", "wpn_fps_ass_vhs")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_spear308", "wpn_fps_ass_vhs")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_spear308")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_spear308")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_spear308")
+end
 end)

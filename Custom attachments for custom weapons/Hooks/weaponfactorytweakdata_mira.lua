@@ -330,17 +330,14 @@ if self.wpn_fps_smg_m4cqb then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_m4cqb", "wpn_fps_ass_s552")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_m4cqb", "wpn_fps_ass_s552")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_m4cqb", "wpn_fps_ass_s552")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_m4cqb", "wpn_fps_upg_o_var_kac_rear", "0,-2,-2")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_m4cqb", "wpn_fps_upg_o_var_mbus_rear", "0,-2,-1.7")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_m4cqb", "wpn_fps_upg_o_var_m4flipup_rear", "0,-2,-1.5")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_m4cqb", "wpn_fps_upg_o_var_scorpionevo_rear", "0,-3,0.4")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_m4cqb", "wpn_fps_upg_o_var_troy_rear", "0,-2,-1.52")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_smg_m4cqb", "wpn_fps_upg_o_var_troym4_rear", "0,-2,-1.5")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_m4cqb", "wpn_fps_ass_s552")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_m4cqb")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_m4cqb")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_m4cqb")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_smg_m4cqb_hg_m4", "a_fl_ddm4")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_smg_m4cqb_hg_ddm4", "a_fl_ddm4")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_grayhound")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_grayhound")
 end
 -- HK USP
 if self.wpn_fps_pis_ctfavourite then
