@@ -2063,6 +2063,9 @@ if self.wpn_fps_pis_rhino then
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_rhino", "wpn_fps_pis_rhino_gadget_rail")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_rhino", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_pis_rhino", nil, "barrel")
+	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_rhino_barrel")
+	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_rhino_barrel")
+	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_pis_rhino_barrel")
 end
 -- Mateba Model 6 Unica
 if self.wpn_fps_pis_unica6 then
