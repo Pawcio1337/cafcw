@@ -23,6 +23,7 @@ if self.wpn_fps_ass_munmu then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_munmu")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_munmu")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_munmu")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_munmu", "_556x45mm")
 end
 -- GITS M4A1 (she moved from my list to my boyfriend's, yup)
 if self.wpn_fps_ass_cinnamonroll then
@@ -35,6 +36,7 @@ if self.wpn_fps_ass_cinnamonroll then
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_cinnamonroll")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_cinnamonroll")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_cinnamonroll")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_cinnamonroll", "_556x45mm")
 end
 -- Troglodyte (I hate this thing, but I love Leon)
 if self.wpn_fps_snp_troglodyte then
@@ -57,6 +59,7 @@ if self.wpn_fps_shot_dokkasho then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_dokkasho", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_dokkasho", "wpn_fps_ass_amcar")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_dokkasho")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_dokkasho", "_12ga_mag")
 end
 -- Saritch .308 (what an ugly gun, what a best hubby)
 if self.wpn_fps_ass_spear308 then
@@ -66,5 +69,6 @@ if self.wpn_fps_ass_spear308 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_spear308")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_spear308")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_spear308")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_spear308", "_762x51mm")
 end
 end)

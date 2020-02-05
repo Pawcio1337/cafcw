@@ -625,6 +625,7 @@ self:cafcw_add_to_parts("forbids", "wpn_fps_mp_peepee_b_conceal", "wpn_fps_ass_n
 self:cafcw_add_to_parts("forbids", "wpn_fps_mp_peepee_b_conceal", "wpn_fps_ass_ns_g_sup4")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_mp_peepee")
 self:cafcw_add_custom_ammo("wpn_fps_mp_peepee", "_9x19mm")
+self:cafcw_add_custom_ammo("wpn_fps_mp_peepee", "_9x19mm_p")
 end
 
 

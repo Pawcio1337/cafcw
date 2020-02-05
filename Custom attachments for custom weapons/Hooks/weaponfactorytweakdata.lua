@@ -496,11 +496,11 @@ ammo_table._762x51mm = {
 	"wpn_fps_upg_a_762x51_m993",
 	"wpn_fps_upg_a_762x51_m61",
 	"wpn_fps_upg_a_762x51_m62",
-	"wpn_fps_upg_a_762x51_xm256"
+	"wpn_fps_upg_a_762x51_xm256",
+	"wpn_fps_upg_a_762x51_m198"
 }
 ammo_table._556x45mm = {
 	"wpn_fps_upg_a_taser556",
-	"wpn_fps_riflein556",
 	"wpn_fps_upg_a_556x45_ppa",
 	"wpn_fps_upg_a_556x45_dm31",
 	"wpn_fps_upg_a_556x45_m995",
@@ -513,7 +513,10 @@ ammo_table._556x45mm = {
 	"wpn_fps_upg_a_556x45_m855a1",
 	"wpn_fps_upg_a_556x45_mk262",
 	"wpn_fps_upg_a_556x45_mk318",
-	"wpn_fps_upg_a_556x45_gp90"
+	"wpn_fps_upg_a_556x45_gp90",
+	"wpn_fps_upg_a_556x45_acr1",
+	"wpn_fps_upg_a_556x45_acr2",
+	"wpn_fps_upg_a_556x45_acr3b"
 }
 ammo_table._545x39mm = {
 	"wpn_fps_upg_a_545x39_7u1",
@@ -571,7 +574,9 @@ ammo_table._9x19mm = {
 	"wpn_fps_upg_a_taser9mm",
 	"wpn_fps_upg_a_lap9mm",
 	"wpn_fps_upg_a_ap9mm",
-	"wpn_fps_upg_a_hv9mm"
+	"wpn_fps_upg_a_hv9mm",
+	"wpn_fps_upg_a_9x19_bird",
+	"wpn_fps_upg_a_9x19_rat"
 }
 ammo_table._9x19mm_p = {
 	"wpn_fps_upg_a_7h21",
@@ -585,10 +590,14 @@ ammo_table._12ga = {
 	"wpn_fps_hvshell",
 	"wpn_fps_upg_a_minislug",
 	"wpn_fps_upg_a_minibuck",
-	"wpn_fps_upg_a_poisonslug"
+	"wpn_fps_upg_a_poisonslug",
+	"wpn_fps_upg_a_12_bird",
+	"wpn_fps_upg_a_12_exp_buck",
+	"wpn_fps_upg_a_12_inc_slug"
 }
 ammo_table._12ga_auto = {
-	"wpn_fps_taserslug"
+	"wpn_fps_taserslug",
+	"wpn_fps_upg_a_12_inc_slug"
 }
 ammo_table._12ga_mag = {
 	"wpn_fps_xrepslug",
@@ -596,14 +605,15 @@ ammo_table._12ga_mag = {
 	"wpn_fps_taserslug",
 	"wpn_fps_aptaser",
 	"wpn_fps_hvshell",
-	"wpn_fps_upg_a_poisonslug"
+	"wpn_fps_upg_a_poisonslug",
+	"wpn_fps_upg_a_12_exp_buck",
+	"wpn_fps_upg_a_12_inc_slug",
+	"wpn_fps_upg_a_12_bird"
 }
 	for i, part_id in pairs(ammo_table[ammo_type]) do
 		if forbids_add then
-			if self.parts[wpn_or_part_id] then
-				if not self.parts[wpn_or_part_id].forbids then
-					self.parts[wpn_or_part_id].forbids = {}
-				end
+			if self.parts[wpn_or_part_id] and self.parts[part_id] then
+				self.parts[wpn_or_part_id].forbids = self.parts[wpn_or_part_id].forbids or {}
 				table.insert(self.parts[wpn_or_part_id].forbids, part_id)
 			end
 		else
@@ -1895,6 +1905,9 @@ if self.wpn_fps_pis_aps then
 	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_aps_barrel_portedextra")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_aps", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_aps", "a_ns", "barrel")
+	if self.parts.wpn_fps_upg_ac_9x19 then
+		table.insert(self.wpn_fps_pis_aps.uses_parts, "wpn_fps_upg_ac_9x19")
+	end
 end
 -- S&W M&P40
 if self.wpn_fps_pis_swmp40 then

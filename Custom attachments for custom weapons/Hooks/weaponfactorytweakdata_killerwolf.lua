@@ -742,6 +742,7 @@ end
 	
 	-- GSh-18 / Akimbo GSh-18 --	
 if self.wpn_fps_pis_gsh18 then
+	self:cafcw_add_custom_ammo("wpn_fps_pis_gsh18", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_gsh18", "_9x19mm_p")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_gsh18", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_gsh18", "a_ns", "barrel")
@@ -750,6 +751,7 @@ if self.wpn_fps_pis_gsh18 then
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_gsh18")
 end
 if self.wpn_fps_x_gsh18 then
+	self:cafcw_add_custom_ammo("wpn_fps_x_gsh18", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_x_gsh18", "_9x19mm_p")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_x_gsh18")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_x_gsh18", "wpn_fps_pis_ppk_fl_mount")
@@ -767,6 +769,10 @@ end
 if self.wpn_fps_smg_aek919 and self.wpn_fps_smg_x_aek919 then
 self:cafcw_add_custom_ammo("wpn_fps_smg_aek919", "_9x19mm")
 self:cafcw_add_custom_ammo("wpn_fps_smg_x_aek919", "_9x19mm")
+if self.parts.wpn_fps_upg_ac_9x19 then
+table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_upg_ac_9x19")
+table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_upg_ac_9x19")
+end
 if self.parts.wpn_fps_ass_ns_g_sup3 then
 table.insert(self.wpn_fps_smg_aek919.uses_parts, "wpn_fps_ass_ns_g_sup3")
 table.insert(self.wpn_fps_smg_x_aek919.uses_parts, "wpn_fps_ass_ns_g_sup3")
@@ -789,6 +795,10 @@ if self.parts.wpn_fps_upg_akm_bayonet then
 	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_akm_bayonet")
 end
 	---- Ammo ----
+-- Christ I don't come here often huh.. 01.02.2020
+if self.parts.wpn_fps_upg_ac_416barrett then
+	self:cafcw_add_custom_ammo("wpn_fps_upg_ac_416barrett", "_127x99mm", "forbids_add")
+end
 
 --[[	-- _9x19mm --
 local custom9mm_guns = {
