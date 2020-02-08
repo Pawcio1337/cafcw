@@ -339,8 +339,8 @@ if self.wpn_fps_smg_m4cqb then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_m4cqb")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_smg_m4cqb_hg_m4", "a_fl_ddm4")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_smg_m4cqb_hg_ddm4", "a_fl_ddm4")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mk18prim")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mk18prim")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_smg_m4cqb")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_m4cqb")
 end
 if self.parts.wpn_fps_smg_m4cqb_o_stupid then
 	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_smg_m4cqb_o_stupid", "a_o_stupid")	
@@ -354,6 +354,8 @@ if self.wpn_fps_ass_mk18prim then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mk18prim", "wpn_fps_ass_s552")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mk18prim", "wpn_fps_ass_s552")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_mk18prim", "wpn_fps_ass_s552")
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_mk18prim_ba_m16", "a_of_m5")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_mk18prim_ba_m16", "a_fl_m5")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mk18prim")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mk18prim")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mk18prim")

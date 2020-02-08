@@ -158,7 +158,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_bmg", -- DLC
 	"wpn_fps_upg_o_sn3",
 	"wpn_fps_upg_o_mro",
-	"wpn_fps_upg_o_vism"
+	"wpn_fps_upg_o_vism",
+	"wpn_fps_upg_o_pk01_vi"
 }
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
@@ -1675,10 +1676,8 @@ if self.wpn_fps_snp_psg1 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_psg1", "wpn_fps_snp_tti", "wpn_fps_snp_psg1_sightrail")
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_psg1", "wpn_fps_snp_tti", "wpn_fps_snp_psg1_sightrail")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_psg1", "wpn_fps_snp_tti", "wpn_fps_snp_psg1_sightrail")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_psg1", "wpn_fps_snp_psg1")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_psg1")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_snp_psg1_handguard", "a_fl_psg1")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_psg1_handguard_rail", "a_fl_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_snp_psg1", nil, "foregrip")
 end
 -- Lewis Gun
 if self.wpn_fps_lmg_lewis then
