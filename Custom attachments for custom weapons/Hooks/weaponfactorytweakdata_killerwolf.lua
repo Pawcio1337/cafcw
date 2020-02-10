@@ -3,7 +3,29 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Killerwolf_In
 -----------! > Primary < !-----------
 
 	---- Assault Rifles ---
-	
+
+-- Seburo C26A
+if self.wpn_fps_ass_sc26a then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_sc26a", "_545x39mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_sc26a", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_sc26a", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_sc26a", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_sc26a")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_sc26a")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_sc26a")
+end
+
+-- Seburo C30
+if self.wpn_fps_ass_sc30 then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_sc30", "_545x39mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_sc30", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_sc30", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_sc30", "wpn_fps_ass_flint", "wpn_fps_ass_aek971_sight_rail")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_sc30")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_sc30")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_sc30")
+end
+
 	---- Akimbos ---
 
 	-- Akimbo HK416C --

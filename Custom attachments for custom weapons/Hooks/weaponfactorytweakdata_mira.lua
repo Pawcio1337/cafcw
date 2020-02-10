@@ -425,4 +425,22 @@ if self.wpn_fps_snp_heartpiercer then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_heartpiercer")
 	self:cafcw_add_custom_ammo("wpn_fps_snp_heartpiercer", "_762x54mmr")
 end
+-- Prokolot
+if self.wpn_fps_pis_rusglock then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_rusglock")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_rusglock")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_rusglock", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_rusglock", "a_ns", "barrel")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_rusglock")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_rusglock", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_rusglock", "_9x19mm_p")
+end
+if self.wpn_fps_pis_pkpsd9 then
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_pkpsd9")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_pkpsd9", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_pkpsd9", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_pkpsd9", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_pkpsd9", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_pkpsd9", "_9x19mm_p")
+end
 end)
