@@ -574,6 +574,16 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -10.3, -0.95)
 	})
+	self:SetupAttachmentPoint("psg1", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 6.95, 0)
+	})
+	self:SetupAttachmentPoint("psg1", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -16, 0)
+	})
 -- WW2 Sights:
 -- Glued Reflector Sight
 	self:SetupAttachmentPoint("m3", {
