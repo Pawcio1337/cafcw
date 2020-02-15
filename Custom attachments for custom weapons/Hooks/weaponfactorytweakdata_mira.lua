@@ -443,4 +443,24 @@ if self.wpn_fps_pis_pkpsd9 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_pkpsd9", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_pkpsd9", "_9x19mm_p")
 end
+-- VBR PDW
+if self.wpn_fps_pis_lele then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_lele")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_lele")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_lele", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_lele", "a_ns", "barrel")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_lele")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_lele", "_9x19mm")
+end
+-- Beretta M38A
+if self.wpn_fps_smg_m38a then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_m38a", "_9x19mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_m38a", "wpn_fps_smg_erma", "wpn_fps_smg_m38a_o_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_m38a", "wpn_fps_smg_erma", "wpn_fps_smg_m38a_o_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_m38a", "wpn_fps_smg_erma", "wpn_fps_smg_m38a_o_rail")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_m38a", "wpn_fps_smg_m38a")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_m38a")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_m38a")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_m38a")
+end
 end)
