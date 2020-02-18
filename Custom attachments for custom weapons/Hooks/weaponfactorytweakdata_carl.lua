@@ -267,4 +267,14 @@ if self.wpn_fps_ass_mk17 then
 
 end
 
+-- FN Five-seveN MK2
+if self.wpn_fps_pis_hoxy then
+	-- hoxy...?
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_hoxy")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_hoxy")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_hoxy")
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_upg_hoxy_o_scopemount", "a_fl_rail")
+
+end
+
 end)

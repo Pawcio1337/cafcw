@@ -463,4 +463,25 @@ if self.wpn_fps_smg_m38a then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_m38a")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_m38a")
 end
+-- LWRC SMG-45
+if self.wpn_fps_smg_smg45 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_smg45", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_smg45", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_smg45", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_smg45", "wpn_fps_smg_smg45")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_smg45", "wpn_fps_smg_shepheard")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_smg45")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_smg45")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_smg45")
+end
+-- VPO-215 Gornostay
+if self.wpn_fps_shot_paradox then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_paradox", "wpn_fps_snp_model70", "wpn_fps_shot_paradox_o_rail")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_paradox", "wpn_fps_snp_model70", "wpn_fps_shot_paradox_o_rail")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_paradox", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_shot_paradox", "wpn_fps_snp_model70", "wpn_fps_shot_paradox_o_rail")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_shot_paradox", "wpn_fps_snp_model70", "wpn_fps_shot_paradox_o_rail")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_shot_paradox", "wpn_fps_shot_paradox")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_paradox")
+end
 end)
