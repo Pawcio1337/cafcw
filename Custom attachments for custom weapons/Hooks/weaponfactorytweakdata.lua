@@ -76,12 +76,14 @@ attach_tables.Gadgets = {
 	"wpn_fps_upg_fl_utg",
 	"wpn_fps_upg_fl_unimax",
 	"wpn_fps_upg_fl_ass_smg_sho_marker",
-	"wpn_fps_upg_fl_unimax_inforce"
+	"wpn_fps_upg_fl_unimax_inforce",
+	"wpn_fps_upg_fl_gits_soc1"
 }
 attach_tables.Gadgets_Pistol = {
-	"wpn_fps_upg_fl_micro90",
+	"wpn_fps_upg_fl_pis_micro90",
 	"wpn_fps_upg_fl_pis_inforce_apl",
 	"wpn_fps_upg_fl_pis_unimax",
+	"wpn_fps_upg_fl_pis_unimax_inforce",
 	"wpn_fps_upg_fl_pis_utg"
 }
 attach_tables.Suppressors = {
@@ -159,7 +161,9 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_sn3",
 	"wpn_fps_upg_o_mro",
 	"wpn_fps_upg_o_vism",
-	"wpn_fps_upg_o_pk01_vi"
+	"wpn_fps_upg_o_pk01_vi",
+	"wpn_fps_upg_o_redring",
+	"wpn_fps_upg_o_gits_qs2"
 }
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
@@ -208,7 +212,12 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_pn23",
 	"wpn_fps_upg_o_cqb",
 	"wpn_fps_upg_o_uh", -- DLC
-	"wpn_fps_upg_o_fc1" -- DLC
+	"wpn_fps_upg_o_fc1", -- DLC
+	"wpn_fps_upg_o_he510c",
+	"wpn_fps_upg_o_gits_trusight",
+	"wpn_fps_upg_o_gits_futeot",
+	"wpn_fps_upg_o_gits_seburors",
+	"wpn_fps_upg_o_gits_zism"
 }
 attach_tables.SpecterSmall = {
 	"wpn_fps_upg_o_coyote",
@@ -291,10 +300,10 @@ attach_tables.MOD_RussianSightPack_Custom = {
 }
 -- Unique weapon tables to exclude specific attachments. Only exception are Iron Sights Pack and Pistol Iron Sights Pack mods.
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
-attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_pis_inforce_apl","wpn_fps_upg_fl_pis_unimax","wpn_fps_upg_fl_pis_utg"}
+attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_pis_inforce_apl","wpn_fps_upg_fl_pis_unimax","wpn_fps_upg_fl_pis_unimax_inforce","wpn_fps_upg_fl_pis_utg"}
 attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock","wpn_fps_upg_ns_boomer"}
 attach_tables.AR15_Stocks_ButTheresNoHKE1Stock = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c",	"wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_m4_s_hkslimline","wpn_fps_upg_s_tti"}
-attach_tables.AR15_Stocks_NoHK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_m4_ubr","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_s_tti","wpn_fps_ass_m4_s_russian"}
+attach_tables.AR15_Stocks_NoHK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_m4_ubr","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_s_tti","wpn_fps_ass_m4_s_russian","wpn_fps_upg_s_gitsm4"}
 -- Attachments tables end
 function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, add_id)
 	if type(attach_tables[attach_type]) == "table" then

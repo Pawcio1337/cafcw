@@ -71,4 +71,26 @@ if self.wpn_fps_ass_spear308 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_spear308")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_spear308", "_762x51mm")
 end
+-- FightLite Raider (modern flintlock)
+if self.wpn_fps_pis_raider then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_raider", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_raider", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_raider", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_pis_raider", "wpn_fps_smg_olympic")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_pis_raider")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_pis_raider")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_pis_raider")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_pis_raider")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_raider", "_556x45mm")
+end
+-- DVL-10 (WHERE IS MY DEADPOOL SKIN)
+if self.wpn_fps_snp_dvl10 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_dvl10", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_dvl10", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_dvl10", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_dvl10", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_dvl10", "wpn_fps_snp_msr")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_dvl10")
+	self:cafcw_add_custom_ammo("wpn_fps_snp_dvl10", "_762x51mm")
+end
 end)
