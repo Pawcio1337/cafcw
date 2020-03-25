@@ -250,12 +250,48 @@ if self.wpn_fps_smg_betty then
 
 end
 
+--Q Honey Badger (Primary Ver.)
+if self.wpn_fps_ass_petto then
+	-- if we weren't full circle before we are now!
+	-- just redid the q honey badger to look actually good, and i have to say i think i've finally done it
+	-- maybe. i dunno. fuck it
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_petto", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_petto", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_petto", "wpn_fps_ass_m4")
+
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_petto")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_petto")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_petto")
+
+end
+
+-- desert benis time
+
+-- Desert Eagle L5
+if self.wpn_fps_pis_limafive then
+	-- ever wished for a desert eagle that was practicool and tacticool at the same time?
+	-- yeah, me neither, yet here we are anyway
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_limafive")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_limafive")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_limafive")
+	
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_limafive", "wpn_fps_pis_deagle")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_limafive", "wpn_fps_pis_deagle")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_limafive", "wpn_fps_pis_deagle")
+end
+
+-- Desert Eagle XIX
+if self.wpn_fps_pis_deltaoneniner then
+	-- ???
+end
+
 -- BELGIAN GANG BELGIAN GANG
 
 -- MK 17 MOD 0
 if self.wpn_fps_ass_mk17 then
 	-- fun fact: when i was younger i used to be the guy who swore by 7.62mm in literally every game ever
 	-- i'm not that guy anymore, of course, but i *do* still think the fn scar is goddamn sexy
+	self:cafcw_add_custom_ammo("wpn_fps_ass_mk17", "_762x51mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mk17", "wpn_fps_ass_scar")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mk17", "wpn_fps_ass_scar")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mk17", "wpn_fps_ass_scar")
