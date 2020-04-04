@@ -1834,15 +1834,24 @@ if self.wpn_fps_lmg_sigke7 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_sigke7")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_sigke7")
 end
--- Barrett M107 CQB
-if self.wpn_fps_snp_m107cqb then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_m107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_m107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_m107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_m107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_m107cqb", "wpn_fps_snp_m107cqb")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m107cqb")
+-- Barrett M107CQ
+if self.wpn_fps_snp_m107cq then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_m107cq", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_m107cq", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m107cq", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_m107cq", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_m107cq", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_m107cq", "wpn_fps_snp_m107cq")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m107cq")
+end
+-- Barrett XM109
+if self.wpn_fps_snp_pew107cqb then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_pew107cqb")
 end
 -- Secondary
 -- MPX
@@ -2331,13 +2340,5 @@ if self.parts.wpn_fps_pis_m29_gadget_rail and self.parts.wpn_fps_pis_rage_gadget
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_chinchilla", "wpn_fps_pis_m29_gadget_rail")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_rage", "wpn_fps_pis_rage_gadget_rail")
 	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_pis_chinchilla_b_satan", "a_fl_devil")
-end
-if self.wpn_fps_snp_pew107cqb then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_pew107cqb")
 end
 end)
