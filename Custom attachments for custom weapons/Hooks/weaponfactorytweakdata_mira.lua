@@ -484,4 +484,20 @@ if self.wpn_fps_shot_paradox then
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_shot_paradox", "wpn_fps_shot_paradox")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_paradox")
 end
+-- Beretta 92FS "Samurai Edge"
+if self.wpn_fps_pis_m9butcool then
+	self:cafcw_add_custom_ammo("wpn_fps_pis_m9butcool", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_m9butcool_ck_aw01", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_m9butcool_ck_40sw", "_9x19mm", "forbids_add")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_m9butcool")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_m9butcool")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_m9butcool", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_m9butcool", "a_ns", "barrel")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_m9butcool")
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_pis_m9butcool_ex_rail", "a_fl_bar")	
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_pis_m9butcool_ns_aw01", "a_fl_bar")	
+	self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_m9butcool", "wpn_fps_pis_ppk", "0,0,0")
+	self:cafcw_part_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_m9butcool_ro_raised", "a_rds_raised")	
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_m9butcool", nil, "slide")
+end
 end)

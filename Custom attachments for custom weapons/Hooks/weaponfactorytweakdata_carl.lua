@@ -282,7 +282,14 @@ end
 
 -- Desert Eagle XIX
 if self.wpn_fps_pis_deltaoneniner then
-	-- ???
+	-- now THIS is where it's fucken AT boyo woo
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_deltaoneniner")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_deltaoneniner")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_deltaoneniner")
+	
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_deltaoneniner", "wpn_fps_pis_deagle")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_deltaoneniner", "wpn_fps_pis_deagle")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_deltaoneniner", "wpn_fps_pis_deagle")
 end
 
 -- BELGIAN GANG BELGIAN GANG

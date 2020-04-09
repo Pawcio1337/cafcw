@@ -412,30 +412,21 @@ end
 function WeaponFactoryTweakData:cafcw_part_a_obj_pattern_override(attach_type, part_ovr_id, a_obj_id, parent_id)
 	if type(attach_tables[attach_type]) == "table" then
 		for i, part_id in pairs(attach_tables[attach_type]) do
-			if self.parts[part_id] then
+			if self.parts[part_id] and self.parts[part_ovr_id] then
+				if not self.parts[part_ovr_id].override then
+					self.parts[part_ovr_id].override = {}
+				end
 				if a_obj_id and parent_id then
-					if self.parts[part_ovr_id] then
-						if self.parts[part_ovr_id].override then
-							self.parts[part_ovr_id].override[part_id] = {a_obj = a_obj_id, parent = parent_id}
-						else
-							log("[ERROR] CAFCW: Missing override table: " .. part_ovr_id, part_id)
-						end
+					if self.parts[part_ovr_id].override then
+						self.parts[part_ovr_id].override[part_id] = {a_obj = a_obj_id, parent = parent_id}
 					end
 				elseif a_obj_id and not parent_id then
-					if self.parts[part_ovr_id] then
-						if self.parts[part_ovr_id].override then
-							self.parts[part_ovr_id].override[part_id] = {a_obj = a_obj_id}
-						else
-							log("[ERROR] CAFCW: Missing override table: " .. part_ovr_id, part_id)
-						end
+					if self.parts[part_ovr_id].override then
+						self.parts[part_ovr_id].override[part_id] = {a_obj = a_obj_id}
 					end
 				elseif parent_id and not a_obj_id then
-					if self.parts[part_ovr_id] then
-						if self.parts[part_ovr_id].override then
-							self.parts[part_ovr_id].override[part_id] = {parent = parent_id}
-						else
-							log("[ERROR] CAFCW: Missing override table: " .. part_ovr_id, part_id)
-						end
+					if self.parts[part_ovr_id].override then
+						self.parts[part_ovr_id].override[part_id] = {parent = parent_id}
 					end
 				end
 			end
@@ -1213,10 +1204,11 @@ end
 -- Galil ACE 23
 if self.wpn_fps_ass_galilace then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_galilace", "_556x45mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_galilace", "wpn_fps_smg_hajk")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_galilace", "wpn_fps_ass_ak5")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_galilace", "wpn_fps_ass_ak5")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_galilace", "wpn_fps_ass_ak5")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_galilace", "wpn_fps_ass_galilace")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_galilace", "wpn_fps_ass_ak5")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_galilace")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_galilace")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_galilace")
@@ -1225,8 +1217,8 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_galilace_gadgets_leftrail", "a_fl_leftrail")
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace_barrel_ace21", "a_of_short")
 end
--- Galil ACE 52
-if self.wpn_fps_ass_galilace_762 then
+-- Galil ACE 7.62
+--[[if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_galilace_762", "_762x51mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
@@ -1238,7 +1230,7 @@ if self.wpn_fps_ass_galilace_762 then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_galilace_762")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_galilace_762")
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace_barrel_cqb", "a_of_short")
-end
+end]]
 -- AEK-971
 if self.wpn_fps_ass_aek971 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_aek971", "_545x39mm")
@@ -2305,6 +2297,7 @@ if self.wpn_fps_pis_rugermk3 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_rugermk3")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_rugermk3", "wpn_fps_pis_rugermk3_gadgetrail")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_rugermk3")
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_rugermk3", "wpn_fps_pis_breech")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_rugermk3", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_rugermk3", "a_ns", "barrel")
 end
