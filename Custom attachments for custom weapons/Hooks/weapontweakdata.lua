@@ -204,21 +204,21 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -12, 0)
 	})
---[[	self:SetupAttachmentPoint("galilace762", {
+	self:SetupAttachmentPoint("galilace762", {
 		name = "a_of",
 		base_a_obj = "a_o",
-		position = Vector3(0, 25, 0)
+		position = Vector3(0, 24.8, 0)
 	})
 	self:SetupAttachmentPoint("galilace762", {
 		name = "a_of_short",
 		base_a_obj = "a_o",
-		position = Vector3(0, 21, 0)
+		position = Vector3(0, 16.9, 0)
 	})
 	self:SetupAttachmentPoint("galilace762", {
 		name = "a_or",
 		base_a_obj = "a_o",
-		position = Vector3(0, -12, 0)
-	})]]
+		position = Vector3(0, -14.6, 0)
+	})
 	self:SetupAttachmentPoint("hk416", {
 		name = "a_of",
 		base_a_obj = "a_o",

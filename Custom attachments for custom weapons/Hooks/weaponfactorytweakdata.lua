@@ -1218,19 +1218,21 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace_barrel_ace21", "a_of_short")
 end
 -- Galil ACE 7.62
---[[if self.wpn_fps_ass_galilace_762 then
-	self:cafcw_add_custom_ammo("wpn_fps_ass_galilace_762", "_762x51mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_galilace_762", "wpn_fps_smg_hajk")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_galilace_762")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_galilace_762")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_galilace_762")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_galilace_762")
-	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_galilace_762")
-	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace_barrel_cqb", "a_of_short")
-end]]
+if self.wpn_fps_ass_galilace762 then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_galilace762", "_762x51mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_galilace762", "wpn_fps_ass_fal")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_galilace762", "wpn_fps_ass_fal")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_galilace762", "wpn_fps_ass_fal")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_galilace762", "wpn_fps_ass_galilace762")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_galilace762", "wpn_fps_ass_fal")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_galilace762")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_galilace762")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_galilace762")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_galilace762")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_galilace762")
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace762_barrel_med", "a_of_short")
+	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace762_barrel_short", "a_of_short")
+end
 -- AEK-971
 if self.wpn_fps_ass_aek971 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_aek971", "_545x39mm")
