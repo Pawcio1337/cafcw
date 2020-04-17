@@ -437,12 +437,12 @@ if self.SetupAttachmentPoint then
 	self:SetupAttachmentPoint("aug9mm", {
 		name = "a_of",
 		base_a_obj = "a_o",
-		position = Vector3(0, 12.1, 0)
+		position = Vector3(0, 12, 0)
 	})
 	self:SetupAttachmentPoint("aug9mm", {
 		name = "a_or",
 		base_a_obj = "a_o",
-		position = Vector3(0, -13.8, 0)
+		position = Vector3(0, -18, 0)
 	})
 	self:SetupAttachmentPoint("sar21", {
 		name = "a_of",

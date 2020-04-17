@@ -2040,16 +2040,14 @@ if self.wpn_fps_pis_hk45c then
 end
 -- Steyr AUG A3 9mm XS
 if self.wpn_fps_smg_aug9mm then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_smg_aug9mm", "wpn_fps_ass_aug")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_aug9mm", "wpn_fps_smg_mp9")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_aug9mm", "wpn_fps_smg_mp9")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_aug9mm", "wpn_fps_smg_mp9")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_smg_aug9mm", "wpn_fps_smg_mp9")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_aug9mm")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_aug9mm")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_aug9mm")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_smg_aug9mm")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_aug9mm_gadgets_leftrail", "a_fl_leftrail")
 end
 -- Colt Model 933 .300 Blackout
 if self.wpn_fps_smg_r0933blk then
