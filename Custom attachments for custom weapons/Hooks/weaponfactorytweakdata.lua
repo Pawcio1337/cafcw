@@ -239,6 +239,7 @@ attach_tables.MOD_IronSightsPack_Custom = {
 	"wpn_fps_upg_o_var_m4flipup_rear",
 	"wpn_fps_upg_o_var_mbus_rear",
 	"wpn_fps_upg_o_var_mbuspro_rear",
+	"wpn_fps_upg_o_var_scalarworks_peak_rear",
 	"wpn_fps_upg_o_var_scorpionevo_rear",
 	"wpn_fps_upg_o_var_troy_rear",
 	"wpn_fps_upg_o_var_troym4_rear"
@@ -251,6 +252,7 @@ attach_tables.MOD_IronSightsPack_NoScorpEvo_Custom = {
 	"wpn_fps_upg_o_var_m4flipup_rear",
 	"wpn_fps_upg_o_var_mbus_rear",
 	"wpn_fps_upg_o_var_mbuspro_rear",
+	"wpn_fps_upg_o_var_scalarworks_peak_rear",
 	"wpn_fps_upg_o_var_troy_rear",
 	"wpn_fps_upg_o_var_troym4_rear"
 }
@@ -262,6 +264,7 @@ attach_tables.MOD_IronSightsPack_SniperStats_Custom = {
 	"wpn_fps_upg_o_snp_m4flipup_rear",
 	"wpn_fps_upg_o_snp_mbus_rear",
 	"wpn_fps_upg_o_snp_mbuspro_rear",
+	"wpn_fps_upg_o_snp_scalarworks_peak_rear",
 	"wpn_fps_upg_o_snp_scorpionevo_rear",
 	"wpn_fps_upg_o_snp_troy_rear",
 	"wpn_fps_upg_o_snp_troym4_rear"
@@ -274,6 +277,7 @@ attach_tables.MOD_IronSightsPack_Front = {
 	"wpn_fps_upg_o_var_kac_front",
 	"wpn_fps_upg_o_var_mbus_front",
 	"wpn_fps_upg_o_var_mbuspro_front",
+	"wpn_fps_upg_o_var_scalarworks_peak_front",
 	"wpn_fps_upg_o_var_scorpionevo_front",
 	"wpn_fps_upg_o_var_troy_front",
 	"wpn_fps_upg_o_var_troym4_front"
