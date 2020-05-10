@@ -1155,13 +1155,15 @@ if self.wpn_fps_ass_ots_14_4a then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2", "wpn_fps_ass_ots_14_4a_sight_rail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2", "wpn_fps_ass_ots_14_4a_sight_rail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2", "wpn_fps_ass_ots_14_4a_sight_rail")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_ots_14_4a_sight_rail")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_ots_14_4a")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_ots_14_4a")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_ots_14_4a")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_ots_14_4a")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_ots_14_4a")
 	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_ots_14_4a_supp_b")
 	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_ots_14_4a_supp_b")
 	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_ass_ots_14_4a_gasblock_45forbids")
+	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_ass_ots_14_4a_barrel")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_ots_14_4a_fl_leftrail", "a_fl_left")
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_ots_14_4a", nil, "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("RDS45", "wpn_fps_ass_ots_14_4a", "a_o_45")
@@ -2319,22 +2321,9 @@ if self.parts.wpn_fps_upg_o_ak_coverrail then
 	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_coal_coverrail", "a_o_coverrail")
 	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_coal_coverrail", "a_o_coverrail")
 end
--- Luger P08 Gadgets
-if self.parts.wpn_fps_pis_breech_gadget_rail then
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_breech", "wpn_fps_pis_breech_gadget_rail")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_breech", "wpn_fps_pis_breech_gadget_rail")
-end
 -- Aug A1 Kit
 if self.parts.wpn_fps_aug_body_aug_a1 and self.parts.wpn_fps_aug_body_aug_a3 then
 	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a1")
 	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a3")
-end
--- Revolver Gadgets
-if self.parts.wpn_fps_pis_m29_gadget_rail and self.parts.wpn_fps_pis_rage_gadget_rail then
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_chinchilla", "wpn_fps_pis_m29_gadget_rail")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_rage", "wpn_fps_pis_rage_gadget_rail")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_chinchilla", "wpn_fps_pis_m29_gadget_rail")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_rage", "wpn_fps_pis_rage_gadget_rail")
-	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_pis_chinchilla_b_satan", "a_fl_devil")
 end
 end)

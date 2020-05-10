@@ -265,6 +265,28 @@ if self.wpn_fps_ass_petto then
 
 end
 
+--BCM Cold Harbor AR15
+if self.wpn_fps_ass_m4bpre then
+	-- the black powders when they red earth idk i never played it
+	self:cafcw_add_custom_ammo("wpn_fps_ass_m4bpre", "_556x45mm")
+	self:cafcw_add_custom_ammo("wpn_fps_upg_m4bpre_b_blk", "_556x45mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_upg_m4bpre_b_socom", "_556x45mm", "forbids_add")
+	
+	-- hahahaha referencing that dancing triangle meme totally wont make this dated
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m4bpre", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m4bpre", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m4bpre", "wpn_fps_ass_m16")
+
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_m4bpre")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_m4bpre")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_m4bpre")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_m4bpre")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_m4bpre")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_m4bpre")
+
+end
+
+
 -- desert benis time
 
 -- Desert Eagle L5
