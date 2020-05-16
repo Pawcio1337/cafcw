@@ -219,26 +219,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -14.6, 0)
 	})
-	self:SetupAttachmentPoint("hk416", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 22, 1)
-	})
-	self:SetupAttachmentPoint("hk416", {
-		name = "a_of_long",
-		base_a_obj = "a_o",
-		position = Vector3(0, 28, 1)
-	})
-	self:SetupAttachmentPoint("hk416", {
-		name = "a_of_short",
-		base_a_obj = "a_o",
-		position = Vector3(0, 16, 1)
-	})
-	self:SetupAttachmentPoint("hk416", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -14, 1)
-	})
 	self:SetupAttachmentPoint("f2000", {
 		name = "a_of",
 		base_a_obj = "a_o",

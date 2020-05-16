@@ -164,7 +164,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_pk01_vi",
 	"wpn_fps_upg_o_redring",
 	"wpn_fps_upg_o_gits_qs2",
-	"wpn_fps_upg_o_acog2000"
+	"wpn_fps_upg_o_acog2000",
+	"wpn_fps_upg_o_ta648rmr"
 }
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
@@ -183,8 +184,7 @@ attach_tables.RDS45 = {
 	"wpn_fps_upg_o_45steel" -- DLC
 }
 attach_tables.Shortdot = {
-	"wpn_fps_upg_o_ta648",
-	"wpn_fps_upg_o_ta648rmr"
+	"wpn_fps_upg_o_ta648"
 }
 attach_tables.Specter = {
 	"wpn_fps_upg_o_kobra",
@@ -1328,11 +1328,8 @@ if self.wpn_fps_ass_hk416 then
 	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_hk416_fl_toprail")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_hk416_fl_leftrail", "a_fl_left")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_hk416_fl_toprail", "a_fl_top")
-	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_hk416_handguard_c", "a_of_short")
-	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_hk416_handguard_elite", "a_of_short")
-	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_hk416_handguard_long", "a_of_long")
-	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_hk416_handguard_smrlong", "a_of_long")
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_hk416", nil, "foregrip")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_hk416", nil, "foregrip")
 end
 -- SVD
 if self.wpn_fps_snp_svd then
@@ -1780,7 +1777,7 @@ if self.wpn_fps_snp_moss464spx then
 end
 -- Akimbo S&W Model 642
 if self.wpn_fps_pis_x_sw642 then
-	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_x_sw642", "wpn_fps_upg_m29_sidemountlaser")
+	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_x_sw642", "wpn_fps_upg_fl_pis_sidemountlaser")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw642")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw642", "a_ns", "barrel")
 end
@@ -2169,7 +2166,7 @@ if self.wpn_fps_shot_wmtx then
 end
 -- S&W Model 327 R8
 if self.wpn_fps_pis_sw327r8 then
-	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw327r8", "wpn_fps_upg_m29_sidemountlaser")
+	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw327r8", "wpn_fps_upg_fl_pis_sidemountlaser")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
@@ -2264,7 +2261,7 @@ if self.wpn_fps_pis_g19 then
 end
 -- S&W Model 642
 if self.wpn_fps_pis_sw642 then
-	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw642", "wpn_fps_upg_m29_sidemountlaser")
+	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw642", "wpn_fps_upg_fl_pis_sidemountlaser")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw642")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw642", "a_ns", "barrel")
 end
@@ -2293,7 +2290,7 @@ if self.wpn_fps_pis_mars then
 end
 -- SW Model 27
 if self.wpn_fps_pis_sw27 then
-	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw27", "wpn_fps_upg_m29_sidemountlaser")
+	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw27", "wpn_fps_upg_fl_pis_sidemountlaser")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw27")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw27", "a_ns", "barrel")
 end
