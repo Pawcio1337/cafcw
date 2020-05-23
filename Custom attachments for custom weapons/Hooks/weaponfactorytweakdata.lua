@@ -1478,7 +1478,7 @@ if self.wpn_fps_snp_cs5 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_cs5", "wpn_fps_snp_cs5")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_snp_cs5")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_cs5")
