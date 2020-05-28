@@ -200,22 +200,6 @@ if self.wpn_fps_ass_rabbit then
 	self:cafcw_part_a_obj_pattern_override("Barrel_Extensions", "wpn_fps_upg_rabbit_fg_ext", "a_ns_afghan")
 end
 
--- ST AR-15
-if self.wpn_fps_ass_flat then
-	-- STAR IS FLAT BOTTOM TEXT
-	self:cafcw_add_custom_ammo("wpn_fps_ass_flat", "_556x45mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_flat")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_flat")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_flat")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_flat")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_flat")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_flat")
-	-- todo: custom sniper/shortdot
-end
-
 -- HK416A5 GFL
 if self.wpn_fps_ass_raifu then
 	-- (all you need intensifies)
@@ -284,6 +268,41 @@ if self.wpn_fps_ass_m4bpre then
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_m4bpre")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_m4bpre")
 
+end
+
+-- its finally time
+
+-- theyre coming
+
+-- ST AR-15
+if self.wpn_fps_ass_flat then
+	-- STAR IS FLAT BOTTOM TEXT
+	self:cafcw_add_custom_ammo("wpn_fps_ass_flat", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_flat", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_flat")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_flat")
+	-- todo: custom sniper/shortdot
+end
+
+-- M4 SOPMOD II
+if self.wpn_fps_ass_gameover then
+	-- jsut wanna pat her head my man you know?
+	self:cafcw_add_custom_ammo("wpn_fps_ass_gameover", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_gameover", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_gameover", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_gameover", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_gameover")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_gameover")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_gameover")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_gameover")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_gameover")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_gameover")
 end
 
 

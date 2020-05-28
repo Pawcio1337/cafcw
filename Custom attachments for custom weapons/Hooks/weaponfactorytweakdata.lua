@@ -989,27 +989,22 @@ if self.wpn_fps_ass_fd338 then
 end
 -- HK G36K
 if self.wpn_fps_ass_g36k then
-	self:cafcw_add_to_parts("other", "wpn_fps_ass_g36k", "wpn_fps_shield_v2")
-	self:cafcw_add_to_parts("other", "wpn_fps_ass_g36k", "wpn_fps_shield_skin_ftp")
-	self:cafcw_add_to_parts("other", "wpn_fps_ass_g36k", "wpn_fps_shield_skin_urban")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_g36k", "_556x45mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_g36k")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_g36k")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_g36k")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_g36k")
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_g36k_sightrail_kac", "a_o_kac")
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_g36k_sightrail_kac", "a_o_kac")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_g36k_sightrail_kac", "a_o_kac")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_g36k_fl_leftrail", "a_fl_leftrail")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_g36k_fl_toprail", "a_fl_toprail")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_g36k_export_sight")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_g36k_sightrail_kac")
-	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_upg_g36k_sightrail_kac")
+	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_ass_g36k", nil, "sight_rail")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_ass_g36k", nil, "sight_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_ass_g36k", nil, "sight_rail")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_g36k", nil, "sight_rail")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_g36k", nil, "sight_rail")
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_g36k", nil, "foregrip")
 end
 -- SKS
