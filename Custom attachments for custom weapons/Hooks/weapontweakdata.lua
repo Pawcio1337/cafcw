@@ -2,26 +2,6 @@ Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
 if self.SetupAttachmentPoint then
 -- Attachments:
 -- Russian Weapons - Sight Pack
-	self:SetupAttachmentPoint("vss", {
-		name = "a_o_1p29",
-		base_a_obj = "a_o",
-		position = Vector3(0.5, -4, -1.7)
-	})
-	self:SetupAttachmentPoint("vss", {
-		name = "a_o_1pn93",
-		base_a_obj = "a_o",
-		position = Vector3(-0.8, -4, 0.35)
-	})
-	self:SetupAttachmentPoint("vss", {
-		name = "a_o_ekp_1s_03",
-		base_a_obj = "a_o",
-		position = Vector3(-0.2, 0, -2.7)
-	})
-	self:SetupAttachmentPoint("vss", {
-		name = "a_o_okp7",
-		base_a_obj = "a_o",
-		position = Vector3(-0.4, 3.25, -3.2)
-	})
 	self:SetupAttachmentPoint("svd", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -136,21 +116,6 @@ if self.SetupAttachmentPoint then
 		name = "a_o_pso1",
 		base_a_obj = "a_o",
 		position = Vector3(-0.9, -9.5, -1.4)
-	})
-	self:SetupAttachmentPoint("vityaz", {
-		name = "a_o_1p29",
-		base_a_obj = "a_o",
-		position = Vector3(0.4, -7, -1.3)
-	})
-	self:SetupAttachmentPoint("vityaz", {
-		name = "a_o_1pn93",
-		base_a_obj = "a_o",
-		position = Vector3(-0.9, -7, -0.05)
-	})
-	self:SetupAttachmentPoint("vityaz", {
-		name = "a_o_okp7",
-		base_a_obj = "a_o",
-		position = Vector3(-0.7, 2, -3)
 	})
 	self:SetupAttachmentPoint("auto_cross", {
 		name = "a_o_1pn93",
