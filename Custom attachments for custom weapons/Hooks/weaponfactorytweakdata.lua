@@ -165,7 +165,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_redring",
 	"wpn_fps_upg_o_gits_qs2",
 	"wpn_fps_upg_o_acog2000",
-	"wpn_fps_upg_o_ta648rmr"
+	"wpn_fps_upg_o_ta648rmr",
+	"wpn_fps_upg_o_viper"
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
@@ -182,7 +183,8 @@ attach_tables.Custom_Pistol = {
 	"wpn_fps_upg_o_deltapoint_pro",
 	"wpn_fps_upg_o_romeo3_pis",
 	"wpn_fps_upg_o_rms", -- DLC
-	"wpn_fps_upg_o_rikt" -- DLC
+	"wpn_fps_upg_o_rikt", -- DLC
+	"wpn_fps_pis_upg_o_viper" 
 }
 attach_tables.RDS45 = {
 	"wpn_fps_upg_o_delta_rm55",
@@ -2120,9 +2122,8 @@ if self.wpn_fps_pis_unica6 then
 end
 -- HX25 Handheld Grenade Launcher
 if self.wpn_fps_gre_hx25 then
-	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_g19", "wpn_fps_pis_lemming")
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_gre_hx25", "wpn_fps_pis_lemming")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_gre_hx25")
-	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_g19", nil, "false")
 end
 -- Zenith 10mm
 if self.wpn_fps_pis_zenith then
