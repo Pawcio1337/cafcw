@@ -504,4 +504,20 @@ if self.wpn_fps_pis_m9butcool then
 	self:cafcw_part_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_m9butcool_ro_raised", "a_rds_raised")	
 	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_m9butcool", nil, "slide")
 end
+-- Smug-12
+if self.wpn_fps_ass_smug12 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_smug12", "wpn_fps_ass_flint", "wpn_fps_ass_smug12_o_cosm")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_smug12", "wpn_fps_ass_flint", "wpn_fps_ass_smug12_o_cosm")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_smug12", "wpn_fps_ass_flint", "wpn_fps_ass_smug12_o_cosm")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_smug12", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_smug12", "wpn_fps_ass_smug12")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_smug12", "wpn_fps_ass_smug12_rail_std")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_smug12")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_smug12")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_smug12", "_545x39mm")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_smug12", "_762x39mm")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_smug12_m_762x39", "_545x39mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_smug12_m_ak12", "_762x39mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_smug12_m_classic", "_762x39mm", "forbids_add")
+end
 end)
