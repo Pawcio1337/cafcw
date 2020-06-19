@@ -482,12 +482,12 @@ if self.SetupAttachmentPoint then
 	self:SetupAttachmentPoint("m1894", {
 		name = "a_of",
 		base_a_obj = "a_o",
-		position = Vector3(0, -0.1, 0)
+		position = Vector3(0, 4.4, 0)
 	})
 	self:SetupAttachmentPoint("m1894", {
 		name = "a_or",
 		base_a_obj = "a_o",
-		position = Vector3(0, -26.5, 0)
+		position = Vector3(0, -22.7, 0)
 	})
 	self:SetupAttachmentPoint("vityaz", {
 		name = "a_of",
@@ -595,12 +595,6 @@ if self.SetupAttachmentPoint then
 		position = Vector3(0, 18.3, 0.3)
 	})
 -- Weapons:
--- Chiappa Rhino 60DS
-	self:SetupAttachmentPoint("rhino", {
-		name = "a_o_rmr",
-		base_a_obj = "a_o",
-		position = Vector3(0, 18, -1.1)
-	})
 -- S&W M&P40
 	self:SetupAttachmentPoint("swmp40", {
 		name = "a_o_rmr",
