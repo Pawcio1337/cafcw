@@ -1331,24 +1331,17 @@ end
 -- SVD
 if self.wpn_fps_snp_svd then
 	self:cafcw_add_custom_ammo("wpn_fps_snp_svd", "_762x54mmr")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_svd", "wpn_fps_upg_o_1p29", "-0.405,3,-3.118")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_svd", "wpn_fps_upg_o_1pn93", "-0.405,3,-3.118")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_svd", "wpn_fps_upg_o_ekp_1s_03", "0.2,-1,-2.3")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_snp_svd", "wpn_fps_upg_o_okp7_dove", "0.655,1,-1.68")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_mount_molot")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_mount_molot")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_mount_molot")
-	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_mount_molot")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone", "wpn_fps_snp_svd_mount_molot")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_svd", "wpn_fps_snp_svd")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_svd", "wpn_fps_snp_siltstone")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_svd")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_snp_svd_pso")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_upg_svd_irons")
 end
 -- CheyTac M200
 if self.wpn_fps_snp_m200 then
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_1p69", "wpn_fps_upg_o_1p69", "wpn_fps_snp_msr")
-	self:cafcw_add_to_parts("sight", "wpn_fps_snp_m200", "wpn_fps_upg_o_csgoscope", "wpn_fps_upg_o_csgoscope", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
@@ -1430,16 +1423,6 @@ if self.wpn_fps_snp_winchester1894 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_winchester1894", "wpn_fps_snp_tti", "wpn_fps_snp_winchester1894_sight_rail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_winchester1894", "wpn_fps_snp_tti", "wpn_fps_snp_winchester1894_sight_rail")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_winchester1894", "wpn_fps_snp_winchester1894_gadget_rail")
-end
--- AAI LSAT
-if self.wpn_fps_lmg_lsat then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_lsat")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_lsat")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_lsat")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_lsat")
 end
 -- Molot Vepr-12
 if self.wpn_fps_shot_vepr12 then
@@ -1803,16 +1786,14 @@ if self.wpn_fps_lmg_m60e4 then
 end
 -- M1A1 Carbine
 if self.wpn_fps_ass_m1a1 then
-	self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "0,-4,1.9")
-	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "a_o_glue")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "wpn_fps_ass_m1a1_sightrail")
+--	self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552", "0,-4,1.9") - After 1.1 update most likely will be misplaced.
+--	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Allied", "wpn_fps_ass_m1a1", "a_o_glue")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_m1a1")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_m1a1")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_m1a1")
-	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_m1a1_bayonet_m4")
-	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_m1a1_bayonet_m4")
 end
 -- SIG KE7
 if self.wpn_fps_lmg_sigke7 then
@@ -2082,13 +2063,15 @@ end
 -- Beretta Px4 Storm
 if self.wpn_fps_pis_px4 then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_px4", "wpn_fps_pis_sparrow", "wpn_fps_pis_px4_sight_dummy")
-	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_px4", "wpn_fps_pis_sparrow", nil, "-0,0,0.05")
+	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_px4", "wpn_fps_pis_sparrow")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_px4")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_px4")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_px4")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_px4", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_px4", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_px4", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_px4", nil, "slide")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_pis_px4", nil, "slide")
 end
 -- PPS-43
 if self.wpn_fps_smg_pps43 then

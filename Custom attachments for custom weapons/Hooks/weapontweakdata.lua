@@ -2,26 +2,6 @@ Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
 if self.SetupAttachmentPoint then
 -- Attachments:
 -- Russian Weapons - Sight Pack
-	self:SetupAttachmentPoint("svd", {
-		name = "a_o_1p29",
-		base_a_obj = "a_o",
-		position = Vector3(0.4, -6, -0.2)
-	})
-	self:SetupAttachmentPoint("svd", {
-		name = "a_o_1pn93",
-		base_a_obj = "a_o",
-		position = Vector3(-0.9, -6, 1.15)
-	})
-	self:SetupAttachmentPoint("svd", {
-		name = "a_o_ekp_1s_03",
-		base_a_obj = "a_o",
-		position = Vector3(-0.2, -2, -1)
-	})
-	self:SetupAttachmentPoint("svd", {
-		name = "a_o_okp7",
-		base_a_obj = "a_o",
-		position = Vector3(-0.6, -2.25, -1.5)
-	})
 	self:SetupAttachmentPoint("svu", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -283,16 +263,6 @@ if self.SetupAttachmentPoint then
 		name = "a_or",
 		base_a_obj = "a_o",
 		position = Vector3(0, -18, 0)
-	})
-	self:SetupAttachmentPoint("amr2", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 18, 0)
-	})
-	self:SetupAttachmentPoint("amr2", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -19, 0)
 	})
 	self:SetupAttachmentPoint("m40a5", {
 		name = "a_of",
@@ -558,16 +528,6 @@ if self.SetupAttachmentPoint then
 		name = "a_of_ironspack",
 		base_a_obj = "a_o",
 		position = Vector3(0, 15.5, 0.3)
-	})
-	self:SetupAttachmentPoint("px4", {
-		name = "a_o_ironspack",
-		base_a_obj = "a_rds",
-		position = Vector3(0, -4.45, 0.3)
-	})
-	self:SetupAttachmentPoint("px4", {
-		name = "a_of_ironspack",
-		base_a_obj = "a_rds",
-		position = Vector3(0, 12.9, 0.3)
 	})
 	self:SetupAttachmentPoint("swmp40", {
 		name = "a_o_ironspack",
