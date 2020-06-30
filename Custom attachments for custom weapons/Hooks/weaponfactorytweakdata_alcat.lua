@@ -816,6 +816,20 @@ self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_sideload")
 self:cafcw_add_custom_ammo("wpn_fps_shot_sideload", "_12ga")
 end
 
+--KSVK
+if self.wpn_fps_snp_carpet then
+self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_carpet", "wpn_fps_snp_desertfox")
+self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_carpet", "wpn_fps_snp_desertfox")
+self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_carpet", "wpn_fps_snp_desertfox")
+self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_carpet", "wpn_fps_snp_desertfox")
+self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_carpet", "wpn_fps_snp_desertfox")
+self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_carpet", "wpn_fps_snp_desertfox")
+self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_carpet", "wpn_fps_snp_desertfox")
+self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_carpet")
+
+self:cafcw_add_custom_ammo("wpn_fps_snp_carpet", "_127x99mm")
+end
+
 --[[===============================================================================================================================================================================================================================]]--
 --[[===============================================================================================================================================================================================================================]]--
 --[[===============================================================================================================================================================================================================================]]--
