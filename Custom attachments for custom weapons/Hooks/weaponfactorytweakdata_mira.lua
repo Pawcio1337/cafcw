@@ -458,6 +458,10 @@ if self.wpn_fps_pis_lele then
 end
 -- Beretta M38A
 if self.wpn_fps_smg_m38a then
+	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_smg_m38a", "wpn_fps_smg_m45", "0,-2,0.4") --original specter m45 || PVM xyz 
+	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_smg_m38a", "a_o_clamp") 
+	
+	
 	self:cafcw_add_custom_ammo("wpn_fps_smg_m38a", "_9x19mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_m38a", "wpn_fps_smg_erma", "wpn_fps_smg_m38a_o_rail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_m38a", "wpn_fps_smg_erma", "wpn_fps_smg_m38a_o_rail")
