@@ -312,7 +312,6 @@ attach_tables.MOD_RussianSightPack_Custom = {
 }
 -- Unique weapon tables to exclude specific attachments. Only exception are Iron Sights Pack and Pistol Iron Sights Pack mods.
 attach_tables.Custom_Sniper_SV98 = {"wpn_fps_upg_o_deltatitanium","wpn_fps_upg_o_csgoscope"}
-attach_tables.Gadgets_Pistol_SWMP40 = {"wpn_fps_upg_fl_pis_inforce_apl","wpn_fps_upg_fl_pis_unimax","wpn_fps_upg_fl_pis_unimax_inforce","wpn_fps_upg_fl_pis_utg"}
 attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock","wpn_fps_upg_ns_boomer"}
 attach_tables.AR15_Stocks_ButTheresNoHKE1Stock = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c",	"wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_m4_s_hkslimline","wpn_fps_upg_s_tti"}
 attach_tables.AR15_Stocks_NoHK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_m4_ubr","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_s_tti","wpn_fps_ass_m4_s_russian","wpn_fps_upg_s_gitsm4"}
@@ -1913,21 +1912,23 @@ end
 -- S&W M&P40
 if self.wpn_fps_pis_swmp40 then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", "wpn_fps_pis_swmp40_sight_dummy")
---	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_swmp40", "wpn_fps_pis_swmp40", "wpn_fps_pis_swmp40_sight_dummy")
---	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", nil, "-0,0,0.15")
+	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_swmp40", "wpn_fps_pis_rage", "wpn_fps_pis_swmp40_sight_dummy")
+	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", nil, "-0,0,0.2")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_swmp40")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_swmp40")
-	self:cafcw_add_attachment_type("Gadgets_Pistol_SWMP40", "wpn_fps_pis_swmp40")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_swmp40")
 	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_swmp40_barrel_ported")
 	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_swmp40_sights_forbids")
 	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_swmp40_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_pis_swmp40_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom_Pistol", "wpn_fps_upg_swmp40_sight_rail")
 	self:cafcw_forbids_attachment_type("MOD_PistolIronSightsPack_Custom", "wpn_fps_upg_swmp40_sight_rail")
-	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol_SWMP40", "wpn_fps_upg_swmp40_sight_rail", "a_fl_rail")
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_upg_swmp40_sight_rail", "a_fl_rail")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_swmp40", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_swmp40", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_swmp40", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_swmp40", nil, "slide")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_pis_swmp40", nil, "slide")
 end
 -- AP Pistol
 if self.wpn_fps_pis_appistol then
@@ -1947,7 +1948,6 @@ end
 if self.wpn_fps_pis_b93r then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_b93r", "_9x19mm")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_b93r", "wpn_fps_pis_beretta", "wpn_fps_pis_b93r_sight_dummy")
---	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_b93r", "wpn_fps_pis_beretta", nil, "0,0,0.25")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_b93r")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_b93r")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_b93r")
@@ -1958,16 +1958,8 @@ end
 -- Walther P99
 if self.wpn_fps_pis_p99 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_p99", "_9x19mm")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_pis_p99", "wpn_fps_upg_o_rmr_riser", "0,-11,-3.51")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_pis_p99", "wpn_fps_upg_o_romeo3", "0,-11,-3.64")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_pis_p99", "wpn_fps_upg_o_mro", "0,-11,-5.14")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_p99_sights_forbids", "wpn_fps_upg_o_rmr_riser")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_p99_sights_forbids", "wpn_fps_upg_o_romeo3")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_pis_p99_sights_forbids", "wpn_fps_upg_o_mro")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_p99", "wpn_fps_upg_o_rmr_riser", "a_o_rmr")
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_pis_p99", "wpn_fps_upg_o_romeo3", "a_o_rmr")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_p99", "wpn_fps_pis_packrat", "wpn_fps_pis_p99_sight_dummy")
-	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_p99", "wpn_fps_pis_p99", "wpn_fps_pis_p99_sight_dummy")
+--	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_p99", "wpn_fps_pis_rage", "wpn_fps_pis_p99_sight_dummy")
 	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_p99", "wpn_fps_pis_packrat", nil, "0,0,-0.3")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_p99")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_p99")

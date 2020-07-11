@@ -184,31 +184,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -10, 0)
 	})
-	self:SetupAttachmentPoint("scarl", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 20, 1.725)
-	})
-	self:SetupAttachmentPoint("scarl", {
-		name = "a_of_short",
-		base_a_obj = "a_o",
-		position = Vector3(0, 10, 1.725)
-	})
-	self:SetupAttachmentPoint("scarl", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -19, 1.725)
-	})
-	self:SetupAttachmentPoint("scar_m203", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 17.7, 1.1)
-	})
-	self:SetupAttachmentPoint("scar_m203", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -21, 1.1)
-	})
 	self:SetupAttachmentPoint("hugsforleon", {
 		name = "a_of",
 		base_a_obj = "a_o",
@@ -283,26 +258,6 @@ if self.SetupAttachmentPoint then
 		name = "a_or",
 		base_a_obj = "a_o",
 		position = Vector3(0, -14, 0)
-	})
-	self:SetupAttachmentPoint("m200", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 38.7, 0)
-	})
-	self:SetupAttachmentPoint("m200", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -19.5, 0)
-	})
-	self:SetupAttachmentPoint("l115", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 3, -0.75)
-	})
-	self:SetupAttachmentPoint("l115", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -20.8, -0.75)
 	})
 	self:SetupAttachmentPoint("sv98", {
 		name = "a_of",
