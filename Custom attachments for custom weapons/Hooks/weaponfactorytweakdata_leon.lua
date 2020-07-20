@@ -93,4 +93,17 @@ if self.wpn_fps_snp_dvl10 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_dvl10")
 	self:cafcw_add_custom_ammo("wpn_fps_snp_dvl10", "_762x51mm")
 end
+-- Triton
+if self.wpn_fps_ass_hometown then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_hometown", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_hometown", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_hometown", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_hometown", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_hometown", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_hometown")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_hometown")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_hometown")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_hometown")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_hometown")
+end
 end)

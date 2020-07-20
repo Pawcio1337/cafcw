@@ -47,31 +47,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(-0.6, 2, -3)
 	})
-	self:SetupAttachmentPoint("sks", {
-		name = "a_o_1p29",
-		base_a_obj = "a_o",
-		position = Vector3(0.5, -9.5, -0.9)
-	})
-	self:SetupAttachmentPoint("sks", {
-		name = "a_o_1pn93",
-		base_a_obj = "a_o",
-		position = Vector3(-0.8, -9.5, 0.45)
-	})
-	self:SetupAttachmentPoint("sks", {
-		name = "a_o_ekp_1s_03",
-		base_a_obj = "a_o",
-		position = Vector3(0, -4, -1.7)
-	})
-	self:SetupAttachmentPoint("sks", {
-		name = "a_o_okp7",
-		base_a_obj = "a_o",
-		position = Vector3(-0.6, -2.75, -2.3)
-	})
-	self:SetupAttachmentPoint("sks", {
-		name = "a_o_pso1",
-		base_a_obj = "a_o",
-		position = Vector3(-0.8, -4.5, -1.8)
-	})
 	self:SetupAttachmentPoint("vepr12", {
 		name = "a_o_1p29",
 		base_a_obj = "a_o",
@@ -483,21 +458,6 @@ if self.SetupAttachmentPoint then
 		name = "a_of_ironspack",
 		base_a_obj = "a_o",
 		position = Vector3(0, 15.5, 0.3)
-	})
-	self:SetupAttachmentPoint("swmp40", {
-		name = "a_o_ironspack",
-		base_a_obj = "a_rds",
-		position = Vector3(0, -5.8, -0.45)
-	})
-	self:SetupAttachmentPoint("swmp40", {
-		name = "a_of_ironspack",
-		base_a_obj = "a_rds",
-		position = Vector3(0, 12.5, -0.45)
-	})
-	self:SetupAttachmentPoint("swmp40", {
-		name = "a_of2_ironspack",
-		base_a_obj = "a_rds",
-		position = Vector3(0, 14, -0.5)
 	})
 	self:SetupAttachmentPoint("b93r", {
 		name = "a_o_ironspack",
