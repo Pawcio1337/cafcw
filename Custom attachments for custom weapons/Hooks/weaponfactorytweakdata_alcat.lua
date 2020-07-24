@@ -887,13 +887,6 @@ if self.parts.wpn_fps_ass_vhs_body_future then
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_45mbus_il", "a_o_future")
 	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_ass_vhs_body_future", "wpn_fps_upg_o_45troy_il", "a_o_future")
 	end
-	
-	for j, sight_base in ipairs(custom_sight_group_table) do
-		for i, sight_id in ipairs(attach_tables[sight_base]) do
-			self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_ass_vhs_body_future", sight_id, "a_o_future", "wpn_fps_ass_vhs_o_adjust_future")
-		end
-	end
-	
 end
 
 -- Mk20 SSR
@@ -973,7 +966,6 @@ for i, pistol_barrelext in ipairs(pistol_custom_barrelext_table) do
 		self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_beretta_body_sword", barrelext_id, "a_ns_revy")
 	end
 end
-self:cafcw_add_to_parts("part_unit_ovr", "wpn_fps_upg_b92fs_o_tritium", "wpn_fps_pis_beretta_body_sword", "units/mods/weapons/wpn_fps_pis_b92fsi_revy/ironsight_override/wpn_fps_upg_b92fs_o_tritium_long")
 
 end
 
