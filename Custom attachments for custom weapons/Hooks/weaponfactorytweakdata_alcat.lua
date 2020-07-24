@@ -591,9 +591,6 @@ end
 if self.wpn_fps_pis_czauto then
 self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_czauto", "wpn_fps_pis_beretta") --"0,0,0.25"
 self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_czauto", nil, "upper_reciever")
-self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_pis_czauto_vg_mag", "wpn_fps_upg_o_deltapoint", nil, "wpn_fps_pis_czauto_vg_stances")
-self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_pis_czauto_vg_mag", "wpn_fps_upg_o_deltapoint_pro", nil, "wpn_fps_pis_czauto_vg_stances")
-self:cafcw_add_to_parts("part_a_obj_adds_ovr", "wpn_fps_pis_czauto_vg_mag", "wpn_fps_upg_o_romeo3_pis", nil, "wpn_fps_pis_czauto_vg_stances")
 
 self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_czauto")
 self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_czauto")

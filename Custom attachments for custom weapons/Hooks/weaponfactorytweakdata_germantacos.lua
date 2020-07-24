@@ -52,29 +52,6 @@ end
 --Glock 17 Gen 3
 
 if self.wpn_fps_pis_glawk then
-
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup1")
-	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup1", "barrel")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup1", "a_ns_ext")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup1", "a_ns_ext")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup1", "a_ns_ext")
-	
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup2")
-	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup2", "barrel")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup2", "a_ns_ext")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup2", "a_ns_ext")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup2", "a_ns_ext")
-	
-	self:cafcw_add_to_parts("barrel_ext", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup6")
-	self:cafcw_add_to_parts("wpn_parent_ovr", "wpn_fps_pis_glawk", "wpn_fps_ass_ns_g_sup6", "barrel")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup6", "a_ns_ext")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup6", "a_ns_ext")
-	self:cafcw_add_to_parts("part_a_obj_ovr", "wpn_fps_pis_glawk_ba_diamond", "wpn_fps_ass_ns_g_sup6", "a_ns_ext")
-	
-	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_glawk", "wpn_fps_upg_fl_unimax")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_glawk", "wpn_fps_upg_fl_utg_pis")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_pis_glawk", "wpn_fps_upg_fl_micro90")
-	
 	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk_a1_22lr", "_9x19mm", "forbids_add")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_glawk_a1_40sw", "_9x19mm", "forbids_add")
@@ -215,14 +192,6 @@ end
 --CZ-2
 
 if self.wpn_fps_pis_cz2 and self.wpn_fps_pis_x_cz2 then
-
-	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup1"                      )
-	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup2"                      )
-	self:cafcw_add_to_parts("barrel_ext"          , "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup6"                      )
-	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup1" , "a_cz2ns", "barrel")
-	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup2" , "a_cz2ns", "barrel")
-	self:cafcw_add_to_parts("wpn_a_obj_parent_ovr", "wpn_fps_pis_cz2", "wpn_fps_ass_ns_g_sup6" , "a_cz2ns", "barrel")
-	
 	if self.parts.wpn_fps_upg_fl_unimax then
 		table.insert(self.wpn_fps_pis_cz2.uses_parts  , "wpn_fps_upg_fl_unimax" )
 		table.insert(self.wpn_fps_pis_cz2.uses_parts  , "wpn_fps_upg_fl_utg_pis")

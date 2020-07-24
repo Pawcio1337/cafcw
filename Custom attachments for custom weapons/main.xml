@@ -1,10 +1,11 @@
 <mod name="Custom attachments for custom weapons" color="Color(0.01,0.62,0.98)">
-	<AssetUpdates id="19169" version="1.693" provider="modworkshop"/>
+	<AssetUpdates id="19169" version="1.694" provider="modworkshop"/>
 	<Hooks directory="hooks">
 		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_alcat.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_ellie.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_carl.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponfactorytweakdata_discontinued.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_germantacos.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_groceries.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_hyakulegger.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
