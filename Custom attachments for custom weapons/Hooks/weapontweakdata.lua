@@ -2,76 +2,6 @@ Hooks:PostHook(WeaponTweakData, "init", "CAFCWModInit", function(self)
 if self.SetupAttachmentPoint then
 -- Attachments:
 -- Russian Weapons - Sight Pack
-	self:SetupAttachmentPoint("svu", {
-		name = "a_o_1p29",
-		base_a_obj = "a_o",
-		position = Vector3(0.2, -5, 0.3)
-	})
-	self:SetupAttachmentPoint("svu", {
-		name = "a_o_1pn93",
-		base_a_obj = "a_o",
-		position = Vector3(-1.1, -5, 1.65)
-	})
-	self:SetupAttachmentPoint("svu", {
-		name = "a_o_ekp_1s_03",
-		base_a_obj = "a_o",
-		position = Vector3(-0.4, -1, -0.5)
-	})
-	self:SetupAttachmentPoint("svu", {
-		name = "a_o_okp7",
-		base_a_obj = "a_o",
-		position = Vector3(-0.85, 1.25, -0.9)
-	})
-	self:SetupAttachmentPoint("sr3m", {
-		name = "a_o_1p29",
-		base_a_obj = "a_o",
-		position = Vector3(0.8, -4, -2.3)
-	})
-	self:SetupAttachmentPoint("sr3m", {
-		name = "a_o_1pn93",
-		base_a_obj = "a_o",
-		position = Vector3(-0.8, -4, -0.75)
-	})
-	self:SetupAttachmentPoint("sr3m", {
-		name = "a_o_ekp_1s_03",
-		base_a_obj = "a_o",
-		position = Vector3(-0, 1, -3)
-	})
-	self:SetupAttachmentPoint("sr3m", {
-		name = "a_o_okp7",
-		base_a_obj = "a_o",
-		position = Vector3(-0.4, 3.25, -3.5)
-	})
-	self:SetupAttachmentPoint("sr3m", {
-		name = "a_o_pso1",
-		base_a_obj = "a_o",
-		position = Vector3(-0.6, 2, -3)
-	})
-	self:SetupAttachmentPoint("vepr12", {
-		name = "a_o_1p29",
-		base_a_obj = "a_o",
-		position = Vector3(0.4, -14.5, -0.5)
-	})
-	self:SetupAttachmentPoint("vepr12", {
-		name = "a_o_1pn93",
-		base_a_obj = "a_o",
-		position = Vector3(-0.9, -14.5, 0.85)
-	})
-	self:SetupAttachmentPoint("vepr12", {
-		name = "a_o_ekp_1s_03",
-		base_a_obj = "a_o",
-		position = Vector3(-0.2, -9, -1.3)
-	})
-	self:SetupAttachmentPoint("vepr12", {
-		name = "a_o_okp7",
-		base_a_obj = "a_o",
-		position = Vector3(-0.6, -7.25, -1.6)
-	})
-	self:SetupAttachmentPoint("vepr12", {
-		name = "a_o_pso1",
-		base_a_obj = "a_o",
-		position = Vector3(-0.9, -9.5, -1.4)
-	})
 	self:SetupAttachmentPoint("auto_cross", {
 		name = "a_o_1pn93",
 		base_a_obj = "a_o",
@@ -432,22 +362,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -5, 0)
 	})
--- Revolver Gadgets
-	self:SetupAttachmentPoint("sw327r8",{
-		name = "a_g_sml",
-		base_a_obj = "a_g",
-		position = Vector3(-0.15, 3.2, -1)
-	})
-	self:SetupAttachmentPoint("sw642",{
-		name = "a_g_sml",
-		base_a_obj = "a_g",
-		position = Vector3(-0.3, 3.1, -0.85)
-	})
-	self:SetupAttachmentPoint("x_sw642",{
-		name = "a_g_sml",
-		base_a_obj = "a_g",
-		position = Vector3(-0.3, 3.1, -0.85)
-	})
 -- Pistol Iron Sights Pack
 	self:SetupAttachmentPoint("p99", {
 		name = "a_o_ironspack",
@@ -458,29 +372,6 @@ if self.SetupAttachmentPoint then
 		name = "a_of_ironspack",
 		base_a_obj = "a_o",
 		position = Vector3(0, 15.5, 0.3)
-	})
-	self:SetupAttachmentPoint("b93r", {
-		name = "a_o_ironspack",
-		base_a_obj = "a_o",
-		position = Vector3(0, -0.6, 0.3)
-	})
-	self:SetupAttachmentPoint("b93r", {
-		name = "a_of_ironspack",
-		base_a_obj = "a_o",
-		position = Vector3(0, 18.3, 0.3)
-	})
--- Weapons:
--- S&W M&P40
-	self:SetupAttachmentPoint("swmp40", {
-		name = "a_o_rmr",
-		base_a_obj = "a_body",
-		position = Vector3(0, 16, 8)
-	})
--- Walther P99 AS
-	self:SetupAttachmentPoint("p99", {
-		name = "a_o_rmr",
-		base_a_obj = "a_body",
-		position = Vector3(0, 16, 7)
 	})
 end
 end)

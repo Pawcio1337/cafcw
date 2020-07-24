@@ -874,6 +874,9 @@ function WeaponFactoryTweakData:cafcw_add_to_parts(part_type, param1, param2, pa
 			else
 				log("[ERROR] CAFCW: Missing override table: " .. param1, param2)
 			end
+		else
+			table.insert(self[param1].uses_parts, param2)
+		end
     end
 end
 -- Legacy code end
