@@ -357,8 +357,16 @@ if self.wpn_fps_pis_hoxy then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_hoxy")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_hoxy")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_hoxy")
+	
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_hoxy", "wpn_fps_pis_deagle")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_hoxy", "wpn_fps_pis_deagle")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_hoxy", "wpn_fps_pis_deagle")
+	
 	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_upg_hoxy_o_scopemount", "a_fl_rail")
-
+	self:cafcw_part_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_upg_hoxy_b_threaded", "a_ns_threaded")
+	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_hoxy_sightforbid_dummy")
+	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_hoxy_sightforbid_dummy")
+	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_pis_hoxy_sightforbid_dummy")
 end
 
 end)
