@@ -314,10 +314,61 @@ attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_1pn93",
 	"wpn_fps_upg_o_okp7_dove"
 }
--- Unique weapon tables to exclude specific attachments. Only exception are Iron Sights Pack and Pistol Iron Sights Pack mods.
-attach_tables.Suppressors_WithoutCopypastedOsprey = {"wpn_fps_ass_ns_g_sup3","wpn_fps_ass_ns_g_sup4","wpn_fps_ass_ns_g_sup5","wpn_fps_upg_ns_shot_cat","wpn_fps_upg_ns_loud","wpn_fps_upg_ns_hock","wpn_fps_upg_ns_boomer"}
-attach_tables.AR15_Stocks_ButTheresNoHKE1Stock = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c",	"wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_m4_s_hkslimline","wpn_fps_upg_s_tti"}
-attach_tables.AR15_Stocks_NoHK = {"wpn_fps_upg_m4_s_caastock","wpn_fps_upg_m4_s_caastock_black","wpn_fps_upg_m4_s_viper","wpn_fps_upg_m4_s_collapsed","wpn_fps_upg_m4_s_pts_col","wpn_fps_upg_m4_s_crane_col","wpn_fps_upg_m4_s_mk46_col","wpn_fps_upg_m4_s_ubr_col","wpn_fps_upg_s_m4_ubr","wpn_fps_upg_s_devgru","wpn_fps_upg_s_m4_pts","wpn_fps_upg_s_m4_pts_c","wpn_fps_upg_s_m4_sl","wpn_fps_upg_s_m4_sl_c","wpn_fps_upg_m4_s_fab_glr16s","wpn_fps_upg_m4_s_fab_glr16s_alt","wpn_fps_upg_s_tti","wpn_fps_ass_m4_s_russian","wpn_fps_upg_s_gitsm4"}
+-- Unique attachment tables to exclude specific attachments for custom weapon. Only exception are Iron Sights Pack and Pistol Iron Sights Pack mods.
+attach_tables.AR15_Stocks_NoHK = {
+	"wpn_fps_upg_m4_s_caastock",
+	"wpn_fps_upg_m4_s_caastock_black",
+	"wpn_fps_upg_m4_s_viper",
+	"wpn_fps_upg_m4_s_collapsed",
+	"wpn_fps_upg_m4_s_pts_col",
+	"wpn_fps_upg_m4_s_crane_col",
+	"wpn_fps_upg_m4_s_mk46_col",
+	"wpn_fps_upg_m4_s_ubr_col",
+	"wpn_fps_upg_s_m4_ubr",	
+	"wpn_fps_upg_s_devgru",
+	"wpn_fps_upg_s_m4_pts",
+	"wpn_fps_upg_s_m4_pts_c",
+	"wpn_fps_upg_s_m4_sl",
+	"wpn_fps_upg_s_m4_sl_c",
+	"wpn_fps_upg_m4_s_fab_glr16s",
+	"wpn_fps_upg_m4_s_fab_glr16s_alt",
+	"wpn_fps_upg_s_tti",
+	"wpn_fps_ass_m4_s_russian",
+	"wpn_fps_upg_s_gitsm4"
+}
+attach_tables.AR15_Stocks_NoHKE1 = {
+	"wpn_fps_upg_m4_s_caastock",
+	"wpn_fps_upg_m4_s_caastock_black",
+	"wpn_fps_upg_m4_s_viper",
+	"wpn_fps_upg_m4_s_collapsed",
+	"wpn_fps_upg_m4_s_pts_col",
+	"wpn_fps_upg_m4_s_crane_col",
+	"wpn_fps_upg_m4_s_mk46_col",
+	"wpn_fps_upg_m4_s_ubr_col",
+	"wpn_fps_upg_s_m4_ubr",	
+	"wpn_fps_upg_s_devgru",
+	"wpn_fps_upg_s_m4_pts",
+	"wpn_fps_upg_s_m4_pts_c",
+	"wpn_fps_upg_s_m4_sl",
+	"wpn_fps_upg_s_m4_sl_c",
+	"wpn_fps_upg_m4_s_fab_glr16s",
+	"wpn_fps_upg_m4_s_fab_glr16s_alt",
+	"wpn_fps_upg_m4_s_hkslimline",
+	"wpn_fps_upg_s_tti",
+	"wpn_fps_ass_m4_s_russian",
+	"wpn_fps_upg_s_gitsm4"
+}
+attach_tables.Suppressors_NoOsprey = {
+	"wpn_fps_ass_ns_g_sup3",
+	"wpn_fps_ass_ns_g_sup4",
+	"wpn_fps_ass_ns_g_sup5",
+	"wpn_fps_upg_ns_shot_cat",
+	"wpn_fps_upg_ns_loud",
+	"wpn_fps_upg_ns_hock",
+	"wpn_fps_upg_ns_boomer",
+	"wpn_fps_upg_ns_gits_illegal_s",
+	"wpn_fps_upg_ns_gits_generic_s"
+}
 -- Attachments tables end
 function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, add_id)
 	if type(attach_tables[attach_type]) == "table" then
@@ -1124,7 +1175,7 @@ if self.wpn_fps_smg_x_fmg9 then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_x_fmg9", "_9x19mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_x_fmg9")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_fmg9")
-	self:cafcw_add_attachment_type("Suppressors_WithoutCopypastedOsprey", "wpn_fps_smg_x_fmg9")
+	self:cafcw_add_attachment_type("Suppressors_NoOsprey", "wpn_fps_smg_x_fmg9")
 end
 -- Akimbo APS
 if self.wpn_fps_x_aps then
@@ -1364,7 +1415,7 @@ if self.wpn_fps_smg_fmg9 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_fmg9")
-	self:cafcw_add_attachment_type("Suppressors_WithoutCopypastedOsprey", "wpn_fps_smg_fmg9")
+	self:cafcw_add_attachment_type("Suppressors_NoOsprey", "wpn_fps_smg_fmg9")
 end
 -- PP-19-01 Vityaz
 if self.wpn_fps_smg_vityaz then
