@@ -99,12 +99,6 @@ end
 	-- DP12 --
 if self.wpn_fps_sho_dp12 then
 	self:cafcw_add_custom_ammo("wpn_fps_sho_dp12", "_12ga")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_sho_dp12", "wpn_fps_upg_fl_ass_spotter")
-	self:cafcw_add_to_parts("gadget", "wpn_fps_sho_dp12", "wpn_fps_upg_fl_wml")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_shot_dp12_norail", "wpn_fps_upg_fl_ass_spotter")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_shot_dp12_norail", "wpn_fps_upg_fl_wml")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_sho_dp12_o_standard", "wpn_fps_upg_fl_ass_spotter")
-	self:cafcw_add_to_parts("forbids", "wpn_fps_sho_dp12_o_standard", "wpn_fps_upg_fl_wml")
 	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0, 0, -0.38")
 	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0, 3, -0.38")
 	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_sho_dp12", "wpn_fps_sho_ksg", "0,0,0.92")

@@ -78,9 +78,6 @@ if self.wpn_fps_ass_aek971 then
 end
 -- ZiD A-545
 if self.wpn_fps_ass_a545 then
-	self:cafcw_add_to_parts("other", "wpn_fps_ass_a545", "wpn_fps_shield_aug")
-	self:cafcw_add_to_parts("other", "wpn_fps_ass_a545", "wpn_fps_shield_skin_ftp")
-	self:cafcw_add_to_parts("other", "wpn_fps_ass_a545", "wpn_fps_shield_skin_urban")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_a545", "_545x39mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_a545", "wpn_fps_ass_galil")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_a545", "wpn_fps_ass_galil")
@@ -107,9 +104,6 @@ end
 -- XM21
 if self.wpn_fps_snp_xm21 then
 	self:cafcw_add_custom_ammo("wpn_fps_snp_xm21", "_762x51mm")
-	self:cafcw_add_to_parts("other", "wpn_fps_snp_xm21", "wpn_fps_shield_dmr")
-	self:cafcw_add_to_parts("other", "wpn_fps_snp_xm21", "wpn_fps_shield_skin_ftp")
-	self:cafcw_add_to_parts("other", "wpn_fps_snp_xm21", "wpn_fps_shield_skin_urban")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_xm21", "wpn_fps_snp_tti", "wpn_fps_snp_xm21_scope_mount")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_xm21", "wpn_fps_snp_tti", "wpn_fps_snp_xm21_scope_mount")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_xm21", "wpn_fps_snp_tti", "wpn_fps_snp_xm21_scope_mount")
@@ -124,11 +118,6 @@ end
 -- Molot Vepr-12
 if self.wpn_fps_shot_vepr12 then
 	self:cafcw_add_custom_ammo("wpn_fps_shot_vepr12", "_12ga_auto")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_1p29", "wpn_fps_upg_o_1p29", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_ekp_1s_03", "0.2,-11,-1.4")
-	self:cafcw_add_to_parts("sight_vector", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_okp7_dove", "0.625,-9,-0.98")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_upg_o_pso1_rifle", "wpn_fps_snp_siltstone")
-	self:cafcw_add_to_parts("sight", "wpn_fps_shot_vepr12", "wpn_fps_upg_o_1pn93", "wpn_fps_upg_o_1pn93", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_vepr12", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_vepr12", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_vepr12", "wpn_fps_ass_flint", "wpn_fps_shot_vepr12_rec_sight_rail")
@@ -227,7 +216,6 @@ if self.wpn_fps_snp_mas49 then
 end
 -- Akimbo SW Model 642
 if self.wpn_fps_pis_x_sw642 then
-	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_x_sw642", "wpn_fps_upg_fl_pis_sidemountlaser")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw642")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw642", "a_ns", "barrel")
 end
@@ -277,9 +265,6 @@ if self.wpn_fps_pis_hk45c then
 end
 -- Colt Model 933 .300 Blackout
 if self.wpn_fps_smg_r0933blk then
-	self:cafcw_add_to_parts("other", "wpn_fps_smg_r0933blk", "wpn_fps_shield_m4")
-	self:cafcw_add_to_parts("other", "wpn_fps_smg_r0933blk", "wpn_fps_shield_skin_ftp")
-	self:cafcw_add_to_parts("other", "wpn_fps_smg_r0933blk", "wpn_fps_shield_skin_urban")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_r0933blk", "wpn_fps_smg_olympic")
@@ -292,10 +277,6 @@ end
 -- SVU
 if self.wpn_fps_snp_svu then
 	self:cafcw_add_custom_ammo("wpn_fps_snp_svu", "_762x54mmr")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_svu", "wpn_fps_upg_o_1p29", "-0.2,2,-0.405", "wpn_fps_snp_svu_sights_folded_rear")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_svu", "wpn_fps_upg_o_1pn93", "-0.2,2,-0.405", "wpn_fps_snp_svu_sights_folded_rear")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_svu", "wpn_fps_upg_o_ekp_1s_03", "0.41,-2,0.43", "wpn_fps_snp_svu_sights_folded_rear")
-	self:cafcw_add_to_parts("sight_vector_rail", "wpn_fps_snp_svu", "wpn_fps_upg_o_okp7_dove", "0.875,-3,0.95", "wpn_fps_snp_svu_sights_folded_rear")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_svu", "wpn_fps_snp_tti", "wpn_fps_snp_svu_molot")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_svu", "wpn_fps_snp_tti", "wpn_fps_snp_svu_molot")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_svu", "wpn_fps_snp_tti", "wpn_fps_snp_svu_molot")
@@ -311,7 +292,6 @@ if self.wpn_fps_pis_l35 then
 end
 -- Colt 9mm Submachine Gun (Secondary)
 if self.wpn_fps_smg_coltsmg then
-	self:cafcw_add_to_parts("wpn_a_obj_ovr", "wpn_fps_smg_coltsmg", "wpn_fps_upg_o_delta_rm55", "a_o_45")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_coltsmg", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_coltsmg", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_coltsmg", "wpn_fps_ass_m4")
@@ -327,7 +307,6 @@ if self.wpn_fps_smg_einhander then
 end
 -- SW Model 642
 if self.wpn_fps_pis_sw642 then
-	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw642", "wpn_fps_upg_fl_pis_sidemountlaser")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw642")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw642", "a_ns", "barrel")
 end
@@ -350,9 +329,6 @@ if self.wpn_fps_pis_rugermk3 then
 end
 -- AK12-76
 if self.wpn_fps_shot_ak12_76 then
-	self:cafcw_add_to_parts("other", "wpn_fps_shot_ak12_76", "wpn_fps_shield_m4")
-	self:cafcw_add_to_parts("other", "wpn_fps_shot_ak12_76", "wpn_fps_shield_skin_ftp")
-	self:cafcw_add_to_parts("other", "wpn_fps_shot_ak12_76", "wpn_fps_shield_skin_urban")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_ak12_76", "_12ga_auto")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_ak12_76", "wpn_fps_ass_flint")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_ak12_76", "wpn_fps_ass_flint")
@@ -392,7 +368,6 @@ if self.wpn_fps_ass_mdr then
 end
 -- SW Model 327 R8
 if self.wpn_fps_pis_sw327r8 then
-	self:cafcw_add_to_parts("Gadget", "wpn_fps_pis_sw327r8", "wpn_fps_upg_fl_pis_sidemountlaser")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_sw327r8", "wpn_fps_ass_amcar")
