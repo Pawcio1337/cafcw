@@ -1184,7 +1184,7 @@ if self.wpn_fps_ass_scarl then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_scarl")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_scarl")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_scarl_fl_left", "a_fl_left")
-	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_scarl", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_scarl", nil, "lower_reciever")
 end
 -- Arisaka Type 38
 if self.wpn_fps_snp_arisaka38 then
@@ -1488,7 +1488,7 @@ if self.wpn_fps_snp_m1894 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m1894", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_m1894", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_m1894", "wpn_fps_snp_tti")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_snp_m1894", "wpn_fps_snp_tti", nil, "0,7,0")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_snp_m1894", "wpn_fps_snp_tti", nil, "0,8,0")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m1894")
 end
 -- Magpul FMG-9
