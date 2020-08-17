@@ -54,6 +54,10 @@ end
 
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Alcat_Init", function(self)
 
+--look at https://github.com/Pawcio1337/cafcw/commit/1752307c2a8e8b24e517736be233bd961d31a543 for list of removed code
+
+--[[==]]
+
 
 
 --Custom Weapon
@@ -70,6 +74,8 @@ self:howa_t64_part_ovrd("Specter", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_bod
 self:howa_t64_part_ovrd("ACOG", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-4,-3.875")
 self:howa_t64_part_ovrd("RDS45", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "-0.375,0,-13.5")
 self:howa_t64_part_ovrd("Custom", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,0,-1.125")--[[originally 0,0,-1]]
+
+--adds in pso-1 scope support later
 
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_howa")
 self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_howa_t89_body", "a_fl_t89")
@@ -171,7 +177,7 @@ self:cafcw_add_custom_ammo("wpn_fps_lmg_negev", "_556x45mm")
 end
 
 
---Mx4 Storm || After U170ish new MP5 anim, Mx4 cant use deep clone of aiming angle stance. The value is now derived from each optic stance mod of MP5 + )
+--Mx4 Storm || CAFCW support will be fixed when the gun is rebuilt
 if self.wpn_fps_smg_storm then
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_storm")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_storm")
@@ -181,7 +187,7 @@ self:cafcw_add_custom_ammo("wpn_fps_smg_storm", "_9x19mm")
 end
 
 
---Mini14 
+--Mini14 || Discontinued, CAFCW code will no longer be updated
 if self.wpn_fps_ass_mini14 then
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mini14")
 self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_mini14", "wpn_fps_ass_m14")
@@ -245,7 +251,7 @@ end
 
 --PLA Arms Weaponry
 --[[=================================================================================================================]]
---Hawk12 Shottie || using a_o_sm, no shortening function cafcw yet
+--Hawk12 Shottie || decided to drop sight support
 if self.wpn_fps_shot_hawk12 then
 self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_hawk12")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_hawk12")
@@ -279,7 +285,7 @@ end
 
 --chang6 SMG
 if self.wpn_fps_smg_chang6 then
---self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_chang6")
+--self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_chang6") -- adds in gadget support when fixing the mod later
 self:cafcw_add_custom_ammo("wpn_fps_smg_chang6", "_9x19mm")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_chang6")
 self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_chang6")
@@ -292,6 +298,7 @@ end
 if self.wpn_fps_smg_minebea and self.wpn_fps_smg_x_minebea then
 --no acog-type sight or large sight support
 self:cafcw_add_attachment_type("Specter", "wpn_fps_smg_minebea", "wpn_fps_smg_minebea_o_adapter")
+--adds in other sight type at later udpate (SpecterSmall, CustomSmall, Custom)
 
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_minebea")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_minebea")
@@ -376,7 +383,7 @@ self:cafcw_add_custom_ammo("wpn_fps_lmg_mg5", "_762x51mm")
 end
 
 
--- CZ75 auto
+-- CZ75 auto || Discontinued, CAFCW code will no longer be updated
 if self.wpn_fps_pis_czauto then
 self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_czauto", "wpn_fps_pis_beretta") --"0,0,0.25"
 self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_czauto", nil, "upper_reciever")
@@ -406,6 +413,7 @@ end
 if self.wpn_fps_mp_peepee then
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_mp_peepee")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_mp_peepee")
+--add in support for custom supressor at a later udpate
 self:cafcw_add_custom_ammo("wpn_fps_mp_peepee", "_9x19mm")
 self:cafcw_add_custom_ammo("wpn_fps_mp_peepee", "_9x19mm_p")
 end
@@ -540,7 +548,7 @@ self:cafcw_add_custom_ammo("wpn_fps_mp_master", "_9x19mm")
 end
 
 
---TC Contender
+--TC Contender || remade CAFCW code when the mod is updated, preferrably with custom animation later on
 if self.wpn_fps_special_contender then
 self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,16,-3.75", "wpn_fps_special_contender_rail_optic")
 self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,12,-3.75", "wpn_fps_special_contender_rail_optic")
@@ -597,59 +605,105 @@ self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_carpet")
 self:cafcw_add_custom_ammo("wpn_fps_snp_carpet", "_127x99mm")
 end
 
+-- AAI LSAT
+if self.wpn_fps_lmg_lsat then
+self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
+self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
+self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
+self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_lsat")
+self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_lsat")
+self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_lsat")
+self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_lsat")
+end
+
+
 --[[===============================================================================================================================================================================================================================]]--
 --[[===============================================================================================================================================================================================================================]]--
 --[[===============================================================================================================================================================================================================================]]--
+
+--look at https://github.com/Pawcio1337/cafcw/commit/1752307c2a8e8b24e517736be233bd961d31a543 for list of removed code
+
+
+--[[==]]
+
 
 --Custom Attachment
 
 -- FAMAS Feline
+
+--simplify sight support code on mod update later on
+
 if self.parts.wpn_fps_ass_famas_body_feline then
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_ass_famas_body_feline", "a_o_feline")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_ass_famas_body_feline", "a_o_feline")
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_ass_famas_body_feline", "a_o_feline")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_famas_body_feline", "a_fl_feline")	
-	
-	if self.parts.wpn_fps_ass_famas_o_adapter_long then
-		self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_ass_famas_o_adapter_long = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(0, 10, 2)} },a_obj = "a_o_feline"}
-    end
-	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_ass_famas_body_feline", "a_or_feline")
-	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_famas_body_feline", "a_of_feline")
+
+self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_ass_famas_body_feline", "a_o_feline")
+self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_ass_famas_body_feline", "a_o_feline")
+self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_ass_famas_body_feline", "a_o_feline")
+self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_famas_body_feline", "a_fl_feline")	
+
+if self.parts.wpn_fps_ass_famas_o_adapter_long then
+	self.parts.wpn_fps_ass_famas_body_feline.override.wpn_fps_ass_famas_o_adapter_long = {stance_mod = { wpn_fps_ass_famas = {translation = Vector3(0, 10, 2)} },a_obj = "a_o_feline"}
+end
+self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Custom", "wpn_fps_ass_famas_body_feline", "a_or_feline")
+self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_famas_body_feline", "a_of_feline")
+
 end
 
 --[[ VHS Future
+
+--simplify sight support code on mod update later on
+
 if self.parts.wpn_fps_ass_vhs_body_future then
 end]]
 
 --[[ M240 Various Attch
+
+--use new support code for custom gadget 
+
 if self.parts.wpn_fps_lmg_par_fg_heat then
 end]]
 
 
 --[[ M16 Carry Handle Rail
+
+--use new support code for custom attch point 
+
 if self.parts.wpn_fps_upg_o_carrymount then
 end]]
 
 
 --[[FAL Various
+
+--use new support code for custom attch point for moved barrel extension
+
 if BeardLib.Utils:FindMod("FAL Various Attachment") then
 end]]
 
 
 --[[Beretta Various
+
+--use new support code for custom attch point on sword cutlass body
+
 if self.parts.wpn_fps_pis_beretta_body_sword then
 end
+
+--b93r kit is dropped on next mod update
 
 if self.parts.wpn_fps_pis_b93r_vertgrip then
 end]]
 
 
 --[[MAC10 Various
+
+--use new support code for custom gadget on ghetto extension
+
 if self.parts.wpn_fps_smg_mac10_ns_ghetto then
 end]]
 
 
 --[[Galil Various
+
+--not sure whats removed it, probably already moved to the custom attch mod itself
+
 if BeardLib.Utils:FindMod("Galil Various Attachment") then
 end]]
 
@@ -699,14 +753,4 @@ end
 
 
 
--- AAI LSAT
-if self.wpn_fps_lmg_lsat then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_lsat", "wpn_fps_ass_amcar")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_lmg_lsat")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_lsat")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_lsat")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_lsat")
-end
 end)
