@@ -200,7 +200,7 @@ attach_tables.Shortdot = {
 attach_tables.Specter = {
 	"wpn_fps_upg_o_kobra",
 	"wpn_fps_upg_o_compm4s",
-	"wpn_fps_upg_o_m145",
+	"wpn_fps_upg_o_c79",
 	"wpn_fps_upg_o_pkas",
 	"wpn_fps_upg_o_coyote",
 	"wpn_fps_upg_o_hologram",
@@ -217,7 +217,7 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_horzine",
 	"wpn_fps_upg_o_pka",
 	"wpn_fps_upg_o_anpas13d",
-	"wpn_fps_upg_o_su230_docter",
+	"wpn_fps_upg_o_su230_mdrs",
 	"wpn_fps_upg_o_jgbg_m7",
 	"wpn_fps_upg_o_hartman",
 	"wpn_fps_upg_o_kpsr2",
@@ -411,8 +411,10 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 						switch_id = "wpn_fps_upg_o_acog_rmr_switch"
 					elseif sight_id == "wpn_fps_upg_o_ta648rmr" then
 						switch_id = "wpn_fps_upg_o_ta648rmr_switch"
-					elseif sight_id == "wpn_fps_upg_o_su230_docter" then
-						switch_id = "wpn_fps_upg_o_su230_docter_switch"
+					elseif sight_id == "wpn_fps_upg_o_su230_mdrs" then
+						switch_id = "wpn_fps_upg_o_su230_mdrs_switch"
+					elseif sight_id == "wpn_fps_upg_o_acogbf3" then
+						switch_id = "wpn_fps_upg_o_acogbf3_switch"
 					end
 					if not table.contains(self[wpn_id].uses_parts, sight_id) then
 						table.insert(self[wpn_id].uses_parts, sight_id)
@@ -435,7 +437,7 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 					end
 				end
 				if switch_id then
-					if sight_id == "wpn_fps_upg_o_acog_rmr" or "wpn_fps_upg_o_ta648rmr" or "wpn_fps_upg_o_su230_docter" then
+					if sight_id == "wpn_fps_upg_o_acog_rmr" or "wpn_fps_upg_o_ta648rmr" or "wpn_fps_upg_o_su230_mdrs" or "wpn_fps_upg_o_acogbf3_switch" then
 						if self.parts[switch_id].stance_mod[stance_wpn_id] then
 							self.parts[switch_id].stance_mod[wpn_id] = deep_clone(self.parts[switch_id].stance_mod[stance_wpn_id])
 						else
@@ -1679,6 +1681,14 @@ if self.wpn_fps_pis_sw27 then
 	self:cafcw_add_attachment_type("MOD_RevolverGadgets", "wpn_fps_pis_sw27")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw27")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw27", "a_ns", "barrel")
+end
+-- Mars Automatic
+if self.wpn_fps_pis_mars then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mars")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_mars", "wpn_fps_pis_ppk_fl_mount")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mars")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_mars", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_mars", "a_ns", "barrel")
 end
 -- Attachments
 -- AK Rail Cover
