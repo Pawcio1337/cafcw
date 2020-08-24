@@ -413,8 +413,6 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 						switch_id = "wpn_fps_upg_o_ta648rmr_switch"
 					elseif sight_id == "wpn_fps_upg_o_su230_mdrs" then
 						switch_id = "wpn_fps_upg_o_su230_mdrs_switch"
-					elseif sight_id == "wpn_fps_upg_o_acogbf3" then
-						switch_id = "wpn_fps_upg_o_acogbf3_switch"
 					end
 					if not table.contains(self[wpn_id].uses_parts, sight_id) then
 						table.insert(self[wpn_id].uses_parts, sight_id)
@@ -437,7 +435,7 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 					end
 				end
 				if switch_id then
-					if sight_id == "wpn_fps_upg_o_acog_rmr" or "wpn_fps_upg_o_ta648rmr" or "wpn_fps_upg_o_su230_mdrs" or "wpn_fps_upg_o_acogbf3_switch" then
+					if sight_id == "wpn_fps_upg_o_acog_rmr" or "wpn_fps_upg_o_ta648rmr" or "wpn_fps_upg_o_su230_mdrs" then
 						if self.parts[switch_id].stance_mod[stance_wpn_id] then
 							self.parts[switch_id].stance_mod[wpn_id] = deep_clone(self.parts[switch_id].stance_mod[stance_wpn_id])
 						else
