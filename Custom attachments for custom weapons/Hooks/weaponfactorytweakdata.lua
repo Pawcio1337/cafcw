@@ -1366,6 +1366,20 @@ if self.wpn_fps_snp_m107cq then
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_m107cq", "wpn_fps_snp_m107cq")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m107cq")
 end
+-- Colt 9mm Submachine Gun
+if self.wpn_fps_ass_r0991 then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_r0991", "_9x19mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_r0991", "wpn_fps_ass_g36")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_r0991", "wpn_fps_ass_g36")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_r0991", "wpn_fps_ass_g36")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_r0991", "wpn_fps_ass_r0991")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_r0991")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_r0991")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_r0991")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_r0991_barrel_supp")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_r0991_barrel_supp")
+	self:cafcw_wpn_a_obj_pattern_override("RDS45", "wpn_fps_ass_r0991", "a_o_45")
+end
 -- Secondary
 -- MPX
 if self.wpn_fps_smg_mpx then
@@ -1691,18 +1705,18 @@ end
 -- Attachments
 -- AK Rail Cover
 if self.parts.wpn_fps_upg_o_ak_coverrail and self.parts.wpn_fps_upg_o_akmsu_coverrail then
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_ak_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_ak_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_ak_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_akmsu_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_akmsu_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_akmsu_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_asval_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_asval_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_asval_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_coal_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_coal_coverrail", nil, "extra")
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_coal_coverrail", nil, "extra")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_ak_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_ak_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_ak_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_akmsu_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_akmsu_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_akmsu_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
 	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_o_ak_coverrail")
 end
 -- Aug A1 Kit

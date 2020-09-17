@@ -26,20 +26,6 @@ if self.wpn_fps_ass_rk62 then
 	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_rk62_handguard_railed", "a_o_railed")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_rk62_handguard_railed", "a_fl_railed")
 end
--- Colt 9mm Submachine Gun
-if self.wpn_fps_ass_r0991 then
-	self:cafcw_add_custom_ammo("wpn_fps_ass_r0991", "_9x19mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_r0991", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_r0991", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_r0991", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_r0991", "wpn_fps_ass_r0991")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_r0991")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_r0991")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_r0991")
-	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_r0991_barrel_supp")
-	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_r0991_barrel_supp")
-	self:cafcw_wpn_a_obj_pattern_override("RDS45", "wpn_fps_ass_r0991", "a_o_45")
-end
 -- McMillan TAC-50
 if self.wpn_fps_snp_tac50 then
 	self:cafcw_add_custom_ammo("wpn_fps_snp_tac50", "_127x99mm")
