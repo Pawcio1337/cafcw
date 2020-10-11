@@ -429,15 +429,17 @@ if self.wpn_fps_ass_smug12 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_smug12_m_ak12", "_762x39mm", "forbids_add")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_smug12_m_classic", "_762x39mm", "forbids_add")
 end
--- Beretta M9
-if self.wpn_fps_pis_m9butgeneric then
-	self:cafcw_add_custom_ammo("wpn_fps_pis_m9butgeneric", "_9x19mm")
-	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_m9butgeneric")
-	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_m9butgeneric")
-	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_m9butgeneric", "a_ns", "barrel")
-	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_m9butgeneric", "a_ns", "barrel")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_m9butgeneric")
-	self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_m9butgeneric", "wpn_fps_pis_ppk", "0,0,0")
-	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_m9butgeneric", nil, "slide")
+-- L22A2
+if self.wpn_fps_pdw_fckmyfingers then
+	self:cafcw_add_custom_ammo("wpn_fps_pdw_fckmyfingers", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_pdw_fckmyfingers", "wpn_fps_ass_l85a2", "wpn_fps_pdw_fckmyfingers_o_rail_pic")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pdw_fckmyfingers", "wpn_fps_ass_l85a2", "wpn_fps_pdw_fckmyfingers_o_rail_pic")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_pdw_fckmyfingers", "wpn_fps_ass_l85a2", "wpn_fps_pdw_fckmyfingers_o_rail_pic")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_pdw_fckmyfingers", "wpn_fps_snp_tti", "wpn_fps_pdw_fckmyfingers_o_rail_pic", "0,8,1.87")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_pdw_fckmyfingers")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_pdw_fckmyfingers")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_pdw_fckmyfingers")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_pdw_fckmyfingers")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_pdw_fckmyfingers")
 end
 end)
