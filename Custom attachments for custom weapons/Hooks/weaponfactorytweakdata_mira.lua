@@ -442,4 +442,16 @@ if self.wpn_fps_pdw_fckmyfingers then
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_pdw_fckmyfingers")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_pdw_fckmyfingers")
 end
+if self.wpn_fps_crb_enfieldl22 then
+	self:cafcw_add_custom_ammo("wpn_fps_crb_enfieldl22", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_crb_enfieldl22", "wpn_fps_ass_l85a2", "wpn_fps_pdw_fckmyfingers_o_rail_pic")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_crb_enfieldl22", "wpn_fps_ass_l85a2", "wpn_fps_pdw_fckmyfingers_o_rail_pic")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_crb_enfieldl22", "wpn_fps_ass_l85a2", "wpn_fps_pdw_fckmyfingers_o_rail_pic")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_crb_enfieldl22", "wpn_fps_snp_tti", "wpn_fps_pdw_fckmyfingers_o_rail_pic", "0,8,1.87")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_crb_enfieldl22")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_crb_enfieldl22")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_crb_enfieldl22")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_crb_enfieldl22")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_crb_enfieldl22")
+end
 end)
