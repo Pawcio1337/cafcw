@@ -349,6 +349,16 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -16.2, 0)
 	})
+	self:SetupAttachmentPoint("fakedefy", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 21, 0)
+	})
+	self:SetupAttachmentPoint("fakedefy", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -19.2, 0)
+	})
 -- WW2 Sights:
 -- Glued Reflector Sight
 	self:SetupAttachmentPoint("m3", {

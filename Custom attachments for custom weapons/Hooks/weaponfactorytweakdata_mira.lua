@@ -454,4 +454,33 @@ if self.wpn_fps_crb_enfieldl22 then
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_crb_enfieldl22")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_crb_enfieldl22")
 end
+-- AK-Alfa
+if self.wpn_fps_ass_fakedefy then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_fakedefy", "wpn_fps_ass_flint", "wpn_fps_ass_fakedefy_o_cosm")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_fakedefy", "wpn_fps_ass_flint", "wpn_fps_ass_fakedefy_o_cosm")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_fakedefy", "wpn_fps_ass_flint", "wpn_fps_ass_fakedefy_o_cosm")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_fakedefy", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_fakedefy", "wpn_fps_ass_flint")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_fakedefy")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_fakedefy")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_fakedefy")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_fakedefy", "_762x39mm")
+end
+-- M45 MEU(SOC)
+if self.wpn_fps_pis_meusoc then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_meusoc")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_meusoc")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_meusoc", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_meusoc", "a_ns", "barrel")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_meusoc", "wpn_fps_pis_meusoc_rail_std")
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_meusoc", "wpn_fps_pis_pl14", "wpn_fps_pis_meusoc_fo_novak")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_meusoc", nil, "slide")
+end
+if self.wpn_fps_pis_x_meusoc then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_meusoc")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_meusoc")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_meusoc", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_x_meusoc", "a_ns", "barrel")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_meusoc", "wpn_fps_pis_meusoc_rail_std")
+end
 end)
