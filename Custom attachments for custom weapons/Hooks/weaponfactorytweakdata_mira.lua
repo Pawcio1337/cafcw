@@ -483,4 +483,20 @@ if self.wpn_fps_pis_x_meusoc then
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_x_meusoc", "a_ns", "barrel")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_meusoc", "wpn_fps_pis_meusoc_rail_std")
 end
+-- LSA TX-15 DML
+if self.wpn_fps_ass_damsel then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_damsel", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_damsel", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_damsel", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_damsel", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_damsel", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_damsel", "wpn_fps_snp_tti")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_damsel")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_damsel")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_damsel")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_damsel")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_damsel")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_damsel")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_damsel", nil, "handguard")
+end
 end)
