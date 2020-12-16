@@ -229,7 +229,8 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_gits_trusight",
 	"wpn_fps_upg_o_gits_futeot",
 	"wpn_fps_upg_o_gits_seburors",
-	"wpn_fps_upg_o_gits_zism"
+	"wpn_fps_upg_o_gits_zism",
+	"wpn_fps_upg_o_tf90" -- U201
 }
 attach_tables.SpecterSmall = {
 	"wpn_fps_upg_o_coyote",
@@ -1188,6 +1189,13 @@ if self.wpn_fps_snp_m107cq then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_m107cq", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_m107cq", "wpn_fps_snp_m107cq")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m107cq")
+end
+-- A-24 Devastator
+if self.wpn_fps_gre_as24 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_gre_as24", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_gre_as24", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_gre_as24", "wpn_fps_ass_contraband")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_gre_as24")
 end
 -- Secondary
 -- PPSh-41
