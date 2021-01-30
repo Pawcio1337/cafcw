@@ -17,7 +17,8 @@ attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m4_m_pmag40",
 	"wpn_fps_upg_m4_m_pantsu",
 	"wpn_fps_upg_m_hera",
-	"wpn_fps_ass_m4_m_wick"
+	"wpn_fps_ass_m4_m_wick",
+	"wpn_fps_upg_m_quad100"
 }
 attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_caastock",
