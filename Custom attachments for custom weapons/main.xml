@@ -1,5 +1,5 @@
 <mod name="Custom attachments for custom weapons" color="Color(0.01,0.62,0.98)">
-	<AssetUpdates id="19169" version="1.718" provider="modworkshop"/>
+	<AssetUpdates id="19169" version="1.720" provider="modworkshop"/>
 	<Hooks directory="hooks">
 		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_alcat.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
@@ -14,6 +14,7 @@
 		<hook file="weaponfactorytweakdata_leon.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_matt.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_mira.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponfactorytweakdata_rjc9000.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_silentenforcer.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_nepgearsy.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weaponfactorytweakdata_xxnelsonxx.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>

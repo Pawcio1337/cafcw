@@ -270,6 +270,29 @@ if self.wpn_fps_ass_m4bpre then
 
 end
 
+-- Sig MCX Virtus
+if self.wpn_fps_ass_virtus then
+	-- I can't believe it's not honey badger!
+	self:cafcw_add_custom_ammo("wpn_fps_ass_virtus", "_556x45mm")
+	self:cafcw_add_custom_ammo("wpn_fps_upg_virtus_b_blk", "_556x45mm", "forbids_add")
+	
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_virtus", "wpn_fps_ass_s552")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_virtus", "wpn_fps_ass_s552")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_virtus", "wpn_fps_ass_s552")
+
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_virtus")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_virtus")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_virtus")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_virtus")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_virtus")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_virtus")
+	
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_virtus_fg_long", "a_fl_long")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_virtus_fg_short", "a_fl_short")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_virtus_fg_quiet")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_virtus_fg_quiet")
+end
+
 -- its finally time
 
 -- theyre coming

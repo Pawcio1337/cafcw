@@ -1,0 +1,43 @@
+Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_rjc9000_Init", function(self)
+-- Misriah Armory BR55
+if self.wpn_fps_br55 then
+	self:cafcw_add_custom_ammo("wpn_fps_br55", "_762x51mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_br55")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_br55", "wpn_fps_ass_vhs")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_br55", "wpn_fps_ass_vhs")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_br55", "wpn_fps_ass_vhs")
+end
+
+-- Misriah Armory M7 Caseless SMG (Secondary Ver)
+if self.wpn_fps_m7caseless then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_m7caseless", "wpn_fps_smg_sr2")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_m7caseless", "wpn_fps_smg_sr2")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_m7caseless", "wpn_fps_smg_sr2")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_m7caseless")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_m7caseless")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_m7caseless")
+end
+
+-- Mirsriah Armory Dual Wield M7 Caseless SMG
+if self.wpn_fps_x_m7caseless then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_x_m7caseless")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_x_m7caseless")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_x_m7caseless")
+end
+
+-- Misriah Armory M392 Designated Marksman Rifle
+-- If you're poking around this file and/or you're Pawcio, yes, this is a DMR I'm internally working on. 
+--It is intended for my personal use, but I suppose I can taunt le Halo fans with it.
+if self.wpn_fps_reachdmr then
+	self:cafcw_add_custom_ammo("wpn_fps_reachdmr", "_762x51mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_reachdmr")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_reachdmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_reachdmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_reachdmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_reachdmr")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_reachdmr")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_reachdmr")
+end
+
+
+end)
