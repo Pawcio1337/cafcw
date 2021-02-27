@@ -1198,6 +1198,16 @@ if self.wpn_fps_gre_as24 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_gre_as24", "wpn_fps_ass_contraband")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_gre_as24")
 end
+-- Mosin Nagant Obrez Pistol
+if self.wpn_fps_snp_mosinwtf then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_mosinwtf", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_mosinwtf", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_mosinwtf", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_mosinwtf", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_mosinwtf", "wpn_fps_snp_siltstone")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_mosinwtf", "wpn_fps_snp_mosinwtf")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_mosinwtf")
+end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
@@ -1230,25 +1240,25 @@ if self.wpn_fps_smg_fmg9 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_fmg9")
 	self:cafcw_add_attachment_type("Suppressors_NoOsprey", "wpn_fps_smg_fmg9")
 end
--- PP-19-01 Vityaz
-if self.wpn_fps_smg_vityaz then
-	self:cafcw_add_custom_ammo("wpn_fps_smg_vityaz", "_9x19mm")
-	self:cafcw_add_custom_ammo("wpn_fps_smg_vityaz", "_9x19mm_p")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_vityaz", "wpn_fps_ass_ak5")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_vityaz", "wpn_fps_ass_ak5")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_vityaz", "wpn_fps_ass_ak5")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_vityaz", "wpn_fps_ass_ak5")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_vityaz")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_vityaz")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_vityaz")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_vityaz")
-	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_vityaz_rail_midwest")
-	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_vityaz_rail_zenit")
-	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_vityaz_handguard_terminator_forbids")
-	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_smg_vityaz", nil, "extra")
-	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_smg_vityaz", nil, "extra")
-	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_smg_vityaz", nil, "extra")
-	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_smg_vityaz", nil, "foregrip")
+-- PPK-20
+if self.wpn_fps_smg_ppk20 then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_ppk20", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_smg_ppk20", "_9x19mm_p")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_ppk20", "wpn_fps_ass_ak5")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_ppk20", "wpn_fps_ass_ak5")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_ppk20", "wpn_fps_ass_ak5")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_ppk20", "wpn_fps_ass_ak5")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_ppk20")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_ppk20")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_ppk20")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_ppk20")
+	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_ppk20_rail_midwest")
+	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_ppk20_rail_zenit")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_ppk20_handguard_terminator_forbids")
+	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_smg_ppk20", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_smg_ppk20", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_smg_ppk20", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_smg_ppk20", nil, "foregrip")
 end
 -- APS
 if self.wpn_fps_pis_aps then

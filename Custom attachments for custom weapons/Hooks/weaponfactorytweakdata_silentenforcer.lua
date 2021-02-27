@@ -60,7 +60,7 @@ if self.wpn_fps_ass_stg44 then
     end
 	
 
---Mossberg 590
+--[[Mossberg 590
 if self.wpn_fps_shot_m590 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_m590")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_m590")
@@ -68,7 +68,7 @@ if self.wpn_fps_shot_m590 then
 	self:cafcw_add_custom_ammo("wpn_fps_shot_m590", "_12ga")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_m590", "wpn_fps_shot_m590", "wpn_fps_shot_m590_ris_special")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_m590", "wpn_fps_shot_m590", "wpn_fps_shot_m590_ris_special")
-end
+end]]
 
 --QBZ-03
 if self.wpn_fps_ass_qbz3 then

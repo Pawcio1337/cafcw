@@ -319,16 +319,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -22.7, 0)
 	})
-	self:SetupAttachmentPoint("vityaz", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 3.2, -0.95)
-	})
-	self:SetupAttachmentPoint("vityaz", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -10.3, -0.95)
-	})
 	self:SetupAttachmentPoint("psg1", {
 		name = "a_of",
 		base_a_obj = "a_o",
