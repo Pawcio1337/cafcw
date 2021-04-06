@@ -81,6 +81,11 @@ if self.wpn_fps_m6h then
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_m6h")
 end
 
+-- God's Sidearm
+if self.wpn_fps_accurate_m6d then
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_accurate_m6d")
+end
+
 -- Misriah Armory M739 SAW
 -- Anybody say ... full auto grenade launcher? Uses Halo 4 Assets, so I can't upload to Modworkshop.
 if self.wpn_fps_h4saw then
@@ -130,11 +135,12 @@ end
 if self.wpn_fps_dd_grenadier then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_dd_grenadier", "wpn_fps_ass_contraband")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_dd_grenadier", "wpn_fps_ass_contraband")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_dd_grenadier", "wwpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_dd_grenadier", "wpn_fps_ass_contraband")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_dd_grenadier")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_dd_grenadier")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_dd_grenadier")
-	self:cafcw_add_custom_ammo("wpn_fps_dd_grenadier", "_556x45mm")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_dd_grenadier")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_dd_grenadier")
 end
 
 end)

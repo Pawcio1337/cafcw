@@ -21,9 +21,12 @@ attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m_quad100"
 }
 attach_tables.AR15_Stocks = {
-	"wpn_fps_upg_m4_s_caastock",
+--[["wpn_fps_upg_m4_s_caastock",
 	"wpn_fps_upg_m4_s_caastock_black",
 	"wpn_fps_upg_m4_s_hke1",
+	"wpn_fps_upg_m4_s_fab_glr16s",
+	"wpn_fps_upg_m4_s_fab_glr16s_alt",
+	"wpn_fps_upg_m4_s_hkslimline",]]
 	"wpn_fps_upg_m4_s_viper",
 	"wpn_fps_upg_m4_s_collapsed",
 	"wpn_fps_upg_m4_s_pts_col",
@@ -36,9 +39,6 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_s_m4_pts_c",
 	"wpn_fps_upg_s_m4_sl",
 	"wpn_fps_upg_s_m4_sl_c",
-	"wpn_fps_upg_m4_s_fab_glr16s",
-	"wpn_fps_upg_m4_s_fab_glr16s_alt",
-	"wpn_fps_upg_m4_s_hkslimline",
 	"wpn_fps_upg_s_tti",
 	"wpn_fps_ass_m4_s_russian",
 	"wpn_fps_upg_m4_s_moe",
@@ -49,9 +49,9 @@ attach_tables.AR15_Stocks = {
 }
 attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_smg_tromix",
-	"wpn_fps_upg_ns_ass_mb556k",
+--[["wpn_fps_upg_ns_ass_mb556k",
 	"wpn_fps_upg_ns_ass_tbrake",
-	"wpn_fps_upg_ns_ass_vortex",
+	"wpn_fps_upg_ns_ass_vortex",]]
 	"wpn_fps_upg_ns_dragon",
 	"wpn_fps_upg_ns_ass_yhm_slant",
 	"wpn_fps_upg_ns_ass_smg_russian",
@@ -183,7 +183,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_acog2000",
 	"wpn_fps_upg_o_ta648rmr",
 	"wpn_fps_upg_o_viper",
-	"wpn_fps_upg_o_acro"
+	"wpn_fps_upg_o_acro",
+	"wpn_fps_upg_o_mwr_holo"
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
@@ -826,6 +827,7 @@ if self.wpn_fps_ass_ak12 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_ak12")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_ak12")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_ak12")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_ak12")
 end
 -- L115
 if self.wpn_fps_snp_l115 then
