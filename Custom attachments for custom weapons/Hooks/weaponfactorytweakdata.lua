@@ -863,14 +863,10 @@ end
 -- SKS
 if self.wpn_fps_ass_sks then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_sks", "_762x39mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_sks", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_sight_rail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_sks", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_sight_rail")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_sks", "wpn_fps_snp_siltstone", "wpn_fps_ass_sks_sight_rail")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_sks", "wpn_fps_ass_ching")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_sks", "wpn_fps_ass_ching")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_sks", "wpn_fps_ass_ching")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_sks", "wpn_fps_ass_sks")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_sks")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_sks")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_sks")
-	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_ass_sks_irons")
 end
 -- AKU-94
 if self.wpn_fps_ass_aku94 then
@@ -1100,12 +1096,6 @@ if self.wpn_fps_lmg_mg4 then
 	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_lmg_mg4", nil, "upper_reciever")
 	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_lmg_mg4", nil, "upper_reciever")
 	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_lmg_mg4", nil, "upper_reciever")
-end
--- Lewis Gun
-if self.wpn_fps_lmg_lewis then
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_lewis")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_lewis")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_lewis")
 end
 -- AMR-2
 if self.wpn_fps_snp_amr2 then

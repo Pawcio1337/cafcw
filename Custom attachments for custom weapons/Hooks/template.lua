@@ -12,6 +12,8 @@ end
 end)
 
 --[[
+Update 2020/2021: BeardLib can handle adding some types of attachments to custom weapons and CAFCW is mostly required for custom sights to function correctly on custom weapons and adding some specific types of attachments (Or outdated attachments that still uses defined weapon list). So common attachments like "AR15_Stocks", "Barrel_Extensions", "Gadgets", "Suppressors" etc can be completly ignored.
+
 Template:
 Above part is basic configuration for custom attachments. Before editing data in function calls you need to edit following:
 
@@ -72,18 +74,16 @@ Forth parameter is overrided attachment pattern.
 
 Template continued:
 After you finish editing data for own custom weapon you need to hook this script into main.xml of mod.
-Save this file as weaponfactorytweakdata_MWSNICK.lua (where "MWSNICK" is your mostly used nick on Modworkshop.)
+Save this file as weaponfactorytweakdata_MWSNICK.lua (where "MWSNICK" is your most used nick on Modworkshop.)
 Open main.xml and add:
 
-		<hook file="weaponfactorytweakdata_MWSNICK.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
-Inside <Hooks..></Hooks> group then run PD2 and test function.
-To upload own script you can either use Github and push changes or send me a PM on MWS - https://modworkshop.net/private.php?action=send&uid=965
-Alternatively you can try get help from someone on MWS Discord.
+		<hook file="weaponfactorytweakdata_MWSNICK.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> <!-- https://modworkshop.net/user/ID_ON_MWS -->
 
-After script get accepted you can update mod with any changes via MWS page.
-Note. Mod must be packed using ZIP format and "version" number in main.xml file must be increased by 0.01
+Inside <Hooks..></Hooks> group then run PD2 to test changes.
+To upload own script you can either use Github: https://github.com/Pawcio1337/cafcw
+Or ask author/collaborators on MWS discord if they can help in uploading update.
 
-
-Contributed functions documentation:
+After submitting changes you should get collaborator status later so you can update own script via MWS page.
+Reminder: Mod must be packed using ZIP format and "version" number in main.xml file must be increased by 0.01
 
 --]]
