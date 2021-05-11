@@ -293,6 +293,21 @@ if self.wpn_fps_ass_virtus then
 	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_virtus_fg_quiet")
 end
 
+-- Mass Blaster
+if self.wpn_fps_smg_mass then
+	-- I guess I do commissions now. Cool!
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_mass", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_mass", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_mass", "wpn_fps_ass_m4")
+	
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_smg_mass", "wpn_fps_ass_m4") -- comment out if things break
+
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_mass")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_mass")
+end
+
+
+
 -- its finally time
 
 -- theyre coming

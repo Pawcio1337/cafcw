@@ -184,7 +184,9 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_ta648rmr",
 	"wpn_fps_upg_o_viper",
 	"wpn_fps_upg_o_acro",
-	"wpn_fps_upg_o_mwr_holo"
+	"wpn_fps_upg_o_mwr_holo",
+	"wpn_fps_upg_o_operator_rds",
+	"wpn_fps_upg_o_operator_rds_noriser"
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
@@ -889,12 +891,6 @@ if self.wpn_fps_snp_vss then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000")
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_vss")
-	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_snp_vss", nil, "sight_rail")
-	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_snp_vss", nil, "sight_rail")
-	self:cafcw_wpn_a_obj_pattern_override("Shortdot", "wpn_fps_snp_vss", nil, "sight_rail")
-	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_snp_vss", nil, "sight_rail")
-	self:cafcw_wpn_a_obj_pattern_override("Custom_Sniper", "wpn_fps_snp_vss", nil, "sight_rail")
 end
 -- OTs-14-4A Groza
 if self.wpn_fps_ass_ots_14_4a then
