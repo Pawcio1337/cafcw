@@ -239,16 +239,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -22.67, -3.75)
 	})
-	self:SetupAttachmentPoint("jackhammer", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 4.8, 4.6)
-	})
-	self:SetupAttachmentPoint("jackhammer", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -11.5, 4.6)
-	})
 	self:SetupAttachmentPoint("grotb", {
 		name = "a_of",
 		base_a_obj = "a_o",
