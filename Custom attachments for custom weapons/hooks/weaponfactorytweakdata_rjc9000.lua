@@ -143,10 +143,40 @@ if self.wpn_fps_dd_grenadier then
 	self:cafcw_add_custom_ammo("wpn_fps_dd_grenadier", "_556x45mm")
 end
 
+-- Black Ops Reboot CAR 15
+if self.wpn_fps_xm4 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_xm4", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_xm4", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_xm4", "wpn_fps_smg_olympic")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_xm4")
+	self:cafcw_add_custom_ammo("wpn_fps_xm4", "_556x45mm")
+end
+
+-- Black Ops Reboot CAR 15 Primary
+if self.wpn_fps_xm4_prim then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_xm4_prim")
+	self:cafcw_add_custom_ammo("wpn_fps_xm4_prim", "_556x45mm")
+end
+
 -- Misriah Armory MA5 Series
 if self.wpn_fps_ma_series then
 	self:cafcw_add_custom_ammo("wpn_fps_ma_series", "_762x51mm")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ma_series")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ma_series")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ma_series")
 end
 
 end)
