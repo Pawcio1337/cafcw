@@ -748,11 +748,9 @@ end
 	---- Pistols / Revolvers ----
 
     -- High Standard HDM / Akimbo High Standard HDM  --
-if self.wpn_fps_pis_hshdm and self.wpn_fps_pis_x_hshdm then
-    self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_hshdm", "wpn_fps_pis_deagle_fg_rail")
-    self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_hshdm", "wpn_fps_pis_deagle_fg_rail")
+--[[if self.wpn_fps_pis_hshdm and self.wpn_fps_pis_x_hshdm then
 --    self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_hshdm", "wpn_fps_pis_breech")
-end
+end]]
 	
 	-- Colt M1911A1 / Akimbo Colt M1911A1 --
 	
@@ -763,14 +761,12 @@ if self.wpn_fps_pis_gsh18 then
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_gsh18", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_gsh18", "a_ns", "barrel")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_gsh18")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_gsh18", "wpn_fps_pis_ppk_fl_mount")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_gsh18")
 end
 if self.wpn_fps_x_gsh18 then
 	self:cafcw_add_custom_ammo("wpn_fps_x_gsh18", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_x_gsh18", "_9x19mm_p")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_x_gsh18")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_x_gsh18", "wpn_fps_pis_ppk_fl_mount")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_x_gsh18")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_x_gsh18", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_x_gsh18", "a_ns", "barrel")

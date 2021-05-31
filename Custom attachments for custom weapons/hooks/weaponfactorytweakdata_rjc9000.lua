@@ -76,14 +76,14 @@ end
 
 -- Misriah Armory M6H Pistol
 -- Poorly made side mod for personal use. Uses Halo 4 Assets, so I can't upload to Modworkshop.
-if self.wpn_fps_m6h then
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_m6h")
-end
+--if self.wpn_fps_m6h then
+
+--end
 
 -- God's Sidearm
-if self.wpn_fps_accurate_m6d then
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_accurate_m6d")
-end
+--if self.wpn_fps_accurate_m6d then
+
+--end
 
 -- Misriah Armory M739 SAW
 -- Anybody say ... full auto grenade launcher? Uses Halo 4 Assets, so I can't upload to Modworkshop.

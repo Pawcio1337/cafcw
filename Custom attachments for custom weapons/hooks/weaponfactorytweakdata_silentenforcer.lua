@@ -95,7 +95,6 @@ end
 if self.wpn_fps_pis_pm then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_pm")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_pm", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_pm", "_9x19mm")
 	if self.parts.wpn_fps_upg_ac_9x19 then
 		table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_upg_ac_9x19")
@@ -104,7 +103,6 @@ end
 if self.wpn_fps_pis_x_pm then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_pm")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_pm", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_x_pm", "_9x19mm")
 	if self.parts.wpn_fps_upg_ac_9x19 then
 		table.insert(self.wpn_fps_pis_x_pm.uses_parts, "wpn_fps_upg_ac_9x19")
@@ -113,7 +111,6 @@ end
 if self.wpn_fps_pis_xs_pm then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_xs_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_xs_pm")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_xs_pm", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_xs_pm", "_9x19mm")
 	if self.parts.wpn_fps_upg_ac_9x19 then
 		table.insert(self.wpn_fps_pis_xs_pm.uses_parts, "wpn_fps_upg_ac_9x19")
@@ -191,7 +188,6 @@ end
 
 -- Welrod
 if self.wpn_fps_pis_welrod then
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_welrod", "wpn_fps_pis_welrod_gadget_rail")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_welrod", "_9x19mm")
 end
 

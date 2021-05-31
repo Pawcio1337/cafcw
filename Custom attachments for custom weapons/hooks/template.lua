@@ -31,7 +31,7 @@ First parameter*2 in this function defines specific type of attachments that wil
 Second parameter is Factory ID of custom weapon.
 (Optional) Third parameter is used to add defined attachment ID that will be added with type of attachments - Example rail for gadgets. Note - Custom weapon must have defined adds table in factory group.
 
-Currently available types*: AR15_Stocks, Barrel_Extensions, Gadgets, Gadgets_Pistol, Suppressors, Suppressors_Shotgun, Suppressors_Pistol.
+Currently available types*: AR15_Stocks, Barrel_Extensions, Gadgets, Suppressors, Suppressors_Shotgun, Suppressors_Pistol.
 
 	self:cafcw_add_custom_sights("Sight Base", "Factory ID", "Base Stance_Mod, "Adds ID")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_template", "wpn_fps_ass_flint", "wpn_fps_smg_template_sight_rail")

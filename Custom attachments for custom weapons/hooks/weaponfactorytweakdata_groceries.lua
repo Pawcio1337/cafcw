@@ -305,12 +305,10 @@ if self.wpn_fps_pis_sw659 then
 
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw659")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sw659")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_sw659", "wpn_fps_pis_sw659_fl_adapter")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_sw659", "_9x19mm")
 
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw659")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_sw659")
-	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_sw659", "wpn_fps_pis_sw659_fl_adapter")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_x_sw659", "_9x19mm")
 end
 --[[ M2019 Blaster 

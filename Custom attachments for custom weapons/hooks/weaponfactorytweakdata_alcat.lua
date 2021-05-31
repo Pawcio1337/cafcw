@@ -390,20 +390,16 @@ self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_czauto", nil
 
 self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_czauto")
 self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_czauto")
-self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_czauto", "wpn_fps_pis_beretta_body_rail")
 self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_czauto", nil, "lower_reciever")
 self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_czauto", nil, "lower_reciever")
-self:cafcw_forbids_attachment_type("Gadgets_Pistol", "wpn_fps_pis_czauto_vg_mag")
 
 self:cafcw_add_custom_ammo("wpn_fps_pis_czauto", "_9x19mm")
 end 
 if self.wpn_fps_pis_x_czauto then
 self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_czauto")
 self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_czauto")
-self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_czauto", "wpn_fps_pis_beretta_body_rail")
 self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_czauto", nil, "lower_reciever")
 self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_x_czauto", nil, "lower_reciever")
-self:cafcw_forbids_attachment_type("Gadgets_Pistol", "wpn_fps_pis_czauto_vg_mag")
 
 self:cafcw_add_custom_ammo("wpn_fps_pis_x_czauto", "_9x19mm")
 end 
@@ -552,7 +548,6 @@ end
 if self.wpn_fps_special_contender then
 self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,16,-3.75", "wpn_fps_special_contender_rail_optic")
 self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,12,-3.75", "wpn_fps_special_contender_rail_optic")
-self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_special_contender")
 end
 
 
@@ -574,7 +569,6 @@ if self.wpn_fps_pis_max9 then
 self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_max9", "wpn_fps_pis_hs2000", "0,0,0.3")
 self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_max9", nil, "lower_reciever")
 
-self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_max9", "wpn_fps_pis_deagle_fg_rail")
 self:cafcw_category_forbid("wpn_fps_pis_max9", "gadget", "wpn_fps_pis_max9_b_nosup")
 end
 
@@ -741,13 +735,6 @@ end
 if BeardLib.Utils:FindMod("M1 Garand Various Attachment") then
 
 self:cafcw_forbids_attachment_type("Gadgets", "wpn_fps_ass_ching_o_m84")
-
-end
-
---Skorpion Various
-if BeardLib.Utils:FindMod("Scorpion Various Mag") then
-
-self:cafcw_forbids_attachment_type("Gadgets_Pistol", "wpn_fps_smg_scorpion_body_norail")
 
 end
 
