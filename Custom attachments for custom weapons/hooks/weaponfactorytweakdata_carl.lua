@@ -41,7 +41,7 @@ if self.wpn_fps_ass_recce then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_recce")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_recce")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_recce")
-	self:cafcw_add_attachment_type("AR15_Stocks_NoHKE1", "wpn_fps_ass_recce")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_recce")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_recce")
 
 end
@@ -61,7 +61,7 @@ if self.wpn_fps_ass_drongo then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_drongo")
-	self:cafcw_add_attachment_type("AR15_Stocks_NoHKE1", "wpn_fps_ass_drongo")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_drongo")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_drongo")
 end
@@ -210,7 +210,7 @@ if self.wpn_fps_ass_raifu then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_raifu")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_raifu")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_raifu")
-	self:cafcw_add_attachment_type("AR15_Stocks_NoHKE1", "wpn_fps_ass_raifu")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_raifu")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_raifu")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_raifu")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_raifu")
