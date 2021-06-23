@@ -1014,6 +1014,12 @@ if self.wpn_fps_ass_blast then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_blast", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_blast", "wpn_fps_ass_ak5", nil, "0,3,0")
 end
+-- HK G3SG/1
+if self.wpn_fps_ass_g3sg1 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_g3sg1", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g3sg1", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g3sg1", "wpn_fps_ass_m14")
+end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
