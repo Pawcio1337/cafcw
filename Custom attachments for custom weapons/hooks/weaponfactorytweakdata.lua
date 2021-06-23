@@ -152,6 +152,10 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_viper",
 	"wpn_fps_upg_o_acro",
 	"wpn_fps_upg_o_mwr_holo",
+	"wpn_fps_upg_o_cod4_re_red_dot_sp",
+	"wpn_fps_upg_o_cod4_re_red_dot_sp_riser",
+	"wpn_fps_upg_o_ebr_scope",
+	"wpn_fps_upg_o_ebr_scope_ghillie",
 	"wpn_fps_upg_o_operator_rds",
 	"wpn_fps_upg_o_operator_rds_noriser",
 	"wpn_fps_upg_o_hamr"
@@ -1008,6 +1012,7 @@ if self.wpn_fps_ass_blast then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_blast", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_blast", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_blast", "wpn_fps_ass_ak5")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_blast", "wpn_fps_ass_ak5", nil, "0,3,0")
 end
 -- Secondary
 -- PPSh-41

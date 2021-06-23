@@ -1,12 +1,13 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_rjc9000_Init", function(self)
 -- Misriah Armory BR55
 if self.wpn_fps_br55 then
-	self:cafcw_add_custom_ammo("wpn_fps_br55", "_762x51mm")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_br55")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_br55")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_br55", "wpn_fps_ass_vhs")
 	self:cafcw_add_custom_sights("Custom",  "wpn_fps_br55", "wpn_fps_ass_vhs")
 	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_br55", "wpn_fps_ass_vhs")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_br55")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_br55")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_br55")
+	self:cafcw_add_custom_ammo("wpn_fps_br55", "_762x51mm")
 end
 
 -- Misriah Armory M7 Caseless SMG (Secondary Ver)
