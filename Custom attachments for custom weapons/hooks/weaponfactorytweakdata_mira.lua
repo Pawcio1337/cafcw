@@ -143,16 +143,7 @@ if self.wpn_fps_pis_vp70 then
 	self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_vp70", "wpn_fps_pis_ppk", "0,0,0")
 	self:cafcw_clone_override("attach_table", "wpn_fps_pis_vp70", "wpn_fps_pis_vp70", "wpn_fps_upg_o_rmr", "Custom_Pistol")
 	self:cafcw_clone_override("attach_table", "wpn_fps_pis_vp70_s_scifi", "wpn_fps_pis_vp70_s_scifi", "wpn_fps_upg_o_rmr", "Custom_Pistol")
-	-- Temporary fix .-.
-	if self.parts.wpn_fps_upg_o_deltapoint then
-		self.parts.wpn_fps_pis_vp70_s_scifi.override.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_vp70.translation = Vector3(-0.035, -0.3, -1.96)
-		self.wpn_fps_pis_vp70.override.wpn_fps_upg_o_deltapoint.stance_mod.wpn_fps_pis_vp70.translation = Vector3(0, 0, -1.93)
-	end
-	-- feeling like a caveman having to do it the old way >:/
-	if self.parts.wpn_fps_upg_o_deltapoint_pro then
-		self.parts.wpn_fps_pis_vp70_s_scifi.override.wpn_fps_upg_o_deltapoint_pro.stance_mod.wpn_fps_pis_vp70.translation = Vector3(-0.035, -0.3, -1.99)
-		self.wpn_fps_pis_vp70.override.wpn_fps_upg_o_deltapoint_pro.stance_mod.wpn_fps_pis_vp70.translation = Vector3(0, 0, -1.96)
-	end
+
 end
 if self.wpn_fps_pis_x_vp70 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_x_vp70", "_9x19mm")

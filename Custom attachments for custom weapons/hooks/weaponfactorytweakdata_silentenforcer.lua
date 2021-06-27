@@ -96,25 +96,16 @@ if self.wpn_fps_pis_pm then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_pm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_pm", "_9x19mm")
-	if self.parts.wpn_fps_upg_ac_9x19 then
-		table.insert(self.wpn_fps_pis_pm.uses_parts, "wpn_fps_upg_ac_9x19")
-	end
 end
 if self.wpn_fps_pis_x_pm then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_pm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_x_pm", "_9x19mm")
-	if self.parts.wpn_fps_upg_ac_9x19 then
-		table.insert(self.wpn_fps_pis_x_pm.uses_parts, "wpn_fps_upg_ac_9x19")
-	end
 end
 if self.wpn_fps_pis_xs_pm then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_xs_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_xs_pm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_xs_pm", "_9x19mm")
-	if self.parts.wpn_fps_upg_ac_9x19 then
-		table.insert(self.wpn_fps_pis_xs_pm.uses_parts, "wpn_fps_upg_ac_9x19")
-	end
 end
 
 -- QBS-09
@@ -157,7 +148,6 @@ end
 	
 --Gewehr 43
 if self.wpn_fps_snp_g43 then
-	self.wpn_fps_snp_g43.override = self.wpn_fps_snp_g43.override or {}
 	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_snp_g43", "wpn_fps_ass_fal", "0,4,-0.2") --original specter 0, 4, -3.5 || PVM xyz 
 	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_snp_g43", "a_o_clamp")
 	self:cafcw_forbids_attachment_type("Custom_WW2_Axis", "wpn_fps_upg_o_45iron")

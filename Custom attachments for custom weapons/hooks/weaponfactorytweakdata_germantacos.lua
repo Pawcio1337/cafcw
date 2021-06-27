@@ -66,32 +66,6 @@ end
 
 --Glock P80
 if self.wpn_fps_pis_p80 then
-	if self.parts.wpn_fps_ass_ns_g_sup1 and self.parts.wpn_fps_ass_ns_g_sup2 and self.parts.wpn_fps_ass_ns_g_sup6 then
-		table.insert(self.wpn_fps_pis_p80.uses_parts, "wpn_fps_ass_ns_g_sup1")
-			if self.wpn_fps_pis_p80.override then 
-				self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup1 = {parent = "barrel",a_obj = "a_p80nsm"}
-				self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup1 = {a_obj = "a_p80nslm"}
-		--	else
-		--		self.wpn_fps_pis_p80.override = {wpn_fps_ass_ns_g_sup1 = {parent = "barrel",a_obj = "a_p80nsm"}}
-		--		self.parts.wpn_fps_pis_p80_s_long.override = {wpn_fps_ass_ns_g_sup1 = {a_obj = "a_p80nslm"}}
-			end
-		table.insert(self.wpn_fps_pis_p80.uses_parts, "wpn_fps_ass_ns_g_sup2")
-			if self.wpn_fps_pis_p80.override then 
-				self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup2 = {parent = "barrel",a_obj = "a_p80nsm"}
-				self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup2 = {a_obj = "a_p80nslm"}
-		--	else
-		--		self.wpn_fps_pis_p80.override = {wpn_fps_ass_ns_g_sup2 = {parent = "barrel",a_obj = "a_p80nsm"}}
-		--		self.parts.wpn_fps_pis_p80_s_long.override = {wpn_fps_ass_ns_g_sup2 = {a_obj = "a_p80nslm"}}
-			end
-		table.insert(self.wpn_fps_pis_p80.uses_parts, "wpn_fps_ass_ns_g_sup6")
-			if self.wpn_fps_pis_p80.override then 
-				self.wpn_fps_pis_p80.override.wpn_fps_ass_ns_g_sup6 = {parent = "barrel",a_obj = "a_p80nsm"}
-				self.parts.wpn_fps_pis_p80_s_long.override.wpn_fps_ass_ns_g_sup6 = {a_obj = "a_p80nslm"}
-		--	else
-		--		self.wpn_fps_pis_p80.override = {wpn_fps_ass_ns_g_sup6 = {parent = "barrel",a_obj = "a_p80nsm"}}
-		--		self.parts.wpn_fps_pis_p80_s_long.override = {wpn_fps_ass_ns_g_sup6 = {a_obj = "a_p80nslm"}}
-			end
-	end
 	self:cafcw_add_custom_ammo("wpn_fps_pis_p80", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_p80_a1_40sw", "_9x19mm", "forbids_add")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_p80_a2_10mm", "_9x19mm", "forbids_add")
@@ -114,23 +88,7 @@ end
 
 --CZ-2
 
-if self.wpn_fps_pis_cz2 and self.wpn_fps_pis_x_cz2 then
-	if self.parts.wpn_fps_upg_fl_unimax then
-		table.insert(self.wpn_fps_pis_cz2.uses_parts  , "wpn_fps_upg_fl_unimax" )
-		table.insert(self.wpn_fps_pis_cz2.uses_parts  , "wpn_fps_upg_fl_utg_pis")
-		table.insert(self.wpn_fps_pis_x_cz2.uses_parts, "wpn_fps_upg_fl_unimax" )
-		table.insert(self.wpn_fps_pis_x_cz2.uses_parts, "wpn_fps_upg_fl_utg_pis")
-		self.wpn_fps_pis_cz2.adds.wpn_fps_upg_fl_unimax    = {"wpn_fps_pis_g26_fl_adapter"} 
-		self.wpn_fps_pis_x_cz2.adds.wpn_fps_upg_fl_unimax  = {"wpn_fps_pis_g26_fl_adapter"} 
-		self.wpn_fps_pis_cz2.adds.wpn_fps_upg_fl_utg_pis   = {"wpn_fps_pis_g26_fl_adapter"} 
-		self.wpn_fps_pis_x_cz2.adds.wpn_fps_upg_fl_utg_pis = {"wpn_fps_pis_g26_fl_adapter"} 
-		self.wpn_fps_pis_cz2.override.wpn_fps_upg_fl_unimax    = {a_obj = "cz2fl"}
-		self.wpn_fps_pis_cz2.override.wpn_fps_upg_fl_utg_pis   = {a_obj = "cz2fl"}
-		self.wpn_fps_pis_x_cz2.override.wpn_fps_upg_fl_unimax  = {a_obj = "cz2fl"}
-		self.wpn_fps_pis_x_cz2.override.wpn_fps_upg_fl_utg_pis = {a_obj = "cz2fl"}
-	end
 
-end
 
 --Seburo M5
 
@@ -149,13 +107,6 @@ if self.wpn_fps_ass_fusil_762 then
 end
 ---AR PACK
 if self.wpn_fps_ass_stoy_556 then
-	if self.parts.wpn_fps_upg_o_rmr_riser then
-	self.wpn_fps_ass_stoy_556.override.wpn_fps_upg_o_rmr_riser = {override = {
-		wpn_fps_ass_stoy_556_gb_ar15 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"},
-		wpn_fps_ass_stoy_556_gb_m16a1 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"},
-		wpn_fps_ass_stoy_556_gb_m16a4 = {unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"}
-	}}
-	end
 	self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "0,7,-5.15")
 	self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "0,5,-5.15")
 	self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_stoy_556", "wpn_fps_ass_flint", "0,2,-2.5")
