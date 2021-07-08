@@ -117,7 +117,13 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_sand",
 	"wpn_fps_upg_vg_ins",
 	"wpn_fps_upg_vg_sec",
-	"wpn_fps_upg_vg_sac"
+	"wpn_fps_upg_vg_sac",
+	"wpn_fps_upg_vg_stubby", 
+	"wpn_fps_upg_vg_verticalgrip",
+	"wpn_fps_upg_vg_moe",
+	"wpn_fps_upg_vg_tecci", 
+	"wpn_fps_upg_vg_foldable", 
+	"wpn_fps_upg_vg_grippod"
 }
 -- Sights
 attach_tables.ACOG = {
@@ -218,7 +224,8 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_gits_futeot",
 	"wpn_fps_upg_o_gits_seburors",
 	"wpn_fps_upg_o_gits_zism",
-	"wpn_fps_upg_o_tf90" -- U201
+	"wpn_fps_upg_o_tf90", -- U201
+	"wpn_fps_upg_o_invissight"
 }
 attach_tables.SpecterSmall = {
 	"wpn_fps_upg_o_coyote",
