@@ -15,7 +15,17 @@ attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m4_m_pantsu",
 	"wpn_fps_upg_m_hera",
 	"wpn_fps_ass_m4_m_wick",
-	"wpn_fps_upg_m_quad100"
+	"wpn_fps_upg_m_quad100",
+	"wpn_fps_upg_m_d60",
+	"wpn_fps_upg_m_p10",
+	"wpn_fps_upg_m_p20",
+	"wpn_fps_upg_m_p30",
+	"wpn_fps_upg_m_p30w",
+	"wpn_fps_upg_m_p40",
+	"wpn_fps_upg_m_battle",
+	"wpn_fps_upg_m_poly",
+	"wpn_fps_upg_m_gen2"
+	
 }
 attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_collapsed",
@@ -164,6 +174,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_ebr_scope_ghillie",
 	"wpn_fps_upg_o_operator_rds",
 	"wpn_fps_upg_o_operator_rds_noriser",
+	"wpn_fps_upg_o_ismc_aimpoint_t2",
 	"wpn_fps_upg_o_hamr"
 }
 attach_tables.CustomSmall = {

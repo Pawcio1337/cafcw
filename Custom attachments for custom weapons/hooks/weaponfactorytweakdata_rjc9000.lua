@@ -1,4 +1,7 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_rjc9000_Init", function(self)
+
+----------Public Halo Weapons------------------
+
 -- Misriah Armory BR55
 if self.wpn_fps_br55 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_br55", "wpn_fps_ass_vhs")
@@ -34,7 +37,6 @@ if self.wpn_fps_m7caseless_prim then
 	self:cafcw_add_custom_ammo("wpn_fps_m7caseless_prim", "_9x19mm")
 end
 
-
 -- Mirsriah Armory Dual Wield M7 Caseless SMG
 if self.wpn_fps_x_m7caseless then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_x_m7caseless")
@@ -56,8 +58,84 @@ if self.wpn_fps_reachdmr then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_reachdmr")
 end
 
+-- Misriah Armory MA5 Series
+if self.wpn_fps_ma_series then
+	self:cafcw_add_custom_ammo("wpn_fps_ma_series", "_762x51mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ma_series")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ma_series")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ma_series")
+end
+
+-- Vakara GesmbH VK78 Commando
+if self.wpn_fps_ass_vk78_commando then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_vk78_commando", "wpn_fps_ass_scar")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_vk78_commando", "wpn_fps_ass_scar")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_vk78_commando", "wpn_fps_ass_scar")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_vk78_commando")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_vk78_commando")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_vk78_commando")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_vk78_commando", "_762x51mm")
+end
+
+----------Non Halo Weapons------------------
+
+-- Black Ops Reboot CAR 15
+if self.wpn_fps_xm4 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_xm4", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_xm4", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_xm4", "wpn_fps_smg_olympic")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_xm4")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_xm4")
+	self:cafcw_add_custom_ammo("wpn_fps_xm4", "_556x45mm")
+end
+
+-- Black Ops Reboot CAR 15 Primary
+if self.wpn_fps_xm4_prim then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_xm4_prim")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_xm4_prim")
+	self:cafcw_add_custom_ammo("wpn_fps_xm4_prim", "_556x45mm")
+end
+
+-- Daniel Defense MK18 Grenadier 
+if self.wpn_fps_ass_dd_grenadier then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_dd_grenadier", "_556x45mm")
+end
+
+--SIG P320
+if self.wpn_fps_pis_sig_p320 then
+	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a1_40sw", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a2_10mm", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a3_357sig", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a4_45acp", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a5_45gap", "_9x19mm", "forbids_add")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sig_p320")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sig_p320")
+end
+
+
+----------Lost Halo Weapons------------------
+
 -- Misriah Armory BR85 Heavy Barrel Rifle
--- Poorly made side mod for personal use. Uses Halo 4 Assets, so I can't upload to Modworkshop.
 if self.wpn_fps_br85 then
 	self:cafcw_add_custom_ammo("wpn_fps_br85", "_762x51mm")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_br85", "wpn_fps_ass_vhs")
@@ -96,15 +174,15 @@ end
 
 -- Misriah Armory M395 DMR
 --The M395 DMR uses Halo 4 & 5 assets and thus cannot be uploaded to MWS.
-if self.wpn_fps_m395dmr then
-	self:cafcw_add_custom_ammo("wpn_fps_m395dmr", "_762x51mm")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_m395dmr")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_m395dmr", "wpn_fps_snp_wa2000")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_m395dmr", "wpn_fps_snp_wa2000")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_m395dmr", "wpn_fps_snp_wa2000")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_m395dmr")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_m395dmr")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_m395dmr")
+if self.wpn_fps_snp_m395dmr then
+	self:cafcw_add_custom_ammo("wpn_fps_snp_m395dmr", "_762x51mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m395dmr")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_m395dmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m395dmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_m395dmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_m395dmr")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_snp_m395dmr")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_m395dmr")
 end
 
 -- Misriah Armory M20PDW (Secondary Ver)
@@ -129,55 +207,6 @@ if self.wpn_fps_m20pdw_prim then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_m20pdw_prim")
 	self:cafcw_add_custom_ammo("wpn_fps_m20pdw_prim", "_9x19mm_p")
 	self:cafcw_add_custom_ammo("wpn_fps_m20pdw_prim", "_9x19mm")
-end
-
--- Daniel Defense MK18 Grenadier 
-if self.wpn_fps_dd_grenadier then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_dd_grenadier", "wpn_fps_ass_contraband")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_dd_grenadier", "wpn_fps_ass_contraband")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_dd_grenadier", "wpn_fps_ass_contraband")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_dd_grenadier")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_dd_grenadier")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_dd_grenadier")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_dd_grenadier")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_dd_grenadier")
-	self:cafcw_add_custom_ammo("wpn_fps_dd_grenadier", "_556x45mm")
-end
-
--- Black Ops Reboot CAR 15
-if self.wpn_fps_xm4 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_xm4", "wpn_fps_smg_olympic")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_xm4", "wpn_fps_smg_olympic")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_xm4", "wpn_fps_smg_olympic")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_xm4")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_xm4")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_xm4")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_xm4")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_xm4")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_xm4")
-	self:cafcw_add_custom_ammo("wpn_fps_xm4", "_556x45mm")
-end
-
--- Black Ops Reboot CAR 15 Primary
-if self.wpn_fps_xm4_prim then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_xm4_prim", "wpn_fps_ass_m4")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_xm4_prim")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_xm4_prim")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_xm4_prim")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_xm4_prim")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_xm4_prim")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_xm4_prim")
-	self:cafcw_add_custom_ammo("wpn_fps_xm4_prim", "_556x45mm")
-end
-
--- Misriah Armory MA5 Series
-if self.wpn_fps_ma_series then
-	self:cafcw_add_custom_ammo("wpn_fps_ma_series", "_762x51mm")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ma_series")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ma_series")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ma_series")
 end
 
 end)
