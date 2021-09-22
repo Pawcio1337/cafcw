@@ -236,7 +236,8 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_gits_seburors",
 	"wpn_fps_upg_o_gits_zism",
 	"wpn_fps_upg_o_tf90", -- U201
-	"wpn_fps_upg_o_invissight"
+	"wpn_fps_upg_o_invissight",
+	"wpn_fps_upg_o_poe" -- U211 DLC
 }
 attach_tables.SpecterSmall = {
 	"wpn_fps_upg_o_coyote",
