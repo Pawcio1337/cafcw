@@ -1097,13 +1097,14 @@ end
 if self.wpn_fps_pis_p99 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_p99", "_9x19mm")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_p99", "wpn_fps_pis_packrat", "wpn_fps_pis_p99_sight_dummy")
---	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_p99", "wpn_fps_pis_rage", "wpn_fps_pis_p99_sight_dummy")
-	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_p99", "wpn_fps_pis_packrat", nil, "0,0,-0.3")
+	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_p99", "wpn_fps_pis_rage")
 	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_p99_sights_forbids")
 	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_p99_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_pis_p99_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom_Pistol", "wpn_fps_upg_p99_sight_rail")
 	self:cafcw_forbids_attachment_type("MOD_PistolIronSightsPack_Custom", "wpn_fps_upg_p99_sight_rail")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_p99", nil, "slide")
+	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_pis_p99", nil, "slide")
 end
 -- Steyr AUG A3 9mm XS
 if self.wpn_fps_smg_aug9mm then
