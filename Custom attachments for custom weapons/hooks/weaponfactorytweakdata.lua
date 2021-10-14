@@ -1157,9 +1157,9 @@ if self.wpn_fps_shot_ks23 then
 end
 -- Widowmaker TX
 if self.wpn_fps_shot_wmtx then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
 end
 -- CBRPS SKS Pug
 if self.wpn_fps_ass_skspug then
