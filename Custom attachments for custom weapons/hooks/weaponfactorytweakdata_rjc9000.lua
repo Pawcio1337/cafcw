@@ -3,14 +3,14 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_rjc9000_Init"
 ----------Public Halo Weapons------------------
 
 -- Misriah Armory BR55
-if self.wpn_fps_br55 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_br55", "wpn_fps_ass_vhs")
-	self:cafcw_add_custom_sights("Custom",  "wpn_fps_br55", "wpn_fps_ass_vhs")
-	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_br55", "wpn_fps_ass_vhs")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_br55")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_br55")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_br55")
-	self:cafcw_add_custom_ammo("wpn_fps_br55", "_762x51mm")
+if self.wpn_fps_ass_br55 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_br55", "wpn_fps_ass_vhs")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_br55", "wpn_fps_ass_vhs")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_br55", "wpn_fps_ass_vhs")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_br55")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_br55")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_br55")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_br55", "_762x51mm")
 end
 
 -- Misriah Armory M7 Caseless SMG (Secondary Ver)
@@ -47,23 +47,23 @@ if self.wpn_fps_x_m7caseless then
 end
 
 -- Misriah Armory M392 Designated Marksman Rifle
-if self.wpn_fps_reachdmr then
-	self:cafcw_add_custom_ammo("wpn_fps_reachdmr", "_762x51mm")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_reachdmr")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_reachdmr", "wpn_fps_snp_wa2000")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_reachdmr", "wpn_fps_snp_wa2000")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_reachdmr", "wpn_fps_snp_wa2000")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_reachdmr")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_reachdmr")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_reachdmr")
-end
+ if self.wpn_fps_snp_reachdmr then
+	self:cafcw_add_custom_ammo("wpn_fps_snp_reachdmr", "_762x51mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_reachdmr")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_reachdmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_reachdmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_reachdmr", "wpn_fps_snp_wa2000")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_reachdmr")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_snp_reachdmr")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_reachdmr")
+ end
 
--- Misriah Armory MA5 Series
-if self.wpn_fps_ma_series then
-	self:cafcw_add_custom_ammo("wpn_fps_ma_series", "_762x51mm")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ma_series")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ma_series")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ma_series")
+-- Misriah Armory MA40
+if self.wpn_fps_ass_ma40 then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_ma40", "_762x51mm")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_ma40")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_ma40")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_ma40")
 end
 
 -- Vakara GesmbH VK78 Commando
@@ -107,6 +107,41 @@ if self.wpn_fps_xm4_prim then
 	self:cafcw_add_custom_ammo("wpn_fps_xm4_prim", "_556x45mm")
 end
 
+-- MW2019 R870
+if self.wpn_fps_shot_romeo870 then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_romeo870")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_romeo870")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_romeo870")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_shot_romeo870")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_romeo870", "_12ga")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_romeo870", "wpn_fps_shot_r870")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_romeo870", "wpn_fps_shot_r870")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_romeo870", "wpn_fps_shot_r870")
+end
+
+-- MW2019 R870 Secondary
+if self.wpn_fps_shot_romeo870_sec then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_romeo_sec_870")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_romeo870_sec")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_romeo870_sec")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_shot_romeo870_sec")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_romeo870_sec", "_12ga")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_romeo870_sec", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_romeo870_sec", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_romeo870_sec", "wpn_fps_shot_serbu")
+end
+
+-- MW2019 KAC LAMG
+if self.wpn_fps_lmg_kac_lamg then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_kac_lamg", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_kac_lamg", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_kac_lamg", "wpn_fps_ass_amcar")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_kac_lamg")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_kac_lamg")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_kac_lamg")
+	self:cafcw_add_custom_ammo("wpn_fps_lmg_kac_lamg", "_556x45mm")
+end
+
 -- Daniel Defense MK18 Grenadier 
 if self.wpn_fps_ass_dd_grenadier then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
@@ -132,6 +167,18 @@ if self.wpn_fps_pis_sig_p320 then
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sig_p320")
 end
 
+--Akimbo SIG P320
+if self.wpn_fps_x_pis_sig_p320 then
+	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320", "_9x19mm")
+	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a1_40sw", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a2_10mm", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a3_357sig", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a4_45acp", "_9x19mm", "forbids_add")
+	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a5_45gap", "_9x19mm", "forbids_add")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_x_pis_sig_p320")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_x_pis_sig_p320")
+end
+
 
 ----------Lost Halo Weapons------------------
 
@@ -146,7 +193,6 @@ if self.wpn_fps_br85 then
 end
 
 -- Misriah Armory M45D Tactical Shotgun
--- Poorly made side mod. Uses Halo 4 Assets, so I can't upload to Modworkshop.
 if self.wpn_fps_m45d then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_m45d")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_m45d")
@@ -154,15 +200,11 @@ if self.wpn_fps_m45d then
 end
 
 -- Misriah Armory M6H Pistol
--- Poorly made side mod for personal use. Uses Halo 4 Assets, so I can't upload to Modworkshop.
---if self.wpn_fps_m6h then
 
---end
+
 
 -- God's Sidearm
---if self.wpn_fps_accurate_m6d then
 
---end
 
 -- Misriah Armory M739 SAW
 -- Anybody say ... full auto grenade launcher? Uses Halo 4 Assets, so I can't upload to Modworkshop.

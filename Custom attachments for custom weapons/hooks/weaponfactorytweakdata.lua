@@ -167,9 +167,20 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_ta648rmr",
 	"wpn_fps_upg_o_viper",
 	"wpn_fps_upg_o_acro",
+	"wpn_fps_upg_o_compm4",
 	"wpn_fps_upg_o_mwr_holo",
 	"wpn_fps_upg_o_cod4_re_red_dot_sp",
 	"wpn_fps_upg_o_cod4_re_red_dot_sp_riser",
+	"wpn_fps_upg_o_mw2019_aim_op_reflex_riser",
+	"wpn_fps_upg_o_mw2019_aim_op_reflex",
+	"wpn_fps_upg_o_mw2019_gi_mini_reflex",
+	"wpn_fps_upg_o_mw2019_solozero_mini_reflex",
+	"wpn_fps_upg_o_mw2019_cronen_mini_reflex",
+	"wpn_fps_upg_o_mw2019_gi_mini_reflex_riser",
+	"wpn_fps_upg_o_mw2019_solozero_mini_reflex_riser",
+	"wpn_fps_upg_o_mw2019_cronen_mini_reflex_riser",
+	"wpn_fps_upg_o_bocw_axial_3x",
+	"wpn_fps_upg_o_mw2_re_red_dot",
 	"wpn_fps_upg_o_ebr_scope",
 	"wpn_fps_upg_o_ebr_scope_ghillie",
 	"wpn_fps_upg_o_operator_rds",
@@ -180,6 +191,15 @@ attach_tables.Custom = {
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
 	"wpn_fps_upg_o_romeo3",
+	"wpn_fps_upg_o_cod4_re_red_dot_sp",
+	"wpn_fps_upg_o_mw2019_aim_op_reflex",
+	"wpn_fps_upg_o_mw2019_gi_mini_reflex",
+	"wpn_fps_upg_o_mw2019_solozero_mini_reflex",
+	"wpn_fps_upg_o_mw2019_cronen_mini_reflex",
+	"wpn_fps_upg_o_mw2019_gi_mini_reflex_riser",
+	"wpn_fps_upg_o_mw2019_solozero_mini_reflex_riser",
+	"wpn_fps_upg_o_mw2019_cronen_mini_reflex_riser",
+	"wpn_fps_upg_o_mw2_re_red_dot",
 	"wpn_fps_upg_o_mro"
 }
 attach_tables.Custom_Sniper = {
@@ -1096,7 +1116,7 @@ end
 -- Walther P99
 if self.wpn_fps_pis_p99 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_p99", "_9x19mm")
-	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_p99", "wpn_fps_pis_packrat", "wpn_fps_pis_p99_sight_dummy")
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_p99", "wpn_fps_pis_legacy", "wpn_fps_pis_p99_sight_dummy")
 	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_p99", "wpn_fps_pis_rage")
 	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_p99_sights_forbids")
 	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_p99_sights_forbids")
