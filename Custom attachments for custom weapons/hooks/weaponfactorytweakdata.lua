@@ -216,7 +216,6 @@ attach_tables.Custom_Pistol = {
 	"wpn_fps_pis_upg_o_viper" 
 }
 attach_tables.RDS45 = {
-	"wpn_fps_upg_o_delta_rm55",
 	"wpn_fps_upg_o_45steel" -- DLC
 }
 attach_tables.Shortdot = {
@@ -942,9 +941,8 @@ if self.wpn_fps_snp_cs5 then
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
 end
 -- Akimbo Magpul FMG-9
-if self.wpn_fps_smg_x_fmg9 then
-	self:cafcw_add_custom_ammo("wpn_fps_smg_x_fmg9", "_9x19mm")
-	self:cafcw_add_attachment_type("Suppressors_NoOsprey", "wpn_fps_smg_x_fmg9")
+if self.wpn_fps_smg_x_fmgnine then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_x_fmgnine", "_9x19mm")
 end
 -- Armalite AR-18
 if self.wpn_fps_ass_ar18 then
@@ -1037,7 +1035,7 @@ if self.wpn_fps_gre_as24 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_gre_as24", "wpn_fps_ass_contraband")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_gre_as24", "wpn_fps_ass_contraband")
 end
--- Mosin Nagant Obrez Pistol
+-- Mosin Nagant Archangel
 if self.wpn_fps_snp_mosinwtf then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_mosinwtf", "wpn_fps_snp_siltstone")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_mosinwtf", "wpn_fps_snp_siltstone")
@@ -1077,12 +1075,18 @@ if self.wpn_fps_snp_m1894 then
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_snp_m1894", "wpn_fps_snp_tti", nil, "0,8,0")
 end
 -- Magpul FMG-9
-if self.wpn_fps_smg_fmg9 then
+if self.wpn_fps_smg_fmg9 and self.wpn_fps_smg_fmg9.custom then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_fmg9", "_9x19mm")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
-	self:cafcw_add_attachment_type("Suppressors_NoOsprey", "wpn_fps_smg_fmg9")
+end
+-- Magpul FMG-9
+if self.wpn_fps_smg_fmgnine then
+	self:cafcw_add_custom_ammo("wpn_fps_smg_fmgnine", "_9x19mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_fmgnine", "wpn_fps_smg_sr2")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_fmgnine", "wpn_fps_smg_sr2")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_fmgnine", "wpn_fps_smg_sr2")
 end
 -- PPK-20
 if self.wpn_fps_smg_ppk20 then
@@ -1214,6 +1218,11 @@ end
 -- SW Model 27
 if self.wpn_fps_pis_sw27 then
 	self:cafcw_add_attachment_type("MOD_RevolverGadgets", "wpn_fps_pis_sw27")
+end
+-- Sidekick
+if self.wpn_fps_smg_uzi_lowang then
+	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_smg_uzi_lowang", "wpn_fps_smg_mp9")
+	self:cafcw_add_custom_sights("CustomSmall", "wpn_fps_smg_uzi_lowang", "wpn_fps_smg_mp9")
 end
 -- Attachments
 -- AK Rail Cover

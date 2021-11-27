@@ -88,10 +88,6 @@ if self.wpn_fps_ass_a545 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_a545")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_a545")
 end
--- Akimbo Sidekick
-if self.wpn_fps_smg_x_sidekick then
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_x_sidekick")
-end
 -- LaRue OBR 7.62
 if self.wpn_fps_ass_obr7 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_obr7", "wpn_fps_snp_tti")
