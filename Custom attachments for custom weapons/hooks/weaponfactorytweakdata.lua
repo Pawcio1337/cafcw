@@ -180,12 +180,15 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_mw2019_solozero_mini_reflex_riser",
 	"wpn_fps_upg_o_mw2019_cronen_mini_reflex_riser",
 	"wpn_fps_upg_o_bocw_axial_3x",
+	"wpn_fps_upg_o_bocw_quickshot_led",
+	"wpn_fps_upg_o_bocw_xm4_v18_acog",
 	"wpn_fps_upg_o_mw2_re_red_dot",
 	"wpn_fps_upg_o_ebr_scope",
 	"wpn_fps_upg_o_ebr_scope_ghillie",
 	"wpn_fps_upg_o_operator_rds",
 	"wpn_fps_upg_o_operator_rds_noriser",
 	"wpn_fps_upg_o_ismc_aimpoint_t2",
+	"wpn_fps_upg_o_vk78_standalone_sight",
 	"wpn_fps_upg_o_hamr"
 }
 attach_tables.CustomSmall = {
@@ -213,6 +216,9 @@ attach_tables.Custom_Pistol = {
 	"wpn_fps_upg_o_romeo3_pis",
 	"wpn_fps_upg_o_rms", -- DLC
 	"wpn_fps_upg_o_rikt", -- DLC
+	"wpn_fps_upg_o_mw2019_gi_mini_reflex_pis",
+	"wpn_fps_upg_o_mw2019_solozero_mini_reflex_pis",
+	"wpn_fps_upg_o_mw2019_cronen_mini_reflex_pis",
 	"wpn_fps_pis_upg_o_viper" 
 }
 attach_tables.RDS45 = {
