@@ -913,12 +913,11 @@ if self.wpn_fps_snp_svd then
 end
 -- CheyTac M200
 if self.wpn_fps_snp_m200 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
-	self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_m200", "wpn_fps_snp_msr")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_m200", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_m200", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_m200", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_m200", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_m200", "wpn_fps_snp_model70", nil, "0,6,0")
 end
 -- FN SCAR-L
 if self.wpn_fps_ass_scarl then
