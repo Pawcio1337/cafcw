@@ -842,11 +842,11 @@ end
 -- VSS
 if self.wpn_fps_snp_vss then
 	self:cafcw_add_custom_ammo("wpn_fps_snp_vss", "_9x39mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000")
-	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_vss", "wpn_fps_snp_wa2000")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_vss", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_vss", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_vss", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_vss", "wpn_fps_snp_tti")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_vss", "wpn_fps_snp_tti")
 end
 -- OTs-14-4A Groza
 if self.wpn_fps_ass_ots_14_4a then
