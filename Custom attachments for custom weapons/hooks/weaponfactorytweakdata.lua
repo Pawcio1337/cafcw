@@ -188,8 +188,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_operator_rds",
 	"wpn_fps_upg_o_operator_rds_noriser",
 	"wpn_fps_upg_o_ismc_aimpoint_t2",
-	"wpn_fps_upg_o_vk78_standalone_sight",
-	"wpn_fps_upg_o_hamr"
+	"wpn_fps_upg_o_vk78_standalone_sight"
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
@@ -248,6 +247,7 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_pka",
 	"wpn_fps_upg_o_anpas13d",
 	"wpn_fps_upg_o_su230_mdrs",
+	"wpn_fps_upg_o_mark4_hamr",
 	"wpn_fps_upg_o_jgbg_m7",
 	"wpn_fps_upg_o_hartman",
 	"wpn_fps_upg_o_kpsr2",
@@ -403,8 +403,8 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 						switch_id = "wpn_fps_upg_o_ta648rmr_switch"
 					elseif sight_id == "wpn_fps_upg_o_su230_mdrs" then
 						switch_id = "wpn_fps_upg_o_su230_mdrs_switch"
-					elseif sight_id == "wpn_fps_upg_o_hamr" then
-						switch_id = "wpn_fps_upg_o_hamr_switch"
+					elseif sight_id == "wpn_fps_upg_o_mark4_hamr" then
+						switch_id = "wpn_fps_upg_o_mark4_hamr_switch"
 					end
 					if not table.contains(self[wpn_id].uses_parts, sight_id) then
 						table.insert(self[wpn_id].uses_parts, sight_id)
@@ -427,7 +427,7 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 					end
 				end
 				if switch_id then
-					if sight_id == "wpn_fps_upg_o_acog_rmr" or "wpn_fps_upg_o_ta648rmr" or "wpn_fps_upg_o_su230_mdrs" or "wpn_fps_upg_o_hamr" then
+					if sight_id == "wpn_fps_upg_o_acog_rmr" or "wpn_fps_upg_o_ta648rmr" or "wpn_fps_upg_o_su230_mdrs" or "wpn_fps_upg_o_mark4_hamr" then
 						if self.parts[switch_id].stance_mod[stance_wpn_id] then
 							self.parts[switch_id].stance_mod[wpn_id] = deep_clone(self.parts[switch_id].stance_mod[stance_wpn_id])
 						else
@@ -1056,11 +1056,12 @@ if self.wpn_fps_ass_blast then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_blast", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_blast", "wpn_fps_ass_ak5", nil, "0,3,0")
 end
--- HK G3SG/1
-if self.wpn_fps_ass_g3sg1 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_g3sg1", "wpn_fps_ass_ak5")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g3sg1", "wpn_fps_ass_ak5")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g3sg1", "wpn_fps_ass_ak5")
+-- XR-2
+if self.wpn_fps_ass_xr2 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
 end
 -- Secondary
 -- PPSh-41

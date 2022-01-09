@@ -91,7 +91,7 @@ if self.wpn_fps_ass_mdr_308 then
 end
 
 
-----------Non Halo Weapons------------------
+----------COD Weapons------------------
 
 -- Black Ops Reboot CAR 15 Secondary
 if self.wpn_fps_smg_xm4 then
@@ -168,18 +168,8 @@ if self.wpn_fps_smg_mpapa5 then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_mpapa5", "_9x19mm")
 end
 
--- Daniel Defense MK18 Grenadier 
-if self.wpn_fps_ass_dd_grenadier then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_dd_grenadier")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_dd_grenadier")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_dd_grenadier")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_dd_grenadier")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_dd_grenadier")
-	self:cafcw_add_custom_ammo("wpn_fps_ass_dd_grenadier", "_556x45mm")
-end
+-- MW2019 M14EBR?
+
 
 --SIG P320
 if self.wpn_fps_pis_sig_p320 then
@@ -204,6 +194,27 @@ if self.wpn_fps_x_pis_sig_p320 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_x_pis_sig_p320")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_x_pis_sig_p320")
 end
+
+-- Daniel Defense MK18 Grenadier 
+if self.wpn_fps_ass_dd_grenadier then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_dd_grenadier", "wpn_fps_ass_contraband")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_dd_grenadier")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_dd_grenadier", "_556x45mm")
+end
+
+----------Rainbow Six Siege Weapons------------------
+
+-- 100% Accurate R4-C?
+
+-- 100% Accurate 416 Compact Carbine(TM)?
+
+
 
 
 ----------Lost Halo Weapons------------------
