@@ -1063,6 +1063,15 @@ if self.wpn_fps_ass_xr2 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
 end
+-- K31/43
+if self.wpn_fps_snp_k31 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_k31", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_k31", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_k31", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_k31", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_k31", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_k31", "wpn_fps_snp_model70", nil, "0,12,0")
+end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then

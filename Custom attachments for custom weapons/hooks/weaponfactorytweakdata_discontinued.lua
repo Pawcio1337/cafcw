@@ -480,15 +480,6 @@ if self.wpn_fps_ass_sar21 then
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_sar21")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_sar21_gadgets_leftrail", "a_fl_leftrail")
 end
--- K31
-if self.wpn_fps_snp_k31 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_k31", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_k31", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_k31", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
-	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_k31", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_k31", "wpn_fps_snp_r93", "wpn_fps_snp_k31_sight_rail")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_k31")
-end
 -- ASh-12.7
 if self.wpn_fps_ass_ash then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_ash", "wpn_fps_ass_famas")
