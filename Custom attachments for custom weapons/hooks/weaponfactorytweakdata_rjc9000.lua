@@ -90,6 +90,14 @@ if self.wpn_fps_ass_mdr_308 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_mdr_308", "_762x51mm")
 end
 
+-- Crysis 3 Typhoon
+if self.wpn_fps_smg_crysis3_typhoon then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_crysis3_typhoon", "wpn_fps_smg_p90")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_crysis3_typhoon", "wpn_fps_smg_p90")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_crysis3_typhoon", "wpn_fps_smg_p90")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_crysis3_typhoon")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_crysis3_typhoon")
+end
 
 ----------COD Weapons------------------
 
@@ -169,16 +177,22 @@ if self.wpn_fps_smg_mpapa5 then
 end
 
 -- MW2019 M14EBR?
+---if self.wpn_fps_snp_mike14 then
+--	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_mike14", "wpn_fps_ass_m14")
+--	self:cafcw_add_custom_sights("Custom",  "wpn_fps_snp_mike14", "wpn_fps_ass_m14")
+--	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_snp_mike14", "wpn_fps_ass_m14")
+--	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_mike14")
+--	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_mike14")
+--	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_snp_mike14")
+--	self:cafcw_add_custom_ammo("wpn_fps_snp_mike14", "_762x51mm")
+ --end
+ 
+ -- MW2019 CZ Scorpion EVO?
 
 
 --SIG P320
 if self.wpn_fps_pis_sig_p320 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320", "_9x19mm")
-	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a1_40sw", "_9x19mm", "forbids_add")
-	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a2_10mm", "_9x19mm", "forbids_add")
-	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a3_357sig", "_9x19mm", "forbids_add")
-	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a4_45acp", "_9x19mm", "forbids_add")
-	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320_a5_45gap", "_9x19mm", "forbids_add")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sig_p320")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sig_p320")
 end
@@ -186,11 +200,6 @@ end
 --Akimbo SIG P320
 if self.wpn_fps_x_pis_sig_p320 then
 	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320", "_9x19mm")
-	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a1_40sw", "_9x19mm", "forbids_add")
-	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a2_10mm", "_9x19mm", "forbids_add")
-	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a3_357sig", "_9x19mm", "forbids_add")
-	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a4_45acp", "_9x19mm", "forbids_add")
-	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320_a5_45gap", "_9x19mm", "forbids_add")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_x_pis_sig_p320")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_x_pis_sig_p320")
 end
@@ -208,14 +217,51 @@ if self.wpn_fps_ass_dd_grenadier then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_dd_grenadier", "_556x45mm")
 end
 
+----------Battlefield Weapons------------------
+
+
+
 ----------Rainbow Six Siege Weapons------------------
 
--- 100% Accurate R4-C?
+-- FBI OPEN UP: THE GUN (R4C)
+if self.wpn_fps_ass_r6s_r4c then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_r6s_r4c", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_r6s_r4c", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_r6s_r4c", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_r6s_r4c")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_r6s_r4c")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_r6s_r4c")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_r6s_r4c")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_r6s_r4c")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_r6s_r4c")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_r6s_r4c", "_556x45mm")
+end
+
 
 -- 100% Accurate 416 Compact Carbine(TM)?
 
 
+----------Other Weapons------------------
 
+-- USP45 NERV (Misato's Pistol)
+if self.wpn_fps_pis_katsuragi then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_katsuragi")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_katsuragi")
+end
+
+-- MCX SPEAR
+if self.wpn_fps_ass_mcx_spear then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_s552")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_s552")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_s552")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mcx_spear")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mcx_spear")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mcx_spear")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_mcx_spear")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mcx_spear")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mcx_spear")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_mcx_spear", "_556x45mm")
+end
 
 ----------Lost Halo Weapons------------------
 --If you're looking at this section and don't know where these weapons are coming from, find Killerwolf and ask him for an invite to The Armory. 
