@@ -239,16 +239,6 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -22.67, -3.75)
 	})
-	self:SetupAttachmentPoint("grotb", {
-		name = "a_of",
-		base_a_obj = "a_o",
-		position = Vector3(0, 17, 2.3)
-	})
-	self:SetupAttachmentPoint("grotb", {
-		name = "a_or",
-		base_a_obj = "a_o",
-		position = Vector3(0, -10, 2.3)
-	})
 	self:SetupAttachmentPoint("ultimax", {
 		name = "a_of",
 		base_a_obj = "a_o",
