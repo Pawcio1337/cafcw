@@ -510,20 +510,6 @@ if self.wpn_fps_shot_x_toz66 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_x_toz66", "wpn_fps_shot_x_toz66_gadget_rail")
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_shot_x_toz66", nil, "barrel")
 end
--- HK G3A3 M203
-if self.wpn_fps_ass_g3m203 then
-	self:cafcw_add_custom_ammo("wpn_fps_ass_g3m203", "_762x51mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_g3m203", "wpn_fps_ass_g3", "wpn_fps_ass_g3m203_sightrail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g3m203", "wpn_fps_ass_g3", "wpn_fps_ass_g3m203_sightrail")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g3m203", "wpn_fps_ass_g3", "wpn_fps_ass_g3m203_sightrail")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_g3m203")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_g3m203")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_g3m203")
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_g3m203_sight_mount_claw", "a_o_claw")
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_g3m203_sight_mount_claw", "a_o_claw")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_g3m203_sight_mount_claw", "a_o_claw")
-	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_g3m203", nil, "foregrip")
-end
 -- HK PSG-1
 if self.wpn_fps_snp_psg1 then
 	self:cafcw_add_custom_ammo("wpn_fps_snp_psg1", "_762x51mm")

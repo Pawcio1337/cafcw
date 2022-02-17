@@ -56,7 +56,8 @@ attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_smg_v6", -- DLC
 	"wpn_fps_upg_ns_gits_dildo_h",
 	"wpn_fps_upg_ns_gits_another_h",
-	"wpn_fps_upg_ns_gits_sorrycarl_l"
+	"wpn_fps_upg_ns_gits_sorrycarl_l",
+	"wpn_fps_ass_shak12_ns_muzzle" -- DLC
 }
 attach_tables.Barrel_Extensions_Shotgun = {
 	"wpn_fps_upg_m1912_ns_cutts"
@@ -100,7 +101,8 @@ attach_tables.Suppressors_Pistol = {
 	"wpn_fps_upg_ns_pis_cloth",
 	"wpn_fps_ass_ns_g_srd",
 	"wpn_fps_ass_ns_g_aac",
-	"wpn_fps_ass_ns_g_sfn"
+	"wpn_fps_ass_ns_g_sfn",
+	"wpn_fps_upg_ns_pis_putnik" -- U218
 }
 attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_fab_reg",
@@ -1072,6 +1074,13 @@ if self.wpn_fps_snp_k31 then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_k31", "wpn_fps_snp_model70")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_k31", "wpn_fps_snp_model70", nil, "0,12,0")
 end
+-- HK G3A3 HK79
+if self.wpn_fps_ass_g3hk79 then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_g3hk79", "_762x51mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_g3hk79", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g3hk79", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g3hk79", "wpn_fps_ass_m16")
+end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
@@ -1088,13 +1097,6 @@ if self.wpn_fps_snp_m1894 then
 	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_m1894", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_m1894", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_snp_m1894", "wpn_fps_snp_tti", nil, "0,8,0")
-end
--- Magpul FMG-9
-if self.wpn_fps_smg_fmg9 and self.wpn_fps_smg_fmg9.custom then
-	self:cafcw_add_custom_ammo("wpn_fps_smg_fmg9", "_9x19mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_fmg9", "wpn_fps_smg_sr2")
 end
 -- Magpul FMG-9
 if self.wpn_fps_smg_fmgnine then
