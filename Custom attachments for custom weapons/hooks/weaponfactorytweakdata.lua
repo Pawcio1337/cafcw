@@ -1077,9 +1077,9 @@ end
 -- HK G3A3 HK79
 if self.wpn_fps_ass_g3hk79 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_g3hk79", "_762x51mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_g3hk79", "wpn_fps_ass_m16")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g3hk79", "wpn_fps_ass_m16")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g3hk79", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_g3hk79", "wpn_fps_ass_g3")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g3hk79", "wpn_fps_ass_g3")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g3hk79", "wpn_fps_ass_g3")
 end
 -- Secondary
 -- PPSh-41
