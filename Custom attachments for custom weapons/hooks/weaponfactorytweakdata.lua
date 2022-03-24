@@ -190,7 +190,9 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_operator_rds",
 	"wpn_fps_upg_o_operator_rds_noriser",
 	"wpn_fps_upg_o_ismc_aimpoint_t2",
-	"wpn_fps_upg_o_vk78_standalone_sight"
+	"wpn_fps_upg_o_vk78_standalone_sight",
+	"wpn_fps_upg_o_bf2042_vector_talos",
+	"wpn_fps_upg_o_vudu"
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
@@ -1080,6 +1082,12 @@ if self.wpn_fps_ass_g3hk79 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_g3hk79", "wpn_fps_ass_g3")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g3hk79", "wpn_fps_ass_g3")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g3hk79", "wpn_fps_ass_g3")
+end
+-- Plasma Rifle Prototype
+if self.wpn_fps_ass_plasmaproto then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
 end
 -- Secondary
 -- PPSh-41

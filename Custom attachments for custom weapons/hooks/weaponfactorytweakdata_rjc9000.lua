@@ -143,7 +143,7 @@ end
 
 -- MW2019 R870 Secondary
 if self.wpn_fps_shot_romeo870_sec then
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_romeo_sec_870")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_romeo870_sec")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_romeo870_sec")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_romeo870_sec")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_shot_romeo870_sec")
@@ -176,17 +176,42 @@ if self.wpn_fps_smg_mpapa5 then
 	self:cafcw_add_custom_ammo("wpn_fps_smg_mpapa5", "_9x19mm")
 end
 
--- MW2019 M14EBR?
----if self.wpn_fps_snp_mike14 then
---	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_mike14", "wpn_fps_ass_m14")
---	self:cafcw_add_custom_sights("Custom",  "wpn_fps_snp_mike14", "wpn_fps_ass_m14")
---	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_snp_mike14", "wpn_fps_ass_m14")
---	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_mike14")
---	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_mike14")
---	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_snp_mike14")
---	self:cafcw_add_custom_ammo("wpn_fps_snp_mike14", "_762x51mm")
- --end
- 
+-- MW2019 M14 DMR Primary
+if self.wpn_fps_ass_mike14 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mike14", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_mike14", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_mike14", "wpn_fps_ass_m14")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mike14")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mike14")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mike14")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_mike14", "_762x51mm")
+end
+
+-- MW2019 M14EBR Secondary
+if self.wpn_fps_ass_mike14_sec then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mike14_sec", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_mike14_sec", "wpn_fps_ass_m14")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_mike14_sec", "wpn_fps_ass_m14")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mike14_sec")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mike14_sec")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mike14_sec")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_mike14_sec", "_762x51mm")
+end
+
+--CAPITALISM AR15
+if self.wpn_fps_ass_mike4 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mike4", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mike4", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mike4", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mike4")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mike4")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mike4")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_mike4")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mike4")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mike4")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_mike4", "_556x45mm")
+end
+
  -- MW2019 CZ Scorpion EVO?
 
 
@@ -234,6 +259,7 @@ if self.wpn_fps_ass_r6s_r4c then
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_r6s_r4c")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_r6s_r4c")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_r6s_r4c")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_r6s_r4c")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_r6s_r4c", "_556x45mm")
 end
 
@@ -251,15 +277,14 @@ end
 
 -- MCX SPEAR
 if self.wpn_fps_ass_mcx_spear then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_s552")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_s552")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_s552")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mcx_spear", "wpn_fps_ass_m16")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mcx_spear")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mcx_spear")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mcx_spear")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_mcx_spear")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mcx_spear")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mcx_spear")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_mcx_spear", "_556x45mm")
 end
 
