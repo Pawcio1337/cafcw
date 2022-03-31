@@ -45,7 +45,7 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_ds150",
 	"wpn_fps_upg_m4_s_bus",
 	"wpn_fps_upg_m4_s_gen2",
-	"wpn_fps_upg_s_gitsm4"	
+	"wpn_fps_upg_s_gitsm4"
 }
 attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_ass_smg_tromix",
@@ -135,7 +135,8 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_moe",
 	"wpn_fps_upg_vg_tecci", 
 	"wpn_fps_upg_vg_foldable", 
-	"wpn_fps_upg_vg_grippod"
+	"wpn_fps_upg_vg_grippod",
+	"wpn_fps_upg_vg_unity_asset"
 }
 -- Sights
 attach_tables.ACOG = {
@@ -266,7 +267,8 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_gits_zism",
 	"wpn_fps_upg_o_tf90", -- U201
 	"wpn_fps_upg_o_invissight",
-	"wpn_fps_upg_o_poe" -- U211 DLC
+	"wpn_fps_upg_o_poe", -- U211 DLC
+	"wpn_fps_upg_o_unity_asset"
 }
 attach_tables.SpecterSmall = {
 	"wpn_fps_upg_o_coyote",
@@ -462,6 +464,21 @@ function WeaponFactoryTweakData:cafcw_forbids_attachment_type(attach_type, attac
 					table.insert(self.parts[attach_id].forbids, part_id)
 				else
 					table.map_append(self.parts[attach_id], {forbids = {part_id}})
+				end
+			end
+		end
+	else
+		log("[ERROR] cafcw_forbids_attachment_type: Incorrect attach_type ID used: " .. attach_type, attach_id)
+	end
+end
+function WeaponFactoryTweakData:cafcw_forbids_adds_attachment_type(attach_type, attach_id)
+	if type(attach_tables[attach_type]) == "table" then
+		for i, part_id in pairs(attach_tables[attach_type]) do
+			if self.parts[part_id] and self.parts[attach_id] then
+				if self.parts[part_id].forbids then
+					table.insert(self.parts[part_id].forbids, attach_id)
+				else
+					table.map_append(self.parts[part_id], {forbids = {attach_id}})
 				end
 			end
 		end
@@ -1088,6 +1105,10 @@ if self.wpn_fps_ass_plasmaproto then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
+	if self.parts.wpn_fps_ass_plasmaproto_riser then
+		self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16_alt", "wpn_fps_ass_plasmaproto_riser", "0,10,-0.8657")
+		self:cafcw_forbids_adds_attachment_type("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto_rearsight_folded")
+	end
 end
 -- Secondary
 -- PPSh-41

@@ -285,22 +285,11 @@ if self.wpn_fps_snp_svu then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_svu", "wpn_fps_snp_tti", "wpn_fps_snp_svu_molot")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_svu")
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if self.wpn_fps_ass_xeno then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_xeno", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_xeno", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_xeno", "wpn_fps_ass_corgi")
+end
 -- Lahti L-35
 if self.wpn_fps_pis_l35 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_l35")
