@@ -1106,9 +1106,15 @@ if self.wpn_fps_ass_plasmaproto then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
 	if self.parts.wpn_fps_ass_plasmaproto_riser then
-		self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16_alt", "wpn_fps_ass_plasmaproto_riser", "0,10,-0.8657")
+		self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16_alt", "wpn_fps_ass_plasmaproto_riser", "0,5,-0.8657")
 		self:cafcw_forbids_adds_attachment_type("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto_rearsight_folded")
 	end
+end
+-- M41A Pulse Rifle
+if self.wpn_fps_ass_xeno then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_xeno", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_xeno", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_xeno", "wpn_fps_ass_corgi")
 end
 -- Secondary
 -- PPSh-41
@@ -1269,6 +1275,10 @@ end
 if self.wpn_fps_smg_uzi_lowang then
 	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_smg_uzi_lowang", "wpn_fps_smg_mp9")
 	self:cafcw_add_custom_sights("CustomSmall", "wpn_fps_smg_uzi_lowang", "wpn_fps_smg_mp9")
+end
+-- FP-45 Liberator
+if self.wpn_fps_pis_fp45 then
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_fp45", "wpn_fps_pis_rage")
 end
 -- Attachments
 -- AK Rail Cover
