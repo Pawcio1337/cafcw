@@ -193,7 +193,16 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_ismc_aimpoint_t2",
 	"wpn_fps_upg_o_vk78_standalone_sight",
 	"wpn_fps_upg_o_bf2042_vector_talos",
-	"wpn_fps_upg_o_vudu"
+	"wpn_fps_upg_o_vudu",
+	"wpn_fps_upg_o_ta01",
+	"wpn_fps_upg_o_sos",
+	"wpn_fps_upg_o_pine",
+	"wpn_fps_upg_o_h2",
+	"wpn_fps_upg_o_exps3",
+	"wpn_fps_upg_o_delta",
+	"wpn_fps_upg_o_r4",
+	"wpn_fps_upg_o_razor",
+	"wpn_fps_ass_sc30_o"
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",

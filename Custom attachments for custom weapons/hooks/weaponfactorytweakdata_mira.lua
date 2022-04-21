@@ -531,4 +531,20 @@ if self.wpn_fps_ass_hkg14976 then
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_hkg14976")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_hkg14976")
 end
+-- AM D114
+if self.wpn_fps_pis_bootl1911 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_bootl1911", "wpn_fps_ass_amcar", "wpn_fps_pis_bootl1911_rail_cb")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_bootl1911", "wpn_fps_ass_amcar", "wpn_fps_pis_bootl1911_rail_cb")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_bootl1911", "wpn_fps_ass_amcar", "wpn_fps_pis_bootl1911_rail_cb")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_bootl1911")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_bootl1911")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_bootl1911", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_bootl1911", "a_ns", "barrel")
+end
+if self.wpn_fps_pis_x_bootl1911 then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_bootl1911")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_bootl1911")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_bootl1911", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_x_bootl1911", "a_ns", "barrel")
+end
 end)
