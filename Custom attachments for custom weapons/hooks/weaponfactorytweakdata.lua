@@ -1125,6 +1125,13 @@ if self.wpn_fps_ass_xeno then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_xeno", "wpn_fps_ass_corgi")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_xeno", "wpn_fps_ass_corgi")
 end
+-- O.W.L.F. Pitbull
+if self.wpn_fps_ass_owlfbullpup then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16_alt", nil, "0,-6,0")
+end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
