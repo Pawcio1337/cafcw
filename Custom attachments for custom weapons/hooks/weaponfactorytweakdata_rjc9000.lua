@@ -212,12 +212,50 @@ if self.wpn_fps_ass_mike4 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_mike4", "_556x45mm")
 end
 
+ -- MW2019 VECTOR
+if self.wpn_fps_smg_victor then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_victor", "wpn_fps_smg_polymer")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_victor", "wpn_fps_smg_polymer")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_victor", "wpn_fps_smg_polymer")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_victor")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_victor")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_victor")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_smg_victor")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_victor")
+end
+ 
+  -- MW2019 VECTOR Primary
+if self.wpn_fps_smg_victor_prim then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_victor_prim", "wpn_fps_smg_polymer")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_victor_prim", "wpn_fps_smg_polymer")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_victor_prim", "wpn_fps_smg_polymer")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_victor_prim")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_victor_prim")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_victor_prim")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_smg_victor_prim")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_victor_prim")
+end
+ 
+ 
+ -- MW2019 SCAR-H
+if self.wpn_fps_ass_scharlie then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_scharlie", "wpn_fps_smg_hajk")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_scharlie", "wpn_fps_smg_hajk")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_scharlie", "wpn_fps_smg_hajk")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_scharlie")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_scharlie")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_scharlie")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_scharlie")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_scharlie", "_762x51mm")
+end
+ 
  -- MW2019 CZ Scorpion EVO?
 
 
 --SIG P320
 if self.wpn_fps_pis_sig_p320 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_sig_p320", "_9x19mm")
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_sig_p320", "wpn_fps_pis_p226")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sig_p320")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sig_p320")
 end
@@ -227,6 +265,18 @@ if self.wpn_fps_x_pis_sig_p320 then
 	self:cafcw_add_custom_ammo("wpn_fps_x_pis_sig_p320", "_9x19mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_x_pis_sig_p320")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_x_pis_sig_p320")
+end
+
+ -- COD4 Remastered NotHoneyBadger
+if self.wpn_fps_smg_lynx300 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_lynx300")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_lynx300")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_lynx300")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_lynx300")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_smg_lynx300")
 end
 
 -- Daniel Defense MK18 Grenadier 
@@ -243,7 +293,18 @@ if self.wpn_fps_ass_dd_grenadier then
 end
 
 ----------Battlefield Weapons------------------
+-- BF2042 DDM4V7
+if self.wpn_fps_ass_2042_dm7 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_2042_dm7", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_2042_dm7", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_2042_dm7", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_2042_dm7")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_2042_dm7")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_2042_dm7")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_2042_dm7")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_2042_dm7")
 
+end
 
 
 ----------Rainbow Six Siege Weapons------------------
@@ -271,6 +332,7 @@ end
 
 -- USP45 NERV (Misato's Pistol)
 if self.wpn_fps_pis_katsuragi then
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_katsuragi", "wpn_fps_pis_usp")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_katsuragi")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_katsuragi")
 end

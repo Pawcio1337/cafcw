@@ -202,6 +202,11 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_delta",
 	"wpn_fps_upg_o_r4",
 	"wpn_fps_upg_o_razor",
+	"wpn_fps_upg_o_ff3",
+	"wpn_fps_upg_o_mons",
+	"wpn_fps_upg_o_srs2",
+	"wpn_fps_upg_o_pk",
+	"wpn_fps_upg_o_corp",
 	"wpn_fps_ass_sc30_o"
 }
 attach_tables.CustomSmall = {
