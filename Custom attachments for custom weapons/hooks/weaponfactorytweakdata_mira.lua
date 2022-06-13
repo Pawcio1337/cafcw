@@ -547,4 +547,20 @@ if self.wpn_fps_pis_x_bootl1911 then
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_bootl1911", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_x_bootl1911", "a_ns", "barrel")
 end
+-- Colt M4A1/M203
+if self.wpn_fps_ass_kurisumasu then
+	self:cafcw_add_custom_ammo("wpn_fps_ass_kurisumasu", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_kurisumasu", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_kurisumasu", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_kurisumasu", "wpn_fps_ass_contraband")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_kurisumasu", "wpn_fps_ass_contraband")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_kurisumasu")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_kurisumasu")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_kurisumasu", "wpn_fps_addon_ris")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_kurisumasu_gp_right", "a_fl_right")	
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_kurisumasu_gp_top", "a_fl_top")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_kurisumasu")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_kurisumasu")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_kurisumasu")
+end
 end)
