@@ -129,6 +129,17 @@ if self.wpn_fps_ass_xm4_prim then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_xm4_prim", "_556x45mm")
 end
 
+-- MW2019 AA12
+if self.wpn_fps_shot_aalpha12 then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_aalpha12")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_aalpha12")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_aalpha12")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_aalpha12", "_12ga")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_aalpha12", "wpn_fps_sho_aa12")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_aalpha12", "wpn_fps_sho_aa12")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_aalpha12", "wpn_fps_sho_aa12")
+end
+
 -- MW2019 R870
 if self.wpn_fps_shot_romeo870 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_romeo870")
@@ -248,9 +259,53 @@ if self.wpn_fps_ass_scharlie then
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_scharlie")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_scharlie", "_762x51mm")
 end
- 
- -- MW2019 CZ Scorpion EVO?
 
+ -- MW2019 SCAR-H Secondary
+if self.wpn_fps_ass_scharlie_sec then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_scharlie_sec", "wpn_fps_smg_hajk")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_scharlie_sec", "wpn_fps_smg_hajk")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_scharlie_sec", "wpn_fps_smg_hajk")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_scharlie_sec")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_scharlie_sec")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_scharlie_sec")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_scharlie_sec")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_scharlie_sec", "_762x51mm")
+end
+ -- MW2019 CZ Scorpion EVO
+if self.wpn_fps_smg_secho then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_secho", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_secho", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_secho", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_secho", "wpn_fps_smg_shepheard")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_secho")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_secho")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_secho")
+	self:cafcw_add_custom_ammo("wpn_fps_smg_secho", "_9x19mm_p")
+	self:cafcw_add_custom_ammo("wpn_fps_smg_secho", "_9x19mm")
+end
+
+-- MW2019 CZ Scorpion EVO Primary
+if self.wpn_fps_smg_secho_prim then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_secho_prim", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_secho_prim", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_secho_prim", "wpn_fps_smg_shepheard")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_secho_prim")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_secho_prim")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_secho_prim")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_secho_prim", "wpn_fps_smg_shepheard")
+	self:cafcw_add_custom_ammo("wpn_fps_smg_secho", "_9x19mm_p")
+	self:cafcw_add_custom_ammo("wpn_fps_smg_secho", "_9x19mm")
+end
+
+ -- MW2019 R700
+ if self.wpn_fps_snp_romeo700 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_romeo700", "wpn_fps_snp_r700")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_snp_romeo700", "wpn_fps_snp_r700")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_snp_romeo700", "wpn_fps_snp_r700")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_romeo700")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_romeo700")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_snp_romeo700")
+end
 
 --SIG P320
 if self.wpn_fps_pis_sig_p320 then
@@ -258,6 +313,8 @@ if self.wpn_fps_pis_sig_p320 then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_sig_p320", "wpn_fps_pis_p226")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sig_p320")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sig_p320")
+	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_sig_p320", "wpn_fps_pis_p226")
+	
 end
 
 --Akimbo SIG P320
@@ -302,6 +359,7 @@ if self.wpn_fps_ass_2042_dm7 then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_2042_dm7")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_2042_dm7")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_2042_dm7")
+	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_2042_dm7", "wpn_fps_ass_m16")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_2042_dm7")
 
 end

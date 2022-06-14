@@ -182,9 +182,12 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_mw2019_gi_mini_reflex_riser",
 	"wpn_fps_upg_o_mw2019_solozero_mini_reflex_riser",
 	"wpn_fps_upg_o_mw2019_cronen_mini_reflex_riser",
+	"wpn_fps_upg_o_bocw_kobra",
 	"wpn_fps_upg_o_bocw_axial_3x",
 	"wpn_fps_upg_o_bocw_quickshot_led",
+	"wpn_fps_upg_o_bocw_holoscout",
 	"wpn_fps_upg_o_bocw_xm4_v18_acog",
+	"wpn_fps_upg_o_bocw_visiontech",
 	"wpn_fps_upg_o_mw2_re_red_dot",
 	"wpn_fps_upg_o_ebr_scope",
 	"wpn_fps_upg_o_ebr_scope_ghillie",
@@ -1137,6 +1140,16 @@ if self.wpn_fps_ass_owlfbullpup then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16_alt", nil, "0,-6,0")
 end
+-- M16A1 M203
+if self.wpn_fps_ass_arn87 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
+end
+-- Type 99 Incinerator
+--if self.wpn_fps_fla_type99inc then
+
+--end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
