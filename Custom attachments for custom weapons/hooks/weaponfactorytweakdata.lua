@@ -1122,10 +1122,8 @@ if self.wpn_fps_ass_plasmaproto then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16")
-	if self.parts.wpn_fps_ass_plasmaproto_riser then
-		self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16_alt", "wpn_fps_ass_plasmaproto_riser", "0,5,-0.8657")
-		self:cafcw_forbids_adds_attachment_type("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto_rearsight_folded")
-	end
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto", "wpn_fps_ass_m16_alt", "wpn_fps_ass_plasmaproto_riser", "0,5,-0.8657")
+	self:cafcw_forbids_adds_attachment_type("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_plasmaproto_rearsight_folded")
 end
 -- M41A Pulse Rifle
 if self.wpn_fps_ass_xeno then
@@ -1140,16 +1138,18 @@ if self.wpn_fps_ass_owlfbullpup then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16_alt", nil, "0,-6,0")
 end
--- M16A1 M203
+-- M16 M203
 if self.wpn_fps_ass_arn87 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
 end
 -- Type 99 Incinerator
---if self.wpn_fps_fla_type99inc then
-
---end
+if self.wpn_fps_fla_type99inc then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_fla_type99inc", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_fla_type99inc", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_fla_type99inc", "wpn_fps_ass_corgi")
+end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
