@@ -1100,6 +1100,7 @@ if self.wpn_fps_ass_xr2 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_xr2", "wpn_fps_ass_corgi")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_xr2")
 end
 -- K31/43
 if self.wpn_fps_snp_k31 then
