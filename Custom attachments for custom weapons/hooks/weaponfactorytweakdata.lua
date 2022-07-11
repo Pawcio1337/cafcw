@@ -210,6 +210,11 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_srs2",
 	"wpn_fps_upg_o_pk",
 	"wpn_fps_upg_o_corp",
+	"wpn_fps_upg_o_nom",
+	"wpn_fps_upg_o_h2hi",
+	"wpn_fps_upg_o_sunt1",
+	"wpn_fps_upg_o_atacr",
+	"wpn_fps_upg_o_milkor",
 	"wpn_fps_ass_sc30_o"
 }
 attach_tables.CustomSmall = {
