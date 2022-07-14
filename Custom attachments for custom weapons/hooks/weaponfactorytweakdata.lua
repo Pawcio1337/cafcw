@@ -1150,12 +1150,6 @@ if self.wpn_fps_ass_arn87 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
 end
--- Type 99 Incinerator
-if self.wpn_fps_fla_type99inc then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_fla_type99inc", "wpn_fps_ass_corgi")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_fla_type99inc", "wpn_fps_ass_corgi")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_fla_type99inc", "wpn_fps_ass_corgi")
-end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
