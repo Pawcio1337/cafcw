@@ -563,4 +563,13 @@ if self.wpn_fps_ass_kurisumasu then
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_kurisumasu")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_kurisumasu")
 end
+-- Mira's Hi-Power
+if self.wpn_fps_pis_hipower then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_hipower")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_hipower")
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_hipower", "wpn_fps_pis_pl14")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_hipower", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_hipower", "a_ns", "barrel")
+	self:cafcw_add_custom_ammo("wpn_fps_pis_hipower", "_9x19mm")
+end
 end)
