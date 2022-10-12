@@ -196,6 +196,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_ismc_aimpoint_t2",
 	"wpn_fps_upg_o_vk78_standalone_sight",
 	"wpn_fps_upg_o_bf2042_vector_talos",
+	"wpn_fps_upg_o_sig_sauer_romeo8",
 	"wpn_fps_upg_o_vudu",
 	"wpn_fps_upg_o_ta01",
 	"wpn_fps_upg_o_sos",
@@ -217,7 +218,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_milkor",
 	"wpn_fps_upg_o_tango",
 	"wpn_fps_upg_o_ledacog",
-	"wpn_fps_ass_sc30_o"
+	"wpn_fps_ass_sc30_o",
+	"wpn_fps_upg_o_railgun"
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
@@ -277,6 +279,7 @@ attach_tables.Specter = {
 	"wpn_fps_upg_o_anpas13d",
 	"wpn_fps_upg_o_su230_mdrs",
 	"wpn_fps_upg_o_mark4_hamr",
+	"wpn_fps_upg_o_acog_ta01nsn_iron",
 	"wpn_fps_upg_o_jgbg_m7",
 	"wpn_fps_upg_o_hartman",
 	"wpn_fps_upg_o_kpsr2",
@@ -435,6 +438,8 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 						switch_id = "wpn_fps_upg_o_su230_mdrs_switch"
 					elseif sight_id == "wpn_fps_upg_o_mark4_hamr" then
 						switch_id = "wpn_fps_upg_o_mark4_hamr_switch"
+					elseif sight_id == "wpn_fps_upg_o_acog_ta01nsn_iron" then
+						switch_id = "wpn_fps_upg_o_acog_ta01nsn_iron_switch"
 					end
 					if not table.contains(self[wpn_id].uses_parts, sight_id) then
 						table.insert(self[wpn_id].uses_parts, sight_id)
@@ -457,7 +462,7 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 					end
 				end
 				if switch_id then
-					if sight_id == "wpn_fps_upg_o_acog_rmr" or "wpn_fps_upg_o_ta648rmr" or "wpn_fps_upg_o_su230_mdrs" or "wpn_fps_upg_o_mark4_hamr" then
+					if sight_id == "wpn_fps_upg_o_acog_rmr" or "wpn_fps_upg_o_ta648rmr" or "wpn_fps_upg_o_su230_mdrs" or "wpn_fps_upg_o_mark4_hamr" or "wpn_fps_upg_o_acog_ta01nsn_iron" then
 						if self.parts[switch_id].stance_mod[stance_wpn_id] then
 							self.parts[switch_id].stance_mod[wpn_id] = deep_clone(self.parts[switch_id].stance_mod[stance_wpn_id])
 						else

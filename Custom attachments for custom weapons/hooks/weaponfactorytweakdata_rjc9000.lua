@@ -77,6 +77,35 @@ if self.wpn_fps_ass_vk78_commando then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_vk78_commando", "_762x51mm")
 end
 
+-- Misriah Armory BR75
+if self.wpn_fps_ass_br75 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_br75", "wpn_fps_ass_vhs")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_br75", "wpn_fps_ass_vhs")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_br75", "wpn_fps_ass_vhs")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_br75")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_br75")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_br75")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_br75", "_762x51mm")
+end
+
+-- Emerson Tactical MK50 Sidekick
+if self.wpn_fps_pis_mk50_sidekick then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mk50_sidekick")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mk50_sidekick")
+end
+
+-- Weihao Tactical MA6E
+if self.wpn_fps_ass_ma6e then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_ma6e", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_ma6e", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_ma6e", "wpn_fps_ass_corgi")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_corgi")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_corgi")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_corgi")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_ma6e")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_ma6e", "_762x51mm")
+end
+
 ----------Comissioned Weapons------------------
 
 -- Desert Tech MDR 0.308
@@ -209,7 +238,7 @@ if self.wpn_fps_ass_mike14_sec then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_mike14_sec", "_762x51mm")
 end
 
---CAPITALISM AR15
+--MW2019 M4A1
 if self.wpn_fps_ass_mike4 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mike4", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mike4", "wpn_fps_ass_m4")
@@ -314,9 +343,7 @@ if self.wpn_fps_pis_sig_p320 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sig_p320")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_sig_p320")
 	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_sig_p320", "wpn_fps_pis_p226")
-	
 end
-
 
 --Akimbo SIG P320
 if self.wpn_fps_x_pis_sig_p320 then
@@ -334,6 +361,18 @@ if self.wpn_fps_pis_golf21 then
 	
 end
 
+-- MW2019 AS VAL
+if self.wpn_fps_ass_valpha then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_valpha", "wpn_fps_ass_asval")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_valpha", "wpn_fps_ass_asval")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_valpha", "wpn_fps_ass_asval")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_valpha")
+	
+end
+
+--MW2022 (X)
+--Willing to trade access to MW2022 aassets for slaving away at MW2022 weapon of choice
+
 
 -- Cursed MP7
 if self.wpn_fps_smg_mpapa7 then
@@ -345,18 +384,6 @@ if self.wpn_fps_smg_mpapa7 then
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_smg_mpapa7")
 end
 
-
- -- COD4 Remastered NotHoneyBadger
-if self.wpn_fps_smg_lynx300 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_lynx300")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_lynx300")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_lynx300")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_lynx300")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_smg_lynx300")
-end
 
  -- COD4 Remastered NotHoneyBadger
 if self.wpn_fps_smg_lynx300 then
@@ -504,44 +531,21 @@ if self.wpn_fps_lmg_sig_xm250 then
 
 end
 
-
-----------Lost Halo Weapons------------------
-
-
--- Misriah Armory BR85 
-
-
--- Misriah Armory M45D Tactical Shotgun
-
-
--- Misriah Armory M6H Pistol
-
-
--- God's Sidearm
-
-
--- Misriah Armory M739 SAW
-
-
--- Misriah Armory M395 DMR
-
-
--- Misriah Armory BR75
-if self.wpn_fps_ass_br75 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_br75", "wpn_fps_ass_vhs")
-	self:cafcw_add_custom_sights("Custom",  "wpn_fps_ass_br75", "wpn_fps_ass_vhs")
-	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_ass_br75", "wpn_fps_ass_vhs")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_br75")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_br75")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_br75")
-	self:cafcw_add_custom_ammo("wpn_fps_ass_br75", "_762x51mm")
+-- DDMK18
+if self.wpn_fps_ass_dd_mk18 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_dd_mk18", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_dd_mk18", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_dd_mk18", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_dd_mk18")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_dd_mk18")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_dd_mk18")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_dd_mk18")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_dd_mk18")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_dd_mk18")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_dd_mk18", "_556x45mm")
 end
 
--- Emerson Tactical MK50 Sidekick
-if self.wpn_fps_pis_mk50_sidekick then
-	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mk50_sidekick")
-	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mk50_sidekick")
-end
+
 
 
 
