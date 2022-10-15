@@ -88,11 +88,6 @@ if self.wpn_fps_ass_br75 then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_br75", "_762x51mm")
 end
 
--- Emerson Tactical MK50 Sidekick
-if self.wpn_fps_pis_mk50_sidekick then
-	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mk50_sidekick")
-	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mk50_sidekick")
-end
 
 -- Weihao Tactical MA6E
 if self.wpn_fps_ass_ma6e then
@@ -129,6 +124,31 @@ if self.wpn_fps_smg_crysis3_typhoon then
 end
 
 ----------COD Weapons------------------
+
+ -- COD4 Remastered NotHoneyBadger
+if self.wpn_fps_smg_lynx300 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_lynx300")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_lynx300")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_lynx300")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_lynx300")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_smg_lynx300")
+end
+
+-- Infinite Warfare SPACE AR15
+if self.wpn_fps_ass_nova4 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_nova4", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_nova4", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_nova4", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_nova4")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_nova4")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_nova4")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_nova4")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_nova4", "_556x45mm")
+end
+
 
 -- Black Ops Reboot CAR 15 Secondary
 if self.wpn_fps_smg_xm4 then
@@ -250,6 +270,11 @@ if self.wpn_fps_ass_mike4 then
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mike4")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mike4")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_mike4", "_556x45mm")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_mike4")
+	self:cafcw_part_a_obj_pattern_override("Vertical_Grips", "wpn_fps_ass_mike4_handguard_custom", "a_vg_short")
+	self:cafcw_part_a_obj_pattern_override("Vertical_Grips", "wpn_fps_ass_mike4_handguard_short", "a_vg_short")
+	self:cafcw_part_a_obj_pattern_override("Vertical_Grips", "wpn_fps_ass_mike4_handguard_v15", "a_vg_short")
+	self:cafcw_part_a_obj_pattern_override("Vertical_Grips", "wpn_fps_ass_mike4_urgi_handguard", "a_vg_urgi")
 end
 
  -- MW2019 VECTOR
@@ -370,10 +395,6 @@ if self.wpn_fps_ass_valpha then
 	
 end
 
---MW2022 (X)
---Willing to trade access to MW2022 aassets for slaving away at MW2022 weapon of choice
-
-
 -- Cursed MP7
 if self.wpn_fps_smg_mpapa7 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_mpapa7", "wpn_fps_smg_mp7")
@@ -384,32 +405,43 @@ if self.wpn_fps_smg_mpapa7 then
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_smg_mpapa7")
 end
 
-
- -- COD4 Remastered NotHoneyBadger
-if self.wpn_fps_smg_lynx300 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_lynx300", "wpn_fps_smg_olympic")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_lynx300")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_lynx300")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_lynx300")
-	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_lynx300")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_smg_lynx300")
+--MW2022 M4 URGI
+if self.wpn_fps_ass_mike4_2022 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mike4_2022")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mike4_2022")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mike4_2022")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_mike4_2022")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mike4_2022")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mike4_2022")
+--  self:cafcw_add_custom_ammo("wpn_fps_ass_mike4_2022", "_556x45mm") 
 end
 
--- Infinite Warfare SPACE AR15
-if self.wpn_fps_ass_nova4 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_nova4", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_nova4", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_nova4", "wpn_fps_ass_m4")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_nova4")
-	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_nova4")
-	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_nova4")
-	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_nova4")
-	self:cafcw_add_custom_ammo("wpn_fps_ass_nova4", "_556x45mm")
+--MW2022 AR57
+if self.wpn_fps_smg_alpha57 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_alpha57", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_alpha57", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_alpha57", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_alpha57")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_alpha57")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_alpha57")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_alpha57")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_alpha57")
 end
 
 
+-- Stoner 63 (?)
+if self.wpn_fps_lmg_stoner63a then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_stoner63a", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_stoner63a", "wpn_fps_ass_amcar")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_stoner63a", "wpn_fps_ass_amcar")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_stoner63a")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_stoner63a")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_stoner63a")
+	self:cafcw_add_custom_ammo("wpn_fps_lmg_stoner63a", "_556x45mm")
+end
 
 ----------Battlefield Weapons------------------
 -- BF2042 DDM4V7
