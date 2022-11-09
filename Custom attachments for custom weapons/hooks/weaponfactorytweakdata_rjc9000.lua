@@ -1,6 +1,6 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_rjc9000_Init", function(self)
 
-----------Public Halo Weapons------------------
+----------Halo Weapons------------------
 
 -- Misriah Armory BR55
 if self.wpn_fps_ass_br55 then
@@ -405,11 +405,23 @@ if self.wpn_fps_smg_mpapa7 then
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_smg_mpapa7")
 end
 
+--MW2019 MCX
+if self.wpn_fps_ass_mcharlie then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mcharlie", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mcharlie", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mcharlie", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mcharlie")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mcharlie")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mcharlie")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_mcharlie")
+
+end
+
 --MW2022 M4 URGI
 if self.wpn_fps_ass_mike4_2022 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m16")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m16")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mike4_2022", "wpn_fps_ass_m4")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mike4_2022")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mike4_2022")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mike4_2022")
@@ -431,8 +443,26 @@ if self.wpn_fps_smg_alpha57 then
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_alpha57")
 end
 
+--MW2022 Perfectly Normal MCX
+if self.wpn_fps_ass_mcbravo then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mcbravo", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mcbravo", "wpn_fps_ass_corgi")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mcbravo", "wpn_fps_ass_corgi")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mcbravo")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mcbravo")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mcbravo")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_mcbravo")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mcbravo")
+	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mcbravo")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_mcbravo")
+end
 
--- Stoner 63 (?)
+-- MW2022 SW500
+if self.wpn_fps_pis_swhiskey then
+	self:cafcw_add_attachment_type("MOD_RevolverGadgets", "wpn_fps_pis_swhiskey")
+end
+
+-- Stoner 63
 if self.wpn_fps_lmg_stoner63a then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_stoner63a", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_stoner63a", "wpn_fps_ass_amcar")
