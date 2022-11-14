@@ -60,15 +60,15 @@ if self.wpn_fps_ass_stg44 then
     end
 	
 
---[[Mossberg 590
-if self.wpn_fps_shot_m590 then
-	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_m590")
-	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_m590")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_m590", "wpn_fps_shot_m590_gadget_rail")
-	self:cafcw_add_custom_ammo("wpn_fps_shot_m590", "_12ga")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_m590", "wpn_fps_shot_m590", "wpn_fps_shot_m590_ris_special")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_m590", "wpn_fps_shot_m590", "wpn_fps_shot_m590_ris_special")
-end]]
+--Mossberg 590
+if self.wpn_fps_shot_mossberg590 then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_mossberg590")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_mossberg590")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590_gadget_rail")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_mossberg590", "_12ga")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590_ris_special")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590_ris_special")
+end
 
 --QBZ-03
 if self.wpn_fps_ass_qbz3 then
@@ -282,5 +282,15 @@ if self.wpn_fps_shot_mts255 then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_x_mts255")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_x_mts255")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_x_mts255", "_12ga_mag")
+end
+-- So people with an outdated version won't crash
+if self.wpn_fps_shot_s_mts255 then
+    self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_s_mts255")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_s_mts255")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_s_mts255", "_12ga_mag")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_shot_s_mts255", "wpn_fps_ass_fal")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_s_mts255", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_s_mts255", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_s_mts255", "wpn_fps_shot_serbu")
 end
 end)

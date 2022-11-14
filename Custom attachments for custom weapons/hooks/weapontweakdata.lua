@@ -189,6 +189,16 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -2.4, 0.4)
 	})
+	self:SetupAttachmentPoint("s_mts255", {
+		name = "a_of",
+		base_a_obj = "a_o",
+		position = Vector3(0, 11.7, 0.35)
+	})
+	self:SetupAttachmentPoint("s_mts255", {
+		name = "a_or",
+		base_a_obj = "a_o",
+		position = Vector3(0, -2.4, 0.4)
+	})
 	self:SetupAttachmentPoint("aug9mm", {
 		name = "a_of",
 		base_a_obj = "a_o",
