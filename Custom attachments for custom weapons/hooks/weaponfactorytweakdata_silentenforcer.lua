@@ -66,8 +66,9 @@ if self.wpn_fps_shot_mossberg590 then
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_mossberg590")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590_gadget_rail")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_mossberg590", "_12ga")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590_ris_special")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590", "wpn_fps_shot_mossberg590_ris_special")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_mossberg590", "wpn_fps_shot_r870")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_mossberg590", "wpn_fps_shot_r870")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_mossberg590", "wpn_fps_shot_r870")
 end
 
 --QBZ-03
@@ -86,9 +87,10 @@ if self.wpn_fps_shot_f500 then
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_f500")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_f500")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_f500", "_12ga")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_f500", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_f500", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_f500", "wpn_fps_shot_r870", "wpn_fps_shot_f500_ris_special")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_f500", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_f500", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_f500", "wpn_fps_shot_serbu")
+	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_shot_f500", "wpn_fps_ass_ak5", nil, "0,2,0.25")
 end
 
 -- Makarov
