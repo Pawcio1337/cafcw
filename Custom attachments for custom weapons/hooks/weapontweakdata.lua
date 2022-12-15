@@ -177,27 +177,27 @@ if self.SetupAttachmentPoint then
 	self:SetupAttachmentPoint("mts255", {
 		name = "a_of",
 		base_a_obj = "a_o",
-		position = Vector3(0, 11.7, 0.35)
+		position = Vector3(0, 0.2, 0.05)
 	})
 	self:SetupAttachmentPoint("mts255", {
 		name = "a_of_ghost",
 		base_a_obj = "a_o",
-		position = Vector3(0, 64, 0.2)
+		position = Vector3(0, 52.5, -0.1)
 	})
 	self:SetupAttachmentPoint("mts255", {
 		name = "a_or",
 		base_a_obj = "a_o",
-		position = Vector3(0, -2.4, 0.4)
+		position = Vector3(0, -13.9, 0.1)
 	})
 	self:SetupAttachmentPoint("s_mts255", {
 		name = "a_of",
 		base_a_obj = "a_o",
-		position = Vector3(0, 11.7, 0.35)
+		position = Vector3(0, 0.2, 0.05)
 	})
 	self:SetupAttachmentPoint("s_mts255", {
 		name = "a_or",
 		base_a_obj = "a_o",
-		position = Vector3(0, -2.4, 0.4)
+		position = Vector3(0, -13.9, 0.1)
 	})
 	self:SetupAttachmentPoint("aug9mm", {
 		name = "a_of",
