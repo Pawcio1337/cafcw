@@ -144,7 +144,8 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_tecci", 
 	"wpn_fps_upg_vg_foldable", 
 	"wpn_fps_upg_vg_grippod",
-	"wpn_fps_upg_vg_unity_asset"
+	"wpn_fps_upg_vg_unity_asset",
+	"wpn_fps_upg_ak12_vertgrip_tact"
 }
 -- Sights
 attach_tables.ACOG = {
@@ -1396,5 +1397,10 @@ if self.parts.wpn_fps_upg_o_ak_coverrail and self.parts.wpn_fps_upg_o_akmsu_cove
 	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
 	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
 	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_o_ak_coverrail")
+end
+-- AUG A1 Kit
+if self.parts.wpn_fps_aug_body_aug_a1 and self.parts.wpn_fps_aug_body_aug_a3 then
+	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a1")
+	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a3")
 end
 end)
