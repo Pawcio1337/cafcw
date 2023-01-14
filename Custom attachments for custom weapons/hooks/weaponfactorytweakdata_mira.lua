@@ -245,6 +245,9 @@ if self.wpn_fps_smg_m4cqb then
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_smg_m4cqb_hg_ddm4", "a_fl_ddm4")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_smg_m4cqb")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_smg_m4cqb")
+	self:cafcw_add_attachment_type("Angled_Grips", "wpn_fps_smg_m4cqb")
+	self:cafcw_part_a_obj_pattern_override("Angled_Grips", "wpn_fps_smg_m4cqb_hg_ddm4", "a_vg_ddm4")	
+	self:cafcw_forbids_attachment_type("Angled_Grips", "wpn_fps_smg_m4cqb_hg_m4")
 end
 if self.parts.wpn_fps_smg_m4cqb_o_stupid then
 	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_smg_m4cqb_o_stupid", "a_o_stupid")	
@@ -265,6 +268,10 @@ if self.wpn_fps_ass_mk18prim then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mk18prim")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mk18prim")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mk18prim")
+	self:cafcw_add_attachment_type("Angled_Grips", "wpn_fps_ass_mk18prim")
+	self:cafcw_part_a_obj_pattern_override("Angled_Grips", "wpn_fps_smg_m4cqb_hg_ddm4", "a_vg_ddm4")	
+	self:cafcw_forbids_attachment_type("Angled_Grips", "wpn_fps_smg_m4cqb_hg_m4")
+	self:cafcw_forbids_attachment_type("Angled_Grips", "wpn_fps_ass_mk18prim_hg_heatshield")
 end
 -- HK USP
 if self.wpn_fps_pis_ctfavourite then
@@ -530,6 +537,7 @@ if self.wpn_fps_ass_hkg14976 then
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_ass_hkg14976_fl_botrail", "a_fl_bot")	
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_hkg14976")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_hkg14976")
+	self:cafcw_add_attachment_type("Angled_Grips", "wpn_fps_ass_hkg14976")
 end
 -- AM D114
 if self.wpn_fps_pis_bootl1911 then

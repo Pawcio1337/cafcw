@@ -1,5 +1,13 @@
 -- Attachments tables
 attach_tables = {}
+attach_tables.AR15_Charging_Handles = {
+	"wpn_fps_upg_raptor", 
+	"wpn_fps_upg_ava", 
+	"wpn_fps_upg_masp", 
+	"wpn_fps_upg_geis",
+	"wpn_fps_upg_masp",
+	"wpn_fps_upg_geis"
+}
 attach_tables.AR15_Grips = {
 	"wpn_fps_ass_m4_g_fancy",
 	"wpn_fps_upg_g_m4_surgeon", -- DLC
@@ -29,7 +37,6 @@ attach_tables.AR15_Magazines = {
 	"wpn_fps_upg_m_poly",
 	"wpn_fps_upg_m_gen2",
 	"wpn_fps_m4_uupg_m_strike" -- U232 DLC
-	
 }
 attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_collapsed",
@@ -112,6 +119,17 @@ attach_tables.Suppressors_Pistol = {
 	"wpn_fps_ass_ns_g_sfn",
 	"wpn_fps_upg_ns_pis_putnik" -- U218
 }
+attach_tables.Angled_Grips = {
+	"wpn_fps_upg_vg_mw2022_angled01", 
+	"wpn_fps_upg_vg_mw2022_angled04", 
+	"wpn_fps_upg_vg_mw2022_angledshort01",
+	"wpn_fps_upg_vg_mw2022_angledshort02",
+	"wpn_fps_upg_vg_mw2022_angledshort03",
+	"wpn_fps_upg_vg_mw2022_angledshort04",
+	"wpn_fps_upg_vg_mw2022_angledshort05",
+	"wpn_fps_upg_vg_mw2022_angledshort06",
+	"wpn_fps_upg_vg_mw2022_angledshort07"
+}
 attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_fab_reg",
 	"wpn_fps_upg_vg_gps02",
@@ -145,9 +163,18 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_foldable", 
 	"wpn_fps_upg_vg_grippod",
 	"wpn_fps_upg_vg_unity_asset",
-	"wpn_fps_upg_ak12_vertgrip_tact"
+	"wpn_fps_upg_ak12_vertgrip_tact",
+	"wpn_fps_upg_vg_mw2022_daniel_defense",
+	"wpn_fps_upg_vg_mw2022_vert01", 
+	"wpn_fps_upg_vg_mw2022_vert02", 
+	"wpn_fps_upg_vg_mw2022_vert03", 
+	"wpn_fps_upg_vg_mw2022_vert03", 
+	"wpn_fps_upg_vg_mw2022_vert04", 
+	"wpn_fps_upg_vg_mw2022_vert05", 
+	"wpn_fps_upg_vg_mw2022_vertshort04", 
+	"wpn_fps_upg_vg_mw2022_vertshort06" 
 }
--- Sights
+-- Sights tables
 attach_tables.ACOG = {
 	"wpn_fps_upg_o_acog_rmr",
 	"wpn_fps_upg_o_gitsch",
@@ -167,7 +194,6 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_valday1p87",
 	"wpn_fps_upg_o_burris_ff3",
 	"wpn_fps_upg_o_romeo3",
-	"wpn_fps_upg_o_sig", -- DLC
 	"wpn_fps_upg_o_bmg", -- DLC
 	"wpn_fps_upg_o_sn3",
 	"wpn_fps_upg_o_mro",
@@ -208,6 +234,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_bf2042_vector_talos",
 	"wpn_fps_upg_o_sig_sauer_romeo8",
 	"wpn_fps_upg_o_atacr735",
+	"wpn_fps_upg_o_march",
 	"wpn_fps_upg_o_vudu",
 	"wpn_fps_upg_o_ta01",
 	"wpn_fps_upg_o_sos",
@@ -231,7 +258,11 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_ledacog",
 	"wpn_fps_ass_sc30_o",
 	"wpn_fps_upg_o_railgun",
-	"wpn_fps_upg_o_atibal" -- U232 DLC
+	"wpn_fps_upg_o_atibal", -- U232 DLC
+	"wpn_fps_upg_o_specter_piggyback", -- U232
+	"wpn_fps_upg_o_cs_piggyback", -- U232
+	"wpn_fps_upg_o_hamr_reddot", -- U232 DLC
+	"wpn_fps_upg_o_atibal_reddot" -- U232 DLC
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
@@ -262,6 +293,10 @@ attach_tables.Custom_Pistol = {
 	"wpn_fps_upg_o_mw2019_solozero_mini_reflex_pis",
 	"wpn_fps_upg_o_mw2019_cronen_mini_reflex_pis",
 	"wpn_fps_pis_upg_o_viper" 
+}
+attach_tables.Magnifier = {
+	"wpn_fps_upg_o_xpsg33_magnifier",
+	"wpn_fps_upg_o_sig" -- DLC
 }
 attach_tables.RDS45 = {
 	"wpn_fps_upg_o_45steel" -- DLC
@@ -437,6 +472,8 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 				if self.parts[sight_id] then
 					if sight_base == "ACOG" then
 						sight_base = "wpn_fps_upg_o_acog"
+					elseif sight_base == "Magnifier" then
+						sight_base = "wpn_fps_upg_o_xpsg33_magnifier"
 					elseif sight_base == "RDS45" then
 						sight_base = "wpn_fps_upg_o_45rds"
 					elseif sight_base == "Shortdot" then

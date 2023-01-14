@@ -246,6 +246,7 @@ if self.wpn_fps_ass_petto then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_petto")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_petto")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_petto")
+	self:cafcw_add_attachment_type("Angled_Grips", "wpn_fps_ass_petto")
 
 end
 
@@ -385,6 +386,7 @@ if self.wpn_fps_ass_mk17 then
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mk17")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mk17")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mk17")
+	self:cafcw_add_attachment_type("Angled_Grips", "wpn_fps_ass_mk17")
 
 end
 
