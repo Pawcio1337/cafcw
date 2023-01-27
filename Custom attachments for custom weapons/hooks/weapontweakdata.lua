@@ -342,5 +342,10 @@ if self.SetupAttachmentPoint then
 		base_a_obj = "a_o",
 		position = Vector3(0, -5, 0)
 	})
+	self:SetupAttachmentPoint("mg34", {
+		name = "a_o_clamp",
+		base_a_obj = "a_o",
+		position = Vector3(0, 8.95, -1.39 )
+	})
 end
 end)

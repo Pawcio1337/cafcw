@@ -56,7 +56,7 @@ if self.wpn_fps_ass_stg44 then
 	end
 end
 	
---Mossberg 590
+--Mossberg 590A1
 if self.wpn_fps_shot_mossberg590 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_mossberg590")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_mossberg590")
@@ -98,6 +98,7 @@ if self.wpn_fps_shot_f500 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_f500")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_f500")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_f500")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_shot_f500", nil, "foregrip")
 	self:cafcw_add_custom_ammo("wpn_fps_shot_f500", "_12ga")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_f500", "wpn_fps_shot_serbu")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_f500", "wpn_fps_shot_serbu")
@@ -120,7 +121,6 @@ end
 
 -- QBS-09
 if self.wpn_fps_shot_qbs then
-	self:cafcw_add_custom_ammo("wpn_fps_shot_qbs", "_12ga_auto")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_qbs")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_qbs", "wpn_fps_shot_qbs_gadget_rail")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_qbs")
@@ -231,6 +231,16 @@ end
 
 --MG 34
 if self.wpn_fps_lmg_mg34 then
+	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_lmg_mg34", "wpn_fps_smg_erma", "0,4,2.66")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_lmg_mg34", "a_o_clamp")
+	self:cafcw_forbids_adds_attachment_type("Custom_WW2_Axis", "wpn_fps_lmg_mg34_o_rail")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_mg34", "wpn_fps_ass_g36")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_mg34", "wpn_fps_ass_g36")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_mg34", "wpn_fps_ass_g36")
+	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_lmg_mg34", nil, "upper_reciever")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_lmg_mg34", nil, "upper_reciever")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_lmg_mg34", nil, "upper_reciever")
+	self:cafcw_forbids_attachment_type("Magnifier", "wpn_fps_lmg_mg34_m_double")
     self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_mg34")
 	self:cafcw_add_custom_ammo("wpn_fps_lmg_mg34", "_792x57mm")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_mg34")

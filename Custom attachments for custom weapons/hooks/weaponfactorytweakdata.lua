@@ -121,7 +121,10 @@ attach_tables.Suppressors_Pistol = {
 }
 attach_tables.Angled_Grips = {
 	"wpn_fps_upg_vg_mw2022_angled01", 
+	"wpn_fps_upg_vg_mw2022_angled02", 
 	"wpn_fps_upg_vg_mw2022_angled04", 
+	"wpn_fps_upg_vg_mw2022_angled05", 
+	"wpn_fps_upg_vg_mw2022_angled06", 
 	"wpn_fps_upg_vg_mw2022_angledshort01",
 	"wpn_fps_upg_vg_mw2022_angledshort02",
 	"wpn_fps_upg_vg_mw2022_angledshort03",
@@ -171,6 +174,9 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_mw2022_vert03", 
 	"wpn_fps_upg_vg_mw2022_vert04", 
 	"wpn_fps_upg_vg_mw2022_vert05", 
+	"wpn_fps_upg_vg_mw2022_vertshort01", 
+	"wpn_fps_upg_vg_mw2022_vertshort02", 
+	"wpn_fps_upg_vg_mw2022_vertshort03", 
 	"wpn_fps_upg_vg_mw2022_vertshort04", 
 	"wpn_fps_upg_vg_mw2022_vertshort06" 
 }
@@ -218,6 +224,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_mw2019_solozero_mini_reflex_riser",
 	"wpn_fps_upg_o_mw2019_cronen_mini_reflex_riser",
 	"wpn_fps_upg_o_mw2022_minireddot04_tall",
+	"wpn_fps_upg_o_mw2022_holotherm01",
 	"wpn_fps_upg_o_bocw_kobra",
 	"wpn_fps_upg_o_bocw_axial_3x",
 	"wpn_fps_upg_o_bocw_quickshot_led",
@@ -262,7 +269,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_specter_piggyback", -- U232
 	"wpn_fps_upg_o_cs_piggyback", -- U232
 	"wpn_fps_upg_o_hamr_reddot", -- U232 DLC
-	"wpn_fps_upg_o_atibal_reddot" -- U232 DLC
+	"wpn_fps_upg_o_atibal_reddot", -- U232 DLC
+	"wpn_fps_upg_o_shittyholo"
 }
 attach_tables.CustomSmall = {
 	"wpn_fps_upg_o_rmr_riser",
@@ -755,11 +763,13 @@ ammo_table._12ga = {
 	"wpn_fps_upg_a_poisonslug",
 	"wpn_fps_upg_a_12_bird",
 	"wpn_fps_upg_a_12_exp_buck",
-	"wpn_fps_upg_a_12_inc_slug"
+	"wpn_fps_upg_a_12_inc_slug",
+	"wpn_fps_upg_a_rip" -- U221 DLC
 }
 ammo_table._12ga_auto = {
 	"wpn_fps_taserslug",
-	"wpn_fps_upg_a_12_inc_slug"
+	"wpn_fps_upg_a_12_inc_slug",
+	"wpn_fps_upg_a_rip" -- U221 DLC
 }
 ammo_table._12ga_mag = {
 	"wpn_fps_xrepslug",
@@ -770,7 +780,8 @@ ammo_table._12ga_mag = {
 	"wpn_fps_upg_a_poisonslug",
 	"wpn_fps_upg_a_12_exp_buck",
 	"wpn_fps_upg_a_12_inc_slug",
-	"wpn_fps_upg_a_12_bird"
+	"wpn_fps_upg_a_12_bird",
+	"wpn_fps_upg_a_rip" -- U221 DLC
 }
 	for i, part_id in pairs(ammo_table[ammo_type]) do
 		if forbids_add then
