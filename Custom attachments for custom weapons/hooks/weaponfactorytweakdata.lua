@@ -39,6 +39,7 @@ attach_tables.AR15_Magazines = {
 	"wpn_fps_m4_uupg_m_strike" -- U232 DLC
 }
 attach_tables.AR15_Stocks = {
+	"wpn_fps_upg_m4_s_viper",
 	"wpn_fps_upg_m4_s_collapsed",
 	"wpn_fps_upg_m4_s_pts_col",
 	"wpn_fps_upg_m4_s_crane_col",
@@ -74,9 +75,15 @@ attach_tables.Barrel_Extensions = {
 	"wpn_fps_ass_shak12_ns_muzzle" -- DLC
 }
 attach_tables.Barrel_Extensions_Shotgun = {
+	"wpn_fps_upg_ns_shot_gk_01",
+	"wpn_fps_upg_ns_shot_nomad",
 	"wpn_fps_upg_m1912_ns_cutts"
 }
 attach_tables.Barrel_Extensions_Pistol = {
+	"wpn_fps_upg_ns_pis_aek919",
+	"wpn_fps_upg_ns_pis_major",
+	"wpn_fps_upg_ns_pis_tact_flash",
+	"wpn_fps_upg_ns_pis_yhm",
 	"wpn_fps_upg_ns_pis_typhoon" -- DLC
 }
 attach_tables.Gadgets = {
@@ -84,6 +91,13 @@ attach_tables.Gadgets = {
 	"wpn_fps_upg_fl_ass_smg_sho_marker",
 	"wpn_fps_upg_fl_gits_soc1",
 	"wpn_fps_upg_fl_dbal_laser" -- U232 DLC
+}
+attach_tables.Gadgets_Pistol = {
+	"wpn_fps_upg_fl_pis_micro90",
+	"wpn_fps_upg_fl_pis_inforce_apl",
+	"wpn_fps_upg_fl_pis_unimax",
+	"wpn_fps_upg_fl_pis_unimax_inforce",
+	"wpn_fps_upg_fl_pis_utg"
 }
 attach_tables.MOD_RevolverGadgets = {
 	"wpn_fps_upg_fl_pis_sidemountlaser"
@@ -102,7 +116,6 @@ attach_tables.Suppressors = {
 	"wpn_fps_ass_ns_g_mnstr",
 	"wpn_fps_ass_ns_g_rc2",
 	"wpn_fps_ass_ns_g_wave"
-	
 }
 attach_tables.Suppressors_Shotgun = {
 	"wpn_fps_upg_ns_sho_salvo_small",
@@ -442,17 +455,7 @@ attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_okp7_dove"
 }
 -- Unique attachment tables to exclude specific attachments for custom weapon. Only exception are Iron Sights Pack and Pistol Iron Sights Pack mods.
-attach_tables.Suppressors_NoOsprey = {
-	"wpn_fps_ass_ns_g_sup3",
-	"wpn_fps_ass_ns_g_sup4",
-	"wpn_fps_ass_ns_g_sup5",
-	"wpn_fps_upg_ns_shot_cat",
-	"wpn_fps_upg_ns_loud",
-	"wpn_fps_upg_ns_hock",
-	"wpn_fps_upg_ns_boomer",
-	"wpn_fps_upg_ns_gits_illegal_s",
-	"wpn_fps_upg_ns_gits_generic_s"
-}
+
 -- Attachments tables end
 function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, add_id)
 	if type(attach_tables[attach_type]) == "table" then
