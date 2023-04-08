@@ -580,4 +580,15 @@ if self.wpn_fps_pis_hipower then
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_hipower", "a_ns", "barrel")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_hipower", "_9x19mm")
 end
+-- Zenit AK-105 bullpup
+if self.wpn_fps_ass_fsbcustom then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_fsbcustom", "wpn_fps_sho_basset")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_fsbcustom", "wpn_fps_sho_basset")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_fsbcustom", "wpn_fps_sho_basset")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_fsbcustom")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_fsbcustom")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_fsbcustom")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_fsbcustom", nil, "foregrip")
+	self:cafcw_add_custom_ammo("wpn_fps_ass_fsbcustom", "_545x39mm")
+end
 end)

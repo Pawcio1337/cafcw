@@ -1,11 +1,5 @@
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_MWSNICK_Init", function(self)
 -- Template Custom Weapon
-
---[[
-Update 2021: BeardLib can handle adding some types of attachments to custom weapons without CAFCW help and currently its mostly required for custom sights to function correctly on custom weapons and adding some specific types of attachments (Or outdated custom attachments that wasn't updated).
-So common attachments like "AR15_Stocks", "Barrel_Extensions", "Gadgets", "Suppressors" etc can be completly ignored and removed from list below as they are used only as example.
---]]
-
 if self.wpn_fps_smg_template then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_template", "wpn_fps_ass_flint")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_template", "wpn_fps_ass_flint")
@@ -100,10 +94,10 @@ Open main.xml and add:
 		<hook file="weaponfactorytweakdata_MWSNICK.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> <!-- https://modworkshop.net/user/ID_ON_MWS -->
 
 Inside <Hooks..></Hooks> group then run PD2 to test changes.
-To upload own script you can either use Github: https://github.com/Pawcio1337/cafcw
-Or ask author/collaborators on MWS discord if they can help in uploading update.
+
+To upload own script you can either use Github: https://github.com/Pawcio1337/cafcw or ask author/collaborators on MWS discord if they can help with testing (make sure they tested update on their end) and uploading changes.
 
 After submitting changes you should get collaborator status later so you can update own script via MWS page.
-Reminder: Mod must be packed using ZIP format and "version" number in main.xml file must be increased by 0.01
+Reminder: Mod must be packed using ZIP format and "version" number in main.xml file must be increased by 0.001
 
 --]]

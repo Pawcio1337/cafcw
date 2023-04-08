@@ -142,19 +142,23 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_troy_modularshort",
 	"wpn_fps_upg_vg_utg_combat",
 	"wpn_fps_upg_vg_utg_combatfl",
-	"wpn_fps_upg_vg_rvg",
+	"wpn_fps_upg_vg_ash12",
 	"wpn_fps_upg_vg_bcm",
-	"wpn_fps_upg_vg_shift",
+	"wpn_fps_upg_vg_hk_sturm",
 	"wpn_fps_upg_vg_kac",
-	"wpn_fps_upg_vg_stark",
-	"wpn_fps_upg_vg_stub",
-	"wpn_fps_upg_vg_uvg",
 	"wpn_fps_upg_vg_rk0",
 	"wpn_fps_upg_vg_rk1",
 	"wpn_fps_upg_vg_rk2",
 	"wpn_fps_upg_vg_rk4",
 	"wpn_fps_upg_vg_rk5",
 	"wpn_fps_upg_vg_rk6",
+	"wpn_fps_upg_vg_rtm_pillau",
+	"wpn_fps_upg_vg_rvg",
+	"wpn_fps_upg_vg_shift",
+	"wpn_fps_upg_vg_stark",
+	"wpn_fps_upg_vg_stub",
+	"wpn_fps_upg_vg_td_alum",
+	"wpn_fps_upg_vg_uvg",
 	"wpn_fps_upg_vg_sand",
 	"wpn_fps_upg_vg_ins",
 	"wpn_fps_upg_vg_sec",
@@ -913,7 +917,9 @@ if self.wpn_fps_ass_ak12 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_ak12", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_ak12", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_ak12", "wpn_fps_ass_ak12")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_ak12")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_ak12")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_ak12")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_ak12")
 end
 -- L115
@@ -934,9 +940,18 @@ if self.wpn_fps_ass_g36k then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_g36k", "wpn_fps_ass_g36")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_g36k")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_g36k")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_g36k")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_g36k")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_g36k_fl_leftrail", "a_fl_leftrail")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_g36k_fl_toprail", "a_fl_toprail")
+	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_ass_g36k", nil, "sight_rail")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_ass_g36k", nil, "sight_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_ass_g36k", nil, "sight_rail")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_g36k", nil, "sight_rail")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_g36k", nil, "sight_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_g36k", nil, "foregrip")
 end
 -- SKS
 if self.wpn_fps_ass_sks then
@@ -954,7 +969,11 @@ if self.wpn_fps_ass_aku94 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_aku94", "wpn_fps_ass_l85a2")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_aku94", "wpn_fps_ass_l85a2")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_aku94", "wpn_fps_ass_l85a2")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_aku94")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_aku94")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_aku94")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_aku94")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_aku94_gadgets_leftrail", "a_fl_leftrail")
 end
 -- VSS
 if self.wpn_fps_snp_vss then
@@ -973,9 +992,17 @@ if self.wpn_fps_ass_ots_14_4a then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_l85a2")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_ots_14_4a", "wpn_fps_ass_ots_14_4a")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_ots_14_4a")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_ots_14_4a")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_ots_14_4a")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_ots_14_4a")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_upg_ots_14_4a_supp_b")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_ots_14_4a_supp_b")
+	self:cafcw_forbids_attachment_type("RDS45", "wpn_fps_ass_ots_14_4a_gasblock_45forbids")
 	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_ass_ots_14_4a_barrel")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_ots_14_4a_fl_leftrail", "a_fl_left")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_ots_14_4a", nil, "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("RDS45", "wpn_fps_ass_ots_14_4a", "a_o_45")
 end
 -- Galil ACE 23
 if self.wpn_fps_ass_galilace then
@@ -985,8 +1012,12 @@ if self.wpn_fps_ass_galilace then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_galilace", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_galilace", "wpn_fps_ass_galilace")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_galilace", "wpn_fps_ass_ak5")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_galilace")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_galilace")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_galilace")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_galilace")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_galilace")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_galilace_gadgets_leftrail", "a_fl_leftrail")
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace_barrel_ace21", "a_of_short")
 end
 -- Galil ACE 7.62
@@ -997,7 +1028,10 @@ if self.wpn_fps_ass_galilace762 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_galilace762", "wpn_fps_ass_fal")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_galilace762", "wpn_fps_ass_galilace762")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_galilace762", "wpn_fps_ass_fal")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_galilace762")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_galilace762")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_galilace762")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_galilace762")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_galilace762")
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace762_barrel_med", "a_of_short")
 	self:cafcw_part_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_upg_galilace762_barrel_short", "a_of_short")
@@ -1008,7 +1042,9 @@ if self.wpn_fps_shot_mp153 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_mp153", "wpn_fps_sho_ben")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_mp153", "wpn_fps_sho_ben")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_mp153", "wpn_fps_sho_ben")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_mp153")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_mp153")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_mp153")
 end
 -- HK416
 if self.wpn_fps_ass_hk416 then
@@ -1018,9 +1054,16 @@ if self.wpn_fps_ass_hk416 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_hk416", "wpn_fps_ass_m4")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_hk416", "wpn_fps_ass_hk416")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_hk416", "wpn_fps_ass_m4")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_hk416")
 	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_hk416")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_hk416")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_hk416")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_hk416")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_hk416")
 	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_hk416_fl_toprail")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_hk416_fl_leftrail", "a_fl_left")
+	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_hk416_fl_toprail", "a_fl_top")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_hk416", nil, "foregrip")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_hk416", nil, "foregrip")
 end
 -- SVD
@@ -1071,6 +1114,7 @@ if self.wpn_fps_snp_cs5 then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_snp_cs5", "wpn_fps_snp_cs5")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_SniperStats_Custom", "wpn_fps_snp_cs5", "wpn_fps_snp_msr")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_snp_cs5")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_cs5")
 end
 -- Akimbo Magpul FMG-9
@@ -1086,7 +1130,9 @@ if self.wpn_fps_ass_ar18 then
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_ar18", "wpn_fps_ass_ak5", "wpn_fps_ass_ar18_sight_rail")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_ar18", "wpn_fps_ass_ar18")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_ar18", "wpn_fps_ass_ak5", "wpn_fps_ass_ar18_sight_rail")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_ar18")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_ar18")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_ar18")
 end
 -- TOZ-34
 if self.wpn_fps_shot_toz34 then
@@ -1123,6 +1169,8 @@ if self.wpn_fps_ass_obr5 then
 	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_ass_obr5", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_obr5", "wpn_fps_ass_obr5")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_obr5", "wpn_fps_snp_tti")
+	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_obr5")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_obr5")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_obr5")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_obr5", nil, "foregrip")
 end
@@ -1131,6 +1179,7 @@ if self.wpn_fps_snp_moss464spx then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_moss464spx", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_moss464spx", "wpn_fps_snp_tti")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_moss464spx", "wpn_fps_snp_tti")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_snp_moss464spx")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_moss464spx")
 end
 -- AK-12 (2014 model)
@@ -1139,27 +1188,41 @@ if self.wpn_fps_ass_ak12_2014 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_ak12_2014", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_ak12_2014", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_ak12_2014", "wpn_fps_ass_ak12_2014")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_ak12_2014")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_ak12_2014")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_ak12_2014")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_ak12_2014")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_ak12_2014", nil, "foregrip")
 end
 -- M60E4
 if self.wpn_fps_lmg_m60e4 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_m60e4", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_m60e4", "wpn_fps_ass_amcar")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_m60e4", "wpn_fps_ass_amcar")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_m60e4")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_m60e4")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_m60e4")
+	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_lmg_m60e4", nil, "upper_reciever")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_lmg_m60e4", nil, "upper_reciever")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_lmg_m60e4", nil, "upper_reciever")
 end
 -- M1A1 Carbine
 if self.wpn_fps_ass_m1a1 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_m1a1")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_m1a1")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_m1a1")
 end
 -- SIG KE7
 if self.wpn_fps_lmg_sigke7 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_sigke7", "wpn_fps_ass_fal")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_sigke7", "wpn_fps_ass_fal")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_sigke7", "wpn_fps_ass_fal")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_sigke7")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_sigke7")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_sigke7")
 end
 -- Barrett M107CQ
 if self.wpn_fps_snp_m107cq then
@@ -1247,12 +1310,11 @@ if self.wpn_fps_ass_owlfbullpup then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_owlfbullpup")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_ass_owlfbullpup", "wpn_fps_ass_m16_alt", nil, "0,-6,0")
 end
--- M16 M203
-if self.wpn_fps_ass_arn87 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_arn87", "wpn_fps_ass_m16")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_arn87")
+-- Fazertron
+if self.wpn_fps_ass_fazertron then
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_fazertron")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_fazertron")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_fazertron")
 end
 -- Secondary
 -- PPSh-41
@@ -1260,7 +1322,11 @@ if self.wpn_fps_smg_ppsh then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_ppsh", "wpn_fps_smg_thompson")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_ppsh", "wpn_fps_smg_thompson")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_ppsh", "wpn_fps_smg_thompson")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_ppsh")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_ppsh")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_ppsh")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_smg_ppsh_barrel")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_smg_ppsh_barrel")
 end
 -- Marlin Model 1894 Custom
 if self.wpn_fps_snp_m1894 then
@@ -1289,40 +1355,79 @@ if self.wpn_fps_smg_ppk20 then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_ppk20", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_ppk20", "wpn_fps_ass_ak5")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_smg_ppk20", "wpn_fps_ass_ak5")
+	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_smg_ppk20")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_ppk20")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_ppk20")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_ppk20")
 	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_ppk20_rail_midwest")
 	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_ppk20_rail_zenit")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_upg_ppk20_handguard_terminator_forbids")
+	self:cafcw_wpn_a_obj_pattern_override("Specter", "wpn_fps_smg_ppk20", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("ACOG", "wpn_fps_smg_ppk20", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("Custom", "wpn_fps_smg_ppk20", nil, "extra")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_smg_ppk20", nil, "foregrip")
 end
 -- APS
 if self.wpn_fps_pis_aps then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_aps", "_9x19mm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_aps", "_9x19mm_ac")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_aps")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_aps", "wpn_fps_pis_aps_gadget_rail")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_aps")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_upg_aps_barrel_portedextra")
+	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_aps_barrel_ported")
+	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_aps_barrel_portedextra")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_aps", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_aps", "a_ns", "barrel")
 end
 -- S&W M&P40
 if self.wpn_fps_pis_swmp40 then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", "wpn_fps_pis_swmp40_sight_dummy")
 	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_swmp40", "wpn_fps_pis_rage", "wpn_fps_pis_swmp40_sight_dummy")
 	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_swmp40", "wpn_fps_pis_sparrow", nil, "-0,0,0.2")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_swmp40")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_swmp40")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_swmp40")
+	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_swmp40_barrel_ported")
 	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_swmp40_sights_forbids")
 	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_swmp40_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_pis_swmp40_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom_Pistol", "wpn_fps_upg_swmp40_sight_rail")
 	self:cafcw_forbids_attachment_type("MOD_PistolIronSightsPack_Custom", "wpn_fps_upg_swmp40_sight_rail")
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_upg_swmp40_sight_rail", "a_fl_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_swmp40", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_swmp40", nil, "slide")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_swmp40", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_swmp40", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_pis_swmp40", nil, "slide")
+end
+-- Duke 1911
+if self.wpn_fps_pis_duke1911 then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_duke1911")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_duke1911", "wpn_fps_pis_duke1911_gadget_rail")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_duke1911")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_duke1911", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_duke1911", "a_ns", "barrel")
 end
 -- Walther P99
 if self.wpn_fps_pis_p99 then
 	self:cafcw_add_custom_ammo("wpn_fps_pis_p99", "_9x19mm")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_p99", "wpn_fps_pis_legacy", "wpn_fps_pis_p99_sight_dummy")
 	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_p99", "wpn_fps_pis_rage")
+	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_p99", "wpn_fps_pis_packrat", nil, "0,0,-0.3")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_p99")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_p99")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_p99")
 	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_p99_sights_forbids")
 	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_p99_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_pis_p99_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom_Pistol", "wpn_fps_upg_p99_sight_rail")
 	self:cafcw_forbids_attachment_type("MOD_PistolIronSightsPack_Custom", "wpn_fps_upg_p99_sight_rail")
-	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_p99", nil, "slide")
-	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_pis_p99", nil, "slide")
+	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_p99_barrel_ported")
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_upg_p99_sight_rail", "a_fl_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_p99", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_p99", nil, "slide")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_p99", "a_ns", "barrel")
 end
 -- Steyr AUG A3 9mm XS
 if self.wpn_fps_smg_aug9mm then
@@ -1330,19 +1435,31 @@ if self.wpn_fps_smg_aug9mm then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_aug9mm", "wpn_fps_smg_mp9")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_aug9mm", "wpn_fps_smg_mp9")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_NoScorpEvo_Custom", "wpn_fps_smg_aug9mm", "wpn_fps_smg_mp9")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_aug9mm")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_aug9mm")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_aug9mm")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_smg_aug9mm")
 end
 -- Mauser M712 Schnellfeuer
 if self.wpn_fps_pis_m712 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_m712")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_m712", "wpn_fps_pis_m712_gadget_rail")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_m712")
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_m712", "wpn_fps_pis_packrat", "wpn_fps_pis_m712_sight_adapt")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_m712", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_m712", nil, false)
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_m712", "a_ns", "barrel")
 end
 -- Beretta Px4 Storm
 if self.wpn_fps_pis_px4 then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_px4", "wpn_fps_pis_sparrow", "wpn_fps_pis_px4_sight_dummy")
 	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_px4", "wpn_fps_pis_sparrow")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_px4")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_px4")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_px4")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_px4", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_px4", nil, "slide")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_px4", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_px4", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_pis_px4", nil, "slide")
 end
@@ -1351,10 +1468,18 @@ if self.wpn_fps_smg_pps43 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_pps43", "wpn_fps_smg_m45", "wpn_fps_smg_pps43_rail")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_pps43", "wpn_fps_smg_m45", "wpn_fps_smg_pps43_rail")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_pps43", "wpn_fps_smg_m45", "wpn_fps_smg_pps43_rail")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_pps43")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_pps43")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_pps43")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions", "wpn_fps_smg_pps43_barrel")
+	self:cafcw_forbids_attachment_type("Suppressors", "wpn_fps_smg_pps43_barrel")
 end
 -- Chiappa Rhino 60DS
 if self.wpn_fps_pis_rhino then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_rhino")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_rhino", "wpn_fps_pis_rhino_gadget_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_rhino", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_pis_rhino", nil, "barrel")
 	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_upg_rhino_barrel_200ds")
 	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_upg_rhino_barrel_200ds")
 	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_upg_rhino_barrel_200ds")
@@ -1364,10 +1489,23 @@ if self.wpn_fps_pis_unica6 then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_pis_unica6", "wpn_fps_pis_rage")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_pis_unica6", "wpn_fps_pis_rage")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_pis_unica6", "wpn_fps_pis_rage")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_unica6")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_unica6", "wpn_fps_pis_unica6_gadget_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_unica6", "a_ns", "barrel")
 end
 -- HX25 Handheld Grenade Launcher
 if self.wpn_fps_gre_hx25 then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_gre_hx25", "wpn_fps_pis_lemming")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_gre_hx25")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_gre_hx25", nil, false)
+end
+-- Zenith 10mm
+if self.wpn_fps_pis_zenith then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_zenith")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_zenith")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_zenith")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_zenith", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_zenith", "a_ns", "barrel")
 end
 -- KS-23
 if self.wpn_fps_shot_ks23 then
@@ -1378,10 +1516,12 @@ if self.wpn_fps_shot_ks23 then
 end
 -- Widowmaker TX
 if self.wpn_fps_shot_wmtx then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_wmtx")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_wmtx")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_wmtx")
 end
 -- CBRPS SKS Pug
 if self.wpn_fps_ass_skspug then
@@ -1390,7 +1530,9 @@ if self.wpn_fps_ass_skspug then
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_skspug", "wpn_fps_sho_basset")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_skspug", "wpn_fps_sho_basset")
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_ass_skspug", "wpn_fps_sho_basset")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_skspug")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_skspug")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_skspug")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_IronSightsPack_Front", "wpn_fps_ass_skspug", nil, "foregrip")
 end
 -- Glock 19
@@ -1399,12 +1541,19 @@ if self.wpn_fps_pis_g19 then
 	self:cafcw_add_custom_sights("CustomSmall", "wpn_fps_pis_g19", "wpn_fps_pis_rage")
 	self:cafcw_add_custom_sights("SpecterSmall", "wpn_fps_pis_g19", "wpn_fps_pis_rage")
 	self:cafcw_add_custom_sights("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_g19", "wpn_fps_pis_lemming")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_g19")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_g19")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_g19")
 	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_g19_sights_forbids")
 	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_g19_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom", "wpn_fps_pis_g19_sights_forbids")
 	self:cafcw_forbids_attachment_type("Custom_Pistol", "wpn_fps_upg_g19_sight_mount")
 	self:cafcw_forbids_attachment_type("MOD_PistolIronSightsPack_Custom", "wpn_fps_upg_g19_sight_mount")
+	self:cafcw_part_a_obj_pattern_override("Gadgets_Pistol", "wpn_fps_upg_g19_sight_mount", "a_fl_rail")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_g19", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_g19", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("CustomSmall", "wpn_fps_pis_g19", "a_o_alt")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_g19", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Custom", "wpn_fps_pis_g19", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("MOD_PistolIronSightsPack_Front", "wpn_fps_pis_g19", nil, "slide")
 end
@@ -1413,11 +1562,26 @@ if self.wpn_fps_shot_jackhammer then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
 	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
 	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_jackhammer", "wpn_fps_sho_rota")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_jackhammer")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_jackhammer")
+	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_jackhammer")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_jackhammer_barrel")
+	self:cafcw_forbids_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_upg_jackhammer_barrel_supp")
+	self:cafcw_forbids_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_jackhammer_barrel")
+	self:cafcw_forbids_attachment_type("Suppressors_Shotgun", "wpn_fps_upg_jackhammer_barrel_supp")
 end
 -- SW Model 27
 if self.wpn_fps_pis_sw27 then
 	self:cafcw_add_attachment_type("MOD_RevolverGadgets", "wpn_fps_pis_sw27")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_sw27")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_sw27", "a_ns", "barrel")
+end
+-- Mars Automatic
+if self.wpn_fps_pis_mars then
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mars")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_mars", "wpn_fps_pis_ppk_fl_mount")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mars")
+	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_mars", "a_ns", "barrel")
+	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_mars", "a_ns", "barrel")
 end
 -- Sidekick
 if self.wpn_fps_smg_uzi_lowang then
