@@ -59,7 +59,6 @@ attach_tables.AR15_Stocks = {
 	"wpn_fps_upg_m4_s_gen2",
 	"wpn_fps_upg_s_gitsm4",
 	"wpn_fps_sho_sko12_stock", -- DLC
-	"wpn_fps_m4_uupg_s_zulu", -- U232 DLC
 	"wpn_fps_snp_victor_s_mod0" -- U232
 }
 attach_tables.Barrel_Extensions = {
@@ -72,7 +71,8 @@ attach_tables.Barrel_Extensions = {
 	"wpn_fps_upg_ns_gits_dildo_h",
 	"wpn_fps_upg_ns_gits_another_h",
 	"wpn_fps_upg_ns_gits_sorrycarl_l",
-	"wpn_fps_ass_shak12_ns_muzzle" -- DLC
+	"wpn_fps_ass_shak12_ns_muzzle", -- DLC
+	"wpn_fps_lmg_kacchainsaw_ns_muzzle" -- DLC U236
 }
 attach_tables.Barrel_Extensions_Shotgun = {
 	"wpn_fps_upg_ns_shot_gk_01",
@@ -115,7 +115,8 @@ attach_tables.Suppressors = {
 	"wpn_fps_upg_ns_gits_generic_s",
 	"wpn_fps_ass_ns_g_mnstr",
 	"wpn_fps_ass_ns_g_rc2",
-	"wpn_fps_ass_ns_g_wave"
+	"wpn_fps_ass_ns_g_wave",
+	"wpn_fps_lmg_kacchainsaw_ns_suppressor" -- DLC U236
 }
 attach_tables.Suppressors_Shotgun = {
 	"wpn_fps_upg_ns_sho_salvo_small",
@@ -307,7 +308,9 @@ attach_tables.CustomSmall = {
 attach_tables.Custom_Sniper = {
 	"wpn_fps_upg_o_1p69",
 	"wpn_fps_upg_o_deltatitanium",
-	"wpn_fps_upg_o_csgoscope"
+	"wpn_fps_upg_o_csgoscope",
+	"wpn_fps_upg_o_schmidt", -- DLC U236
+	"wpn_fps_upg_o_schmidt_magnified" -- DLC U236
 }
 attach_tables.Custom_Pistol = {
 	"wpn_fps_upg_o_deltapoint",
