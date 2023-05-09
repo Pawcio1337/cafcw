@@ -1622,4 +1622,20 @@ if self.parts.wpn_fps_aug_body_aug_a1 and self.parts.wpn_fps_aug_body_aug_a3 the
 	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a1")
 	self:cafcw_forbids_attachment_type("Vertical_Grips", "wpn_fps_aug_body_aug_a3")
 end
+-- Working Taktika Rail Receiver
+if self.parts.wpn_fps_upg_o_ak_taikrail and self.parts.wpn_fps_upg_o_akmsu_taikrail then
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_ak_taikrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_ak_taikrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_ak_taikrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_akmsu_taikrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_akmsu_taikrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_akmsu_taikrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
+	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
+	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_o_ak_taikrail")
+end
 end)
