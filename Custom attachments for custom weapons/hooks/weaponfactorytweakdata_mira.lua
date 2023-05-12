@@ -591,4 +591,13 @@ if self.wpn_fps_ass_fsbcustom then
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_ass_fsbcustom", nil, "foregrip")
 	self:cafcw_add_custom_ammo("wpn_fps_ass_fsbcustom", "_545x39mm")
 end
+-- Thompson SMG
+if self.wpn_fps_smg_tommy then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_tommy", "wpn_fps_smg_thompson", "wpn_fps_smg_thompson_o_adapter")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_tommy", "wpn_fps_smg_thompson", "wpn_fps_smg_thompson_o_adapter")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_tommy", "wpn_fps_smg_thompson", "wpn_fps_smg_thompson_o_adapter")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_smg_tommy")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_smg_tommy")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_tommy", "wpn_fps_smg_thompson_fl_adapter")
+end
 end)
