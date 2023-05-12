@@ -802,7 +802,11 @@ ammo_table._12ga_mag = {
 			end
 		else
 			if self.parts[part_id] then
-				table.insert(self[wpn_or_part_id].uses_parts, part_id)
+				if self[wpn_or_part_id] then
+					table.insert(self[wpn_or_part_id].uses_parts, part_id)
+				else
+					log("[ERROR] cafcw_add_custom_ammo: Weapon not found: " .. wpn_or_part_id)
+				end
 			end
 		end
 	end
@@ -1323,6 +1327,13 @@ if self.wpn_fps_ass_fazertron then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_fazertron")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_fazertron")
 end
+-- Lewis Gun
+if self.wpn_fps_lmg_lewis then
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_lewis")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_lewis")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_lewis")
+	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_lmg_lewis", nil, "barrel")
+end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
@@ -1630,12 +1641,6 @@ if self.parts.wpn_fps_upg_o_ak_taikrail and self.parts.wpn_fps_upg_o_akmsu_taikr
 	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_akmsu_taikrail", nil, "extra_rail")
 	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_akmsu_taikrail", nil, "extra_rail")
 	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_akmsu_taikrail", nil, "extra_rail")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_asval_coverrail", nil, "extra_rail")
-	self:cafcw_part_a_obj_pattern_override("Custom", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
-	self:cafcw_part_a_obj_pattern_override("Specter", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
-	self:cafcw_part_a_obj_pattern_override("ACOG", "wpn_fps_upg_o_coal_coverrail", nil, "extra_rail")
 	self:cafcw_forbids_attachment_type("MOD_IronSightsPack_Custom", "wpn_fps_upg_o_ak_taikrail")
 end
 end)
