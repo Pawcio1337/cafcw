@@ -111,12 +111,16 @@ if self.wpn_fps_pis_pm then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_pm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_pm", "_9x19mm")
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_pm", "wpn_fps_pis_shrew", "wpn_fps_pis_pm_o_adapter")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_pm", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_x_pm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_x_pm", "_9x19mm")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_x_pm", "wpn_fps_pis_pm_fl_rail")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_xs_pm")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_xs_pm")
 	self:cafcw_add_custom_ammo("wpn_fps_pis_xs_pm", "_9x19mm")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_xs_pm", "wpn_fps_pis_pm_fl_rail")
 end
 
 -- QBS-09
@@ -287,7 +291,7 @@ if self.parts.wpn_fps_upg_galil_scope_mount then
 end
 
 --MTs-255
-if self.wpn_fps_shot_mts255 then
+if self.wpn_fps_shot_mts255 and self.wpn_fps_shot_x_mts255 and self.wpn_fps_shot_s_mts255 then
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_shot_mts255_b_short", "a_fl_short")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_shot_mts255_b_obrez", "a_fl_obrez")
 	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_shot_mts255_ghost_rail", "a_fl_ghost")
