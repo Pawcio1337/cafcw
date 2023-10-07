@@ -452,15 +452,14 @@ end
 
 --MW2022 MCX
 if self.wpn_fps_ass_mcharlie_2022 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mcharlie_2022", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mcharlie_2022", "wpn_fps_ass_m4")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mcharlie_2022", "wpn_fps_ass_m4")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mcharlie_2022", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mcharlie_2022", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mcharlie_2022", "wpn_fps_ass_m16")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mcharlie_2022")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mcharlie_2022")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mcharlie_2022")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_mcharlie_2022")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_mcharlie_2022")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_mcharlie_2022")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_mcharlie_2022")
 end
 
@@ -474,7 +473,6 @@ if self.wpn_fps_ass_ralpha then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_ralpha")
 	self:cafcw_add_attachment_type("AR15_Stocks", "wpn_fps_ass_ralpha")
 	self:cafcw_add_attachment_type("AR15_Grips", "wpn_fps_ass_ralpha")
-	self:cafcw_add_attachment_type("AR15_Magazines", "wpn_fps_ass_ralpha")
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_ralpha")
 end
 
@@ -625,6 +623,23 @@ if self.wpn_fps_snp_sbeta then
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_sbeta")
 end
 
+-- MW2022 Malyuk
+if self.wpn_fps_ass_malima then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_malima", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_malima", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_malima", "wpn_fps_ass_flint")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_malima")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_malima")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_malima")
+end
+
+-- MW2022 Staccato P
+if self.wpn_fps_pis_mike2011 then
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_mike2011", "wpn_fps_pis_packrat")
+	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mike2011")
+	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mike2011")
+end
+
 -- BOCW Stoner 63
 if self.wpn_fps_lmg_stoner63a then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_stoner63a", "wpn_fps_ass_amcar")
@@ -752,6 +767,17 @@ if self.wpn_fps_ass_mcx_spear then
 	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_mcx_spear")
 end
 
+-- Parallax Studios MCX Rattler
+if self.wpn_fps_ass_mcx_rattler then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_mcx_rattler", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_mcx_rattler", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_mcx_rattler", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_mcx_rattler")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_mcx_rattler")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_mcx_rattler")
+	self:cafcw_add_attachment_type("Angled_Grips", "wpn_fps_ass_mcx_rattler")
+	self:cafcw_add_attachment_type("Vertical_Grips", "wpn_fps_ass_mcx_rattler")
+end
 
 -- Parallax Studios SIG SAUER MCX VIRTUS
 if self.wpn_fps_ass_mcx_virtus then
