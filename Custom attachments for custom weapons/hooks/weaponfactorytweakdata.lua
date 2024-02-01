@@ -244,13 +244,17 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_mw2022_minireddot04_tall",
 	"wpn_fps_upg_o_mw2022_reflex07",
 	"wpn_fps_upg_o_mw2022_holotherm01",
-	"wpn_fps_upg_o_bocw_kobra",
-	"wpn_fps_upg_o_bocw_milstop",
 	"wpn_fps_upg_o_bocw_axial_3x",
-	"wpn_fps_upg_o_bocw_quickshot_led",
+	"wpn_fps_upg_o_bocw_hawksmoor",
 	"wpn_fps_upg_o_bocw_holoscout",
-	"wpn_fps_upg_o_bocw_xm4_v18_acog",
+	"wpn_fps_upg_o_bocw_kobra",
+	"wpn_fps_upg_o_bocw_microflex",
+	"wpn_fps_upg_o_bocw_milstop",
+	"wpn_fps_upg_o_bocw_quickshot_led",
+	"wpn_fps_upg_o_bocw_royal_kross",
+	"wpn_fps_upg_o_bocw_snappoint",
 	"wpn_fps_upg_o_bocw_visiontech",
+	"wpn_fps_upg_o_bocw_xm4_v18_acog",
 	"wpn_fps_upg_o_mw2_re_red_dot",
 	"wpn_fps_upg_o_mw2_re_acog",
 	"wpn_fps_snp_sako_85_scope_standalone",
@@ -260,6 +264,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_aimpoint_t2",
 	"wpn_fps_upg_o_aimpoint_t2_hydra",
 	"wpn_fps_upg_o_eotech_hydra",
+	"wpn_fps_upg_o_wilcox_boss_xe",
 	"wpn_fps_upg_o_vk78_standalone_sight",
 	"wpn_fps_upg_o_bf2042_vector_talos",
 	"wpn_fps_upg_o_sig_sauer_romeo8",
@@ -268,6 +273,7 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_vortex_xm157",
 	"wpn_fps_upg_o_atacr735",
 	"wpn_fps_upg_o_march",
+	"wpn_fps_upg_o_burristac",
 	"wpn_fps_upg_o_dxsv4",
 	"wpn_fps_upg_o_vudu",
 	"wpn_fps_upg_o_ta01",
@@ -1227,12 +1233,21 @@ if self.wpn_fps_lmg_m60e4 then
 end
 -- M1A1 Carbine
 if self.wpn_fps_ass_m1a1 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1a1", "wpn_fps_ass_s552")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m1a1", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m1a1", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m1a1", "wpn_fps_ass_m16")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_m1a1")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_m1a1")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_m1a1")
+end
+-- M2 Carbine
+if self.wpn_fps_ass_m2 then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_m2", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_m2", "wpn_fps_ass_m16")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_m2", "wpn_fps_ass_m16")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_m2")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_m2")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_m2")
 end
 -- SIG KE7
 if self.wpn_fps_lmg_sigke7 then
