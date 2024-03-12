@@ -244,6 +244,10 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_mw2022_minireddot04_tall",
 	"wpn_fps_upg_o_mw2022_reflex07",
 	"wpn_fps_upg_o_mw2022_holotherm01",
+	"wpn_fps_upg_o_talent_minireddot01",
+	"wpn_fps_upg_o_talent_reflex03",
+	"wpn_fps_upg_o_talent_reflex04",
+	"wpn_fps_upg_o_talent_twofivex04",
 	"wpn_fps_upg_o_bocw_axial_3x",
 	"wpn_fps_upg_o_bocw_hawksmoor",
 	"wpn_fps_upg_o_bocw_holoscout",
@@ -267,8 +271,10 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_wilcox_boss_xe",
 	"wpn_fps_upg_o_vk78_standalone_sight",
 	"wpn_fps_upg_o_bf2042_vector_talos",
+	"wpn_fps_upg_o_sig_sauer_romeo4t",
 	"wpn_fps_upg_o_sig_sauer_romeo8",
 	"wpn_fps_upg_o_sig_sauer_tango6t",
+	"wpn_fps_upg_o_sig_sauer_romeo9t",
 	"wpn_fps_upg_o_pd3_lynx_scope",
 	"wpn_fps_upg_o_vortex_xm157",
 	"wpn_fps_upg_o_atacr735",
@@ -1357,6 +1363,13 @@ if self.wpn_fps_lmg_lewis then
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_lewis")
 	self:cafcw_wpn_a_obj_pattern_override("Gadgets", "wpn_fps_lmg_lewis", nil, "barrel")
 end
+-- Martini-Henry
+if self.wpn_fps_snp_martinihenry then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_martinihenry", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_martinihenry", "wpn_fps_snp_model70")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_martinihenry", "wpn_fps_snp_model70")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_martinihenry")
+end
 -- Secondary
 -- PPSh-41
 if self.wpn_fps_smg_ppsh then
@@ -1557,9 +1570,9 @@ if self.wpn_fps_shot_ks23 then
 end
 -- Widowmaker TX
 if self.wpn_fps_shot_wmtx then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_wmtx", "wpn_fps_smg_coal")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_shot_wmtx", "wpn_fps_sho_rota")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_wmtx")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_wmtx")
 	self:cafcw_add_attachment_type("Suppressors_Shotgun", "wpn_fps_shot_wmtx")
@@ -1633,6 +1646,12 @@ end
 -- FP-45 Liberator
 if self.wpn_fps_pis_fp45 then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_fp45", "wpn_fps_pis_rage")
+end
+-- Mosin Nagant Obrez
+if self.wpn_fps_snp_obrez then
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_snp_obrez", "wpn_fps_pis_lemming")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_snp_obrez", "wpn_fps_pis_ppk_fl_mount")
+	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_snp_obrez", nil, false)
 end
 -- Attachments
 -- AK Rail Cover

@@ -222,10 +222,6 @@ if self.wpn_fps_pis_x_sw642 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw642")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_x_sw642", "a_ns", "barrel")
 end
--- Martini-Henry
-if self.wpn_fps_snp_martinihenry then
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_martinihenry")
-end
 -- Barrett XM109
 if self.wpn_fps_snp_pew107cqb then
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_pew107cqb", "wpn_fps_snp_siltstone")
@@ -569,15 +565,6 @@ if self.wpn_fps_pis_plr16 then
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_pis_plr16")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_pis_plr16")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_pis_plr16")
-end
--- Mosin Nagant M9130 Obrez
-if self.wpn_fps_snp_obrez then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_snp_obrez", "wpn_fps_snp_mosin", "wpn_fps_snp_obrez_sightrail")
-	self:cafcw_add_custom_ammo("wpn_fps_snp_obrez", "_762x54mmr")
-	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_obrez")
-	self:cafcw_part_a_obj_pattern_override("Gadgets", "wpn_fps_upg_obrez_gadgets_rail", "a_fl_rail")
 end
 -- AP Pistol
 if self.wpn_fps_pis_appistol then
