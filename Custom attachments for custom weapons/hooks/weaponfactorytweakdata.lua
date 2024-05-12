@@ -134,6 +134,9 @@ attach_tables.Suppressors_Pistol = {
 	"wpn_fps_upg_ns_pis_putnik" -- U218
 }
 attach_tables.Angled_Grips = {
+	"wpn_fps_upg_afg_bcm_kag",
+	"wpn_fps_upg_afg_larue_handstop",
+	"wpn_fps_upg_afg_magpul_afg",
 	"wpn_fps_upg_vg_mw2022_angled01", 
 	"wpn_fps_upg_vg_mw2022_angled02", 
 	"wpn_fps_upg_vg_mw2022_angled04", 
@@ -171,6 +174,7 @@ attach_tables.Vertical_Grips = {
 	"wpn_fps_upg_vg_shift",
 	"wpn_fps_upg_vg_stark",
 	"wpn_fps_upg_vg_stub",
+	"wpn_fps_upg_vg_railscales_ldag",
 	"wpn_fps_upg_vg_td_alum",
 	"wpn_fps_upg_vg_uvg",
 	"wpn_fps_upg_vg_sand",
@@ -247,6 +251,8 @@ attach_tables.Custom = {
 	"wpn_fps_upg_o_talent_minireddot01",
 	"wpn_fps_upg_o_talent_reflex03",
 	"wpn_fps_upg_o_talent_reflex04",
+	"wpn_fps_upg_o_talent_reflex05",
+	"wpn_fps_upg_o_talent_reflex07",
 	"wpn_fps_upg_o_talent_twofivex04",
 	"wpn_fps_upg_o_bocw_axial_3x",
 	"wpn_fps_upg_o_bocw_hawksmoor",
@@ -479,7 +485,6 @@ attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_okp7_dove"
 }
 -- Unique attachment tables to exclude specific attachments for custom weapon. Only exception are Iron Sights Pack and Pistol Iron Sights Pack mods.
-
 -- Attachments tables end
 function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, add_id)
 	if type(attach_tables[attach_type]) == "table" then
@@ -548,7 +553,7 @@ function WeaponFactoryTweakData:cafcw_add_custom_sights(sight_base, wpn_id, stan
 						end
 					end
 					if offset and self.parts[sight_id].stance_mod[wpn_id].translation then
-						self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[wpn_id].translation + offset:ToVector3())
+						self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[wpn_id].translation + LuaNetworking:StringToVector3(offset))
 					end
 				end
 				if switch_id then
@@ -829,56 +834,6 @@ ammo_table._12ga_mag = {
 				end
 			end
 		end
-	end
-end
-function WeaponFactoryTweakData:cafcw_add_custom_sights_ext(sight_base, wpn_id, stance_wpn_id, custom_stance, add_id, add_id_two)
-	if type(attach_tables[sight_base]) == "table" then
-		for i, sight_id in pairs(attach_tables[sight_base]) do
-			if self.parts[sight_id] then
-				if sight_base == "ACOG" then
-					sight_base = "wpn_fps_upg_o_acog"
-				elseif sight_base == "RDS45" then
-					sight_base = "wpn_fps_upg_o_45rds"
-				elseif sight_base == "Shortdot" then
-					sight_base = "wpn_fps_upg_o_shortdot"
-				elseif sight_base == "Specter" then
-					sight_base = "wpn_fps_upg_o_specter"
-				end
-				table.insert(self[wpn_id].uses_parts, sight_id)
-				if string.match(sight_base, "Custom") then
-					if custom_stance then
-						if self.parts[sight_id].stance_mod[stance_wpn_id] then
-							self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_id].stance_mod[stance_wpn_id])
-							self.parts[sight_id].stance_mod[wpn_id].translation = (self.parts[sight_id].stance_mod[stance_wpn_id].translation + custom_stance:ToVector3())
-						else
-							log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id)
-						end
-					end
-				else
-					if custom_stance then
-						if self.parts[sight_base].stance_mod[stance_wpn_id] then
-							self.parts[sight_id].stance_mod[wpn_id] = deep_clone(self.parts[sight_base].stance_mod[stance_wpn_id])
-							self.parts[sight_id].stance_mod[wpn_id].translation = custom_stance:ToVector3()
-						else
-							log("[ERROR] CAFCW: Missing required stance_mod: " .. wpn_id, sight_id, stance_wpn_id, sight_base)
-						end
-					end
-				end
-			end
-			if self.parts[add_id] then
-				if self[wpn_id].adds then
-					if self.parts[add_id_two] then
-						self[wpn_id].adds[sight_id] = {add_id,add_id_two}
-					else
-						self[wpn_id].adds[sight_id] = {add_id}
-					end
-				else
-					log("[ERROR] CAFCW: Missing adds table: " .. wpn_id, sight_id, add_id)
-				end
-			end
-		end
-	else
-		log("[ERROR] cafcw_add_custom_sights_ext: Incorrect sight_base ID used: " .. sight_base, wpn_id, stance_wpn_id)
 	end
 end
 function WeaponFactoryTweakData:cafcw_category_forbid(wpn_id, cat_id, attach_id, exce_id)

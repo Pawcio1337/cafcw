@@ -1,4 +1,4 @@
-function WeaponFactoryTweakData:howa_t64_part_ovrd(sight_base, stance_wpn_id, part_ovrd_id, a_obj_new, custom_stance)
+--[[function WeaponFactoryTweakData:howa_t64_part_ovrd(sight_base, stance_wpn_id, part_ovrd_id, a_obj_new, custom_stance)
 
 	for i, sight_id in pairs(attach_tables[sight_base]) do
 
@@ -49,7 +49,7 @@ function WeaponFactoryTweakData:howa_t64_part_ovrd(sight_base, stance_wpn_id, pa
 		
 	end
 
-end
+end]]
 
 
 Hooks:PostHook(WeaponFactoryTweakData, "create_bonuses", "CAFCWMod_Alcat_Init", function(self)
@@ -68,12 +68,12 @@ if self.wpn_fps_ass_howa then
 self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_howa", "wpn_fps_ass_howa", "wpn_fps_ass_howa_body_rail")
 self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_howa", "wpn_fps_ass_howa", "wpn_fps_ass_howa_body_rail")
 self:cafcw_add_custom_sights("RDS45", "wpn_fps_ass_howa", "wpn_fps_ass_howa")
-self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_howa", "wpn_fps_ass_ak5", "0,0,0.75", "wpn_fps_ass_howa_body_rail")--[[originally 0,0,0.75]]
---t64 part kit changes a_o point
+--self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_howa", "wpn_fps_ass_ak5", "0,0,0.75", "wpn_fps_ass_howa_body_rail")--[[originally 0,0,0.75]]
+--[[t64 part kit changes a_o point
 self:howa_t64_part_ovrd("Specter", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-2,-3.875")
 self:howa_t64_part_ovrd("ACOG", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,-4,-3.875")
 self:howa_t64_part_ovrd("RDS45", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "-0.375,0,-13.5")
-self:howa_t64_part_ovrd("Custom", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,0,-1.125")--[[originally 0,0,-1]]
+self:howa_t64_part_ovrd("Custom", "wpn_fps_ass_howa", "wpn_fps_ass_howa_t64_body", "a_o_t64", "0,0,-1.125")--[[originally 0,0,-1]]]]
 
 --adds in pso-1 scope support later
 
@@ -89,7 +89,7 @@ end
 
 --Browning LMG
 if self.wpn_fps_ass_bar then
-self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_ass_bar", "wpn_fps_ass_fal", "0,4,0.9", "wpn_fps_ass_bar_ironsight") --original specter 0, 4, -3.5 || PVM xyz || wpn_fps_ass_bar_ironsight 0,0,-0.5
+--self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_ass_bar", "wpn_fps_ass_fal", "0,4,0.9", "wpn_fps_ass_bar_ironsight") --original specter 0, 4, -3.5 || PVM xyz || wpn_fps_ass_bar_ironsight 0,0,-0.5
 
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_bar")
 self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_bar")
@@ -109,7 +109,7 @@ end
 
 --Trench Gun
 if self.wpn_fps_shot_trench then
-self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_shot_trench", "wpn_fps_shot_r870", "0,-6,0.3") --original specter 0.01, 0, -3.3 || PVM 0.01 -6 -3
+--self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_shot_trench", "wpn_fps_shot_r870", "0,-6,0.3") --original specter 0.01, 0, -3.3 || PVM 0.01 -6 -3
 
 self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_trench")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_trench")
@@ -121,7 +121,7 @@ end
 
 --Browning A5
 if self.wpn_fps_shot_auto5 then
-self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_shot_auto5", "wpn_fps_sho_ben", "0,-4,1.8") --original specter 0, 0, -3.2 || PVM "0 -4 -1.4" || wpn_fps_shot_auto5_irons 0,0,1
+--self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_shot_auto5", "wpn_fps_sho_ben", "0,-4,1.8") --original specter 0, 0, -3.2 || PVM "0 -4 -1.4" || wpn_fps_shot_auto5_irons 0,0,1
 
 self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_auto5")
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_auto5")
@@ -419,7 +419,7 @@ end
 if self.wpn_fps_ass_akrocket then
 self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_akrocket", "wpn_fps_ass_akrocket", "wpn_fps_ass_akrocket_o_rail")
 self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_akrocket", "wpn_fps_ass_akrocket", "wpn_fps_ass_akrocket_o_rail")
-self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_akrocket", "wpn_fps_smg_akmsu", "0,5,1.47", "wpn_fps_ass_akrocket_o_rail")
+--self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_ass_akrocket", "wpn_fps_smg_akmsu", "0,5,1.47", "wpn_fps_ass_akrocket_o_rail")
 
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_akrocket")
 
@@ -445,9 +445,9 @@ end
 
 -- SRM 1216
 if self.wpn_fps_shot_m1216 then
-self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_shot_m1216", "wpn_fps_smg_coal", nil, "wpn_fps_shot_m1216_irons_front_folded", "wpn_fps_shot_m1216_o_adjust")
-self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_shot_m1216", "wpn_fps_smg_coal", nil, "wpn_fps_shot_m1216_irons_front_folded", "wpn_fps_shot_m1216_o_adjust")
-self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_shot_m1216", "wpn_fps_smg_coal", nil, "wpn_fps_shot_m1216_irons_front_folded", "wpn_fps_shot_m1216_o_adjust")
+--self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_shot_m1216", "wpn_fps_smg_coal", nil, "wpn_fps_shot_m1216_irons_front_folded", "wpn_fps_shot_m1216_o_adjust")
+--self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_shot_m1216", "wpn_fps_smg_coal", nil, "wpn_fps_shot_m1216_irons_front_folded", "wpn_fps_shot_m1216_o_adjust")
+--self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_shot_m1216", "wpn_fps_smg_coal", nil, "wpn_fps_shot_m1216_irons_front_folded", "wpn_fps_shot_m1216_o_adjust")
 
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_m1216")
 self:cafcw_add_attachment_type("Barrel_Extensions_Shotgun", "wpn_fps_shot_m1216")
@@ -523,10 +523,10 @@ end
 
 --Inkunzi PAW
 if self.wpn_fps_special_inkunzi then
-self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0.025,-8,-0.42")
-self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0.025,-5,-0.42")
-self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0,0,3")
-self:cafcw_add_custom_sights_ext("RDS45", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "3.48,-10,-8.46")
+-- self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0.025,-8,-0.42")
+-- self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0.025,-5,-0.42")
+-- self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "0,0,3")
+-- self:cafcw_add_custom_sights_ext("RDS45", "wpn_fps_special_inkunzi", "wpn_fps_ass_g3", "3.48,-10,-8.46")
 
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_special_inkunzi")
 end
@@ -534,9 +534,9 @@ end
 
 --SMG12
 if self.wpn_fps_mp_master then
-self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,-4.25,-0.75")
-self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,-4.25,-0.75")
-self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,5.75,2.35")
+-- self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,-4.25,-0.75")
+-- self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,-4.25,-0.75")
+-- self:cafcw_add_custom_sights_ext("Custom", "wpn_fps_mp_master", "wpn_fps_smg_mac10", "0,5.75,2.35")
 
 self:cafcw_add_attachment_type("Gadgets", "wpn_fps_mp_master")
 
@@ -546,8 +546,8 @@ end
 
 --TC Contender || remade CAFCW code when the mod is updated, preferrably with custom animation later on
 if self.wpn_fps_special_contender then
-self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,16,-3.75", "wpn_fps_special_contender_rail_optic")
-self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,12,-3.75", "wpn_fps_special_contender_rail_optic")
+-- self:cafcw_add_custom_sights_ext("Specter", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,16,-3.75", "wpn_fps_special_contender_rail_optic")
+-- self:cafcw_add_custom_sights_ext("ACOG", "wpn_fps_special_contender", "wpn_fps_special_contender", "0,12,-3.75", "wpn_fps_special_contender_rail_optic")
 end
 
 
@@ -566,7 +566,7 @@ end
 
 --Maxim 9 - The Silent Killer pack
 if self.wpn_fps_pis_max9 then
-self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_max9", "wpn_fps_pis_hs2000", "0,0,0.3")
+-- self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_max9", "wpn_fps_pis_hs2000", "0,0,0.3")
 self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_max9", nil, "lower_reciever")
 
 self:cafcw_category_forbid("wpn_fps_pis_max9", "gadget", "wpn_fps_pis_max9_b_nosup")

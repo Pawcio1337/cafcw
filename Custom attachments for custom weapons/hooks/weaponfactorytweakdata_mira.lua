@@ -148,7 +148,7 @@ if self.wpn_fps_pis_vp70 then
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_vp70")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_vp70", "a_ns")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_vp70", "a_ns")
-	self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_vp70", "wpn_fps_pis_ppk", "0,0,0")
+--	self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_vp70", "wpn_fps_pis_ppk", "0,0,0")
 	self:cafcw_clone_override("attach_table", "wpn_fps_pis_vp70", "wpn_fps_pis_vp70", "wpn_fps_upg_o_rmr", "Custom_Pistol")
 	self:cafcw_clone_override("attach_table", "wpn_fps_pis_vp70_s_scifi", "wpn_fps_pis_vp70_s_scifi", "wpn_fps_upg_o_rmr", "Custom_Pistol")
 
@@ -361,7 +361,7 @@ if self.wpn_fps_pis_lele then
 end
 -- Beretta M38A
 if self.wpn_fps_smg_m38a then
-	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_smg_m38a", "wpn_fps_smg_m45", "0,-2,0.4") --original specter m45 || PVM xyz 
+--	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_smg_m38a", "wpn_fps_smg_m45", "0,-2,0.4") --original specter m45 || PVM xyz 
 	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_smg_m38a", "a_o_clamp") 
 	
 	
@@ -406,7 +406,7 @@ if self.wpn_fps_pis_m9butcool then
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_m9butcool")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_m9butcool", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_m9butcool", "a_ns", "barrel")
-	self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_m9butcool", "wpn_fps_pis_ppk", "0,0,0")
+--	self:cafcw_add_custom_sights_ext("Custom_Pistol", "wpn_fps_pis_m9butcool", "wpn_fps_pis_ppk", "0,0,0")
 	self:cafcw_part_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_m9butcool_ro_raised", "a_rds_raised")	
 	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_m9butcool", nil, "slide")
 end

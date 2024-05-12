@@ -42,7 +42,7 @@ end
 
 --STG 44
 if self.wpn_fps_ass_stg44 then
-	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "0,22,0.2", "wpn_fps_ass_stg44_irons") --original specter g3 || PVM xyz 
+--	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_ass_stg44", "wpn_fps_ass_g3", "0,22,0.2", "wpn_fps_ass_stg44_irons") --original specter g3 || PVM xyz 
 	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_ass_stg44", "a_o_clamp") 
 	self:cafcw_forbids_attachment_type("Custom_WW2_Axis", "wpn_fps_upg_o_delta_rm55")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_stg44")
@@ -144,7 +144,7 @@ end
 
 --M3 Grease Gun
 if self.wpn_fps_smg_m3 then
-	self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_smg_m3", "wpn_fps_smg_m45", "0,-2,0.4") --original specter 0, 0, -3.9 || PVM xyz 
+--	self:cafcw_add_custom_sights_ext("Custom_WW2_Allied", "wpn_fps_smg_m3", "wpn_fps_smg_m45", "0,-2,0.4") --original specter 0, 0, -3.9 || PVM xyz 
 	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Allied", "wpn_fps_smg_m3", "a_o_glue") 	
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_smg_m3")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_m3", "wpn_fps_smg_m45", "wpn_fps_smg_m3_o_adapter")
@@ -159,7 +159,7 @@ end
 	
 --Gewehr 43
 if self.wpn_fps_snp_g43 then
-	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_snp_g43", "wpn_fps_ass_fal", "0,4,-0.2") --original specter 0, 4, -3.5 || PVM xyz 
+--	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_snp_g43", "wpn_fps_ass_fal", "0,4,-0.2") --original specter 0, 4, -3.5 || PVM xyz 
 	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_snp_g43", "a_o_clamp")
 	self:cafcw_forbids_attachment_type("Custom_WW2_Axis", "wpn_fps_upg_o_45iron")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_g43")
@@ -235,7 +235,7 @@ end
 
 --MG 34
 if self.wpn_fps_lmg_mg34 then
-	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_lmg_mg34", "wpn_fps_smg_erma", "0,4,2.66")
+--	self:cafcw_add_custom_sights_ext("Custom_WW2_Axis", "wpn_fps_lmg_mg34", "wpn_fps_smg_erma", "0,4,2.66")
 	self:cafcw_wpn_a_obj_pattern_override("Custom_WW2_Axis", "wpn_fps_lmg_mg34", "a_o_clamp")
 	self:cafcw_forbids_adds_attachment_type("Custom_WW2_Axis", "wpn_fps_lmg_mg34_o_rail")
 	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_mg34", "wpn_fps_ass_g36")

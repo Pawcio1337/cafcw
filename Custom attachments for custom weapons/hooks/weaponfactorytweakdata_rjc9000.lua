@@ -820,14 +820,17 @@ end
 
 -- Biotic Rifle
 if self.wpn_fps_snp_biotic_rifle then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_snp_biotic_rifle", "wpn_fps_snp_r93")
-	self:cafcw_add_custom_sights("Custom",  "wpn_fps_snp_biotic_rifle", "wpn_fps_snp_r93")
-	self:cafcw_add_custom_sights("ACOG",  "wpn_fps_snp_biotic_rifle", "wpn_fps_snp_r93")
-	self:cafcw_add_custom_sights("Shortdot", "wpn_fps_snp_biotic_rifle", "wpn_fps_snp_r93")
-	self:cafcw_add_custom_sights("Custom_Sniper", "wpn_fps_snp_biotic_rifle", "wpn_fps_snp_r93")
+
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_snp_biotic_rifle")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_snp_biotic_rifle")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_snp_biotic_rifle")
+end
+
+----------DOOT ------------------
+if self.wpn_fps_shot_doot_eternal_shotgun then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_shot_doot_eternal_shotgun")
+	self:cafcw_add_custom_ammo("wpn_fps_shot_doot_eternal_shotgun", "_12ga")
+
 end
 
 
@@ -837,6 +840,7 @@ end
 if self.wpn_fps_pis_katsuragi then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_katsuragi", "wpn_fps_pis_usp")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_katsuragi")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_katsuragi")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_katsuragi")
 end
 
@@ -1018,6 +1022,7 @@ if self.wpn_fps_pis_p320_xcp then
 	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_p320_xcp", "wpn_fps_pis_p226")
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_p320_xcp")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_p320_xcp")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_p320_xcp")
 end
 
 -- TKB0146 Prototype
@@ -1031,6 +1036,14 @@ if self.wpn_fps_ass_tkb0146 then
 
 end
 
+--Korth PRS
+if self.wpn_fps_pis_korth_prs then
+	self:cafcw_add_custom_sights("Custom_Pistol", "wpn_fps_pis_korth_prs", "wpn_fps_pis_sparrow")
+	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_korth_prs")
+end
+
+
+
 -- weeb scar-l
  --	if self.wpn_fps_ass_howa_type20 then
 --	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_howa_type20", "wpn_fps_ass_m4")
@@ -1043,6 +1056,26 @@ end
 -- end
 
 
+-- Madsen MG
+if self.wpn_fps_lmg_madsen_mg then
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_madsen_mg")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_madsen_mg")
+
+end
+
+--Madsen LAR
+if self.wpn_fps_ass_madsen_lar then
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_madsen_lar", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_madsen_lar", "wpn_fps_ass_flint")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_madsen_lar", "wpn_fps_ass_flint")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_madsen_lar")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_madsen_lar")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_madsen_lar")
+
+end
+
+
+
 -- Berthier Modèle 1892
 if self.wpn_fps_snp_berthier_m1892 then
 	self:cafcw_add_custom_sights("MOD_IronSightsPack_Custom", "wpn_fps_snp_berthier_m1892", "wpn_fps_snp_mosin")
@@ -1051,7 +1084,19 @@ if self.wpn_fps_snp_berthier_m1892 then
 end
 
 
+----------SCP------------------
 
+-- MG36
+if self.wpn_fps_lmg_scp_mg36 then
+	self:cafcw_add_custom_ammo("wpn_fps_lmg_scp_mg36", "_556x45mm")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_lmg_scp_mg36", "wpn_fps_ass_g36")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_lmg_scp_mg36", "wpn_fps_ass_g36")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_lmg_scp_mg36", "wpn_fps_ass_g36")
+	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_lmg_scp_mg36")
+	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_lmg_scp_mg36")
+	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_lmg_scp_mg36")
+
+end
 
 ----------John Wick/TTI------------------
 
