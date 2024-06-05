@@ -115,9 +115,9 @@ if self.wpn_fps_ass_stoy_556 then
 end
 
 if self.wpn_fps_smg_stoy_919 then
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "0,7,-5.15")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "0,5,-5.15")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "0,2,-2.5")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", nil, "0,7,-5.15")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", nil, "0,5,-5.15")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", nil, "0,2,-2.5")
 --	self:cafcw_add_custom_sights_ext("RDS45", "wpn_fps_smg_stoy_919", "wpn_fps_ass_flint", "wpn_fps_ass_stoy_556_sm_base,wpn_fps_ass_stoy_556_sm_knob", "-3.1, -2, -8.24")
 	self:cafcw_add_custom_ammo("wpn_fps_smg_stoy_919", "_9x19mm")
 end

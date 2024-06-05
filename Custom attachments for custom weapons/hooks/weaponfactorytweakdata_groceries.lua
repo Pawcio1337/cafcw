@@ -45,9 +45,9 @@ end
 -- BULLDOG
 if self.wpn_fps_ass_bulldoge then
 	self:cafcw_add_custom_ammo("wpn_fps_ass_bulldoge", "_762x51mm")
-	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_bulldoge", "wpn_fps_ass_l85a2", "0,4,0.75")
-	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_bulldoge", "wpn_fps_ass_l85a2", "0,4,0.75")
-	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_bulldoge", "wpn_fps_ass_l85a2", "0,2,-1.1")
+	self:cafcw_add_custom_sights("Specter", "wpn_fps_ass_bulldoge", "wpn_fps_ass_l85a2", nil, "0,4,0.75")
+	self:cafcw_add_custom_sights("ACOG", "wpn_fps_ass_bulldoge", "wpn_fps_ass_l85a2", nil, "0,4,0.75")
+	self:cafcw_add_custom_sights("Custom", "wpn_fps_ass_bulldoge", "wpn_fps_ass_l85a2", nil, "0,2,-1.1")
 	self:cafcw_add_attachment_type("Barrel_Extensions", "wpn_fps_ass_bulldoge")
 	self:cafcw_add_attachment_type("Gadgets", "wpn_fps_ass_bulldoge")
 	self:cafcw_add_attachment_type("Suppressors", "wpn_fps_ass_bulldoge")
