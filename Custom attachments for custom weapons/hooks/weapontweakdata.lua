@@ -348,4 +348,14 @@ if self.SetupAttachmentPoint then
 		position = Vector3(0, 8.95, -1.39 )
 	})
 end
+-- Off-Hand Knife
+if self.px4 then
+	self.px4.animations.knife_anim = "pistolknifesparrow"
+end
+if self.swmp40 then
+	self.swmp40.animations.knife_anim = "pistolknifesparrow"
+end
+if self.mars then
+	self.mars.animations.knife_anim = "pistolknifedeagle"
+end
 end)

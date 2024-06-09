@@ -484,6 +484,24 @@ attach_tables.MOD_RussianSightPack_Custom = {
 	"wpn_fps_upg_o_1pn93",
 	"wpn_fps_upg_o_okp7_dove"
 }
+attach_tables.MOD_Off_Hand_Knife = { -- For reload animation check weapontweakdata.lua file.
+	"wpn_fps_pis_usp_knife_rambo",
+	"wpn_fps_pis_usp_knife_bayonet",
+	"wpn_fps_pis_usp_knife_sword",
+	"wpn_fps_pis_usp_knife_oxide",
+	"wpn_fps_pis_usp_knife_freedom",
+	"wpn_fps_pis_usp_knife_wing",
+	"wpn_fps_pis_usp_knife_kabar_tanto",
+	"wpn_fps_pis_usp_knife_kabar",
+	"wpn_fps_pis_usp_knife_km2000",
+	"wpn_fps_pis_usp_knife_ballistic",
+	"wpn_fps_pis_usp_knife_switchblade",
+	"wpn_fps_pis_usp_knife_x46",
+	"wpn_fps_pis_usp_knife_chef",
+	"wpn_fps_pis_usp_knife_fairbair",
+	"wpn_fps_pis_usp_knife_toothbrush_shiv",
+	"wpn_fps_pis_usp_knife_aziz"
+}
 -- Unique attachment tables to exclude specific attachments for custom weapon. Only exception are Iron Sights Pack and Pistol Iron Sights Pack mods.
 -- Attachments tables end
 function WeaponFactoryTweakData:cafcw_add_attachment_type(attach_type, wpn_id, add_id)
@@ -1397,6 +1415,7 @@ if self.wpn_fps_pis_swmp40 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_swmp40")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_swmp40")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_swmp40")
+	self:cafcw_add_attachment_type("MOD_Off_Hand_Knife", "wpn_fps_pis_swmp40")
 	self:cafcw_forbids_attachment_type("Suppressors_Pistol", "wpn_fps_upg_swmp40_barrel_ported")
 	self:cafcw_forbids_attachment_type("Specter", "wpn_fps_pis_swmp40_sights_forbids")
 	self:cafcw_forbids_attachment_type("ACOG", "wpn_fps_pis_swmp40_sights_forbids")
@@ -1466,6 +1485,7 @@ if self.wpn_fps_pis_px4 then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_px4")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_px4")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_px4")
+	self:cafcw_add_attachment_type("MOD_Off_Hand_Knife", "wpn_fps_pis_px4")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_px4", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Custom_Pistol", "wpn_fps_pis_px4", nil, "slide")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_px4", "a_ns", "barrel")
@@ -1589,6 +1609,7 @@ if self.wpn_fps_pis_mars then
 	self:cafcw_add_attachment_type("Barrel_Extensions_Pistol", "wpn_fps_pis_mars")
 	self:cafcw_add_attachment_type("Gadgets_Pistol", "wpn_fps_pis_mars", "wpn_fps_pis_ppk_fl_mount")
 	self:cafcw_add_attachment_type("Suppressors_Pistol", "wpn_fps_pis_mars")
+	self:cafcw_add_attachment_type("MOD_Off_Hand_Knife", "wpn_fps_pis_mars")
 	self:cafcw_wpn_a_obj_pattern_override("Barrel_Extensions_Pistol", "wpn_fps_pis_mars", "a_ns", "barrel")
 	self:cafcw_wpn_a_obj_pattern_override("Suppressors_Pistol", "wpn_fps_pis_mars", "a_ns", "barrel")
 end
